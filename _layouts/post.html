@@ -1,0 +1,95 @@
+---
+# _layouts/post.html -- one weblog entry, served at
+# /weblog/:year/:month/:day/:title/. Written 2026-08-23, before the corpus
+# crossed, so that the extraction's first output is measured against a
+# layout rather than made to produce one.
+#
+# The chassis is weblog.html's, deliberately: same head, same skip link,
+# same header parameters, same sidebar, same footer. An entry and the index
+# are the same publication and a reader moving between them should not feel
+# a seam. What differs is the main region alone.
+#
+# The h1 reads "Preterition", not the entry's title. That is the site's
+# standing arrangement -- header.html owns the h1 everywhere and content
+# opens at h2 -- and here it does double duty: a reader arriving on a
+# twenty-year-old link is told whose site this is by the first heading they
+# meet, which is the cheapest available form of the orientation an entry
+# owes a deep arrival.
+#
+# OPEN, and deliberately unfilled: the rest of that orientation. The
+# _owed.md row of 2026-08-22 names the candidates -- a dateline, a masthead,
+# a "part of Preterition since 2003" line, previous/next links, or a ruling
+# that arrival context is not owed beyond the header -- and it is Michael's.
+# The slot is marked below rather than filled, on the 404-trail precedent:
+# needing a treatment nobody has ruled is a finding about the components,
+# not a licence to author one.
+#
+# Categories and tags render as text, not links. The archives that would
+# receive those links ship with Workstream 5; a link authored now would be
+# a dead link authored deliberately, which is the thing the redirect
+# discipline exists to prevent.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <div class="page-wrapper">
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    {% include header.html title="Preterition" home="/weblog/" tagline=true %}
+
+    <main id="main">
+      <div class="main-content">
+        <article class="blog-post">
+          <h2 class="post-title">{{ page.title }}</h2>
+
+          {%- comment -%} The dateline. date_to_xmlschema gives the machine
+          form; the visible form is the one the weblog has always used. An
+          entry edited after publication says so, and only then -- comparing
+          the two dates rather than testing whether the field exists is what
+          keeps the extraction's last_modified_at, which WordPress writes for
+          every row it has, from labelling nine hundred untouched posts as
+          revised. {%- endcomment %}
+          <p class="blog-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+            {%- assign published = page.date | date: "%Y-%m-%d" -%}
+            {%- assign revised = page.last_modified_at | date: "%Y-%m-%d" -%}
+            {%- if page.last_modified_at and revised != published %}
+            <span class="post-revised">revised <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%-d %B %Y" }}</time></span>
+            {%- endif %}
+          </p>
+
+          {{ content }}
+
+          {%- if page.categories != empty or page.tags != empty %}
+          <p class="post-taxonomy">
+            {%- if page.categories != empty %}<span class="post-categories">Filed under {{ page.categories | join: ", " }}.</span>{% endif %}
+            {%- if page.tags != empty %} <span class="post-tags">Tagged {{ page.tags | join: ", " }}.</span>{% endif %}
+          </p>
+          {%- endif %}
+        </article>
+
+        {%- comment -%} ORIENTATION SLOT -- _owed.md 2026-08-22, unruled.
+        Whatever answers "where am I, and what else is here" for a reader who
+        arrived on an old link belongs between the entry and its comments.
+        Left empty rather than guessed at. {%- endcomment %}
+
+        {%- comment -%} COMMENTS -- Workstream 5. The extraction carries each
+        entry's thread as sidecar data keyed on wp_id, so the loop that goes
+        here cannot be written until that data's shape is on disk.
+        page.comment_count is the hook the extraction already writes.
+        {%- endcomment %}
+      </div>
+
+      {% include sidebar-weblog.html %}
+    </main>
+
+    {% include footer.html %}
+  </div>{%- comment -%} closes .page-wrapper, opened above in this same file
+  {%- endcomment %}
+
+  {% include scripts.html %}
+</body>
+</html>

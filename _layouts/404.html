@@ -1,0 +1,39 @@
+---
+# _layouts/404.html -- the not-found page, and nothing else takes it.
+#
+# This layout emits the chrome and stops. Unlike page.html it does NOT open
+# <main id="main"> or .main-content, because 404.md authors those itself,
+# along with its own <aside>. Restoring the wrapper here would nest a <main>
+# inside a <main> -- two landmarks with one id, which is a conformance
+# failure and a screen-reader one at once. If a later pass finds this layout
+# "incomplete" against page.html, that is the difference and it is deliberate.
+#
+# Two further things the source owns and this layout must not supply:
+#   the breadcrumb  a fake trail, ornament rather than navigation. Real
+#                   trails are retired (RULED 2026-08-22, Michael) and no
+#                   layout emits one; the 404 keeps its Zork joke locally.
+#   the aside       hand-authored and deliberately NOT _includes/sidebar.html.
+#                   The reason travels in 404.md, at the aside itself.
+# See _project/site-design-spec.md and _layouts/page.html.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <div class="page-wrapper">
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    {% include header.html %}
+
+    {{ content }}{%- comment -%} carries <main>, .main-content and <aside>
+    -- see the head comment above before adding a wrapper here {%- endcomment %}
+
+    {% include footer.html %}
+  </div>{%- comment -%} closes .page-wrapper, opened above in this same file
+  {%- endcomment %}
+
+  {% include scripts.html %}
+</body>
+</html>

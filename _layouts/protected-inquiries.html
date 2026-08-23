@@ -1,0 +1,50 @@
+---
+# _layouts/protected-inquiries.html -- one page takes this layout and no
+# other ever should: /protected-inquiries, the quiet destination for
+# correspondence that needs more care.
+#
+# The chrome is absent by design, not by omission (RULED 2026-08-19,
+# Michael; register and threat model at _project/contact-page-spec.md).
+# This layout therefore does NOT include head.html, and that is the whole
+# reason it exists as its own file rather than as page.html with things
+# switched off. head.html emits eight favicons, a manifest, a browserconfig
+# and a theme-color; this page's reader may be on Tor at a security level
+# that makes every extra request a fact about them. Shared CSS is kept --
+# and only shared CSS -- so someone arriving on a borrowed machine under
+# stress can see they are where they meant to be.
+#
+# What must never be added here, each retracted as a "defect" before:
+#   favicons / manifest   request footprint, above.
+#   nav, header, sidebar  the page confirms a channel rather than
+#                         advertising one; chrome would make it a
+#                         destination in the site's map.
+#   scripts               the intended reader arrives with JavaScript off.
+#   a mailto: link        opens whatever client the borrowed machine has
+#                         under whatever account is signed in. The address
+#                         is raw copyable text in the source, deliberately.
+#
+# robots is emitted here rather than in the source's front matter because
+# it is a property of the page's posture, which this layout is.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="{{ page.description | markdownify | strip_html | strip }}">
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  {%- comment -%} Shared CSS, and nothing else fetched. Fonts are
+  self-hosted and declared inside style.css. {%- endcomment %}
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body class="bare">
+  <main id="main">
+    <div class="main-content">
+      {{ content }}
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,58 @@
+# -------------------------------------------------
+# 1️⃣ Cross-platform text normalization
+# -------------------------------------------------
+# Always convert line endings to LF in the repo
+* text=auto eol=lf
+
+# -------------------------------------------------
+# 2️⃣ Preserve binary files — never treat them as text
+# -------------------------------------------------
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.webp binary
+*.pdf  binary
+*.zip  binary
+*.woff binary
+*.woff2 binary
+*.ttf  binary
+*.otf  binary
+*.mp4  binary
+*.mov  binary
+*.mp3  binary
+*.ogg  binary
+
+# -------------------------------------------------
+# 3️⃣ Safe merges for specific files
+# -------------------------------------------------
+# Keep current branch’s symlink versions
+LICENSE.txt merge=ours
+README.md  merge=ours
+
+# Prevent repetitive HTML conflict markers in hand‑edited pages;
+# take the merge diff but skip CRLF mix-ups.
+*.html text diff=html
+
+# Treat CSS/JS as text (so merges/diffs behave normally)
+*.css text diff=css
+*.js  text diff=javascript
+
+# -------------------------------------------------
+# 4️⃣ Common ignore for OS or IDE artifacts
+# (not strictly gitattributes—these hints prevent accidental adds)
+.DS_Store export-ignore
+Thumbs.db export-ignore
+
+# -------------------------------------------------
+# 5️⃣ Make GitHub diffs more readable
+# -------------------------------------------------
+# GitHub recognizes these diff drivers for formatting
+*.html linguist-language=HTML
+*.css  linguist-language=CSS
+*.js   linguist-language=JavaScript
+*.json linguist-language=JSON
+*.yml  linguist-language=YAML# Always keep these symlinks from the current branch when merging
+LICENSE.txt merge=ours
+README.md merge=ours

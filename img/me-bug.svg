@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 11" width="10" height="22" role="img" aria-hidden="true" shape-rendering="crispEdges"><!--
+  The ME bug. Three verticals over three horizontals: M above E, reduced to
+  the fewest strokes that still read. The 5x11 viewBox IS the artwork: every
+  coordinate is an integer, so at any 2x/3x/4x scale the strokes land on whole
+  pixels and need no antialiasing. Display boxes are therefore multiples of 11
+  (22px in the tagline boxes); a non-integer scale is what makes a mark this
+  small go soft, and crispEdges is the belt to that suspenders.
+
+  The fill is #00ff00 literally rather than currentColor, and deliberately.
+  currentColor cannot reach here: a browser renders an SVG loaded through
+  <img> as a sealed document with no access to the host page's cascade, so
+  currentColor would resolve against this file's own unset color and paint
+  black. Inlining or mask-image would restore the inheritance (both were
+  considered), but the bug is acid green in every context the design language
+  has, so there is nothing to inherit. RULED 2026-08-22, Michael.
+
+  Acid green is the interaction colour everywhere else on this site, reserved
+  and scarce. The bug is the standing exception: it is the identity mark, not
+  a control, and it does not signal state. Nothing here carries meaning by
+  hue alone.
+
+  Note for anyone editing this comment: XML forbids a double hyphen inside a
+  comment. The vault authors em dashes as two hyphens and Kramdown converts
+  them at build time, but nothing converts them here, and an SVG that is not
+  well formed does not render at all. Jekyll will copy a broken one without
+  complaint, so the build staying green proves nothing about this file.
+--><path fill="#00ff00" d="M0 0h1v5H0zM2 0h1v5H2zM4 0h1v5H4zM0 6h5v1H0zM0 8h5v1H0zM0 10h5v1H0z"/></svg>

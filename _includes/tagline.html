@@ -1,0 +1,18 @@
+{%- comment -%}
+  _includes/tagline.html -- one tagline, chosen at build, emitted as text.
+  The no-JavaScript baseline. main.js overwrites it per page load for
+  everyone else, so a reader with scripting on sees a fresh draw and a
+  reader without sees the day's.
+
+  Chosen by day of year rather than at random, deliberately: a build is
+  reproducible, and `sample` would make two builds of the same commit differ.
+  The Actions cycle rebuilds daily (RULED 2026-08-18), so this rotates on
+  that cadence, which is the floor the rule asks for and not a simulation of
+  the per-load draw.
+
+  `escape` is load-bearing. One tagline contains `<!--`; rendered raw into
+  the document that opens an HTML comment and swallows everything after it.
+{%- endcomment -%}
+{%- assign tl = site.data.taglines -%}
+{%- assign tidx = site.time | date: "%j" | times: 1 | modulo: tl.size -%}
+{{- tl[tidx] | escape -}}

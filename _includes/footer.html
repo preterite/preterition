@@ -1,0 +1,15 @@
+{%- comment -%}
+  _includes/footer.html -- the footer alone. The script block moved to
+  _includes/scripts.html 2026-08-22 so a layout can take the scripts
+  without taking the footer: pages/index.md authors its own .signoff
+  carrying the colophon link and the licence, and would print both twice
+  if it included this file. The #colophon anchor linked below is owed at
+  pages/about.md and is dead until that row runs.
+{%- endcomment -%}
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <a href="/about.html#colophon">Colophon</a> | Licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+    </div>
+  </div>
+</footer>

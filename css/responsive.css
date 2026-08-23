@@ -1,0 +1,370 @@
+/* ===================================
+   Responsive Styles
+   Mobile-first approach with media queries
+   =================================== */
+
+/* ===== TABLET (768px - 899px) ===== */
+@media (max-width: 899px) {
+  :root {
+    --gutter: 20px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid var(--color-border-dark);
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    padding-right: 20px;
+  }
+
+  .sidebar-section {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  /* Hide pipe dividers on tablet — items stack differently */
+  nav .nav-item + .nav-item::before {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+/* ===== MOBILE (< 768px) ===== */
+@media (max-width: 767px) {
+  :root {
+    --gutter: 16px;
+    --gutter-mobile: 16px;
+  }
+
+  /* HEADER */
+  /* On phones the header scrolls with the page. Measured 2026-08-22: the
+     fixed header is 139px tall at 700 and 175px at 400 (the title wraps),
+     so no constant padding on main can clear it, and a fixed band that
+     tall on a phone is the wrong trade regardless. The drawer is its own
+     fixed element and is unaffected. */
+  header {
+    padding: 16px;
+    position: static;
+  }
+
+  main {
+    padding-top: var(--gutter-mobile);
+  }
+
+  /* The row holds: title block, search hexagon, hamburger (2026-08-22).
+     Row, not column, so both buttons sit beside the title on phones. */
+  .header-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #site-title {
+    font-size: 1.5rem;
+  }
+
+  /* NAVIGATION */
+  nav:not(.wall) {
+    top: auto;
+    position: relative;
+  }
+
+  /* In the header row now (2026-08-22); no longer absolute inside <nav>,
+     where it rendered beneath the fixed header. */
+  .hamburger {
+    display: block;
+    flex: 0 0 auto;
+  }
+
+  /* `nav .nav-list` (0,1,1) matches style.css's desktop rule, which a
+     bare `.nav-list` (0,1,0) lost to regardless of load order -- the
+     reason the full list rendered in flow on phones (found 2026-08-22). */
+  nav .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-bg-dark);
+    z-index: 200;
+    height: 100vh;
+    align-items: flex-start;
+    padding-top: 80px;
+  }
+
+  nav .nav-list.open {
+    display: flex;
+  }
+
+  .nav-item {
+    height: auto;
+  }
+
+  .nav-item a {
+    display: block;
+    height: auto;
+    line-height: 1.5; /* reset from desktop 48px */
+    padding: 16px;
+    border-bottom: 1px solid var(--color-border-dark);
+    width: 100%;
+  }
+
+  .nav-item.active a {
+    /* The desktop bar's rule, unchanged at this width: emerald marks where
+       you are, acid marks what you are touching. The drawer's items are
+       already full-width blocks, so the left rule reads as it does on a
+       card (Michael, 2026-08-23). */
+    border-left: 3px solid var(--color-accent-grey-green);
+  }
+
+  /* MAIN LAYOUT */
+  main {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 16px;
+    padding-left: 16px;
+    width: 100%;
+  }
+
+  .main-content h2 {
+    font-size: 1.5rem;
+  }
+
+  /* SIDEBAR */
+  aside {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid var(--color-border-dark);
+    padding: 16px;
+    gap: 20px;
+  }
+
+  .sidebar-section {
+    width: 100%;
+  }
+
+  .gif-placeholder {
+    max-width: 240px;
+    margin: 0 auto 8px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .footer-left {
+    font-size: 0.8125rem;
+  }
+
+  /* CONTENT */
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.375rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  code {
+    font-size: 0.875rem;
+  }
+
+  .card,
+  .blog-card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .blog-card h3 {
+    font-size: 1.125rem;
+  }
+
+  .blog-card-meta {
+    font-size: 0.8125rem;
+  }
+
+  /* WIDGETS */
+  .sidebar-widget {
+    padding: 12px;
+  }
+
+  .sidebar-widget h3 {
+    font-size: 0.875rem;
+  }
+
+  .sidebar-widget p {
+    font-size: 0.8125rem;
+  }
+
+  .sidebar-widget li {
+    font-size: 0.8125rem;
+  }
+
+  .music-widget,
+  .calendar-widget,
+  .tagline-box {
+    padding: 12px;
+  }
+
+  .music-track {
+    font-size: 0.75rem;
+  }
+
+  .music-track-artist {
+    font-size: 0.7rem;
+  }
+
+  .calendar-event {
+    font-size: 0.7rem;
+  }
+
+  .tagline-box p {
+    font-size: 0.875rem;
+  }
+
+  /* RESOURCE LISTS */
+  .resource-list li {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
+
+  .resource-list a {
+    font-size: 0.9375rem;
+  }
+
+  .resource-meta {
+    font-size: 0.75rem;
+  }
+}
+
+/* ===== SMALL PHONES (< 400px) ===== */
+@media (max-width: 399px) {
+  :root {
+    --gutter: 12px;
+  }
+
+  header {
+    padding: 12px;
+  }
+
+  #site-title {
+    font-size: 1.25rem;
+  }
+
+  #site-description {
+    font-size: 0.8125rem;
+  }
+
+  .nav-list {
+    padding: 12px;
+    padding-top: 70px;
+  }
+
+  .nav-item a {
+    font-size: 0.8125rem;
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .card,
+  .blog-card {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .gif-placeholder {
+    max-width: 200px;
+  }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .main-content {
+    background: linear-gradient(135deg, #0f0e0c 0%, #28251f 100%);
+  }
+}
+
+/* ===== HIGH CONTRAST MODE ===== */
+@media (prefers-contrast: more) {
+  :root {
+    --color-accent-grey-green: #4a7a5a;
+    --color-muted-grey: #777777;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  .card,
+  .blog-card {
+    border-width: 2px;
+  }
+}
+
+/* ===== DARK MODE (system default is already dark) ===== */
+/* No light-mode block, deliberately. A four-line token override cannot make
+   a light theme here: .main-content carries a literal dark gradient rather
+   than a token, --color-card-dark does not follow, and the header artwork is
+   built for a dark ground. The block that stood here until 2026-08-19 left
+   card text at roughly 1.02:1 for any visitor whose system is set to light,
+   which is the macOS default. A real light theme is its own pass. */

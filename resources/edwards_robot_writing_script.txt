@@ -1,0 +1,95 @@
+How to Not Write Like a Robot:
+"Blood on the Cutting Room Floor" in Composition's Reading of Generative AI
+
+Mike Edwards
+mike.edwards@wsu.edu
+Washington State University
+
+This script:
+https://tinyurl.com/edwards-cccc-2024
+
+Slides (PDF):
+https://tinyurl.com/edwards-slides-2024
+
+Soundtrack (for funsies):
+https://tinyurl.com/12-robot-songs
+
+Presenter's slides:
+https://tinyurl.com/edwards4C24slides
+
+Questioning Generative AI: A panel sponsored by the CCCC Intellectual Property Caucus
+
+Conference on College Composition and Communication 2024, Spokane, WA.
+
+Thursday 04 April 2024 10:30—11:45, session A.18
+
+Epigraph 1: "there is always an unbridgeable lacuna between / any explication of a reading & any actual / reading" Charles Bernstein, "Artifice of Absorption."
+
+Epigraph 2: "it is helpful to imagine the representations... as complex networks, like dense roadmaps, made up of many nodes of information, each related to others in multiple ways... The links between a group of nodes might reflect causality, or subordination, or simple association... The process of constructing this representation is carried out by both highly automated processes of recognition and inference and by the more active problem-solving processes on which our work focuses." Christina Haas and Linda Flower, "Rhetorical Reading Strategies and the Construction of Meaning."
+
+1. I want to position our disciplinary response to generative AI in recent history. Our various accounts of teaching practices recently suggest more lectures and lesson materials, like we’re teaching students more the contexts of writing than the activity of writing. That in turn suggests a renewed interest to understanding writing as product over writing as process. In Portland, the chair’s address lines that got applause were the soundbites against quantitative reasoning from Cathy O'Neill's book. Plenty of sessions explicitly dismissed quantitative and big data rhetorics. Since, the 4Cs consensus has seemed increasingly anti-quantitative, interfering with our ability to understand generative AI.
+2. More recently, difficulties with quantitative reasoning show up in the reception of the "Stochastic Parrots" article. Tracing its citations indicates that many inadequately demonstrate the authors’ claims, as in the article’s decontextualized overestimate of the carbon costs of generative AI: a single airplane trip generates more carbon emissions that decades of LLM dataset use. As Victor Villanueva notes, we "tend to fear numbers.” Yet in quantitative terms, we've known since 1947 that "freshman English is a very expensive course to teach" in terms of human labor (27). Technologies that increase our productivity catch our attention.
+3. Much concern over generative AI centers on students turning in machine-generated plagiarism: product replacing process. We know that good writing happens in small bits, not all at once, in conversation with other writers and texts, on topics that matter to the writer. We also know technologies like writing condense labor into capital and substitute capital for labor. Yet we talk much more about the property value of intellectual capital -- writing's frozen labor -- than we trace the activity of the labor itself. Evolving disciplinary attitudes toward technology and intellectual property have helped make writing into topic and technique rather than a complex and overdetermined process of study. When we seek first to tame the uses of generative AI, we dedicate ourselves to the poetics rather than the poiesis.
+4. Many popular media responses to generative AI invoke theories of technological neutrality, even while citing the technological essentialism of "Stochastic Parrots.” How do the ways we adapt our pedagogies to generative AI see texts as embodying inputs and outputs to and from the cycle of textual circulation? Where do our pedagogies locate the appropriation of value by multiple parties in that circulating cycle of textual production, distribution, use, and reproduction? A perhaps updated classroom emphasis on processes of invention, drafting, seeking and evaluating feedback, revising, proofreading, editing, publishing, sharing, and reflecting, as located in that cycle of circulation, might turn toward Bruce Horner and Charles Bernstein for a pedagogy of textual production, and toward Mariolina Salvatori for a pedagogy of textual consumption: which is to say, reading.
+5. Mariolina Salvatori observes two related moments of erasure: first, we have turned away from studying how students read -- an erasure notable in our public speculation about how generative AI processes text. Second, we've turned away from representing the individual student in the moments of their engagement with texts—again notable when generative AI seems to have produced so much worry about how students engage with texts.
+6. Those erasures turn also away from 1990s and 2000s scholarship on plagiarism, from Rebecca Moore Howard, Margaret Price, and Amy Robillard's arguments for interventions that attend to the embodied, material, and affective practices of individual student writers. The discourse around generative AI plagiarism leans more toward concerns about whole-text plagiarism than it does toward the complexities of patchwriting and authorship.  Dumbed-down and deadened quizzes on how to cite sources replace textual difficulty as method.\
+
+	"Imagine that words have a life of their own, radio-controlled by an automatic pilot called history… To understand language as artificial intelligence is to conceptualize writing as a kind of psychic surgery… The poem sounds as music the marks of its continual newness in being made; and the only mark of its past, of its having been made, is the blood on the cutting room floor."\
+
+ Charles Bernstein, "Blood on the Cutting Room Floor"
+7. Posed against a politics of policies and explications, a dialogics of ongoing active textual response -- a "two-player word processor" -- sees writing as Charles Bernstein's artificial intelligence, driven by history, an suturing of the self to an imagined Other. Generative AI offers insights on how language maps onto alterity. We might understand the gaps between the mirrored latent and explicit states of LLMs as literalizations of our theories about metaphor and irony. Yet our fascinations with how stochastic gradient descent and backpropagation generate language are unreflected in the discipline's emerging figuration of the student writer -- a figuration that has forgotten composition’s engagement with cognitive process psychology, despite its insights offered on our reading, writing minds.
+8. Working with generative AI might inform a more dialogic pedagogy. If you've understood the technical descriptions of stochastic gradient descent, Peter Elbow account of reading will be familiar: "Consider the example of seeing a car down the road ahead of you. Cognitive psychologists have found... that even vision is an active, exploratory process of creating meaning. It always occurs in stages through the passage of time, not instantaneously like an image passing through a lens. In the first stage of seeing, our mind receives the first pieces of information... and quickly makes a guess or hypothesis about what we might be looking at. As we drive along, we instantaneously see a white car way down there ahead of us on the road. But the mind repeatedly checks this guess against further information, and we discover that it's actually a white boat being towed behind a car. In many situations, of course, our first guess is right -- especially if the actual facts fit the context. A vehicle moving down the road is likely to be a car. For the story of perception is the story of how context and expectation are just as important as sensory data... We can take in the whole scene of the car on the road in just one glance -- or rather that boat on the road. But we can't read a whole page of print at once -- any more than we can write a page all at once. As we read a page, we can only read a few words at a time. As we understand them, our mind inevitably develops some guesses and hypotheses about what the rest of the sentence of paragraph or whole piece might be about. As we read further, we inevitably revise our guesses and hypotheses." Peter Elbow, "Foreword" to The Original Text-Wrestling Book.
+9. The disciplinary retreat from internal and dialogic questions of reading, particularly in our constructions of monolithic producers of completed texts, is a form of black-boxing the student. Our disciplinary conversations around generative AI seem also to turn increasingly toward behaviorist "rodential" pedagogies theorized in the 1970s. Chris Gallagher points out remnants of the "rodential" view surface in our conversational slippage "from scribal activity to textual product" (256).
+10. Seeing generative AI writing not as static para-plagiarized texts but as iterative interactions with a "two-player word processor" offers frameworks to identify, trace, and promote the value of writing's labor in its moments of human textual contact. Matthew Kirschenbaum's generative AI "Textpocalypse" is only the leading edge -- the _avant-garde_ -- of a revival of Erasmus's _Copia_ of misrule. Stories of reading and rewriting are stories of getting writing wrong making meaning, in the mode of the smitten and insolent readings of Roland Barthes. Concern about "hallucinations" from generative AI demonstrates the attraction to outliers, to the _via rupta_ between human and reflected Other. In teaching writing, we see thinking working in the tries. The tries-and-fails are when students appropriate the value of their own labor. And the dialogic tries-and-fails of machines let us trace generative AI's outputs as the products of capital's appropriative furnace. We need to teach weird writing: writing that "courts contradiction, feeds on inconsistency. The political value of writing resides in the concreteness of the experiences it makes available. [W]riting has always had [the power] to make experience palpable not by simply pointing to it but by (re)creating its conditions.” When technological capital complicates the undervalued human labor of reading, an anti-absorptive and interruptive dialogic rhetoric derived from Salvatori and Bernstein offers new ways of thinking about human-machine pedagogy.
+
+
+Works Cited
+
+For ethical reasons, I will not cite sources from Elsevier-owned journals such as Computers and Composition. Beyond the sources below, I am indebted to my co-panelists and to John Gallagher and Anna Mills for the conversations that sparked these ideas.
+
+Adler-Kassner, Linda. "2017 CCCC Chair's Address: Because Writing Is Never Just Writing."
+College composition and communication 69(2). 2017. 
+
+Bender, Emily, Timnit Gebru, Angelina McMillan-Major, and Shmargaret Shmitchell. "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜" Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency. March 2021. https://doi.org/10.1145/3442188.3445922
+
+Bernstein, Charles. "Artifice of Absorbtion." In A Poetics. Harvard University Press. 1992. 
+
+Bernstein, Charles. "Blood on the Cutting Room Floor." In Content's Dream: Essays 1975–1984. Sun and Moon Press. 1986.
+
+Carlson, Nicholas. "Two-player word processor." In Farhad Manjoo, "ChatGPT Is Already Changing How I Do My Job." New York Times. 21 April 2023. https://www.nytimes.com/2023/04/21/opinion/chatgpt-journalism.html
+
+Coon, Arthur. "An Economic X Marks the Spot." College English 9(1). 1947.
+
+Elbow, Peter. "Foreword" to The Original Text-Wrestling Book. Marcia Curtis et al., editors. Kendall-Hunt. 2001.
+
+Erasmus, Desiderius. "De duplici copia verborum ac rerum commentarii duo." In Collected Works of Erasmus. Craig R. Thompson, editor. University of Toronto Press. 1978.
+
+Gallagher, Chris. "What Writers Do: Behaviors, Behaviorism, and Writing Studies." College Composition and Communication 68(2). 2016.
+
+Haas, Christina, and Linda Flower, "Rhetorical Reading Strategies and the Construction of Meaning." College Composition and Communication 39 (2). May 1988.
+
+Horner, Bruce. Terms of Work for Composition: A Materialist Critique. SUNY Press. 2000.
+
+Howard, Rebecca Moore. "Plagiarisms, Authorships, and the Academic Death Penalty." College English 57(7). November 1995.
+
+Kirschenbaum, Matthew. "Prepare for the Textpocalypse." The Atlantic online. 23 March 2023. https://www.theatlantic.com/technology/archive/2023/03/ai-chatgpt-writing-language-models/673318/
+
+Lethem, Jonathan. "The Ecstasy of Influence." Harper's Magazine. February 2007.
+
+O'Neill, Cathy. Weapons of Math Destruction. Crown Books. 2016.
+
+Price, Margaret. "Beyond 'Gotcha!': Situating Plagiarism in Policy and Pedagogy." College composition and communication 54(1). September 2002.
+
+Ridolfo, Jim, and Danielle Nicole DeVoss. "Composing for Recomposition: Rhetorical Velocity and Delivery." Kairos: A Journal of Rhetoric, Technology, and Pedagogy 13(2). January 2009.
+https://kairos.technorhetoric.net/13.2/topoi/ridolfo_devoss/velocity.html
+
+Ritter, Kelly. "The Economics of Authorship: Online Paper Mills, Student Writers, and First-Year Composition." College Composition and Communication 56(4). December 2005.
+
+Robillard, Amy. "We Won't Get Fooled Again: On the Absence of Angry Responses to Plagiarism in Composition Studies." College English 70 (1). September 2007.
+
+Salvatori, Mariolina. "Conversations with Texts: Reading in the Teaching of Composition."
+College English 58(4). April 1996.
+
+Villanueva, Victor. "Toward a political economy of rhetoric (or a rhetoric of political economy)." In Radical Relevance: Toward a Scholarship of the Whole Left. Laura Gray-Rosendale and Stephen Rosendale, editors. SUNY Press. 2005.
+
+Trimbur, John. "Composition and the Circulation of Writing." College Composition and Communication 52(2). December 2012.

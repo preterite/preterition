@@ -1,0 +1,56 @@
+{%- comment -%}
+  _includes/header.html -- site header and the flat nav (RULED 2026-08-21):
+  no item contains another; order Index, CV, Scholarship, Presentations,
+  Projects, Teaching, Service, Contact, About, Weblog. The nav is authored
+  here as data so the list and the loop are one rule, not ten. The current
+  page takes aria-current="page" -- a label, so the active state is never
+  carried by colour alone -- and the `active` class main.js once computed at
+  runtime is emitted at build instead.
+{%- endcomment -%}
+{%- assign nav = "Index=/|CV=/resources/edwards_cv_2026.pdf|Scholarship=/scholarship.html|Presentations=/presentations.html|Projects=/projects.html|Teaching=/teaching.html|Service=/service.html|Contact=/contact.html|About=/about.html|Weblog=/weblog/" | split: "|" -%}
+<header>
+  <div class="header-content">
+    <div>
+      {%- comment -%} The identity line is a parameter, not a second header.
+      The weblog is the one page that changes identity on arrival -- its h1
+      reads "Preterition" and its subject line is the rotating tagline
+      (site-design-spec.md, Header). Parameterising here keeps the nav a
+      single rule: a forked header include would fork the nav with it, and
+      the nav is authored as data precisely so the list and the loop stay one
+      thing. include.title defaults to the site's own; include.tagline swaps
+      the fixed subject line for the rotated one, wrapping #tagline-text in
+      #site-description so the compact-header fade keeps its selector while
+      main.js keeps its target. The two never coexist: the weblog sidebar
+      renders no dotted box, so #tagline-text stays unique in the document.
+      {%- endcomment %}
+      <h1 id="site-title"><a href="{{ include.home | default: '/' }}">{{ include.title | default: site.title }}</a></h1>
+      {%- if include.tagline %}
+      <p id="site-description"><span id="tagline-text">{%- include tagline.html -%}</span></p>
+      {%- else %}
+      <p id="site-description">rhetoric, technology, composition, economy</p>
+      {%- endif %}
+    </div>
+    {%- comment -%} A flex sibling of the title, not absolutely positioned:
+    at full width its margin centers it over the sidebar, and as the window
+    narrows the row carries it in toward the title's right edge. {%- endcomment %}
+    <button class="search-trigger" type="button" aria-label="Search this site">
+      <span class="search-hexagon" aria-hidden="true"></span>
+    </button>
+    {%- comment -%} The hamburger lives in the header row, not in <nav>:
+    the mobile nav is a drawer, and a button inside a relatively positioned
+    nav sat underneath the fixed header (found 2026-08-22). aria-controls
+    reaches the list across elements. {%- endcomment %}
+    <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+  </div>
+</header>
+
+<nav aria-label="Site">
+  <ul class="nav-list" id="site-nav">
+  {%- for item in nav -%}
+    {%- assign pair = item | split: "=" -%}
+    {%- assign here = false -%}
+    {%- if pair[1] == page.url -%}{%- assign here = true -%}{%- endif -%}
+    <li class="nav-item{% if here %} active{% endif %}"><a href="{{ pair[1] }}"{% if here %} aria-current="page"{% endif %}>{{ pair[0] }}</a></li>
+  {%- endfor -%}
+  </ul>
+</nav>

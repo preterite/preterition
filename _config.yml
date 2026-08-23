@@ -1,0 +1,107 @@
+# _config.yml -- preterite.net
+#
+# The site's identity and the build's rules. Read by Jekyll once, at build
+# start; a change here needs a restart of `jekyll serve`, not just a
+# rebuild. Reasons travel with the keys, because the source is meant to be
+# read as closely as the site.
+#
+# Built by GitHub Actions, not by Pages' native builder (RULED 2026-08-18):
+# Pagefind indexes after Jekyll runs, and the widget data needs secrets and a
+# schedule, none of which the native build admits. The plugin whitelist that
+# constrains the native build therefore does not constrain this one.
+
+title: Mike Edwards
+description: "Mike Edwards, Associate Professor: rhetoric, composition, technology, economy."
+url: "https://preterite.net"   # absolute_url and the meta tags build from this
+baseurl: ""                    # the site lives at the domain root
+
+# Markdown. kramdown is Jekyll's default engine and already a dependency:
+# pages/404.md relies on its `markdown="1"` block attribute. GFM input so
+# fenced code blocks and tables read the way they do in Obsidian.
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true            # no Rouge classes; the site styles <pre> itself
+
+# Permalinks. Deliberately unset. The default, /:path/:basename:output_ext,
+# is what yields about.md -> /about.html, keeping the archive's addresses
+# (RULED 2026-08-18, declining `pretty`). Posts carry their own permalink in
+# front matter, written by the extraction; nothing here overrides it.
+
+# Layout derivation. A page source never asserts its layout (RULED
+# 2026-08-19); the build supplies it. This block is migration-spec.md's
+# derivation table, one scope per row, general to specific -- Jekyll applies
+# later, narrower entries over earlier, broader ones. A layout takes the name
+# of the page it dresses (RULED 2026-08-21), so no name is minted here.
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: "index.md"
+    values:
+      layout: index
+  - scope:
+      path: "weblog/index.md"
+    values:
+      layout: weblog
+  - scope:
+      path: "protected-inquiries.md"
+    values:
+      layout: protected-inquiries
+  - scope:
+      path: "404.md"
+    values:
+      layout: "404"
+  # Posts: layout `post`, not yet written. Front matter from the extraction
+  # carries its own `layout:` and wins over this; the default covers a
+  # hand-authored post that declines to state one.
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Plugins. One. jekyll-redirect-from writes a meta-refresh stub at each
+# retired address -- the static shape of a 301 -- and carries /blog/... to
+# /weblog/... after the migration. No /cv.html redirect is owed (RULED
+# 2026-08-22, Michael): the live archive never served that address, the nav
+# links the CV as a PDF and not as a page, and the cv.html that was archived
+# was the generated scaffold's invention rather than a published page. The
+# plugin is on the Pages whitelist; that is recorded so the builder question
+# does not reopen through it, not because the whitelist governs an Actions
+# build.
+plugins:
+  - jekyll-redirect-from
+
+# What never reaches _site. The archival pages are excluded outright as of
+# 2026-08-22, when the crossing wrote their successors and they were renamed
+# to .archived. Two reasons, and the second is the load-bearing one. Jekyll
+# treats an unrecognized extension as a static asset and copies it verbatim,
+# so the rename alone stopped them claiming the canonical URLs but left all
+# twelve fetchable at /about.html.archived and its siblings. And their prose
+# is not the author's: the generated scaffold invented biography -- fluent,
+# plausible, naming a real university -- so this is content that must never
+# be served rather than stale markup awaiting repair. The files stay in the
+# working tree as a reading copy and reach the build never. Verbatim copying
+# is still the mechanism carrying css/, js/, fonts/, img/ and resources/
+# across; this exclusion is what stops it carrying these.
+exclude:
+  - "*.archived"
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md
+  - .gitattributes
+  - .DS_Store
+  - vendor/
+  - node_modules/
+  - design/
+
+# Served, not built.
+keep_files:
+  - pagefind   # the post-build index, written into _site by the workflow

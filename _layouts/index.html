@@ -1,0 +1,54 @@
+---
+# _layouts/index.html -- the landing page, and nothing else takes it. No
+# header, no sidebar, no footer: index.md authors its own .signoff carrying
+# the colophon link and the licence, so pulling in the footer include would
+# print both twice. That is why the script block was split out into
+# scripts.html (2026-08-22): this layout needs the scripts and must refuse
+# the chrome they used to be bundled with.
+#
+# Three things the layout owes the source, none of which index.md can author
+# for itself, a page source not asserting its own chrome:
+#   .stage        the z-index:1 wrapper lifting content above the moire
+#                 ground that body::before and body::after paint.
+#   body.landing  the scope for that ground. Unscoped body rules would paint
+#                 the moire under every page on the site.
+#   the skip link the source's nav carries id="wall"; page.html's #main does
+#                 not exist here, and the site's class is .skip-link.
+# See _project/site-design-spec.md, Landing.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <noscript><style>
+  /* Scripting off: a fixed set of strips, so the wall is never a row of
+     unlit columns. A noscript block is parsed only when scripting is off,
+     so this and initStripRotation's random draw can never both fetch.
+     The query must stay identical to the wide-layout gate in style.css and
+     to WIDE in main.js. Three copies of one condition is the brittlest join
+     on this page; a container query cannot express the height or pointer
+     terms, so the duplication stands and is named here instead of hidden. */
+  @media (min-width: 900px) and (min-height: 520px) and (hover: hover) {
+    .strip { opacity: 1; }
+    .entry[data-k="about"]             .strip { background-image: url("/img/800s/800abstract00007.gif"); }
+    .entry[data-k="contact"]           .strip { background-image: url("/img/800s/800abstract00019.gif"); }
+    .entry[data-k="cv"]                .strip { background-image: url("/img/800s/800abstract00025.gif"); }
+    .entry[data-k="presentations"]     .strip { background-image: url("/img/800s/800abstract00033.gif"); }
+    .entry[data-k="projects"]          .strip { background-image: url("/img/800s/800abstract00048.gif"); }
+    .entry[data-k="scholarship"]       .strip { background-image: url("/img/800s/800abstract00061.gif"); }
+    .entry[data-k="service"]           .strip { background-image: url("/img/800s/800abstract00077.gif"); }
+    .entry[data-k="teaching"]          .strip { background-image: url("/img/800s/800abstract00094.gif"); }
+    .entry[data-k="weblog"]            .strip { background-image: url("/img/800s/800abstract00112.gif"); }
+  }
+  </style></noscript>
+</head>
+<body class="landing">
+  <a class="skip-link" href="#wall">Skip to the index</a>
+
+  <div class="stage">
+    {{ content }}
+  </div>{%- comment -%} closes .stage, opened above in this same file {%- endcomment %}
+
+  {% include scripts.html %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+{%- comment -%}
+  _includes/scripts.html -- the site's script block, split out of
+  _includes/footer.html 2026-08-22. Same defect class 22e fixed in
+  page.html: an include bundling two responsibilities forces every caller
+  to take both. The landing page needs these scripts and authors its own
+  sign-off, so it takes this file and not the footer.
+
+  gif-slugs.js loads before main.js (owed 2026-08-18): main.js reads
+  GIF_SLUGS for the strip's alt text and falls back silently to a generic
+  string if the array is absent, so the order here is the whole repair.
+  The failure mode is silent -- the fallback wins, every strip takes the
+  same generic alt, nothing errors -- so the acceptance check is two page
+  loads yielding two different alt strings, not the tag being present.
+
+  taglines.js is generated from _data/taglines.yml at build (2026-08-23) and
+  is no longer hand-edited. It carries no load-order constraint of its own:
+  main.js guards on `typeof TAGLINES`, and the markup already holds the
+  build's own pick, so a failure here degrades to the day's tagline rather
+  than to nothing.
+{%- endcomment -%}
+<script src="/js/taglines.js"></script>
+<script src="/js/gif-slugs.js"></script>
+<script src="/js/main.js"></script>

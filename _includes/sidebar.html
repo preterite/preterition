@@ -1,0 +1,48 @@
+{%- comment -%}
+  _includes/sidebar.html -- the professional pages' aside: strip, Listening,
+  This Week, tagline. The two widgets render _data/lastfm.json and
+  _data/calendar.json at build (RULED 2026-08-18): no key, no fetch, nothing
+  runs in the reader's browser. The schema the include reads is the schema
+  the fetch scripts must write -- tracks[].name, tracks[].artist;
+  events[].day, events[].summary -- stated here, at the one consumer, so
+  the producer has a contract to meet. Listening is a reporter, not a
+  navigator (RULED 2026-08-21): no outbound link. This Week carries
+  id="this-week" because contact.md links office hours to it.
+{%- endcomment -%}
+<aside>
+  <div class="sidebar-section">
+    <img id="sidebar-gif" src="/img/800s/800abstract00001.gif" alt="abstract gray and green image - alarm" class="gif-placeholder" width="150" height="800">
+  </div>
+
+  <div class="sidebar-section">
+    <h3>Listening</h3>
+    <div class="music-widget">
+    {%- for t in site.data.lastfm.tracks limit: 5 %}
+      <div class="music-track">
+        <span class="music-track-song">{{ t.name }}</span>
+        <span class="music-track-artist">{{ t.artist }}</span>
+      </div>
+    {%- else %}
+      <p class="music-empty">Nothing scrobbled lately.</p>
+    {%- endfor %}
+    </div>
+  </div>
+
+  <div class="sidebar-section" id="this-week">
+    <h3>This Week</h3>
+    <div class="calendar-widget">
+    {%- for e in site.data.calendar.events %}
+      <div class="calendar-event"><span class="calendar-day">{{ e.day }}</span> {{ e.summary }}</div>
+    {%- else %}
+      <p class="calendar-empty">Nothing scheduled.</p>
+    {%- endfor %}
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="tagline-box">
+      <p id="tagline-text">{%- include tagline.html -%}</p>
+      <p><img src="/img/me-bug.svg" alt="" width="10" height="22"></p>
+    </div>
+  </div>
+</aside>

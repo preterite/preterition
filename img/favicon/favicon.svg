@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" shape-rendering="crispEdges"><!--
+  Browser tab icon. Same path data as /img/me-bug.svg, scaled 2x (10x22) and
+  centred in a 32x32 square: x = (32 minus 10) / 2 = 11, y = (32 minus 22) / 2
+  = 5. All integers, so the strokes stay whole-pixel at 32 and halve cleanly
+  to 16. Every raster in this directory is generated from this file.
+
+  What this replaces: a 512x512 PNG base64-encoded inside an svg wrapper by a
+  favicon generator, 2138 bytes to deliver a raster, in #33cc00, a green
+  belonging to no slot in this palette. It also carried two dead
+  prefers-color-scheme rules that both resolved to filter: none.
+
+  The charcoal ground is load-bearing, not decoration. A transparent tab icon
+  takes the browser chrome's own background, and #00ff00 on white measures
+  about 1.4:1, which is effectively invisible on a light tab bar. The ground
+  makes the mark legible in both chrome themes with one file and no media
+  query.
+
+  XML forbids a double hyphen inside a comment, so no em dashes are spelled
+  as two hyphens anywhere in this file. See the same note in me-bug.svg.
+--><rect width="32" height="32" fill="#1a1816"/><path fill="#00ff00" transform="translate(11 5) scale(2)" d="M0 0h1v5H0zM2 0h1v5H2zM4 0h1v5H4zM0 6h5v1H0zM0 8h5v1H0zM0 10h5v1H0z"/></svg>

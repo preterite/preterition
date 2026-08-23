@@ -1,0 +1,63 @@
+{%- comment -%}
+  _includes/sidebar-weblog.html -- the weblog's aside. Sibling to
+  sidebar.html, not a variant of it: the three zones are the same and their
+  contents invert (RULED 2026-08-21, Michael, site-design-spec.md, The
+  Sidebar's Three Zones).
+
+  Identity inverts. On the professional pages the header names him and the
+  box supplies the affiliation; here the header names the weblog and rotates
+  its tagline, so the box does the naming and the affiliation has no place.
+
+  Middle is blog navigation and ships with Workstream 5, not at deploy.
+  Recent Comments, Recent Posts, Top Posts, Archive by date, Archive by
+  category: at deploy the corpus has not migrated and Staticman does not
+  exist, so four of the five would be empty and a <details> opening onto
+  nothing actively misleads the reader who accepts the invitation.
+
+  No footer zone. The dotted box does not render here and the ME bug goes
+  with it: the tagline is promoted to the header, so the box has nothing to
+  hold, and a mark reading "ME" beneath an h1 reading "Preterition" would
+  answer a question the page has already answered differently.
+
+  So the deploy-day column is About, strip, Listening -- three elements, all
+  populated, no empty widget anywhere.
+
+  CONTRACT: the About prose is content and is authored in the vault, at
+  weblog/index.md's `about:` field. It is not authored here, and the card is
+  omitted rather than shipped empty when the field is absent -- an empty
+  identity card is the construction-site reading this column exists to avoid.
+{%- endcomment -%}
+<aside>
+  {%- if page.about and page.about != "" %}
+  <div class="sidebar-section">
+    <div class="card">
+      <h3>About</h3>
+      {{ page.about | markdownify }}
+    </div>
+  </div>
+  {%- endif %}
+
+  <div class="sidebar-section">
+    <img id="sidebar-gif" src="/img/800s/800abstract00001.gif" alt="abstract gray and green image - alarm" class="gif-placeholder" width="150" height="800">
+  </div>
+
+  {%- comment -%} Listening is the terminal element of the middle zone in
+  both sidebars, which is why it sits below the (deferred) blog nav here and
+  below the calendar there rather than belonging to either list. It is also
+  the only element on this page that demonstrates the page is live. Reporter,
+  not navigator (RULED 2026-08-21): no outbound link, here or anywhere.
+  {%- endcomment %}
+  <div class="sidebar-section">
+    <h3>Listening</h3>
+    <div class="music-widget">
+    {%- for t in site.data.lastfm.tracks limit: 5 %}
+      <div class="music-track">
+        <span class="music-track-song">{{ t.name }}</span>
+        <span class="music-track-artist">{{ t.artist }}</span>
+      </div>
+    {%- else %}
+      <p class="music-empty">Nothing scrobbled lately.</p>
+    {%- endfor %}
+    </div>
+  </div>
+</aside>

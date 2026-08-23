@@ -1,0 +1,84 @@
+# _data/taglines.yml -- the rotating taglines, and the single source for them.
+#
+# Michael's header, carried over verbatim from js/taglines.js, where these
+# lived from the mockup until 2026-08-23:
+#
+#     These website taglines offer a rotating selection of precisely
+#     calibrated obscure half-jokes to appear on the sidebar of non-weblog
+#     pages and on the weblog page header. There are probably too many.
+#
+# Moved here to satisfy the build plan's "taglines as data" (Workstream 4)
+# and to close a no-JavaScript defect: the tagline elements shipped empty and
+# were filled at load, so with scripting off the weblog header lost its
+# subject line entirely.
+#
+# js/taglines.js is now generated from this file at build and stays a
+# separate cacheable request rather than being inlined -- one tagline
+# contains `<!--`, which is inert in an external script and would open an
+# HTML comment inside an inline one.
+#
+# Every scalar is double-quoted because these contain colons, quotes, dashes
+# and leading `$` and `.` -- YAML would read several of them as structure.
+
+- "a labor exchange for unwaged reading"
+- "a long-running elaborate hoax"
+- "a manifesto for adhocracy"
+- "architecting the ethics of nonce formations"
+- "automated intake for peer-reviewed snark"
+- "artificially induced precision"
+- "binge-viewing the dramatistic pentad"
+- "black tie at the black site"
+- "calculating the h-index for abandonment rates"
+- "chmod 012 /usr/bin/means_of_production"
+- "$ cite-me --increment-h-index <!--baby one more time"
+- ".config set -o prolix -o pedantic -o obscure"
+- "correlation does not imply grant funding"
+- "debugging and recalibrating the irony detectors"
+- "dialectical materialism as retail therapy"
+- "digging through the rubble of the filter bubble"
+- "dirtier than it sounds"
+- "domain parking for arrays of juxtaposed autoantonyms"
+- "doublethink in tattoo ink"
+- "nuke the cite from orbit: it's the only way to be sure"
+- "employment retraining for ceiling cats"
+- "epistemic paralysis for rhetorical analysis"
+- "error while processing request: trolling"
+- "flattening the indifference curve"
+- "gleefully feeding the memory hole"
+- "glitter in the litterbox"
+- "grep -r 'meaning' /dev/null"
+- "grep -r false_consciousness /lib/ideology/"
+- "hasty radicalizations"
+- "holiday in the stacks"
+- "it's actually probably not on the syllabus"
+- "kryptonite catnip"
+- "like github for ongoing derails"
+- "ln -f metaphysics/method/teleology abort/retry/fail"
+- "long-time poster, first-time reader"
+- "marathon of curious synchronicity"
+- "mercenary interpellations"
+- "nocturnal elisions"
+- "ontology does not recapitulate phenomenology"
+- "pareto optimality for scholarly marginality"
+- "peep show at the rhetorical carnival"
+- "penetration-testing the hermeneutic circle"
+- "substitution curves across incommensurability matrices"
+- "practice precedes condition in terminal aesthetics"
+- "putting on the bad decision pants one leg at a time"
+- "recent commits position history over security"
+- "repeated violations of rule 34"
+- "sed -i '' 's/method of production/production of method/g'"
+- "seder plate for the apocalypse passover"
+- "spacebar liquidation"
+- "speleology for your teleology"
+- "staggeringly equivocal"
+- "standards so high they're practically double"
+- "sudo yolo-mode --enable error: auth token expired"
+- "systemctl status cat_distribution_system: active"
+- "subliminal malapropisms"
+- "the revolution dances on the 2 and the 4"
+- "valde inutilis res est nisi scriptum"
+- "veritatem invenire requirit errores nostros scribere"
+- "virescit in ruinis eruditionis nostrae spes"
+- "you pancake overlords in your tinfoil hats"
+- "you say pleonasmus like it's a bad thing"

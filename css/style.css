@@ -1,0 +1,2109 @@
+/* ===== Mike Edwards Professional and Personal Website ===== */
+   /* Main Stylesheet second revision */
+
+/* ===== SELF-HOSTED FONTS ===== */
+/* Latin subset only — 169KB total for 9 files across 3 families.
+   Crimson Pro: body text (serif). IBM Plex Sans: headings, UI (sans).
+   JetBrains Mono: nav, H1, code (mono). All font-display: swap for
+   fast initial render with system font fallback. */
+
+/* Crimson Pro — Body text */
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('/fonts/CrimsonPro-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('/fonts/CrimsonPro-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('/fonts/CrimsonPro-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('/fonts/CrimsonPro-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* IBM Plex Sans — Headings, UI labels */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* JetBrains Mono — Navigation, H1, code */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== CSS CUSTOM PROPERTIES ===== */
+:root {
+  /* Colors — Warm Charcoal + Emerald test palette */
+  /* PREVIOUS VALUES (revert to these if needed):
+     --color-bg-dark: #2a2a2a;
+     --color-bg-light: #f8f8f8;
+     --color-text-dark: #e0e0e0;
+     --color-text-light: #333333;
+     --color-accent-grey-green: #5a9a7a;
+     --color-accent-bright: #00ff00;
+     --color-border-dark: #555555;
+     --color-border-light: #d0d0d0;
+     --color-muted-grey: #888888;
+     --color-card-dark: #333333;
+     --border: #555555;
+  */
+  --color-bg-dark: #1a1816;
+  --color-bg-light: #ede8e2;
+  --color-text-dark: #ede8e2;
+  --color-text-light: #252220;
+  --color-accent-grey-green: #3a9d6a;
+  --color-accent-bright: #00ff00;
+  --color-border-dark: #3d3833;
+  --color-border-light: #c8c0b6;
+  --color-muted-grey: #9a9389;
+  --color-card-dark: #252220;
+  --border: #3d3833;
+
+  /* Typography */
+  --font-serif: 'Crimson Pro', 'Georgia', 'Caslon', serif;
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Sizing */
+  --sidebar-width: 320px;
+  --max-width: 1200px;
+  --gutter: 24px;
+  --gutter-mobile: 16px;
+  --content-inset: 48px; /* breathing room on left and right edges */
+  --header-padding: calc(var(--gutter) * 1.5); /* 36px - equal top/bottom padding */
+  --tagline-bottom-padding: calc(var(--gutter) * 0.8);
+  --header-height: 120px; /* Approximate height for sticky positioning */
+
+  /* Landing page only. --subhead-lh is a token rather than a number because
+     three things align to it: the gap under the headword, the top of the
+     spine labels, and the top of the gloss box. --subhead-size matches
+     #site-description, which carries this same subject line on every other
+     page. --left-w is the wide layout's left panel share. */
+  --subhead-size: 1rem;
+  --subhead-lh: 1.7rem;
+  --left-w: 46vw;
+}
+
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-serif);
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+  line-height: 1.7;
+  font-size: 1.125rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: var(--color-text-dark);
+}
+
+h1 {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 2.7rem;
+  margin-bottom: 24px;
+  color: var(--color-text-dark);
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: var(--color-accent-grey-green);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-accent-bright);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 2px;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  background-color: var(--color-card-dark);
+  color: var(--color-accent-bright);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 3px solid var(--color-accent-grey-green);
+  padding-left: var(--gutter);
+  margin: var(--gutter) 0;
+}
+
+/* ===== PAGE STRUCTURE ===== */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg-dark);
+}
+
+/* ===== HEADER ANIMATION ===== */
+header {
+  position: fixed;
+  top: 0;  /* Stick to top of viewport */
+  left: 0; right: 0;
+  z-index: 100;  /* Ensure it stays above content */
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+  /* Multiple gradient layers for complexity */
+  background: 
+    /* Layer 1: Main gradient, slower — warm charcoal tones */
+    linear-gradient(113deg,
+      #0f0e0c 0%,
+      #1a1816 15%,
+      #211f1c 35%,
+      #1a1816 52%,
+      #28251f 73%,
+      #1c1a17 87%,
+      #0f0e0c 100%),
+    /* Layer 2: Subtle overlay for depth */
+    linear-gradient(293deg,
+      #0f0e0c80 0%,
+      #00000000 40%,
+      #28251f4d 70%,
+      #00000000 100%);
+  background-size: 251% 100%, 197% 100%;  /* Prime numbers */
+  background-position: 0% 50%, 0% 50%;
+  animation: 
+    gradientDrift 17s ease-in-out infinite,
+    gradientPulse 29s ease-in-out infinite;  /* Prime numbers: 17, 29 */
+  overflow: hidden;
+  will-change: background-position;
+}
+
+/* Noise layer with variable opacity and multi-directional movement */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.08;
+  background: 
+    /* Diagonal noise pattern */
+    repeating-linear-gradient(73deg,  /* Prime angle */
+      transparent,
+      transparent 7px,
+      #ffffff05 7px,  /* rgba(255,255,255,.02) */
+      #ffffff05 11px),  /* Prime widths: 7, 11 */
+    /* Counter-diagonal */
+    repeating-linear-gradient(-61deg,  /* Different prime */
+      transparent,
+      transparent 13px,
+      #0000000a 13px,  /* rgba(0,0,0,.04) */
+      #0000000a 17px),  /* Primes: 13, 17 */
+    /* Horizontal scan lines for glitch effect */
+    repeating-linear-gradient(0deg,
+      transparent,
+      transparent 23px,
+      #ffffff03 23px,  /* rgba(255,255,255,.01) */
+      #ffffff03 24px);
+  animation: 
+    noiseWander 19s linear infinite,  /* Prime: 19 */
+    noiseGlitch 31s steps(10) infinite,  /* Prime: 31 */
+    noiseFade 23s ease-in-out infinite;  /* Prime: 23 */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Additional glitch layer for occasional "interference" */
+header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: 
+    repeating-linear-gradient(90deg,
+      transparent 0,
+      #00ff0003 2px,  /* rgba(0,255,0,.01) - subtle green glitch */
+      transparent 4px,
+      transparent 20px);
+  animation: 
+    glitchPulse 37s ease-in-out infinite;  /* Prime: 37 */
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Main gradient drift - non-linear movement */
+@keyframes gradientDrift {
+  0%, 100% { 
+    background-position: 0% 50%, 0% 50%;
+  }
+  15% { 
+    background-position: 27% 50%, 40% 50%;
+  }
+  30% {
+    background-position: 51% 50%, 20% 50%;
+  }
+  45% {
+    background-position: 82% 50%, 60% 50%;
+  }
+  60% {
+    background-position: 69% 50%, 90% 50%;
+  }
+  75% {
+    background-position: 38% 50%, 70% 50%;
+  }
+  90% {
+    background-position: 14% 50%, 30% 50%;
+  }
+}
+
+/* Secondary gradient pulse */
+@keyframes gradientPulse {
+  0%, 100% {
+    background-size: 251% 100%, 197% 100%;
+  }
+  33% {
+    background-size: 287% 100%, 213% 100%;
+  }
+  66% {
+    background-size: 223% 100%, 181% 100%;
+  }
+}
+
+/* Noise wander - organic movement */
+@keyframes noiseWander {
+  0% { 
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(7px, -5px) scale(1.02);
+  }
+  50% {
+    transform: translate(-11px, 3px) scale(0.98);
+  }
+  75% {
+    transform: translate(5px, 8px) scale(1.01);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Glitchy movement */
+@keyframes noiseGlitch {
+  0%, 100% { 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  11% {
+    clip-path: polygon(0 0, 100% 0, 100% 99%, 0 101%);
+  }
+  22% {
+    clip-path: polygon(0 1%, 100% -1%, 100% 100%, 0 100%);
+  }
+  33% {
+    clip-path: polygon(0 0, 101% 0, 99% 100%, 0 100%);
+  }
+  44% {
+    clip-path: polygon(-1% 0, 100% 0, 100% 101%, 0 99%);
+  }
+  /* Creates subtle distortion */
+}
+
+/* Noise opacity variation */
+@keyframes noiseFade {
+  0%, 100% {
+    opacity: 0.08;
+  }
+  17% {
+    opacity: 0.12;
+  }
+  34% {
+    opacity: 0.05;
+  }
+  51% {
+    opacity: 0.15;  /* Occasional stronger visibility */
+  }
+  68% {
+    opacity: 0.07;
+  }
+  85% {
+    opacity: 0.10;
+  }
+}
+
+/* Occasional green interference */
+@keyframes glitchPulse {
+  0%, 100% {
+    opacity: 0;
+  }
+  7% {  /* Brief flash at 7% */
+    opacity: 0.3;
+  }
+  8% {
+    opacity: 0;
+  }
+  43% {  /* Another at 43% */
+    opacity: 0.2;
+  }
+  44% {
+    opacity: 0;
+  }
+  89% {  /* And 89% */
+    opacity: 0.25;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
+/* ===== HEADER ACCESSIBILITY ===== */
+/* Responsive: Slow everything down on mobile */
+@media (max-width: 768px) {
+  header {
+    animation-duration: 23s, 37s;  /* Slower on mobile */
+  }
+  
+  header::before {
+    animation-duration: 29s, 41s, 31s;
+    opacity: 0.05;  /* Less intense */
+  }
+  
+  header::after {
+    display: none;  /* Remove glitch layer on mobile */
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  header,
+  header::before,
+  header::after {
+    animation: none;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #0f0e0c 0%, #28251f 100%);
+  }
+}
+
+/* ===== HEADER CONTENT LAYOUT ===== */
+.header-content {
+  position: relative;
+  z-index: 10;  /* Above animation layers */
+  max-width: calc(var(--max-width) + var(--sidebar-width) + var(--gutter));
+  margin: 0 auto;
+  padding: var(--header-padding);
+  padding-left: var(--content-inset);
+  padding-right: 0; /* the right edge is the sidebar's; the hex measures from it */
+  /* A row: the title block, then the search hexagon (2026-08-22). The
+     title may wrap; the hexagon never shrinks. */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gutter);
+}
+
+.header-content > div {
+  max-width: 100%;
+  min-width: 0; /* let the title wrap instead of pushing the hex out */
+}
+
+/* ===== HEADER TYPOGRAPHY ===== */
+#site-title {
+  font-size: 2.75rem;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  margin: 0;
+}
+
+#site-title a {
+  text-decoration: none;
+  color: var(--color-text-dark);
+}
+
+#site-title a:hover {
+  color: var(--color-accent-bright);
+}
+
+#site-description,
+header #tagline-text {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-bg-light);
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  transition: opacity 0.35s ease, max-height 0.35s ease, margin 0.35s ease;
+  max-height: 2em;
+  overflow: hidden;
+}
+
+/* ===== COMPACT HEADER ON SCROLL ===== */
+/* Transitions for smooth compression */
+header {
+  transition: padding 0.35s ease;
+}
+
+.header-content {
+  transition: padding 0.35s ease;
+}
+
+#site-title {
+  transition: font-size 0.35s ease, letter-spacing 0.35s ease;
+}
+
+nav:not(.wall) {
+  transition: top 0.35s ease;
+}
+
+/* Compact state: desktop only, triggered by JS on scroll */
+@media (min-width: 768px) {
+  body.header-compact header {
+    padding: 0;
+  }
+
+  body.header-compact .header-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  body.header-compact #site-title {
+    font-size: 1.6rem;
+    letter-spacing: 0.15rem;
+  }
+
+  body.header-compact #site-description,
+  body.header-compact header #tagline-text {
+    opacity: 0;
+    max-height: 0;
+    margin: 0;
+  }
+
+  body.header-compact nav {
+    top: 48px;
+  }
+
+  /* No compact-state size rule for .search-trigger, deliberately. One stood
+     here setting width:22px and height:22px. The width never applied: the
+     button is a flex item of .header-content, and in a row flex container
+     flex-basis (0 0 28px, below) governs the main size, so only the height
+     took -- overriding aspect-ratio:1 and rendering the box 28 x 22. That
+     fails WCAG 2.2 SC 2.5.8's 24px floor on the short axis, in the state a
+     reader reaches by scrolling. Measured 2026-08-23 by
+     browser-verify/verify-contact.py; the declarations alone read as a
+     uniform shrink and hid it. The box is 28px square at every width and in
+     every state; the hexagon moves, it does not deform (Michael 2026-08-22,
+     restated 2026-08-23). Do not re-add a shrink here. */
+}
+
+/* Reduced motion: skip header transition */
+@media (prefers-reduced-motion: reduce) {
+  header,
+  .header-content,
+  #site-title,
+  #site-description,
+  #tagline-text,
+  nav:not(.wall) {
+    transition: none;
+  }
+}
+
+/* ===== HEXAGON SEARCH BUTTON ===== */
+/* Search button container */
+.search-trigger {
+  /* In flow as the last item of the .header-content row (2026-08-22). At
+     full width the right margin centers it over the sidebar: half the
+     sidebar, less half the button. As the window narrows the row carries
+     it left toward the title's right edge; flex-shrink 0 means the title
+     wraps before the hexagon gives up a pixel. */
+  flex: 0 0 28px;
+  width: 28px;
+  aspect-ratio: 1;
+  margin-right: calc(var(--sidebar-width) / 2 - 14px);
+  /* A real <button> since the layouts (2026-08-22): keyboard and assistive
+     tech get it for free, and the UA button box is reset here rather than
+     faked with role= and tabindex= on a div. */
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 20;
+  transition: width 0.35s ease, flex-basis 0.35s ease;
+}
+
+/* Hexagon shape - rotated 90 degrees with points up/down */
+.search-hexagon {
+  display: block; /* a <span> inside the button; inline would drop width/height */
+  width: 88%;
+  height: 100%;
+  background: var(--color-accent-bright);
+  /* Rotated: points at top/bottom, vertical edges aligned */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: hexPulse 8s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+/* Pulse animation between bright green and grey-green */
+@keyframes hexPulse {
+  0%, 100% {
+    background: var(--color-accent-bright);
+    filter: brightness(1);
+  }
+  50% {
+    background: var(--color-accent-grey-green);
+    filter: brightness(0.9);
+  }
+}
+
+/* Hover effect */
+.search-trigger:hover .search-hexagon {
+  transform: scale(1.1);
+  animation-play-state: paused;
+  background: var(--color-accent-bright);
+  filter: brightness(1.2);
+}
+
+/* Below 900 the sidebar is gone, so the margin that centered the hexagon
+   over it becomes an ordinary right gutter. Size never changes: the box is
+   28px square at every width, and 24px is the WCAG 2.5.8 floor it must not
+   cross. The hexagon moves; it does not deform (Michael, 2026-08-22). */
+@media (max-width: 899px) {
+  .search-trigger {
+    margin-right: var(--content-inset);
+  }
+}
+
+/* ===== NAVIGATION =====
+   The site nav bar. Every rule here that selects the bare element is scoped
+   nav:not(.wall), because the landing page's strip wall is also a <nav> --
+   correctly so, it is the site index. Unscoped, the wall inherited
+   position:fixed from the rule below and left the flow; .panel then became
+   .stage's only in-flow flex item and stretched across the viewport, and
+   every .entry collapsed to zero height, all of their children being out of
+   flow so the wall had nothing to take height from. Measured 2026-08-22
+   against the rendered boxes, after the same defect was mistaken for a flex
+   error by reading declarations.
+
+   The exclusion is the narrow repair and a ledger row carries the wider
+   finding: `top: 208px` below is a hard-coded guess at a header height this
+   rule never measures, and a component this specific should carry its own
+   class rather than claim every <nav> on the site. The descendant rules
+   beneath need no exclusion -- each requires a .nav-list or .nav-item that
+   the wall does not contain. */
+nav:not(.wall) {
+  background-color: var(--color-bg-dark);
+  border-bottom: 1px solid var(--color-border-dark);
+  height: auto;
+  position: fixed;
+  top: 208px;  /* Below header */
+  left: 0; right: 0;
+  z-index: 99;
+}
+
+nav .nav-list {
+  list-style: none;
+  display: flex;
+  /* Items size to their labels and then absorb the slack, so each cell
+     runs pipe to pipe and a hover or active highlight fills the whole box
+     rather than hugging the word (Michael, 2026-08-23). The 2026-08-22
+     finding still holds and is why flex-basis stays auto: equal-width cells
+     gave "CV" the width "Presentations" needed. Growing from content adds
+     the same slack to every cell instead, so the widths stay ordered by
+     label length. No justify-content: with the cells filling the bar there
+     is no free space left for it to distribute. */
+  max-width: calc(var(--max-width) + var(--sidebar-width) + var(--gutter));
+  margin: 0 auto;
+  padding: 0 var(--content-inset); /* align cell edges with content margins */
+  height: 48px;
+}
+
+nav .nav-item {
+  flex: 1 1 auto; /* content-sized, then an equal share of the bar's slack */
+  position: relative;
+  text-align: center;
+  height: 48px; /* explicit height matches nav-list */
+}
+
+/* Pipe dividers between nav items — typographic pipes */
+nav .nav-item + .nav-item::before {
+  content: '|';
+  position: absolute;
+  left: -0.5ch;
+  top: 0;
+  height: 48px;
+  line-height: 38px;
+  padding-top: 10px; /* match link text nudge */
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--color-border-dark);
+  pointer-events: none;
+}
+
+nav .nav-item a {
+  color: var(--color-text-dark);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  display: block;
+  height: 48px;
+  line-height: 38px; /* less than height to allow padding nudge */
+  padding: 10px 8px 0 5px; /* top nudge; left 5 + 3px border = right 8 */
+  border-left: 3px solid transparent; /* reserved: see .active and :hover */
+  transition: color 0.2s ease, background-color 0.2s ease,
+              border-left-color 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+nav .nav-item.active a {
+  /* The current page is marked by a rule, not by a hue. Acid green against
+     --color-text-dark measures 1.13:1 -- the two are nearly identical in
+     luminance and differ almost only along the red-green axis, which is the
+     axis Michael cannot see, so on its own the colour marked nothing
+     (measured 2026-08-23, browser-verify/verify-contact.py). The border is
+     the signal; the colour is decoration on top of it. The mobile drawer has
+     carried this same 2px rule all along -- this is the desktop bar catching
+     up, not a new treatment. box-sizing is border-box globally, so the
+     border sits inside the 48px cell and the row does not shift. */
+  border-left-color: var(--color-accent-grey-green);
+  color: var(--color-accent-bright);
+  background-color: rgba(0, 255, 0, 0.04);
+}
+
+nav .nav-item a:hover,
+nav .nav-item a:focus {
+  border-left-color: var(--color-accent-bright);
+  color: var(--color-accent-bright);
+  background-color: rgba(0, 255, 0, 0.06);
+}
+
+/* The Research dropdown is retired (RULED 2026-08-21, Michael): the nav is
+   flat and every item is a leaf. The markup went at the ruling and the
+   JavaScript with it; these rules outlived both and styled a component that
+   had nothing left to render. Removed 2026-08-23. */
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-text-dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger:focus-visible {
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 2px;
+}
+
+/* ===== BREADCRUMBS =====
+   Real breadcrumb trails are retired (RULED 2026-08-22, Michael). Every
+   professional page sits at the site root, so a true trail would read
+   "Index > Scholarship" and stop -- depth one, which the nav's
+   aria-current="page" already announces.
+   This class therefore has exactly ONE consumer: the deliberately false
+   Zork trail hand-authored in 404.md, kept as ornament. It is a live
+   single-use class, not a leftover. Do not reap it.
+   `display: none` struck here 2026-08-22. No replacement rule ships yet:
+   .breadcrumbs-content and .breadcrumb-current carry no declarations
+   anywhere in this sheet, so the trail's visual treatment is unwritten
+   and owed. */
+
+/* ===== 404: THE PLAIN-SPEECH BLOCK =====
+   404.md runs two voices. The main column speaks in the parser's register
+   -- the same Zork idiom the fake breadcrumb above belongs to -- and then
+   breaks into ordinary prose to say what actually happened and where to go
+   next. That break is the page's joke. So this class is not cosmetic:
+   unstyled, the second voice does not merely look plain, it stops being a
+   second voice at all, and the joke has nothing to land against.
+   RULED 2026-08-21 (Michael): indented, IBM Plex Sans, slightly smaller
+   than the body face. */
+.notfound-plain {
+  font-family: var(--font-sans);
+
+  /* Body is 1.125rem Crimson Pro. 1rem here is a step down optically but
+     not numerically-proportional: a sans face set at the same size as a
+     serif reads LARGER, its x-height being taller relative to the em. So
+     matching 1.125rem would make the "smaller" voice look bigger. The
+     optical step is the one the ruling asked for. */
+  font-size: 1rem;
+  line-height: 1.6;
+
+  /* Logical property rather than margin-left: the indent follows writing
+     direction instead of assuming left-to-right. Reuses the layout gutter
+     so the inset agrees with the page's other horizontal rhythm rather
+     than inventing a second measure. */
+  padding-inline-start: var(--gutter);
+}
+
+/* ===== MAIN LAYOUT ===== */
+main {
+  flex: 1;
+  padding-top: 260px; /* account for fixed header + nav, no breadcrumbs */
+  max-width: calc(var(--max-width) + var(--sidebar-width) + var(--gutter));
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: var(--gutter);
+  padding-left: var(--content-inset);
+  padding-right: var(--content-inset); /* match outer spacing against sidebar */
+  position: relative;
+  /* Animated background matching header — warm charcoal tones */
+  background: 
+    linear-gradient(113deg,
+      #0f0e0c 0%,
+      #1a1816 15%,
+      #211f1c 35%,
+      #1a1816 52%,
+      #28251f 73%,
+      #1c1a17 87%,
+      #0f0e0c 100%),
+    linear-gradient(293deg,
+      #0f0e0c80 0%,
+      #00000000 40%,
+      #28251f4d 70%,
+      #00000000 100%);
+  background-size: 251% 100%, 197% 100%;
+  background-position: 0% 50%, 0% 50%;
+  animation: 
+    gradientDrift 17s ease-in-out infinite,
+    gradientPulse 29s ease-in-out infinite;
+}
+
+.main-content h2 {
+  margin-top: 0;
+}
+
+/* ===== SIDEBAR ===== */
+aside {
+  width: var(--sidebar-width);
+  background-color: var(--color-bg-dark);
+  border-left: 1px solid var(--color-border-dark);
+  padding: var(--gutter);
+  padding-top: var(--content-inset); /* match left/right spacing above gif */
+  padding-left: var(--content-inset); /* match body right margin */
+  padding-right: var(--content-inset); /* match outer margin */
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  overflow-y: auto;
+}
+
+.sidebar-section {
+  text-align: left;
+}
+
+.sidebar-section h3 {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidebar-section p,
+.sidebar-section li {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-text-dark);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ===== SIDEBAR WIDGETS (Blog Page - Dark Cards) ===== */
+.sidebar-widget {
+  background-color: var(--color-card-dark);
+  border: 1px solid var(--color-border-dark);
+  border-left: 3px solid var(--color-accent-grey-green);
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.sidebar-widget h3 {
+  color: var(--color-text-dark);
+  font-size: 1rem;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--color-border-dark);
+  padding-bottom: 8px;
+}
+
+.sidebar-widget p {
+  color: var(--color-text-dark);
+  margin: 0 0 12px 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+.sidebar-widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-widget li {
+  margin-bottom: 8px;
+  color: var(--color-text-dark);
+  font-size: 0.875rem;
+}
+
+.sidebar-widget a {
+  color: var(--color-accent-grey-green);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: block;
+  padding: 4px 0;
+}
+
+.sidebar-widget a:hover {
+  color: var(--color-accent-bright);
+  text-decoration: underline;
+}
+
+.sidebar-widget p a {
+  display: inline;
+  white-space: nowrap;
+  color: var(--color-accent-grey-green);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* ===== GIF PLACEHOLDER ===== */
+.gif-placeholder {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--color-border-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-muted-grey);
+  text-align: center;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.gif-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* ===== MUSIC WIDGET ===== */
+.music-widget {
+  background-color: var(--color-card-dark);
+  border: 1px solid var(--color-border-dark);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.music-track {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.music-track-song {
+  font-weight: 500;
+  color: var(--color-accent-grey-green);
+  display: block;
+}
+
+.music-track-artist {
+  font-size: 0.75rem;
+  color: var(--color-muted-grey);
+  display: block;
+}
+
+.music-link {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.music-link a {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+}
+
+/* ===== CALENDAR WIDGET ===== */
+.calendar-widget {
+  background-color: var(--color-card-dark);
+  border: 1px solid var(--color-border-dark);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.calendar-widget h4 {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin: 0 0 8px 0;
+}
+
+.calendar-event {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  color: var(--color-muted-grey);
+  margin-bottom: 6px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.calendar-link {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+}
+
+.calendar-link a {
+  color: var(--color-accent-grey-green);
+}
+
+/* ===== TAGLINE ===== */
+.tagline-box {
+  background-color: var(--color-card-dark);
+  border: 1px dotted var(--color-accent-bright);
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.tagline-box p {
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  font-style: italic;
+  color: var(--color-bg-light);
+  line-height: 1.4;
+  text-wrap: balance;
+  text-align: center;  
+  padding-bottom: var(--tagline-bottom-padding);
+  margin: 0;
+}
+
+#tagline-text,
+p.rotating {
+  font-style: italic;
+  color: var(--color-bg-light);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--color-bg-dark);
+  border-top: 1px solid var(--color-border-dark);
+  padding: var(--gutter);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-muted-grey);
+  text-align: left;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: calc(var(--max-width) + var(--sidebar-width) + var(--gutter));
+  margin: 0 auto;
+  padding-left: var(--content-inset);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gutter);
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left a {
+  color: var(--color-accent-grey-green);
+  text-decoration: none;
+}
+
+.footer-left a:hover {
+  color: var(--color-accent-bright);
+  text-decoration: underline;
+}
+
+/* ===== CONTENT BLOCKS ===== */
+.card {
+  background-color: var(--color-card-dark);
+  border: 1px solid var(--color-border-dark);
+  border-left: 3px solid var(--color-accent-grey-green);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.card h3 {
+  color: var(--color-text-dark);
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--color-text-dark);
+  margin-bottom: 12px;
+}
+
+/* The credit line: the role, venue, dates or citation sitting between an
+   annotated-inventory entry's title and its annotation. Named after
+   .blog-card-meta, which does the structurally identical job under a blog
+   card's title -- but styled against it rather than with it. A blog card's
+   date recedes (0.875rem, muted grey) because the reader came for the post.
+   A credit line advances, because a reader scanning scholarship or service
+   is reading exactly these lines and skipping the prose between them.
+
+   Register, not volume. IBM Plex Sans against the card's Crimson Pro is what
+   marks the line as apparatus rather than argument; a heavier serif would
+   only have been louder. 600 is a real cut on disk
+   (IBMPlexSans-SemiBold.woff2), so nothing is synthesised. Sans reads
+   optically larger than serif at equal size, so 1.05em lands about where a
+   five per cent bump in serif would (RULED 2026-08-23, Michael: bold and
+   slightly larger; the family change is Claude's and is flagged here).
+
+   No `color` here, deliberately. `.card p` already sets it and this rule is
+   more specific than that, so a colour declared here would override the
+   card's everywhere the card's is set. Leaving it out is what keeps the
+   line following the card.
+
+   Marked in the page source with kramdown's {: .card-meta}, not selected as
+   `.card h3 + p`. Measured 2026-08-23 across all ten sources: that adjacency
+   holds on the five inventory pages and fails on about.md and contact.md,
+   whose cards open straight into prose. The line is what varies between
+   pages, so the line is what carries the mark. */
+.card p.card-meta {
+  font-family: var(--font-sans);
+  font-size: 1.05em;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.card a {
+  color: var(--color-accent-grey-green);
+}
+
+.card a:hover {
+  color: var(--color-accent-bright);
+}
+
+/* ===== BLOG CARDS ===== */
+.blog-card {
+  background-color: var(--color-card-dark);
+  border: 1px solid var(--color-border-dark);
+  border-left: 3px solid var(--color-accent-grey-green);
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
+.blog-card h3 {
+  color: var(--color-text-dark);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.blog-card-meta {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-muted-grey);
+  margin-bottom: 12px;
+}
+
+.blog-card p {
+  color: var(--color-text-dark);
+  margin-bottom: 12px;
+}
+
+.blog-card a {
+  color: var(--color-accent-grey-green);
+}
+
+.blog-card a:hover {
+  color: var(--color-accent-bright);
+}
+
+/* ===== RESOURCE LISTS ===== */
+.resource-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resource-list li {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.resource-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.resource-list a {
+  display: block;
+  color: var(--color-accent-grey-green);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.resource-list a:hover {
+  color: var(--color-accent-bright);
+  text-decoration: underline;
+}
+
+.resource-meta {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--color-muted-grey);
+  margin-top: 4px;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;      
+  overflow: hidden;
+  background: var(--color-accent-bright);
+  color: var(--color-bg-dark);
+  padding: 8px;
+  text-decoration: none;
+  z-index: 100; 
+}
+
+.skip-link:focus {
+  /* When focused - fully visible */
+  top: 0;
+  left: 0;
+  clip: auto;      /* Remove clipping */
+  height: auto;    /* Restore size */
+  width: auto;
+  overflow: visible;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  header, nav, aside, footer {
+    display: none;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  /* The chrome is hidden, but main keeps the 260px offset that cleared the
+     fixed header on screen, which prints as roughly 2.7 inches of blank
+     paper above the first line. */
+  main {
+    padding-top: 0;
+  }
+
+  /* .main-content's background is a literal gradient rather than a token, so
+     it does not follow body. */
+  .main-content {
+    background: none;
+  }
+
+  /* Headings and card text resolve --color-text-dark, which is near-white in
+     dark mode. Without these resets the CV prints white on white for a
+     dark-mode reader and correctly for a light-mode one, which makes print
+     output depend on the reader's system appearance. */
+  h1, h2, h3, h4, h5, h6,
+  .card, .card p, .card h3, .card li,
+  .blog-card, .blog-card p, .blog-card h3, .blog-card li {
+    color: black;
+  }
+
+  /* Black on white for structure, per the palette's reservation of black and
+     white for borders and dividers. No new colour is minted here. */
+  .card, .blog-card {
+    background: none;
+    border: 1px solid black;
+    box-shadow: none;
+  }
+
+  a {
+    text-decoration: underline;
+    color: black;
+  }
+}
+
+/* ===== LIST INDENTATION FIXES ===== */
+/* Fix list positioning within content areas */
+.main-content ul,
+.main-content ol,
+.card ul,
+.card ol {
+  margin-left: 2rem;
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Nested lists */
+.main-content ul ul,
+.main-content ol ol,
+.main-content ul ol,
+.main-content ol ul,
+.card ul ul,
+.card ol ol,
+.card ul ol,
+.card ol ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* List items spacing */
+.main-content li,
+.card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ===== ONE-SHOT ANIMATIONS ===== */
+
+/* 1. Nav stagger: items start invisible, fade/slide in */
+.nav-item.stagger-init {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item.stagger-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Also stagger the pipe dividers */
+.nav-item.stagger-init + .nav-item.stagger-init::before {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-item.stagger-in + .nav-item.stagger-in::before {
+  opacity: 1;
+}
+
+/* 2. GIF wake: starts dimmed and desaturated, activates */
+.gif-dormant {
+  filter: brightness(0.3) saturate(0);
+  transition: filter 0.8s ease;
+}
+
+.gif-awake {
+  filter: brightness(1) saturate(1);
+}
+
+/* 3. Emerald line draw: card border animates from 0 to full height */
+.card,
+.blog-card {
+  border-left: 3px solid transparent; /* override default; real border via pseudo-element */
+  position: relative;
+}
+
+.card::before,
+.blog-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 0;
+  background-color: var(--color-accent-grey-green);
+  transition: height 0.5s ease;
+}
+
+.card.line-drawn::before,
+.blog-card.line-drawn::before {
+  height: 100%;
+}
+
+/* Reduced motion: skip all one-shot animations */
+@media (prefers-reduced-motion: reduce) {
+  .nav-item.stagger-init {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .gif-dormant {
+    filter: none;
+    transition: none;
+  }
+
+  .card::before,
+  .blog-card::before {
+    height: 100%;
+    transition: none;
+  }
+}
+
+/* ===== BLOCKQUOTE STYLING ===== */
+blockquote {
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  padding-left: 2rem;
+  border-left: 4px solid var(--color-accent-grey-green);
+  background-color: #3a9d6a0d;  /* emerald at 0.05 opacity */
+  font-size: 0.95rem;
+  line-height: 1.6;
+  position: relative;
+  margin-left: 2rem;
+}
+
+/* ===== CUSTOM "DENT" BLOCK ===== */
+.dent {
+  font-family: 'Crimson Pro', Georgia, serif;
+  line-height: 1.8; /* Body is 1.6, so +0.2 = 1.8 */
+  padding-top: 0.9rem; /* Half line height */
+  padding-bottom: 0.9rem; /* Half line height */
+  padding-left: 2rem;
+  padding-right: 1rem;
+  margin: 1.5rem 0;
+  margin-left: 2rem;
+  position: relative;
+  color: #b5aea6; /* warm muted, dimmer than body text */
+}
+
+/* Add subtle left border for visual indication */
+.dent::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #3a9d6a66;  /* emerald at 0.4 opacity */
+}
+
+/* ===== ENSURE PROPER SPACING IN RESOURCE LISTS ===== */
+.resource-list {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.resource-list li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.resource-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-grey-green);
+  font-weight: 600;
+}
+/* ===== LANDING PAGE =====
+   Harvested from design/working-mockups/index-C-one-dom-two-layouts.html
+   (RULED 2026-08-22, Michael). The mockup deploys nothing and its CSS was
+   written loosely imitating this file; what crosses is the layout machinery,
+   never the vocabulary. Colours, faces and type sizes are this stylesheet's
+   throughout -- where the mockup approximated a value, the site's own value
+   stands. Every selector below was verified absent from both stylesheets
+   before the harvest, so this section collides with nothing above it.
+
+   ONE DOCUMENT, TWO LAYOUTS. Each <a class="entry"> carries name, locator,
+   gloss and strip. Narrow renders them as a book index; wide renders them as
+   a strip wall and throws the gloss into the left panel. Nothing is
+   duplicated, so the reading order is identical at both sizes. Scoped to
+   body.landing, emitted by _layouts/index.html. */
+
+/* ----- Moire ground -----
+   Two line grids 2.5deg apart; their interference is the moire. Fixed and
+   oversized so the drift never exposes an edge. The rgba literals are
+   --color-text-dark and --color-accent-grey-green at low alpha; no colour is
+   minted. Scoped to .landing, or the ground would paint under every page. */
+.landing {
+  position: relative;
+  min-height: 100vh;
+}
+
+.landing::before,
+.landing::after {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.landing::before {
+  background: repeating-linear-gradient(-4.75deg, transparent, transparent 3px,
+    rgba(237, 232, 226, 0.028) 3px, rgba(237, 232, 226, 0.028) 4px);
+  animation: driftA 47s ease-in-out infinite alternate;
+}
+
+.landing::after {
+  background: repeating-linear-gradient(-7.25deg, transparent, transparent 3px,
+    rgba(58, 157, 106, 0.030) 3px, rgba(58, 157, 106, 0.030) 4px);
+  animation: driftB 61s ease-in-out infinite alternate;
+}
+
+@keyframes driftA {
+  from { transform: translate(0, 0); }
+  to   { transform: translate(14px, -9px); }
+}
+
+@keyframes driftB {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to   { transform: translate(-11px, 7px) rotate(0.4deg); }
+}
+
+.stage {
+  position: relative;
+  z-index: 1;
+}
+
+.panel {
+  padding: var(--gutter);
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/* ----- Headword -----
+   Monospace, because the README gives the monospace face navigation and
+   titling; the mockup's serif italic was an approximation. Size is h1's own
+   2.7rem, fluid below it and capped there. Three ghost layers drift behind
+   the live one; they are aria-hidden in the source. */
+.headrow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.headword h1 {
+  position: relative;
+  height: 1.05em;
+  margin-bottom: 0;
+}
+
+/* The headword sits one line-unit down inside its own box (Michael,
+   2026-08-22), closing the air above the subject line the way the header
+   does on every other page. Because .hw is absolutely positioned and the h1
+   keeps its 1.05em height, nothing below moves: the subject line holds its
+   position exactly, and so does --subjects-top, which the spine labels and
+   the gloss box both measure against. Moving the h1 box itself would have
+   dragged all three. */
+.headword .hw {
+  position: absolute;
+  top: var(--subhead-lh);
+  left: 0;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 2.7rem);
+  line-height: 1.05;
+  letter-spacing: 0.25rem;
+}
+
+/* The lead is a span and not an anchor (RULED 2026-08-22, Michael). The
+   link pointed at the page it was already on, and the hover spent the
+   palette's scarcest colour on a null affordance. The element itself stays
+   because .hw above is what positions it: all four layers are absolutely
+   positioned against the h1, which is an empty 1.05em box holding no
+   in-flow text, so a bare text node would fall to the top of that box at
+   the inherited size with no mono face and no shared origin -- and the
+   ghosts' 3-8px translations read as one word with chromatic aberration
+   only while every layer starts from the same point. Moving the h1 box
+   down instead was rejected above, for dragging the subject line and
+   --subjects-top with it. .tagline runs the identical four-layer stack
+   with a span lead; .lead here means the visible layer, never the link. */
+.headword .lead {
+  color: var(--color-text-dark);
+}
+
+.headword .g1 { color: var(--color-accent-grey-green); opacity: 0.30; animation: hg1 19s ease-in-out infinite; }
+.headword .g2 { color: var(--color-accent-bright);     opacity: 0.14; animation: hg2 23s ease-in-out infinite; }
+.headword .g3 { color: var(--color-muted-grey);        opacity: 0.20; animation: hg3 29s ease-in-out infinite; }
+
+@keyframes hg1 { 0%, 100% { transform: translate(-5px, 3px); } 50% { transform: translate(-8px, 1px); } }
+@keyframes hg2 { 0%, 100% { transform: translate(4px, -3px); } 50% { transform: translate(7px, -5px); } }
+@keyframes hg3 { 0%, 100% { transform: translate(2px, 5px); }  50% { transform: translate(-1px, 7px); } }
+
+/* The subject line, which is #site-description's string doing
+   #site-description's job, so it takes #site-description's treatment. One of
+   its line-heights of air above it, down from two (Michael, 2026-08-22),
+   after the headword itself dropped a line-unit into its own box.
+
+   Plus the leading this page does not have. Measured: on every other page
+   #site-title and #site-description sit box-to-box with zero margin between
+   them and STILL read 12.2px apart, because the site h1 runs at
+   line-height 1.3 and half that leading falls below the glyphs. The landing
+   headword runs at 1.05 to keep the ghost layers registered, so it carries
+   only 1.08px of half-lead and the same zero margin reads 6.6px. The term
+   below restores the difference -- half of (1.3 - 1.05) times the h1 step --
+   so the two pages read the same gap while the landing page keeps its
+   tighter line box. A flat 5.6px would have been the same pixels and none
+   of the reason.
+
+   The wide layout's --subjects-top carries this identical term: the subject
+   line's position and the spine labels' alignment to it are one fact and are
+   changed together or not at all. */
+.subjects {
+  margin-top: calc(var(--subhead-lh) + (2.7rem * (1.3 - 1.05) / 2));
+  line-height: var(--subhead-lh);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--subhead-size);
+  color: var(--color-bg-light);
+  margin-bottom: 0;
+}
+
+/* The landing hexagon. The site's search hexagon is a 28px .search-trigger
+   box holding a .search-hexagon at 88% width and 100% height, so the visible
+   shape is 24.64 x 28 -- taller than it is wide. index.md gives .hex no inner
+   span, the clip-path sitting on the button itself, so the proportion is
+   written onto the button here rather than onto a child. A flat 28 square
+   read as a visibly fatter hexagon than every other page's (Michael,
+   2026-08-22). The calc names the relationship rather than restating 24.64,
+   so a change to the 28px box carries here. Target size still clears WCAG
+   2.5.8: 24.64 x 28 against a 24 x 24 floor. */
+.hex {
+  width: calc(28px * 0.88);
+  height: 28px;
+  flex: 0 0 auto;
+  border: 0;
+  padding: 0;
+  /* Centred on the headword's line box rather than ranged to the top of the
+     row (Michael, 2026-08-22). .headrow is align-items: flex-start, so the
+     offset is measured: .hw sits one --subhead-lh down inside the h1, the h1
+     line box is 1.05em of the site's 2.7rem h1, and half the hexagon's own
+     28px height comes back off. Written as the derivation rather than as
+     35.88px so a change to the h1 step or to the line-unit carries here.
+     Horizontal placement is untouched -- the hexagon and the bug below it
+     are both flex-end children of .panel and stay on one right edge. */
+  margin-top: calc(var(--subhead-lh) + (1.35rem * 1.05) - 14px);
+  cursor: pointer;
+  background: var(--color-accent-bright);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  animation: hexPulse 8s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+.hex:hover,
+.hex:focus-visible {
+  background: var(--color-accent-bright);
+  filter: brightness(1.2);
+  animation-play-state: paused;
+  transform: scale(1.1);
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 4px;
+}
+
+/* ----- Narrow layout: the book index -----
+   Mobile-first per the genre card: this is the base and the wall is the
+   enhancement. No strips are declared here, so a phone never fetches one. */
+.wall {
+  list-style: none;
+  margin-top: 2.25rem;
+  display: block;
+}
+
+.entry {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: var(--color-text-dark);
+  transition: border-color 0.25s ease;
+}
+
+.entry + .entry { margin-top: 0.2rem; }
+
+.strip { display: none; }
+
+.name {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.leader {
+  flex: 1 1 auto;
+  border-bottom: 1px dotted var(--color-border-dark);
+  transform: translateY(-0.3em);
+  transition: border-bottom 0.25s ease;
+}
+
+/* display:contents dissolves the wrapper so locator and gloss become direct
+   flex children of the row. At wide the same wrapper becomes a positioned
+   box, which is why the gloss can live in one place in the DOM only. */
+.detail { display: contents; }
+
+.locator {
+  flex: 0 0 auto;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-muted-grey);
+  white-space: nowrap;
+}
+
+.gloss {
+  flex: 1 0 100%;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--color-muted-grey);
+}
+
+/* The hovered row gains a visible box, not merely a hue: the border goes
+   from transparent to drawn, so the state reads without colour vision. The
+   site's a:focus-visible outline is left in place rather than suppressed. */
+.entry:hover,
+.entry:focus-visible { border-color: var(--color-accent-grey-green); }
+.entry:hover .name,
+.entry:focus-visible .name { color: var(--color-accent-bright); }
+.entry:hover .leader { border-bottom: 2px dotted var(--color-accent-grey-green); }
+.entry:hover .gloss,
+.entry:focus-visible .gloss { color: var(--color-text-dark); }
+
+/* ----- Foot, shared by both layouts ----- */
+.signoff {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-dark);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-muted-grey);
+  display: flex;
+  flex-wrap: wrap;
+  /* Apparatus, not prose: the body's 1.7 leading plus a 0.4rem row gap set
+     these four rows 30px apart, which reads as double-spaced on a page whose
+     whole conceit is an index (Michael, 2026-08-22). 1.4 with no row gap is
+     the leading of a colophon or a masthead. The block is anchored to the
+     panel's bottom by justify-content: space-between, so tightening pulls
+     the rule DOWN toward the tagline rather than lifting the tagline; the
+     cluster's bottom edge does not move. */
+  line-height: 1.4;
+  gap: 0 2rem;
+  margin-bottom: 0;
+}
+
+/* The mockup set these labels in --mid, which is about 1.6:1 on the page
+   ground and fails WCAG 1.4.3 outright. Muted grey is the site's quiet text
+   colour and clears AA; the label reads as quiet by size and face, not by
+   being nearly invisible. */
+.signoff .k {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--color-muted-grey);
+  margin-right: 0.4em;
+}
+
+.signoff a {
+  color: var(--color-muted-grey);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.signoff a:hover,
+.signoff a:focus-visible { color: var(--color-accent-bright); }
+
+/* A full-basis item in a wrapping flex row takes a line to itself and pushes
+   what follows onto the next -- no <br>, no second container. */
+.signoff .own-line { flex: 0 0 100%; }
+
+.foot {
+  margin-top: 3.25rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.tagline {
+  position: relative;
+  height: 2.6em;
+  flex: 1 1 auto;
+  margin-bottom: 0;
+}
+
+/* The rotating tagline takes the subject line's size, so the two read as one
+   register at opposite ends of the panel (Michael, 2026-08-22). The token
+   rather than a repeated number, so they cannot drift apart. Landing page
+   only: every other page renders its tagline through a different component
+   at its own size, which this selector does not reach. */
+.tagline span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--subhead-size);
+}
+
+.tagline .lead { color: var(--color-bg-light); }
+.tagline .g1 { color: var(--color-accent-grey-green); opacity: 0.32; animation: tg1 19s ease-in-out infinite; }
+.tagline .g2 { color: var(--color-accent-bright);     opacity: 0.16; animation: tg2 23s ease-in-out infinite; }
+.tagline .g3 { color: var(--color-muted-grey);        opacity: 0.24; animation: tg3 29s ease-in-out infinite; }
+
+@keyframes tg1 { 0%, 100% { transform: translate(-3px, 2px); } 50% { transform: translate(-5px, 0); } }
+@keyframes tg2 { 0%, 100% { transform: translate(2px, -2px); } 50% { transform: translate(4px, -3px); } }
+@keyframes tg3 { 0%, 100% { transform: translate(1px, 3px); }  50% { transform: translate(-1px, 4px); } }
+
+/* The bug is 5x11, not square: height drives, width follows, and 22px is
+   2x11 so the strokes land on whole pixels. Inverting these was obliged by
+   the swap -- width:24px on a 5:11 mark renders it 24x53. */
+.bug {
+  height: 22px;
+  width: auto;
+  opacity: 0.85;
+  flex: 0 0 auto;
+}
+
+/* ----- Wide layout: the strip wall -----
+   Gated on width AND height AND pointer: vertical labels need vertical room,
+   a short laptop window is not a large viewport just because it is wide, and
+   the wall's whole interaction model presumes a hover -- so a tablet in
+   landscape takes the index, which prints its glosses instead of waiting for
+   one. This query is duplicated in _layouts/index.html's noscript block and
+   as WIDE in main.js; a container query cannot express the height or pointer
+   terms, so the three copies stand and are named rather than hidden. */
+@media (min-width: 900px) and (min-height: 520px) and (hover: hover) {
+
+  :root {
+    /* Fixed rather than fluid here, because two other things measure against
+       it and a clamp() that moves with the viewport cannot be measured. */
+    --hw-size: 2.7rem;
+    --subjects-top: calc(var(--gutter) + (var(--hw-size) * 1.05) + var(--subhead-lh) + (var(--hw-size) * (1.3 - 1.05) / 2));
+  }
+
+  .headword .hw { font-size: var(--hw-size); }
+
+  .landing {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .stage {
+    display: flex;
+    height: 100vh;
+  }
+
+  .panel {
+    flex: 1 1 var(--left-w);
+    max-width: none;
+    margin: 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .headrow { padding-top: 0; }
+  .signoff { margin-top: 0; }
+  /* The tagline and the bug lift off the bottom edge, and close up toward
+     the sign-off above them (Michael, 2026-08-22). The two numbers are one
+     move: .panel is a space-between column, so its lower block is anchored
+     to the bottom and any height the block gains pushes the sign-off UP.
+     Holding the sign-off still therefore means margin-top gives up exactly
+     what padding-bottom takes -- 2.25rem, about 1.5 of the tagline's own
+     ~25.5px line box (0.9375rem at the body's 1.7). Change one and the
+     sign-off moves. */
+  .foot { padding-bottom: 2.25rem; margin-top: 0.5rem; }
+
+  .wall {
+    flex: 1 1 calc(100vw - var(--left-w));
+    display: flex;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .entry {
+    flex: 1 1 0;
+    min-width: 0;
+    display: block;
+    padding: 0;
+    border: 0;
+    border-left: 1px solid var(--color-border-dark);
+    overflow: hidden;
+    transition: flex-grow 0.35s ease, border-color 0.25s ease;
+  }
+
+  .entry + .entry { margin-top: 0; }
+
+  /* The strip is a child element, not a filter on the link: a filter creates
+     a containing block for fixed-position descendants, which would trap
+     .detail inside the bar. Keeping it here lets the gloss escape. */
+  .strip {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.32) saturate(0);
+    opacity: 0;
+    transition: opacity 0.6s ease, filter 0.5s ease;
+  }
+
+  .landing.strips-lit .strip { opacity: 1; }
+
+  .entry:hover .strip,
+  .entry:focus-visible .strip { filter: brightness(1) saturate(1); }
+
+  /* Width is the primary hover signal: the hovered spine grows and displaces
+     its neighbours, so no state depends on distinguishing a hue. */
+  .entry:hover,
+  .entry:focus-visible {
+    flex-grow: 1.9;
+    border-color: var(--color-accent-bright);
+  }
+
+  /* An outline rather than an inset box-shadow: forced-colors mode removes a
+     box-shadow outright and would leave a keyboard reader with no indicator,
+     while an outline survives and takes a system colour. */
+  .entry:focus-visible {
+    outline: 2px solid var(--color-accent-bright);
+    outline-offset: -2px;
+  }
+
+  /* Vertical labels. writing-mode reflows properly and stays in the
+     accessibility tree; transform:rotate() would rotate a horizontal box.
+     It also turns the flex main axis vertical, so justify-content ranges the
+     label to the top and padding-top drops it onto the subject line. */
+  .name {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: var(--subjects-top);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    text-transform: uppercase;
+    /* Raised from 1rem for legibility (Michael, 2026-08-22), then lowered
+       again the same day: 1.25rem read as shouty. 1.125rem is the site's
+       body step and the nearest scale value to the wanted +10%, landing at
+       +12.5% rather than beside the scale at 1.1rem. */
+    font-size: 1.125rem;
+    letter-spacing: 0.12em;
+    color: var(--color-accent-grey-green);
+    text-shadow: 0 0 8px rgba(26, 24, 22, 0.9);
+    transition: color 0.35s ease, text-shadow 0.35s ease;
+  }
+
+  .entry:hover .name,
+  .entry:focus-visible .name {
+    color: var(--color-text-dark);
+    text-shadow: 0 0 14px rgba(26, 24, 22, 0.98), 0 0 5px rgba(26, 24, 22, 1);
+  }
+
+  .leader { display: none; }
+
+  /* The detail box leaves the bar and lands in the left panel. Fixed, so it
+     is positioned against the viewport rather than against the bar it
+     belongs to -- a measurement rather than a relationship, and the one
+     brittle join here. CSS anchor positioning retires it. */
+  .detail {
+    display: block;
+    position: fixed;
+    left: var(--gutter);
+    /* Dropped from four line-units to six (Michael, 2026-08-22), which is
+       +54.4px -- the wanted ~50px, taken as a multiple of --subhead-lh so
+       the box stays on the same line rhythm the spine labels align to
+       rather than landing 50px off it. Raised from six units to seven when
+       --subjects-top lost one: the gloss box is positioned from that token,
+       so the two multipliers must sum to a constant or the box drifts every
+       time the subject line moves. Consequence of that edit, not a second
+       decision. */
+    top: calc(var(--subjects-top) + (var(--subhead-lh) * 7));
+    width: calc(var(--left-w) - (var(--gutter) * 2));
+    opacity: 0;
+    transition: opacity 0.28s ease;
+    pointer-events: none;
+  }
+
+  .entry:hover .detail,
+  .entry:focus-visible .detail { opacity: 1; }
+
+  .locator {
+    display: block;
+    margin-bottom: 0.45rem;
+    letter-spacing: 0.05em;
+  }
+
+  /* Serif italic at both sizes (Michael, 2026-08-21): the gloss reads as an
+     index annotation whether printed on the page or thrown by a hover. What
+     distinguishes the wide gloss is the bright headword above it, not a
+     change of face. */
+  .gloss {
+    display: block;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.55;
+    color: var(--color-text-dark);
+  }
+
+  /* The bright title without a second copy of the name in the DOM. The name
+     lives once, in .name; this prints it again from an attribute using the
+     generated-content alt syntax -- attr(data-k) / "" -- whose empty
+     alternative stops assistive technology announcing the link name twice.
+     Where the alt syntax is unsupported the text still renders and is merely
+     read twice, which is the safe direction to fail. Acid obeys the scarcity
+     rule here: .detail is opacity:0 until hover or focus, so the colour only
+     ever appears as an interaction state. */
+  .detail::before {
+    content: attr(data-k) / "";
+    display: block;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--color-accent-bright);
+    margin-bottom: 0.25rem;
+  }
+
+  /* The tagline sits in the same slot and gets out of the way when a strip
+     claims it. :has() lets the wall address the panel beside it. */
+  .tagline {
+    height: 4rem;
+    transition: opacity 0.28s ease;
+  }
+
+  .stage:has(.entry:is(:hover, :focus-visible)) .tagline { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing::before,
+  .landing::after,
+  .headword .hw,
+  .hex,
+  .tagline span { animation: none; }
+  .entry,
+  .strip,
+  .detail,
+  .tagline { transition: none; }
+}

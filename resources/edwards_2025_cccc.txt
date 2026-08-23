@@ -1,0 +1,72 @@
+Re-reading the Limits of Linguistic Abstraction
+April 12, 2025
+CCCC
+Baltimore, MD
+
+Mike Edwards
+Associate Professor
+Washington State University
+mike.edwards@wsu.edu
+https://preterite.net/
+
+1. Abstraction
+
+Here's a picture of a sculpture by Judith Ann Scott from the American Visionary Art Museum, just down the street here in Baltimore. I'll ask you to put yourself in the shoes of a first year writing student: how would you describe this?
+
+[img]
+
+Here's what Google's LLM-powered describe.picture site says: "The picture shows a colorful, textured object that appears to be a dense cluster of various materials bound together with white threads or strings. The object has an organic shape and displays a range of colors including yellows, greens, blues, and reds peeking through the binding. The background is a solid, neutral gray."
+
+2. Teaching AI
+
+When I proposed my contribution to this panel, I was working on assignments incorporating LLMs into the writing process for an "AI-intensive" writing course. One assignment asked students to compare their own descriptions of visual texts with LLM-generated descriptions. LLMs rely on group knowledge, so they'll often produce lowest-common-denominator prose, or what we might call "cliché": when you give LLMs names of things in the world, they give you the consensual representation of the world. I decided to work with abstraction because abstraction resists the cliches of representation. 
+
+One step I saw was then to ask students to assess how effectively LLMs and their corresponding image-generating GANs could visually represent abstract texts, to get a sense of what the machines were picking up on in the prose. Here are some examples.
+
+[img]
+
+These comparisons illustrated some precepts about GAI that I think are fairly common knowledge now: to put it in composition's terms, LLMs tend to do better with what James Britton and James Kinneavy have called "descriptive" and "transactional" writing—writing that represents the world or writing that gets things done—and LLMs tend to do much worse with "expressive" and "poetic" writing—writing that's close to the self or that calls attention to its own form.  The first-year writing syllabus I worked these assignments into also experimented with assignments similar to the ones offered on the MLA/CCCC task force website, especially those by Paul Fyfe, Jill Walker Rettberg, Mark Marino, and Jentery Sayers. My goal was to produce an "AI-intensive" FYC course to teach this past fall.
+
+3. Policing AI
+
+However, my plans ran into administrative obstacles, particularly the problems with WSU's AI policies, and the challenges of reducing the possibility of what the administration called "AI cheating." Additionally, I'd just been through the process of orienting our FYC staff syllabus to ensure that all student assignments aligned with four sets of outcomes: from our Writing Program, English Department, University UCORE curriculum, and the WPA Outcomes Statement. The net result for me was an expectation from above that I teach a more "AI-proof" course.
+
+The other challenge in developing the "AI-intensive" course I had originally formulated was that if I taught First-Year Composition in the ways recommended by the MLA/CCCC task force, it would have become an "AI-only course" and crowded out the assignments I know lead to good writing. The MLA/CCCC task force has published necessary outcomes for learning with AI that include 7 major bullet points and 28 sub-points for outcomes learning with AI—a page and a half, single-spaced, of learning outcomes. The WPA Outcomes Statement for composition has 5 major bullet points and 22 sub-points—so the task force is advocating for increasing the work of first-year composition teachers. One member of the task force, Anna Mills, argues that "some form of accountability is still needed" in writing with AI, while another task force member, Leonardo Flores, names such arguments as a variety of "what Jeffrey Moro called 'cop shit,' which he defined as 'any pedagogical technique or technology that presumes an adversarial relationship between students and teachers" (2020).
+
+4. Butts-in-seats writing
+
+So I tried to design a first-year writing course that would not rely on enforcement technologies. For a 15-week 3-credit course that met twice a week for 75 minutes, I put together a 30-lesson 4-assignment syllabus where almost all of the writing is performed in class. I relegated all readings and some of my writing guidance to homework, and each class follows a structure of 1. staging (instructions and context for the task), 2. at least 50 minutes of writing, and 3. assessing (reflective discussion and writing). Each day's writing prompt and each assignment's writing prompt follows the structure of A. Context, B. Task, C. Standards, and D. Guidance. The assignments are as follows:
+
+1. Definitional narrative. Choose two terms from a list of keywords that define your interests in this class and beyond. Write an essay that integrates narrative from your experience and quotations from the extended keyword definitions to explain why these terms are important to you as a writer.
+2. Rhetorical analysis.  Use library research to find two additional sources that expand and complicate your definitions and experience. Write an essay that integrates quotations from your original and new sources, as well as personal experience, to analyze the rhetoric surrounding your critical terms.
+3. Reader response annotated bibliography: Use the conclusion of Essay 2 to draft a research question that's important to you and to other specific groups of people. Compose an annotated bibliography that incorporates your research question and your personal exigency for engaging it.
+4. Documented argument: Your annotated bibliography from Essay 3 will form the rough draft of the Research review section of an IMRAD-formatted research essay that documents the various perspectives on your research question and makes a case for your position and individual expertise.
+
+Such a class yields 25 hours of in-class writing—an average of about 23,000 words per student—and the requirement that students trace the importance, connections, and different manifestations of keywords important to them throughout the semester resulted in them being reluctant to plagiarize: this follows Donald Murray's and Peter Elbow's dictum that student writing must be on topics of interest to the student. Some may critique this as expressivism, borrowing James Berlin's critique. I think Berlin's critiques of expressivism and cognitive process psychology are mistaken—he's an outstanding historian, but his landscaping of various philosophical approaches to composition has been largely oversimplifying and pernicious. Some of the ultimate extensions of Berlin's critiques approach a Skinnerian approach to composition, or what one theorist in the 1970s referred to as a "rodential" approach to pedagogy overly focused on "inputs and outputs" to the composing process, treating students as what Frank Pasquale has more recently referred to as "black boxes." So yes, in a way, my response to the challenges of AI writing has been to turn toward expressivism: AI is less able to credibly imitate writing that is close to the self.
+
+5. Throwback pedagogies
+
+That response relies in part on Mariolina Salvatori's critique that "not all theories of reading are suited to uncovering and enacting the interconnectedness of reading and writing," especially not "those that construct writers as visionary shapers of meanings," or "theories that construct as mysterious and magical complicated processes of thinking on which writing imposes provisional order and stability," because they "cover over the processes by which knowledge and understanding are produced" and "simultaneously glorify reading and proclaim its unteachability." I think assignments that employ Salvatori's complex reader-oriented  pedagogy, when employed with LLMs or GANs, offer new approaches for teaching the interconnectedness of reading and writing that open up possibilities for authorial reflection. I believe that our current worries about AI reveal a problematic turn away from what Victor Villanueva has called "the given in our conversations," the process orientation toward the student in the act of writing.
+
+The other challenge with my "AI-intensive" course was that AI is not monolithic. The huggingface.co online AI community now has over one and a half million models one can select from. One of the experiments I've run has been to demonstrate classroom "cheating" by running the same academic writing prompt through a variety of models.
+
+[img]
+
+This is a variation of an exercise called "beat the digital grader" that Doug Hesse proposed 20 years ago in his CCCC keynote address, wherein he imagined a seamless cycle of digital prose generators coupled to automated essay scorers, or the danger of Peter Elbow's "writing without teachers" becoming an automated form of "writing without students."
+
+6. Pedagogies before technologies
+
+If it's not obvious already, part of my critique here is that our field's response to AI still focuses far too much on AI as technological object that determines the interactions around it, rather than focusing on students and their writing. As Mariolina Salvatori has pointed out, composition scholarship in recent years has seen an erasure of the writing student. I believe instructors who study AI-related pedagogies should know how they work—I've seen too few presentations here that dive deeply into technical analyses of stochastic gradient descent and the challenges of backpropagation—but I also believe the deep technical knowledge of LLMs covered by scholars like Steven Wolfram and Grant Sanderson is inadequately represented in our largely humanistic research. In addition to a more coherent theory of technology, I believe we require a more careful and nuanced understanding of the reading and writing student.
+
+Our responses to AI in the composition classroom will certainly depend partly upon the technology—but they will depend much more upon our pedagogical assumptions.
+
+Do we teach genre characteristics in student writing, and thereby reify texts as fixed objects?
+Do we teach the correctness or incorrectness of AI writing, and thereby allow our worries about so-called "hallucinations" turn us into current-traditionalists?
+Do we teach James Berlin's social-epistemic view of writing as generalized statements about the world that—as Peter Elbow's "Pedagogy of the Bamboozled" suggests—have largely been turned into easily reproduced commodified criticism?
+Do we teach a form of composition that focuses on the intellectual labor of the student writer writing, and asks the student to connect individual experience to broader abstract concepts? 
+
+7. The material conditions of writing
+
+The biggest obstacle to answering these questions is the time limitation presented by the 3-credit 15-week writing course: in one semester, I have 37 and a half hours of class time to help students as much as I can. My experiments have demonstrated to me that there's only so much I can do, and there's a lot of stuff that's really important to me that needs to fall away from first-year composition. At WSU, I also teach a 200-level course on "information structures" where I focus on research, reading, and writing workflows. With the concerns about time and workload I've noted above, my "information structures" course teaches research productivity by asking students to test and build digital workflows with technologies like Markdown, Personal Knowledge Management apps, and various research automation tools. For that course, we experiment a lot more with tools and critical engagements with technology—for example, I recently used guidance from the Claude 3.7 Sonnet model to get a local instance of Llama 13B running on an old 2019 iMac, and I'm teaching myself to tune it on digital rhetoric scholarship.
+
+I think first-year composition needs to recognize when we're trying to do more than we're able and trained for, and to split our first-year courses into two course—one aimed at the type of critical literacies and reading practices proposed by Mariolina Salvatori and the MLA/CCCC task force, and one aimed at the production of writing according to the principles proposed by Peter Elbow, Charlie Moran, David Bartholomae, and Donald Murray. I'll conclude here with the same two quotations from avant-garde poet Charles Bernstein that I concluded with last year. I want student writing that, in Bernstein's words, "courts contradiction, feeds on inconsistency. The political value of writing resides in the concreteness of the experiences it makes available. [W]riting has always had [the power] to make experience palpable not by simply pointing to it but by (re)creating its conditions." Such writing depends upon us imagining, with our students, "that words have a life of their own, radio-controlled by an automatic pilot called history… To understand language as artificial intelligence is to conceptualize writing as a kind of psychic surgery… The poem sounds as music the marks of its continual newness in being made; and the only mark of its past, of its having been made, is the blood on the cutting room floor."

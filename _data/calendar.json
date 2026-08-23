@@ -1,0 +1,5 @@
+{
+  "_comment": "Last-known-good, committed so the build never waits on a fetch. The workflow overwrites this on its 24-hour cycle (RULED 2026-08-18). Schema is the contract stated in _includes/sidebar.html.",
+  "fetched": null,
+  "events": []
+}

@@ -1,0 +1,39 @@
+---
+# _layouts/page.html -- the eight professional pages: scholarship,
+# presentations, projects, teaching, service, contact, about, and any
+# later page of type: page. The layout owns the chrome; the source owns
+# the main region's content, which Jekyll has already rendered from
+# Markdown by the time {{ content }} is reached. No breadcrumb: real
+# trails are retired (RULED 2026-08-22, Michael). Every page this layout
+# dresses sits at the site root, so a trail would read "Index >
+# Scholarship" and stop, which the nav's aria-current already says. The
+# 404 keeps a fake one as ornament and authors it in its own source; no
+# layout emits one. See site-design-spec.md, Breadcrumbs.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <div class="page-wrapper">
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    {% include header.html %}
+
+    <main id="main">
+      <div class="main-content">
+        {{ content }}
+      </div>
+
+      {% include sidebar.html %}
+    </main>
+
+    {% include footer.html %}
+  </div>{%- comment -%} closes .page-wrapper, opened above in this same file
+  -- an include must not close what its caller opened, or every future
+  layout silently inherits the obligation to open it {%- endcomment %}
+
+  {% include scripts.html %}
+</body>
+</html>
