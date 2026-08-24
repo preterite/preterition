@@ -90,7 +90,6 @@
      --color-border-light: #d0d0d0;
      --color-muted-grey: #888888;
      --color-card-dark: #333333;
-     --border: #555555;
   */
   --color-bg-dark: #1a1816;
   --color-bg-light: #ede8e2;
@@ -102,7 +101,14 @@
   --color-border-light: #c8c0b6;
   --color-muted-grey: #9a9389;
   --color-card-dark: #252220;
-  --border: #3d3833;
+
+  /* --border was struck 2026-08-23. It held #3d3833 -- the same value as
+     --color-border-dark, declared in the same block -- and had exactly one
+     consumer, the header's bottom rule, which now names the real token. Two
+     names for one value is a rename that stopped halfway, and the cost is not
+     duplication: it is that the next author reads them as two decisions and
+     has no way to tell which border a new rule should take. Not to be
+     reintroduced; the mid-tone has one name. */
 
   /* Typography */
   --font-serif: 'Crimson Pro', 'Georgia', 'Caslon', serif;
@@ -118,6 +124,23 @@
   --header-padding: calc(var(--gutter) * 1.5); /* 36px - equal top/bottom padding */
   --tagline-bottom-padding: calc(var(--gutter) * 0.8);
   --header-height: 120px; /* Approximate height for sticky positioning */
+
+  /* What `main` adds above itself to clear the fixed header. A literal on
+     `main` until 2026-08-23, moved here because a second element needs the
+     same number: the 404's trail sits ABOVE `main` and so sits outside
+     that padding. One declaration, two consumers. The value is measured
+     and not derived -- the resting header runs y=0 to y=256 at 1400
+     (harness, 2026-08-23) -- so it drifts if header padding or title size
+     changes, which is what the standing constant-derivation row is for. */
+  --header-clearance: 260px;
+
+  /* The nav band's internal top nudge: what holds its labels off the top
+     edge of the 48px bar. Three consumers had it as a literal 10px -- the
+     link padding, the pipe divider that comments "match link text nudge",
+     and now the 404's trail, which uses it top and bottom so its text sits
+     in its band the way the nav's labels sit in theirs. Tokenized
+     2026-08-23; no value changed. */
+  --nav-nudge: 10px;
 
   /* Landing page only. --subhead-lh is a token rather than a number because
      three things align to it: the gap under the headword, the top of the
@@ -234,7 +257,7 @@ header {
   left: 0; right: 0;
   z-index: 100;  /* Ensure it stays above content */
   padding: 2rem 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--color-border-dark);
   /* Multiple gradient layers for complexity */
   background: 
     /* Layer 1: Main gradient, slower — warm charcoal tones */
@@ -700,7 +723,14 @@ nav .nav-list {
      is no free space left for it to distribute. */
   max-width: calc(var(--max-width) + var(--sidebar-width) + var(--gutter));
   margin: 0 auto;
-  padding: 0 var(--content-inset); /* align cell edges with content margins */
+  /* Align cell edges with content margins. The value here is the desktop
+     one only: `.main-content` reaches the same 48 by a `padding-left`
+     longhand, and the tablet block's `padding` shorthand overwrites that
+     longhand, so responsive.css re-declares this padding in terms of
+     `--gutter` to keep the two edges together below 900 (RULED 2026-08-23,
+     Michael). Changing this declaration alone moves the bar out from under
+     the column at desktop widths and nowhere else. */
+  padding: 0 var(--content-inset);
   height: 48px;
 }
 
@@ -719,7 +749,7 @@ nav .nav-item + .nav-item::before {
   top: 0;
   height: 48px;
   line-height: 38px;
-  padding-top: 10px; /* match link text nudge */
+  padding-top: var(--nav-nudge);
   font-family: var(--font-sans);
   font-size: 1.05rem;
   color: var(--color-border-dark);
@@ -734,7 +764,7 @@ nav .nav-item a {
   display: block;
   height: 48px;
   line-height: 38px; /* less than height to allow padding nudge */
-  padding: 10px 8px 0 5px; /* top nudge; left 5 + 3px border = right 8 */
+  padding: var(--nav-nudge) 8px 0 5px; /* left 5 + 3px border = right 8 */
   border-left: 3px solid transparent; /* reserved: see .active and :hover */
   transition: color 0.2s ease, background-color 0.2s ease,
               border-left-color 0.2s ease;
@@ -792,10 +822,57 @@ nav .nav-item a:focus {
    This class therefore has exactly ONE consumer: the deliberately false
    Zork trail hand-authored in 404.md, kept as ornament. It is a live
    single-use class, not a leftover. Do not reap it.
-   `display: none` struck here 2026-08-22. No replacement rule ships yet:
-   .breadcrumbs-content and .breadcrumb-current carry no declarations
-   anywhere in this sheet, so the trail's visual treatment is unwritten
-   and owed. */
+   `display: none` struck here 2026-08-22. The treatment below is ported
+   from the weblog's own old trail -- Breadcrumb NavXT under the ample-pro
+   theme, `style.css` §12.1 in `preterite dot net archive older/` -- which
+   set the trail small, in the interface voice, one colour throughout, and
+   left the current item undifferentiated. Nothing here links and nothing
+   here carries state, so `.breadcrumb-current` takes no rule: the span is
+   in the markup for the joke's sake and needs no visual mark. */
+.breadcrumbs {
+  padding: var(--gutter) var(--content-inset) var(--nav-nudge);
+
+  /* A hairline below closes the band, answering the nav's own bottom
+     border above it (RULED 2026-08-23, Michael): two rules are what make
+     the trail read as chrome seated under the nav rather than as the
+     panel's first line. Same token as the nav's border, so the two cannot
+     drift apart -- note that token is #3d3833, a warm dark grey and not a
+     green; matching the line above is what it is doing. */
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+/* The header is `position: fixed` above the phone breakpoint, so it is out
+   of flow and the trail -- the first in-flow block on the only page that
+   carries one -- painted beneath it: measured 2026-08-23 at y=0 against a
+   header occupying 0 to 256, invisible at 1400, 1000 and 800 alike. The
+   treatment written the day before had never been seen by a reader.
+   RULED 2026-08-23 (Michael): the trail stays outside the panel, above
+   `main`, because the joke only lands if it looks like site furniture.
+   So the clearance moves rather than the trail: `.has-trail` gives it to
+   the trail and takes it off `main`, which keeps the two from stacking.
+   `_layouts/404.html` is the only place the class is set. */
+body.has-trail .breadcrumbs {
+  /* Clearance plus the band's own nudge, so the text sits --nav-nudge
+     below the nav's rule and --nav-nudge above its own. The band is
+     symmetric by construction rather than by a measured pair. */
+  padding-top: calc(var(--header-clearance) + var(--nav-nudge));
+}
+
+body.has-trail main {
+  padding-top: 0;
+}
+
+.breadcrumbs-content {
+  /* Interface voice, not the reading voice. The block beneath it is the
+     parser speaking in Crimson Pro; setting the trail in the sans is what
+     makes the two read as different registers rather than one paragraph. */
+  font-family: var(--font-sans);
+
+  /* The archive trail was 14px against a 16px base. 0.875rem is that
+     ratio, held as a ratio so it follows a root-size change. */
+  font-size: 0.875rem;
+  color: var(--color-muted-grey);
+}
 
 /* ===== 404: THE PLAIN-SPEECH BLOCK =====
    404.md runs two voices. The main column speaks in the parser's register
@@ -827,7 +904,9 @@ nav .nav-item a:focus {
 /* ===== MAIN LAYOUT ===== */
 main {
   flex: 1;
-  padding-top: 260px; /* account for fixed header + nav, no breadcrumbs */
+  padding-top: var(--header-clearance); /* the header is fixed; this is the
+     space it would have occupied. A page carrying a trail above `main`
+     hands this clearance to the trail instead -- see body.has-trail. */
   max-width: calc(var(--max-width) + var(--sidebar-width) + var(--gutter));
   margin: 0 auto;
   width: 100%;

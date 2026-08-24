@@ -284,7 +284,63 @@ function initStripRotation() {
 /**
  * Initialize all functionality on DOM ready
  */
+/**
+ * Align the 404's trail with the first nav label.
+ *
+ * This is the ONLY page with a trail and the alignment target is not a
+ * value CSS can name. `nav .nav-item` is `flex: 1 1 auto` with centered
+ * text, so each cell sizes to its label and then absorbs an equal share of
+ * the bar's slack: the inked left edge of "Index" measured 85.1px at
+ * 1400, 65.1px at 1000 and 56px at 800 (harness, 2026-08-23). Those three
+ * are not three breakpoints -- the first two sit inside the same media
+ * query -- so the target moves continuously with viewport width and no
+ * constant, page-scoped or not, can hold it.
+ *
+ * So the alignment is measured at run time and written as an inline
+ * padding-left on the trail. Concepts: Range.getBoundingClientRect(),
+ * which gives the box of the TEXT rather than of the element holding it
+ * -- the label is centered, so the element box says nothing about where
+ * the word starts; document.fonts.ready, because the mono face's metrics
+ * decide the label width and measuring before it loads measures the
+ * fallback; and a resize listener, because the target is a function of
+ * viewport width.
+ *
+ * WITHOUT JAVASCRIPT the trail keeps its stylesheet value and sits at the
+ * content column's own left edge, which is a defensible alignment rather
+ * than a broken one. That is the no-JS baseline and it is why this is a
+ * progressive enhancement and not a requirement.
+ */
+function initTrailAlign() {
+  if (!document.body.classList.contains('has-trail')) return;
+  const trail = document.querySelector('.breadcrumbs');
+  const text = document.querySelector('.breadcrumbs-content');
+  const label = document.querySelector('.nav-item a');
+  if (!trail || !text || !label) return;
+
+  const align = () => {
+    // The drawer takes over at narrow widths and the bar stops rendering.
+    // There is no label to align to, so the stylesheet value stands.
+    if (!label.getClientRects().length) { trail.style.paddingLeft = ''; return; }
+    trail.style.paddingLeft = '';
+    const range = document.createRange();
+    range.selectNodeContents(label);
+    const labelLeft = range.getBoundingClientRect().left;
+    const trailLeft = trail.getBoundingClientRect().left;
+    if (labelLeft <= trailLeft) return;   // never pull the trail leftward
+    trail.style.paddingLeft = (labelLeft - trailLeft) + 'px';
+  };
+
+  align();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(align);
+  let t;
+  window.addEventListener('resize', () => {
+    clearTimeout(t);
+    t = setTimeout(align, 100);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  initTrailAlign();
   initGifRotation();
   initStripRotation();
   initTaglineRotation();

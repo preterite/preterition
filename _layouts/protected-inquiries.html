@@ -40,7 +40,15 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/responsive.css">
 </head>
-<body class="bare">
+<body>{%- comment -%} No class here, and none is owed. `class="bare"` sat on
+  this element until 2026-08-23 as the last trace of a retired layout name:
+  `bare` was what this layout was called before the 2026-08-19 ruling that a
+  layout takes the name of the page it dresses. Nothing consumed the class --
+  one occurrence across css/, js/, _includes/ and _layouts/, and it was this
+  one. Struck rather than kept as a styling hook, because a hook with no rule
+  behind it is indistinguishable from residue and gets read as either. If this
+  page ever needs body-scoped CSS, the class is minted then, named for the
+  page, with the rule written in the same pass. {%- endcomment %}
   <main id="main">
     <div class="main-content">
       {{ content }}

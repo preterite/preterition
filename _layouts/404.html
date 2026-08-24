@@ -21,7 +21,13 @@
 <head>
   {% include head.html %}
 </head>
-<body>
+<body class="has-trail">{%- comment -%} .has-trail hands the fixed-header
+  clearance from <main> to the trail that sits above it. The trail is the
+  first in-flow block on this page and the header is out of flow, so
+  without the class the trail paints underneath the header and is invisible
+  above the phone breakpoint (measured 2026-08-23). This is the only page
+  that sets it; the rules are in css/style.css under BREADCRUMBS.
+  {%- endcomment %}
   <div class="page-wrapper">
     <a href="#main" class="skip-link">Skip to main content</a>
 

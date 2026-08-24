@@ -43,7 +43,34 @@
   }
 
   .main-content {
-    padding: 20px;
+    padding: var(--gutter); /* 20px here, by the :root override above */
+  }
+
+  /* The bar consumes the same token as the column beneath it, so the two
+     share a left edge at every width the bar renders. RULED 2026-08-23
+     (Michael): the nav follows the content margin rather than holding
+     `--content-inset`'s fixed 48px, which matched the column on wide
+     screens by coincidence of both being 48 and stepped 28px outboard of
+     it here -- the band where the sidebar has just dropped below the
+     content and the left margin is the only alignment cue on screen.
+     Longhands, so the base rule's `padding: 0 var(--content-inset)` keeps
+     its zero on the block axis. This block matches below 768 as well, and
+     the drawer is this same `.nav-list` with a class on it -- but the
+     mobile block's `nav .nav-list` sets a `padding` shorthand at equal
+     specificity and later in the file, so both declarations here are
+     overridden there and this rule governs the bar alone. */
+  nav .nav-list {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+
+  /* The trail is not inside `.main-content` and inherits none of its
+     padding, so the two track each other only by consuming one token.
+     Measured 2026-08-23 before this rule: the trail sat 28px outboard of
+     the block beneath it here, and 32px outboard on a phone. */
+  .breadcrumbs {
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
   }
 }
 
@@ -145,9 +172,26 @@
   }
 
   .main-content {
-    padding: 16px;
-    padding-left: 16px;
+    padding: var(--gutter-mobile);
     width: 100%;
+  }
+
+  /* Same pairing as the tablet block above. */
+  .breadcrumbs {
+    padding-left: var(--gutter-mobile);
+    padding-right: var(--gutter-mobile);
+  }
+
+  /* The header goes static at this width, so the trail is no longer
+     underneath it and wants no clearance -- both elements return to the
+     spacing they carry everywhere else. Later file, same specificity, so
+     these win over the two body.has-trail rules in style.css. */
+  body.has-trail .breadcrumbs {
+    padding-top: var(--gutter);
+  }
+
+  body.has-trail main {
+    padding-top: var(--gutter-mobile);
   }
 
   .main-content h2 {
@@ -343,23 +387,22 @@
   }
 }
 
-/* ===== HIGH CONTRAST MODE ===== */
-@media (prefers-contrast: more) {
-  :root {
-    --color-accent-grey-green: #4a7a5a;
-    --color-muted-grey: #777777;
-  }
-
-  a {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-  }
-
-  .card,
-  .blog-card {
-    border-width: 2px;
-  }
-}
+/* ===== HIGH CONTRAST: DECLINED, DELIBERATELY =====
+   A media block keyed on prefers-contrast: more stood here until
+   2026-08-23. Unlike forced-colors, that query has no default behaviour:
+   nothing happens unless the author answers it, so it is a signal an
+   author may choose to answer rather than a mechanism the reader
+   operates. No WCAG 2.2 criterion requires an answer, and this design
+   meets AA on its own ground.
+   The block as written applied light-ground corrections to a dark ground,
+   and so lowered contrast for the reader who asked for more: against the
+   card ground #252220, --color-accent-grey-green went 4.67:1 to 3.18:1
+   and --color-muted-grey went 5.20:1 to 3.53:1, both from passing to
+   failing.
+   RULED 2026-08-23 (Michael): the block goes out whole and nothing
+   replaces it. Do not restore it as a completeness repair.
+   The reader's own apparatus is a different question and a different
+   query -- @media (forced-colors: active) -- owed on its own terms. */
 
 /* ===== DARK MODE (system default is already dark) ===== */
 /* No light-mode block, deliberately. A four-line token override cannot make

@@ -49,7 +49,7 @@ Washington State University<br>
 Pullman, WA 99164-5020
 </address>
 
-![Campus map of Washington State University in Pullman, with Avery Hall marked](/img/photos/avery-hall-map.png)
+![Campus map of Washington State University in Pullman, with Avery Hall marked](/resources/avery-hall-map.svg)
 
 Map data &copy; [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), ODbL.
 
