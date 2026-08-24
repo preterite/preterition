@@ -11,6 +11,7 @@ A selection of sets of scripts and slides. Fortunately, I think we have plenty o
 
 Conference on College Composition and Communication, Baltimore MD, 12 April
 2025
+{: .card-meta}
 
 First-year composition pedagogies attempting to respond to the crisis of
 textual proliferation prompted by Large Language Models (LLMs) fail to
@@ -33,6 +34,7 @@ knowledge processes and material-historical human labor.
 
 Featured presentation, Conference on College Composition and Communication,
 Spokane WA, 04 April 2024
+{: .card-meta}
 
 Composition's reception of generative AI has been shaped by a disciplinary wariness of numbers. That wariness costs the field an insight it already owned: Peter Elbow's published characterization of the reading process describes the predictive machinery of a language model in composition's vocabulary, with parallels easily traceable to the mathematical processes of stochastic gradient descent in Large Language Models (LLMs). I use Mariolina Salvatori's diagnosis of the double erasure of the reading student and of that student's reading processes to argue that LLMs are better understood as 'two-player word processors' than as producers of pre-completed and pre-plagiarized texts, and that their failures are precisely the sites of the appropriation of the value of students' writing labor.
 
@@ -44,6 +46,7 @@ Composition's reception of generative AI has been shaped by a disciplinary warin
 ### Owning Your Digital Shadow: Students' Right to Their Own Data
 
 Computers and Writing, George Mason University, 25 May 2018
+{: .card-meta}
 
 In 2017, CCCC Chair Linda Adler-Kassner gestured toward the problem of
 educational paradata, the recorded "data exhaust" of student work that under

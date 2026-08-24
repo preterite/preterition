@@ -49,8 +49,23 @@
         {%- else %}
         {%- comment -%} One honest empty state, not five. The corpus arrives
         with Workstream 5; until then this page is the weblog's front door
-        standing open on an archive that has not crossed yet. {%- endcomment %}
-        <p class="blog-empty">The archive is still crossing. Entries from June 2003 forward return here when the migration completes.</p>
+        standing open on an archive that has not crossed yet.
+
+        The prose below is the body of the announcement post, standing in for
+        it (Michael, 2026-08-24). It sits in this else branch rather than in
+        weblog/index.md because that file asserts no prose by design (RULED
+        2026-08-21, the collection-index exception). Put here, it retires
+        itself the moment site.posts stops being empty -- there is nothing to
+        remember to delete, and no window in which the announcement and the
+        first real post both address the reader. `.blog-empty` carries no
+        declaration in either stylesheet, so the block inherits
+        .main-content's prose styling, which is the intended reading; the
+        class is a hook, not a style. {%- endcomment %}
+        <div class="blog-empty">
+          <p>I've kept a mostly academic weblog since June 2003, first at vitia.org and later here. Twenty-odd years of thinking in public: teaching and rhetoric, economics and technology, a run of writing from Afghanistan in 2011 that won <em>Kairos</em>'s <a href="https://kairos.technorhetoric.net/awards/pastwinners.html#blog">John Lovas Memorial Award</a>, a long habit of Friday fiction, and the comment threads that engaged and extended the discussion.</p>
+          <p>It isn't here yet. The archive is moving out of WordPress into the same static form as the rest of this site, and it crosses whole -- published posts, drafts, comments, and the pingback network that tied it to other weblogs. That last part is the slow bit.</p>
+          <p>Until then, most of it is readable at the <a href="https://web.archive.org/web/*/preterite.net/blog/*">Internet Archive</a>. Back soon -- yes, with cats.</p>
+        </div>
         {%- endfor %}
       </div>
 

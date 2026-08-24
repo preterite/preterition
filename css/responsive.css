@@ -212,8 +212,11 @@
   }
 
   .gif-placeholder {
-    max-width: 240px;
-    margin: 0 auto 8px;
+    /* The 240px cap was struck 2026-08-24. The strip frames itself out to
+       the column's inner width at every breakpoint now, and a max-width here
+       would hold that frame short of the widgets it exists to align with.
+       The bottom margin is the only thing this block was doing. */
+    margin-bottom: 8px;
   }
 
   /* FOOTER */
@@ -368,10 +371,6 @@
   .blog-card {
     padding: 12px;
     margin-bottom: 12px;
-  }
-
-  .gif-placeholder {
-    max-width: 200px;
   }
 }
 

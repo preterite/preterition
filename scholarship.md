@@ -10,6 +10,7 @@ A selection rather than a record, reflecting a trajectory of interest: the rheto
 ### Insurgent Rhetorics and Historical Materialism
 
 _#Rhetops_ (University of Pittsburgh Press, 2019)
+{: .card-meta}
 
 American military doctrine treats rhetoric as information moving through a
 continuous present: Field Manual 3-24's attempt to historicize
@@ -30,6 +31,7 @@ persuasion delivers violent effects.
 ### Unpacking the Universal Library: Digital Reading and the Recirculation of Economic Value
 
 _Pedagogy_ 16.1 (2016)
+{: .card-meta}
 
 Recent arguments against digital reading practices rely on contradictory
 implicit claims: that digital technologies harm the way we read, and that
@@ -45,6 +47,7 @@ the labor and capital associated with textual work.
 
 Some Implications of Composition's Economic Discourse as Represented in _JAC_
 32.3-4. _Rhetoric Review_ 33.3 (2014)
+{: .card-meta}
 
 Composition's increasing engagement with economic concerns has not been
 matched by any comparable attention to economic scholarship. The result is an

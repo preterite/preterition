@@ -1,5 +1,12 @@
 {
   "_comment": "Last-known-good, committed so the build never waits on a fetch. The workflow overwrites this on its 24-hour cycle (RULED 2026-08-18). Schema is the contract stated in _includes/sidebar.html.",
+  "_placeholder": "Hand-entered 2026-08-24 (Michael), pending the Last.fm fetch wiring. An empty tracks array printed 'Nothing scrobbled lately', which was both ugly and false. Artist strings are the canonical forms Last.fm returns, so the placeholder and the live data will not read as two different widgets. The first successful fetch overwrites this whole file, this note included.",
   "fetched": null,
-  "tracks": []
+  "tracks": [
+    { "name": "Mr. Bad Example", "artist": "Warren Zevon" },
+    { "name": "They Can't Come", "artist": "P.O.S." },
+    { "name": "Holy Ghost", "artist": "Trouble Funk" },
+    { "name": "Blood in the Cut", "artist": "K.Flay" },
+    { "name": "Secret 77", "artist": "Bad Brains" }
+  ]
 }

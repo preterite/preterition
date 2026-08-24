@@ -1041,26 +1041,55 @@ aside {
   transition: color 0.2s ease;
 }
 
-/* ===== GIF PLACEHOLDER ===== */
-.gif-placeholder {
-  width: 100%;
-  background-color: transparent;
-  border: 1px solid var(--color-border-dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--color-muted-grey);
-  text-align: center;
-  padding: 0;
-  margin-bottom: 4px;
-}
+/* ===== ROTATING SIDEBAR GIF =====
+   The class sits on the <img> itself (see _includes/sidebar.html and
+   sidebar-weblog.html), not on a wrapper. It once styled a placeholder
+   <div> that held the image, which is why the old rule set width to 100%
+   and centred its contents with flex -- correct for a box, wrong for a
+   replaced element. On the image, width: 100% stretched a 150px-wide GIF
+   to the full sidebar column, and because the width/height attributes are
+   on the tag the browser scaled the height to match: the strips rendered
+   roughly twice their intended size in both axes. The companion rule was
+   `.gif-placeholder img`, an image inside an image, which matched nothing,
+   so its max-width and object-fit guards never applied. Repaired
+   2026-08-24.
 
-.gif-placeholder img {
+   The strips are 150 x 800 (measured: `sips -g pixelWidth -g pixelHeight`
+   over img/800s/, 120 files, all identical) and display at intrinsic size.
+   width is declared rather than left to the attribute so the intent is
+   visible in the stylesheet; max-width is the only concession, so a narrow
+   phone clips nothing. height: auto keeps the ratio if either changes. */
+.gif-placeholder {
+  /* content-box declared rather than inherited: the 150 is the strip's own
+     width and the padding is the frame around it, so the two must not share
+     a box. */
+  box-sizing: content-box;
+  width: 150px;
   max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  /* Frame the strip out to the column's inner width so its outer edge lands
+     on the same line as Listening, This Week and the tagline box -- the
+     original design, recovered 2026-08-24 (Michael). The percentage resolves
+     against the CONTAINING BLOCK, the aside's content box, and not against
+     the image, so there is no circularity here. 152 rather than 150 because
+     the border sits outside the content box: subtracting only the strip
+     would leave the frame two pixels wider than the widgets. max() keeps the
+     padding non-negative if the column is ever narrower than the strip. Both
+     responsive caps were struck in the same pass -- a max-width anywhere
+     holds this frame short of the widgets it exists to align with. */
+  padding-inline: max(0px, calc((100% - 152px) / 2));
+  /* The mat above and below. Padding, not margin: margin sits outside the
+     border and would only push the strip away from its neighbours, where
+     padding sits inside it and reads as a frame. Fixed rather than computed
+     from the column the way padding-inline is -- the same calc here would
+     grow a hundred-pixel mat above and below the strip on a phone, where the
+     aside runs full width. 1.5 gutters is 36px, which is exactly what
+     padding-inline resolves to at the default 320px column, so the mat is
+     square at the width the site is designed for. */
+  padding-block: calc(var(--gutter) * 1.5);
+  border: 1px solid var(--color-border-dark);
+  margin-bottom: 4px;
 }
 
 /* ===== MUSIC WIDGET ===== */
@@ -1230,11 +1259,14 @@ footer {
 
    Register, not volume. IBM Plex Sans against the card's Crimson Pro is what
    marks the line as apparatus rather than argument; a heavier serif would
-   only have been louder. 600 is a real cut on disk
-   (IBMPlexSans-SemiBold.woff2), so nothing is synthesised. Sans reads
-   optically larger than serif at equal size, so 1.05em lands about where a
-   five per cent bump in serif would (RULED 2026-08-23, Michael: bold and
-   slightly larger; the family change is Claude's and is flagged here).
+   only have been louder. Sans reads optically larger than serif at equal
+   size, so 1.05em lands about where a five per cent bump in serif would.
+
+   Weight was 600 until 2026-08-24, when Michael amended the 2026-08-23
+   ruling to sans, not bold: the family change carries the register on its
+   own, and the extra weight made the line compete with the h3 above it
+   instead of grouping under it. `IBMPlexSans-Regular.woff2` is on disk, so
+   nothing is synthesised at 400 either.
 
    No `color` here, deliberately. `.card p` already sets it and this rule is
    more specific than that, so a colour declared here would override the
@@ -1245,11 +1277,15 @@ footer {
    `.card h3 + p`. Measured 2026-08-23 across all ten sources: that adjacency
    holds on the five inventory pages and fails on about.md and contact.md,
    whose cards open straight into prose. The line is what varies between
-   pages, so the line is what carries the mark. */
+   pages, so the line is what carries the mark. The marks were authored in
+   the vault 2026-08-23 and did not cross into the repository until
+   2026-08-24; across that interval this rule had no consumers anywhere and
+   every credit line on the live site rendered as body prose. A rule and its
+   marks are one change and cross together. */
 .card p.card-meta {
   font-family: var(--font-sans);
   font-size: 1.05em;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 18px;
 }
 

@@ -11,6 +11,7 @@ A selection of courses I've taught, most recent first.
 
 Undergraduate course, Fall 2020 -- syllabus with assignments, weekly
 lecture notes
+{: .card-meta}
 
 From the syllabus: "Our popular culture is riven by deception. Fake news,
 propaganda, alternative facts: these days, it seems like everyone's a liar or
@@ -32,6 +33,7 @@ honesty, and forthrightness?"
 ### English 509: Rhetoric and Empire
 
 Graduate seminar in classical rhetoric, Fall 2020 -- syllabus
+{: .card-meta}
 
 From the syllabus: "This seminar uses the concept of empire as a way to
 investigate the problematic notion of a Western-oriented classical rhetorical
@@ -49,6 +51,7 @@ classical rhetorical tradition in their historical and material contexts."
 ### English/DTC 561: Studies in Technology and Culture
 
 Graduate seminar, Spring 2017 -- syllabus and assignments
+{: .card-meta}
 
 The Digital Technology and Culture program used to offer a moribund course,
 Electronic Research and the Rhetoric of Information, centered around
@@ -62,6 +65,7 @@ library catalogs and online discourse. I rebuilt that course as DTC 356: Informa
 ### DTC 375: Language, Texts, Technologies
 
 Undergraduate course, Spring 2015 -- syllabus, assignments, lesson notes
+{: .card-meta}
 
 Adapted from the syllabus: This course explores the relationships among
 technology, communication, and composing from a historical perspective, with a particular focus on various forms of literacies. Many of the

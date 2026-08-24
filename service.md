@@ -10,6 +10,7 @@ Three kinds of work: a journal, a profession, a war.
 ### _Kairos: A Journal of Rhetoric, Technology, and Pedagogy_
 
 Assistant Editor to Section Editor, Topoi, 2006-2018
+{: .card-meta}
 
 I started as an assistant editor at
 [_Kairos_](https://kairos.technorhetoric.net/) while I was a graduate
@@ -27,6 +28,7 @@ webtexts, with arguments made as much in design and code as in
 ### Intellectual Property Caucus and Committee, CCCC
 
 Caucus co-chair 2011-2013 and 2024-2025; Committee 2013-2016, chair 2016
+{: .card-meta}
 
 The Intellectual Property Caucus is where my field argues about who owns
  student writing, what open access costs and allows, and what publishers can
@@ -39,6 +41,7 @@ from 2024 to 2025, and served on the CCCC Intellectual Property Committee from 2
 ### National Military Academy of Afghanistan
 
 Academic mentor, National Training Mission -- Afghanistan, 2011
+{: .card-meta}
 
 In early 2011 I deployed from West Point to Afghanistan as a civilian academic mentor, helping to develop postsecondary writing curricula and mentoring the Afghan instructors who would teach them. General David Petraeus presented me with the Commander's Award for Excellence that year, and I received the Commander's Award for Civilian Service at the conclusion of my time in theater; the work itself is documented in a Memorandum for Record. I have written about it since in more scholarly terms in "Digital Literacy Instruction in Afghanistan," in _Digital Rhetoric and Global Literacies_ (IGI Global, 2014). The deployment's work negotiated the difficult relations between coercion and persuasion, and those are the relations I take most care in representing.
 
