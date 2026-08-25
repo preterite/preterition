@@ -270,22 +270,6 @@
   }
 
   /* WIDGETS */
-  .sidebar-widget {
-    padding: 12px;
-  }
-
-  .sidebar-widget h3 {
-    font-size: 0.875rem;
-  }
-
-  .sidebar-widget p {
-    font-size: 0.8125rem;
-  }
-
-  .sidebar-widget li {
-    font-size: 0.8125rem;
-  }
-
   .music-widget,
   .calendar-widget,
   .tagline-box {

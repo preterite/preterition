@@ -779,7 +779,7 @@ nav .nav-item.active a {
      axis Michael cannot see, so on its own the colour marked nothing
      (measured 2026-08-23, browser-verify/verify-contact.py). The border is
      the signal; the colour is decoration on top of it. The mobile drawer has
-     carried this same 2px rule all along -- this is the desktop bar catching
+     carried this same 3px rule all along -- this is the desktop bar catching
      up, not a new treatment. box-sizing is border-box globally, so the
      border sits inside the 48px cell and the row does not shift. */
   border-left-color: var(--color-accent-grey-green);
@@ -983,63 +983,13 @@ aside {
   margin: 0;
 }
 
-/* ===== SIDEBAR WIDGETS (Blog Page - Dark Cards) ===== */
-.sidebar-widget {
-  background-color: var(--color-card-dark);
-  border: 1px solid var(--color-border-dark);
-  border-left: 3px solid var(--color-accent-grey-green);
-  padding: 16px;
-  border-radius: 4px;
-}
-
-.sidebar-widget h3 {
-  color: var(--color-text-dark);
-  font-size: 1rem;
-  margin-bottom: 12px;
-  border-bottom: 1px solid var(--color-border-dark);
-  padding-bottom: 8px;
-}
-
-.sidebar-widget p {
-  color: var(--color-text-dark);
-  margin: 0 0 12px 0;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  text-wrap: pretty;
-}
-
-.sidebar-widget ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.sidebar-widget li {
-  margin-bottom: 8px;
-  color: var(--color-text-dark);
-  font-size: 0.875rem;
-}
-
-.sidebar-widget a {
-  color: var(--color-accent-grey-green);
-  text-decoration: none;
-  transition: color 0.2s ease;
-  display: block;
-  padding: 4px 0;
-}
-
-.sidebar-widget a:hover {
-  color: var(--color-accent-bright);
-  text-decoration: underline;
-}
-
-.sidebar-widget p a {
-  display: inline;
-  white-space: nowrap;
-  color: var(--color-accent-grey-green);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
+/* The dark-card sidebar widget rules stood here until 2026-08-24. A grep
+   across every .html, .md and .js in the repository, _site excluded, returned
+   zero consumers: nothing on this site has ever carried that class. Struck
+   rather than kept as documentation of intent -- an unconsumed rule is a
+   fossil the next reader mistakes for a live surface, which is the failure
+   the gif-placeholder and card-meta findings named from the other two
+   directions. */
 
 /* ===== ROTATING SIDEBAR GIF =====
    The class sits on the <img> itself (see _includes/sidebar.html and
@@ -1260,7 +1210,10 @@ footer {
    Register, not volume. IBM Plex Sans against the card's Crimson Pro is what
    marks the line as apparatus rather than argument; a heavier serif would
    only have been louder. Sans reads optically larger than serif at equal
-   size, so 1.05em lands about where a five per cent bump in serif would.
+   size, so parity in ems overshoots. 1.05em stood until 2026-08-24, when
+   Michael took the line down about ten per cent to 0.95em, which lands the
+   credit line near the card's optical body measure rather than above it.
+   The family carries the register; the size no longer competes for it.
 
    Weight was 600 until 2026-08-24, when Michael amended the 2026-08-23
    ruling to sans, not bold: the family change carries the register on its
@@ -1284,7 +1237,7 @@ footer {
    marks are one change and cross together. */
 .card p.card-meta {
   font-family: var(--font-sans);
-  font-size: 1.05em;
+  font-size: 0.95em;
   font-weight: 400;
   margin-bottom: 18px;
 }

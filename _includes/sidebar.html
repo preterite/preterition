@@ -5,8 +5,11 @@
   runs in the reader's browser. The schema the include reads is the schema
   the fetch scripts must write -- tracks[].name, tracks[].artist;
   events[].day, events[].summary -- stated here, at the one consumer, so
-  the producer has a contract to meet. Listening is a reporter, not a
-  navigator (RULED 2026-08-21): no outbound link. This Week carries
+  the producer has a contract to meet. The fetch also writes tracks[].url,
+  which this template deliberately does not render (RULED 2026-08-24,
+  Michael): the datum is captured so that a later ruling has something to
+  render, and until there is one, Listening is a reporter, not a navigator
+  (RULED 2026-08-21): no outbound link. This Week carries
   id="this-week" because contact.md links office hours to it.
 {%- endcomment -%}
 <aside>
