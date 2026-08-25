@@ -19,7 +19,7 @@ times.
 **Academic and professional matters:**
 [web-academic@preterite.net](mailto:web-academic@preterite.net)
 
-**Freelance editing:**
+**Freelance editing and writing:**
 [web-editing@preterite.net](mailto:web-editing@preterite.net)
 
 **Website and technical issues:**

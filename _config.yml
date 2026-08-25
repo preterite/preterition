@@ -25,10 +25,13 @@ kramdown:
   syntax_highlighter_opts:
     disable: true            # no Rouge classes; the site styles <pre> itself
 
-# Permalinks. Deliberately unset. The default, /:path/:basename:output_ext,
-# is what yields about.md -> /about.html, keeping the archive's addresses
-# (RULED 2026-08-18, declining `pretty`). Posts carry their own permalink in
-# front matter, written by the extraction; nothing here overrides it.
+# Permalinks. No global key, deliberately. The page default,
+# /:path/:basename:output_ext, is what yields about.md -> /about.html,
+# keeping the archive's addresses (RULED 2026-08-18, declining `pretty`).
+# That reasoning covers pages only: posts take Jekyll's `date` default,
+# /:categories/:year/:month/:day/:title.html, which is not the ruled post
+# permalink. The posts scope below therefore sets one. A migrated post
+# carrying its own `permalink:` from the extraction still wins over it.
 
 # Layout derivation. A page source never asserts its layout (RULED
 # 2026-08-19); the build supplies it. This block is migration-spec.md's
@@ -57,14 +60,21 @@ defaults:
       path: "404.md"
     values:
       layout: "404"
-  # Posts: layout `post`, not yet written. Front matter from the extraction
+  # Posts: layout `post`, at `_layouts/post.html`. Front matter from the
+  # extraction
   # carries its own `layout:` and wins over this; the default covers a
   # hand-authored post that declines to state one.
+  # A post's address is ruled, so it is asserted here rather than left to a
+  # default that was never about posts (2026-08-25, after a build put the
+  # first post at /weblog/2026/08/25/the-absent-archive.html). The
+  # `weblog/` segment comes from the source folder, not from :categories,
+  # which is empty by ruling and must stay out of the path.
   - scope:
       path: ""
       type: posts
     values:
       layout: post
+      permalink: /weblog/:year/:month/:day/:title/
 
 # Plugins. One. jekyll-redirect-from writes a meta-refresh stub at each
 # retired address -- the static shape of a 301 -- and carries /blog/... to

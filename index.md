@@ -20,10 +20,10 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
 
   <div>
     <p class="signoff">
-      <span class="own-line"><span class="k">listening</span>{% comment %} latest track from _data/, build-time fetch {% endcomment %}</span>
-      <span class="own-line"><span class="k">next</span>{% comment %} next event from _data/, build-time fetch {% endcomment %}</span>
-      <span class="own-line"><span class="k">built</span><a href="/about.html#colophon">colophon</a></span>
-      <span><span class="k">terms</span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
+      <span class="own-line"><span class="k">listening:</span>{% comment %} latest track from _data/, build-time fetch {% endcomment %}</span>
+      <span class="own-line"><span class="k">next:</span>{% comment %} next event from _data/, build-time fetch {% endcomment %}</span>
+      <span class="own-line"><span class="k">built:</span><a href="/about.html#colophon">colophon</a></span>
+      <span><span class="k">terms:</span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
     </p>
     <div class="foot">
       <p class="tagline">
