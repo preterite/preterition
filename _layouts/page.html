@@ -22,7 +22,18 @@
     {% include header.html %}
 
     <main id="main">
-      <div class="main-content">
+      {%- comment -%} data-pagefind-body scopes the search index to the main
+      column. Pagefind indexes from <body> by default, which on this site puts
+      the strip's alt text, Listening, the tagline and the footer into the
+      index on every page, so one track name matches every page that has a
+      sidebar. The attribute also decides membership and not only extent: once
+      it appears anywhere on the site, a page without it is not indexed at all.
+      That is how protected-inquiries stays out -- contact-page-spec.md, a
+      decision making it easier to discover has misread the page -- and how the
+      404 stays out (RULED 2026-08-25, Michael). The sidebar needs no ignore
+      attribute: it sits outside .main-content and so is already outside the
+      marked region. {%- endcomment %}
+      <div class="main-content" data-pagefind-body>
         {{ content }}
       </div>
 

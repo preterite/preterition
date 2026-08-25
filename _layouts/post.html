@@ -42,7 +42,11 @@
 
     <main id="main">
       <div class="main-content">
-        <article class="blog-post">
+        {%- comment -%} The index scoping rule is in page.html. The marker sits
+        on the entry rather than on .main-content so the orientation slot stays
+        out of the index; whether an entry's comments join it when they arrive
+        is Workstream 5 to decide. {%- endcomment %}
+        <article class="blog-post" data-pagefind-body>
           <h2 class="post-title">{{ page.title }}</h2>
 
           {%- comment -%} The dateline. date_to_xmlschema gives the machine
