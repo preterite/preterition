@@ -1,0 +1,47 @@
+{%- comment -%}
+  _includes/strip.html -- the sidebar strip. Three callers: sidebar.html,
+  sidebar-weblog.html, 404.md.
+
+  TWO RULINGS MEET HERE and they are not in conflict, though they look it.
+
+  The strip is drawn as a CSS background rather than an <img> (RULED
+  2026-08-25, Michael). Pagefind's image metadata comes off <img> src
+  attributes, so a background is invisible to it -- 25e measured four
+  indexer-side attempts to suppress that capture, all failing, because the
+  lever was never at the indexer but at the element.
+
+  The strip is nonetheless NOT decoration and is announced (RULED
+  2026-08-18, amended 2026-08-19, reaffirmed 2026-08-25 -- see
+  site-design-spec.md, "Why these are not `alt=''`"). The strips are an
+  identity element with two decades of history, chosen and named by the
+  author; announcing one is the smaller loss against silently withholding
+  from a screen-reader user what every sighted visitor sees. role="img"
+  plus aria-label carries that announcement onto an element that has no alt
+  attribute to give it. The ruling survives the change of mechanism intact:
+  what moved is where the name comes from, not whether there is one.
+
+  The name derives from the filename -- 800witherblister -> witherblister --
+  so the file is the single source for both the picture and its
+  description. That is what js/gif-slugs.js was standing in for while the
+  files carried placeholder names; the descriptive names came back
+  2026-08-25 and the script was retired with them.
+
+  ONE DRAW, HERE, AND THE INLINE STYLE IS DELIBERATE. The picture and the
+  name it announces must be the same strip: a wrong name is worse than no
+  name. That rules out the landing page's mechanism, a noscript rule in
+  head -- an aria-label is an attribute and CSS cannot set one, so the two
+  surfaces would need two draws, and a second `sample` picks a different
+  file. Drawing once in head and reading it here was tried and fails on
+  404.md, which is a weirdo that inlines its own sidebar: Jekyll renders a
+  page's body before its layout, so head has not run and the label comes
+  out empty. Measured, not reasoned -- the build check caught it.
+
+  The cost is that a reader with scripting ON fetches this strip and then
+  the one initGifRotation draws: one extra GIF, 10-52 KB. Paid knowingly,
+  because the alternative is a screen-reader user hearing the wrong name.
+
+  Scope: this strip. Every other image on the site stays an <img>.
+{%- endcomment -%}
+{%- assign strip = site.static_files | where_exp: "f", "f.path contains '/img/800s/'" | sample -%}
+{%- assign slug = strip.basename | remove_first: "800" -%}
+<div id="sidebar-gif" class="gif-placeholder" role="img" aria-label="abstract gray and green image - {{ slug }}" style="background-image: url('{{ strip.path }}');"></div>

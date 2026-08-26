@@ -46,7 +46,7 @@
         on the entry rather than on .main-content so the orientation slot stays
         out of the index; whether an entry's comments join it when they arrive
         is Workstream 5 to decide. {%- endcomment %}
-        <article class="blog-post" data-pagefind-body>
+        <article class="blog-post" data-pagefind-body data-pagefind-meta="title:{{ page.title | escape }}">
           <h2 class="post-title">{{ page.title }}</h2>
 
           {%- comment -%} The dateline. date_to_xmlschema gives the machine

@@ -3,26 +3,46 @@
  * Handles GIF rotation, tagline rotation, mobile navigation toggle
  */
 
-// Array of GIF filenames (1-120)
-const GIFS = Array.from({ length: 120 }, (_, i) => `800abstract00${String(i + 1).padStart(3, '0')}.gif`);
+// GIFS is a global emitted by _includes/scripts.html, enumerated from
+// img/800s/ at build. It holds site-absolute paths. Nothing here names a
+// strip file, and no list of them is maintained by hand.
+
+/**
+ * Compose a strip's accessible name from its filename. The strips are an
+ * identity element, named by the author, and are announced rather than
+ * hidden (RULED 2026-08-18, amended 2026-08-19, reaffirmed 2026-08-25 --
+ * site-design-spec.md, "Why these are not alt=''"). The descriptive
+ * filename IS the author's name for the strip, so the file is the only
+ * source and the picture and its description cannot disagree.
+ * /img/800s/800witherblister.gif -> 'abstract gray and green image - witherblister'
+ * @param {string} path site-absolute path to a strip
+ * @returns {string} the accessible name
+ */
+function stripLabel(path) {
+  const slug = path.split('/').pop().replace(/^800/, '').replace(/\.gif$/, '');
+  return slug ? `abstract gray and green image - ${slug}` : 'abstract gray and green image';
+}
+
 
 /**
  * Initialize GIF rotation
  * Picks a random GIF from the collection on page load
  */
 function initGifRotation() {
-  const gifElement = document.getElementById('sidebar-gif');
-  if (!gifElement) return;
+  const strip = document.getElementById('sidebar-gif');
+  if (!strip) return;
+  if (typeof GIFS === 'undefined' || !GIFS.length) return;
 
-  // One index drives both halves. GIFS[i] and gifAltText(i) name the same
-  // strip by construction -- gif-slugs.js recovered the mapping by MD5 against
-  // the archive, 120 matches and 0 mismatches -- so the filename and the alt
-  // text cannot drift apart as long as the index is computed once.
-  const i = Math.floor(Math.random() * GIFS.length);
-  gifElement.src = `/img/800s/${GIFS[i]}`;
-  gifElement.alt = typeof gifAltText === 'function'
-    ? gifAltText(i)
-    : 'abstract gray and green image';
+  // The strip is drawn as a CSS background rather than an <img> (RULED
+  // 2026-08-25): there is no src for Pagefind to capture. It is NOT
+  // hidden -- role="img" and aria-label carry the announcement the alt
+  // attribute used to, so the 2026-08-18 ruling survives the change of
+  // element. One draw sets both, so they cannot name different strips.
+  // The no-JS fallback is a noscript rule in head.html; with scripting on
+  // this draw is the only strip fetched.
+  const path = GIFS[Math.floor(Math.random() * GIFS.length)];
+  strip.style.backgroundImage = `url('${path}')`;
+  strip.setAttribute('aria-label', stripLabel(path));
 }
 
 /**
@@ -258,19 +278,20 @@ function sampleStrips(n, count) {
  * The query string must stay identical to the wide gate in css/style.css and
  * to the noscript block in _layouts/index.html -- three copies of one
  * condition, since a container query cannot express the height or pointer
- * terms. The strips are aria-hidden decoration and are owed no alt text,
- * which is why this shares the GIFS array but not the slug lookup beside it.
+ * terms. The strips are aria-hidden decoration and are owed no alt text, so
+ * this uses the pool's paths directly and never composes a description.
  */
 function initStripRotation() {
   const strips = document.querySelectorAll('.strip');
   if (!strips.length || !window.matchMedia) return;
+  if (typeof GIFS === 'undefined' || !GIFS.length) return;
 
   const mq = window.matchMedia('(min-width: 900px) and (min-height: 520px) and (hover: hover)');
 
   const assign = () => {
     if (!mq.matches || strips[0].style.backgroundImage) return;
     sampleStrips(strips.length, GIFS.length).forEach((n, k) => {
-      strips[k].style.backgroundImage = `url('/img/800s/${GIFS[n]}')`;
+      strips[k].style.backgroundImage = `url('${GIFS[n]}')`;
     });
     // .landing.strips-lit .strip fades them in; the class goes on <body>,
     // which already carries .landing on this page and only this page.

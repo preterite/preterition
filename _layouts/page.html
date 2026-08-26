@@ -29,11 +29,38 @@
       sidebar. The attribute also decides membership and not only extent: once
       it appears anywhere on the site, a page without it is not indexed at all.
       That is how protected-inquiries stays out -- contact-page-spec.md, a
-      decision making it easier to discover has misread the page -- and how the
-      404 stays out (RULED 2026-08-25, Michael). The sidebar needs no ignore
-      attribute: it sits outside .main-content and so is already outside the
-      marked region. {%- endcomment %}
-      <div class="main-content" data-pagefind-body>
+      decision making it easier to discover has misread the page -- how the
+      404 stays out, and how the landing page stays out (RULED 2026-08-25,
+      Michael): the wall's glosses are each target page's own description,
+      already indexed on the target, so a hit should land on the page and not
+      on the page that links to it. The weblog index is out for the same
+      reason a level down, which is what the ignore on .blog-card does in
+      weblog.html. Membership is a criterion, not a count: one page per source
+      taking this layout, plus one per post.
+
+      Content scoping and metadata capture are not the same mechanism, and
+      nothing in Pagefind 1.5.2 reaches the second. The strip's <img> is the
+      first image in the document on every page whose main column has none, so
+      Pagefind takes it as the page's default image metadata -- and it indexes
+      metadata VALUES as searchable text, which is how a query for "alarm"
+      came to return seven pages. Measured 2026-08-25 against a local index:
+      data-pagefind-ignore on the aside, exclude_selectors in a config file,
+      and the same as a CLI flag each produced a byte-identical index, and the
+      comma form of data-pagefind-meta sets no second key -- it extends the
+      first key's literal value. What the index holds is the no-JS placeholder
+      carried at sidebar.html, sidebar-weblog.html and 404.md, which
+      initGifRotation overwrites at load along with its alt: a fallback
+      artifact, not a fact about the page, and a randomized element has no
+      business being metadata about anything. The repair is at that
+      placeholder and not at the indexer, and it is owed a ruling -- see
+      _owed.md. Until then a result carries a meta.image no UI should render.
+
+      data-pagefind-meta supplies the result title. Left to itself Pagefind
+      takes the first <h1>, which here is the header's identity line: every
+      page came back titled "Mike Edwards" and every entry would come back
+      "Preterition". The value is escaped because migrated titles carry
+      quotes and ampersands. {%- endcomment %}
+      <div class="main-content" data-pagefind-body data-pagefind-meta="title:{{ page.title | escape }}">
         {{ content }}
       </div>
 

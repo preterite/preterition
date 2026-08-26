@@ -992,10 +992,13 @@ aside {
    directions. */
 
 /* ===== ROTATING SIDEBAR GIF =====
-   The class sits on the <img> itself (see _includes/sidebar.html and
-   sidebar-weblog.html), not on a wrapper. It once styled a placeholder
-   <div> that held the image, which is why the old rule set width to 100%
-   and centred its contents with flex -- correct for a box, wrong for a
+   The class sits on a <div> that carries the strip as a background image
+   (see _includes/strip.html), which is what makes the strip invisible to
+   Pagefind -- its image metadata comes off <img> src attributes and a
+   background has none (RULED 2026-08-25, Michael). Between 2026-08-24 and
+   that ruling the class sat on an <img>, and before that on a placeholder
+   <div> holding one, which is why the oldest rule set width to 100% and
+   centred its contents with flex -- correct for a box, wrong for a
    replaced element. On the image, width: 100% stretched a 150px-wide GIF
    to the full sidebar column, and because the width/height attributes are
    on the tag the browser scaled the height to match: the strips rendered
@@ -1016,8 +1019,20 @@ aside {
   box-sizing: content-box;
   width: 150px;
   max-width: 100%;
-  height: auto;
   display: block;
+  /* A div has no intrinsic size, so the ratio supplies the height an <img>
+     used to get from the file: 150 x 800, measured over img/800s/. width
+     shrinks under max-width on a narrow column and the height follows,
+     which is exactly what height: auto did for the replaced element. */
+  aspect-ratio: 150 / 800;
+  height: auto;
+  /* content-box on both, so the strip paints inside the mat rather than
+     under it. Default background-clip is border-box, which would run the
+     GIF out through the padding that forms the frame below. */
+  background-origin: content-box;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   /* Frame the strip out to the column's inner width so its outer edge lands
      on the same line as Listening, This Week and the tagline box -- the
      original design, recovered 2026-08-24 (Michael). The percentage resolves

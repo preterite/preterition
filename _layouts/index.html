@@ -30,15 +30,17 @@
      terms, so the duplication stands and is named here instead of hidden. */
   @media (min-width: 900px) and (min-height: 520px) and (hover: hover) {
     .strip { opacity: 1; }
-    .entry[data-k="about"]             .strip { background-image: url("/img/800s/800abstract00007.gif"); }
-    .entry[data-k="contact"]           .strip { background-image: url("/img/800s/800abstract00019.gif"); }
-    .entry[data-k="cv"]                .strip { background-image: url("/img/800s/800abstract00025.gif"); }
-    .entry[data-k="presentations"]     .strip { background-image: url("/img/800s/800abstract00033.gif"); }
-    .entry[data-k="projects"]          .strip { background-image: url("/img/800s/800abstract00048.gif"); }
-    .entry[data-k="scholarship"]       .strip { background-image: url("/img/800s/800abstract00061.gif"); }
-    .entry[data-k="service"]           .strip { background-image: url("/img/800s/800abstract00077.gif"); }
-    .entry[data-k="teaching"]          .strip { background-image: url("/img/800s/800abstract00094.gif"); }
-    .entry[data-k="weblog"]            .strip { background-image: url("/img/800s/800abstract00112.gif"); }
+  {%- comment -%}
+    Drawn from the folder at build, not named by hand, and addressed by
+    position rather than by data-k so the wall's membership is nowhere
+    asserted here. The draw runs long on purpose: rules past the last entry
+    match nothing, so an entry added to index.md gets a lit strip without
+    this block being touched.
+  {%- endcomment -%}
+  {%- assign wall = site.static_files | where_exp: "f", "f.path contains '/img/800s/'" | sample: 16 -%}
+  {%- for f in wall %}
+    .wall .entry:nth-of-type({{ forloop.index }}) .strip { background-image: url("{{ f.path }}"); }
+  {%- endfor %}
   }
   </style></noscript>
 </head>
