@@ -20,11 +20,17 @@
   closes the dialog with no script at all. Escape does the same, from the
   platform; the button is there for a pointer.
 
+  Light dismiss (RULED 2026-08-25, Michael): closedby="any" lets the
+  browser close the dialog on a backdrop click, hit-testing included. It
+  is not Baseline -- Safari does not implement it as of 2026-08 -- so
+  main.js carries a feature-detected fallback beneath it. An engine that
+  does not know the attribute ignores it, so the degradation is silent.
+
   #search-status is a live region and is deliberately not inside the list:
   a screen-reader user should hear the count rather than infer it from what
   appeared. main.js writes both it and the list.
 {%- endcomment -%}
-<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-dialog-title">
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-dialog-title" closedby="any">
   <div class="search-dialog-head">
     <h2 id="search-dialog-title">search preterite.net</h2>
     <form method="dialog">

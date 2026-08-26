@@ -523,6 +523,30 @@ function initSearch() {
     renderSearchResults(search.results, list, status);
   });
 
+  // Light dismiss, so a reader who does not know Escape can click away.
+  // closedby="any" on the element is the declarative form and the browser
+  // does the hit-testing; this branch runs only where that attribute is
+  // unimplemented -- Safari, as of 2026-08. Delete the whole block when
+  // closedby reaches Baseline.
+  //
+  // Both conditions are required, and each alone is wrong for THIS dialog.
+  // e.target === dialog is the pattern written everywhere, and .search-dialog
+  // carries its own padding, so a click on the band between its border and
+  // its content also targets the dialog element and would close it. The rect
+  // test alone fails the other way: select text inside, drag past the edge,
+  // release, and the click reports coordinates outside. Together they are
+  // exact. close() rather than requestClose(), which shipped alongside
+  // closedBy and so is absent wherever this branch runs.
+  if (!('closedBy' in HTMLDialogElement.prototype)) {
+    dialog.addEventListener('click', (e) => {
+      if (e.target !== dialog) return;
+      const box = dialog.getBoundingClientRect();
+      const inside = e.clientX >= box.left && e.clientX <= box.right
+                  && e.clientY >= box.top && e.clientY <= box.bottom;
+      if (!inside) dialog.close();
+    });
+  }
+
   // Leave no stale result set behind a closed dialog: the next open should
   // start empty rather than showing the last reader's query.
   dialog.addEventListener('close', () => {

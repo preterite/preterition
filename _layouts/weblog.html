@@ -37,15 +37,29 @@
     {% include header.html title="Preterition" home="/weblog/" tagline=true %}
 
     <main id="main">
-      {%- comment -%} The index scoping rule and its reasoning are in page.html.
-      The entry cards below are ignored so this page contributes its own prose
-      rather than a second copy of every entry's opening -- a result should
-      point at the entry, not at a list of it. {%- endcomment %}
-      <div class="main-content" data-pagefind-body>
+      {%- comment -%} This page is out of the search index by declaration
+      (RULED 2026-08-25, Michael). data-pagefind-ignore, not the
+      data-pagefind-body the professional pages carry: a search result should
+      point at an entry, never at a list of entries.
+
+      What stood here marked this region as a body and ignored each card, so
+      the page would contribute its own prose. It has none and is ruled to
+      have none -- weblog/index.md asserts no prose by design (RULED
+      2026-08-21, the collection-index exception) -- so the page fell out of
+      the index only because nothing indexable was left inside it. A heading,
+      an intro line or a pagination control would have put it back with nobody
+      deciding, and it carries no data-pagefind-meta, so such a result would
+      have shown a bare URL where a title belongs.
+
+      The per-card ignores went with the body marker: once the region itself
+      is ignored they restate the same rule one level down, and two statements
+      of one rule is the drift this file's history keeps retiring.
+      {%- endcomment %}
+      <div class="main-content" data-pagefind-ignore>
         {{ content }}
 
         {%- for post in site.posts %}
-        <article class="blog-card" data-pagefind-ignore>
+        <article class="blog-card">
           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
           <p class="blog-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
           {{ post.excerpt }}
