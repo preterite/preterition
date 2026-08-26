@@ -38,7 +38,16 @@
     </form>
   </div>
   <label class="search-label" for="search-input">Search terms</label>
-  <input id="search-input" class="search-input" type="search" autocomplete="off" spellcheck="false">
+  {%- comment -%}
+    type="text" and not type="search" (RULED 2026-08-26, Michael). A search
+    field spends the first Escape clearing itself, so a reader who had typed
+    a query pressed Escape, watched the query vanish, and was still standing
+    in the dialog: two presses to leave a modal. Measured against a bare
+    <dialog> carrying none of this site CSS or JS, so it was the platform
+    and not this markup. What it costs is the browser-drawn clear button,
+    which no rule here ever styled. Do not restore it. Clause: S-13.
+  {%- endcomment -%}
+  <input id="search-input" class="search-input" type="text" autocomplete="off" spellcheck="false">
   <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
   <ul id="search-results" class="search-results"></ul>
 </dialog>
