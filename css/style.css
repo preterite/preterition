@@ -683,6 +683,155 @@ nav:not(.wall) {
   }
 }
 
+/* Focus ring on the trigger. Added with the wiring rather than before it:
+   until this session the button did nothing, and a focus indicator on a
+   control that goes nowhere is its own small lie. Acid green is spent here
+   deliberately -- focus is interaction, which is the one thing it is
+   reserved for. */
+.search-trigger:focus-visible {
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 3px;
+}
+
+/* ===== SEARCH DIALOG ===== */
+/* Opened with showModal(), so the element is in the TOP LAYER and no rule
+   here sets a z-index: it is above the fixed header by construction rather
+   than by outbidding it. A closed <dialog> is display:none from the
+   user-agent stylesheet, so nothing hides it either. */
+.search-dialog {
+  width: min(680px, calc(100vw - 2 * var(--gutter)));
+  max-height: min(72vh, 640px);
+  padding: var(--gutter);
+  border: 1px solid var(--color-accent-grey-green);
+  border-radius: 0;
+  background: var(--color-card-dark);
+  color: var(--color-text-dark);
+  overflow-y: auto;
+}
+
+/* The value is written out rather than taken from --color-bg-dark: custom
+   property inheritance into ::backdrop is recent, and a backdrop that comes
+   back transparent in an older engine is a dialog floating over live text. */
+.search-dialog::backdrop {
+  background: rgba(26, 24, 22, 0.82);
+}
+
+.search-dialog-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--gutter);
+  margin-bottom: calc(var(--gutter) * 0.75);
+}
+
+.search-dialog-head h2 {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+  color: var(--color-accent-grey-green);
+}
+
+.search-dialog-close {
+  min-width: 24px;   /* SC 2.5.8's floor; the glyph is smaller than its box */
+  min-height: 24px;
+  padding: 0 0.25rem;
+  background: none;
+  border: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-muted-grey);
+  cursor: pointer;
+}
+
+.search-dialog-close:hover,
+.search-dialog-close:focus-visible {
+  color: var(--color-accent-bright);
+}
+
+.search-label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08rem;
+  color: var(--color-muted-grey);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.6rem 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text-dark);
+  background: var(--color-bg-dark);
+  border: 1px solid var(--color-border-dark);
+}
+
+.search-input:focus-visible {
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 2px;
+  border-color: var(--color-accent-grey-green);
+}
+
+/* Holds its line whether or not it has text, so the results below do not
+   jump down the moment a count appears. */
+.search-status {
+  min-height: 1rem;
+  margin: var(--gutter) 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-muted-grey);
+}
+
+.search-results {
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-result {
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--color-border-dark);
+}
+
+.search-result a {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-accent-grey-green);
+}
+
+.search-result a:hover,
+.search-result a:focus-visible {
+  color: var(--color-accent-bright);
+  border-bottom-color: var(--color-accent-bright);
+}
+
+.search-excerpt {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-text-dark);
+}
+
+/* Pagefind wraps each hit in <mark>. The match is carried by weight and by
+   an underline, not by ground colour: colour never carries meaning alone
+   here, and emerald decorates rather than signifies. Acid green is not
+   spent on it -- a highlight is not an interaction. */
+.search-excerpt mark {
+  background: transparent;
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--color-accent-grey-green);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
 /* ===== NAVIGATION =====
    The site nav bar. Every rule here that selects the bare element is scoped
    nav:not(.wall), because the landing page's strip wall is also a <nav> --

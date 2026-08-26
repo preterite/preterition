@@ -1,0 +1,38 @@
+{%- comment -%}
+  _includes/search-dialog.html -- the search dialog's markup, one per page.
+
+  Called from _includes/scripts.html rather than from header.html, and the
+  reason is the call-site set. This element is inert without main.js, and
+  scripts.html is by construction the set of pages that load main.js. The
+  site's two search controls are that same set: .search-trigger in
+  header.html, reaching page, post, weblog and 404, and .hex in index.md,
+  the landing page's own. Including this from header.html and again from
+  _layouts/index.html would state that set twice, and two lists that must
+  agree is the defect class retired 2026-08-25.
+
+  <dialog> rather than a hand-built overlay. showModal() supplies the top
+  layer, the focus trap, Escape-to-close and inert background content, all
+  of which the older idiom wrote by hand. Nothing here sets a z-index: the
+  top layer sits above every stacking context, so the fixed header cannot
+  cover it by construction rather than by being outbid.
+
+  The close button is a submit inside a form with method="dialog", which
+  closes the dialog with no script at all. Escape does the same, from the
+  platform; the button is there for a pointer.
+
+  #search-status is a live region and is deliberately not inside the list:
+  a screen-reader user should hear the count rather than infer it from what
+  appeared. main.js writes both it and the list.
+{%- endcomment -%}
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-dialog-title">
+  <div class="search-dialog-head">
+    <h2 id="search-dialog-title">search preterite.net</h2>
+    <form method="dialog">
+      <button class="search-dialog-close" type="submit" aria-label="Close search">&#215;</button>
+    </form>
+  </div>
+  <label class="search-label" for="search-input">Search terms</label>
+  <input id="search-input" class="search-input" type="search" autocomplete="off" spellcheck="false">
+  <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+  <ul id="search-results" class="search-results"></ul>
+</dialog>

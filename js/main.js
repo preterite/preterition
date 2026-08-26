@@ -360,6 +360,178 @@ function initTrailAlign() {
   });
 }
 
+/**
+ * How many results get their data fetched. Pagefind returns lazy handles;
+ * the rest of a large result set is never touched.
+ */
+const SEARCH_MAX_RESULTS = 10;
+
+/**
+ * The cached Pagefind module promise. Assigned on first open and re-used,
+ * so a reader who opens the dialog five times loads the engine once.
+ */
+let pagefindLoad = null;
+
+/**
+ * Load and initialise Pagefind, once.
+ *
+ * Concept: dynamic import(). pagefind.js is an ES module that pulls a WASM
+ * binary behind it, so importing it at page load would make every reader
+ * fetch a search engine they did not ask for. import() returns a promise
+ * and is legal inside a classic script, which is why this file needs no
+ * type="module" and the script tag in scripts.html is unchanged.
+ * @returns {Promise<object>} the initialised Pagefind module
+ */
+function loadPagefind() {
+  if (!pagefindLoad) {
+    pagefindLoad = import('/pagefind/pagefind.js').then(async (pf) => {
+      await pf.init();
+      return pf;
+    });
+  }
+  return pagefindLoad;
+}
+
+/**
+ * Draw a result set into the dialog.
+ *
+ * The excerpt is assigned with innerHTML because Pagefind wraps each hit in
+ * <mark> and escapes everything else itself. The string is this site's own
+ * build output rather than anything a reader supplied, so there is no
+ * untrusted input here -- worth saying out loud, since innerHTML is the
+ * line where that question is normally asked.
+ * @param {Array} results Pagefind result handles
+ * @param {HTMLElement} list the <ul> to fill
+ * @param {HTMLElement} status the live region to announce into
+ */
+async function renderSearchResults(results, list, status) {
+  list.replaceChildren();
+  if (!results.length) {
+    status.textContent = 'No results.';
+    return;
+  }
+  const shown = Math.min(results.length, SEARCH_MAX_RESULTS);
+  const noun = results.length === 1 ? 'result' : 'results';
+  status.textContent = shown < results.length
+    ? results.length + ' ' + noun + ', showing the first ' + shown + '.'
+    : results.length + ' ' + noun + '.';
+
+  const data = await Promise.all(results.slice(0, shown).map((r) => r.data()));
+  data.forEach((d) => {
+    const li = document.createElement('li');
+    li.className = 'search-result';
+    const a = document.createElement('a');
+    a.href = d.url;
+    // meta.title is supplied by data-pagefind-meta in page.html and
+    // post.html. Left to itself Pagefind takes the first <h1>, which here
+    // is the header's identity line, so every hit would read "Mike
+    // Edwards" (measured 2026-08-25). The url fallback is for a page that
+    // somehow carries no title rather than for the normal case.
+    a.textContent = (d.meta && d.meta.title) ? d.meta.title : d.url;
+    const p = document.createElement('p');
+    p.className = 'search-excerpt';
+    p.innerHTML = d.excerpt;
+    li.append(a, p);
+    list.append(li);
+  });
+}
+
+/**
+ * Wire the search controls to the Pagefind index.
+ *
+ * Two controls, one dialog. .search-trigger is the header's hexagon on the
+ * professional pages, the weblog and the 404; .hex is the landing page's,
+ * authored in index.md and carrying its clip-path on the button itself.
+ * Both are already real buttons with an accessible name, so this adds
+ * behaviour and no markup.
+ *
+ * showModal() rather than show() or a class toggle: it puts the dialog in
+ * the TOP LAYER, above every stacking context, and brings focus trapping,
+ * Escape-to-close and inert background content with it. A closed <dialog>
+ * is display:none from the user-agent stylesheet, so nothing hides it here.
+ *
+ * debouncedSearch() rather than search(): Pagefind's own 300ms debounce, so
+ * a fast typist issues one query rather than eight. It resolves to null for
+ * a call a later keystroke superseded, which is the signal to drop a stale
+ * render rather than paint it over a newer one.
+ */
+function initSearch() {
+  const dialog = document.getElementById('search-dialog');
+  const input = document.getElementById('search-input');
+  const list = document.getElementById('search-results');
+  const status = document.getElementById('search-status');
+  const triggers = document.querySelectorAll('.search-trigger, .hex');
+  if (!dialog || !input || !list || !status || !triggers.length) return;
+
+  // Feature detection, and the failure mode matters. An engine without
+  // showModal cannot run this dialog, and the 2026-08-20 ruling says a
+  // control that does nothing is worse than one hidden -- so the triggers
+  // go, exactly as the noscript branch in head.html does it. Neither
+  // .search-trigger nor .hex declares `display`, so the [hidden] rule in
+  // the user-agent stylesheet is not being outbid.
+  if (typeof dialog.showModal !== 'function') {
+    triggers.forEach((t) => { t.hidden = true; });
+    return;
+  }
+
+  const unavailable = 'Search is unavailable: the index did not load.';
+
+  const open = () => {
+    dialog.showModal();
+    input.focus();
+    loadPagefind().catch(() => { status.textContent = unavailable; });
+  };
+
+  triggers.forEach((t) => t.addEventListener('click', open));
+
+  // "/" opens search from anywhere. The guard is written by element KIND
+  // rather than by a list of known fields, so it already holds for a weblog
+  // comment form that does not exist yet (Michael, 2026-08-25): any input,
+  // textarea, select or contenteditable region swallows the key. A comment
+  // form served inside an iframe never delivers keydown to this document at
+  // all, so that case is covered by the platform rather than here.
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || dialog.open) return;
+    const el = e.target;
+    if (el && el.isContentEditable) return;
+    if (el && el.closest && el.closest('input, textarea, select, [contenteditable]')) return;
+    e.preventDefault();
+    open();
+  });
+
+  // A monotonic ticket per keystroke. Pagefind's null covers its own
+  // debounce; this covers the await, where a slow data fetch for "af" can
+  // still land after a fast one for "afghanistan".
+  let seq = 0;
+  input.addEventListener('input', async () => {
+    const query = input.value.trim();
+    const mine = ++seq;
+    if (!query) {
+      list.replaceChildren();
+      status.textContent = '';
+      return;
+    }
+    let pf;
+    try {
+      pf = await loadPagefind();
+    } catch (err) {
+      status.textContent = unavailable;
+      return;
+    }
+    const search = await pf.debouncedSearch(query, {}, 300);
+    if (search === null || mine !== seq) return;
+    renderSearchResults(search.results, list, status);
+  });
+
+  // Leave no stale result set behind a closed dialog: the next open should
+  // start empty rather than showing the last reader's query.
+  dialog.addEventListener('close', () => {
+    input.value = '';
+    list.replaceChildren();
+    status.textContent = '';
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initTrailAlign();
   initGifRotation();
@@ -368,6 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileNav();
   initSmoothScroll();
   initCompactHeader();
+  initSearch();
 
   // One-shot animations
   initNavStagger();

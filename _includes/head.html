@@ -25,3 +25,15 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/responsive.css">
 
+<noscript><style>
+/* Scripting off: the two search controls are hidden rather than left sitting
+   there inert (RULED 2026-08-20 -- a control that does nothing is worse than
+   one wired or one hidden). Pagefind is a JavaScript index and there is no
+   static shape of site search to degrade to, so hiding is the branch the
+   ruling names. .search-trigger is header.html's; .hex is index.md's. A
+   noscript block is parsed only when scripting is off, so this rule and the
+   wiring in main.js can never both apply. Placed after the stylesheets so it
+   wins a specificity tie rather than relying on one. */
+.search-trigger, .hex { display: none; }
+</style></noscript>
+

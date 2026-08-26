@@ -20,6 +20,12 @@
   build's own pick, so a failure here degrades to the day's tagline rather
   than to nothing.
 {%- endcomment -%}
+{%- comment -%}
+  The search dialog rides here rather than in header.html because this
+  include is exactly the set of pages that load main.js, which is exactly
+  the set that carries a search control. Its own comment carries the rest.
+{%- endcomment -%}
+{% include search-dialog.html %}
 <script src="/js/taglines.js"></script>
 {%- assign strips = site.static_files | where_exp: "f", "f.path contains '/img/800s/'" -%}
 <script>

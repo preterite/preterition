@@ -39,21 +39,22 @@
       taking this layout, plus one per post.
 
       Content scoping and metadata capture are not the same mechanism, and
-      nothing in Pagefind 1.5.2 reaches the second. The strip's <img> is the
-      first image in the document on every page whose main column has none, so
-      Pagefind takes it as the page's default image metadata -- and it indexes
-      metadata VALUES as searchable text, which is how a query for "alarm"
-      came to return seven pages. Measured 2026-08-25 against a local index:
-      data-pagefind-ignore on the aside, exclude_selectors in a config file,
-      and the same as a CLI flag each produced a byte-identical index, and the
-      comma form of data-pagefind-meta sets no second key -- it extends the
-      first key's literal value. What the index holds is the no-JS placeholder
-      carried at sidebar.html, sidebar-weblog.html and 404.md, which
-      initGifRotation overwrites at load along with its alt: a fallback
-      artifact, not a fact about the page, and a randomized element has no
-      business being metadata about anything. The repair is at that
-      placeholder and not at the indexer, and it is owed a ruling -- see
-      _owed.md. Until then a result carries a meta.image no UI should render.
+      nothing in Pagefind 1.5.2 reaches the second. Pagefind derives image
+      metadata from <img> src attributes, and while the strip was an <img> it
+      was the first image in the document on every page whose main column has
+      none -- so Pagefind took it as the page's default image metadata, and it
+      indexes metadata VALUES as searchable text, which is how a query for
+      "alarm" came to return seven pages. Measured 2026-08-25 against a local
+      index: data-pagefind-ignore on the aside, exclude_selectors in a config
+      file, and the same as a CLI flag each produced a byte-identical index,
+      and the comma form of data-pagefind-meta sets no second key -- it
+      extends the first key's literal value. The lever was never at the
+      indexer. RULED 2026-08-25, Michael: the strip is drawn as a CSS
+      background, which has no src to capture, and its announcement moves to
+      role="img" plus aria-label -- see _includes/strip.html and
+      site-design-spec.md, "The Sidebar Strips' Accessible Name". No <img>
+      points at a strip anywhere in the built site, so no page carries image
+      metadata and the dialog has none to render.
 
       data-pagefind-meta supplies the result title. Left to itself Pagefind
       takes the first <h1>, which here is the header's identity line: every
