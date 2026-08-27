@@ -3,9 +3,7 @@ layout: post
 title: "The Absent Archive"
 date: 2026-08-25 00:00:00 -0800
 categories: []
-tags: []
 ---
-
 <!-- The date on this post is the day it went up, not the day it was written.
      A weblog entry's date is a publication fact here; dating it to composition
      would seat the post somewhere in the archive's sequence it never sat. -->

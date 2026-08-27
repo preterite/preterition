@@ -55,7 +55,6 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
     <span class="detail" data-k="contact"><span class="locator">two registers</span><span class="gloss">{{ t.description | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></span>
   </a>
 
-  {% comment %} the CV is a file, not a page (RULED 2026-08-22): no site.pages lookup, so the gloss is composed here beside its locator, by the same test that put the locators in this file -- this is the only page that reads it (RULED 2026-08-22, Michael) {% endcomment %}
   <a class="entry" data-k="cv" href="/resources/edwards_cv_2026.pdf">
     <span class="strip" aria-hidden="true"></span>
     <span class="name">cv</span>
