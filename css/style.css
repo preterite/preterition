@@ -2007,6 +2007,15 @@ blockquote {
   color: var(--color-muted-grey);
 }
 
+/* Emphasis inside a gloss reverts to upright (RULED 2026-08-19, Michael).
+   The gloss is the target page's `description` run through markdownify, so
+   an author writing _emphasis_ there gets an <em> inside an already-italic
+   run, where italic-on-italic is invisible. Reverting is the typographic
+   convention for nested emphasis. One rule serves both layouts: .gloss em
+   is (0,1,1) and outranks the (0,1,0) .gloss rules here and in the wide
+   media query, so specificity carries it rather than source order. */
+.gloss em { font-style: normal; }
+
 /* The hovered row gains a visible box, not merely a hue: the border goes
    from transparent to drawn, so the state reads without colour vision. The
    site's a:focus-visible outline is left in place rather than suppressed. */
