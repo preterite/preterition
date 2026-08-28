@@ -21,6 +21,14 @@
 <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
 <meta name="theme-color" content="#1a1816">
 
+<!-- The feed's discovery link, emitted by jekyll-feed's feed_meta tag: a
+     <link rel="alternate" type="application/atom+xml"> pointing at
+     /feed.xml. Without it the feed sits at a URL nothing announces and a
+     reader's feed application has nothing to find. Site-wide rather than
+     weblog-scoped because site.posts is the weblog; there is no second
+     collection to disambiguate. Same-origin, no fetch, no third party. -->
+{% feed_meta %}
+
 <!-- fonts: self-hosted in /fonts/, declared in style.css; nothing fetched -->
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/responsive.css">

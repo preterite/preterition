@@ -76,17 +76,27 @@ defaults:
       layout: post
       permalink: /weblog/:year/:month/:day/:title/
 
-# Plugins. One. jekyll-redirect-from writes a meta-refresh stub at each
+# Plugins. Named and not counted, the list being open.
+# jekyll-redirect-from writes a meta-refresh stub at each
 # retired address -- the static shape of a 301 -- and carries /blog/... to
 # /weblog/... after the migration. No /cv.html redirect is owed (RULED
 # 2026-08-22, Michael): the live archive never served that address, the nav
 # links the CV as a PDF and not as a page, and the cv.html that was archived
 # was the generated scaffold's invention rather than a published page. The
-# plugin is on the Pages whitelist; that is recorded so the builder question
-# does not reopen through it, not because the whitelist governs an Actions
-# build.
+# redirect plugin is on the Pages whitelist; that is recorded so the builder
+# question does not reopen through it, not because the whitelist governs an
+# Actions build.
+#
+# jekyll-feed generates the weblog's Atom feed at /feed.xml from site.posts,
+# taking title, description and url from the keys above. Its feed_meta tag
+# sits in _includes/head.html, and that tag is what makes the feed
+# discoverable rather than merely present. The feed ships ahead of the
+# migrated archive deliberately (2026-08-25): the weblog's long readership is
+# the cohort that reads by feed, and a feed switched on afterward would
+# deliver the whole archive to every subscriber in a single push.
 plugins:
   - jekyll-redirect-from
+  - jekyll-feed
 
 # What never reaches _site. The archival pages are excluded outright as of
 # 2026-08-22, when the crossing wrote their successors and they were renamed

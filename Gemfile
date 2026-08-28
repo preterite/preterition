@@ -11,6 +11,14 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 gem "jekyll-redirect-from"
 
+# The weblog's feed. jekyll-feed is a generator plugin: it reads site.posts
+# during the build and writes an Atom document to /feed.xml. It is named here
+# as well as in _config.yml because this bundle is plain Jekyll rather than
+# the github-pages gem -- nothing arrives implicitly, and a plugin listed in
+# _config.yml and absent from the bundle fails the build rather than being
+# quietly ignored.
+gem "jekyll-feed"
+
 # Ruby 3.4 stopped bundling these; Jekyll 4.3 still wants them.
 gem "csv"
 gem "base64"
