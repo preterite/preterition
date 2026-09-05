@@ -46,14 +46,15 @@ Mike Edwards<br>
 Department of English<br>
 Washington State University<br>
 341 Avery Hall<br>
-Pullman, WA 99164-5020
+Pullman, WA 99164-5020<br>
 </address>
+
+`Coordinates: 46.73185 N, 117.16538 W`<br>
 
 ![Campus map of Washington State University in Pullman, with Avery Hall marked](/resources/avery-hall-map.svg)
 
-Map data &copy; [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), ODbL.
-
 [View on OpenStreetMap](https://www.openstreetmap.org/?mlat=46.73185&mlon=-117.16538#map=17/46.73185/-117.16538)
 
-`Coordinates: 46.73185 N, 117.16538 W`
+Map data &copy; [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), ODbL.
+
 </div>

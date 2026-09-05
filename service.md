@@ -43,7 +43,7 @@ from 2024 to 2025, and served on the CCCC Intellectual Property Committee from 2
 Academic mentor, National Training Mission -- Afghanistan, 2011
 {: .card-meta}
 
-In early 2011 I deployed from West Point to Afghanistan as a civilian academic mentor, helping to develop postsecondary writing curricula and mentoring the Afghan instructors who would teach them. General David Petraeus presented me with the Commander's Award for Excellence that year, and I received the Commander's Award for Civilian Service at the conclusion of my time in theater; the work itself is documented in a Memorandum for Record. I have written about it since in more scholarly terms in "Digital Literacy Instruction in Afghanistan," in _Digital Rhetoric and Global Literacies_ (IGI Global, 2014). The deployment's work negotiated the difficult relations between coercion and persuasion, and those are the relations I take most care in representing.
+In early 2011 I deployed from West Point to Afghanistan as a civilian academic mentor, helping to develop postsecondary writing curricula and mentoring the Afghan instructors who would teach them. General David Petraeus presented me with the Commander's Award for Excellence that year, and I received the Commander's Award for Civilian Service at the conclusion of my time in theater; the work itself is documented in a Memorandum for Record. I have written about it since in more scholarly terms in "Digital Literacy Instruction in Afghanistan," in _Digital Rhetoric and Global Literacies_ (IGI Global, 2014). The deployment's work negotiated the difficult relations between coercion and persuasion, and I take particular care in representing those relations.
 
 [Memorandum for Record and award citations
 (PDF)](/resources/nmaa_award_and_aar.pdf) |
