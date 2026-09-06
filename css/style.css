@@ -975,9 +975,30 @@ nav .nav-item a:focus {
    from the weblog's own old trail -- Breadcrumb NavXT under the ample-pro
    theme, `style.css` §12.1 in `preterite dot net archive older/` -- which
    set the trail small, in the interface voice, one colour throughout, and
-   left the current item undifferentiated. Nothing here links and nothing
-   here carries state, so `.breadcrumb-current` takes no rule: the span is
-   in the markup for the joke's sake and needs no visual mark. */
+   left the current item undifferentiated. THAT LAST CLAUSE IS SUPERSEDED
+   (RULED 2026-09-06, Michael): the trail now runs three colours and the
+   colours are the joke. `.breadcrumb-maze` takes the resting link colour,
+   so the maze reads as somewhere the reader has already been -- it is
+   where they arrived here from -- without linking or claiming to link.
+   `.breadcrumb-current` takes the bright accent. The divider takes no rule
+   and needs none: `.breadcrumbs-content` below already sets
+   --color-muted-grey, so the separator's colour is stated once, at the
+   container, and the two spans override it. The single `&gt;` is kept over
+   a doubled one: it is the parser prompt the page alludes to and the
+   breadcrumb convention at once, and the trail only works as furniture if
+   it looks like furniture.
+   Measured against the page ground #1a1816 on 2026-09-06: bright green
+   #00ff00 at 12.90:1, medium sea green #3a9d6a at 5.24:1, warm taupe grey
+   #9a9389 at 5.82:1 -- all clear of AA for normal text. Nothing here
+   links; the colour is ornament and the text carries the joke alone. */
+.breadcrumb-maze {
+  color: var(--color-accent-grey-green);
+}
+
+.breadcrumb-current {
+  color: var(--color-accent-bright);
+}
+
 .breadcrumbs {
   padding: var(--gutter) var(--content-inset) var(--nav-nudge);
 
