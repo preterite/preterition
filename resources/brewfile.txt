@@ -5,82 +5,82 @@
 # =============================================================================
 
 # --- Shell, prompt, session --------------------------------------------------
-brew "zsh"                             # newer shell than macOS ships
-brew "powerlevel10k"                   # prompt theme; configured in .p10k.zsh
-brew "zsh-autosuggestions"             # inline suggestions from history
-brew "zsh-syntax-highlighting"         # highlights commands as they are typed
-brew "tmux"                            # terminal multiplexer
 brew "direnv"                          # per-directory environment loading
-brew "zoxide"                          # recency-ranked directory jumping
 brew "fzf"                             # fuzzy finder
+brew "powerlevel10k"                   # prompt theme; configured in .p10k.zsh
+brew "tmux"                            # terminal multiplexer
+brew "zoxide"                          # recency-ranked directory jumping
+brew "zsh"                             # newer shell than macOS ships
+brew "zsh-autosuggestions"             # inline suggestions from history
+brew "zsh-syntax-highlighting"         # highlights commands when typed
 
 # --- Modern CLI replacements -------------------------------------------------
 brew "bat"                             # cat with syntax highlighting
 brew "eza"                             # ls replacement
 brew "fd"                              # find replacement
+brew "htop"                            # interactive process viewer
+brew "less"                            # newer than macOS version
+brew "micro"                           # CLI text editor over nano and vi
 brew "ripgrep"                         # grep replacement (rg)
 brew "sd"                              # sed-style find and replace
-brew "less"                            # newer than macOS version
 brew "tree"                            # directory tree display
-brew "htop"                            # interactive process viewer
-brew "micro"                           # CLI text editor over nano and vi
 
 # --- Files and text handling -------------------------------------------------
 brew "coreutils"                       # GNU utilities (required)
+brew "duti"                            # set default apps per file type
 brew "rename"                          # perl-powered batch rename
 brew "renameutils"                     # qmv and friends
-brew "watchexec"                       # run a command when watched files change
 brew "terminal-notifier"               # macOS notifications from the shell
-brew "duti"                            # set default apps per file type
+brew "watchexec"                       # run a command when watched files change
 
 # --- Documents, conversion, prose --------------------------------------------
+brew "ocrmypdf"                        # OCR on scanned PDFs; requires tesseract
 brew "pandoc"                          # document conversion export (required)
 brew "pandoc-crossref"                 # numbering and cross-references
-brew "qpdf"                            # PDF OCR transformation (required)
 brew "poppler"                         # PDF rendering and text extraction
-brew "ocrmypdf"                        # OCR on scanned PDFs; requires tesseract
+brew "qpdf"                            # PDF OCR transformation (required)
 brew "tesseract-lang"                  # additional OCR language data
 brew "vale"                            # syntax-aware prose linter
 
 # --- Images and media --------------------------------------------------------
-brew "imagemagick"                     # image conversion and manipulation
+brew "exiftool"                        # read and write image metadata
 brew "ffmpeg"                          # audio and video transcoding (required)
 brew "graphviz"                        # graph layout and rendering
-brew "exiftool"                        # read and write image metadata
+brew "imagemagick"                     # image conversion and manipulation
 
 # --- Structured data ---------------------------------------------------------
-brew "jq"                              # JSON processor
 brew "csvkit"                          # CSV conversion and inspection
+brew "jq"                              # JSON processor
 brew "miller"                          # sed/awk/join for name-indexed data
 brew "sqlite"                          # SQLite CLI (required)
 
 # --- Version control ---------------------------------------------------------
+brew "difftastic"                      # structural, syntax-aware diff
+brew "gh"                              # GitHub CLI
 brew "git"                             # version control
 brew "git-delta"                       # syntax-highlighting pager for diffs
-brew "gh"                              # GitHub CLI
-brew "difftastic"                      # structural, syntax-aware diff
 
 # --- Languages and package managers ------------------------------------------
-brew "node"                            # JavaScript runtime (required)
-brew "pnpm"                            # fast Node package manager
 brew "fnm"                             # Node version manager
-brew "pyenv"                           # Python version management
+brew "node"                            # JavaScript runtime (required)
 brew "pipx"                            # Python apps in isolated environments
-brew "uv"                              # fast Python installer and resolver
+brew "pnpm"                            # fast Node package manager
+brew "pyenv"                           # Python version management
 brew "ruby"                            # newer than the macOS version
+brew "uv"                              # fast Python installer and resolver
 
 # --- Network and sync --------------------------------------------------------
 brew "curl"                            # HTTP transfers
-brew "wget"                            # file retrieval
 brew "rclone"                          # rsync for cloud storage
 brew "syncthing"                       # cross-machine binaries sync
+brew "wget"                            # file retrieval
 
 # --- Encryption --------------------------------------------------------------
 brew "age"                             # modern file encryption
 brew "gnupg"                           # OpenPGP (required)
 
 # --- Casks -------------------------------------------------------------------
-cask "iterm2"                          # terminal emulator
 cask "basictex"                        # minimal TeX, for pandoc PDF output
 cask "bunch"                           # macOS context/workspace automation
 cask "claude-code"                     # terminal AI coding assistant
+cask "iterm2"                          # terminal emulator
