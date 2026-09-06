@@ -16,7 +16,7 @@ spent some time in the Army, and am now a sober single dad. I like cats.
 **_extended dance mix_:**
 
 <details markdown="1">
-<summary>&nbsp;More details? Are you sure?&nbsp; &blacktriangledown;</summary><br>
+<summary>&nbsp;More details? Are you sure?&nbsp; &blacktriangledown;</summary>
 
 I grew up with librarians' books and an Atari 800. When I was younger I
 brushed up against COBOL and Fortran and BASIC and Pascal and Lisp. I joined
@@ -107,7 +107,7 @@ I've been building accessibility into web publishing since the WaSP and W3C deba
 
 #### Development Stack
 {: #stack}
-I've been a Mac/macOS user since the late 1980s; before that, my early computing experience was with BASIC on a TRS-80 and DOS on an Atari 800. Beyond the obligatory Brewfile, my core macOS app suite incorporates:
+I've been a Mac/macOS user since the late 1980s; before that, my early computing experience was with BASIC on a TRS-80 and DOS on an Atari 800. Beyond the obligatory [Brewfile](/resources/brewfile.txt), my core macOS app suite incorporates:
 
 - [BBEdit](https://www.barebones.com/products/bbedit/) (bulk text processing)
 - [Drafts](https://getdrafts.com/) (text routing)
