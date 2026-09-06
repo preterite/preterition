@@ -1,0 +1,86 @@
+# =============================================================================
+# Brewfile (shareable) -- Mike Edwards, September 2026
+# The following is an annotated public subset of my larger working Brewfile.
+# Documentation for Homebrew and Brewfile practices: https://brew.sh
+# =============================================================================
+
+# --- Shell, prompt, session --------------------------------------------------
+brew "zsh"                             # newer shell than macOS ships
+brew "powerlevel10k"                   # prompt theme; configured in .p10k.zsh
+brew "zsh-autosuggestions"             # inline suggestions from history
+brew "zsh-syntax-highlighting"         # highlights commands as they are typed
+brew "tmux"                            # terminal multiplexer
+brew "direnv"                          # per-directory environment loading
+brew "zoxide"                          # recency-ranked directory jumping
+brew "fzf"                             # fuzzy finder
+
+# --- Modern CLI replacements -------------------------------------------------
+brew "bat"                             # cat with syntax highlighting
+brew "eza"                             # ls replacement
+brew "fd"                              # find replacement
+brew "ripgrep"                         # grep replacement (rg)
+brew "sd"                              # sed-style find and replace
+brew "less"                            # newer than macOS version
+brew "tree"                            # directory tree display
+brew "htop"                            # interactive process viewer
+brew "micro"                           # CLI text editor over nano and vi
+
+# --- Files and text handling -------------------------------------------------
+brew "coreutils"                       # GNU utilities (required)
+brew "rename"                          # perl-powered batch rename
+brew "renameutils"                     # qmv and friends
+brew "watchexec"                       # run a command when watched files change
+brew "terminal-notifier"               # macOS notifications from the shell
+brew "duti"                            # set default apps per file type
+
+# --- Documents, conversion, prose --------------------------------------------
+brew "pandoc"                          # document conversion export (required)
+brew "pandoc-crossref"                 # numbering and cross-references
+brew "qpdf"                            # PDF OCR transformation (required)
+brew "poppler"                         # PDF rendering and text extraction
+brew "ocrmypdf"                        # OCR on scanned PDFs; requires tesseract
+brew "tesseract-lang"                  # additional OCR language data
+brew "vale"                            # syntax-aware prose linter
+
+# --- Images and media --------------------------------------------------------
+brew "imagemagick"                     # image conversion and manipulation
+brew "ffmpeg"                          # audio and video transcoding (required)
+brew "graphviz"                        # graph layout and rendering
+brew "exiftool"                        # read and write image metadata
+
+# --- Structured data ---------------------------------------------------------
+brew "jq"                              # JSON processor
+brew "csvkit"                          # CSV conversion and inspection
+brew "miller"                          # sed/awk/join for name-indexed data
+brew "sqlite"                          # SQLite CLI (required)
+
+# --- Version control ---------------------------------------------------------
+brew "git"                             # version control
+brew "git-delta"                       # syntax-highlighting pager for diffs
+brew "gh"                              # GitHub CLI
+brew "difftastic"                      # structural, syntax-aware diff
+
+# --- Languages and package managers ------------------------------------------
+brew "node"                            # JavaScript runtime (required)
+brew "pnpm"                            # fast Node package manager
+brew "fnm"                             # Node version manager
+brew "pyenv"                           # Python version management
+brew "pipx"                            # Python apps in isolated environments
+brew "uv"                              # fast Python installer and resolver
+brew "ruby"                            # newer than the macOS version
+
+# --- Network and sync --------------------------------------------------------
+brew "curl"                            # HTTP transfers
+brew "wget"                            # file retrieval
+brew "rclone"                          # rsync for cloud storage
+brew "syncthing"                       # cross-machine binaries sync
+
+# --- Encryption --------------------------------------------------------------
+brew "age"                             # modern file encryption
+brew "gnupg"                           # OpenPGP (required)
+
+# --- Casks -------------------------------------------------------------------
+cask "iterm2"                          # terminal emulator
+cask "basictex"                        # minimal TeX, for pandoc PDF output
+cask "bunch"                           # macOS context/workspace automation
+cask "claude-code"                     # terminal AI coding assistant
