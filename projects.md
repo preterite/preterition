@@ -49,7 +49,9 @@ A one-act play in iambic pentameter with five voices; in progress
 Three generations convene in an amphitheater that forbids writing---a
 student, a teacher, and the teacher's teacher---on a problem: the teacher
 cannot read the student's words without revising. The teacher's patron
-offers as a technical solution an automaton that can neither lie, remember, nor be placed under contract. Whose written labor prices text, then, and who keeps the difference? A blank verse dialogue about conversion instruments, profoundly resistant to staging.
+offers as a solution an automaton who can neither lie, remember, nor be placed under contract. Whose written labor prices text, and who keeps the difference? A blank verse dialogue about conversion instruments, profoundly resistant to staging.
 
 [Read the play (PDF)](/resources/meaning-functionless-dialogue.pdf)
+
+I'm still writing toward the conclusion's crisis and fall: Aeryn will make an improper demand, and the hemistichs of Methis's coercive stichometries will cease.
 </div>

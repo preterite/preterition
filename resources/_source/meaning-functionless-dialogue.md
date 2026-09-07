@@ -474,3 +474,198 @@ might refuse, and you rent your space from me.
 
 
 ### to be concluded
+
+
+<!--
+DRAMATURGICAL NOTES: THE TURN INTO CRISIS
+Developed in conversation 2026-09-07. Working notes for the concluding
+movement, not part of the text. Pandoc passes this through as an HTML
+comment, so it renders in neither play.html nor the PDF.
+
+The vault fragment 300_workbench/dialogue-function-meaning.md holds the
+earlier development: the Goodman allographic/autographic frame, the
+promise as limit case, the property/contract split, the seven beat
+ending sequence, and "What Aeryn Has Written." This block extends that
+fragment and does not replace it.
+
+WHERE IT STANDS
+
+Methis has delivered the ultimatum. Rhiya is angry at having the
+coercion made blunt. Aeryn's contradiction is unresolved. Yunesh is
+lowering the temperature. Every conflict is declared and nobody has
+acted. The problem of the next movement is to convert declaration into
+action, and the conversion has to run through inscription, because that
+is the one thing the hall forbids and therefore the one thing whose
+arrival changes the world of the play.
+
+1. THE PERFORMATIVE IS ALREADY IN THE PLAY, AND IT IS METHIS'S
+
+Rhiya: "You cannot," and Methis answers "I do, / and make your cannot
+into cant." That is Austin's paradigm case, the wedding vow, the
+utterance that is not a report of an act but the act itself. It is the
+only felicitous performative anyone manages in the whole play.
+
+Austin's point about felicity is that it is institutional: the words
+work because a standing arrangement authorizes the speaker. Methis owns
+the standing arrangement. So the play has already demonstrated that in
+this hall exactly one person's speech is action and everyone else's is
+void.
+
+This retro-fires Rhiya's early line, "A wish is not a deed, nor speech
+an act, / or so would I have said ere I saw Som." He believes Som
+falsified it. Som did not. Methis did, three hundred lines later, in two
+syllables. Rhiya has been wrong about which machine converts speech into
+deeds, and the concluding movement should let him find that out.
+
+2. THE HALL'S LAW IS A HOUSE RULE, AND METHIS IS THE LANDLORD
+
+"Refusal requires a space from which one / might refuse, and you rent
+your space from me" is a claim about the hall, not about the money. The
+hall has one law: no scribal memory. If Methis is the landlord, that law
+is a house rule, and house rules belong to whoever owns the house.
+
+The move that tips everything at once: METHIS PERMITS WRITING.
+
+His motive is his own argument. Only the transferable machine ships; a
+demonstration that cannot travel is not an asset. He paid for a
+demonstration and it is stuck in the room. He lifts the ban to get a
+record. Coercion and inscription become the same act, which is the
+knot the whole play has been tying.
+
+3. WHAT THE LIFTED BAN DOES TO EACH OF THEM
+
+Yunesh: his alibi has held only because nothing could be written down. A
+memoryless machine cannot testify, but a witness with a pen can testify
+about it. He has been living on borrowed illegibility and the loan is
+called. Note that his smoothing line, "let none mistake mimesis for
+agreement," is his design philosophy in miniature: a defense of
+non bindingness. Writing is what makes seeming bind. So the ban's
+lifting attacks him at the level of principle, not of contract.
+
+Som: obsolete. A sprite that exists as a workaround for a prohibition is
+made redundant by a pencil. Methis can say this flatly, as inventory,
+and it destroys a life's work as a procurement note. This is the horror
+with no defendant the fragment was looking for, better than destruction
+and better than substitutability, because it costs Methis nothing and
+harms no one who can be harmed. It also makes Aeryn's opening delight,
+"Such expressive little features! What eyes!", retroactively into the
+appreciation of a depreciating asset.
+
+Aeryn: her writing is no longer absent by rule. It is absent by choice.
+
+4. AERYN TAKES THE PEN, AND METHIS DEMANDS NOTHING
+
+Let Rhiya's "Then I shall not" complete. He refuses, and refusal in a
+hall with no records has one available form, which is to leave. He moves
+to go. Methis permits it, of course, having already won. AERYN STOPS
+HIM. She will not let the reading not happen.
+
+That makes her conflict an act rather than an argument, which this play
+badly needs, and it means the coerced party volunteers while the coercer
+asks for nothing. Then she takes the pen, because she is the one who
+wanted circulation and circulation requires a record.
+
+So she transcribes her own misreading. The fragment's three texts become
+four: what she wrote, what Rhiya reads aloud, what she says she wrote,
+and what she is writing down now. The fourth is the only one that
+survives, in her hand, wrong. She cannot correct it without conceding
+that she is not being read but authored.
+
+5. METHIS IS THE ROOM'S ONLY RECORD
+
+In a hall that forbids inscription, the man with the money is the
+archive. Money is memory; the patron remembers. His signature move of
+completing other people's half lines has never been wit. It is retention
+demonstrated in public, over and over, and nobody has read it as a
+threat.
+
+He should close Aeryn out by quoting her back to herself. She has
+already consented, in verse, to the thing she is furious about: "so I
+hope / to be in still others' works cited found, / bound with my dark
+lines by strange hands lighted, / and thereby render'd fair my labor."
+She asked to be taken up by strangers. Methis noticed. He recites it
+accurately, from memory, in a room where memory is the only medium.
+
+THE TELL: at the climax, METHIS STOPS COMPLETING HALF LINES. He has no
+further need to remember, because now there is writing. Aeryn's
+hemistich hangs and nobody fills it. The silence is a memory technology
+being decommissioned, and no one in the room should say so.
+
+6. THE PROMISE FAILS FOR WANT OF STANDING, NOT FOR WANT OF SOM
+
+Do not put the fault in the sprite. Better that the promise be well
+formed, sincerely meant, and simply void, because the man who owns the
+room did not authorize it. Rhiya promises Aeryn something plain and
+short. Nothing happens. Not refusal, not rebuttal: the silence of an
+infelicitous utterance, which is the most frightening thing a room can
+do to a speaker. Then Som transforms it and prices it, per the
+fragment's money is memory logic, and the price is what the promise
+turns out to have been all along.
+
+Rhiya is the right speaker for it. He is the plainest voice in the play,
+his line about wishes and deeds is the crux stated early, and Methis has
+just falsified it in front of him.
+
+7. MEREOLOGY, LABOR POWER, AND GOODMAN ARE ONE DISTINCTION
+
+Aeryn already asks the part whole question straight: "Is not my labor
+mine and so a part / of me?" Methis's answer is the labor / labor power
+distinction. I bought the hours, not the woman. It is the only answer
+that makes a market possible and a transparent lie about a person.
+
+Set that beside Goodman and the two frames collapse into one:
+allographic is separable is alienable is circulable; autographic is
+inseparable is inalienable is stuck. Aeryn says "I'll not divorce my
+writing's work from me" and also asks to be cited. She is demanding that
+the inalienable circulate, and nobody has told her that is the
+contradiction.
+
+Someone should, once, plainly, and it should be RHIYA rather than
+Methis. From Methis it is a gloat. From Rhiya it is a teacher finally
+teaching her the thing that costs her everything, which is the only
+version in which his misreading is redeemed as competence. This is also
+the natural home for the mereology and mirror wordplay the fragment
+wanted: mere, more, mine, thine, part, apart.
+
+8. TWO CHEAP MOVES WORTH TAKING
+
+The hall's honorand. Methis asked "who built them? With whose money?
+Why?" and nobody answered. Answer it late, and answer it with a name
+worn off: the memorial hall's dedicatee is illegible. The building is
+then an object whose provenance cannot be established, which is Aeryn's
+inherited thing at institutional scale. Two lines, and the setting turns
+out to have been the topic.
+
+The title. If the ending permits writing, the dialogue acquires a
+function, since it now produces a record. What is mourned is precisely
+the functionless one: the speech that bound nobody because nothing held
+it. The unspoken fourth permutation names the condition nobody notices
+they are losing.
+
+9. THE RISK, WHICH IS TIMING
+
+Lifting the ban is a large move and it ends the premise. Too early and
+the last stretch has no rule left to violate. Put it AFTER the reading
+is underway, not before: let the misreading happen under the old law, so
+that the pen arrives to preserve a wrong that was made when preservation
+was impossible.
+
+10. DEVICES HELD IN RESERVE, CARRIED FORWARD FROM THE FRAGMENT
+
+Prosody as system: Rhiya endstopped and monosyllabic, Yunesh chiastic
+and circling, Aeryn enjambed across five and six lines, Methis taking
+others' half lines. The last is now a plot device (see 5).
+
+Rhiya's prosody breaks when he reads aloud from a page: lines running to
+thirteen and fourteen syllables and then snapping to four, caesuras
+falling where his lungs give out. His voice does the grading, because he
+has read this before with a pen, and the stress falls where he would
+have circled.
+
+One unmetrical line still in reserve, for whoever finally says something
+true. Candidate: Aeryn, after she stops performing.
+
+Gender remains a property of the made thing and not of persons, and
+nothing in the text yet marks that.
+END DRAMATURGICAL NOTES
+-->
