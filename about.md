@@ -24,15 +24,9 @@ the Army and drove trucks and figured out I could get things done. I competed
 for teaching assistant funding as a graduate student and found myself in
 front of a composition classroom. I learned Latin well enough to read Cicero
 but not well enough to read Tacitus. I figured out I was a feminist but
-wasn't very good at it, and am still trying to improve. I wrote a
+wasn't very good at it, and I'm still trying to improve. I wrote a
 dissertation about digital technology and economic inequality. I got a
-starter academic job and deployed to OEF and helped the Afghans rebuild their
-systems of higher education, including promoting education for Afghan women.
-I got involved with veterans' initiatives and then with intellectual property
-initiatives in my professional organization. I realized that I kept coming
-back to issues of economic inequality, and pursued the economic angle. And I
-came back again to technology and questions of incommensurability. Today,
-I'm a sober single dad in the Aspie part of the spectrum, working on the usual masculinity and self-doubt issues. I read poetry and cook stews and pet the cats with my son Malcolm. Sometimes I build databases or write stories, knowing those activities are isomorphic.
+starter academic job and deployed to OEF and helped Afghan civilian academics and military officers rebuild their systems of higher education and promoted education for Afghan women. I got involved with veterans' initiatives and then with intellectual property initiatives in my professional organization. I realized that I kept coming back to issues of economic inequality and pursued the economic angle. And I returned again to technology and questions of incommensurability. Today, I'm a sober single dad in the Aspie part of the spectrum, working on the typical masculinity and self-doubt issues. I read poetry and cook stews and pet the cats with my son Malcolm. Sometimes I build databases or write stories, knowing those activities are isomorphic.
 </details>
 
 **_on unreliable narrators_:**
@@ -97,7 +91,7 @@ Files served from GitHub Pages via Jekyll.
 Content and design elements are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). If you use aspects of _(waves vaguely)_ this or find it helpful, please cite me, and feel free to get in touch!
 
 #### Accessibility
-I've been building accessibility into web publishing since the WaSP and W3C debates of the late 1990s. My current benchmark is WCAG 2.2 Level AA, with attention to 2.1 AA and to the public university requirements of Section 508. Those standards are a vocabulary, not a substitute for judgment: access is not discharged by alt attributes and screen-reader accommodations. I design for disabled readers, for assistive technologies, for keyboard navigation, for metered connections, and for durability. Some of that is self-interested: I'm color-blind, and nothing here asks you to distinguish red from green. If you hit a barrier, let me know.
+I've been building accessibility into web publishing since the WaSP and W3C debates of the late 1990s. My current benchmark is WCAG 2.2 Level AA, with attention to 2.1 AA and to the public university requirements of Section 508. Those standards are a vocabulary, not a substitute for judgment: access is not discharged by `alt` attributes and screen-reader accommodations. I design for disabled readers, for assistive technologies, for keyboard navigation, for metered connections, and for durability. Some of that is self-interested: I'm color-blind, and nothing here asks you to distinguish red from green. If you hit a barrier, let me know.
 
 #### Version History
 
@@ -121,5 +115,5 @@ I've been a Mac/macOS user since the late 1980s; before that, my early computing
 If you wanna see something _really_ cool, turn off the lights and I'll show you my shell config.
 
 #### Further Inspiration
-I tell the first-year composition classes I teach that one common way to see citation practices is as a way of saying "Thank you." I'm indebted to the following people for helping to teach and push and inspire me with the digital tools and methods detailed above: Cheryl Ball, Samantha Blackmon, Collin Brooke, Nick Carbone, Dan Cederholm, Marcia Curtis, Linh Dich, Cory Doctorow, Monte Edwards, Doug Eyman, Paul Ford, Melissa Gira Grant, John Gruber, Matt Haughey, Anne Herrington, Ashley Holmes, Matt Jockers, Jason Kottke, Steve Krause, Donna LeCourt, John Lovas, Tony McGowan, Kathryn Manis, Stephen Millard, Derek Mueller, Rosemary Orchard, Thomas Pickering, Clancy Ratliff, Dorothea Salo, Kirill Siniavski, Karl Stolley, Aaron Swartz, Brett Terpstra, Federico Viticci, John Voorhees, M. Remi Yergeau, Jeffrey Zeldman, the early academic bloggers who used to hang around the Invisible Adjunct's place, the indefatigably brilliant students in my past tech courses, and my much-missed mentor Charlie Moran. You all have my abiding gratitude.
+I tell the first-year composition classes I teach that one common way to see citation practices is as a way of saying "Thank you." I'm indebted to the following people for helping to teach and push and inspire me with the digital tools and methods detailed above: Cheryl Ball, Samantha Blackmon, Collin Brooke, Nick Carbone, Dan Cederholm, Marcia Curtis, Linh Dich, Cory Doctorow, Monte Edwards, Doug Eyman, Paul Ford, Melissa Gira Grant, John Gruber, Matt Haughey, Anne Herrington, Ashley Holmes, Matt Jockers, Jason Kottke, Steve Krause, Donna LeCourt, John Lovas, Kathryn Manis, Tony McGowan, Stephen Millard, Derek Mueller, Rosemary Orchard, Thomas Pickering, Clancy Ratliff, Dorothea Salo, Kirill Siniavski, Karl Stolley, Aaron Swartz, Brett Terpstra, Federico Viticci, John Voorhees, M. Remi Yergeau, Jeffrey Zeldman, the early academic bloggers who used to hang around the Invisible Adjunct's place, the indefatigably brilliant students in my past tech courses, and my much-missed mentor Charlie Moran. You all have my abiding gratitude.
 </div>
