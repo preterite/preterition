@@ -41,7 +41,7 @@ I'll tell you which line you picked. The poem, in its small effect, operates as 
 </div>
 
 <div class="card" markdown="1">
-### The Meaning of Functionless Dialogue
+### The Functionless Meaning of Dialogue
 
 A one-act play in iambic pentameter with five voices; in progress
 {: .card-meta}
