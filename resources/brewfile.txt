@@ -31,10 +31,10 @@ brew "duti"                            # set default apps per file type
 brew "rename"                          # perl-powered batch rename
 brew "renameutils"                     # qmv and friends
 brew "terminal-notifier"               # macOS notifications from the shell
-brew "watchexec"                       # run a command when watched files change
+brew "watchexec"                       # run commands when watched files change
 
 # --- Documents, conversion, prose --------------------------------------------
-brew "ocrmypdf"                        # OCR on scanned PDFs; requires tesseract
+brew "ocrmypdf"                        # OCR scanned PDFs; requires tesseract
 brew "pandoc"                          # document conversion export (required)
 brew "pandoc-crossref"                 # numbering and cross-references
 brew "poppler"                         # PDF rendering and text extraction
