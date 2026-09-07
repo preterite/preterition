@@ -1,0 +1,87 @@
+/* play-print.css -- The Meaning of Functionless Dialogue
+   Trim 8.5 x 11in; margins top 1in, right 1in, bottom 1.5in, left 1.25in,
+   giving a 6.25in text area. Dialogue is set in two columns: speaker cues
+   right-aligned in a 1.25in left column, verse left-aligned in the right,
+   1in gutter between them, each speech's first verse line aligned with its
+   cue. No background is declared anywhere, so the page prints white. */
+
+@page { size: 8.5in 11in; margin: 1in 1in 1.5in 1.25in; }
+
+@font-face { font-family: "Crimson Pro"; src: url("CrimsonPro-Regular.woff2")    format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Crimson Pro"; src: url("CrimsonPro-Italic.woff2")     format("woff2"); font-weight: 400; font-style: italic; font-display: block; }
+@font-face { font-family: "Crimson Pro"; src: url("CrimsonPro-Bold.woff2")       format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+@font-face { font-family: "Crimson Pro"; src: url("CrimsonPro-BoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: block; }
+
+:root {
+  --cue-col:  1.25in;   /* width of the speaker column          */
+  --gutter:   1in;      /* space between the two columns        */
+  --verse-in: 2.25in;   /* cue-col + gutter: where verse begins */
+  --ink:      #1a1a1a;  /* near-black                            */
+  --cue-ink:  #4a4a4a;  /* medium warm grey, one step back from the verse */
+}
+
+html { font-size: 11.5pt; }
+body {
+  font-family: "Crimson Pro", Georgia, serif;
+  line-height: 1.5;
+  color: var(--ink);            /* near-black */
+  margin: 0;
+}
+
+/* --- front matter, centred --- */
+h1 { font-size: 1.35rem; font-weight: 400; font-style: italic; text-align: center; margin: 0 0 0.5em; }
+h2 { font-size: 0.85rem; font-weight: 400; font-variant: small-caps; letter-spacing: 0.14em; text-align: center; margin: 0 0 3em; }
+h3, h4 {
+  font-size: 0.8rem; font-weight: 400; font-variant: small-caps;
+  letter-spacing: 0.16em; text-align: center; margin: 2.6em 0 1.2em;
+  break-after: avoid;
+}
+p { text-align: center; font-style: italic; margin: 0 0 0.6em; }
+
+ul { list-style: none; padding: 0; margin: 0 auto 0.6em; width: max-content; max-width: 100%; }
+li { margin-bottom: 0.3em; }
+li strong { font-weight: 400; font-variant: small-caps; letter-spacing: 0.11em; }
+
+/* --- the dialogue: two columns --- */
+.speech {
+  position: relative;           /* block flow, so speeches fragment across
+                                   pages normally; the cue is pinned to the
+                                   first fragment                          */
+  padding-left: var(--verse-in);
+  margin: 0 0 1.15em;
+                                /* a speech breaks across pages freely; the
+                                   keep groups below, not this block, are
+                                   what a page boundary respects. Each line
+                                   is its own block, so orphans/widows
+                                   cannot do this job -- the grouping is
+                                   structural, done in verse-lines.lua      */
+}
+
+.cue {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--cue-col);
+  text-align: right;
+  color: var(--cue-ink);        /* medium warm grey */
+}
+.cue strong {
+  font-weight: 400;
+  font-size: 0.82rem;
+  font-variant: small-caps;
+  letter-spacing: 0.13em;
+}
+
+.line {
+  text-indent: -1.6em;          /* turn-overs hang, so a wrapped pentameter
+                                   never reads as a new short line          */
+  padding-left: 1.6em;
+  break-inside: avoid;
+}
+/* A keep group: the first two and last two lines of a long speech, or the
+   whole of a speech five lines or shorter. This is the only unbreakable
+   unit in the dialogue, so the largest gap a page foot can carry is a short
+   speech pushed whole. page-break-inside is the legacy alias, which
+   Chrome's paged-media engine honours more reliably than the modern
+   property. Group sizes are HEAD, TAIL and WHOLE in verse-lines.lua. */
+.keep { break-inside: avoid; page-break-inside: avoid; }
