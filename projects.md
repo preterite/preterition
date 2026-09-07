@@ -41,7 +41,7 @@ I'll tell you which line you picked. The poem, in its small effect, operates as 
 </div>
 
 <div class="card" markdown="1">
-### The Functionless Meaning of Dialogue
+### The Meaning of Functionless Dialogue
 
 A one-act play in iambic pentameter with five voices; in progress
 {: .card-meta}
@@ -51,5 +51,5 @@ student, a teacher, and the teacher's teacher---on a problem: the teacher
 cannot read the student's words without revising. The teacher's patron
 offers as a technical solution an automaton that can neither lie, remember, nor be placed under contract. Whose written labor prices text, then, and who keeps the difference? A blank verse dialogue about conversion instruments, profoundly resistant to staging.
 
-[Read the play (PDF)](/resources/function-meaningless-dialogue.pdf)
+[Read the play (PDF)](/resources/meaning-functionless-dialogue.pdf)
 </div>
