@@ -20,7 +20,7 @@
 # Repository secrets were the third force listed here through 2026-09-08 and
 # are not one now. Nothing in this build fetches: Listening selects in Liquid
 # from a committed list, and the calendar is committed at
-# _calendar/office-availability.ics, so no key and no capability URL is held
+# _calendar/preterite-upcoming.ics, so no key and no capability URL is held
 # anywhere in it.
 #
 # The Gemfile is plain Jekyll rather than the `github-pages` gem for the same
@@ -97,7 +97,7 @@ jobs:
 
       # THE UPCOMING WIDGET'S DATA, DERIVED BEFORE JEKYLL READS IT.
       # _scripts/expand_calendar.py reads the committed calendar at
-      # _calendar/office-availability.ics, expands its recurrence rules, and
+      # _calendar/preterite-upcoming.ics, expands its recurrence rules, and
       # overwrites _data/calendar.json. It must run above the Jekyll step:
       # Jekyll loads _data/ once, at the start of the build.
       #
