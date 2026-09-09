@@ -62,14 +62,19 @@
   The table is a rule and not a list: odd, not a multiple of five, 13 to 79.
   It is correct for n=160 and must be re-derived if the row count changes.
 
-  THE SIGN-OFF IS NOW A SECOND DRAW. It was the aside's first track by
-  construction through 2026-09-08 -- both were songs[start] -- and it is so
-  no longer: it takes its own multiplier, 99, coprime to 160, so it jumps
-  rather than walking the list in order and still visits every row across a
-  cycle (RULED 2026-09-08). Six tracks are therefore visible across the site
-  on a given day rather than five. The landing page carries no aside, so the
-  two can never appear together; measured, the sign-off's pick falls inside
-  that day's aside five on 3.8% of days.
+  THE SIGN-OFF IS THE ASIDE'S FIRST TRACK, by construction: both are
+  songs[start], so count=1 renders exactly what the top of the aside's five
+  renders. Five tracks are visible across the site on a given day, not six.
+  The reason is the landing page's relation to the interior ones (RULED
+  2026-09-09, Michael): the index is a way in, and its nav slices, hexagon
+  and bug all reappear inside, so a song that differed would be the one
+  element asking to be wondered about. Sameness here is also what lets the
+  404's hand-authored five read as deliberate deviation rather than as one
+  more rotation.
+
+  Recorded so it is not re-proposed: an independent draw on multiplier 99
+  was ruled 2026-09-08 and retired 2026-09-09, the built site's own
+  experience being the evidence against it.
 
   `escape` is load-bearing, as in tagline.html for a different reason:
   several artists carry an ampersand, which opens an entity in HTML.
@@ -85,11 +90,7 @@
   {%- assign stride = strides[cycle] | times: 1 -%}
   {%- for k in (1..count) -%}
     {%- assign j = k | minus: 1 -%}
-    {%- if include.form == "signoff" -%}
-      {%- assign idx = day | times: 99 | modulo: n -%}
-    {%- else -%}
-      {%- assign idx = j | times: stride | plus: start | modulo: n -%}
-    {%- endif -%}
+    {%- assign idx = j | times: stride | plus: start | modulo: n -%}
     {%- assign s = songs[idx] -%}
     {%- if s -%}
       {%- if include.form == "signoff" %}
