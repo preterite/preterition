@@ -34,7 +34,7 @@ investment. _Virescit in ruinis eruditionis nostrae spes._
 Stanzas and syllables and powers of two
 {: .card-meta}
 
-The poem is a bit of a parlor trick dependent on presence: I'll read it aloud to you and ask you to select a single line that in some way captures your attention. Then identify which stanzas the line appears in. If you tell me which stanzas,
+The poem is a parlor trick dependent on presence: I'll read it aloud to you and ask you to select a single line that in some way captures your attention. Then identify which stanzas the line appears in. If you tell me which stanzas,
 I'll tell you which line you picked. The poem, in its small effect, operates as a computer, or at the very least a calculator.
 
 [Read the poem (PDF)](/resources/algorithmic_poem.pdf)
@@ -53,5 +53,4 @@ offers as a solution an automaton who can neither lie, remember, nor be placed u
 
 [Read the play (PDF)](/resources/meaning-functionless-dialogue.pdf)
 
-I'm still writing toward the conclusion's crisis and fall: Aeryn will make an improper demand, and the hemistichs of Methis's coercive stichometries will cease.
 </div>

@@ -8,9 +8,8 @@ description: "Comms, open-channel and otherwise."
 ### Current Students
 
 Current WSU students should contact me through Canvas or visit during
-[office hours](#this-week). For appointments outside office hours, please
-message me through [Canvas](https://canvas.wsu.edu) with possible meeting
-times.
+[office hours](#upcoming). For appointments outside office hours, please
+message me through [Canvas](https://canvas.wsu.edu) or my [WSU email address](https://english.wsu.edu/faculty-staff/wsu-profile/mike.edwards/) with possible meeting times.
 </div>
 
 <div class="card" markdown="1">

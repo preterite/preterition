@@ -13,7 +13,7 @@ Conference on College Composition and Communication, Baltimore MD, 12 April
 2025
 {: .card-meta}
 
-First-year composition pedagogies attempting to respond to the crisis of
+First-year composition pedagogies responding to the crisis of
 textual proliferation prompted by Large Language Models (LLMs) fail to
 adequately address the circumstance "that words have a life of their own,
 radio-controlled by an automatic pilot called history," in Charles

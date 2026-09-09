@@ -16,7 +16,7 @@ spent some time in the Army, and am now a sober single dad. I like cats.
 **_extended dance mix_:**
 
 <details markdown="1">
-<summary>&nbsp;More details? Are you sure?&nbsp; &blacktriangledown;</summary>
+<summary>&nbsp;&nbsp;More details? Are you sure?</summary>
 
 I grew up with library books and an Atari 800. When I was younger I
 brushed up against COBOL and Fortran and BASIC and Pascal and Lisp. I joined
@@ -115,5 +115,5 @@ I've been a Mac/macOS user since the late 1980s; before that, my early computing
 If you wanna see something _really_ cool, turn off the lights and I'll show you my shell config.
 
 #### Further Inspiration
-I tell the first-year composition classes I teach that one common way to see citation practices is as a way of saying "Thank you." I'm indebted to the following people for their work with the digital tools and approaches referenced above, and for what I've learned from them: Cheryl Ball, Samantha Blackmon, Collin Brooke, Nick Carbone, Dan Cederholm, Marcia Curtis, Bret Devereaux, Linh Dich, Cory Doctorow, Monte Edwards, Doug Eyman, Paul Ford, Melissa Gira Grant, John Gruber, D. Alexis Hart, Matt Haughey, Kieran Healy, Anne Herrington, Ashley Holmes, Dennis Jerz, Matt Jockers, Jason Kottke, Steve Krause, Donna LeCourt, John Lovas, Kathryn Manis, Tony McGowan, Stephen Millard, Pete Molin, Derek Mueller, Rosemary Orchard, Thomas Pickering, Clancy Ratliff, Dorothea Salo, Kirill Siniavski, Karl Stolley, Aaron Swartz, Brett Terpstra, Federico Viticci, John Voorhees, M. Remi Yergeau, Jeffrey Zeldman, the early academic bloggers who used to hang around the Invisible Adjunct's place, the indefatigably brilliant students in my past tech courses, and Charlie Moran.
+I tell the first-year composition classes I teach that one common way to see citation practices is as a way of saying "Thank you." I'm indebted to the following people for their work with the digital tools and approaches referenced above, and for what I've learned from them: Cheryl Ball, Mark Bernstein, Samantha Blackmon, Collin Brooke, Nick Carbone, Dan Cederholm, Marcia Curtis, Bret Devereaux, Linh Dich, Cory Doctorow, Monte Edwards, Doug Eyman, Paul Ford, Melissa Gira Grant, John Gruber, D. Alexis Hart, Matt Haughey, Kieran Healy, Anne Herrington, Ashley Holmes, Dennis Jerz, Matt Jockers, Jason Kottke, Steve Krause, Donna LeCourt, John Lovas, Kathryn Manis, Tony McGowan, Stephen Millard, Pete Molin, Derek Mueller, Rosemary Orchard, Thomas Pickering, Clancy Ratliff, Dorothea Salo, Kirill Siniavski, Karl Stolley, Aaron Swartz, Brett Terpstra, Federico Viticci, John Voorhees, M. Remi Yergeau, Jeffrey Zeldman, the early academic bloggers who used to hang around the Invisible Adjunct's place, the indefatigably brilliant students in my past tech courses, and Charlie Moran.
 </div>

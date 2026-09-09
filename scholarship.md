@@ -4,7 +4,15 @@ description: "Selected published articles and chapters."
 ---
 ## Scholarship
 
-My research investigates the social and material economics, history, and philosophy of inscription technologies and systems. What I _don't_ do: the science side of STS, ecological or Austrian-adjacent economic heterodoxy, or the intersection of media studies and digital humanities as practiced by the Modern Language Association. Instead, my interests operate across the intersections of rhetoric and composition history and theory; heterodox economic thought in the surplus tradition (classical, Marxian, Sraffian) informed by post-Keynesian, feminist and complexity economics; the history and philosophy of writing, filing, and classification technologies; the procedures of avant-garde and experimental writing; cybernetics and systems theory; and critical theory.
+My research investigates the material and political economies, histories, and philosophies of inscription technologies, rhetorics, and systems.
+
+<details markdown="1">
+<summary>&nbsp;&nbsp;<strong><em>Specifics</em>:</strong></summary>
+
+What I _don't_ do: the science side of STS, ecological or Austrian-adjacent economic heterodoxy, or the intersection of media studies and digital humanities as practiced by the Modern Language Association.
+
+Instead, my interests operate across the intersections of rhetoric and composition history and theory; heterodox economic thought in the surplus tradition (classical, Marxian, Sraffian) informed by post-Keynesian, feminist and complexity economics; the history and philosophy of writing, filing, and classification technologies; the procedures of avant-garde and experimental writing; cybernetics and systems theory; and critical theory.
+</details>
 
 What follows is a selection rather than a record, reflecting a trajectory of interest: the rhetoric of incommensurability.
 

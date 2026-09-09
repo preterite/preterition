@@ -81,6 +81,6 @@ its material history and practices.
 | [Lesson notes (PDF)](/resources/dtc-375-lessons.pdf)
 </div>
 
-### Paralipsis: First Year Composition 
+### Paralipsis: First Year Composition
 
 English 101 is my favorite course. First year composition reaches more students than the above courses combined and is staffed on the reasoning that tenured faculty are too expensive to teach it: a claim about how universities price instruction, not about the value of the course. My revision of first year composition as curriculum, pedagogy, and method is on the [projects page](/projects.html).

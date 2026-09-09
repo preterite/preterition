@@ -19,7 +19,7 @@ editorial staff for thirteen years, moving from assistant to advanced
 assistant to associate editor and finally to editor of Topoi, the section
 that publishes the journal's feature-length work. _Kairos_ publishes
 webtexts, with arguments made as much in design and code as in
- prose, and editing a webtext operates as a sustained conversation with an author about [what constraints constitute digital argument](https://kairos.technorhetoric.net/styleguide.html). I co-edited the journal's 2010 "dot mil" special issue on rhetoric, technology, and the military with Alexis Hart. _Kairos_ helped teach me much of what I know about scholarly editing and publishing.
+ prose. Scholarly publication processes involving emerging technologies, when implemented well, operate as sustained conversations between authors and editors about [what constraints constitute digital argument](https://kairos.technorhetoric.net/styleguide.html). I co-edited the journal's 2010 "dot mil" special issue on rhetoric, technology, and the military with Alexis Hart. _Kairos_ helped teach me much of what I know about scholarly editing and publishing.
 
 [The "dot mil" special issue (2010)](https://kairos.technorhetoric.net/14.3/index.html)
 </div>
