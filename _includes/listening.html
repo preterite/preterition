@@ -1,0 +1,76 @@
+{%- comment -%}
+  _includes/listening.html -- the day's rotation. One rule, three consumers:
+  sidebar.html, sidebar-weblog.html and the landing page's sign-off. Written
+  as an include for the reason tagline.html is one: the selection is a rule,
+  and a rule copied into three files is a rule that will disagree with
+  itself. The weblog aside and the professional pages show the same five by
+  construction, and the sign-off shows that same day's first, not a second
+  draw.
+
+  Parameters:
+    count   tracks to render. 5 in an aside, 1 in the sign-off.
+    form    "track" (the default) renders .music-track divs; "signoff"
+            renders the bare song and artist spans the landing page's
+            own-line expects, with no wrapper of their own.
+
+  Source is _data/site_songs.csv: title, artist, header row as keys.
+
+  THE FILE'S ORDER IS LOAD-BEARING AND IT IS NOT THE EXPORT'S. Apple Music
+  writes the list sorted, and that order is the exporter's rather than any
+  fact about listening -- so a positional selection over it renders an
+  alphabetical run, and the run says something false. Measured 2026-09-08
+  before the repair: the first twenty rows ran Adona to Depeche Mode, so a
+  sign-off drawing its single track from a group-count modulus could never
+  have shown anything outside that window. The committed file is therefore
+  shuffled once, deterministically, and a re-export must be shuffled again
+  before it lands. The operation, seed included, so it is repeatable:
+
+    python3 -c "import csv,random;p='_data/site_songs.csv';r=list(csv.reader(open(p,encoding='utf-8')));h,b=r[0],r[1:];random.Random(20260908).shuffle(b);f=open(p,'w',encoding='utf-8',newline='');w=csv.writer(f,quoting=csv.QUOTE_ALL);w.writerow(h);w.writerows(b)"
+
+  The failure mode is visible rather than silent: an alphabetical file makes
+  an alphabetically ordered widget, which is the symptom that found this.
+
+  Selection is by day of year and not at random, following tagline.html: a
+  build must be reproducible, and `sample` would make two builds of one
+  commit differ. The Actions cycle rebuilds daily (RULED 2026-08-18), so the
+  rotation runs on that cadence.
+
+  `start` is taken modulo the row count and not the group count, which is
+  the whole of the repair: the first track can land on any row, so the
+  sign-off's single track is drawn from the entire list and walks all of it
+  across a cycle. The rest are spaced one group apart and wrapped, which
+  keeps them from colliding -- four groups is always less than the whole --
+  and, over a shuffled file, from reading as a sequence.
+
+  `escape` is load-bearing, as in tagline.html for a different reason:
+  several artists carry an ampersand, which opens an entity in HTML.
+{%- endcomment -%}
+{%- assign count = include.count | default: 5 -%}
+{%- assign songs = site.data.site_songs -%}
+{%- if songs and songs.size >= 5 -%}
+  {%- assign n = songs.size -%}
+  {%- assign groups = n | divided_by: 5 -%}
+  {%- assign start = site.time | date: "%j" | times: 1 | modulo: n -%}
+  {%- for k in (1..count) -%}
+    {%- assign j = k | minus: 1 -%}
+    {%- assign idx = j | times: groups | plus: start | modulo: n -%}
+    {%- assign s = songs[idx] -%}
+    {%- if s -%}
+      {%- if include.form == "signoff" %}
+        <span class="music-track-song">{{ s.title | escape }}</span>
+        <span class="music-track-artist">{{ s.artist | escape }}</span>
+      {%- else %}
+      <div class="music-track">
+        <span class="music-track-song">{{ s.title | escape }}</span>
+        <span class="music-track-artist">{{ s.artist | escape }}</span>
+      </div>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- if include.form == "signoff" %}
+        <span class="music-track-song">silence</span>
+  {%- else %}
+      <p class="music-empty">The record is silent.</p>
+  {%- endif -%}
+{%- endif -%}

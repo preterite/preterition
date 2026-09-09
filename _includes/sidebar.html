@@ -1,16 +1,33 @@
 {%- comment -%}
   _includes/sidebar.html -- the professional pages' aside: strip, Listening,
-  This Week, tagline. The two widgets render _data/lastfm.json and
-  _data/calendar.json at build (RULED 2026-08-18): no key, no fetch, nothing
-  runs in the reader's browser. The schema the include reads is the schema
-  the fetch scripts must write -- tracks[].name, tracks[].artist;
-  events[].day, events[].summary -- stated here, at the one consumer, so
-  the producer has a contract to meet. The fetch also writes tracks[].url,
-  which this template deliberately does not render (RULED 2026-08-24,
-  Michael): the datum is captured so that a later ruling has something to
-  render, and until there is one, Listening is a reporter, not a navigator
-  (RULED 2026-08-21): no outbound link. This Week carries
-  id="this-week" because contact.md links office hours to it.
+  Upcoming, tagline. Both widgets render from _data/ at build (RULED
+  2026-08-18): no key, no fetch, nothing runs in the reader's browser.
+
+  Listening's source, selection and escaping are _includes/listening.html's,
+  which the weblog aside and the landing page's sign-off call as well, so
+  the three agree by construction rather than by three copies of one rule
+  staying in step. What this file owns is the zone: the heading, the widget
+  wrapper, and the position. Listening precedes the calendar here and is
+  terminal in the weblog's middle zone (RULED 2026-08-26, Michael: the
+  deployed sequence is correct). Reporter, not navigator (RULED 2026-08-21):
+  no outbound link, here or anywhere.
+
+  The Last.fm fetch this widget was first designed around is retired. A
+  local file needs no key, no rate limit and no third-party request, and
+  with it go _data/lastfm.json and the tracks[].url captured 2026-08-24
+  against a later ruling, which has no source in a list of titles and
+  artists.
+
+  This Week renders _data/calendar.json -- events[].day, events[].time,
+  events[].summary, three pre-formatted strings written at build by
+  _scripts/expand_calendar.py from the committed _calendar/. The schema
+  contract now lives at _includes/upcoming.html, beside the rule that
+  renders it, rather than here.
+
+  Renamed from "This Week" 2026-09-08 (Michael): the unit of report is the
+  next five items by start time, not a week's worth, so the old heading went
+  false on a quiet week and after the term's last UNTIL expired. The section
+  carries id="upcoming" and contact.md's office-hours link follows it.
 {%- endcomment -%}
 <aside>
   <div class="sidebar-section">
@@ -20,25 +37,14 @@
   <div class="sidebar-section">
     <h3>Listening</h3>
     <div class="music-widget">
-    {%- for t in site.data.lastfm.tracks limit: 5 %}
-      <div class="music-track">
-        <span class="music-track-song">{{ t.name }}</span>
-        <span class="music-track-artist">{{ t.artist }}</span>
-      </div>
-    {%- else %}
-      <p class="music-empty">Nothing scrobbled lately.</p>
-    {%- endfor %}
+    {%- include listening.html count=5 %}
     </div>
   </div>
 
-  <div class="sidebar-section" id="this-week">
-    <h3>This Week</h3>
+  <div class="sidebar-section" id="upcoming">
+    <h3>Upcoming</h3>
     <div class="calendar-widget">
-    {%- for e in site.data.calendar.events %}
-      <div class="calendar-event"><span class="calendar-day">{{ e.day }}</span> {{ e.summary }}</div>
-    {%- else %}
-      <p class="calendar-empty">Nothing scheduled.</p>
-    {%- endfor %}
+    {%- include upcoming.html count=5 %}
     </div>
   </div>
 

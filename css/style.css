@@ -1247,12 +1247,22 @@ aside {
 .music-track-song {
   font-weight: 500;
   color: var(--color-accent-grey-green);
-  display: block;
 }
 
 .music-track-artist {
   font-size: 0.75rem;
   color: var(--color-muted-grey);
+}
+
+/* Block display is scoped to the aside, for the reason the calendar's summary
+   is below. These same spans render in the landing page's sign-off, inside a
+   .signoff .own-line whose children flow normally rather than as flex items,
+   so display:block on the spans themselves put the song and the artist each on
+   a line of their own beneath the "listening:" key -- three lines where the
+   design calls for one (measured 2026-09-08, Michael, on the built page). The
+   sign-off's own whitespace supplies the space between song and artist. */
+.music-track .music-track-song,
+.music-track .music-track-artist {
   display: block;
 }
 
@@ -1291,16 +1301,42 @@ aside {
   line-height: 1.4;
 }
 
-.calendar-link {
-  display: block;
-  margin-top: 12px;
-  font-family: var(--font-sans);
-  font-size: 0.8125rem;
+/* The widget renders three fields -- day, time, summary -- in that DOM order.
+   .calendar-day takes no rule of its own: inheriting .calendar-event above is
+   exactly the small muted dateline treatment it wants, and a rule restating an
+   inheritance is a rule that can drift from it. */
+.calendar-time {
+  margin-left: 0.5em;
 }
 
-.calendar-link a {
+/* Emphasis is unscoped; block display is not. This is the .music-track-song
+   pattern above, applied here. The summary is the field the reader came for in
+   both contexts -- the aside and the landing page's sign-off -- so it carries
+   emerald and weight 500 wherever it renders (RULED 2026-09-08, Michael: what
+   is emphasized follows the sidebar's convention in both instances, so the
+   sign-off reads "upcoming: Day Time **Event**" as its sibling reads
+   "listening: **Song** Artist"). Block display is the aside's alone: in the
+   sign-off these spans sit inside a .signoff .own-line whose children flow
+   normally rather than as flex items, so a global display:block would break
+   the line across four where the design calls for one. Colour carries nothing
+   alone -- weight, and in the aside line position, say the same thing. Emerald
+   on the card ground measures 4.68:1, above the 4.5 floor for text this size
+   and on the margin the spec flags as a tripwire. */
+.calendar-summary {
+  font-weight: 500;
   color: var(--color-accent-grey-green);
 }
+
+.calendar-event .calendar-summary {
+  display: block;
+}
+
+/* The subscribe link is struck (RULED 2026-09-08, Michael). The widget is a
+   reporter and not a navigator (RULED 2026-08-21, holding here or anywhere),
+   and the only plausible link was the webcal:// capability URL, which
+   publishing would have handed permanent calendar access to anyone who read
+   the page. .calendar-link and .calendar-link a stood here and styled nothing
+   once _includes/upcoming.html stopped emitting an anchor. Do not restore. */
 
 /* ===== TAGLINE ===== */
 .tagline-box {

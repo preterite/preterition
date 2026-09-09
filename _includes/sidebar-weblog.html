@@ -48,19 +48,16 @@
   it. On the professional pages it precedes the calendar instead (RULED
   2026-08-26, Michael: the deployed sequence is correct). It is also
   the only element on this page that demonstrates the page is live. Reporter,
-  not navigator (RULED 2026-08-21): no outbound link, here or anywhere.
+  not navigator (RULED 2026-08-21): no outbound link, here or anywhere. The
+  source and the selection are _includes/listening.html's, shared with the
+  professional pages' aside and the landing page's sign-off, so the three
+  show the same five songs on any given day rather than three draws that
+  happen to agree.
   {%- endcomment %}
   <div class="sidebar-section">
     <h3>Listening</h3>
     <div class="music-widget">
-    {%- for t in site.data.lastfm.tracks limit: 5 %}
-      <div class="music-track">
-        <span class="music-track-song">{{ t.name }}</span>
-        <span class="music-track-artist">{{ t.artist }}</span>
-      </div>
-    {%- else %}
-      <p class="music-empty">Nothing scrobbled lately.</p>
-    {%- endfor %}
+    {%- include listening.html count=5 %}
     </div>
   </div>
 </aside>

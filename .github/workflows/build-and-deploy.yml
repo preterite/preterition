@@ -4,15 +4,24 @@
 #
 # Why a workflow at all, since Pages can build Jekyll by itself (RULED
 # 2026-08-18): Pages hosts, Actions builds, and the only question was ever
-# who runs Jekyll. Three things force Actions independently, so retiring any
-# one of them does not reopen the question --
+# who runs Jekyll. Each of the following forces Actions on its own, so
+# retiring any one of them does not reopen the question --
 #
 #   Pagefind is a POST-build indexer. It reads the finished _site/ and writes
 #     an index back into it. Pages' native builder hands you no step after
 #     Jekyll, so there is nowhere for it to run.
-#   The widget data needs repository secrets. A Last.fm key cannot live in a
-#     static site; it lives in Actions and never reaches the browser.
+#   The Upcoming widget's data is DERIVED before Jekyll reads it. Expanding
+#     the calendar's recurrence rules is date arithmetic no template language
+#     should be asked to carry, and the script writes _data/, which Jekyll
+#     loads once at the start of the build. The native builder offers no step
+#     before Jekyll either. See "Expand the calendar" below.
 #   The 24-hour refresh needs a schedule. Pages' builder fires on push only.
+#
+# Repository secrets were the third force listed here through 2026-09-08 and
+# are not one now. Nothing in this build fetches: Listening selects in Liquid
+# from a committed list, and the calendar is committed at
+# _calendar/office-availability.ics, so no key and no capability URL is held
+# anywhere in it.
 #
 # The Gemfile is plain Jekyll rather than the `github-pages` gem for the same
 # reason: that gem's version pin and plugin whitelist are constraints of a
@@ -26,8 +35,10 @@ on:
   # The daily rebuild. It is not decoration: the tagline's no-JavaScript
   # baseline is chosen at build by day of year (_includes/tagline.html), so
   # a site that only builds on push shows one reader the same tagline for
-  # months. When the Last.fm and calendar fetch steps land, this is the
-  # cycle they run on. Note that GitHub disables scheduled workflows on a
+  # months. The Upcoming widget rides the same cycle for a different reason:
+  # nothing is fetched, but the expansion window moves, so a build from
+  # yesterday can name an event that has already passed. Note that GitHub
+  # disables scheduled workflows on a
   # repository with no activity for 60 days, and mails you when it does.
   schedule:
     - cron: "17 9 * * *"
@@ -84,6 +95,35 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      # THE UPCOMING WIDGET'S DATA, DERIVED BEFORE JEKYLL READS IT.
+      # _scripts/expand_calendar.py reads the committed calendar at
+      # _calendar/office-availability.ics, expands its recurrence rules, and
+      # overwrites _data/calendar.json. It must run above the Jekyll step:
+      # Jekyll loads _data/ once, at the start of the build.
+      #
+      # Why a step at all, when Listening needs none: Listening selects from a
+      # committed list in Liquid, and Liquid can do that. Every live event on
+      # the calendar is an RRULE, and expanding one needs date arithmetic no
+      # template language should be asked to carry.
+      #
+      # Why daily: the calendar's CONTENT changes only when Michael re-exports
+      # it, but the NEXT FIVE ITEMS change every day, because the expansion
+      # window moves. The cron above is that clock.
+      #
+      # No secret, no network, no fetch. The .ics is in the repository.
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10
+
+      # --locked is the reproducibility guarantee and the reason uv itself is
+      # not pinned here: it fails the build if expand_calendar.py.lock does not
+      # match the script's inline dependency manifest, so the versions that run
+      # are the committed ones whatever uv resolves them with. The dependency
+      # declaration lives in the script (PEP 723) and the pins live beside it
+      # in the lockfile -- one rule at one site, the same discipline that keeps
+      # listening.html the only place the rotation is written.
+      - name: Expand the calendar
+        run: uv run --locked --script _scripts/expand_calendar.py
+
       # JEKYLL_ENV=production is what makes `jekyll.environment` read
       # "production" in Liquid. Nothing in the site branches on it today; it
       # is set because the alternative is discovering later that every build
@@ -104,12 +144,12 @@ jobs:
       - name: Index with Pagefind
         run: npx -y "pagefind@${PAGEFIND_VERSION}" --site _site
 
-      # WHERE THE WIDGET FETCH GOES. _data/lastfm.json and
-      # _data/calendar.json are committed last-known-good stubs so the build
-      # never waits on a network call, and the fetch overwrites them before
-      # Jekyll runs -- meaning the steps land ABOVE "Build with Jekyll", not
-      # here. Left unwritten rather than stubbed: the scripts do not exist,
-      # and their _data/ schema is an open ledger row.
+      # The widget data steps are ABOVE "Build with Jekyll", where a step that
+      # writes _data/ has to be. This block said through 2026-09-08 that the
+      # scripts did not exist and their schema was an open ledger row; both
+      # sentences were true when written and are false now. Listening needs no
+      # step at all -- it selects in Liquid from a committed list -- and the
+      # calendar's expansion is the "Expand the calendar" step above.
 
       - name: Upload the built site
         uses: actions/upload-pages-artifact@v3
