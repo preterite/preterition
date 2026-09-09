@@ -2,10 +2,10 @@
 title: "About"
 description: "Who I am, how I work, what this is."
 ---
-## About
+# About
 
 <div class="card" markdown="1">
-### Biography
+## Biography
 
 **_tl,dr_:**
 
@@ -26,7 +26,7 @@ front of a composition classroom. I learned Latin well enough to read Cicero
 but not well enough to read Tacitus. I figured out I was a feminist but
 wasn't very good at it, and I'm still trying to improve. I wrote a
 dissertation about digital technology and economic inequality. I got a
-starter academic job and deployed to OEF and helped Afghan civilian academics and military officers rebuild their systems of higher education and promoted education for Afghan women. I got involved with veterans' initiatives and then with intellectual property initiatives in my professional organization. I realized that I kept coming back to issues of economic inequality and pursued the economic angle. And I returned again to technology and questions of incommensurability. My social misfires happen in what used to be called the Aspie portion of the spectrum, and I'm working on the typical masculinity and self-doubt issues often expected from men with my history. I read poetry and cook stews and pet the cats with my son Malcolm. Sometimes I build databases or write stories, knowing those activities are isomorphic.
+starter academic job and deployed to OEF and helped Afghan civilian academics and military officers rebuild their systems of higher education and promoted education for Afghan women. I got involved with veterans' initiatives and then with intellectual property initiatives in my professional organization. I realized that I kept coming back to issues of economic inequality and pursued the economic angle. And I returned again to technology and questions of incommensurability. My social misfires happen in what used to be called the Aspie portion of the spectrum, and I'm working on the usual masculinity and doubt issues associated with men from my background. I read poetry and cook stews and pet the cats with my son Malcolm. Sometimes I build databases or write stories, knowing those activities are isomorphic.
 </details>
 
 **_on unreliable narrators_:**
@@ -41,7 +41,7 @@ identify a number of unattributed references _hic et passim_.
 </div>
 
 <div class="card" markdown="1">
-### Research and Teaching
+## Research and Teaching
 
 My work in publications, presentations, projects, and classrooms investigates
 how economic frameworks and digital technologies shape writing processes,
@@ -60,46 +60,46 @@ feel that topic's best treated more thoroughly in links from the
 </div>
 
 <div class="card" markdown="1">
-### Contact
+## Contact
 
 For inquiries about research, teaching, workshops, technologies, or speaking
 engagements, please visit my [contact page](/contact.html).
 </div>
 
 <div class="card" markdown="1">
-### Colophon
+## Colophon
 {: #colophon}
 
 I have strong opinions about tools and design. I built this site with semantic HTML5, modern CSS (using CSS Grid and Flexbox), and minimal vanilla JavaScript. No cruft, no big frameworks: just clean, accessible, standards-compliant code.
 
-#### Typography
+### Typography
 Body text uses [Crimson Pro](https://fonts.google.com/specimen/Crimson+Pro), a contemporary take on early book typography and the rightly beloved historical [Caslon](https://www.printmuseum.org/wood-type-caslon). Headings and navigation use [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans), with [JetBrains Mono](https://www.jetbrains.com/lp/mono/) for code and the site title, seeking to visually balance historical and modern elements with notable connections to the emergence of print and information culture. All are open source and hosted locally for privacy: I don't give out your IP address.
 
-#### Color
+### Color
 The site uses a muted grey palette and nods to the verdant clich&eacute; of 1980s terminal aesthetics with `#00FF00` ("pure green") as an accent color.
 
-#### Images
+### Images
 The rotating sidebar images come from a set of 150 x 800 abstract GIFs I made and shooped, selected for retro appearance and visual curiosity.
 
-#### HTML, CSS, JS
+### HTML, CSS, JS
 All code is well-commented valid HTML5 and CSS3 with vanilla JavaScript; no external libraries or IP address reveals. Keeping page loads light means no minification means legible code, if you want to pop the hood and see how it runs.
 
-#### Hosting
+### Hosting
 Files served from GitHub Pages via Jekyll.
 
-#### License
+### License
 Content and design elements are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). If you use aspects of _(waves vaguely)_ this or find it helpful, please cite me, and feel free to get in touch!
 
-#### Accessibility
+### Accessibility
 I've been building accessibility into web publishing since the WaSP and W3C debates of the late 1990s. My current benchmark is WCAG 2.2 Level AA, with attention to 2.1 AA and to the public university requirements of Section 508. Those standards are a vocabulary, not a substitute for judgment. I design for disabled readers, for assistive technologies, for keyboard navigation, for metered connections, and for durability. If you hit a barrier, let me know.
 
-#### Version History
+### Version History
 
 - I built my first version of this site as a grad student in a UMass Amherst computer classroom in 2002, and then a weblog version using a Movable Type template in 2003, and migrated the weblog to a modified local WordPress install at `vitia.org` in 2004. All three used green accent colors; my flavor of deuteranopia inclines me to favor greens and greys for design. Iterations of this site and the accompanying weblog have been [ostentatiously ad-free](https://webfoundation.org/2017/04/sir-tim-berners-lee-responds-to-us-net-neutrality-threat/) from day one. I'm a little proud at having been the first person to show Charlie Moran the capabilities of cascading stylesheets. Over the site's next sixteen years, I taught myself better CSS skills and more advanced HTML and various Web standards with the help of [w3schools](https://www.w3schools.com/), derivations of Tantek &Ccedil;elik's classic [Box Model Hack](https://tantek.com/CSS/Examples/boxmodelhack.html), and books and posts from [A List Apart](https://alistapart.com/). My most active years as a blogger were from 2004 to 2008, when I completed my PhD and started my first academic job. I started using Dreamweaver when it was a Macromedia app and mostly quit using Adobe's version around 2014.
 - Around 2020, I transitioned my writing tools from word processors like Microsoft Word (can't abide the cruft) and Apple Pages (pretty but underpowered) to scriptable lightweight text editors with Markdown. I also abandoned `vitia.org` and incorporated the WordPress blog into a new personal and professional site using a customized ThemeGrill template here at `preterite.net`.
 - In 2025, I took the site offline for a complete overhaul, ditching the ready-made templates approach in favor of clean, minimal, hand-crafted human-readable standards-compliant code, leading to what you're reading now. My workflow (Development Stack, below) cycled through Drafts for small chunks of text, iA Writer for HTML-ready Markdown, and BBEdit for larger swaths of code, using iTerm2 for simple scripting and for managing local and GitHub transfers and directories. Current build stage for this site (academic site v5? weblog v4? preterite.net v2?) is **post-deployment debugging**. Near-term future development focuses on shifting from a database-driven weblog to a static-pages weblog using Jekyll (why the weblog's still down; part of the task involves recovering weblog entry fragments buried in stray SQL columns in a botched decades-ago conversion from ISO 8859-1 to UTF-8).
 
-#### Development Stack
+### Development Stack
 {: #stack}
 I've been a Mac/macOS user since the late 1980s; before that, my early computing experience was with BASIC on a TRS-80 and DOS on an Atari 800. Beyond the obligatory [Brewfile](/resources/brewfile.txt), my core macOS app suite incorporates:
 
@@ -114,6 +114,6 @@ I've been a Mac/macOS user since the late 1980s; before that, my early computing
 
 If you wanna see something _really_ cool, turn off the lights and I'll show you my shell config.
 
-#### Further Inspiration
+### Further Inspiration
 I tell the first-year composition classes I teach that one common way to see citation practices is as a way of saying "Thank you." I'm indebted to the following people for their work with the digital tools and approaches referenced above, and for what I've learned from them: Cheryl Ball, Mark Bernstein, Samantha Blackmon, Collin Brooke, Nick Carbone, Dan Cederholm, Marcia Curtis, Bret Devereaux, Linh Dich, Cory Doctorow, Monte Edwards, Doug Eyman, Paul Ford, Melissa Gira Grant, John Gruber, D. Alexis Hart, Matt Haughey, Kieran Healy, Anne Herrington, Ashley Holmes, Dennis Jerz, Matt Jockers, Jason Kottke, Steve Krause, Donna LeCourt, John Lovas, Kathryn Manis, Tony McGowan, Stephen Millard, Pete Molin, Derek Mueller, Rosemary Orchard, Thomas Pickering, Clancy Ratliff, Dorothea Salo, Kirill Siniavski, Karl Stolley, Aaron Swartz, Brett Terpstra, Federico Viticci, John Voorhees, M. Remi Yergeau, Jeffrey Zeldman, the early academic bloggers who used to hang around the Invisible Adjunct's place, the indefatigably brilliant students in my past tech courses, and Charlie Moran.
 </div>
