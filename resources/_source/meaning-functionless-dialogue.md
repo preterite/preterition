@@ -269,9 +269,10 @@ the functionless meaning of dialogue?
 Shorn of your excess subjunctive voice and  
 sesquipedalian circumlocutions,  
 Yes. It would---I suppose---seem to be. No?  
-For negation shears off provision and  
-turns us round to power's bind: between the  
-object and subject, who will be master?
+For negation zeroes out provision  
+and turns us to power's bind: between the  
+scene and the frame, the subject and object,
+who will describe and who will need not point?
 
 **AERYN**  
 It is just as you say. It was just as  
@@ -292,7 +293,7 @@ Change's turns prompt my inability
 to know and speak, as Som's sculpture plainly  
 now reverses and refines my passing  
 knowledge, since I've seen its present stasis.  
-Words only approximate Som's sculpture.  
+Symbols only approximate Som's art.  
 Having been not who I am, nor can it be  
 to me what it also once was, or if  
 it is, it all the more reflects. Our change  
