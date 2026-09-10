@@ -2,12 +2,12 @@
 title: "Service"
 description: "Institutional and professional work."
 ---
-## Service
+# Service
 
 Three kinds of work: a journal, a profession, a war.
 
 <div class="card" markdown="1">
-### _Kairos: A Journal of Rhetoric, Technology, and Pedagogy_
+## _Kairos: A Journal of Rhetoric, Technology, and Pedagogy_
 
 Assistant Editor to Section Editor, Topoi, 2006-2018
 {: .card-meta}
@@ -25,7 +25,7 @@ webtexts, with arguments made as much in design and code as in
 </div>
 
 <div class="card" markdown="1">
-### Intellectual Property Caucus and Committee, CCCC
+## Intellectual Property Caucus and Committee, CCCC
 
 Caucus co-chair 2011-2013 and 2024-2025; Committee 2013-2016, chair 2016
 {: .card-meta}
@@ -34,21 +34,18 @@ The Intellectual Property Caucus is where my field argues about who owns student
 require of authors. I co-chaired the Caucus from 2011 to 2013 and again from 2024 to 2025, and served on the CCCC Intellectual Property Committee from 2013 until 2016, chairing it in its final months before CCCC's governance restructure eliminated the committee. I authored several updates for the CCCC-IP Annual on the defeat of the Research Works Act, on Elsevier's demands that scholars take down their own research, on the Electronic Frontier Foundation's white paper on statutory damages for infringement, and on Elsevier's search for new revenue as universities walked away from big-deal contracts.
 
 [CCCC-IP Annual: 2019–2020 (PDF)](/resources/cccc-ip-2020.pdf) | [CCCC-IP Annual: 2013 (PDF)](/resources/cccc-ip-2013.pdf)
-</div>
 
 </div>
 
 <div class="card" markdown="1">
-### National Military Academy of Afghanistan
+## National Military Academy of Afghanistan
 
 Academic mentor, National Training Mission -- Afghanistan, 2011
 {: .card-meta}
 
 In early 2011 I deployed from West Point to Afghanistan as a civilian academic mentor, developing postsecondary writing curricula and mentoring the Afghan instructors who would teach them. General David Petraeus presented me with the Commander's Award for Excellence, and I received the Commander's Award for Civilian Service at the conclusion of my time in theater; the work itself is documented in a Memorandum for Record. I have written about it since in more scholarly terms in "Digital Literacy Instruction in Afghanistan," in _Digital Rhetoric and Global Literacies_ (IGI Global, 2014). The deployment's work negotiated the fraught relations between coercion and persuasion, and I take particular care in representing those relations.
 
-[Memorandum for Record and award citations
-(PDF)](/resources/nmaa_award_and_aar.pdf) |
-[Read the chapter (PDF)](/resources/edwards-digital-literacy-afghanistan.pdf)
+[Memorandum for Record and award citations (PDF)](/resources/nmaa_award_and_aar.pdf) | [Read the chapter (PDF)](/resources/edwards-digital-literacy-afghanistan.pdf)
 </div>
 
 I've also co-chaired the CCCC Task Force on Veterans, served an elected term
