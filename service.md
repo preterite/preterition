@@ -19,7 +19,7 @@ editorial staff for thirteen years, moving from assistant to advanced
 assistant to associate editor and finally to editor of Topoi, the section
 that publishes the journal's feature-length work. _Kairos_ publishes
 webtexts, with arguments made as much in design and code as in
- prose. Scholarly publication processes involving emerging technologies, when implemented well, operate as sustained conversations between authors and editors about [what constraints constitute digital argument](https://kairos.technorhetoric.net/styleguide.html). I co-edited the journal's 2010 "dot mil" special issue on rhetoric, technology, and the military with Alexis Hart. _Kairos_ helped teach me much of what I know about scholarly editing and publishing.
+ prose. Scholarly publication processes involving emerging technologies can operate as sustained conversations between authors and editors about [what constraints constitute digital argument](https://kairos.technorhetoric.net/styleguide.html). I co-edited the journal's 2010 "dot mil" special issue on rhetoric, technology, and the military with Alexis Hart. _Kairos_ helped teach me much of what I know about scholarly editing and publishing.
 
 [The "dot mil" special issue (2010)](https://kairos.technorhetoric.net/14.3/index.html)
 </div>
@@ -30,10 +30,11 @@ webtexts, with arguments made as much in design and code as in
 Caucus co-chair 2011-2013 and 2024-2025; Committee 2013-2016, chair 2016
 {: .card-meta}
 
-The Intellectual Property Caucus is where my field argues about who owns
- student writing, what open access costs and allows, and what publishers can
-require of authors. I co-chaired the Caucus from 2011 to 2013 and again
-from 2024 to 2025, and served on the CCCC Intellectual Property Committee from 2013 until 2016, chairing it in its final months before CCCC's governance restructure eliminated the committee. I authored several updates for the CCCC-IP Annual on the defeat of the Research Works Act, on Elsevier's demands that scholars take down their own research, on the Electronic Frontier Foundation's white paper on statutory damages for infringement, and on Elsevier's search for new revenue as universities walked away from big-deal contracts.
+The Intellectual Property Caucus is where my field argues about who owns student writing, what open access costs and allows, and what publishers can
+require of authors. I co-chaired the Caucus from 2011 to 2013 and again from 2024 to 2025, and served on the CCCC Intellectual Property Committee from 2013 until 2016, chairing it in its final months before CCCC's governance restructure eliminated the committee. I authored several updates for the CCCC-IP Annual on the defeat of the Research Works Act, on Elsevier's demands that scholars take down their own research, on the Electronic Frontier Foundation's white paper on statutory damages for infringement, and on Elsevier's search for new revenue as universities walked away from big-deal contracts.
+
+[CCCC—IP Annual: 2019–2020 ](/resources/cccc-ip-2020.pdf)|[CCCC—IP Annual: 2013](/resources/cccc-ip-2013.pdf)
+</div>
 
 </div>
 
