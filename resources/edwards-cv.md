@@ -57,17 +57,17 @@ Graduate Teaching Assistant. University of Pittsburgh Department of English, 199
 
 ## Works in Progress
 
-*V[irens]{.smallcaps}: Verdant Inquiry REsearch Notes System*. Version 3.1. Integrated portable academic automation and productivity suite for macOS. Repository comprising subdirectories of human-readable text and machine-readable scripts. Accompanying scholarly and technical documentation resources. Under active development. <https://github.com/preterite/virens>
+*V[irens]{.smallcaps}: Verdant Inquiry R[e]{.smallcaps}search Notes System*. Version 3.1. Integrated portable academic automation and productivity suite for macOS. Repository comprising subdirectories of human-readable text and machine-readable scripts. Accompanying scholarly and technical documentation resources. Under active development. <https://github.com/preterite/virens>
 
 *V[irens]{.smallcaps} 101: First-Year Composition Through Systems Thinking and Design.* Transferable first-year composition course built on textual circulation and constraint sequencing. Repository comprising paired human-readable files: student-facing course content and its pedagogical and scholarly rationale. Design complete and pending classroom testing. <https://github.com/preterite/virens-101>
 
-*Constraint Structure: Writing Pedagogy as Economic System.* Digital scholarly webtext in development for *Kairos*, arguing composition instruction as a system of textual circulation and constraint. Companion argument to the V[irens]{.smallcaps} 101 course design, whose repository serves as the webtext's navigable public archive.
+*Constraint Structure: Writing Pedagogy as Economic System.* Digital scholarly webtext in development for *Kairos*, theorizing the scholarly basis for composition pedagogy as a system of textual circulation and constraint. Companion argument to the V[irens]{.smallcaps} 101 course design, whose repository serves as the webtext's navigable public archive.
 
 *Rhetoric Without Rhetors: Toward a Political Economy of Reading.* Article in development on the economics of machine-generated prose as the limit case of text without a composing subject: the collapse of composition costs against the irreversible time of reading, and the relocation of textual value. The labor that constitutes a text's meaning takes place on the consumption side. 
 
 *Composition's Credit: Persuasion, Coercion, and the Political Economy of American Writing, 1776–1914.* Monograph in development treating composition's disciplinary formation as economic event and reading appropriation and its disavowal across economic modes in their intersections with American educational institutions. Two halves, Beecher's domestic economy and Du Bois's *Black Reconstruction*, pivot on the Panic of 1837 and terminate at the Carnegie credit hour as instrument of institutional commensuration.
 
-*Writing Political Economy: Assetization and Its Disavowals.* Monograph in development following academic writing from the credit hour through circulation and valuation to emerging technologies of writing, reading each as a site where slippage between process and product yields value and disciplinary disavowal protects it from economic visibility. Academia disavows economic analyses of writing while operating within and sustaining an industrial-scale political economy of writing.
+*Writing Political Economy: Assetization and Its Disavowals.* Monograph in development following academic writing from the credit hour through circulation and valuation to emerging technologies of writing, reading each as a site where slippage between process and product yields value, and disciplinary disavowal shrouds that value from economic visibility. Academia disavows economic analyses of writing while operating within and sustaining an industrial-scale political economy of writing.
 
 ## Peer-Reviewed Publications
 
