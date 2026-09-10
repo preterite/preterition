@@ -2,12 +2,12 @@
 title: "Service"
 description: "Institutional and professional work."
 ---
-# Service
+## Service
 
 Three kinds of work: a journal, a profession, a war.
 
 <div class="card" markdown="1">
-## _Kairos: A Journal of Rhetoric, Technology, and Pedagogy_
+### _Kairos: A Journal of Rhetoric, Technology, and Pedagogy_
 
 Assistant Editor to Section Editor, Topoi, 2006--2018
 {: .card-meta}
@@ -25,7 +25,7 @@ webtexts, with arguments made as much in design and code as in
 </div>
 
 <div class="card" markdown="1">
-## Intellectual Property Caucus and Committee, CCCC
+### Intellectual Property Caucus and Committee, CCCC
 
 Caucus co-chair 2011--2013 and 2024--2025; Committee 2013--2016, chair 2016
 {: .card-meta}
@@ -38,7 +38,7 @@ require of authors. I co-chaired the Caucus from 2011 to 2013 and again from 202
 </div>
 
 <div class="card" markdown="1">
-## National Military Academy of Afghanistan
+### National Military Academy of Afghanistan
 
 Academic mentor, National Training Mission---Afghanistan, 2011
 {: .card-meta}

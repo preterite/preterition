@@ -2,12 +2,12 @@
 title: "Projects"
 description: "Odd-shaped undertakings and long-running work."
 ---
-# Projects
+## Projects
 
 Some things I've built, in descending order of practicality.
 
 <div class="card" markdown="1">
-## VIRENS and VIRENS 101
+### VIRENS and VIRENS 101
 
 Open-source research framework and its first-year composition
 implementation, in development since March 2025
@@ -29,7 +29,7 @@ investment. _Virescit in ruinis eruditionis nostrae spes._
 </div>
 
 <div class="card" markdown="1">
-## An Algorithmic Poem
+### An Algorithmic Poem
 
 Stanzas and syllables and powers of two
 {: .card-meta}
@@ -41,7 +41,7 @@ I'll tell you which line you picked. The poem, in its small effect, operates as 
 </div>
 
 <div class="card" markdown="1">
-## The Meaning of Functionless Dialogue
+### The Meaning of Functionless Dialogue
 
 A one-act play in iambic pentameter with five voices; in progress
 {: .card-meta}
