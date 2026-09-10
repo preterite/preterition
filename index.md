@@ -55,7 +55,7 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
     <span class="detail" data-k="contact"><span class="locator">two registers</span><span class="gloss">{{ t.description | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span></span>
   </a>
 
-  <a class="entry" data-k="cv" href="/resources/edwards_cv_2026.pdf">
+  <a class="entry" data-k="cv" href="/resources/edwards-cv.pdf">
     <span class="strip" aria-hidden="true"></span>
     <span class="name">cv</span>
     <span class="leader" aria-hidden="true"></span>
