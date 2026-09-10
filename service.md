@@ -33,7 +33,7 @@ Caucus co-chair 2011-2013 and 2024-2025; Committee 2013-2016, chair 2016
 The Intellectual Property Caucus is where my field argues about who owns student writing, what open access costs and allows, and what publishers can
 require of authors. I co-chaired the Caucus from 2011 to 2013 and again from 2024 to 2025, and served on the CCCC Intellectual Property Committee from 2013 until 2016, chairing it in its final months before CCCC's governance restructure eliminated the committee. I authored several updates for the CCCC-IP Annual on the defeat of the Research Works Act, on Elsevier's demands that scholars take down their own research, on the Electronic Frontier Foundation's white paper on statutory damages for infringement, and on Elsevier's search for new revenue as universities walked away from big-deal contracts.
 
-[CCCC—IP Annual: 2019–2020 ](/resources/cccc-ip-2020.pdf)|[CCCC—IP Annual: 2013](/resources/cccc-ip-2013.pdf)
+[CCCC-IP Annual: 2019–2020 (PDF)](/resources/cccc-ip-2020.pdf) | [CCCC-IP Annual: 2013 (PDF)](/resources/cccc-ip-2013.pdf)
 </div>
 
 </div>
