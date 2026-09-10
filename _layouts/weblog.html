@@ -36,6 +36,7 @@
 
     {% include header.html title="Preterition" home="/weblog/" tagline=true %}
 
+    <div class="page-body">
     <main id="main">
       {%- comment -%} This page is out of the search index by declaration
       (RULED 2026-08-25, Michael). data-pagefind-ignore, not the
@@ -86,9 +87,10 @@
         </div>
         {%- endfor %}
       </div>
+    </main>
 
       {% include sidebar-weblog.html %}
-    </main>
+    </div>
 
     {% include footer.html %}
   </div>{%- comment -%} closes .page-wrapper, opened above in this same file

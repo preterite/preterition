@@ -9,7 +9,7 @@
     --gutter: 20px;
   }
 
-  main {
+  .page-body {
     flex-direction: column;
   }
 
@@ -92,7 +92,7 @@
     position: static;
   }
 
-  main {
+  .page-body {
     padding-top: var(--gutter-mobile);
   }
 
@@ -167,7 +167,7 @@
   }
 
   /* MAIN LAYOUT */
-  main {
+  .page-body {
     flex-direction: column;
   }
 
@@ -190,7 +190,7 @@
     padding-top: var(--gutter);
   }
 
-  body.has-trail main {
+  body.has-trail .page-body {
     padding-top: var(--gutter-mobile);
   }
 

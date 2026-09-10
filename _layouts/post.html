@@ -40,6 +40,7 @@
 
     {% include header.html title="Preterition" home="/weblog/" tagline=true %}
 
+    <div class="page-body">
     <main id="main">
       <div class="main-content">
         {%- comment -%} The index scoping rule is in page.html. The marker sits
@@ -86,9 +87,10 @@
         page.comment_count is the hook the extraction already writes.
         {%- endcomment %}
       </div>
+    </main>
 
       {% include sidebar-weblog.html %}
-    </main>
+    </div>
 
     {% include footer.html %}
   </div>{%- comment -%} closes .page-wrapper, opened above in this same file

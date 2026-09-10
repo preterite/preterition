@@ -33,7 +33,7 @@
   {%- if page.about and page.about != "" %}
   <div class="sidebar-section">
     <div class="card">
-      <h3>About</h3>
+      <h2>About</h2>
       {{ page.about | markdownify }}
     </div>
   </div>
@@ -55,7 +55,7 @@
   happen to agree.
   {%- endcomment %}
   <div class="sidebar-section">
-    <h3>Listening</h3>
+    <h2>Listening</h2>
     <div class="music-widget">
     {%- include listening.html count=5 %}
     </div>

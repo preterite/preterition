@@ -21,6 +21,7 @@
 
     {% include header.html %}
 
+    <div class="page-body">
     <main id="main">
       {%- comment -%} data-pagefind-body scopes the search index to the main
       column. Pagefind indexes from <body> by default, which on this site puts
@@ -64,9 +65,10 @@
       <div class="main-content" data-pagefind-body data-pagefind-meta="title:{{ page.title | escape }}">
         {{ content }}
       </div>
+    </main>
 
       {% include sidebar.html %}
-    </main>
+    </div>
 
     {% include footer.html %}
   </div>{%- comment -%} closes .page-wrapper, opened above in this same file

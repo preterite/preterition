@@ -1028,7 +1028,7 @@ body.has-trail .breadcrumbs {
   padding-top: calc(var(--header-clearance) + var(--nav-nudge));
 }
 
-body.has-trail main {
+body.has-trail .page-body {
   padding-top: 0;
 }
 
@@ -1072,7 +1072,7 @@ body.has-trail main {
 }
 
 /* ===== MAIN LAYOUT ===== */
-main {
+.page-body {
   flex: 1;
   padding-top: var(--header-clearance); /* the header is fixed; this is the
      space it would have occupied. A page carrying a trail above `main`
@@ -1080,6 +1080,14 @@ main {
   max-width: calc(var(--max-width) + var(--sidebar-width) + var(--gutter));
   margin: 0 auto;
   width: 100%;
+  display: flex;
+}
+
+/* main is the aside's sibling, not its parent: the two columns belong to
+   .page-body, so the skip link to #main passes the sidebar and the main
+   landmark holds the page's content alone (2026-09-10). */
+main {
+  flex: 1;
   display: flex;
 }
 
@@ -1134,7 +1142,7 @@ aside {
   text-align: left;
 }
 
-.sidebar-section h3 {
+.sidebar-section h2 {
   font-family: var(--font-sans);
   font-size: 0.9375rem;
   font-weight: 600;
@@ -1595,10 +1603,10 @@ footer {
     color: black;
   }
 
-  /* The chrome is hidden, but main keeps the 260px offset that cleared the
+  /* The chrome is hidden, but .page-body keeps the 260px offset that cleared the
      fixed header on screen, which prints as roughly 2.7 inches of blank
      paper above the first line. */
-  main {
+  .page-body {
     padding-top: 0;
   }
 
