@@ -263,7 +263,7 @@ Kerry Clark, 2014
 
 Eloy Trujillo (chair, in progress) \
 Lacy Hope, 2020 \
-Miriam Fernandez, 2018 (winner, CCCC outstanding dissertation award) \
+Miriam Fernandez, 2018 (winner, CCCC James Berlin outstanding dissertation award) \
 Jacob Friedman, 2016 \
 Elizabeth Edwards, 2015
 
