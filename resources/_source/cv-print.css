@@ -1,0 +1,149 @@
+/* cv-print.css -- print stylesheet for resources/edwards-cv.md, beside the
+   source it renders. Trim 8.5 x 11in; margins 0.85in top, 0.9in sides,
+   0.95in foot.
+
+   Typefaces, chosen by setting the candidates side by side at text size:
+     body      Kings Caslon        -- Adobe CC system font, chosen over Adobe
+                                      Caslon Pro on two measurements: it is the
+                                      only Caslon of the four that embeds fully
+                                      as a CID font rather than degrading to
+                                      Type 3, and it holds a denser page at
+                                      10.5pt
+     name line Big Caslon CC       -- Adobe CC system font, a display cut, used
+                                      at one size only
+     labels    Cooper Hewitt       -- woff beside this file
+     links     JetBrains Mono      -- woff2 from the repository's fonts/
+
+   CONSEQUENCE, and it is a real one: the two Caslons are licensed system
+   fonts synced by Creative Cloud. They cannot be copied into the repository,
+   so this PDF reproduces only on a machine where they are installed. The
+   repository no longer contains everything the artifact needs. That is a
+   departure from the play's self-contained precedent and is deliberate.
+
+   Colour carries no meaning here: links are told from the body by typeface
+   and size, section heads by typeface, weight and rule. No background is
+   declared, so the page prints white.
+
+   The running head is paged.js's, not Chrome's: the polyfill paginates in the
+   browser and supplies the margin boxes Chrome's own print engine lacks. The
+   box is declared empty here and filled by the handler in cv-head.html, which
+   is what lets the head carry a real italic. */
+
+@page { size: 8.5in 11in; margin: 1.05in 0.9in 0.95in 0.9in; }
+
+/* The running head, appended per page by the handler in cv-head.html.
+   Geometry follows the previous, Word-set edition, measured off it: one line, sans,
+   right edge flush with the text block, sitting 0.6in down from the sheet's
+   top edge, which leaves a clear 0.45in between it and the first line of
+   text. */
+.pagedjs_page { position: relative; }
+.cv-runhead {
+  position: absolute;
+  top: 0.6in;
+  right: 0.9in;
+  white-space: nowrap;
+  font-family: "Cooper Hewitt", "IBM Plex Sans", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+}
+.cv-runhead em { font-style: italic; margin: 0 0.5em; }
+
+@font-face { font-family:"Cooper Hewitt"; src:url("CooperHewitt-Book.woff")     format("woff"); font-weight:400; font-style:normal; font-display:block; }
+@font-face { font-family:"Cooper Hewitt"; src:url("CooperHewitt-Semibold.woff") format("woff"); font-weight:600; font-style:normal; font-display:block; }
+@font-face { font-family:"Cooper Hewitt"; src:url("CooperHewitt-BookItalic.woff") format("woff"); font-weight:400; font-style:italic; font-display:block; }
+@font-face { font-family:"JetBrains Mono"; src:url("JetBrainsMono-Regular.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+
+:root {
+  --ink:      #1a1a1a;   /* near-black                                   */
+  --ink-soft: #4a4a4a;   /* medium warm grey, one step back from the ink */
+  --rule:     #b0b0b0;   /* light grey, for the section hairline         */
+  --hang:     1.4em;     /* hanging indent for bibliographic entries     */
+}
+
+/* pandoc's standalone template ships its own style block ahead of this
+   file's link element, so the body reset below is deliberate: it undoes
+   that template's centred 36em measure. */
+html { font-size: 10.5pt; }
+body {
+  font-family: "Kings Caslon", Georgia, serif;
+  font-feature-settings: "onum" 1, "liga" 1, "kern" 1;   /* oldstyle figures throughout */
+  font-size: 1rem;
+  line-height: 1.40;
+  color: var(--ink);
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* The name follows the previous edition rather than the body: sans, full
+   capitals, tracked wide, a step back from the ink. Big Caslon CC is out --
+   which also removes the one Type 3 face from the PDF, since it was the only
+   thing that used it. */
+h1 {
+  font-family: "Cooper Hewitt", "IBM Plex Sans", sans-serif;
+  font-size: 1.75rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--ink-soft);
+  margin: 0 0 0.75em; break-after: avoid; page-break-after: avoid;
+}
+
+/* The contact block is two paragraphs, not one: the postal address, then the
+   online identifiers. Both carry backslash breaks, so neither takes the
+   hanging indent. The second group is set tighter internally and held a
+   little apart from the first, so the two read as a physical address and an
+   online one rather than a single five-line run. */
+h1 + p {
+  font-family: "Cooper Hewitt", "IBM Plex Sans", sans-serif;
+  font-size: 0.79rem; line-height: 1.5; color: var(--ink-soft);
+  text-indent: 0; padding-left: 0; margin: 0 0 0.5em;
+}
+h1 + p + p {
+  font-size: 0.79rem; line-height: 1.28; color: var(--ink-soft);
+  text-indent: 0; padding-left: 0; margin: 0 0 0.2em;
+}
+
+/* Links in the contact block size themselves against the block's 0.79rem
+   rather than the body's 1rem, which left them markedly smaller than the same
+   monospace in the entries. Set them absolutely instead. */
+h1 + p a, h1 + p + p a { font-size: 0.75rem; }
+
+h2 {
+  font-family: "Cooper Hewitt", "IBM Plex Sans", sans-serif;
+  font-size: 0.76rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.13em;
+  margin: 2.4em 0 0.85em; padding-bottom: 0.22em;
+  border-bottom: 0.5pt solid var(--rule);
+  break-after: avoid; page-break-after: avoid;
+}
+
+h3 {
+  font-family: "Kings Caslon", Georgia, serif;
+  font-size: 1.02rem; font-weight: 700; font-style: italic;
+  margin: 1.5em 0 0.6em;
+  break-after: avoid; page-break-after: avoid;
+}
+
+p {
+  margin: 0 0 0.78em;
+  text-indent: calc(-1 * var(--hang));
+  padding-left: var(--hang);
+  orphans: 2; widows: 2;
+  break-inside: avoid; page-break-inside: avoid;
+}
+
+/* stacked blocks -- education, contact -- carry <br> and sit flush left */
+p:has(br) { text-indent: 0; padding-left: 0; }
+
+a, a:visited {
+  font-family: "JetBrains Mono", "IBM Plex Mono", monospace;
+  font-size: 0.78em;
+  color: var(--ink-soft);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.smallcaps { font-feature-settings: "smcp" 1, "onum" 1, "kern" 1; }  /* real small caps in Kings Caslon */
+.underline { text-decoration: underline; }
+em, i { font-style: italic; }
+strong, b { font-weight: 700; }

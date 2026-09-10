@@ -128,3 +128,16 @@ backups/
 _site/
 .jekyll-cache/
 .jekyll-metadata
+
+############################################################
+# Print-pipeline scratch
+############################################################
+# resources/_source/build-cv/ is rebuilt from nothing on every
+# run -- render-cv.sh opens with rm -rf -- and holds only font
+# copies, the paged.js polyfill and intermediate HTML. Note that
+# the bare build/ rule above does not match it.
+resources/_source/build-cv/
+
+# Python bytecode
+__pycache__/
+*.pyc

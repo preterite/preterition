@@ -1,0 +1,26 @@
+<script src="paged.polyfill.js"></script>
+<script>
+  /* The running head. Chrome's own print engine has no page-margin boxes, so
+     paged.js paginates the document in the browser first; this handler runs
+     once per page as it does.
+
+     The head is appended to the page as an absolutely positioned element
+     rather than written into a CSS margin box. Two reasons: a margin box is
+     laid out in a narrow column and broke the head over three lines, and a
+     margin box takes a generated string, which cannot be part-italic. An
+     appended element takes real markup and sits exactly where the stylesheet
+     puts it.
+
+     Page one takes no head, following the previous edition. */
+  class CVRunningHead extends Paged.Handler {
+    afterPageLayout(pageElement, page) {
+      const n = parseInt(pageElement.dataset.pageNumber, 10) || (page.position + 1);
+      if (n < 2) return;
+      const head = document.createElement("div");
+      head.className = "cv-runhead";
+      head.innerHTML = 'Mike Edwards <em>Curriculum Vitae</em> page ' + n;
+      pageElement.appendChild(head);
+    }
+  }
+  Paged.registerHandlers(CVRunningHead);
+</script>
