@@ -2,9 +2,9 @@
 #
 # Builds preterite.net and publishes it to GitHub Pages.
 #
-# Why a workflow at all, since Pages can build Jekyll by itself (RULED
-# 2026-08-18): Pages hosts, Actions builds, and the only question was ever
-# who runs Jekyll. Each of the following forces Actions on its own, so
+# Why a workflow at all, since Pages can build Jekyll by itself: Pages
+# hosts, Actions builds, and the only question was ever who runs Jekyll.
+# Each of the following forces Actions on its own, so
 # retiring any one of them does not reopen the question --
 #
 #   Pagefind is a POST-build indexer. It reads the finished _site/ and writes
@@ -17,9 +17,8 @@
 #     before Jekyll either. See "Expand the calendar" below.
 #   The 24-hour refresh needs a schedule. Pages' builder fires on push only.
 #
-# Repository secrets were the third force listed here through 2026-09-08 and
-# are not one now. Nothing in this build fetches: Listening selects in Liquid
-# from a committed list, and the calendar is committed at
+# No repository secret is held. Nothing in this build fetches: Listening
+# selects in Liquid from a committed list, and the calendar is committed at
 # _calendar/preterite-upcoming.ics, so no key and no capability URL is held
 # anywhere in it.
 #
@@ -60,12 +59,11 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  # Verified 2026-08-23 by `npm view pagefind version`, which returned 1.5.2.
-  # The first value written here was 1.3.0, from memory, and was wrong -- the
-  # reason it was marked unverified and then checked rather than trusted.
   # Pinned rather than `@latest`: a wrong pin fails the build loudly, where
-  # `@latest` drifts silently, and a search index that changes format without
-  # anyone deciding is the rot the rest of this refuses.
+  # `@latest` drifts silently, and a search index that changes format
+  # without anyone deciding is the rot the rest of this refuses. The
+  # version is checked against the npm registry when it changes, never
+  # written from memory.
   PAGEFIND_VERSION: "1.5.2"
 
 jobs:
@@ -80,12 +78,12 @@ jobs:
       # resolving if Gemfile.lock does not match the Gemfile. That failure is
       # wanted: the lock is committed so the workflow builds what you ran.
       #
-      # The Ruby pin is a choice and is flagged as one. Your machine runs
-      # 4.0.6 and there is no .ruby-version file, so nothing in the
-      # repository states a version; 3.4 is chosen because the Gemfile's
-      # csv/base64/bigdecimal/logger gems exist to satisfy exactly the 3.4
-      # standard-library removals. Adding a .ruby-version file and reading it
-      # here would retire the guess.
+      # The Ruby pin is a choice and is flagged as one. There is no
+      # .ruby-version file, so nothing in the repository states a version;
+      # 3.4 is chosen because the Gemfile's csv/base64/bigdecimal/logger
+      # gems exist to satisfy exactly the 3.4 standard-library removals.
+      # Adding a .ruby-version file and reading it here would retire the
+      # guess.
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -106,14 +104,14 @@ jobs:
       # the calendar is an RRULE, and expanding one needs date arithmetic no
       # template language should be asked to carry.
       #
-      # Why daily: the calendar's CONTENT changes only when Michael re-exports
-      # it, but the NEXT FIVE ITEMS change every day, because the expansion
-      # window moves. The cron above is that clock.
+      # Why daily: the calendar's CONTENT changes only when it is
+      # re-exported, but the NEXT FIVE ITEMS change every day, because the
+      # expansion window moves. The cron above is that clock.
       #
       # No secret, no network, no fetch. The .ics is in the repository.
       # Pinned to an exact tag, not a floating major. astral-sh/setup-uv
-      # publishes floating major refs only through v7 (checked 2026-09-08
-      # against the repository's git/refs/tags: v1 through v7 and no v8, v9
+      # publishes floating major refs only through v7 at this writing (read
+      # off the repository's git/refs/tags: v1 through v7 and no v8, v9
       # or v10), so @v10 is unresolvable and fails the run at Set up job,
       # before a single step executes. The release is v10.0.1. A version is
       # not a ref: reading the current version off a README says nothing
@@ -144,19 +142,10 @@ jobs:
       # tree. _config.yml's `keep_files: [pagefind]` matters for local serve,
       # not here -- this runner builds once into an empty directory.
       #
-      # The index exists; wiring the hexagon trigger to it is separate work
-      # and is not done. Until it is, this step produces an index nothing
-      # queries, which is the right order: an unwired index is inert, where
-      # a wired control with no index is a control that lies.
+      # The site's search controls query this index; without this step
+      # they would be controls with nothing behind them.
       - name: Index with Pagefind
         run: npx -y "pagefind@${PAGEFIND_VERSION}" --site _site
-
-      # The widget data steps are ABOVE "Build with Jekyll", where a step that
-      # writes _data/ has to be. This block said through 2026-09-08 that the
-      # scripts did not exist and their schema was an open ledger row; both
-      # sentences were true when written and are false now. Listening needs no
-      # step at all -- it selects in Liquid from a committed list -- and the
-      # calendar's expansion is the "Expand the calendar" step above.
 
       - name: Upload the built site
         uses: actions/upload-pages-artifact@v3

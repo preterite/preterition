@@ -2,7 +2,7 @@
 #
 # Plain Jekyll, not the `github-pages` gem. That gem pins Jekyll to the
 # version Pages' native builder runs and loads its whitelist; this site
-# builds in Actions (RULED 2026-08-18), so the pin would be a constraint
+# builds in Actions, so the pin would be a constraint
 # inherited from a builder not in use. Bundler locks the actual versions in
 # Gemfile.lock, which is committed so the workflow builds what you ran.
 

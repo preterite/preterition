@@ -5,10 +5,11 @@
 # rebuild. Reasons travel with the keys, because the source is meant to be
 # read as closely as the site.
 #
-# Built by GitHub Actions, not by Pages' native builder (RULED 2026-08-18):
-# Pagefind indexes after Jekyll runs, and the widget data needs secrets and a
-# schedule, none of which the native build admits. The plugin whitelist that
-# constrains the native build therefore does not constrain this one.
+# Built by GitHub Actions, not by Pages' native builder: Pagefind indexes
+# after Jekyll runs, the calendar data is derived before it, and the site
+# rebuilds on a daily schedule, none of which the native build admits. The
+# plugin whitelist that constrains the native build therefore does not
+# constrain this one.
 
 title: Mike Edwards
 description: "Mike Edwards, Associate Professor: rhetoric, composition, technology, economy."
@@ -27,17 +28,16 @@ kramdown:
 
 # Permalinks. No global key, deliberately. The page default,
 # /:path/:basename:output_ext, is what yields about.md -> /about.html,
-# keeping the archive's addresses (RULED 2026-08-18, declining `pretty`).
+# keeping the archive's addresses, which `pretty` would not.
 # That reasoning covers pages only: posts take Jekyll's `date` default,
-# /:categories/:year/:month/:day/:title.html, which is not the ruled post
+# /:categories/:year/:month/:day/:title.html, which is not this site's post
 # permalink. The posts scope below therefore sets one. A migrated post
 # carrying its own `permalink:` from the extraction still wins over it.
 
-# Layout derivation. A page source never asserts its layout (RULED
-# 2026-08-19); the build supplies it. This block is migration-spec.md's
-# derivation table, one scope per row, general to specific -- Jekyll applies
-# later, narrower entries over earlier, broader ones. A layout takes the name
-# of the page it dresses (RULED 2026-08-21), so no name is minted here.
+# Layout derivation. A page source never asserts its layout; the build
+# supplies it. One scope per row, general to specific -- Jekyll applies
+# later, narrower entries over earlier, broader ones. A layout takes the
+# name of the page it dresses, so no name is minted here.
 defaults:
   - scope:
       path: ""
@@ -64,11 +64,10 @@ defaults:
   # extraction
   # carries its own `layout:` and wins over this; the default covers a
   # hand-authored post that declines to state one.
-  # A post's address is ruled, so it is asserted here rather than left to a
-  # default that was never about posts (2026-08-25, after a build put the
-  # first post at /weblog/2026/08/25/the-absent-archive.html). The
+  # A post's address is part of the site's design, so it is asserted here
+  # rather than left to Jekyll's default, which was never about posts. The
   # `weblog/` segment comes from the source folder, not from :categories,
-  # which is empty by ruling and must stay out of the path.
+  # which is empty by design and must stay out of the path.
   - scope:
       path: ""
       type: posts
@@ -79,28 +78,25 @@ defaults:
 # Plugins. Named and not counted, the list being open.
 # jekyll-redirect-from writes a meta-refresh stub at each
 # retired address -- the static shape of a 301 -- and carries /blog/... to
-# /weblog/... after the migration. No /cv.html redirect is owed (RULED
-# 2026-08-22, Michael): the live archive never served that address, the nav
-# links the CV as a PDF and not as a page, and the cv.html that was archived
-# was the generated scaffold's invention rather than a published page. The
-# redirect plugin is on the Pages whitelist; that is recorded so the builder
-# question does not reopen through it, not because the whitelist governs an
-# Actions build.
+# /weblog/... after the migration. There is no /cv.html redirect: the old
+# site never served that address, and the nav links the CV as a PDF rather
+# than as a page. The redirect plugin is on the Pages whitelist, though the
+# whitelist does not govern an Actions build.
 #
 # jekyll-feed generates the weblog's Atom feed at /feed.xml from site.posts,
 # taking title, description and url from the keys above. Its feed_meta tag
 # sits in _includes/head.html, and that tag is what makes the feed
 # discoverable rather than merely present. The feed ships ahead of the
-# migrated archive deliberately (2026-08-25): the weblog's long readership is
+# migrated archive deliberately: the weblog's long readership is
 # the cohort that reads by feed, and a feed switched on afterward would
 # deliver the whole archive to every subscriber in a single push.
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
 
-# What never reaches _site. The archival pages are excluded outright as of
-# 2026-08-22, when the crossing wrote their successors and they were renamed
-# to .archived. Two reasons, and the second is the load-bearing one. Jekyll
+# What never reaches _site. The archival pages are excluded outright; they
+# were renamed to .archived when their successors were written. Two
+# reasons, and the second is the load-bearing one. Jekyll
 # treats an unrecognized extension as a static asset and copies it verbatim,
 # so the rename alone stopped them claiming the canonical URLs but left all
 # twelve fetchable at /about.html.archived and its siblings. And their prose

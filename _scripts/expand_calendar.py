@@ -12,14 +12,14 @@ _data/calendar.json for _includes/upcoming.html to render.
 
 WHY THIS EXISTS AT ALL. Every live event on the source calendar is a
 recurrence rule, so a build that read DTSTART without expanding would show
-one stale event from October 2025 and nothing else. Expansion is not a
+one stale event from a past term and nothing else. Expansion is not a
 refinement of this widget; it is the widget.
 
 WHY IT RUNS AT BUILD AND NOT IN THE READER'S BROWSER. Nothing here reaches
-the network and nothing ships to the reader: S-01 (every request
-same-origin) is untouched by design rather than by exemption. The calendar
-is a committed file on the brewfile precedent (RULED 2026-09-06), so the
-repository copy is the source of record and a re-export is a commit.
+the network and nothing ships to the reader, so every request a page makes
+stays same-origin by design rather than by exemption. The calendar is a
+committed file, so the repository copy is the source of record and a
+re-export is a commit.
 
 WHY THE DEPENDENCIES ARE NAMED HERE AND NOT IN THE WORKFLOW. The manifest
 above is read by uv on both this machine and the Actions runner, so the two
