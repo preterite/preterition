@@ -368,10 +368,6 @@
     animation: none !important;
     transition: none !important;
   }
-  
-  .main-content {
-    background: linear-gradient(135deg, #0f0e0c 0%, #28251f 100%);
-  }
 }
 
 /* ===== HIGH CONTRAST: DECLINED, DELIBERATELY =====
@@ -390,7 +386,7 @@
 
 /* ===== DARK MODE (system default is already dark) ===== */
 /* No light-mode block, deliberately. A four-line token override cannot make
-   a light theme here: .main-content carries a literal dark gradient rather
+   a light theme here: .main-content carries a literal dark ground rather
    than a token, --color-card-dark does not follow, and the header artwork is
    built for a dark ground. The block that once stood here left
    card text at roughly 1.02:1 for any visitor whose system is set to light,

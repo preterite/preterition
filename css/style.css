@@ -1094,27 +1094,37 @@ main {
   padding-left: var(--content-inset);
   padding-right: var(--content-inset); /* match outer spacing against sidebar */
   position: relative;
-  /* Animated background matching header — warm charcoal tones */
-  background: 
-    linear-gradient(113deg,
-      #0f0e0c 0%,
-      #1a1816 15%,
-      #211f1c 35%,
-      #1a1816 52%,
-      #28251f 73%,
-      #1c1a17 87%,
-      #0f0e0c 100%),
-    linear-gradient(293deg,
-      #0f0e0c80 0%,
-      #00000000 40%,
-      #28251f4d 70%,
-      #00000000 100%);
-  background-size: 251% 100%, 197% 100%;
-  background-position: 0% 50%, 0% 50%;
-  animation: 
-    gradientDrift 17s ease-in-out infinite,
-    gradientPulse 29s ease-in-out infinite;
+  /* Moire ground, static. Two faint line grids -- one line every 4px against
+     one every 4.25px, the second turned 0.5deg off the first -- whose
+     mismatch beats into soft diagonal bands. The rgba literals are
+     --color-text-dark and --color-accent-grey-green at low alpha, as on the
+     landing page's moire; the base is darkened just enough that lines and
+     base together average to the site's warm charcoal. Each page turns the
+     pair to its own --moire-angle, set below by the page's body class, and
+     every angle sits 20 to 70 degrees off horizontal so the bands never run
+     parallel to a card's edge. Nothing here animates: the ground paints once
+     and the header keeps the site's ambient motion. */
+  --moire-angle: 52.5deg;
+  background:
+    repeating-linear-gradient(var(--moire-angle), transparent 0 3px,
+      rgba(237, 232, 226, 0.030) 3px 4px),
+    repeating-linear-gradient(calc(var(--moire-angle) - 0.5deg),
+      transparent 0 3.25px, rgba(58, 157, 106, 0.032) 3.25px 4.25px),
+    #191613; /* "Licorice" -- Color API */
 }
+
+/* Each page's moire angle, keyed by its own body class. Posts carry the
+   weblog's class and share its angle. */
+body.about               .main-content { --moire-angle: -32deg; }
+body.teaching            .main-content { --moire-angle: 43.5deg; }
+body.scholarship         .main-content { --moire-angle: -55.5deg; }
+body.presentations       .main-content { --moire-angle: 67deg; }
+body.projects            .main-content { --moire-angle: 29deg; }
+body.service             .main-content { --moire-angle: -41deg; }
+body.weblog              .main-content { --moire-angle: 52.5deg; }
+body.contact             .main-content { --moire-angle: -64.5deg; }
+body.protected-inquiries .main-content { --moire-angle: -26deg; }
+body.not-found           .main-content { --moire-angle: 38deg; }
 
 .main-content h2,
 body.protected-inquiries .main-content h1 {
@@ -1596,7 +1606,7 @@ footer {
     padding-top: 0;
   }
 
-  /* .main-content's background is a literal gradient rather than a token, so
+  /* .main-content's background is literal layers rather than a token, so
      it does not follow body. */
   .main-content {
     background: none;
