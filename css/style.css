@@ -175,7 +175,8 @@ body {
 }
 
 /* ===== TYPOGRAPHY ===== */
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6,
+body.protected-inquiries h1 {
   font-family: var(--font-sans);
   font-weight: 600;
   line-height: 1.3;
@@ -192,7 +193,11 @@ h1 {
   color: var(--color-text-dark);
 }
 
-h2 {
+/* body.protected-inquiries h1: that page omits the header, so its title is
+   its h1 by rank and takes the h2 face here and in responsive.css
+   (2026-09-10). */
+h2,
+body.protected-inquiries h1 {
   font-size: 1.875rem;
   margin-bottom: 20px;
 }
@@ -518,7 +523,7 @@ header::after {
 }
 
 /* ===== HEADER TYPOGRAPHY ===== */
-#site-title {
+header #site-title {
   font-size: 2.75rem;
   color: var(--color-text-dark);
   font-weight: 600;
@@ -526,12 +531,12 @@ header::after {
   margin: 0;
 }
 
-#site-title a {
+header #site-title a {
   text-decoration: none;
   color: var(--color-text-dark);
 }
 
-#site-title a:hover {
+header #site-title a:hover {
   color: var(--color-accent-bright);
 }
 
@@ -558,7 +563,7 @@ header {
   transition: padding 0.35s ease;
 }
 
-#site-title {
+header #site-title {
   transition: font-size 0.35s ease, letter-spacing 0.35s ease;
 }
 
@@ -577,7 +582,7 @@ nav:not(.wall) {
     padding-bottom: 10px;
   }
 
-  body.header-compact #site-title {
+  body.header-compact header #site-title {
     font-size: 1.6rem;
     letter-spacing: 0.15rem;
   }
@@ -610,7 +615,7 @@ nav:not(.wall) {
 @media (prefers-reduced-motion: reduce) {
   header,
   .header-content,
-  #site-title,
+  header #site-title,
   #site-description,
   #tagline-text,
   nav:not(.wall) {
@@ -1119,7 +1124,8 @@ main {
     gradientPulse 29s ease-in-out infinite;
 }
 
-.main-content h2 {
+.main-content h2,
+body.protected-inquiries .main-content h1 {
   margin-top: 0;
 }
 
