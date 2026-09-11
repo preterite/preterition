@@ -384,6 +384,24 @@
    The reader's own apparatus is a different question and a different
    query -- @media (forced-colors: active) -- on its own terms. */
 
+/* ===== FORCED COLORS =====
+   Forced-colors mode replaces every author colour with one from the
+   reader's system palette, transparent included. The nav reserves a
+   transparent left border on every link so that the current page's rule
+   does not shift the row; forced, that reserve draws the same rule on
+   every link and the current page is no longer marked. System colour
+   keywords are the one palette forced mode honours, so the reserve takes
+   Canvas and disappears, and the current page takes Highlight and keeps
+   the only rule: the state reads as a rule's presence, not its hue. Hover
+   and focus outrank the reserve and draw their rule as before. The landing
+   index's rows reserve a transparent box the same way and take the same
+   treatment, so a hovered or focused row is again the only one boxed. */
+@media (forced-colors: active) {
+  nav .nav-item a { border-left-color: Canvas; }
+  nav .nav-item.active a { border-left-color: Highlight; }
+  .entry { border-color: Canvas; }
+}
+
 /* ===== DARK MODE (system default is already dark) ===== */
 /* No light-mode block, deliberately. A four-line token override cannot make
    a light theme here: .main-content carries a literal dark ground rather
