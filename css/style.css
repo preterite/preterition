@@ -1048,7 +1048,7 @@ body.has-trail .page-body {
    next. That break is the page's joke. So this class is not cosmetic:
    unstyled, the second voice does not merely look plain, it stops being a
    second voice at all, and the joke has nothing to land against.
-   The treatment: indented, IBM Plex Sans, slightly smaller
+   The treatment: its own card, IBM Plex Sans, slightly smaller
    than the body face. */
 .notfound-plain {
   font-family: var(--font-sans);
@@ -1060,12 +1060,6 @@ body.has-trail .page-body {
      optical step is the one the design asks for. */
   font-size: 1rem;
   line-height: 1.6;
-
-  /* Logical property rather than margin-left: the indent follows writing
-     direction instead of assuming left-to-right. Reuses the layout gutter
-     so the inset agrees with the page's other horizontal rhythm rather
-     than inventing a second measure. */
-  padding-inline-start: var(--gutter);
 }
 
 /* ===== MAIN LAYOUT ===== */
