@@ -3,7 +3,7 @@ title: "Protected Communications"
 description: "An additional contact address."
 permalink: /protected-inquiries
 ---
-## Protected Communications
+# Protected Communications
 
 An additional contact address.
 

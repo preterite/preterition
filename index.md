@@ -6,7 +6,7 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
   <div>
     <div class="headrow">
       <div class="headword">
-        <h1>
+        <h1 id="site-title">
           <span class="hw g1" aria-hidden="true">Edwards, Mike</span>
           <span class="hw g2" aria-hidden="true">Edwards, Mike</span>
           <span class="hw g3" aria-hidden="true">Edwards, Mike</span>
