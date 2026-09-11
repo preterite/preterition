@@ -4,13 +4,10 @@ layout: null
 # the data. The front matter is what makes Jekyll process the Liquid below;
 # without it the template ships to the browser verbatim.
 #
-# `layout: null` is required and is not the ruled-against case. _config.yml
-# defaults `layout: page` to every file Jekyll reads as a page, and a file
-# with front matter is one whatever its extension -- so the first build of
-# this file wrapped the script in the site's full HTML chrome (found and
-# fixed 2026-08-23). The 2026-08-19 ruling that a source never asserts its
-# layout governs page sources; this declines a layout rather than choosing
-# one. A conformance pass must not strip it.
+# `layout: null` is required. _config.yml defaults `layout: page` to every
+# file Jekyll reads as a page, and a file with front matter is one whatever
+# its extension -- without it the script is wrapped in the site's full HTML
+# chrome. This declines a layout rather than choosing one; do not strip it.
 ---
 /**
  * Taglines. The array is written by Jekyll from _data/taglines.yml, which is

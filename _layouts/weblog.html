@@ -1,6 +1,6 @@
 ---
 # _layouts/weblog.html -- the weblog index at /weblog/, and nothing else.
-# Individual entries take `post`, which is not yet written.
+# Individual entries take `post`.
 #
 # The one page on the site that changes identity on arrival. The header's h1
 # reads "Preterition" and the subject line beneath it rotates, which is why
@@ -9,21 +9,19 @@
 # header file would quietly become a second nav.
 #
 # Three things this layout deliberately does not do:
-#   no breadcrumb   real trails are retired (RULED 2026-08-22, Michael) and
-#                   no layout emits one.
+#   no breadcrumb   no layout emits a real trail.
 #   no dotted box   the tagline is promoted to the header, so the sidebar's
 #                   footer zone has nothing to hold and the ME bug goes with
 #                   it -- a mark reading "ME" beneath an h1 reading
 #                   "Preterition" answers a question already answered
 #                   differently. See sidebar-weblog.html.
 #   no blog nav     Recent Comments, Recent Posts, Top Posts and the two
-#                   archives ship with Workstream 5, when there is a corpus
-#                   for them to be about.
+#                   archives ship with the migrated archive, when there is a
+#                   corpus for them to be about.
 #
-# OPEN, and named rather than invented: the deep-arrival orientation an
-# entry needs when a twenty-year-old link lands a reader four levels down.
-# It carries an _owed.md row (2026-08-22) and is the `post` layout's
-# problem, not this file's, but the answer will probably want a hook here.
+# The deep-arrival orientation an entry needs when a twenty-year-old link
+# lands a reader four levels down is the `post` layout's problem, not this
+# file's, but the answer will probably want a hook here.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -38,23 +36,21 @@
 
     <div class="page-body">
     <main id="main">
-      {%- comment -%} This page is out of the search index by declaration
-      (RULED 2026-08-25, Michael). data-pagefind-ignore, not the
-      data-pagefind-body the professional pages carry: a search result should
-      point at an entry, never at a list of entries.
+      {%- comment -%} This page is out of the search index by declaration:
+      data-pagefind-ignore, not the data-pagefind-body the professional pages
+      carry. A search result should point at an entry, never at a list of
+      entries.
 
-      What stood here marked this region as a body and ignored each card, so
-      the page would contribute its own prose. It has none and is ruled to
-      have none -- weblog/index.md asserts no prose by design (RULED
-      2026-08-21, the collection-index exception) -- so the page fell out of
-      the index only because nothing indexable was left inside it. A heading,
-      an intro line or a pagination control would have put it back with nobody
-      deciding, and it carries no data-pagefind-meta, so such a result would
-      have shown a bare URL where a title belongs.
+      The declaration matters because this page asserts no prose of its own.
+      Marking the region as a body and ignoring each card would leave the
+      page out of the index only because nothing indexable was left inside
+      it: a heading, an intro line or a pagination control would put it back
+      with nobody deciding, and with no data-pagefind-meta such a result
+      would show a bare URL where a title belongs.
 
-      The per-card ignores went with the body marker: once the region itself
-      is ignored they restate the same rule one level down, and two statements
-      of one rule is the drift this file's history keeps retiring.
+      No per-card ignores: once the region itself is ignored they would
+      restate the same rule one level down, and two statements of one rule
+      drift apart.
       {%- endcomment %}
       <div class="main-content" data-pagefind-ignore>
         {{ content }}
@@ -66,20 +62,20 @@
           {{ post.excerpt }}
         </article>
         {%- else %}
-        {%- comment -%} One honest empty state, not five. The corpus arrives
-        with Workstream 5; until then this page is the weblog's front door
-        standing open on an archive that has not crossed yet.
+        {%- comment -%} One honest empty state, not five. Until the archive
+        arrives this page is the weblog's front door standing open on an
+        archive that has not crossed yet.
 
         The prose below is the body of the announcement post, standing in for
-        it (Michael, 2026-08-24). It sits in this else branch rather than in
-        weblog/index.md because that file asserts no prose by design (RULED
-        2026-08-21, the collection-index exception). Put here, it retires
-        itself the moment site.posts stops being empty -- there is nothing to
-        remember to delete, and no window in which the announcement and the
-        first real post both address the reader. `.blog-empty` carries no
-        declaration in either stylesheet, so the block inherits
-        .main-content's prose styling, which is the intended reading; the
-        class is a hook, not a style. {%- endcomment %}
+        it. It sits in this else branch rather than in weblog/index.md because
+        that file asserts no prose by design. Put here, it retires itself the
+        moment site.posts stops being empty -- there is nothing to remember to
+        delete, and no window in which the announcement and the first real
+        post both address the reader. `.blog-empty` carries no declaration in
+        either stylesheet, so the block inherits .main-content's prose
+        styling, which is the intended reading; the class is a hook, not a
+        style.
+        {%- endcomment %}
         <div class="blog-empty">
           <p>I've kept a mostly academic weblog since June 2003, first at vitia.org and later here. Twenty-odd years of thinking in public: teaching and rhetoric, economics and technology, a run of writing from Afghanistan in 2011 that won <em>Kairos</em>'s <a href="https://kairos.technorhetoric.net/awards/pastwinners.html#blog">John Lovas Memorial Award</a>, a long habit of Friday fiction, and the comment threads that engaged and extended the discussion.</p>
           <p>It isn't here yet. The archive is moving out of WordPress into the same static form as the rest of this site, and it crosses whole -- published posts, drafts, comments, and the pingback network that tied it to other weblogs. That last part is the slow bit.</p>

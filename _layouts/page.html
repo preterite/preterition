@@ -1,14 +1,12 @@
 ---
-# _layouts/page.html -- the eight professional pages: scholarship,
-# presentations, projects, teaching, service, contact, about, and any
-# later page of type: page. The layout owns the chrome; the source owns
-# the main region's content, which Jekyll has already rendered from
-# Markdown by the time {{ content }} is reached. No breadcrumb: real
-# trails are retired (RULED 2026-08-22, Michael). Every page this layout
-# dresses sits at the site root, so a trail would read "Index >
-# Scholarship" and stop, which the nav's aria-current already says. The
-# 404 keeps a fake one as ornament and authors it in its own source; no
-# layout emits one. See site-design-spec.md, Breadcrumbs.
+# _layouts/page.html -- the professional pages: scholarship, presentations,
+# projects, teaching, service, contact, about, and any later page of type:
+# page. The layout owns the chrome; the source owns the main region's
+# content, which Jekyll has already rendered from Markdown by the time
+# {{ content }} is reached. No breadcrumb: every page this layout dresses
+# sits at the site root, so a trail would read "Index > Scholarship" and
+# stop, which the nav's aria-current already says. The 404 keeps a fake one
+# as ornament and authors it in its own source; no layout emits one.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -29,15 +27,14 @@
       index on every page, so one track name matches every page that has a
       sidebar. The attribute also decides membership and not only extent: once
       it appears anywhere on the site, a page without it is not indexed at all.
-      That is how protected-inquiries stays out -- contact-page-spec.md, a
-      decision making it easier to discover has misread the page -- how the
-      404 stays out, and how the landing page stays out (RULED 2026-08-25,
-      Michael): the wall's glosses are each target page's own description,
-      already indexed on the target, so a hit should land on the page and not
-      on the page that links to it. The weblog index is out for the same
-      reason a level down, which is what the ignore on .blog-card does in
-      weblog.html. Membership is a criterion, not a count: one page per source
-      taking this layout, plus one per post.
+      That is how protected-inquiries stays out -- a decision making it easier
+      to discover has misread the page -- how the 404 stays out, and how the
+      landing page stays out: the wall's glosses are each target page's own
+      description, already indexed on the target, so a hit should land on the
+      page and not on the page that links to it. The weblog index is out for
+      the same reason a level down, by the data-pagefind-ignore on
+      weblog.html's main column. Membership is a criterion, not a count: one
+      page per source taking this layout, plus one per post.
 
       Content scoping and metadata capture are not the same mechanism, and
       nothing in Pagefind 1.5.2 reaches the second. Pagefind derives image
@@ -45,17 +42,16 @@
       was the first image in the document on every page whose main column has
       none -- so Pagefind took it as the page's default image metadata, and it
       indexes metadata VALUES as searchable text, which is how a query for
-      "alarm" came to return seven pages. Measured 2026-08-25 against a local
-      index: data-pagefind-ignore on the aside, exclude_selectors in a config
-      file, and the same as a CLI flag each produced a byte-identical index,
-      and the comma form of data-pagefind-meta sets no second key -- it
-      extends the first key's literal value. The lever was never at the
-      indexer. RULED 2026-08-25, Michael: the strip is drawn as a CSS
-      background, which has no src to capture, and its announcement moves to
-      role="img" plus aria-label -- see _includes/strip.html and
-      site-design-spec.md, "The Sidebar Strips' Accessible Name". No <img>
-      points at a strip anywhere in the built site, so no page carries image
-      metadata and the dialog has none to render.
+      "alarm" came to return seven pages. Tested against a local index:
+      data-pagefind-ignore on the aside, exclude_selectors in a config file,
+      and the same as a CLI flag each produced a byte-identical index, and the
+      comma form of data-pagefind-meta sets no second key -- it extends the
+      first key's literal value. The lever was never at the indexer. The
+      strip is drawn as a CSS background, which has no src to capture, and
+      its announcement moves to role="img" plus aria-label -- see
+      _includes/strip.html. No <img> points at a strip anywhere in the built
+      site, so no page carries image metadata and the dialog has none to
+      render.
 
       data-pagefind-meta supplies the result title. Left to itself Pagefind
       takes the first <h1>, which here is the header's identity line: every

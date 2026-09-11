@@ -1,7 +1,7 @@
 {%- comment -%}
-  _includes/listening.html -- the day's rotation. One source, two rules,
-  three consumers: sidebar.html and sidebar-weblog.html draw five, and the
-  landing page's sign-off draws one. Written as an include for the reason
+  _includes/listening.html -- the day's rotation. One source, one rule, three
+  consumers: sidebar.html and sidebar-weblog.html draw five tracks, and the
+  landing page's sign-off draws one. It is an include for the reason
   tagline.html is one: the selection is a rule, and a rule copied into three
   files is a rule that will disagree with itself.
 
@@ -16,48 +16,34 @@
   THE FILE'S ORDER IS LOAD-BEARING AND IT IS NOT THE EXPORT'S. Apple Music
   writes the list sorted, and that order is the exporter's rather than any
   fact about listening -- so a positional selection over it renders an
-  alphabetical run, and the run says something false. Measured 2026-09-08
-  before the repair: the first twenty rows ran Adona to Depeche Mode. The
-  committed file is therefore shuffled once, deterministically, and any
-  re-export or addition must be shuffled again before it lands. The failure
-  mode is visible rather than silent: an alphabetical file makes an
-  alphabetically ordered widget, which is the symptom that found this.
-
-  Provenance of the present 160 rows (2026-09-08): a hundred-row file and a
-  sixty-row supplement were concatenated in that order, fourteen title and
-  artist fields were normalized to house style, and the whole was shuffled
-  with seed 20260908. The operation on a file already in place, seed
-  included, so a later addition is repeatable:
-
-    python3 -c "import csv,random;p='_data/site_songs.csv';r=list(csv.reader(open(p,encoding='utf-8')));h,b=r[0],r[1:];random.Random(20260908).shuffle(b);f=open(p,'w',encoding='utf-8',newline='');w=csv.writer(f,quoting=csv.QUOTE_ALL);w.writerow(h);w.writerows(b)"
+  alphabetical run, and the run says something false. The committed file is
+  therefore shuffled once, deterministically, and any re-export or addition
+  must be shuffled again before it lands. The failure mode is visible rather
+  than silent: an alphabetical file makes an alphabetically ordered widget.
 
   Selection is by the day and not at random, following tagline.html: a build
   must be reproducible, and `sample` would make two builds of one commit
-  differ. The Actions cycle rebuilds daily (RULED 2026-08-18), so the
-  rotation runs on that cadence.
+  differ. The site rebuilds daily, so the rotation runs on that cadence.
 
   THE DAY IS EPOCH DAYS, NOT DAY OF YEAR, and it therefore rolls at midnight
-  UTC -- late afternoon Pacific -- rather than at local midnight (RULED
-  2026-09-08). The cron fires at 09:17 UTC either way, so nothing shifts in
-  practice. Day of year could not carry this rule regardless: it resets at
-  365 and supplies no cycle counter above the row count. The change also
-  decouples Listening from tagline.html, which still selects on `%j`. The
-  two rotated in lockstep until now, which was a side effect rather than a
-  decision; they are independent by ruling (2026-09-08).
+  UTC -- late afternoon Pacific -- rather than at local midnight. A new set
+  appears with the first build after that rollover, whenever the scheduled
+  run actually lands. Day of year could not carry this rule regardless: it
+  resets at 365 and supplies no cycle counter above the row count. Listening
+  and tagline.html, which still selects on `%j`, rotate independently.
 
   THE ASIDE'S FIVE ARE A STRIDE, NOT A GROUP WALK. Spacing five picks n/5
-  apart -- the rule through 2026-09-08 -- is not a walk over the list but a
-  coset of the subgroup of order five, so the set depended only on
-  `start mod 20` and the aside yielded twenty distinct sets from a hundred
-  rows however the file was shuffled. A stride d avoids that when no two of
-  the five collide and the five do not close, which every d coprime to n
-  satisfies; d and n-d give the same set reversed, so the usable range is 1
-  to n/2. The table below is every odd non-multiple-of-five from 13 to 79 --
-  the coprime set at n=160 with the small strides dropped, since a stride
-  under 13 draws five near-adjacent rows, harmless over a shuffled file but
-  reading as a block. Twenty-seven strides times 160 starts is 4,320
-  distinct five-track sets and 11.8 years before one recurs, enumerated
-  2026-09-08 rather than assumed.
+  apart is not a walk over the list but a coset of the subgroup of order
+  five, so the set depends only on `start mod n/5`: a hundred rows would
+  yield twenty distinct sets however the file was shuffled. A stride d
+  avoids that when no two of the five collide and the five do not close,
+  which every d coprime to n satisfies; d and n-d give the same set
+  reversed, so the usable range is 1 to n/2. The table below is every odd
+  non-multiple-of-five from 13 to 79 -- the coprime set at n=160 with the
+  small strides dropped, since a stride under 13 draws five near-adjacent
+  rows, harmless over a shuffled file but reading as a block. Twenty-seven
+  strides times 160 starts is 4,320 distinct five-track sets and 11.8 years
+  before one recurs.
 
   The table is a rule and not a list: odd, not a multiple of five, 13 to 79.
   It is correct for n=160 and must be re-derived if the row count changes.
@@ -65,16 +51,11 @@
   THE SIGN-OFF IS THE ASIDE'S FIRST TRACK, by construction: both are
   songs[start], so count=1 renders exactly what the top of the aside's five
   renders. Five tracks are visible across the site on a given day, not six.
-  The reason is the landing page's relation to the interior ones (RULED
-  2026-09-09, Michael): the index is a way in, and its nav slices, hexagon
-  and bug all reappear inside, so a song that differed would be the one
-  element asking to be wondered about. Sameness here is also what lets the
-  404's hand-authored five read as deliberate deviation rather than as one
-  more rotation.
-
-  Recorded so it is not re-proposed: an independent draw on multiplier 99
-  was ruled 2026-09-08 and retired 2026-09-09, the built site's own
-  experience being the evidence against it.
+  The landing page is a way in, and its nav slices, hexagon and bug all
+  reappear inside, so a song that differed would be the one element asking
+  to be wondered about. Sameness here is also what lets the 404's
+  hand-authored five read as deliberate deviation rather than as one more
+  rotation.
 
   `escape` is load-bearing, as in tagline.html for a different reason:
   several artists carry an ampersand, which opens an entity in HTML.

@@ -2,9 +2,9 @@
 # _layouts/index.html -- the landing page, and nothing else takes it. No
 # header, no sidebar, no footer: index.md authors its own .signoff carrying
 # the colophon link and the licence, so pulling in the footer include would
-# print both twice. That is why the script block was split out into
-# scripts.html (2026-08-22): this layout needs the scripts and must refuse
-# the chrome they used to be bundled with.
+# print both twice. That is why the script block lives in scripts.html: this
+# layout needs the scripts and must refuse the chrome they used to be
+# bundled with.
 #
 # Three things the layout owes the source, none of which index.md can author
 # for itself, a page source not asserting its own chrome:
@@ -14,7 +14,6 @@
 #                 the moire under every page on the site.
 #   the skip link the source's nav carries id="wall"; page.html's #main does
 #                 not exist here, and the site's class is .skip-link.
-# See _project/site-design-spec.md, Landing.
 ---
 <!DOCTYPE html>
 <html lang="en">

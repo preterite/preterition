@@ -10,10 +10,9 @@
 /**
  * Compose a strip's accessible name from its filename. The strips are an
  * identity element, named by the author, and are announced rather than
- * hidden (RULED 2026-08-18, amended 2026-08-19, reaffirmed 2026-08-25 --
- * site-design-spec.md, "Why these are not alt=''"). The descriptive
- * filename IS the author's name for the strip, so the file is the only
- * source and the picture and its description cannot disagree.
+ * hidden. The descriptive filename IS the author's name for the strip, so
+ * the file is the only source and the picture and its description cannot
+ * disagree.
  * /img/800s/800witherblister.gif -> 'abstract gray and green image - witherblister'
  * @param {string} path site-absolute path to a strip
  * @returns {string} the accessible name
@@ -33,13 +32,13 @@ function initGifRotation() {
   if (!strip) return;
   if (typeof GIFS === 'undefined' || !GIFS.length) return;
 
-  // The strip is drawn as a CSS background rather than an <img> (RULED
-  // 2026-08-25): there is no src for Pagefind to capture. It is NOT
-  // hidden -- role="img" and aria-label carry the announcement the alt
-  // attribute used to, so the 2026-08-18 ruling survives the change of
-  // element. One draw sets both, so they cannot name different strips.
-  // The no-JS fallback is a noscript rule in head.html; with scripting on
-  // this draw is the only strip fetched.
+  // The strip is drawn as a CSS background rather than an <img>: there is
+  // no src for Pagefind to capture. It is NOT hidden -- role="img" and
+  // aria-label carry the announcement the alt attribute used to, so the
+  // strip is still announced after the change of element. One draw sets
+  // both, so they cannot name different strips. The no-JS fallback is a
+  // noscript rule in head.html; with scripting on this draw is the only
+  // strip fetched.
   const path = GIFS[Math.floor(Math.random() * GIFS.length)];
   strip.style.backgroundImage = `url('${path}')`;
   strip.setAttribute('aria-label', stripLabel(path));
@@ -80,7 +79,7 @@ function initMobileNav() {
     navList.classList.toggle('open');
   });
 
-  // Close menu when a link is clicked. The nav is flat (RULED 2026-08-21),
+  // Close menu when a link is clicked. The nav is flat,
   // so every nav item is a leaf and none of them opens a submenu.
   document.querySelectorAll('.nav-item a').forEach(link => {
     link.addEventListener('click', () => {
@@ -129,7 +128,7 @@ function initSmoothScroll() {
   // matchMedia is the script-side counterpart of a CSS media query: it reads
   // the same user preference the stylesheet reads. The global animation kill
   // switch in responsive.css cannot reach scrollIntoView, since scroll
-  // behaviour is neither an animation nor a transition (repair row 12).
+  // behaviour is neither an animation nor a transition.
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const scrollBehavior = prefersReduced ? 'auto' : 'smooth';
 
@@ -312,7 +311,7 @@ function initStripRotation() {
  * value CSS can name. `nav .nav-item` is `flex: 1 1 auto` with centered
  * text, so each cell sizes to its label and then absorbs an equal share of
  * the bar's slack: the inked left edge of "Index" measured 85.1px at
- * 1400, 65.1px at 1000 and 56px at 800 (harness, 2026-08-23). Those three
+ * 1400, 65.1px at 1000 and 56px at 800. Those three
  * are not three breakpoints -- the first two sit inside the same media
  * query -- so the target moves continuously with viewport width and no
  * constant, page-scoped or not, can hold it.
@@ -425,7 +424,7 @@ async function renderSearchResults(results, list, status) {
     // meta.title is supplied by data-pagefind-meta in page.html and
     // post.html. Left to itself Pagefind takes the first <h1>, which here
     // is the header's identity line, so every hit would read "Mike
-    // Edwards" (measured 2026-08-25). The url fallback is for a page that
+    // Edwards". The url fallback is for a page that
     // somehow carries no title rather than for the normal case.
     a.textContent = (d.meta && d.meta.title) ? d.meta.title : d.url;
     const p = document.createElement('p');
@@ -464,7 +463,7 @@ function initSearch() {
   if (!dialog || !input || !list || !status || !triggers.length) return;
 
   // Feature detection, and the failure mode matters. An engine without
-  // showModal cannot run this dialog, and the 2026-08-20 ruling says a
+  // showModal cannot run this dialog, and a
   // control that does nothing is worse than one hidden -- so the triggers
   // go, exactly as the noscript branch in head.html does it. Neither
   // .search-trigger nor .hex declares `display`, so the [hidden] rule in
@@ -486,7 +485,7 @@ function initSearch() {
 
   // "/" opens search from anywhere. The guard is written by element KIND
   // rather than by a list of known fields, so it already holds for a weblog
-  // comment form that does not exist yet (Michael, 2026-08-25): any input,
+  // comment form that does not exist yet: any input,
   // textarea, select or contenteditable region swallows the key. A comment
   // form served inside an iframe never delivers keydown to this document at
   // all, so that case is covered by the platform rather than here.
@@ -526,7 +525,7 @@ function initSearch() {
   // Light dismiss, so a reader who does not know Escape can click away.
   // closedby="any" on the element is the declarative form and the browser
   // does the hit-testing; this branch runs only where that attribute is
-  // unimplemented -- Safari, as of 2026-08. Delete the whole block when
+  // unimplemented -- Safari, at this writing. Delete the whole block when
   // closedby reaches Baseline.
   //
   // Both conditions are required, and each alone is wrong for THIS dialog.

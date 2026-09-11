@@ -6,9 +6,8 @@
 
   Chosen by day of year rather than at random, deliberately: a build is
   reproducible, and `sample` would make two builds of the same commit differ.
-  The Actions cycle rebuilds daily (RULED 2026-08-18), so this rotates on
-  that cadence, which is the floor the rule asks for and not a simulation of
-  the per-load draw.
+  The site rebuilds daily, so this rotates on that cadence, which is the
+  no-JavaScript floor and not a simulation of the per-load draw.
 
   `escape` is load-bearing. One tagline contains `<!--`; rendered raw into
   the document that opens an HTML comment and swallows everything after it.

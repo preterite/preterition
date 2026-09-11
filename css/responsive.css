@@ -48,8 +48,8 @@
   }
 
   /* The bar consumes the same token as the column beneath it, so the two
-     share a left edge at every width the bar renders. RULED 2026-08-23
-     (Michael): the nav follows the content margin rather than holding
+     share a left edge at every width the bar renders.
+     The nav follows the content margin rather than holding
      `--content-inset`'s fixed 48px, which matched the column on wide
      screens by coincidence of both being 48 and stepped 28px outboard of
      it here -- the band where the sidebar has just dropped below the
@@ -67,7 +67,7 @@
 
   /* The trail is not inside `.main-content` and inherits none of its
      padding, so the two track each other only by consuming one token.
-     Measured 2026-08-23 before this rule: the trail sat 28px outboard of
+     Before this rule the trail sat 28px outboard of
      the block beneath it here, and 32px outboard on a phone. */
   .breadcrumbs {
     padding-left: var(--gutter);
@@ -83,7 +83,7 @@
   }
 
   /* HEADER */
-  /* On phones the header scrolls with the page. Measured 2026-08-22: the
+  /* On phones the header scrolls with the page. Measured: the
      fixed header is 139px tall at 700 and 175px at 400 (the title wraps),
      so no constant padding on main can clear it, and a fixed band that
      tall on a phone is the wrong trade regardless. The drawer is its own
@@ -97,7 +97,7 @@
     padding-top: var(--gutter-mobile);
   }
 
-  /* The row holds: title block, search hexagon, hamburger (2026-08-22).
+  /* The row holds: title block, search hexagon, hamburger.
      Row, not column, so both buttons sit beside the title on phones. */
   .header-content {
     flex-direction: row;
@@ -115,7 +115,7 @@
     position: relative;
   }
 
-  /* In the header row now (2026-08-22); no longer absolute inside <nav>,
+  /* In the header row; no longer absolute inside <nav>,
      where it rendered beneath the fixed header. */
   .hamburger {
     display: block;
@@ -124,7 +124,7 @@
 
   /* `nav .nav-list` (0,1,1) matches style.css's desktop rule, which a
      bare `.nav-list` (0,1,0) lost to regardless of load order -- the
-     reason the full list rendered in flow on phones (found 2026-08-22). */
+     reason the full list rendered in flow on phones. */
   nav .nav-list {
     display: none;
     flex-direction: column;
@@ -163,7 +163,7 @@
     /* The desktop bar's rule, unchanged at this width: emerald marks where
        you are, acid marks what you are touching. The drawer's items are
        already full-width blocks, so the left rule reads as it does on a
-       card (Michael, 2026-08-23). */
+       card. */
     border-left: 3px solid var(--color-accent-grey-green);
   }
 
@@ -214,7 +214,7 @@
   }
 
   .gif-placeholder {
-    /* The 240px cap was struck 2026-08-24. The strip frames itself out to
+    /* There is no width cap here. The strip frames itself out to
        the column's inner width at every breakpoint now, and a max-width here
        would hold that frame short of the widgets it exists to align with.
        The bottom margin is the only thing this block was doing. */
@@ -375,26 +375,23 @@
 }
 
 /* ===== HIGH CONTRAST: DECLINED, DELIBERATELY =====
-   A media block keyed on prefers-contrast: more stood here until
-   2026-08-23. Unlike forced-colors, that query has no default behaviour:
-   nothing happens unless the author answers it, so it is a signal an
-   author may choose to answer rather than a mechanism the reader
-   operates. No WCAG 2.2 criterion requires an answer, and this design
-   meets AA on its own ground.
-   The block as written applied light-ground corrections to a dark ground,
-   and so lowered contrast for the reader who asked for more: against the
-   card ground #252220, --color-accent-grey-green went 4.67:1 to 3.18:1
-   and --color-muted-grey went 5.20:1 to 3.53:1, both from passing to
-   failing.
-   RULED 2026-08-23 (Michael): the block goes out whole and nothing
-   replaces it. Do not restore it as a completeness repair.
+   There is no prefers-contrast: more block. Unlike forced-colors, that
+   query has no default behaviour: nothing happens unless the author
+   answers it, so it is a signal an author may choose to answer rather than
+   a mechanism the reader operates. No WCAG 2.2 criterion requires an
+   answer, and this design meets AA on its own ground.
+   The block that once stood here applied light-ground corrections to a
+   dark ground, and so lowered contrast for the reader who asked for more:
+   against the card ground #252220, --color-accent-grey-green went 4.67:1
+   to 3.18:1 and --color-muted-grey went 5.20:1 to 3.53:1, both from
+   passing to failing. Do not restore it as a completeness repair.
    The reader's own apparatus is a different question and a different
-   query -- @media (forced-colors: active) -- owed on its own terms. */
+   query -- @media (forced-colors: active) -- on its own terms. */
 
 /* ===== DARK MODE (system default is already dark) ===== */
 /* No light-mode block, deliberately. A four-line token override cannot make
    a light theme here: .main-content carries a literal dark gradient rather
    than a token, --color-card-dark does not follow, and the header artwork is
-   built for a dark ground. The block that stood here until 2026-08-19 left
+   built for a dark ground. The block that once stood here left
    card text at roughly 1.02:1 for any visitor whose system is set to light,
    which is the macOS default. A real light theme is its own pass. */

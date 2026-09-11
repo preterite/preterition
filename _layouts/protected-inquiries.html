@@ -3,15 +3,14 @@
 # other ever should: /protected-inquiries, the quiet destination for
 # correspondence that needs more care.
 #
-# The chrome is absent by design, not by omission (RULED 2026-08-19,
-# Michael; register and threat model at _project/contact-page-spec.md).
-# This layout therefore does NOT include head.html, and that is the whole
-# reason it exists as its own file rather than as page.html with things
-# switched off. head.html emits eight favicons, a manifest, a browserconfig
-# and a theme-color; this page's reader may be on Tor at a security level
-# that makes every extra request a fact about them. Shared CSS is kept --
-# and only shared CSS -- so someone arriving on a borrowed machine under
-# stress can see they are where they meant to be.
+# The chrome is absent by design, not by omission. This layout therefore
+# does NOT include head.html, and that is the whole reason it exists as its
+# own file rather than as page.html with things switched off. head.html
+# emits eight favicons, a manifest, a browserconfig and a theme-color; this
+# page's reader may be on Tor at a security level that makes every extra
+# request a fact about them. Shared CSS is kept -- and only shared CSS -- so
+# someone arriving on a borrowed machine under stress can see they are where
+# they meant to be.
 #
 # What must never be added here, each retracted as a "defect" before:
 #   favicons / manifest   request footprint, above.
@@ -40,18 +39,13 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/responsive.css">
 </head>
-<body class="protected-inquiries">{%- comment -%} The class is minted 2026-09-10,
-  named for the page, for the one rule it carries: this page omits the header
-  that holds every other page's h1, so its own title is its h1 by rank, and
-  both stylesheets give that h1 the h2 face. `class="bare"` sat on
-  this element until 2026-08-23 as the last trace of a retired layout name:
-  `bare` was what this layout was called before the 2026-08-19 ruling that a
-  layout takes the name of the page it dresses. Nothing consumed the class --
-  one occurrence across css/, js/, _includes/ and _layouts/, and it was this
-  one. Struck rather than kept as a styling hook, because a hook with no rule
-  behind it is indistinguishable from residue and gets read as either. If this
-  page ever needs body-scoped CSS, the class is minted then, named for the
-  page, with the rule written in the same pass. {%- endcomment %}
+<body class="protected-inquiries">{%- comment -%} The class is named for the page,
+  for the one rule it carries: this page omits the header that holds every
+  other page's h1, so its own title is its h1 by rank, and both stylesheets
+  give that h1 the h2 face. A body class here is minted only with a rule
+  behind it, named for the page and written in the same pass: a hook with no
+  rule behind it is indistinguishable from residue and gets read as either.
+  {%- endcomment %}
   <div class="page-body">
   <main id="main">
     <div class="main-content">

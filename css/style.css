@@ -102,7 +102,7 @@
   --color-muted-grey: #9a9389;
   --color-card-dark: #252220;
 
-  /* --border was struck 2026-08-23. It held #3d3833 -- the same value as
+  /* There is no --border token. One held #3d3833 -- the same value as
      --color-border-dark, declared in the same block -- and had exactly one
      consumer, the header's bottom rule, which now names the real token. Two
      names for one value is a rename that stopped halfway, and the cost is not
@@ -126,12 +126,12 @@
   --header-height: 120px; /* Approximate height for sticky positioning */
 
   /* What `main` adds above itself to clear the fixed header. A literal on
-     `main` until 2026-08-23, moved here because a second element needs the
+     `main` once, moved here because a second element needs the
      same number: the 404's trail sits ABOVE `main` and so sits outside
      that padding. One declaration, two consumers. The value is measured
      and not derived -- the resting header runs y=0 to y=256 at 1400
-     (harness, 2026-08-23) -- so it drifts if header padding or title size
-     changes, which is what the standing constant-derivation row is for. */
+     -- so it drifts if header padding or title size
+     changes. */
   --header-clearance: 260px;
 
   /* The nav band's internal top nudge: what holds its labels off the top
@@ -139,7 +139,7 @@
      link padding, the pipe divider that comments "match link text nudge",
      and now the 404's trail, which uses it top and bottom so its text sits
      in its band the way the nav's labels sit in theirs. Tokenized
-     2026-08-23; no value changed. */
+     without changing its value. */
   --nav-nudge: 10px;
 
   /* Landing page only. --subhead-lh is a token rather than a number because
@@ -194,8 +194,7 @@ h1 {
 }
 
 /* body.protected-inquiries h1: that page omits the header, so its title is
-   its h1 by rank and takes the h2 face here and in responsive.css
-   (2026-09-10). */
+   its h1 by rank and takes the h2 face here and in responsive.css. */
 h2,
 body.protected-inquiries h1 {
   font-size: 1.875rem;
@@ -509,7 +508,7 @@ header::after {
   padding: var(--header-padding);
   padding-left: var(--content-inset);
   padding-right: 0; /* the right edge is the sidebar's; the hex measures from it */
-  /* A row: the title block, then the search hexagon (2026-08-22). The
+  /* A row: the title block, then the search hexagon. The
      title may wrap; the hexagon never shrinks. */
   display: flex;
   align-items: center;
@@ -604,11 +603,10 @@ nav:not(.wall) {
      flex-basis (0 0 28px, below) governs the main size, so only the height
      took -- overriding aspect-ratio:1 and rendering the box 28 x 22. That
      fails WCAG 2.2 SC 2.5.8's 24px floor on the short axis, in the state a
-     reader reaches by scrolling. Measured 2026-08-23 by
-     browser-verify/verify-contact.py; the declarations alone read as a
-     uniform shrink and hid it. The box is 28px square at every width and in
-     every state; the hexagon moves, it does not deform (Michael 2026-08-22,
-     restated 2026-08-23). Do not re-add a shrink here. */
+     reader reaches by scrolling. Measured in a browser; the declarations
+     alone read as a uniform shrink and hid it. The box is 28px square at
+     every width and in every state; the hexagon moves, it does not deform.
+     Do not re-add a shrink here. */
 }
 
 /* Reduced motion: skip header transition */
@@ -626,7 +624,7 @@ nav:not(.wall) {
 /* ===== HEXAGON SEARCH BUTTON ===== */
 /* Search button container */
 .search-trigger {
-  /* In flow as the last item of the .header-content row (2026-08-22). At
+  /* In flow as the last item of the .header-content row. At
      full width the right margin centers it over the sidebar: half the
      sidebar, less half the button. As the window narrows the row carries
      it left toward the title's right edge; flex-shrink 0 means the title
@@ -635,7 +633,7 @@ nav:not(.wall) {
   width: 28px;
   aspect-ratio: 1;
   margin-right: calc(var(--sidebar-width) / 2 - 14px);
-  /* A real <button> since the layouts (2026-08-22): keyboard and assistive
+  /* A real <button>: keyboard and assistive
      tech get it for free, and the UA button box is reset here rather than
      faked with role= and tabindex= on a div. */
   background: none;
@@ -681,7 +679,7 @@ nav:not(.wall) {
 /* Below 900 the sidebar is gone, so the margin that centered the hexagon
    over it becomes an ordinary right gutter. Size never changes: the box is
    28px square at every width, and 24px is the WCAG 2.5.8 floor it must not
-   cross. The hexagon moves; it does not deform (Michael, 2026-08-22). */
+   cross. The hexagon moves; it does not deform. */
 @media (max-width: 899px) {
   .search-trigger {
     margin-right: var(--content-inset);
@@ -689,7 +687,7 @@ nav:not(.wall) {
 }
 
 /* Focus ring on the trigger. Added with the wiring rather than before it:
-   until this session the button did nothing, and a focus indicator on a
+   an unwired button does nothing, and a focus indicator on a
    control that goes nowhere is its own small lie. Acid green is spent here
    deliberately -- focus is interaction, which is the one thing it is
    reserved for. */
@@ -844,16 +842,16 @@ nav:not(.wall) {
    position:fixed from the rule below and left the flow; .panel then became
    .stage's only in-flow flex item and stretched across the viewport, and
    every .entry collapsed to zero height, all of their children being out of
-   flow so the wall had nothing to take height from. Measured 2026-08-22
-   against the rendered boxes, after the same defect was mistaken for a flex
-   error by reading declarations.
+   flow so the wall had nothing to take height from. Measured against the
+   rendered boxes, after the same defect was mistaken for a flex error by
+   reading declarations.
 
-   The exclusion is the narrow repair and a ledger row carries the wider
-   finding: `top: 208px` below is a hard-coded guess at a header height this
-   rule never measures, and a component this specific should carry its own
-   class rather than claim every <nav> on the site. The descendant rules
-   beneath need no exclusion -- each requires a .nav-list or .nav-item that
-   the wall does not contain. */
+   The exclusion is the narrow repair. The wider finding: `top: 208px`
+   below is a hard-coded guess at a header height this rule never measures,
+   and a component this specific should carry its own class rather than
+   claim every <nav> on the site. The descendant rules beneath need no
+   exclusion -- each requires a .nav-list or .nav-item that the wall does
+   not contain. */
 nav:not(.wall) {
   background-color: var(--color-bg-dark);
   border-bottom: 1px solid var(--color-border-dark);
@@ -869,7 +867,7 @@ nav .nav-list {
   display: flex;
   /* Items size to their labels and then absorb the slack, so each cell
      runs pipe to pipe and a hover or active highlight fills the whole box
-     rather than hugging the word (Michael, 2026-08-23). The 2026-08-22
+     rather than hugging the word. An earlier
      finding still holds and is why flex-basis stays auto: equal-width cells
      gave "CV" the width "Presentations" needed. Growing from content adds
      the same slack to every cell instead, so the widths stay ordered by
@@ -881,8 +879,8 @@ nav .nav-list {
      one only: `.main-content` reaches the same 48 by a `padding-left`
      longhand, and the tablet block's `padding` shorthand overwrites that
      longhand, so responsive.css re-declares this padding in terms of
-     `--gutter` to keep the two edges together below 900 (RULED 2026-08-23,
-     Michael). Changing this declaration alone moves the bar out from under
+     `--gutter` to keep the two edges together below 900.
+     Changing this declaration alone moves the bar out from under
      the column at desktop widths and nowhere else. */
   padding: 0 var(--content-inset);
   height: 48px;
@@ -930,8 +928,8 @@ nav .nav-item.active a {
   /* The current page is marked by a rule, not by a hue. Acid green against
      --color-text-dark measures 1.13:1 -- the two are nearly identical in
      luminance and differ almost only along the red-green axis, which is the
-     axis Michael cannot see, so on its own the colour marked nothing
-     (measured 2026-08-23, browser-verify/verify-contact.py). The border is
+     axis the commonest colour-vision deficiencies lose, so on its own the colour marked nothing.
+     The border is
      the signal; the colour is decoration on top of it. The mobile drawer has
      carried this same 3px rule all along -- this is the desktop bar catching
      up, not a new treatment. box-sizing is border-box globally, so the
@@ -948,10 +946,9 @@ nav .nav-item a:focus {
   background-color: rgba(0, 255, 0, 0.06);
 }
 
-/* The Research dropdown is retired (RULED 2026-08-21, Michael): the nav is
-   flat and every item is a leaf. The markup went at the ruling and the
-   JavaScript with it; these rules outlived both and styled a component that
-   had nothing left to render. Removed 2026-08-23. */
+/* There is no dropdown: the nav is flat and every item is a leaf. The
+   Research dropdown's rules outlived its markup and its JavaScript and
+   styled a component that had nothing left to render, so they are gone. */
 
 .hamburger {
   display: none;
@@ -969,22 +966,18 @@ nav .nav-item a:focus {
 }
 
 /* ===== BREADCRUMBS =====
-   Real breadcrumb trails are retired (RULED 2026-08-22, Michael). Every
-   professional page sits at the site root, so a true trail would read
-   "Index > Scholarship" and stop -- depth one, which the nav's
-   aria-current="page" already announces.
+   There are no real breadcrumb trails. Every professional page sits at the
+   site root, so a true trail would read "Index > Scholarship" and stop --
+   depth one, which the nav's aria-current="page" already announces.
    This class therefore has exactly ONE consumer: the deliberately false
    Zork trail hand-authored in 404.md, kept as ornament. It is a live
    single-use class, not a leftover. Do not reap it.
-   `display: none` struck here 2026-08-22. The treatment below is ported
-   from the weblog's own old trail -- Breadcrumb NavXT under the ample-pro
-   theme, `style.css` §12.1 in `preterite dot net archive older/` -- which
-   set the trail small, in the interface voice, one colour throughout, and
-   left the current item undifferentiated. THAT LAST CLAUSE IS SUPERSEDED
-   (RULED 2026-09-06, Michael): the trail now runs three colours and the
-   colours are the joke. `.breadcrumb-maze` takes the resting link colour,
-   so the maze reads as somewhere the reader has already been -- it is
-   where they arrived here from -- without linking or claiming to link.
+   The treatment below is ported from the weblog's own old trail --
+   Breadcrumb NavXT under the ample-pro theme -- which set the trail small,
+   in the interface voice. Unlike that trail, this one runs three colours,
+   and the colours are the joke. `.breadcrumb-maze` takes the resting link
+   colour, so the maze reads as somewhere the reader has already been -- it
+   is where they arrived here from -- without linking or claiming to link.
    `.breadcrumb-current` takes the bright accent. The divider takes no rule
    and needs none: `.breadcrumbs-content` below already sets
    --color-muted-grey, so the separator's colour is stated once, at the
@@ -992,10 +985,10 @@ nav .nav-item a:focus {
    a doubled one: it is the parser prompt the page alludes to and the
    breadcrumb convention at once, and the trail only works as furniture if
    it looks like furniture.
-   Measured against the page ground #1a1816 on 2026-09-06: bright green
-   #00ff00 at 12.90:1, medium sea green #3a9d6a at 5.24:1, warm taupe grey
-   #9a9389 at 5.82:1 -- all clear of AA for normal text. Nothing here
-   links; the colour is ornament and the text carries the joke alone. */
+   Measured against the page ground #1a1816: bright green #00ff00 at
+   12.90:1, medium sea green #3a9d6a at 5.24:1, warm taupe grey #9a9389 at
+   5.82:1 -- all clear of AA for normal text. Nothing here links; the
+   colour is ornament and the text carries the joke alone. */
 .breadcrumb-maze {
   color: var(--color-accent-grey-green);
 }
@@ -1008,7 +1001,7 @@ nav .nav-item a:focus {
   padding: var(--gutter) var(--content-inset) var(--nav-nudge);
 
   /* A hairline below closes the band, answering the nav's own bottom
-     border above it (RULED 2026-08-23, Michael): two rules are what make
+     border above it: two rules are what make
      the trail read as chrome seated under the nav rather than as the
      panel's first line. Same token as the nav's border, so the two cannot
      drift apart -- note that token is #3d3833, a warm dark grey and not a
@@ -1018,14 +1011,13 @@ nav .nav-item a:focus {
 
 /* The header is `position: fixed` above the phone breakpoint, so it is out
    of flow and the trail -- the first in-flow block on the only page that
-   carries one -- painted beneath it: measured 2026-08-23 at y=0 against a
-   header occupying 0 to 256, invisible at 1400, 1000 and 800 alike. The
-   treatment written the day before had never been seen by a reader.
-   RULED 2026-08-23 (Michael): the trail stays outside the panel, above
-   `main`, because the joke only lands if it looks like site furniture.
-   So the clearance moves rather than the trail: `.has-trail` gives it to
-   the trail and takes it off `main`, which keeps the two from stacking.
-   `_layouts/404.html` is the only place the class is set. */
+   carries one -- would paint beneath it: at y=0 against a header occupying
+   0 to 256, invisible at 1400, 1000 and 800 alike. The trail stays outside
+   the panel, above `main`, because the joke only lands if it looks like
+   site furniture. So the clearance moves rather than the trail:
+   `.has-trail` gives it to the trail and takes it off `main`, which keeps
+   the two from stacking. `_layouts/404.html` is the only place the class
+   is set. */
 body.has-trail .breadcrumbs {
   /* Clearance plus the band's own nudge, so the text sits --nav-nudge
      below the nav's rule and --nav-nudge above its own. The band is
@@ -1056,7 +1048,7 @@ body.has-trail .page-body {
    next. That break is the page's joke. So this class is not cosmetic:
    unstyled, the second voice does not merely look plain, it stops being a
    second voice at all, and the joke has nothing to land against.
-   RULED 2026-08-21 (Michael): indented, IBM Plex Sans, slightly smaller
+   The treatment: indented, IBM Plex Sans, slightly smaller
    than the body face. */
 .notfound-plain {
   font-family: var(--font-sans);
@@ -1065,7 +1057,7 @@ body.has-trail .page-body {
      not numerically-proportional: a sans face set at the same size as a
      serif reads LARGER, its x-height being taller relative to the em. So
      matching 1.125rem would make the "smaller" voice look bigger. The
-     optical step is the one the ruling asked for. */
+     optical step is the one the design asks for. */
   font-size: 1rem;
   line-height: 1.6;
 
@@ -1090,7 +1082,7 @@ body.has-trail .page-body {
 
 /* main is the aside's sibling, not its parent: the two columns belong to
    .page-body, so the skip link to #main passes the sidebar and the main
-   landmark holds the page's content alone (2026-09-10). */
+   landmark holds the page's content alone. */
 main {
   flex: 1;
   display: flex;
@@ -1167,29 +1159,25 @@ aside {
   margin: 0;
 }
 
-/* The dark-card sidebar widget rules stood here until 2026-08-24. A grep
-   across every .html, .md and .js in the repository, _site excluded, returned
-   zero consumers: nothing on this site has ever carried that class. Struck
-   rather than kept as documentation of intent -- an unconsumed rule is a
-   fossil the next reader mistakes for a live surface, which is the failure
-   the gif-placeholder and card-meta findings named from the other two
-   directions. */
+/* No dark-card sidebar widget rules: a grep across every .html, .md and .js
+   in the repository, _site excluded, returned zero consumers, so they went
+   rather than being kept as documentation of intent -- an unconsumed rule
+   is a fossil the next reader mistakes for a live surface. */
 
 /* ===== ROTATING SIDEBAR GIF =====
    The class sits on a <div> that carries the strip as a background image
    (see _includes/strip.html), which is what makes the strip invisible to
    Pagefind -- its image metadata comes off <img> src attributes and a
-   background has none (RULED 2026-08-25, Michael). Between 2026-08-24 and
-   that ruling the class sat on an <img>, and before that on a placeholder
-   <div> holding one, which is why the oldest rule set width to 100% and
-   centred its contents with flex -- correct for a box, wrong for a
-   replaced element. On the image, width: 100% stretched a 150px-wide GIF
-   to the full sidebar column, and because the width/height attributes are
-   on the tag the browser scaled the height to match: the strips rendered
-   roughly twice their intended size in both axes. The companion rule was
-   `.gif-placeholder img`, an image inside an image, which matched nothing,
-   so its max-width and object-fit guards never applied. Repaired
-   2026-08-24.
+   background has none. Earlier the class sat on an <img>, and before that
+   on a placeholder <div> holding one, which is why the oldest rule set
+   width to 100% and centred its contents with flex -- correct for a box,
+   wrong for a replaced element. On the image, width: 100% stretched a
+   150px-wide GIF to the full sidebar column, and because the width/height
+   attributes are on the tag the browser scaled the height to match: the
+   strips rendered roughly twice their intended size in both axes. The
+   companion rule was `.gif-placeholder img`, an image inside an image,
+   which matched nothing, so its max-width and object-fit guards never
+   applied.
 
    The strips are 150 x 800 (measured: `sips -g pixelWidth -g pixelHeight`
    over img/800s/, 120 files, all identical) and display at intrinsic size.
@@ -1218,14 +1206,14 @@ aside {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* Frame the strip out to the column's inner width so its outer edge lands
-     on the same line as Listening, This Week and the tagline box -- the
-     original design, recovered 2026-08-24 (Michael). The percentage resolves
+     on the same line as Listening, Upcoming and the tagline box -- the
+     original design. The percentage resolves
      against the CONTAINING BLOCK, the aside's content box, and not against
      the image, so there is no circularity here. 152 rather than 150 because
      the border sits outside the content box: subtracting only the strip
      would leave the frame two pixels wider than the widgets. max() keeps the
-     padding non-negative if the column is ever narrower than the strip. Both
-     responsive caps were struck in the same pass -- a max-width anywhere
+     padding non-negative if the column is ever narrower than the strip. Neither
+     stylesheet caps the width -- a max-width anywhere
      holds this frame short of the widgets it exists to align with. */
   padding-inline: max(0px, calc((100% - 152px) / 2));
   /* The mat above and below. Padding, not margin: margin sits outside the
@@ -1273,7 +1261,7 @@ aside {
    .signoff .own-line whose children flow normally rather than as flex items,
    so display:block on the spans themselves put the song and the artist each on
    a line of their own beneath the "listening:" key -- three lines where the
-   design calls for one (measured 2026-09-08, Michael, on the built page). The
+   design calls for one (measured on the built page). The
    sign-off's own whitespace supplies the space between song and artist. */
 .music-track .music-track-song,
 .music-track .music-track-artist {
@@ -1326,7 +1314,7 @@ aside {
 /* Emphasis is unscoped; block display is not. This is the .music-track-song
    pattern above, applied here. The summary is the field the reader came for in
    both contexts -- the aside and the landing page's sign-off -- so it carries
-   emerald and weight 500 wherever it renders (RULED 2026-09-08, Michael: what
+   emerald and weight 500 wherever it renders (what
    is emphasized follows the sidebar's convention in both instances, so the
    sign-off reads "upcoming: Day Time **Event**" as its sibling reads
    "listening: **Song** Artist"). Block display is the aside's alone: in the
@@ -1335,7 +1323,7 @@ aside {
    the line across four where the design calls for one. Colour carries nothing
    alone -- weight, and in the aside line position, say the same thing. Emerald
    on the card ground measures 4.68:1, above the 4.5 floor for text this size
-   and on the margin the spec flags as a tripwire. */
+   and close enough to that floor to watch. */
 .calendar-summary {
   font-weight: 500;
   color: var(--color-accent-grey-green);
@@ -1345,12 +1333,10 @@ aside {
   display: block;
 }
 
-/* The subscribe link is struck (RULED 2026-09-08, Michael). The widget is a
-   reporter and not a navigator (RULED 2026-08-21, holding here or anywhere),
-   and the only plausible link was the webcal:// capability URL, which
-   publishing would have handed permanent calendar access to anyone who read
-   the page. .calendar-link and .calendar-link a stood here and styled nothing
-   once _includes/upcoming.html stopped emitting an anchor. Do not restore. */
+/* No subscribe link, and no .calendar-link rules. The widget is a reporter
+   and not a navigator, and the only plausible link was the webcal://
+   capability URL, which publishing would have handed permanent calendar
+   access to anyone who read the page. Do not restore. */
 
 /* ===== TAGLINE ===== */
 .tagline-box {
@@ -1445,16 +1431,14 @@ footer {
    Register, not volume. IBM Plex Sans against the card's Crimson Pro is what
    marks the line as apparatus rather than argument; a heavier serif would
    only have been louder. Sans reads optically larger than serif at equal
-   size, so parity in ems overshoots. 1.05em stood until 2026-08-24, when
-   Michael took the line down about ten per cent to 0.95em, which lands the
-   credit line near the card's optical body measure rather than above it.
-   The family carries the register; the size no longer competes for it.
+   size, so parity in ems overshoots: 0.95em lands the credit line near the
+   card's optical body measure rather than above it. The family carries the
+   register; the size does not compete for it.
 
-   Weight was 600 until 2026-08-24, when Michael amended the 2026-08-23
-   ruling to sans, not bold: the family change carries the register on its
-   own, and the extra weight made the line compete with the h3 above it
-   instead of grouping under it. `IBMPlexSans-Regular.woff2` is on disk, so
-   nothing is synthesised at 400 either.
+   Weight 400, not bold: the family change carries the register on its own,
+   and extra weight made the line compete with the h3 above it instead of
+   grouping under it. `IBMPlexSans-Regular.woff2` is on disk, so nothing is
+   synthesised at 400.
 
    No `color` here, deliberately. `.card p` already sets it and this rule is
    more specific than that, so a colour declared here would override the
@@ -1462,14 +1446,10 @@ footer {
    line following the card.
 
    Marked in the page source with kramdown's {: .card-meta}, not selected as
-   `.card h3 + p`. Measured 2026-08-23 across all ten sources: that adjacency
-   holds on the five inventory pages and fails on about.md and contact.md,
-   whose cards open straight into prose. The line is what varies between
-   pages, so the line is what carries the mark. The marks were authored in
-   the vault 2026-08-23 and did not cross into the repository until
-   2026-08-24; across that interval this rule had no consumers anywhere and
-   every credit line on the live site rendered as body prose. A rule and its
-   marks are one change and cross together. */
+   `.card h3 + p`: that adjacency holds on the inventory pages and fails on
+   about.md and contact.md, whose cards open straight into prose. The line
+   is what varies between pages, so the line is what carries the mark. A
+   rule and its marks are one change and cross together. */
 .card p.card-meta {
   font-family: var(--font-sans);
   font-size: 0.95em;
@@ -1817,13 +1797,12 @@ blockquote {
   font-weight: 600;
 }
 /* ===== LANDING PAGE =====
-   Harvested from design/working-mockups/index-C-one-dom-two-layouts.html
-   (RULED 2026-08-22, Michael). The mockup deploys nothing and its CSS was
-   written loosely imitating this file; what crosses is the layout machinery,
-   never the vocabulary. Colours, faces and type sizes are this stylesheet's
-   throughout -- where the mockup approximated a value, the site's own value
-   stands. Every selector below was verified absent from both stylesheets
-   before the harvest, so this section collides with nothing above it.
+   Built from a working mockup that deploys nothing. What crossed from it is
+   the layout machinery, never the vocabulary: colours, faces and type sizes
+   are this stylesheet's throughout, and where the mockup approximated a
+   value, the site's own value stands. Every selector below was verified
+   absent from both stylesheets before it was added, so this section
+   collides with nothing above it.
 
    ONE DOCUMENT, TWO LAYOUTS. Each <a class="entry"> carries name, locator,
    gloss and strip. Narrow renders them as a book index; wide renders them as
@@ -1887,7 +1866,7 @@ blockquote {
 }
 
 /* ----- Headword -----
-   Monospace, because the README gives the monospace face navigation and
+   Monospace, because the monospace face does navigation and
    titling; the mockup's serif italic was an approximation. Size is h1's own
    2.7rem, fluid below it and capped there. Three ghost layers drift behind
    the live one; they are aria-hidden in the source. */
@@ -1905,8 +1884,8 @@ blockquote {
   margin-bottom: 0;
 }
 
-/* The headword sits one line-unit down inside its own box (Michael,
-   2026-08-22), closing the air above the subject line the way the header
+/* The headword sits one line-unit down inside its own box,
+   closing the air above the subject line the way the header
    does on every other page. Because .hw is absolutely positioned and the h1
    keeps its 1.05em height, nothing below moves: the subject line holds its
    position exactly, and so does --subjects-top, which the spine labels and
@@ -1924,7 +1903,7 @@ blockquote {
   letter-spacing: 0.25rem;
 }
 
-/* The lead is a span and not an anchor (RULED 2026-08-22, Michael). The
+/* The lead is a span and not an anchor. The
    link pointed at the page it was already on, and the hover spent the
    palette's scarcest colour on a null affordance. The element itself stays
    because .hw above is what positions it: all four layers are absolutely
@@ -1950,7 +1929,7 @@ blockquote {
 
 /* The subject line, which is #site-description's string doing
    #site-description's job, so it takes #site-description's treatment. One of
-   its line-heights of air above it, down from two (Michael, 2026-08-22),
+   its line-heights of air above it, down from two,
    after the headword itself dropped a line-unit into its own box.
 
    Plus the leading this page does not have. Measured: on every other page
@@ -1982,8 +1961,8 @@ blockquote {
    shape is 24.64 x 28 -- taller than it is wide. index.md gives .hex no inner
    span, the clip-path sitting on the button itself, so the proportion is
    written onto the button here rather than onto a child. A flat 28 square
-   read as a visibly fatter hexagon than every other page's (Michael,
-   2026-08-22). The calc names the relationship rather than restating 24.64,
+   read as a visibly fatter hexagon than every other page's.
+   The calc names the relationship rather than restating 24.64,
    so a change to the 28px box carries here. Target size still clears WCAG
    2.5.8: 24.64 x 28 against a 24 x 24 floor. */
 .hex {
@@ -1993,7 +1972,7 @@ blockquote {
   border: 0;
   padding: 0;
   /* Centred on the headword's line box rather than ranged to the top of the
-     row (Michael, 2026-08-22). .headrow is align-items: flex-start, so the
+     row. .headrow is align-items: flex-start, so the
      offset is measured: .hw sits one --subhead-lh down inside the h1, the h1
      line box is 1.05em of the site's 2.7rem h1, and half the hexagon's own
      28px height comes back off. Written as the derivation rather than as
@@ -2078,7 +2057,7 @@ blockquote {
   color: var(--color-muted-grey);
 }
 
-/* Emphasis inside a gloss reverts to upright (RULED 2026-08-19, Michael).
+/* Emphasis inside a gloss reverts to upright.
    The gloss is the target page's `description` run through markdownify, so
    an author writing _emphasis_ there gets an <em> inside an already-italic
    run, where italic-on-italic is invisible. Reverting is the typographic
@@ -2110,7 +2089,7 @@ blockquote {
   flex-wrap: wrap;
   /* Apparatus, not prose: the body's 1.7 leading plus a 0.4rem row gap set
      these four rows 30px apart, which reads as double-spaced on a page whose
-     whole conceit is an index (Michael, 2026-08-22). 1.4 with no row gap is
+     whole conceit is an index. 1.4 with no row gap is
      the leading of a colophon or a masthead. The block is anchored to the
      panel's bottom by justify-content: space-between, so tightening pulls
      the rule DOWN toward the tagline rather than lifting the tagline; the
@@ -2161,7 +2140,7 @@ blockquote {
 }
 
 /* The rotating tagline takes the subject line's size, so the two read as one
-   register at opposite ends of the panel (Michael, 2026-08-22). The token
+   register at opposite ends of the panel. The token
    rather than a repeated number, so they cannot drift apart. Landing page
    only: every other page renders its tagline through a different component
    at its own size, which this selector does not reach. */
@@ -2235,7 +2214,7 @@ blockquote {
   .headrow { padding-top: 0; }
   .signoff { margin-top: 0; }
   /* The tagline and the bug lift off the bottom edge, and close up toward
-     the sign-off above them (Michael, 2026-08-22). The two numbers are one
+     the sign-off above them. The two numbers are one
      move: .panel is a space-between column, so its lower block is anchored
      to the bottom and any height the block gains pushes the sign-off UP.
      Holding the sign-off still therefore means margin-top gives up exactly
@@ -2315,10 +2294,10 @@ blockquote {
     font-family: var(--font-mono);
     font-weight: 600;
     text-transform: uppercase;
-    /* Raised from 1rem for legibility (Michael, 2026-08-22), then lowered
-       again the same day: 1.25rem read as shouty. 1.125rem is the site's
-       body step and the nearest scale value to the wanted +10%, landing at
-       +12.5% rather than beside the scale at 1.1rem. */
+    /* Raised from 1rem for legibility, then lowered again: 1.25rem read as
+       shouty. 1.125rem is the site's body step and the nearest scale value to
+       the wanted +10%, landing at +12.5% rather than beside the scale at
+       1.1rem. */
     font-size: 1.125rem;
     letter-spacing: 0.12em;
     color: var(--color-accent-grey-green);
@@ -2342,7 +2321,7 @@ blockquote {
     display: block;
     position: fixed;
     left: var(--gutter);
-    /* Dropped from four line-units to six (Michael, 2026-08-22), which is
+    /* Dropped from four line-units to six, which is
        +54.4px -- the wanted ~50px, taken as a multiple of --subhead-lh so
        the box stays on the same line rhythm the spine labels align to
        rather than landing 50px off it. Raised from six units to seven when
@@ -2366,7 +2345,7 @@ blockquote {
     letter-spacing: 0.05em;
   }
 
-  /* Serif italic at both sizes (Michael, 2026-08-21): the gloss reads as an
+  /* Serif italic at both sizes: the gloss reads as an
      index annotation whether printed on the page or thrown by a hover. What
      distinguishes the wide gloss is the bright headword above it, not a
      change of face. */

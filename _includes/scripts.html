@@ -1,24 +1,21 @@
 {%- comment -%}
-  _includes/scripts.html -- the site's script block, split out of
-  _includes/footer.html 2026-08-22. Same defect class 22e fixed in
-  page.html: an include bundling two responsibilities forces every caller
-  to take both. The landing page needs these scripts and authors its own
-  sign-off, so it takes this file and not the footer.
+  _includes/scripts.html -- the site's script block, kept apart from
+  _includes/footer.html because an include bundling two responsibilities
+  forces every caller to take both. The landing page needs these scripts and
+  authors its own sign-off, so it takes this file and not the footer.
 
   GIFS is emitted below rather than written into main.js. Jekyll's
   site.static_files is its index of every file it copies through
   unprocessed, so the strip pool is enumerated from the folder itself at
   build and no list of filenames is maintained by hand anywhere. main.js
   derives each strip's alt text from the filename it drew, so the folder is
-  the single source of truth for both halves. js/gif-slugs.js, which
-  hand-maintained a slug array against placeholder filenames, was retired
-  2026-08-25 when the descriptive filenames were restored.
+  the single source of truth for both halves.
 
-  taglines.js is generated from _data/taglines.yml at build (2026-08-23) and
-  is no longer hand-edited. It carries no load-order constraint of its own:
-  main.js guards on `typeof TAGLINES`, and the markup already holds the
-  build's own pick, so a failure here degrades to the day's tagline rather
-  than to nothing.
+  taglines.js is generated from _data/taglines.yml at build and is not
+  hand-edited. It carries no load-order constraint of its own: main.js
+  guards on `typeof TAGLINES`, and the markup already holds the build's own
+  pick, so a failure here degrades to the day's tagline rather than to
+  nothing.
 {%- endcomment -%}
 {%- comment -%}
   The search dialog rides here rather than in header.html because this

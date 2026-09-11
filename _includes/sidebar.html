@@ -1,33 +1,25 @@
 {%- comment -%}
   _includes/sidebar.html -- the professional pages' aside: strip, Listening,
-  Upcoming, tagline. Both widgets render from _data/ at build (RULED
-  2026-08-18): no key, no fetch, nothing runs in the reader's browser.
+  Upcoming, tagline. Both widgets render from _data/ at build: no key, no
+  fetch, nothing runs in the reader's browser.
 
   Listening's source, selection and escaping are _includes/listening.html's,
   which the weblog aside and the landing page's sign-off call as well, so
   the three agree by construction rather than by three copies of one rule
   staying in step. What this file owns is the zone: the heading, the widget
   wrapper, and the position. Listening precedes the calendar here and is
-  terminal in the weblog's middle zone (RULED 2026-08-26, Michael: the
-  deployed sequence is correct). Reporter, not navigator (RULED 2026-08-21):
-  no outbound link, here or anywhere.
+  terminal in the weblog's middle zone. Reporter, not navigator: no
+  outbound link, here or anywhere.
 
-  The Last.fm fetch this widget was first designed around is retired. A
-  local file needs no key, no rate limit and no third-party request, and
-  with it go _data/lastfm.json and the tracks[].url captured 2026-08-24
-  against a later ruling, which has no source in a list of titles and
-  artists.
+  Listening reads a committed local file rather than a listening service's
+  API. A local file needs no key, no rate limit and no third-party request.
 
-  This Week renders _data/calendar.json -- events[].day, events[].time,
-  events[].summary, three pre-formatted strings written at build by
-  _scripts/expand_calendar.py from the committed _calendar/. The schema
-  contract now lives at _includes/upcoming.html, beside the rule that
-  renders it, rather than here.
-
-  Renamed from "This Week" 2026-09-08 (Michael): the unit of report is the
-  next five items by start time, not a week's worth, so the old heading went
-  false on a quiet week and after the term's last UNTIL expired. The section
-  carries id="upcoming" and contact.md's office-hours link follows it.
+  Upcoming renders _data/calendar.json. Its schema contract lives at
+  _includes/upcoming.html, beside the rule that renders it, rather than
+  here. The unit of report is the next five items by start time, not a
+  week's worth, so the heading stays true on a quiet week and after a term's
+  last recurrence expires. The section carries id="upcoming", which
+  contact.md's office-hours link follows.
 {%- endcomment -%}
 <aside>
   <div class="sidebar-section">

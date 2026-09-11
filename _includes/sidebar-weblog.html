@@ -1,33 +1,30 @@
 {%- comment -%}
   _includes/sidebar-weblog.html -- the weblog's aside. Sibling to
   sidebar.html, not a variant of it: the three zones are the same and their
-  contents invert (RULED 2026-08-21, Michael, site-design-spec.md, The
-  Sidebar's Three Zones).
+  contents invert.
 
-  Identity inverts. On the professional pages the header names him and the
-  zone carries the strip alone; here the header names the weblog and rotates
-  its tagline, so the box does the naming the header no longer does. The
-  affiliation block that used to sit opposite was struck 2026-08-26 (Michael),
-  and the canonical string with it.
+  Identity inverts. On the professional pages the header names the author
+  and the zone carries the strip alone; here the header names the weblog and
+  rotates its tagline, so the box does the naming the header no longer does.
 
-  Middle is blog navigation and ships with Workstream 5, not at deploy.
-  Recent Comments, Recent Posts, Top Posts, Archive by date, Archive by
-  category: at deploy the corpus has not migrated and Staticman does not
-  exist, so four of the five would be empty and a <details> opening onto
-  nothing actively misleads the reader who accepts the invitation.
+  The middle zone is blog navigation, and it ships with the archive rather
+  than before it. Recent Comments, Recent Posts, Top Posts, Archive by date,
+  Archive by category: until the corpus has migrated and Staticman exists,
+  four of the five would be empty, and a <details> opening onto nothing
+  actively misleads the reader who accepts the invitation.
 
   No footer zone. The dotted box does not render here and the ME bug goes
   with it: the tagline is promoted to the header, so the box has nothing to
   hold, and a mark reading "ME" beneath an h1 reading "Preterition" would
   answer a question the page has already answered differently.
 
-  So the deploy-day column is About, strip, Listening -- three elements, all
+  So the column is About, strip, Listening -- three elements, all
   populated, no empty widget anywhere.
 
-  CONTRACT: the About prose is content and is authored in the vault, at
-  weblog/index.md's `about:` field. It is not authored here, and the card is
-  omitted rather than shipped empty when the field is absent -- an empty
-  identity card is the construction-site reading this column exists to avoid.
+  The About prose is content, read from weblog/index.md's `about:` front
+  matter field and not written here. The card is omitted rather than shipped
+  empty when the field is absent -- an empty identity card is the
+  construction-site reading this column exists to avoid.
 {%- endcomment -%}
 <aside>
   {%- if page.about and page.about != "" %}
@@ -45,14 +42,13 @@
 
   {%- comment -%} Listening is the terminal element of the middle zone here,
   which is why it sits below the (deferred) blog nav rather than belonging to
-  it. On the professional pages it precedes the calendar instead (RULED
-  2026-08-26, Michael: the deployed sequence is correct). It is also
-  the only element on this page that demonstrates the page is live. Reporter,
-  not navigator (RULED 2026-08-21): no outbound link, here or anywhere. The
-  source and the selection are _includes/listening.html's, shared with the
-  professional pages' aside and the landing page's sign-off, so the three
-  show the same five songs on any given day rather than three draws that
-  happen to agree.
+  it. On the professional pages it precedes the calendar instead. It is also
+  the only element on this page that demonstrates the page is live.
+  Reporter, not navigator: no outbound link, here or anywhere. The source
+  and the selection are _includes/listening.html's, shared with the
+  professional pages' aside and the landing page's sign-off, so all three
+  render from one day's selection rather than from three draws that happen
+  to agree.
   {%- endcomment %}
   <div class="sidebar-section">
     <h2>Listening</h2>
