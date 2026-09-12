@@ -1,20 +1,9 @@
-<!-- edwards-cv.md -- the editable source of edwards-cv.pdf, beside the file
-     it produces. Follows resources/_source/meaning-functionless-dialogue.md
-     a file in resources/ that has a source is edited here, in the
-     repository, beside the artifact it produces.
-
-     No YAML front matter, deliberately. Jekyll builds a front-mattered .md
-     into an HTML page; without it the build copies this file verbatim, so
-     the CV takes no page and only the PDF is linked.
-
-     Entries are one per line and unwrapped: a wrapped bibliographic entry
-     renders as two lines. Breaks in stacked blocks are pandoc backslash
-     breaks. [...]{.underline} and {.smallcaps} are pandoc spans the print
-     stylesheet targets -- do not convert them to emphasis.
-
-     Render follows resources/_source/render-play.sh: pandoc to standalone
-     html5 against the print stylesheet, then Chrome --headless
-     --print-to-pdf. -->
+<!-- Source of edwards-cv.pdf; render with resources/_source/render-cv.sh.
+     No YAML front matter: without it Jekyll copies this file verbatim, so
+     the CV takes no page and only the PDF is linked. Entries are one per
+     line and unwrapped; stacked lines break with a pandoc backslash.
+     [...]{.underline} and {.smallcaps} are pandoc spans the print
+     stylesheet targets. -->
 
 # Mike Edwards
 
