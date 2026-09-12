@@ -2,10 +2,11 @@
    /* Main Stylesheet second revision */
 
 /* ===== SELF-HOSTED FONTS ===== */
-/* Latin subset only — 169KB total for 9 files across 3 families.
-   Crimson Pro: body text (serif). IBM Plex Sans: headings, UI (sans).
-   JetBrains Mono: nav, H1, code (mono). All font-display: swap for
-   fast initial render with system font fallback. */
+/* Nine WOFF2 files in three families, each subset to Latin and Latin
+   Extended-A. Crimson Pro: body text (serif). IBM Plex Sans: headings,
+   UI (sans). JetBrains Mono: nav, H1, code (mono). All font-display:
+   swap for fast initial render with system font fallback; the stacks
+   under Typography below name what carries the scripts these do not. */
 
 /* Crimson Pro — Body text */
 @font-face {
@@ -110,10 +111,19 @@
      has no way to tell which border a new rule should take. Not to be
      reintroduced; the mid-tone has one name. */
 
-  /* Typography */
-  --font-serif: 'Crimson Pro', 'Georgia', 'Caslon', serif;
-  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  /* Typography. Each stack is one self-hosted face for Latin and Latin
+     Extended-A, then the platform faces that carry what it does not, in
+     the form the context wants: Georgia and Times New Roman for Cyrillic
+     and Greek in the serif; a naskh Arabic in the serif context (Geeza
+     Pro on Apple, Times New Roman on Windows, Noto Naskh Arabic
+     elsewhere) and the system's sans Arabic in the sans (Segoe UI on
+     Windows, Noto Sans Arabic elsewhere, the system font's own cascade
+     on Apple); the platform's colour emoji face last in every stack. A
+     browser walks a stack per character, so a fallback costs nothing on
+     a page that never reaches it. */
+  --font-serif: 'Crimson Pro', 'Georgia', 'Caslon', 'Geeza Pro', 'Noto Naskh Arabic', 'Times New Roman', 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', serif;
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans Arabic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', monospace;
 
   /* Sizing */
   --sidebar-width: 320px;
@@ -1743,7 +1753,7 @@ footer {
 
 /* ===== BLOCKQUOTE STYLING ===== */
 blockquote {
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
   padding-left: 2rem;
@@ -1757,7 +1767,7 @@ blockquote {
 
 /* ===== CUSTOM "DENT" BLOCK ===== */
 .dent {
-  font-family: 'Crimson Pro', Georgia, serif;
+  font-family: var(--font-serif);
   line-height: 1.8; /* Body is 1.6, so +0.2 = 1.8 */
   padding-top: 0.9rem; /* Half line height */
   padding-bottom: 0.9rem; /* Half line height */

@@ -66,8 +66,10 @@ defaults:
   # hand-authored post that declines to state one.
   # A post's address is part of the site's design, so it is asserted here
   # rather than left to Jekyll's default, which was never about posts. The
-  # `weblog/` segment comes from the source folder, not from :categories,
-  # which is empty by design and must stay out of the path. A post is one
+  # `weblog/` segment comes from the source folder. `:categories` stays out
+  # of the template: Jekyll puts that folder name into every post's
+  # categories beside the post's own, and the address must carry neither.
+  # A post is one
   # file, slug.html, never a slug/index.html directory: the site does not
   # proliferate stub directories, and the old /blog/ addresses are honoured
   # by redirect_from alone.
