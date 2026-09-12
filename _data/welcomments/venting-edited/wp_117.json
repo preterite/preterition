@@ -1,0 +1,12 @@
+{
+  "id": "wp_117",
+  "date": "2003-07-31T00:48:10-07:00",
+  "author": {
+    "name": "Mike",
+    "website": "",
+    "role": "owner"
+  },
+  "replying_to": null,
+  "message": "Curtiss -- didn't take it that way, don't worry. (Well, OK, maybe there was a little \"*I* don't need no stinkin DW\" pride in my response.:) DW does OK w/ HTML, if you don't mind redundancy, and it really is convenient as hell. But it does bad, bad things to stylesheets, like turning one simple works-for-all-4-sides padding instruction into one for each side, scattered intermittently through the rest of the stuff for that element, rather than grouped together. And chews up your nice, legible spacing. And deletes comments. And -- well, you get the idea. Honestly, I didn't recognize what I'd written.",
+  "type": ""
+}

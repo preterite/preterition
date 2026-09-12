@@ -1,0 +1,12 @@
+{
+  "id": "wp_684",
+  "date": "2004-06-09T14:24:44-07:00",
+  "author": {
+    "name": "Mike",
+    "website": "",
+    "role": "owner"
+  },
+  "replying_to": null,
+  "message": "Amanda, [BBEdit Lite](http://www.macupdate.com/info.php/id/3693) and [uEdit](http://home.wanadoo.nl/joost.markerink/uedit/) are kind of the Mac counterparts to TextPad,  all of which I've used and like a lot for bare-bones text editing; I totally agree with you there. Clancy, I've used AbiWord via X11 on the Mac -- it works, mostly, but they haven't gotten to making it a native Mac OS X application yet, and it shows in the interface. And OpenOffice won't be Mac-native until 1Q2006, unfortunately. I'll play more with [X11](http://www.apple.com/macosx/features/x11/), and see if I can actually manage to get used to running Unix apps that way: it'd definitely be nice.",
+  "type": ""
+}

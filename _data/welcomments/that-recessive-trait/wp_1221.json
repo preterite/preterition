@@ -1,0 +1,12 @@
+{
+  "id": "wp_1221",
+  "date": "2004-12-04T14:52:05-08:00",
+  "author": {
+    "name": "Mike",
+    "website": "",
+    "role": "owner"
+  },
+  "replying_to": null,
+  "message": "Huh. I checked it in MSIE 5.5 Mac and 6.0 Windows and the picture seemed to position OK, even though IE is completely stupid about the CSS box model. (My CSS even [validates](http://jigsaw.w3.org/css-validator/)! Woohoo!)  Which version of IE are you using?\n\nThanks for the heads up on the pings thing, though. I'll have to look into that.",
+  "type": ""
+}

@@ -1,0 +1,11 @@
+{
+  "id": "wp_1293",
+  "date": "2005-02-16T20:11:43-08:00",
+  "author": {
+    "name": "Derek",
+    "website": "http://earthwidemoth.com"
+  },
+  "replying_to": null,
+  "message": "In my browser (Firefox), Mike, it's nearly flush with the black header box.  Looks like a solid white border 1px thick separates them. In the CSS editor, when I switch the sidebox1 id (topmargin) to -14, it's perfectly matched up.  At -13, there's a white sliver.  Let me know if a screenshot would be any help and I'll email it.",
+  "type": ""
+}

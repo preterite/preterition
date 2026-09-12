@@ -1,0 +1,11 @@
+{
+  "id": "wp_1170",
+  "date": "2004-11-01T01:25:08-08:00",
+  "author": {
+    "name": "clew",
+    "website": "http://www.tenhand.com/clew/blog"
+  },
+  "replying_to": null,
+  "message": "I'm told spammers get around captcha by routing it through logins for dirty pictures.\n\nI don't find much suggesting that this is a common technique, and at least you'd only get dedicated, professional spammers, since it requires server resources from them to provide the pictures.\n\nI can't think of a way to charge picture websites for providing captcha frontends.\n\nBut, while I'm being dweeby; one, the spammer blacklists should be sharable between any kind of blog installation; two, at least one of the open-source varieties also has trainable Bayesian spam filtering (dunno about setup); and three, surely calling in fire is too strong a metaphor for blacklisting? Calling in fire is at least the [original](http://en.wikipedia.org/wiki/DNSBL) Blackhole DNS list; this has fallen out of favor for some decent reasons.",
+  "type": ""
+}

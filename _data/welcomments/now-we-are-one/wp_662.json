@@ -1,0 +1,12 @@
+{
+  "id": "wp_662",
+  "date": "2004-06-02T13:52:29-07:00",
+  "author": {
+    "name": "Mike",
+    "website": "",
+    "role": "owner"
+  },
+  "replying_to": null,
+  "message": "Actually, I just tested an install of Wordpress -- shockingly easy stuff. Like they promise, it took less than five minutes from download to up and running. Seems like Wordpress might be good for low-overhead, single-author weblogs, while Drupal has the power for more sophisticated tasks. But yeah, I'll definitely be playing around with Drupal in the coming weeks.",
+  "type": ""
+}

@@ -1,0 +1,11 @@
+{
+  "id": "wp_272",
+  "date": "2003-10-17T00:56:43-07:00",
+  "author": {
+    "name": "Curtiss Leung",
+    "website": "http://www.panix.com/~hncl/HectorsJournal"
+  },
+  "replying_to": null,
+  "message": "Oh, the multitudes that come to my site looking for information on their dogs.&nbsp;Never mind that Google politely wonders \"Did you mean Rottweiler?\"&nbsp;They click on through.&nbsp;I actually added a piece of Javascript to my index and archive templates to warn folks coming in from search engines that I don't write about dogs.&nbsp;But the whole damn page has to be rendered before it runs...Grrr....",
+  "type": ""
+}

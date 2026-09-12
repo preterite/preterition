@@ -1,0 +1,12 @@
+{
+  "id": "wp_2252",
+  "date": "2006-09-10T23:38:44-07:00",
+  "author": {
+    "name": "mike",
+    "website": "",
+    "role": "owner"
+  },
+  "replying_to": null,
+  "message": "Interesting. And that's really sucky. Were the account signups scripted or manual? Like, how closely together in time were they created? Because if it's a script, that's easy enough to stop, and if it's manual, ban the IP. But I'm sure y'all are way past me there.\n\nI dislike captchas because of section 508 concerns, though I know there are workarounds. Have y'all thought about a scaled privileges approach, so someone who leaves obviously real human comments could be blessed to post and obvious human posters could be blessed to have their own pages? I know it sounds like a pain in the ass, but it's basically what WP's Spam Karma does, and Spam Karma works extremely well for me.",
+  "type": ""
+}

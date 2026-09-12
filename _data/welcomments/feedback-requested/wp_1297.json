@@ -1,0 +1,11 @@
+{
+  "id": "wp_1297",
+  "date": "2005-02-17T22:48:11-08:00",
+  "author": {
+    "name": "Steven D. Krause",
+    "website": "http://www.stevendkrause.com/academic/blog"
+  },
+  "replying_to": null,
+  "message": "I just looked at the page in both firefox and safari on a Mac.  It's interesting because the graphic on the right lines up with the box on the top in both browsers, but in Safari, I get a green background behind it all and in Firefox, I don't.\n\nI've had to learn a lot more about CSS this semester because of a class I'm teaching, and as far as I can tell, positioning is pretty freakin' tricky and a varriable on the browser for sure.\n\nAnyway, it looks good as is.",
+  "type": ""
+}

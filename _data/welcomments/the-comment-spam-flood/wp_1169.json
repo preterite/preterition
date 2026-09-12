@@ -1,0 +1,11 @@
+{
+  "id": "wp_1169",
+  "date": "2004-10-29T13:00:08-07:00",
+  "author": {
+    "name": "charlie",
+    "website": "http://cyberdash.com/"
+  },
+  "replying_to": null,
+  "message": "FYI: You might have seen this already, but Drupal's got captcha now for user registration, and I'm guessing (though not sure) it might be tied into anonymous commenting. That's a guaranteed way to stop the robot spammers.",
+  "type": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "wp_1671",
+  "date": "2005-07-30T16:49:04-07:00",
+  "author": {
+    "name": "mike",
+    "website": "",
+    "role": "owner"
+  },
+  "replying_to": null,
+  "message": "\"Snob factor\" might be one way of describing Bourdieu's \"symbolic capital,\" I think. The \"aggregate appeal\" thing is, actually, what confused me, and why I now realize that many of my mappings above are incorrect: since he's writing about *distinction*, then that which is distinct -- i.e., not mass appeal -- would seem to have more value, and, indeed, soccer and rugby are at the bottom of his map, and golf, tennis, and water-skiiing near the top. So I need to go back and redo figure 4. In that sense, there's a connection between symbolic capital and class identity, but a loose one -- and little connection between how much money goes into something (again, note that soccer is near the bottom of Bourdieu's map) and volume of capital; rather, the money thing plays into economic versus cultural. So for American sports, I think you're going to see a line staying fairly close to the Y axis, but going mostly down and to the right (i.e., with a negative *m*, if you remember your high school algebra where *y*=*mx*+*b*, with *m*=slope=rise/run: now, who can give me a quadratic equation that describes the shape of the working class?). So maybe:\n\npolo (-3,9)\ntennis (-2,7)\ncycling (-2,5)\ngolf (-1,3)\nbaseball (2,-2)\nbasketball (3,-5)\nfootball (4,-8)\n\nGiven that, where might you put NASCAR, Chris? (Wherever you put it, I'll argue that Formula 1 goes something like 1 unit above but 2 or 3 units to the left.)",
+  "type": ""
+}

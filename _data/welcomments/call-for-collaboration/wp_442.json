@@ -1,0 +1,11 @@
+{
+  "id": "wp_442",
+  "date": "2004-01-26T11:21:48-08:00",
+  "author": {
+    "name": "Passing_through",
+    "website": ""
+  },
+  "replying_to": null,
+  "message": "Open source (which loosely means access to the source code of a program) in the technology world is not purely about collaboration. In fact, one of the main purpose (that drives open source into the coporate world at least) is actually safety. Most companies couldnt care less about GPL, LGPL, BSD-type licence. A quick example will make this clear.\n\nAssume that you wrote a book using a program X. Now 6 months later, you have some technical problem with X. You cant open your files. At the same time, the company that mades X has gone bankrupt or the comapny has moved on to another product and has stopped supporting X. Without access to the source code, you cant pay someone to fix the problem. You book becomes a bunch of electronic gibberish. What are you going to do?\n\nNow think about how much data/records a company has. Without open source, companies will run the risk mentioned above, only with much dire results. (there are legal solutions to this but they are messy.) In fact, lots of company data today is still store in ascii (found when you write something in Microsoft notepad) because every program in to world can be modified to read ascii text.\n\nSince this problem doesnt happen in writing, the only driving force is collaboration. This happens in software as well. However, successful open source software usually solve some common problem. Thus collaboration occurs in software to leverage each others experience and skills.\n\nThis parallel doesnt occur in writing. There isnt a \"common problem\" (unless one is writing an encyclopedia) which any one piece of writing hopes to solve. We read another persons work to learn from their style or benefit from their ideas. Due to a lack of a common problem, collaboration on a single piece of writing doesnt seem as fruitful as reading and incorporating themes, ideas, etc into our own. People already share ideas in say a sequel to Gone with the Wind or something based on Tom Sawyer. Doubtful we will have anyone adding 3 additional chapters to Gone with the Wind anytime soon.",
+  "type": ""
+}

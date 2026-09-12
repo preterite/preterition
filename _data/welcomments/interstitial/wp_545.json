@@ -1,0 +1,12 @@
+{
+  "id": "wp_545",
+  "date": "2004-04-21T11:58:25-07:00",
+  "author": {
+    "name": "Mike",
+    "website": "",
+    "role": "owner"
+  },
+  "replying_to": null,
+  "message": "Indeed. All that evangelizing someone did musta paid off. :) One thing I'm thinking about, in poking around your site and around KNews, is how friendly Drupal is to using .htaccess and mod_rewrite and either regexes or PHP (as detailed [here](http://www.alistapart.com/articles/urls/) and [here](http://www.alistapart.com/articles/succeed/) to get more friendly-looking URLs. I'm sure drupal.org has some suggestions; any perspectives you might offer?",
+  "type": ""
+}

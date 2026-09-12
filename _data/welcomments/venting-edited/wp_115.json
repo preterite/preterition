@@ -1,0 +1,11 @@
+{
+  "id": "wp_115",
+  "date": "2003-07-30T19:26:35-07:00",
+  "author": {
+    "name": "Gerry",
+    "website": "http://www.geraldgleason.com/projects/blogs/gerry/blogcur.html"
+  },
+  "replying_to": null,
+  "message": "Really, Curtiss, vi?  Emacs is more natural for non-hackers as long as the key-binding are reasonable for your platform.\n\nI've yet to find a WYSIWYG HTML editor that doesn't produce completely mangled output barely suitable for a machine to read.  Maybe they think that obfuscates the coding making it harder to steal, but more likely they just don't care and most people never care to look at the raw output.",
+  "type": ""
+}

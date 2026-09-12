@@ -1,0 +1,11 @@
+{
+  "id": "wp_2253",
+  "date": "2006-09-11T18:10:13-07:00",
+  "author": {
+    "name": "Jim Ridolfo",
+    "website": ""
+  },
+  "replying_to": null,
+  "message": "The spam problem is extremely widespread and targets Plone. Basically if one allows instant account registration and a Member folder, then the person, (who is apparently a known identity) automates the creation of anywhere from 20-200 accounts in under a few minutes. Google quickly indexes the site thanks to the pornographers automated script, and within a few hours the site starts receiving 10-15 visits a second from search engines.\n\nThe automated script basically uploads dozens of html porn, gambling, prescription drug , java redirect scripts, and then uses the site for denial of service attacks, hosting porn on a large scale, and also working at times as part of a DDoS botnet.\n\nBasically, there is only one course of action:\n\n1) Lock the site down, disallow new user registration\n2) Patch plone to the latest security releases\n3) Delete all accounts (which often look legit and are difficult to sort by time of creation under plone)\n\nplone.org has been slow to acknowledge this as a very serious problem.",
+  "type": ""
+}

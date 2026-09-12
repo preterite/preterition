@@ -1,0 +1,12 @@
+{
+  "id": "wp_532",
+  "date": "2004-05-29T02:47:31-07:00",
+  "author": {
+    "name": "Mike",
+    "website": "",
+    "role": "owner"
+  },
+  "replying_to": null,
+  "message": "Yeah, comment spam is a pain, and all the spammers are doing is trying to use my site as a sort of billboard by which to raise their Google pagerank: talk about obnoxious. If you're really bored, you can take a look at the 1218 words and URLs that are blocked from posting comments here, at [http://www.vitia.org/blacklist.txt](http://www.vitia.org/blacklist.txt). The way I've got it set up, comments on posts more than 30 days old are supposed to be blocked, but apparently it's not working. Something to look into.",
+  "type": ""
+}

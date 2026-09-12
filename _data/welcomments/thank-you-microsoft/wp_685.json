@@ -1,0 +1,11 @@
+{
+  "id": "wp_685",
+  "date": "2004-06-10T03:39:49-07:00",
+  "author": {
+    "name": "clew",
+    "website": "http://www.tenhand.com/clew/blog"
+  },
+  "replying_to": null,
+  "message": "I know the last question was probably just for effeect, but since I know, it's hard to resist answering... Individually, MSFT's coders are quite good, and not especially malicious that I recall. But MSWord drove competitors from the market by repeatedly shipping huge feature-sets that were 95% done, and by now the Word team is dealing with ((.95)^8)-done inherited code, which is about 66% done. 95% done is quite usable. 66% done is a nightmare to maintain, related to the old *Mythical Man-Month* problem.\n\nSort of like a precedent-based legal system, but it developed more quickly.",
+  "type": ""
+}

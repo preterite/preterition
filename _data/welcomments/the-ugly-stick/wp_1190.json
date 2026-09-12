@@ -1,0 +1,11 @@
+{
+  "id": "wp_1190",
+  "date": "2004-11-10T00:51:48-08:00",
+  "author": {
+    "name": "wolfangel",
+    "website": "http://wolfangel.calltherain.net"
+  },
+  "replying_to": null,
+  "message": "Categories auto-sort by ID: you can see how to deal with it at the WP Wiki. http://wiki.wordpress.org/wp_list_cats\n\nI also have all the info on how to do the post-by-post navigation (much of which I got from Shelley Powers at Burningbird), and probably some other fixes floating around as well. Scriptygoddess has stuff, too. And if you can figure out how to get post-by-email working . . .",
+  "type": ""
+}
