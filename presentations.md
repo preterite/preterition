@@ -25,7 +25,7 @@ having been made, is the blood on the cutting room floor." Emerging
 technologies simultaneously obscure and reveal tensions between abstracted
 knowledge processes and material-historical human labor.
 
-[Read the talk](/resources/edwards_2025_cccc.txt) |
+[Read the talk](/resources/edwards-2025-cccc.txt) |
 [Slides (PDF)](/resources/cccc2025.pdf)
 </div>
 
@@ -38,7 +38,7 @@ Spokane WA, 04 April 2024
 
 Composition's reception of generative AI has been shaped by a disciplinary wariness of numbers. That wariness costs the field an insight it already owned: Peter Elbow's published characterization of the reading process describes the predictive machinery of a language model in composition's vocabulary, with parallels easily traceable to the mathematical processes of stochastic gradient descent in Large Language Models (LLMs). I use Mariolina Salvatori's diagnosis of the double erasure of the reading student and of that student's reading processes to argue that LLMs are better understood as 'two-player word processors' than as producers of pre-completed and pre-plagiarized texts, and that their failures are precisely the sites of the appropriation of the value of students' writing labor.
 
-[Read the talk](/resources/edwards_robot_writing_script.txt) |
+[Read the talk](/resources/edwards-robot-writing-script.txt) |
 [Slides (PDF)](/resources/cccc2024.pdf)
 </div>
 
@@ -61,6 +61,6 @@ of value by the producer or by other parties. I offer a case for data
 sovereignty: the right to download, own, analyze, and argue from one's own
 record of composing.
 
-[Read the talk (PDF)](/resources/cw18_presentation_version.pdf) |
-[Slides (PDF)](/resources/cw_2018_dataveillance.pdf)
+[Read the talk (PDF)](/resources/cw18-presentation-version.pdf) |
+[Slides (PDF)](/resources/cw-2018-dataveillance.pdf)
 </div>

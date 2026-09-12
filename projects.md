@@ -37,7 +37,7 @@ Stanzas and syllables and powers of two
 The poem is a parlor trick dependent on presence: I'll read it aloud to you and ask you to select a single line that in some way captures your attention. Then identify which stanzas the line appears in. If you tell me which stanzas,
 I'll tell you which line you picked. The poem, in its small effect, operates as a computer, or at the very least a calculator.
 
-[Read the poem (PDF)](/resources/algorithmic_poem.pdf)
+[Read the poem (PDF)](/resources/algorithmic-poem.pdf)
 </div>
 
 <div class="card" markdown="1">

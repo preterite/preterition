@@ -57,8 +57,8 @@ The Digital Technology and Culture program used to offer a moribund course,
 Electronic Research and the Rhetoric of Information, centered around
 library catalogs and online discourse. I rebuilt that course as DTC 356: Information Structures, and it has been in near-continuous rotation in the DTC curriculum since. This seminar is what that course grew into for the DTC graduate certificate: it proposes that digital environments are no less material than any other. The refocused work of the course investigates how practices of archiving, privacy, coercion, surveillance and persuasion operate in those information structures. I present here the syllabus and assignment documents embedded within a thematically appropriate apparatus.
 
-[Syllabus (PDF)](/resources/561_syllabus.pdf)
-| [Assignments (PDF)](/resources/561_assignments.pdf)
+[Syllabus (PDF)](/resources/561-syllabus.pdf)
+| [Assignments (PDF)](/resources/561-assignments.pdf)
 </div>
 
 <div class="card" markdown="1">
