@@ -19,6 +19,13 @@ gem "jekyll-redirect-from"
 # quietly ignored.
 gem "jekyll-feed"
 
+# The weblog's archive pages: one per month and one per category (and
+# one per year), each a page the build writes from site.posts, at the
+# addresses _config.yml sets. Named here for the same reason jekyll-feed
+# is: this bundle is plain Jekyll, and a plugin absent from it fails the
+# build rather than being quietly ignored.
+gem "jekyll-archives"
+
 # Ruby 3.4 stopped bundling these; Jekyll 4.3 still wants them.
 gem "csv"
 gem "base64"

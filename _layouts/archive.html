@@ -1,0 +1,81 @@
+---
+# _layouts/archive.html -- the weblog's month and category archives, the
+# pages jekyll-archives writes from site.posts. The weblog page with a list
+# of entries where the entries themselves would be.
+#
+# Two kinds of page take this layout and they differ in one thing, the
+# heading: a month reads its label off page.date, a category off
+# page.title, which jekyll-archives sets to the category's own name. The
+# rest -- chassis, card, count, list -- is one rule for both, because a
+# reader who follows a date link and a reader who follows a category link
+# arrive at the same kind of place.
+#
+# There is no year archive. Nothing on the site links one: the sidebar's
+# Archives list is months, and an entry's dateline links its month. The old
+# /blog/YYYY/ addresses are left to 404 rather than answered by a page built
+# only to catch them.
+#
+# The entries are a plain list and not cards. A reader here is looking for
+# one entry among many and reads by title and date; stacked cards with leads
+# would put a screen between one candidate and the next. The lead belongs to
+# the index, where the reader is browsing rather than hunting.
+#
+# Out of the search index by declaration, on the index page's rule: a search
+# result should point at an entry, never at a list of entries. The same
+# reasoning carries -- no per-entry ignores, the region itself declared.
+#
+# The dateline's visible form and its datetime are post-card.html's, so a
+# date reads the same on the card it came from and in the list it lands in.
+---
+{%- comment -%} Two assigns before <head>, because the title tag needs the
+heading: a month archive carries no front matter title of its own, so this
+layout hands head.html one and the tab reads "July 2004 | Mike Edwards"
+rather than the site's name alone. The entries are sorted newest first here
+rather than trusted from the generator, which hands over the posts it
+gathered and promises no order. {%- endcomment -%}
+{%- assign entries = page.posts | sort: "date" | reverse -%}
+{%- if page.type == "category" -%}
+{%- assign heading = page.title -%}
+{%- else -%}
+{%- assign heading = page.date | date: "%B %Y" -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html title=heading %}
+</head>
+<body class="weblog">
+  <div class="page-wrapper">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#weblog-nav" class="skip-link">Skip to weblog navigation</a>
+
+    {% include header.html title="Preterition" home="/weblog/" tagline=true %}
+
+    <div class="page-body">
+    <main id="main">
+      <div class="main-content" data-pagefind-ignore>
+        <section class="blog-card archive">
+          <h2 class="archive-title">{{ heading }}</h2>
+          <p class="archive-count">{% if entries.size == 1 %}One entry{% else %}{{ entries.size }} entries{% endif %}{% if page.type == "category" %}, filed under this category{% else %} this month{% endif %}.</p>
+          <ol class="archive-entries">
+            {%- for p in entries %}
+            <li>
+              <a class="archive-entry-title" href="{{ p.url }}">{{ p.title }}</a>
+              <span class="archive-entry-date"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%-d %B %Y" }}</time></span>
+            </li>
+            {%- endfor %}
+          </ol>
+        </section>
+      </div>
+    </main>
+
+      {% include sidebar-weblog.html %}
+    </div>
+
+    {% include footer.html %}
+  </div>{%- comment -%} closes .page-wrapper, opened above in this same file
+  {%- endcomment %}
+
+  {% include scripts.html %}
+</body>
+</html>

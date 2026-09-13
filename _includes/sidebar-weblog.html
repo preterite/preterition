@@ -1,55 +1,114 @@
 {%- comment -%}
   _includes/sidebar-weblog.html -- the weblog's aside. Sibling to
-  sidebar.html, not a variant of it: the three zones are the same and their
-  contents invert.
+  sidebar.html, not a variant of it: the same three zones, with blog
+  navigation where the professional pages carry the calendar.
 
-  Identity inverts. On the professional pages the header names the author
-  and the zone carries the strip alone; here the header names the weblog and
-  rotates its tagline, so the box does the naming the header no longer does.
+  The strip first. Then the blog navigation, four widgets inside one
+  landmark: a nav of its own, named so it is told apart from the site nav
+  in the header, and reached by the layouts' second skip link. Blog nav on
+  the side, site map up top; the sidebar navigates the weblog and never
+  the site.
 
-  The middle zone is blog navigation, and it ships with the archive rather
-  than before it. Recent Comments, Recent Posts, Top Posts, Archive by date,
-  Archive by category: until the corpus has migrated and Staticman exists,
-  four of the five would be empty, and a <details> opening onto nothing
-  actively misleads the reader who accepts the invitation.
+    Recent Comments   the five newest, across every entry, derived once
+                      per build by _plugins/recent_comments.rb from the
+                      comment files and the posts they belong to, since a
+                      comment file carries no post of its own -- its
+                      folder does.
+    Top Posts         ten, hand-picked and hand-ordered in
+                      _data/top-posts.yml. Selection as an entry point is
+                      not selection as a policy: nothing is removed, and a
+                      reader arriving cold at a thousand entries needs a
+                      door.
+    Categories        every category with its count, linking its archive.
+    Archives          every month holding an entry, with its count,
+                      linking its archive. A gap in the writing is a gap
+                      in the list.
 
-  No footer zone. The dotted box does not render here and the ME bug goes
-  with it: the tagline is promoted to the header, so the box has nothing to
-  hold, and a mark reading "ME" beneath an h1 reading "Preterition" would
-  answer a question the page has already answered differently.
+  The counts are the point: what he wrote about most, and when he wrote
+  the most, read off the shape of the list. Top Posts, Categories and
+  Archives are disclosure blocks, CSS-only, working with scripting off,
+  on the pattern pages/about.md already uses.
 
-  So the column is About, strip, Listening -- three elements, all
-  populated, no empty widget anywhere.
+  A widget with nothing to show is omitted rather than shipped empty: a
+  disclosure opening onto nothing misleads the reader who accepts the
+  invitation. Before the archive lands, this column may hold the strip,
+  Top Posts, one month, and Listening, and that is the honest state.
 
-  The About prose is content, read from weblog/index.md's `about:` front
-  matter field and not written here. The card is omitted rather than shipped
-  empty when the field is absent -- an empty identity card is the
-  construction-site reading this column exists to avoid.
+  Listening follows the nav landmark and sits outside it: it is the
+  terminal element of the middle zone, not navigation. Reporter, not
+  navigator: no outbound link, here or anywhere. Its source and selection
+  are _includes/listening.html's, shared with the professional pages'
+  aside and the landing page's sign-off.
 {%- endcomment -%}
 <aside>
-  {%- if page.about and page.about != "" %}
-  <div class="sidebar-section">
-    <div class="card">
-      <h2>About</h2>
-      {{ page.about | markdownify }}
-    </div>
-  </div>
-  {%- endif %}
-
   <div class="sidebar-section">
     {%- include strip.html -%}
   </div>
 
-  {%- comment -%} Listening is the terminal element of the middle zone here,
-  which is why it sits below the (deferred) blog nav rather than belonging to
-  it. On the professional pages it precedes the calendar instead. It is also
-  the only element on this page that demonstrates the page is live.
-  Reporter, not navigator: no outbound link, here or anywhere. The source
-  and the selection are _includes/listening.html's, shared with the
-  professional pages' aside and the landing page's sign-off, so all three
-  render from one day's selection rather than from three draws that happen
-  to agree.
-  {%- endcomment %}
+  <nav id="weblog-nav" aria-label="Weblog">
+    {%- assign recent = site.data.recent_comments -%}
+    {%- if recent and recent.size > 0 %}
+    <div class="sidebar-section">
+      <h2>Recent Comments</h2>
+      <ul class="recent-comments">
+        {%- for r in recent %}
+        <li><a href="{{ r.post_url }}#comment-{{ r.id }}"><span class="recent-comment-author">{{ r.author | escape }}</span> on <span class="recent-comment-post">{{ r.post_title | escape }}</span></a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endif %}
+
+    {%- assign top = site.data["top-posts"] -%}
+    {%- if top and top.size > 0 %}
+    <div class="sidebar-section">
+      <details class="sidebar-details">
+        <summary><h2>Top Posts</h2></summary>
+        <ul class="top-posts">
+          {%- for t in top %}
+          <li><a href="{{ t.url }}">{{ t.title }}</a> <span class="sidebar-when">{{ t.when }}</span></li>
+          {%- endfor %}
+        </ul>
+      </details>
+    </div>
+    {%- endif %}
+
+    {%- comment -%} site.categories is a hash of name to posts, in the order
+    the build met them. The capture-and-split below is the Liquid idiom
+    for sorting its keys; category names carry no pipe. {%- endcomment %}
+    {%- capture cat_names %}{% for c in site.categories %}{{ c[0] }}|{% endfor %}{% endcapture %}
+    {%- assign cat_sorted = cat_names | split: "|" | sort %}
+    {%- if cat_sorted.size > 0 %}
+    <div class="sidebar-section">
+      <details class="sidebar-details">
+        <summary><h2>Categories</h2></summary>
+        <ul class="archive-list">
+          {%- for name in cat_sorted %}
+          {%- assign in_cat = site.categories[name] %}
+          <li><a href="/weblog/category/{{ name | slugify }}.html">{{ name }}</a> <span class="sidebar-count">{{ in_cat.size }}</span></li>
+          {%- endfor %}
+        </ul>
+      </details>
+    </div>
+    {%- endif %}
+
+    {%- comment -%} Months are grouped from the posts themselves, newest
+    first, so only months holding an entry appear. {%- endcomment %}
+    {%- assign months = site.posts | group_by_exp: "p", "p.date | date: '%Y-%m'" %}
+    {%- if months.size > 0 %}
+    <div class="sidebar-section">
+      <details class="sidebar-details">
+        <summary><h2>Archives</h2></summary>
+        <ul class="archive-list">
+          {%- for m in months %}
+          {%- assign label = m.name | append: "-01" | date: "%B %Y" %}
+          <li><a href="/weblog/{{ m.name | replace: "-", "/" }}.html">{{ label }}</a> <span class="sidebar-count">{{ m.size }}</span></li>
+          {%- endfor %}
+        </ul>
+      </details>
+    </div>
+    {%- endif %}
+  </nav>
+
   <div class="sidebar-section">
     <h2>Listening</h2>
     <div class="music-widget">

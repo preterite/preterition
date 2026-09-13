@@ -16,6 +16,12 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
 url: "https://preterite.net"   # absolute_url and the meta tags build from this
 baseurl: ""                    # the site lives at the domain root
 
+# Time. Every post and comment carries its own offset, and this is what
+# the build renders them in: a post written at eleven at night in Pullman
+# is dated that day, wherever the build runs. Without this the build
+# machine's clock decides, and the Actions runner keeps UTC.
+timezone: America/Los_Angeles
+
 # Markdown. kramdown is Jekyll's default engine and already a dependency:
 # pages/404.md relies on its `markdown="1"` block attribute. GFM input so
 # fenced code blocks and tables read the way they do in Obsidian.
@@ -25,6 +31,29 @@ kramdown:
   hard_wrap: false
   syntax_highlighter_opts:
     disable: true            # no Rouge classes; the site styles <pre> itself
+
+# Front matter errors stop the build. Without strict_front_matter Jekyll logs
+# a YAML exception, exits zero and drops the file: the entry is absent from
+# the built site and the deploy proceeds as though nothing had happened. A
+# refused build leaves the live site standing and says so, which is the
+# failure worth having.
+strict_front_matter: true
+
+# The weblog's front page shows each entry's lead: the part above the
+# author's own read-more marker where there is one, and the whole entry
+# where there is none. The lead is crafted or it is dropped, never derived,
+# which is why the separator is this marker and not Jekyll's default first
+# paragraph.
+excerpt_separator: "<!--more-->"
+
+# The comment service. The website id is public by design -- it ships in
+# the comment form's markup -- and the API address is where the form
+# posts and where a comment's Reply link points for a reader without
+# scripts. Both are read by _includes/comments.html and comment.html so
+# that one source feeds every use.
+welcomments:
+  api_url: https://welcomments.io/api
+  website_id: biI8PuefS8Pr868yMVLDdAVxz
 
 # Permalinks. No global key, deliberately. The page default,
 # /:path/:basename:output_ext, is what yields about.md -> /about.html,
@@ -95,9 +124,28 @@ defaults:
 # migrated archive deliberately: the weblog's long readership is
 # the cohort that reads by feed, and a feed switched on afterward would
 # deliver the whole archive to every subscriber in a single push.
+# jekyll-archives writes the weblog's archive pages from site.posts: one
+# per month and one per category, each taking the archive layout. The
+# addresses are single files, never directory indexes, on the same rule as
+# the posts; tags are not a taxonomy here and take no page. There is no
+# year archive: nothing on this site links one, the sidebar listing months
+# and an entry's dateline linking its month, and the old /blog/YYYY/
+# addresses are left to 404 rather than answered by a page that exists only
+# to catch them. The old /blog/ addresses of the months and the categories
+# are honoured by _plugins/archive_redirects.rb.
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - month
+    - categories
+  layout: archive
+  permalinks:
+    month: /weblog/:year/:month.html
+    category: /weblog/category/:name.html
 
 # What never reaches _site. The archival pages are excluded outright; they
 # were renamed to .archived when their successors were written. Two

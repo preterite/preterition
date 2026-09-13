@@ -1,0 +1,123 @@
+# _data/category-redirects.yml -- every category address the weblog
+# served under WordPress, mapped to the category its posts now belong
+# to. Read by _plugins/archive_redirects.rb, which writes one redirect
+# stub per old address pointing at the new category's archive page.
+# Derived from the migration database by category_redirects.py in the
+# support repository; regenerate there rather than edit here.
+- from: /blog/category/academia/
+  was: "Academia"
+  to: "Academia"
+- from: /blog/category/afghanistan/
+  was: "Afghanistan"
+  to: "Afghanistan"
+- from: /blog/category/artificial-intelligence/
+  was: "Artificial Intelligence"
+  to: "Technology"
+- from: /blog/category/arting/
+  was: "Arting"
+  to: "Asides"
+- from: /blog/category/asides/
+  was: "Asides"
+  to: "Asides"
+- from: /blog/category/cats/
+  was: "Cats"
+  to: "Cats"
+- from: /blog/category/class/
+  was: "Class"
+  to: "Class"
+- from: /blog/category/class-cultural/
+  was: "Class (Cultural)"
+  to: "Class"
+- from: /blog/category/class-economic/
+  was: "Class (Economic)"
+  to: "Class"
+- from: /blog/category/class-marxian/
+  was: "Class (Marxian)"
+  to: "Class"
+- from: /blog/category/class-meta/
+  was: "Class (Meta)"
+  to: "Class"
+- from: /blog/category/class-other/
+  was: "Class (Other)"
+  to: "Class"
+- from: /blog/category/composition-pedagogy/
+  was: "Composition Pedagogy"
+  to: "Composition"
+- from: /blog/category/composition-theory/
+  was: "Composition Theory"
+  to: "Composition"
+- from: /blog/category/computers/
+  was: "Computers"
+  to: "Technology"
+- from: /blog/category/conference-notes/
+  was: "Conference Notes"
+  to: "Conference Notes"
+- from: /blog/category/culture/
+  was: "Culture"
+  to: "Culture"
+- from: /blog/category/economics/
+  was: "Economics"
+  to: "Economics"
+- from: /blog/category/education/
+  was: "Education"
+  to: "Education"
+- from: /blog/category/family/
+  was: "Family"
+  to: "Personal"
+- from: /blog/category/friday-fun/
+  was: "Friday Fun"
+  to: "Friday Fun"
+- from: /blog/category/history/
+  was: "History"
+  to: "History"
+- from: /blog/category/information/
+  was: "Information"
+  to: "Information"
+- from: /blog/category/intellectual-property/
+  was: "Intellectual Property"
+  to: "Intellectual Property"
+- from: /blog/category/meta/
+  was: "Meta"
+  to: "Asides"
+- from: /blog/category/metadissertating/
+  was: "Metadissertating"
+  to: "Dissertation"
+- from: /blog/category/military/
+  was: "Military"
+  to: "Military"
+- from: /blog/category/music/
+  was: "Music"
+  to: "Personal"
+- from: /blog/category/openness/
+  was: "Openness"
+  to: "Intellectual Property"
+- from: /blog/category/pedagogy/
+  was: "Pedagogy"
+  to: "Education"
+- from: /blog/category/personal/
+  was: "Personal"
+  to: "Personal"
+- from: /blog/category/politics/
+  was: "Politics"
+  to: "Politics"
+- from: /blog/category/recipes/
+  was: "Recipes"
+  to: "Personal"
+- from: /blog/category/research/
+  was: "Research"
+  to: "Projects"
+- from: /blog/category/rhetoric/
+  was: "Rhetoric"
+  to: "Rhetoric"
+- from: /blog/category/rome/
+  was: "Rome"
+  to: "History"
+- from: /blog/category/teaching/
+  was: "Teaching"
+  to: "Education"
+- from: /blog/category/technology/
+  was: "Technology"
+  to: "Technology"
+- from: /blog/category/writing/
+  was: "Writing"
+  to: "Writing"

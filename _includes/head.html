@@ -1,13 +1,18 @@
 {%- comment -%}
   _includes/head.html -- everything inside <head>, shared by every layout.
   title and description come from the page's front matter; the site's own
-  from _config.yml. theme-color is the palette's --color-bg-dark, kept in
+  from _config.yml. A layout may pass `title=` to name a page whose front
+  matter cannot: jekyll-archives gives a category archive a title and a date
+  archive none, so a month page would otherwise carry the site title alone.
+  The parameter wins where it is given, and only the archive layout gives
+  one. theme-color is the palette's --color-bg-dark, kept in
   step by hand since CSS custom properties do not reach meta tags.
 {%- endcomment -%}
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ page.description | default: site.description | markdownify | strip_html | strip }}">
-<title>{% if page.title and page.url != "/" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+{%- assign head_title = include.title | default: page.title -%}
+<title>{% if head_title and page.url != "/" %}{{ head_title }} | {% endif %}{{ site.title }}</title>
 
 <link rel="icon" type="image/x-icon" href="/img/favicon/favicon.ico">
 <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg">
@@ -28,6 +33,13 @@
      weblog-scoped because site.posts is the weblog; there is no second
      collection to disambiguate. Same-origin, no fetch, no third party. -->
 {% feed_meta %}
+
+<!-- An identity link. The rel="me" attribute claims the linked profile
+     as the same person as this site; that profile carries the matching
+     link back, and the reciprocal pair is what lets a sign-in service
+     accept this domain as an identity rather than a password. A <link>
+     element is a declaration, not a request: nothing is fetched. -->
+<link rel="me" href="https://github.com/preterite">
 
 <!-- fonts: self-hosted in /fonts/, declared in style.css; nothing fetched -->
 <link rel="stylesheet" href="/css/style.css">

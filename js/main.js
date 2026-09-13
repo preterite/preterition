@@ -555,6 +555,53 @@ function initSearch() {
   });
 }
 
+/**
+ * Comment replies that never leave the page.
+ *
+ * Each comment on an entry page carries a Reply link whose href is the
+ * comment service's own reply page -- the destination a reader with
+ * scripting off reaches. With scripting on, this intercepts the click and
+ * does the same job here: it copies the comment's id into the form's hidden
+ * `replying-to` field, tells the reader whose comment they are answering,
+ * and moves them to the textarea. The service reads the hidden field when
+ * the form is sent and files the new comment as a reply.
+ *
+ * Event delegation: one listener on the thread, not one per Reply link.
+ * A click anywhere inside the list bubbles up to the list, and
+ * `closest('.comment-reply')` asks whether it started on a Reply link;
+ * the data attributes on that link carry what the form needs. The cancel
+ * control in the reply note undoes all of it. Everything is guarded on
+ * the elements existing, because this runs on every page that loads the
+ * script and only entry pages carry a thread.
+ */
+function initCommentReply() {
+  const thread = document.querySelector('.comment-list');
+  const field = document.getElementById('replying-to');
+  const note = document.getElementById('reply-note');
+  const name = document.getElementById('reply-to-name');
+  const cancel = document.getElementById('reply-cancel');
+  const message = document.getElementById('comment-message');
+  if (!thread || !field || !note || !name || !cancel || !message) return;
+
+  thread.addEventListener('click', (e) => {
+    const link = e.target.closest('.comment-reply');
+    if (!link) return;
+    e.preventDefault();
+    field.value = link.dataset.replyTo || '';
+    name.textContent = link.dataset.replyName || 'this comment';
+    note.hidden = false;
+    message.focus();
+    message.scrollIntoView({ block: 'center' });
+  });
+
+  cancel.addEventListener('click', () => {
+    field.value = '';
+    name.textContent = '';
+    note.hidden = true;
+    message.focus();
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initTrailAlign();
   initGifRotation();
@@ -564,6 +611,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initCompactHeader();
   initSearch();
+  initCommentReply();
 
   // One-shot animations
   initNavStagger();

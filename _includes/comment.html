@@ -1,0 +1,67 @@
+{%- comment -%}
+  _includes/comment.html -- one comment, pingback or trackback, rendered
+  from its file under _data/welcomments/<slug>/. Called with `c` (the
+  record) and `all` (the post's whole thread, for resolving a reply's
+  parent). The same include renders a comment written in 2004 and one
+  that arrives next week, because both are files of one shape; a
+  webmention takes the same shape with a different `type`.
+
+  What each part says, and why it is text before it is style:
+
+    the kind      a pingback or trackback opens with the words "Pingback
+                  from" or "Trackback from", so what it is reaches a reader
+                  who sees no colour and a screen reader alike. The class
+                  on the article is for the stylesheet; the words carry
+                  the meaning.
+    the author    linked to their own site where they gave one, as written,
+                  never rewritten: the site is theirs. rel="ugc" names the
+                  link for what it is. An owner's comment carries no site
+                  link -- the site it would link to is this one -- and says
+                  "(author)" instead, which is the visible form of the
+                  owner mark; the class is decoration on top of it.
+    the time      links the comment's own anchor, which is what a reader
+                  quotes or replies to, and its datetime attribute is the
+                  file's own stamp with its offset, so the instant is
+                  exact whatever the build machine's clock says.
+    the reply     "in reply to" links the parent's anchor. The thread
+                  renders flat and in order, the convention of the years
+                  most of it was written in; the link is what threading
+                  becomes when nothing nests.
+    the message   is Markdown in the file and HTML here.
+    reply         the Reply link points at the courier's own reply page,
+                  which is where a reader with scripting off ends up; with
+                  scripting on, main.js intercepts it and sets the reply
+                  field of the form beneath the thread instead, so a
+                  reply never leaves the page.
+{%- endcomment -%}
+{%- assign c = include.c -%}
+{%- assign kind = c.type | default: "" -%}
+{%- assign classes = "comment" -%}
+{%- if c.author.role == "owner" %}{% assign classes = classes | append: " comment--owner" %}{% endif -%}
+{%- if kind != "" %}{% assign classes = classes | append: " comment--" | append: kind %}{% endif -%}
+<article class="{{ classes }}" id="comment-{{ c.id }}">
+  <p class="comment-meta">
+    {%- if kind == "pingback" or kind == "trackback" %}
+    <span class="comment-kind">{{ kind | capitalize }} from</span>
+    {%- endif %}
+    {%- if c.author.website and c.author.website != "" %}
+    <a class="comment-author" href="{{ c.author.website | escape }}" rel="ugc">{{ c.author.name | escape }}</a>
+    {%- else %}
+    <span class="comment-author">{{ c.author.name | escape }}</span>
+    {%- endif %}
+    {%- if c.author.role == "owner" %}
+    <span class="comment-role">(author)</span>
+    {%- endif %}
+    <span class="comment-sep" aria-hidden="true">&middot;</span>
+    <a class="comment-time" href="#comment-{{ c.id }}"><time datetime="{{ c.date }}">{{ c.date | date: "%-d %B %Y" }}</time></a>
+    {%- if c.replying_to %}
+    {%- assign parent = include.all | where: "id", c.replying_to | first %}
+    <span class="comment-sep" aria-hidden="true">&middot;</span>
+    <a class="comment-parent" href="#comment-{{ c.replying_to }}">in reply to {{ parent.author.name | default: "a comment above" | escape }}</a>
+    {%- endif %}
+  </p>
+  <div class="comment-body">{{ c.message | markdownify }}</div>
+  {%- if kind == "" %}
+  <p class="comment-actions"><a class="comment-reply" href="{{ site.welcomments.api_url }}/websites/{{ site.welcomments.website_id }}/comments/{{ c.id }}/reply" data-reply-to="{{ c.id }}" data-reply-name="{{ c.author.name | escape }}">Reply</a></p>
+  {%- endif %}
+</article>

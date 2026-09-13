@@ -1,0 +1,38 @@
+# _data/top-posts.yml -- the weblog sidebar's Top Posts, hand-selected and
+# hand-ordered. The list lives here rather than as a field in post front
+# matter so that a curatorial decision is revised in one file rather than
+# across ten, and so the migrated corpus stays as written.
+#
+# Each entry: the post's title as displayed, its address on this site, and
+# the month shown beside it. The address is the post's own permalink; a
+# build check confirms every one resolves.
+- title: "The American Tarot"
+  url: /weblog/2003/07/24/the-american-tarot.html
+  when: July 2003
+- title: "Contracts and Capital"
+  url: /weblog/2021/05/10/contracts-and-capital.html
+  when: May 2021
+- title: "From My Cold, Dead Hands"
+  url: /weblog/2016/04/03/from-my-cold-dead-hands.html
+  when: April 2016
+- title: "In the Clickstream, Part 1"
+  url: /weblog/2007/02/02/in-the-clickstream.html
+  when: February 2007
+- title: "Inside, Outside"
+  url: /weblog/2011/05/19/inside-outside.html
+  when: May 2011
+- title: "Metadata and the Research Project"
+  url: /weblog/2016/02/14/metadata-and-the-research-project.html
+  when: February 2016
+- title: "New Preps"
+  url: /weblog/2021/04/27/new-preps.html
+  when: April 2021
+- title: "The Personal"
+  url: /weblog/2005/03/30/the-personal.html
+  when: March 2005
+- title: "Who Produces, Who Consumes"
+  url: /weblog/2004/08/14/who-produces-who-consumes.html
+  when: August 2004
+- title: "Why the Sparklepony Matters"
+  url: /weblog/2014/03/29/why-the-sparklepony-matters.html
+  when: March 2014

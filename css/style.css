@@ -1515,6 +1515,396 @@ footer {
   color: var(--color-accent-bright);
 }
 
+/* ===== WEBLOG ENTRIES AND COMMENTS ===== */
+/* The entry card is the index card, one include serving both pages. Post
+   titles sit at h2 -- a post's title is a sibling of the page's content,
+   not a section within it -- so the h3 rule above reaches no card the
+   weblog now emits; it is kept while its own review runs. */
+.blog-card h2 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+/* The meta lines: the dateline with its month and category links, and on
+   an entry page the byline beneath the title. Interface voice, muted,
+   sized as the site's small text; the links keep the muted colour and
+   carry an underline, so a link is told from text by shape and never by
+   hue alone. Muted on the card ground measures 5.20:1. */
+.blog-meta,
+.post-byline {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-muted-grey);
+  margin: 0 0 12px 0;
+}
+
+.post-byline {
+  margin-top: -2px;
+}
+
+.blog-meta a,
+.post-byline a {
+  color: var(--color-muted-grey);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-dark);
+  text-underline-offset: 0.15em;
+}
+
+.blog-meta a:hover,
+.blog-meta a:focus-visible,
+.post-byline a:hover,
+.post-byline a:focus-visible {
+  color: var(--color-accent-bright);
+  text-decoration-color: currentColor;
+}
+
+.post-sep,
+.comment-sep {
+  margin: 0 0.35em;
+}
+
+/* The index's "continue reading" line, present only where the author set a
+   read-more marker in the entry. */
+.post-more {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+}
+
+/* Older and newer, at the foot of an entry: the weblog convention. Two
+   links on one row where the width allows, wrapping otherwise, the newer
+   one ranged right. */
+.post-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid var(--color-border-dark);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+
+.post-nav-newer {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* The comments card. Each comment is its own article with a thin left rule
+   inside the card's own; the rule's colour and style are decoration on top
+   of the words that carry the meaning -- "(author)" for the weblog's
+   owner, "Pingback from" or "Trackback from" for a link that arrived as
+   one. Comments read a step under the entry's own size: they are the
+   conversation around the entry, not the entry. */
+.comments h2 {
+  margin-top: 0;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.comment-list > li {
+  margin: 0;
+  padding: 0;
+}
+
+.comment {
+  margin: 0 0 16px 0;
+  padding: 10px 0 10px 16px;
+  border-left: 3px solid var(--color-border-dark);
+}
+
+.comment--owner {
+  border-left-color: var(--color-accent-grey-green);
+}
+
+.comment--pingback,
+.comment--trackback {
+  border-left-style: dotted;
+}
+
+.comment-meta {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-muted-grey);
+  margin: 0 0 6px 0;
+}
+
+.comment-author {
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+a.comment-author {
+  color: var(--color-accent-grey-green);
+}
+
+a.comment-author:hover,
+a.comment-author:focus-visible {
+  color: var(--color-accent-bright);
+}
+
+.comment-role,
+.comment-kind {
+  font-style: italic;
+}
+
+.comment-time,
+.comment-parent {
+  color: var(--color-muted-grey);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border-dark);
+  text-underline-offset: 0.15em;
+}
+
+.comment-time:hover,
+.comment-time:focus-visible,
+.comment-parent:hover,
+.comment-parent:focus-visible {
+  color: var(--color-accent-bright);
+  text-decoration-color: currentColor;
+}
+
+.comment-body {
+  font-size: 1.0625rem;
+}
+
+.comment-body p:last-child {
+  margin-bottom: 0;
+}
+
+.comment-actions {
+  margin: 6px 0 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+}
+
+.comments-empty {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  color: var(--color-muted-grey);
+}
+
+/* The form. Fields in the site's own vocabulary -- the search field's
+   ground, border and focus ring -- and nothing fetched from anyone. The
+   textarea takes the reading face, because what is typed there is prose.
+   The reply note above the form appears only when a reader has chosen a
+   comment to answer; its cancel control is a button dressed as a link,
+   being an action on the page rather than a destination. */
+.comment-respond {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-dark);
+}
+
+.comment-respond h3 {
+  margin-top: 0;
+}
+
+.comment-reply-note {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-text-dark);
+}
+
+.comment-reply-cancel {
+  font: inherit;
+  color: var(--color-accent-grey-green);
+  background: none;
+  border: 0;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.comment-reply-cancel:hover,
+.comment-reply-cancel:focus-visible {
+  color: var(--color-accent-bright);
+}
+
+.comment-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.comment-field label {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.comment-optional {
+  font-weight: 400;
+  color: var(--color-muted-grey);
+}
+
+.comment-field input,
+.comment-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem 0.7rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text-dark);
+  background: var(--color-bg-dark);
+  border: 1px solid var(--color-border-dark);
+  border-radius: 2px;
+}
+
+.comment-field textarea {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.comment-field input:focus-visible,
+.comment-field textarea:focus-visible {
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 2px;
+  border-color: var(--color-accent-grey-green);
+}
+
+.comment-hint,
+.comment-form-note {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--color-muted-grey);
+}
+
+.comment-submit button {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  padding: 0.6rem 1.1rem;
+  color: var(--color-text-dark);
+  background: var(--color-card-dark);
+  border: 1px solid var(--color-accent-grey-green);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.comment-submit button:hover,
+.comment-submit button:focus-visible {
+  color: var(--color-accent-bright);
+  border-color: var(--color-accent-bright);
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 2px;
+}
+
+/* The weblog aside's navigation widgets. Plain lists; the disclosure
+   blocks keep the platform's own marker as their open-closed signal and
+   put the widget heading inside the summary, so the heading is the
+   control. Counts and dates sit muted beside their item. */
+.recent-comments,
+.top-posts,
+.archive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recent-comments li,
+.top-posts li,
+.archive-list li {
+  margin: 0 0 6px 0;
+}
+
+.recent-comment-author {
+  font-weight: 600;
+}
+
+.sidebar-when,
+.sidebar-count {
+  color: var(--color-muted-grey);
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+.sidebar-count::before {
+  content: "(";
+}
+
+.sidebar-count::after {
+  content: ")";
+}
+
+.sidebar-details > summary {
+  cursor: pointer;
+}
+
+.sidebar-details > summary h2 {
+  display: inline;
+}
+
+.sidebar-details > summary:focus-visible {
+  outline: 2px solid var(--color-accent-bright);
+  outline-offset: 2px;
+}
+
+.sidebar-details[open] > summary {
+  margin-bottom: 8px;
+}
+
+/* The archive pages, one per month and one per category. The card is the
+   weblog's own; what differs is the entries, a list of titles rather than a
+   stack of cards, because a reader here is hunting one entry among many and
+   reads by title and date. The h2 takes .blog-card h2's spacing and needs
+   no rule of its own; .archive-title is a hook and not a style. */
+.archive-count {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-muted-grey);
+  margin: 0 0 20px 0;
+}
+
+/* No numerals: the ordered list carries reading order and not rank, so the
+   marker goes and the order stays. A row per entry, the date ranged right
+   where the width allows and dropping beneath the title where it does not;
+   the rule between rows is decoration, the title and the date carrying the
+   meaning themselves. */
+.archive-entries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.archive-entries li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2px 16px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--color-border-dark);
+}
+
+.archive-entries li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.archive-entry-title {
+  flex: 1 1 16em;
+}
+
+/* The date keeps the dateline's muted interface voice and never wraps
+   mid-date. Muted on the card ground measures 5.20:1. */
+.archive-entry-date {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  color: var(--color-muted-grey);
+  white-space: nowrap;
+}
+
 /* ===== RESOURCE LISTS ===== */
 .resource-list {
   list-style: none;
@@ -1593,52 +1983,6 @@ footer {
 }
 
 /* ===== PRINT STYLES ===== */
-@media print {
-  header, nav, aside, footer {
-    display: none;
-  }
-
-  body {
-    background-color: white;
-    color: black;
-  }
-
-  /* The chrome is hidden, but .page-body keeps the 260px offset that cleared the
-     fixed header on screen, which prints as roughly 2.7 inches of blank
-     paper above the first line. */
-  .page-body {
-    padding-top: 0;
-  }
-
-  /* .main-content's background is literal layers rather than a token, so
-     it does not follow body. */
-  .main-content {
-    background: none;
-  }
-
-  /* Headings and card text resolve --color-text-dark, which is near-white in
-     dark mode. Without these resets the CV prints white on white for a
-     dark-mode reader and correctly for a light-mode one, which makes print
-     output depend on the reader's system appearance. */
-  h1, h2, h3, h4, h5, h6,
-  .card, .card p, .card h3, .card li,
-  .blog-card, .blog-card p, .blog-card h3, .blog-card li {
-    color: black;
-  }
-
-  /* Black on white for structure, per the palette's reservation of black and
-     white for borders and dividers. No new colour is minted here. */
-  .card, .blog-card {
-    background: none;
-    border: 1px solid black;
-    box-shadow: none;
-  }
-
-  a {
-    text-decoration: underline;
-    color: black;
-  }
-}
 
 /* ===== LIST INDENTATION FIXES ===== */
 /* Fix list positioning within content areas */
@@ -2411,4 +2755,86 @@ blockquote {
   .strip,
   .detail,
   .tagline { transition: none; }
+}
+
+/* ===== PRINT ===== */
+/* Last in the file, and that placement is load-bearing. A media query
+   adds no specificity, so a print rule only wins over a rule declared
+   above it. Held at its old position partway down the file, these
+   resets lost to every rule written below them -- the blockquote's
+   background and its coloured rule among them -- and lost silently.
+   Anything added to this stylesheet goes above this block. */
+@media print {
+  header, nav, aside, footer {
+    display: none;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  /* The chrome is hidden, but .page-body keeps the 260px offset that cleared the
+     fixed header on screen, which prints as roughly 2.7 inches of blank
+     paper above the first line. */
+  .page-body {
+    padding-top: 0;
+  }
+
+  /* .main-content's background is literal layers rather than a token, so
+     it does not follow body. */
+  .main-content {
+    background: none;
+  }
+
+  /* Headings and card text resolve --color-text-dark, which is near-white in
+     dark mode. Without these resets the CV prints white on white for a
+     dark-mode reader and correctly for a light-mode one, which makes print
+     output depend on the reader's system appearance. */
+  h1, h2, h3, h4, h5, h6,
+  .card, .card p, .card h3, .card li,
+  .blog-card, .blog-card p, .blog-card h3, .blog-card li {
+    color: black;
+  }
+
+  /* Black on white for structure, per the palette's reservation of black and
+     white for borders and dividers. No new colour is minted here. */
+  .card, .blog-card {
+    background: none;
+    border: 1px solid black;
+    box-shadow: none;
+  }
+
+  a {
+    text-decoration: underline;
+    color: black;
+  }
+
+  /* A printed entry keeps its thread and drops the form: a form on
+     paper is a fill-in that goes nowhere. */
+  .comment-respond {
+    display: none;
+  }
+
+  /* The body blocks a weblog entry is made of, which the resets above do not
+     reach. Inline code paints a dark card colour and a bright accent, so on
+     paper it is coloured ink inside a tinted box. The dent's grey is a
+     literal rather than a token, so the black reset above passes over it and
+     it prints faint. A preformatted block does not wrap, so a line longer
+     than the sheet runs off the right edge and is lost with nothing on the
+     page to say so. The quote's rule follows the palette's reservation of
+     black and white for borders. */
+  code, pre, blockquote, .dent, .dent p {
+    color: black;
+    background: none;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  blockquote {
+    border-left-color: black;
+  }
 }

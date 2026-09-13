@@ -1,12 +1,18 @@
 ---
 # _layouts/weblog.html -- the weblog index at /weblog/, and nothing else.
-# Individual entries take `post`.
+# Individual entries take `post`, which shares this chassis and this
+# card.
 #
 # The one page on the site that changes identity on arrival. The header's h1
 # reads "Preterition" and the subject line beneath it rotates, which is why
 # the header include takes parameters here rather than being forked: the nav
 # is authored as data so the list and the loop are one rule, and a second
 # header file would quietly become a second nav.
+#
+# The index holds the ten most recent entries, each rendered as its own
+# card by post-card.html -- the lead where the author set one, the whole
+# entry where not. Older entries are reached through each entry's month
+# and category links, and through search.
 #
 # Three things this layout deliberately does not do:
 #   no breadcrumb   no layout emits a real trail.
@@ -15,13 +21,9 @@
 #                   it -- a mark reading "ME" beneath an h1 reading
 #                   "Preterition" answers a question already answered
 #                   differently. See sidebar-weblog.html.
-#   no blog nav     Recent Comments, Recent Posts, Top Posts and the two
-#                   archives ship with the migrated archive, when there is a
-#                   corpus for them to be about.
-#
-# The deep-arrival orientation an entry needs when a twenty-year-old link
-# lands a reader four levels down is the `post` layout's problem, not this
-# file's, but the answer will probably want a hook here.
+#   no byline       the header names the weblog and the entries name their
+#                   author on their own pages; ten cards each saying so
+#                   here would be noise.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +33,7 @@
 <body class="weblog">
   <div class="page-wrapper">
     <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#weblog-nav" class="skip-link">Skip to weblog navigation</a>
 
     {% include header.html title="Preterition" home="/weblog/" tagline=true %}
 
@@ -55,12 +58,8 @@
       <div class="main-content" data-pagefind-ignore>
         {{ content }}
 
-        {%- for post in site.posts %}
-        <article class="blog-card">
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <p class="blog-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
-          {{ post.excerpt }}
-        </article>
+        {%- for post in site.posts limit: 10 %}
+        {% include post-card.html post=post mode="index" %}
         {%- else %}
         {%- comment -%} One honest empty state, not five. Until the archive
         arrives this page is the weblog's front door standing open on an

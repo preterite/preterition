@@ -1,0 +1,84 @@
+{%- comment -%}
+  _includes/post-card.html -- one weblog entry as a card, on the index and
+  on its own page alike. Called with `post` (the entry) and `mode`, which is
+  "index" or "entry"; the entry page also passes `body`, the layout's
+  rendered content. One include rather than two blocks of markup, so the
+  card is one rule: a reader moving from the index to an entry should meet
+  the same object, and two copies of it would drift apart.
+
+  The two pages differ in three things, and the include carries the
+  difference rather than the callers:
+
+    the byline    the entry page adds "(weblog post, 2003-) Mike Edwards"
+                  beneath the title, for a reader arriving on an old link
+                  four levels down with no context about whose site this
+                  is. The index does not: its header already says so, and
+                  ten cards each repeating a name is noise.
+    the body      the entry renders whole; the index renders the lead,
+                  which is the author's own division at the read-more
+                  marker where one exists and the whole post where none
+                  does. The lead is crafted or it is dropped, never derived.
+    the foot      the entry closes with its older and newer neighbours, in
+                  the weblog convention; the index has the list itself.
+
+  The date links its month's archive and each category links its own, so
+  an entry is an entry point into the archive around it. The month address
+  is derived from the date and the category address from the name, by the
+  same slug rule the archive pages are built with, so the two cannot
+  disagree.
+
+  Jekyll's `previous` is the older entry and `next` the newer: the
+  collection sorts oldest first, so the names read against `site.posts`,
+  which the index walks newest first. The labels below say older and
+  newer, and rel="prev" and rel="next" follow the same reading.
+{%- endcomment -%}
+{%- assign p = include.post -%}
+<article class="blog-card post"{% if include.mode == "entry" %} data-pagefind-body data-pagefind-meta="title:{{ p.title | escape }}"{% endif %}>
+  <h2 class="post-title"><a href="{{ p.url }}">{{ p.title }}</a></h2>
+  {%- if include.mode == "entry" %}
+  <p class="post-byline">(weblog post, 2003&ndash;) <a href="/about.html">{{ site.title }}</a></p>
+  {%- endif %}
+  {%- comment -%} The dateline. `datetime` carries the machine form and the
+  visible form is the weblog's own. An entry edited after publication says
+  so, and only then: comparing the two dates rather than testing for the
+  field keeps a last_modified_at present on every imported entry from
+  labelling untouched posts as revised. {%- endcomment %}
+  <p class="blog-meta">
+    <a class="post-month" href="/weblog/{{ p.date | date: "%Y/%m" }}.html"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%-d %B %Y" }}</time></a>
+    {%- assign published = p.date | date: "%Y-%m-%d" -%}
+    {%- assign revised = p.last_modified_at | date: "%Y-%m-%d" -%}
+    {%- if p.last_modified_at and revised != published %}
+    <span class="post-revised">revised <time datetime="{{ p.last_modified_at | date_to_xmlschema }}">{{ p.last_modified_at | date: "%-d %B %Y" }}</time></span>
+    {%- endif %}
+    {%- if p.categories != empty %}
+    <span class="post-sep" aria-hidden="true">|</span>
+    <span class="post-categories">Categories:
+      {%- for cat in p.categories %}
+      <a href="/weblog/category/{{ cat | slugify }}.html">{{ cat }}</a>{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    </span>
+    {%- endif %}
+  </p>
+  <div class="post-body">
+    {%- if include.mode == "entry" %}
+    {{ include.body }}
+    {%- else %}
+    {{ p.excerpt }}
+    {%- if p.content contains "<!--more-->" %}
+    <p class="post-more"><a href="{{ p.url }}">Continue reading {{ p.title }}</a></p>
+    {%- endif %}
+    {%- endif %}
+  </div>
+  {%- if include.mode == "entry" %}
+  {%- if p.previous or p.next %}
+  <nav class="post-nav" aria-label="Neighbouring entries">
+    {%- if p.previous %}
+    <a class="post-nav-older" rel="prev" href="{{ p.previous.url }}">&larr; {{ p.previous.title }}</a>
+    {%- endif %}
+    {%- if p.next %}
+    <a class="post-nav-newer" rel="next" href="{{ p.next.url }}">{{ p.next.title }} &rarr;</a>
+    {%- endif %}
+  </nav>
+  {%- endif %}
+  {%- endif %}
+</article>

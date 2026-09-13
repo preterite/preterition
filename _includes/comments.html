@@ -1,0 +1,79 @@
+{%- comment -%}
+  _includes/comments.html -- the second card on an entry page: the thread,
+  then the invitation and the form. Called from _layouts/post.html with no
+  parameters; it reads the entry's own thread from site.data.welcomments,
+  keyed by the entry's slug, which is the name of the folder the comment
+  files sit in.
+
+  Order is by date, oldest first, the whole thread in one sequence: a
+  reader arriving at a 2004 entry reads the conversation as it happened.
+  Replies keep their place in time and point at what they answer (see
+  comment.html), so nothing nests and nothing is out of order.
+
+  Jekyll reads _data/welcomments/<slug>/ as a hash keyed by filename; the
+  `where_exp` below with an always-true test is the idiom that turns it
+  into a list the `sort` filter can take.
+
+  The card renders whether or not the entry has comments, because the
+  invitation is always true: the form beneath the thread is the way in.
+  When the thread is empty it says so in one line.
+
+  The form is this site's own markup and posts to the comment service,
+  which checks it for spam and holds it for reading before it becomes a
+  file in this repository and renders here at the next build. The page
+  fetches nothing from the service: no stylesheet, no script, no avatar.
+  The fields are the service's contract, the hidden ones telling it which
+  site and which entry; the reply field is filled by main.js when a
+  reader answers a particular comment, and stays empty otherwise.
+  Nothing here works only with scripting on: the form is a plain POST,
+  and a reader without scripts who wants to answer a particular comment
+  takes its Reply link to the service's own reply page instead.
+{%- endcomment -%}
+{%- assign thread = site.data.welcomments[page.slug] -%}
+<section class="blog-card comments" id="comments" aria-labelledby="comments-heading">
+  <h2 id="comments-heading">Comments</h2>
+  {%- if thread and thread.size > 0 %}
+  {%- assign ordered = thread | where_exp: "c", "c.id != nil" | sort: "date" %}
+  <ol class="comment-list">
+    {%- for c in ordered %}
+    <li>{% include comment.html c=c all=ordered %}</li>
+    {%- endfor %}
+  </ol>
+  {%- else %}
+  <p class="comments-empty">No comments yet.</p>
+  {%- endif %}
+
+  <div class="comment-respond" id="respond">
+    <h3 id="respond-heading">Reply:</h3>
+    <p class="comment-reply-note" id="reply-note" hidden>Replying to <span id="reply-to-name"></span>. <button type="button" class="comment-reply-cancel" id="reply-cancel">Reply to the entry instead</button></p>
+    <form class="comment-form" action="{{ site.welcomments.api_url }}/comments" method="post">
+      <input type="hidden" name="website-id" value="{{ site.welcomments.website_id }}">
+      <input type="hidden" name="replying-to" id="replying-to" value="">
+      <input type="hidden" name="permalink" value="{{ page.url | absolute_url }}">
+      <input type="hidden" name="page-slug" value="{{ page.slug }}">
+      <p class="comment-field">
+        <label for="comment-message">Comment</label>
+        <textarea id="comment-message" name="message" rows="8" required></textarea>
+        <span class="comment-hint">Markdown works.</span>
+      </p>
+      <p class="comment-field">
+        <label for="comment-name">Name</label>
+        <input id="comment-name" name="author-name" type="text" required autocomplete="name">
+      </p>
+      <p class="comment-field">
+        <label for="comment-url">Website <span class="comment-optional">(optional)</span></label>
+        <input id="comment-url" name="author-url" type="url" autocomplete="url" placeholder="https://">
+      </p>
+      <p class="comment-field">
+        <label for="comment-email">Email <span class="comment-optional">(optional)</span></label>
+        <input id="comment-email" name="author-email" type="email" autocomplete="email">
+        <span class="comment-hint">Only so you can hear back when someone replies. Kept by the comment service, never published here.</span>
+      </p>
+      <p class="comment-submit">
+        <button type="submit">Send comment</button>
+      </p>
+    </form>
+    <p class="comment-form-note">Comments are read before they appear, so there may be a delay.</p>
+    <noscript><p class="comment-form-note">To answer a particular comment, use the Reply link beneath it, which opens a reply form at the comment service.</p></noscript>
+  </div>
+</section>
