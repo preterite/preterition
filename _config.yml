@@ -137,6 +137,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-archives
+  - jekyll-sitemap
 
 jekyll-archives:
   enabled:

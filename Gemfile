@@ -26,6 +26,13 @@ gem "jekyll-feed"
 # build rather than being quietly ignored.
 gem "jekyll-archives"
 
+# The site's own index of itself: one entry per built page and post, with a
+# lastmod, written to /sitemap.xml at build time, plus a robots.txt pointing
+# at it where the site has none. Named here for the same reason the others
+# are: this bundle is plain Jekyll, and a plugin absent from it fails the
+# build rather than being quietly ignored.
+gem "jekyll-sitemap"
+
 # Ruby 3.4 stopped bundling these; Jekyll 4.3 still wants them.
 gem "csv"
 gem "base64"
