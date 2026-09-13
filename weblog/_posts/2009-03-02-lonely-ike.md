@@ -11,8 +11,8 @@ wp_id: 984
 wp_status: publish
 comment_count: 0
 ---
-[![West Point in Winter 1](http://farm4.static.flickr.com/3337/3324515310_1fdf231efe.jpg)](http://www.flickr.com/photos/80824078@N00/3324515310/)
+[![West Point in Winter 1](/weblog/assets/west-point-in-winter-1_small.jpg)](/weblog/assets/west-point-in-winter-1.jpg)
 
-[![](http://farm4.static.flickr.com/3362/3324515414_3a30f4975c.jpg)](http://www.flickr.com/photos/80824078@N00/3324515414/)
+[![](/weblog/assets/3324515414_small.jpg)](/weblog/assets/3324515414.jpg)
 
-[![West Point in Winter 3](http://farm4.static.flickr.com/3447/3323676969_2c155a6c8f.jpg)](http://www.flickr.com/photos/80824078@N00/3323676969/)
+[![West Point in Winter 3](/weblog/assets/west-point-in-winter-3_small.jpg)](/weblog/assets/west-point-in-winter-3.jpg)

@@ -17,22 +17,22 @@ I'm typing this on the deck of a log cabin deep in the woods of the Blue Ridge M
 
 We stopped by today and took a look at my Dad's as yet unfinished cabin, a 15-minute walk away.
 
-[![edwards_cabin](http://farm4.static.flickr.com/3652/3657587873_634c94ac07.jpg)](http://www.flickr.com/photos/80824078@N00/3657587873/)
+[![edwards_cabin](/weblog/assets/edwards-cabin_small.jpg)](/weblog/assets/edwards-cabin.jpg)
 
 On the way, we caught this view of the place where we're staying, from across the creek.
 
-[![moss_hill_back](http://farm4.static.flickr.com/3097/3658381636_0f234274a9.jpg)](http://www.flickr.com/photos/80824078@N00/3658381636/)
+[![moss_hill_back](/weblog/assets/moss-hill-back_small.jpg)](/weblog/assets/moss-hill-back.jpg)
 
 It's called Moss Hill, for the moss that's growing on the approach from the front.
 
-[![moss_hill_front_far](http://farm4.static.flickr.com/3633/3658382002_25360294e6.jpg)](http://www.flickr.com/photos/80824078@N00/3658382002/)
+[![moss_hill_front_far](/weblog/assets/moss-hill-front-far_small.jpg)](/weblog/assets/moss-hill-front-far.jpg)
 
 The original cabin -- the one I recall, without the electricity or the running water that it has now -- is the central structure.
 
-[![moss_hill_front_close](http://farm3.static.flickr.com/2465/3658382526_06a777d2bf.jpg)](http://www.flickr.com/photos/80824078@N00/3658382526/)
+[![moss_hill_front_close](/weblog/assets/moss-hill-front-close_small.jpg)](/weblog/assets/moss-hill-front-close.jpg)
 
 And my companion and I are loving spending time on the deck, in beautifully clear and perfectly temperate weather, with nothing at all to worry about.
 
-[![mike_and_lauralea_wv](http://farm4.static.flickr.com/3374/3657588799_7425269ece.jpg)](http://www.flickr.com/photos/80824078@N00/3657588799/)
+[![mike_and_lauralea_wv](/weblog/assets/mike-and-lauralea-wv_small.jpg)](/weblog/assets/mike-and-lauralea-wv.jpg)
 
 The title for this post, "<del>The mountains</del> People of the mountains are always free," is carved prominently into the interior structure of the cabin. Life is good.

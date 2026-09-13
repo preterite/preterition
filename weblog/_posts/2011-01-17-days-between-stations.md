@@ -15,17 +15,17 @@ comment_count: 5
 ---
 I won't miss Fort Benning. The soldiers of Alpha Company, CONUS Replacement Center made the best of a challenging job, and in doing so were professional and extraordinarily helpful. The civilians and contractors working the various clearance points were sometimes less so, interested more in what they were having for lunch than in rendering assistance; clerks rather than professionals whose definition of service was limited to getting your name off their lists.
 
-[![CRC interior](http://farm6.static.flickr.com/5285/5364098136_8460f17211.jpg)](http://www.flickr.com/photos/80824078@N00/5364098136/)
+[![CRC interior](/weblog/assets/crc-interior_small.jpg)](/weblog/assets/crc-interior.jpg)
 
 My initial impulse would have been to characterize the accomodations at the CRC as spartan.
 
-[![CRC exterior](http://farm6.static.flickr.com/5162/5364098124_a1ed0ba4ec.jpg)](http://www.flickr.com/photos/80824078@N00/5364098124/)
+[![CRC exterior](/weblog/assets/crc-exterior_small.jpg)](/weblog/assets/crc-exterior.jpg)
 
 That would have been inadequate, and that impulse reminds me how much I've forgotten of my time in the Army.
 
 Here (where I can't take pictures outside), there are about 150 16-person tents given over to housing us transients and occasional administrative functions, and not much thought is given to making information clear or accessible.
 
-[![LSA interior](http://farm6.static.flickr.com/5244/5364098142_03b014a62f.jpg)](http://www.flickr.com/photos/80824078@N00/5364098142/)
+[![LSA interior](/weblog/assets/lsa-interior_small.jpg)](/weblog/assets/lsa-interior.jpg)
 
 I'm hoping to be out of here within the next three or four days, but that depends largely on the pace of the planes departing.
 

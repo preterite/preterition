@@ -16,7 +16,7 @@ After lots of investigating, emails, and phone calls, I finally found a no-kill 
 
 Especially with kittenish behavior like this wonder at the glories of the carousel microwave:
 
-[![LOLcat with microwave](http://farm2.static.flickr.com/1131/732472014_88274ad7be.jpg)](http://www.flickr.com/photos/80824078@N00/732472014/)
+[![LOLcat with microwave](/weblog/assets/lolcat-with-microwave_small.jpg)](/weblog/assets/lolcat-with-microwave.jpg)
 
 **OMG!! It has soundz AND movez AND foodz! [WANT](http://icanhascheezburger.com/)!!!1!!1!**
 

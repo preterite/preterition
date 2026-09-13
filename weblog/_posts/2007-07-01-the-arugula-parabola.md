@@ -15,19 +15,19 @@ I'm tired, dirty, stinky, and my hands look like hamburger. But with immense amo
 
 First: some "before" shots.
 
-[![Back shed 1](http://farm2.static.flickr.com/1131/684734609_f07e7ff0a4.jpg)](http://www.flickr.com/photos/80824078@N00/684734609/)
+[![Back shed 1](/weblog/assets/back-shed-1_small.jpg)](/weblog/assets/back-shed-1.jpg)
 
 The ugly old shed with pretty grape vine on the back of my house.
 
-[![Back shed before](http://farm2.static.flickr.com/1054/684776145_c345dc887e.jpg)](http://www.flickr.com/photos/80824078@N00/684776145/)
+[![Back shed before](/weblog/assets/back-shed-before_small.jpg)](/weblog/assets/back-shed-before.jpg)
 
 Note that the grape vine can't climb on the corrugated fiberglass roof.
 
-[![Back shed before](http://farm2.static.flickr.com/1016/684776255_82d2d65290.jpg)](http://www.flickr.com/photos/80824078@N00/684776255/)
+[![Back shed before](/weblog/assets/back-shed-before-684776255_small.jpg)](/weblog/assets/back-shed-before-684776255.jpg)
 
 Inside the old back shed. Note the all-important chin-up bar and charmingly rustic construction.
 
-[![The original plan](http://farm2.static.flickr.com/1129/685049401_af96ba782f_o.gif)](http://www.flickr.com/photos/80824078@N00/685049401/)
+![The original plan](/weblog/assets/the-original-plan.gif)
 
 The original back-of-the-envelope plan for the new pergola:
 A. Seven 12 foot purlins (2 x 2s), spaced 9 inches apart, go atop
@@ -36,48 +36,48 @@ C. Two 12 foot long 2 x 12 beams with ornamentally cut tails and half-ellipses c
 D. Two 6 inch square capitals, secured by screws, atop
 E. Two currently existing 84 inch high pieces of pipe set apart 10 feet 8 inches, in a 12 x 6 concrete slab, with flanged caps 5.5 inches in diameter, 82 inches high.
 
-[![Demo done](http://farm2.static.flickr.com/1176/684776359_d5aaa907fe.jpg)](http://www.flickr.com/photos/80824078@N00/684776359/)
+[![Demo done](/weblog/assets/demo-done_small.jpg)](/weblog/assets/demo-done.jpg)
 
 Demo done and grape vine down (but I hope still OK: I'm worried that as careful as we tried to be, we did do some damage to the poor plant). New 6 x 6 capitals bolted into the flanges at the tops of the wire-brushed posts, with 6 x 2 x 12 spacers screwed into them. Note also the 2 x 4 face plate bolted onto the house with another scabbed on top of it to give the rafters something to rest on. Dad's drilling holes for the bolts that will hold the support beams together through the spacers and atop the capitals.
 
-[![First support beam going up](http://farm2.static.flickr.com/1143/684776413_da877b861d.jpg)](http://www.flickr.com/photos/80824078@N00/684776413/)
+[![First support beam going up](/weblog/assets/first-support-beam-going-up_small.jpg)](/weblog/assets/first-support-beam-going-up.jpg)
 
 The first of two 12 foot 2 x 12 arched support beams with decorative cut tails to match the ornamental woodwork on the front of the house goes up. They'll go on either side of the spacers, atop the capitals.
 
-[![Support beams up, rafters fitted.](http://farm2.static.flickr.com/1210/684776447_e9b0447ab7.jpg)](http://www.flickr.com/photos/80824078@N00/684776447/)
+[![Support beams up, rafters fitted.](/weblog/assets/support-beams-up-rafters-fitted_small.jpg)](/weblog/assets/support-beams-up-rafters-fitted.jpg)
 
 Here, the support beams are bolted to the spacers. Rafters with decorative tails and notched backs to rest atop the 2 x 4 face plate bolted to the house, with bird's beak cuts resting atop the the front support beams. 3 inch deck screws secure the rafters to the support beams and face plate. And yes, they were a cast-iron bastard to measure, cut, fit, re-measure, re-cut, and attach. Toughest part of the whole job, because the back of the house is uneven. We started with a template, but each of those rafters is individually custom cut and fitted, and that was the part of the job where the three of us got most frustrated, at about six o'clock last night, with daylight running out. (This shot is actually from this morning.)
 
-[![Fastening perlins to rafters](http://farm2.static.flickr.com/1286/684776489_d2f5847989.jpg)](http://www.flickr.com/photos/80824078@N00/684776489/)
+[![Fastening perlins to rafters](/weblog/assets/fastening-perlins-to-rafters_small.jpg)](/weblog/assets/fastening-perlins-to-rafters.jpg)
 
 2 x 2 purlins 8 inches apart atop the rafters, secured by deck screws, give the grape vine something to climb on. David and I found a rhythm where with two drills, we both measured and made the marks and then he drilled the lead holes and I sank the screws on each purlin.
 
-[![Dad with grape vine](http://farm2.static.flickr.com/1019/685752838_8cade43562.jpg)](http://www.flickr.com/photos/80824078@N00/685752838/)
+[![Dad with grape vine](/weblog/assets/dad-with-grape-vine_small.jpg)](/weblog/assets/dad-with-grape-vine.jpg)
 
 And we're done, with Dad enjoying the sight and shade of the grape vine loosely secured to the purlins.
 
-[![Side shot of dad and vine](http://farm2.static.flickr.com/1378/685752874_62c4009938.jpg)](http://www.flickr.com/photos/80824078@N00/685752874/)
+[![Side shot of dad and vine](/weblog/assets/side-shot-of-dad-and-vine_small.jpg)](/weblog/assets/side-shot-of-dad-and-vine.jpg)
 
 This gives a good idea of the overall structure, purlins atop rafters atop beams atop capitals. Check out that beautiful arch on the beams, which was entirely Dad's doing.
 
-[![Decorative tails on rafters](http://farm2.static.flickr.com/1036/685752912_b6122c62ab.jpg)](http://www.flickr.com/photos/80824078@N00/685752912/)
+[![Decorative tails on rafters](/weblog/assets/decorative-tails-on-rafters_small.jpg)](/weblog/assets/decorative-tails-on-rafters.jpg)
 
 Nice shot of the decorative tails on the rafters -- I'll brag some here and point out that I drew and cut the templates for them -- and also perhaps instructive to compare with what's on the back of the house next door. :-) If you look hard, you can see the way the bird's beak notches on the underside of the rafters help the rafters fit snug up to the support beams.
 
-[![Grimy, dirty, tired me](http://farm2.static.flickr.com/1364/685752940_161e67fc36.jpg)](http://www.flickr.com/photos/80824078@N00/685752940/)
+[![Grimy, dirty, tired me](/weblog/assets/grimy-dirty-tired-me_small.jpg)](/weblog/assets/grimy-dirty-tired-me.jpg)
 
 Grimy, dirty, tired, happy me.
 
-[![Long shot of the finished pergola](http://farm2.static.flickr.com/1201/685753182_db18a13269.jpg)](http://www.flickr.com/photos/80824078@N00/685753182/)
+[![Long shot of the finished pergola](/weblog/assets/long-shot-of-the-finished-pergola_small.jpg)](/weblog/assets/long-shot-of-the-finished-pergola.jpg)
 
 And the full effect of the final finished pergola: so much nicer than what we started with.
 
-[![Close shot of the finished pergola](http://farm2.static.flickr.com/1004/685753226_7e17502bfd.jpg)](http://www.flickr.com/photos/80824078@N00/685753226/)
+[![Close shot of the finished pergola](/weblog/assets/close-shot-of-the-finished-pergola_small.jpg)](/weblog/assets/close-shot-of-the-finished-pergola.jpg)
 
 A closer shot. Last step: I need to put some white paint on the metal columns. Sponge off the table and I'm ready for company and drinking some wine under the vine. Big, big thanks to Dad and David, without whom I couldn't have done this at all.
 
 **Addendum:**
 
-[![pergola_final](http://farm2.static.flickr.com/1301/754654765_cc293c3a82_o.jpg)](http://www.flickr.com/photos/80824078@N00/754654765/)
+[![pergola_final](/weblog/assets/pergola-final_small.jpg)](/weblog/assets/pergola-final.jpg)
 
 Painted columns, ugly screen door removed, and a clean table. I'll keep a bottle of white on ice for you.
