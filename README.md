@@ -12,40 +12,32 @@ since June 2003.
 ## Features
 
 - **Static Jekyll build.** Kramdown with GFM input, built by GitHub
-  Actions rather than by Pages' native builder, so the search index and
-  the widget data can be derived around the Jekyll run.
+  Actions rather than by Pages' native builder.
 - **No third-party requests.** Fonts, scripts and stylesheets are served
   from this origin. Nothing is fetched from a CDN, a font host or an
-  analytics service when a page loads, and the site carries no analytics
-  at all.
+  analytics service when a page loads.
 - **Vanilla JavaScript only.** No framework, no bundler, no
   transpilation. Every page is usable with scripting disabled.
 - **The weblog, whole.** Published posts, drafts, comments, and the
-  pingback and trackback network around them. A weblog edited down to its
-  good posts is a portfolio; this one is kept entire. Retired permalinks
+  pingback and trackback network around them. Retired permalinks
   are honoured by generated redirect stubs.
 - **Comments without an account.** A plain form posts to a hosted
   service, which validates and spam-checks the comment and commits it to
-  this repository as a file. The comments live here rather than in
-  somebody's database, and no asset is fetched from the service.
-- **Month and category archives,** generated from the posts themselves,
-  each retired archive address stubbed to its replacement.
-- **Site search** through Pagefind, indexed after the Jekyll build.
-  Reader comments are excluded from the index.
+  the repository as a file. No asset is fetched from the service.
+- **Month and category archives,** generated from the posts themselves.
+- **Site search** through Pagefind.
 - **Atom feed** at `/feed.xml`.
-- **One designed look,** warm and dark, rather than a theme switcher.
-- **Print styles.** A post reaches paper legible and uncut, with its
+- **One designed look** rather than a theme switcher.
+- **Print styles.** A post reaches paper legible and uncut, with
   quotations, lists and preformatted blocks intact.
 
 ## Directory Structure
 
-Criteria, not members: what a folder holds is read by listing it, and this
-section says what belongs there and stops.
+Criteria, not members: what a folder holds is read by listing it.
 
-The root split is by role, not by media type. Chrome sits at the root beside
+Root split is by role, not by media type. Page chrome sits at the root beside
 the markup that calls it; content sits under `resources/`, where a page's
-prose links it. The test is who addresses the file -- the template, or a
-sentence.
+prose links it.
 
 | Folder | Criterion |
 | --- | --- |
@@ -62,21 +54,17 @@ sentence.
 ## Browser Support
 
 Verified in Chromium, Firefox and WebKit through an automated browser
-harness that renders the deployed site at desktop, tablet and phone widths
-and asserts structure, focus order, landmark containment and the
-accessibility floor below.
-
-Layout is built on CSS Grid, Flexbox, custom properties and logical
+harness. Layout is built on CSS Grid, Flexbox, custom properties and logical
 properties. No version floor beneath the support those features already
-have is claimed here, none having been measured.
+have is claimed here.
 
 ## Accessibility
 
 Benchmark: WCAG 2.2 Level AA, with attention to WCAG 2.1 AA and Section
 508. The standards are shared vocabulary rather than a substitute for
-judgement, and the commitment is not discharged by conformance.
+judgement. Commitment is not discharged by conformance.
 
-The operational floor, which is what that refuses to be reduced to:
+The operational floor:
 
 - Contrast of 4.5:1 for normal text, 3:1 for large text and interface
   components.
@@ -86,8 +74,7 @@ The operational floor, which is what that refuses to be reduced to:
 - A skip link to main content.
 - `prefers-reduced-motion` respected: every animation has a
   reduced-motion fallback.
-- Semantic HTML (`nav`, `main`, `aside`, `article`), with ARIA only where
-  semantic HTML is insufficient.
+- Semantic HTML (`nav`, `main`, `aside`, `article`), with ARIA only where  semantic HTML is insufficient.
 - Form inputs labelled with `label`, never by placeholder alone.
 - Focus managed on dialogs and on mobile navigation.
 - Meaning never carried by colour alone: shape, icon, label or pattern
@@ -95,9 +82,9 @@ The operational floor, which is what that refuses to be reduced to:
 
 ## Performance
 
-The properties here are structural rather than tuned, which is the point:
+The properties here are structural:
 
-- No third-party request at page load, so no extra DNS lookup, no extra
+- No third-party request at page load: no extra DNS lookup, no extra
   handshake, and nothing blocking on another origin's availability.
 - Self-hosted WOFF2 faces, subset to the codepoints the site serves.
 - No framework runtime and no bundle. The JavaScript is hand-written and
@@ -105,9 +92,6 @@ The properties here are structural rather than tuned, which is the point:
 - Static HTML, cacheable indefinitely and served from a CDN-backed host.
 - Page backgrounds are static rather than animated, so a long page at
   rest does not occupy the main thread.
-
-No synthetic performance score is quoted here, none having been measured
-against the deployed site.
 
 ## License
 
