@@ -2,6 +2,7 @@
 title: "Protected Communications"
 description: "An additional contact address."
 permalink: /protected-inquiries
+sitemap: false
 ---
 # Protected Communications
 
