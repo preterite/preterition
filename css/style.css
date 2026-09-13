@@ -131,6 +131,7 @@
   --gutter: 24px;
   --gutter-mobile: 16px;
   --content-inset: 48px; /* breathing room on left and right edges */
+  --sidebar-gap: 28px; /* between sidebar widgets, at every nesting depth */
   --header-padding: calc(var(--gutter) * 1.5); /* 36px - equal top/bottom padding */
   --tagline-bottom-padding: calc(var(--gutter) * 0.8);
   --header-height: 120px; /* Approximate height for sticky positioning */
@@ -1156,9 +1157,13 @@ aside {
   padding-top: var(--content-inset); /* match left/right spacing above gif */
   padding-left: var(--content-inset); /* match body right margin */
   padding-right: var(--content-inset); /* match outer margin */
+  /* The bottom matched the gutter and so ran half the sides, which read as
+     the last widget crowding the footer. Stated as the side inset rather
+     than as a matching number, so the four cannot drift apart. */
+  padding-bottom: var(--content-inset);
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: var(--sidebar-gap);
   overflow-y: auto;
 }
 
@@ -1828,6 +1833,27 @@ a.comment-author:focus-visible {
 .top-posts li,
 .archive-list li {
   margin: 0 0 6px 0;
+}
+
+/* The weblog's navigation landmark is a flex column carrying the same gap
+   as the aside itself. Without it the landmark is a plain block, its
+   widgets spaced by whatever margins they happen to own: a list left six
+   pixels of its last item's margin, and a collapsed details left nothing
+   at all, so Archives and Top Posts touched. The gap is one variable read
+   in both places, because two literals are two things to keep equal. */
+#weblog-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sidebar-gap);
+}
+
+/* The last item's bottom margin would otherwise ride on top of the gap,
+   making a list-ended widget sit further from its neighbour than a
+   menu-ended one. */
+.recent-comments li:last-child,
+.top-posts li:last-child,
+.archive-list li:last-child {
+  margin-bottom: 0;
 }
 
 .recent-comment-author {

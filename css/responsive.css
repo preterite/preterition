@@ -19,7 +19,11 @@
     border-top: 1px solid var(--color-border-dark);
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    /* Narrowed on the variable, not on the property: the aside and the
+       weblog's navigation landmark both read it, and setting `gap` here
+       would reach the aside alone and leave the landmark at the wider
+       desktop value. */
+    --sidebar-gap: 20px;
     padding: 20px;
     padding-right: 20px;
   }
@@ -206,7 +210,11 @@
     border-left: none;
     border-top: 1px solid var(--color-border-dark);
     padding: 16px;
-    gap: 20px;
+    /* Narrowed on the variable, not on the property: the aside and the
+       weblog's navigation landmark both read it, and setting `gap` here
+       would reach the aside alone and leave the landmark at the wider
+       desktop value. */
+    --sidebar-gap: 20px;
   }
 
   .sidebar-section {
