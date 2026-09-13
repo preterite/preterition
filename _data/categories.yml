@@ -1,0 +1,31 @@
+# The weblog's categories. The set is closed: a name here is one an entry
+# may carry, and a name absent from here refuses the build rather than
+# quietly minting a category, an archive page and an address nothing links.
+# Adding a category is an edit to this file, made on purpose.
+#
+# Read by _plugins/category_guard.rb, which checks every entry at build
+# time, and nowhere else. Order is alphabetical for reading; nothing
+# depends on it.
+
+- Academia
+- Afghanistan
+- Asides
+- Cats
+- Class
+- Composition
+- Conference Notes
+- Culture
+- Dissertation
+- Economics
+- Education
+- Friday Fun
+- History
+- Information
+- Intellectual Property
+- Military
+- Personal
+- Politics
+- Projects
+- Rhetoric
+- Technology
+- Writing
