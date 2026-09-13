@@ -1845,11 +1845,28 @@ a.comment-author:focus-visible {
   content: "(";
 }
 
+/* The Top Posts date drops to its own line beneath the title. A title
+   long enough to wrap otherwise leaves the date stranded mid-line, and an
+   entry point wants the title read first and the date read second. The
+   Categories and Archives counts stay inline: a count beside its name is
+   the shape of the list the reader is scanning. */
+.top-posts .sidebar-when {
+  display: block;
+}
+
 .sidebar-count::after {
   content: ")";
 }
 
+/* list-style-position: outside puts the disclosure marker in the left
+   margin instead of in the text flow, which is the user-agent default for
+   a summary and the reason the heading used to start further right than
+   the list items beneath it. Outside, the summary's initial letter aligns
+   with the initials of Recent Comments and Top Posts, and the marker reads
+   as a control on the column's edge rather than as a bullet. Shape, not
+   colour: the marker's own rotation is the open-closed signal. */
 .sidebar-details > summary {
+  list-style-position: outside;
   cursor: pointer;
 }
 
