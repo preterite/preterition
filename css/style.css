@@ -576,7 +576,7 @@ header #site-title {
   transition: font-size 0.35s ease, letter-spacing 0.35s ease;
 }
 
-nav:not(.wall) {
+nav.site-nav {
   transition: top 0.35s ease;
 }
 
@@ -603,7 +603,7 @@ nav:not(.wall) {
     margin: 0;
   }
 
-  body.header-compact nav {
+  body.header-compact nav.site-nav {
     top: 48px;
   }
 
@@ -626,7 +626,7 @@ nav:not(.wall) {
   header #site-title,
   #site-description,
   #tagline-text,
-  nav:not(.wall) {
+  nav.site-nav {
     transition: none;
   }
 }
@@ -846,23 +846,35 @@ nav:not(.wall) {
 }
 
 /* ===== NAVIGATION =====
-   The site nav bar. Every rule here that selects the bare element is scoped
-   nav:not(.wall), because the landing page's strip wall is also a <nav> --
-   correctly so, it is the site index. Unscoped, the wall inherited
-   position:fixed from the rule below and left the flow; .panel then became
-   .stage's only in-flow flex item and stretched across the viewport, and
-   every .entry collapsed to zero height, all of their children being out of
-   flow so the wall had nothing to take height from. Measured against the
-   rendered boxes, after the same defect was mistaken for a flex error by
-   reading declarations.
+   The site nav bar. It carries class="site-nav" in _includes/header.html,
+   and every rule that positions or animates it selects nav.site-nav: the
+   rule below, the compact-header rule that moves it up, the reduced-motion
+   rule that stops its transition, and the phone rule in responsive.css that
+   returns it to the flow. The class scopes them positively and once.
 
-   The exclusion is the narrow repair. The wider finding: `top: 208px`
-   below is a hard-coded guess at a header height this rule never measures,
-   and a component this specific should carry its own class rather than
-   claim every <nav> on the site. The descendant rules beneath need no
-   exclusion -- each requires a .nav-list or .nav-item that the wall does
-   not contain. */
-nav:not(.wall) {
+   The scoping is not cosmetic. These rules once selected the bare element,
+   and the landing page's strip wall is also a <nav> -- correctly so, it is
+   the site index. Unscoped, the wall inherited position:fixed and left the
+   flow; .panel then became .stage's only in-flow flex item and stretched
+   across the viewport, and every .entry collapsed to zero height, all of
+   their children being out of flow so the wall had nothing to take height
+   from. An exclusion, nav:not(.wall), was the narrow repair, and it failed
+   the way an exclusion fails: the weblog aside's <nav id="weblog-nav">
+   arrived later, matched, took position:fixed and rendered as a second
+   fixed bar across the top of every weblog page, and post-card.html's
+   post-nav would have done the same on every entry page once the archive
+   landed. A class has to be worn to be matched; an exclusion has to be
+   extended at every landmark anyone adds afterward.
+
+   One rule still selects the bare element and does so deliberately: the
+   print reset at the foot of this file, where nav means every navigation
+   region and hiding the weblog's menus along with this bar is the wanted
+   behaviour. The descendant rules beneath need no scoping -- each requires
+   a .nav-list or a .nav-item that no other nav on the site contains.
+
+   The wider finding stands: top: 208px below is a hard-coded guess at a
+   header height this rule never measures. */
+nav.site-nav {
   background-color: var(--color-bg-dark);
   border-bottom: 1px solid var(--color-border-dark);
   height: auto;

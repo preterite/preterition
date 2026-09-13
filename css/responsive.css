@@ -110,7 +110,7 @@
   }
 
   /* NAVIGATION */
-  nav:not(.wall) {
+  nav.site-nav {
     top: auto;
     position: relative;
   }
