@@ -2,7 +2,9 @@
 layout: post
 title: "The Absent Archive"
 date: 2026-08-25 00:00:00 -0800
-categories: []
+categories:
+  - "Asides"
+  - "Technology"
 ---
 I've kept a mostly academic weblog since June 2003, first at vitia.org and
 later here. Twenty-odd years of thinking in public: teaching and rhetoric,
@@ -24,7 +26,3 @@ with cats.
 <!-- The date on this post is the day it went up, not the day it was written.
      A weblog entry's date is a publication fact here; dating it to composition
      would seat the post somewhere in the archive's sequence it never sat. -->
-
-<!-- No categories, and none invented. The archive that would populate them
-     is still in WordPress; a term minted now would be one that no migrated
-     post matches when it lands. -->
