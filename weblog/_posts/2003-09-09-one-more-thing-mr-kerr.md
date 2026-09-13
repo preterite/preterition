@@ -1,0 +1,25 @@
+---
+layout: post
+title: "One More Thing, Mr. Kerr"
+date: 2003-09-09 02:49:23 -0700
+categories:
+  - "Education"
+  - "Technology"
+permalink: /weblog/2003/09/09/one-more-thing-mr-kerr.html
+redirect_from:
+  - /blog/2003/09/09/one-more-thing-mr-kerr/
+wp_id: 120
+wp_status: publish
+comment_count: 0
+---
+Some final thoughts from Kerr tonight -- it's been a long night, and I should've been in bed long ago, but I've been struggling with various technology issues for my two sections tomorrow. Which is somehow appropriate, since the stuff from Kerr is about technology.
+
+Kerr argues that "The best of the liberal arts colleges are likely to be the least affected by the new electronic technology since they are mostly engaged in the all-around development of the children of the already affluent (the top one-fifth of the economic scale), providing sports, lifetime friends, social skills, programs for cultural interests, and all-around intellectual advancement, not just job skills. These institutions get their main support from gifts by affluent alumni who have the ability and willingness to pay high tuitions for their children, not from public funds" (224). But those of us who have visited computer labs in wealthy private institutions and compared them to the computer labs at the less wealthy public institutions where we teach know quite well that "the best of the liberal arts colleges" also have more, better computers per student, and because their students tend to come from more affluent backgrounds, those students often possess a higher level of familarity and proficiency with computers, and also often know how to do different sorts of work with computers. The divisions Jean Anyon points to in "Social Class and the Hidden Curriculum of Work" apply very much to the use of computers in elementary and secondary education: students in poorer schools are often given drills-and-skills instruction while students in wealthier schools get to do the fancy stuff.
+
+Kerr continues, "Also little affected by the new technology will be graduate work in the research universities and even some undergraduate instruction. It is hands-on apprenticeship that cannot be replaced by electronics" (224). And this is where I start to wonder about the place of writing instruction in Kerr's scheme, particularly when he adds that "The teaching of large undergraduate classes in state and community colleges may be most affected by the new technology. So also may be the demand for discussion leaders in off-campus learning centers supplementing electronic presentations in chat rooms" (224). He's talking about one-way flows of information here, Freire's banking model, with computers understood as a medium for *delivering* instruction. The hands-on approach of the process model that still lies at the heart of most contemporary writing instruction isn't quite "hands-on apprenticeship" (though such a conception certainly informed Walker Gibson's approach), but it's highly interactive, and it's certainly not a one-way presentation of information. (Though I've seen a few really godawful teachers who thought they could teach students to write by lecturing at them every day and then correcting their grammar, and wondered if they give a multiple-choice final exam on How to Write an Essay.) It also relies on small classes with groups of students *doing* things with one another, rather than on large lecture halls with once-a-week discussion sections. The other thing I don't know much about is how writing instruction exists at various institutions. I've talked before about knowing how Yale doesn't have a first-year composition course, but Princeton does -- what about the other Ivies? And am I even worried about the Ivies? I've mostly had contact with medium-to-large public institutions; what about the small, 'pretty good' liberal arts colleges? Something I'll have to look for when I read the histories, I suppose.
+
+More questions than answers. I should also point out before I fall asleep in front of the keyboard here that I'm taking a seminar called "Rethinking Economy" this semester in the hopes of giving some rigor to my economic investigations of class, and also in the hopes of asking the instructor to be my extradepartmental committee person. I'll probably be posting some of my reactions to the readings from that course here; a lot of stuff dealing with globalization and "alternative" understandings of economy, largely from the the perspective of the post-s. So, yeah, I'm ready to hear some theory-bashing, folks; our assignment this week was to do a deconstructive reading of several essays on transnational economies, and it was kinda like doing some stretching exercises that you haven't done in a while.
+
+And the only reason I put the quotation marks around "alternative" is because I've never been able to do otherwise after reading that classic essay in *The Baffler*, "Alternative to WHAT?": I think I was the only enlisted soldier on all of Fort Stewart who subscribed to that magazine.
+
+Now how's that for a class marker?

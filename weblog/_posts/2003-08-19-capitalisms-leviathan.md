@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Capitalism's Leviathan"
+date: 2003-08-19 22:22:16 -0700
+categories:
+  - "Class"
+permalink: /weblog/2003/08/19/capitalisms-leviathan.html
+redirect_from:
+  - /blog/2003/08/19/capitalisms-leviathan/
+wp_id: 93
+wp_status: publish
+comment_count: 0
+---
+I've found myself really liking a lot of the points Gibson-Graham makes: they point to the "hidden and inarticulate position" of class (48) in social analysis, and talk about the segmented working class and the "feminized labor market, with its proliferation of part-time and temporary jobs" (47). As I've started to get at before, they're working against the perception (of which I'm guilty) that capitalism colonizes every aspect of society, and any class transformation must therefore undertake the always already impossible task of transforming the Leviathan of capitalism itself. In their words, according to the Marxian tradition, "society is typically theorized as a homogeneously or hegemonically capitalist formation centered on an industrial economy with class theorized as a social relation originating in that center" (57). But they point out that maybe things ain't necessarily so.
+
+To do this, they first suggest that "Marxian political economy" condenses the three class attributes of power, property ownership, and exploitation into the expression "relations of production" (49). Gibson-Graham then follows Resnick & Wolff's definition of class as the appropriation of surplus labor and distribution of that surplus as surplus value, and then makes the quantum leap of pointing out that those exploitative processes are not unique to capitalist economies: they also take place in other modes of economy *which are parts of contemporary society*, such as in the feudal economy of the household. In other words, our society is not monolithically capitalistic, but comprises "a complex disunity in which class may take multiple and diverse forms. Primitive communist, independent, slave, feudal, capitalist, and communal class processes can, and often do, coexist" (58). Class as a process of exploitation plays out in the work of the household, where Gibson-Graham argues that the surplus value of housekeeping labor is appropriated by the head of household. The problem I have here, that I know Curtiss has already pointed out and named as the valuation problem, is that I don't understand how -- in the household -- we can separate necessary labor from surplus labor. Certainly, it depends on the roles within the household, and whether there is a stay-at-home parent, but in a single-parent household, for example, all the labor of housekeeping would seem to be necessary labor. However, what this helps me to see for Wolff and Resnick's definition of class as exploitative process is that class doesn't necessarily have to be connected to the capitalist production of commodities, and therefore *can* show up as a process in the classroom.
+
+But I'm still not sure how a changed *knowledge* of capitalism and class can itself lead to the material enactment of alternative social structures. It's back to the old problem of theory versus practice, and Stanley Fish's proposition that theory is useless. The further difficulty I see here is that to talk about class as process and to oppose that definition to a definition of a class as a group of people completely misses the historical meanings of the word. Historically, and in social analysis, class *must* refer to some grouping of people. The question then becomes the criteria by which one groups those people. Talking about processes is fine and good, but if those processes aren't connected to groupings of people, then you're not talking about class: you've changed the subject.

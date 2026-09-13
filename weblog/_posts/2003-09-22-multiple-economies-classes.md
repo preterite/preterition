@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Multiple Economies & Classes"
+date: 2003-09-22 23:29:35 -0700
+categories:
+  - "Class"
+permalink: /weblog/2003/09/22/multiple-economies-classes.html
+redirect_from:
+  - /blog/2003/09/22/multiple-economies-classes/
+wp_id: 131
+wp_status: publish
+comment_count: 2
+---
+I think my tiredness after reading papers wasn't just tiredness -- someone tonight remarked on how there's a bug going around, and I've been feeling kinda lousy these last few days, which is partly why I didn't post last night, and why tonight's will be short. Low-key tiredness and floaty-headedness and I don't feel like doin nothin cept sleepin.
+
+Anyway. On [August 22](/weblog/2003/08/22/smaller-victories.html), I wrote about how Gibson-Graham attempts to understand capitalism "as fragmented and contradictory, stitched together as a patchwork of a million smaller interrelated economies and exploitative processes" such as "the state economy of taxes and services which interacts with the corporate economy of products and investments which interacts with the cultural economy of ideas and fashions which interacts with the social economy of relationships and communications, all of them and more subdividable into even smaller economies of exploitative and nonexploitative processes, commodities and noncommodities, goods and services and gifts and ideas and so on", and that "These small spaces are where change takes place." But see, with all that economic stuff, I kinda left out the other thing.
+
+Which is: if capitalism is not monolithic but an agglomeration of interlocking and overlapping economies, and if I believe class has any sort of economic component, then class itself can't really have any sort of monolithic system. I've been trying to piece together all these sociological and cultural and economic and Marxian understandings of class into something workable, but it can't be a something. It has to be multiplicitous. And so all of a sudden, again, I'm back at Bourdieu's relational infinitude of classes as the most workable model. I've been revisiting Gibson-Graham again this week, and I was particularly interested by her pointing out that post-Fordism relies on "flexible specialization" to permit "producers to cope with the increased volatility and fragmentation of demand" (151). I wonder (acknowledging that the analogy isn't perfect) if this also points to a possibility for class itself to be flexible in a flexible post-Fordist economy.
+
+Let me add one more thing to the mix here. In the Rethinking Economy seminar, we've also been reading Michael Porter's *On Competition* as an antidote to the delocalizing discourse of globalization and transnational corporations. Porter talks about the business advantages of what he calls "clusters": "A cluster is a geographically proximate group of interconnected companies and associated ingtitutions in a particular field, linked by commonalities and complementarities" (199), transcending specific businesses or industries or sectors but linked by region. In pointing out the absence of an understanding of the significance of location in the literature on management, innovation, and organizations, Porter suggests that "It is as if linkages, transactions, and information flow took place outside time and space" (223), as if they were abstract and immaterial and ungrounded in the concrete and localized particulars of individuals' lived experience. The cheerleaders of cyberspace and the information economy -- Negroponte, Bolter, Landow, Lanham, Turkle, Wired Magazine -- do the same thing, constructing information as free-flowing and transcending any material context. I think this might be a really useful way for me to start developing a poststructural and multiple understanding of class *that's still very much grounded in the material*, which seems so often to be the blind spot or Achilles' Heel of the post-s: so frequently, they work fine for fancy flights of theory, but don't do dick when it gets down to the reality of lived experience.
+
+This raises two big problems for me. One: if I'm understanding class as perhaps operating within fragmented and local contexts, what do I do when those contexts run into the Web, which, as they say, is World Wide? Two: it's becoming clearer to me every day that I gotta figure some way to explicitly articulate the link between economy and class, and quit just saying, "Well, I know it's *there*; I just can't explain it."

@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Cultural and Material Binaries"
+date: 2003-07-04 12:53:39 -0700
+categories:
+  - "Class"
+permalink: /weblog/2003/07/04/cultural-and-material-binaries.html
+redirect_from:
+  - /blog/2003/07/04/cultural-and-material-binaries/
+wp_id: 41
+wp_status: publish
+comment_count: 2
+---
+I'm a corporate stooge. A capitalist tool. But I'm staying on Capitol Hill and this Starbucks is a lot closer (3rd and Pennsylvania SE) than any of the free wireless hotspots I was able to find. I'll see if I can get over to [Tryst](http://www.trystdc.com/) in Adams Morgan tomorrow; right now, Starbucks is pretty busy and I've got myself a window seat on busy Pennsylvania Avenue, so it's pretty tempting not to type and just do some people-watching instead. Lots of pedestrian traffic, people heading to the day's doings on the Mall, Marines from the 8th & I Street Barracks on their morning run, young Hill staffers with their t-shirts from out-of-state universities.
+
+I've been thinking about the place of the quotidian in this weblog, given that I've constructed this as a *research* weblog, and given the tagline over at [Hector Rottweiler Jr's Weblog](http://www.panix.com/~hncl/HectorsJournal/) (which I unfortunately haven't had time to look at today, since my connection here is crap). I get impatient with exclusively personal online journaling; the sites where the author tells the Web, "Here's what I did today and here's what happened to me LOL and here's who I called and here's what I did next LOL and here's what I like and please buy me something from my Amazon wishlist and here's what else I did. . ." and so on, although I'm sure they have their merits for their intended audiences. So I'm really uncomfortable that I might be perceived as engaging in similar navel-gazing self-indulgent blather.
+
+However. I've been coming back again and again to the problems of presuming or suggesting that one has concerns that somehow don't connect to the material world. I know I'm prone, in my intellectual habits, to give myself over quite easily to the easy abstractions of Theory without attempting to work out their real-world consequences. So maybe I'll take license to continue to include stuff here that might be perceived as not exclusively academic by stating my strong agreement with the feminist axiom that the personal *is* political, and suggesting the corollary that the theoretical *must be* material.
+
+We know, of course, that such binaries can be dangerously reductive, and that's kind of what I'm on to today. I've been going on about cultural and economic markers of class and opposing them to one another, when the fact of the matter is that they're never truly exclusive.
+
+Economic markers of class always carry with them cultural characteristics, and cultural markers of class always carry economic characteristics. (Is this another one of my Mr. Obvious moments?) I've been suggesting that the salary Darla the Wal-Mart greeter earns places her, economically, within a certain space in the class hierarchy (yes, despite that stuff I said about Bourdieu [yesterday](/weblog/2003/07/03/mobility-and-falling.html), I'm back to convenient old hierarchical thinking), but the fact of the matter is that her job carries a cultural cachet that is different from the cultural cachet of Ann's job as a librarian or Monte's job as a lawyer. At a [cocktail party](/weblog/2003/06/23/the-distinctions-of-complex-language.html), people will ask Monte for legal advice, tease Ann about shushing patrons, and change the subject when Darla brings up her job. So, too, while I've suggested that the distinction between Montrachet Grand Cru and Pabst Blue Ribbon is a cultural distinction, it's really dumb to ignore the economic distinction inherent in the price gap between the two. In fact, considerable upper-class snobbery turns on the habit of despising people who want to make an inherently lower-class economic distinction between two objects that the upper-class person sees as being distinguished by cultural characteristics. In other words, a wealthy person will say, "Montrachet Grand Cru is an inherently better thing to drink than Pabst Blue Ribbon," to which a less wealthy person might reply, "Yeah, it costs more," to which the wealthy person will sniff, "Philistine." The difference between using economic and cultural modes of distinction is itself a class marker. We're all familiar with the stereotype of the *nouveau riche* with hideous, bad, expensive art on her walls, or   the impoverished academic who wishes her wealthy friends would rely on her clearly superior taste. (Of course, Candidia would tell you that her wealth makes her tastes the only appropriate tastes to have.) I think people have an almost instinctive awareness of the links between cultural and economic markers of class, and an awareness, as well, of the frequent slippages of those links.
+
+I'm on the meter here, so I'm going to bring this post to a close. I'll suggest, however, that the interconnections between economic and cultural markers of class carry important implications for how class mobility gets constructed in the context of the university, which I'll talk about next time. Today, I'm off to barbecue and fireworks.
+
+And, by the way, after a dozen dropped connections here: the Starbucks T-Mobile wireless is *absolutely lousy*. Avoid at all costs. I'll never use these guys again.
+
+*Postscript, added 7/7/03 while editing the above paragraph for language (I always feel really fastidious about cursing here): well, I did use Starbucks again, and it wasn't nearly so bad in Alexandria. So I'm still a corporate stooge.*

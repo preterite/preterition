@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Middle Class Blindness"
+date: 2005-04-20 22:06:40 -0700
+categories:
+  - "Class"
+permalink: /weblog/2005/04/20/middle-class-blindness.html
+redirect_from:
+  - /blog/2005/04/20/middle-class-blindness/
+wp_id: 508
+wp_status: publish
+comment_count: 2
+---
+To further the fleshing-out of my dissertation's Chapter 2, I recently revisited Lynn Z. Bloom's October 1996 *College English* article, "Freshman Composition as a Middle-Class Enterprise." It didn't make me as mad as it did the first few times I read it, but for me, it remains a deeply problematic essay, replete with contradictions, inconsistencies, and logical non sequiturs. Still, there are things to like about it, including Bloom's remark that "Although class, perhaps more than any other feature, forms the basis for much of what the profession as well as the general public expects of freshman composition, the term is virtually absent from the titles and key-word indexes of non-Marxist professional literature and -- even with Marxism factored in [...] -- seldom found in the composition data bases for the past quarter-century" (656). I agree, and Bloom's point contains much of the argument I'm trying to make in my first two chapters: as a discipline, we don't like to talk about class. I'd add a second point, however, to the point Bloom makes: when we do talk about class, it's class without economics -- and Bloom's essay stands as a pre[ë](http://weblog.delacour.net/archives/2005/01/diacritical.php)minent example of class talk that elides economic concerns.
+
+Certainly, Bloom *names* economic concerns, as in her declaration that "Composition is taught by middle-class teachers in middle-class institutions to students who are middle class either in actuality or in aspiration -- economic if not cultural" (656), but she names them only to dismiss them: "It is not necessary here to rehearse the well-known economic (income levels) and educational (years of schooling) criteria that sociologists [...] use in analyzing American social class" (655). (Economic issues comprise far more than income, but you knew that.) Why is it not necessary? Because Bloom's talking about class *values*: "one of the major though not necessarily acknowledged reasons that freshman composition is in many schools the only course required of all students is that it promulgates the middle-class values that are thought to be essential to the proper functioning of students in the academy" (656). The bulk of Bloom's essay is dedicated to a taxonomic analysis of those allegedly middle-class values, performed in explicit imitation of Benjamin Franklin's twelve values or virtues (plus one) laid out in what Bloom characterizes as his "rags-to-riches autobiography," which "has for two centuries been the template for American ascendancy into the middle class" (655).
+
+Herein lies our first problem. Bloom quotes Franklin's assertion that the values he describes -- including "Temperance," "Order," "Resolution," "Frugality," "Industry," "Moderation," "Cleanliness," and "Humility" -- are ones that will produce "moral Perfection" (655). Moral perfection is something rather different from class mobility, but Bloom apparently sees Franklin as having ascended from a lower class (the working class?) to the middle class and presumes that these values are what produced said class mobility.
+
+One might wish that Bloom were more familiar with Franklin's life. Benjamin Franklin got his start at age 12 at the *New England Courant*, which was published by his older brother James. James was, in effect, a member of the capitalist class, and to suggest that Benjamin Franklin's life was a "rags-to-riches" story is to be rather too credible about a writer's representation of himself. It diminishes not at all the startling genius and impressive labors of Benjamin Franklin to point out that his story contains about as much class mobility as that of [Pete Coors](http://phx.corporate-ir.net/phoenix.zhtml?c=101929&p=irol-govboard&ID=122769). As a newspaper apprentice, young Franklin read everything he came across, essentially educating himself, and in the process refining a considerable contempt for the second-rate education offered at [Harvard](http://www.harvard.edu/). By age 15, he was publishing in the *Courant*, teaching himself to write through the act of public writing -- an opportunity which not many at the time possessed. Later, Franklin moved to Philadelphia and became the publisher of the *Pennsylvania Gazette*, much of which he wrote himself, establishing himself as one of the foremost American writers of the era. By his mid-twenties, Benjamin Franklin was a captain of commerce and a prominent Philadelphia citizen: if there can be any class mobility detected in his life, it is from high to higher, not -- as Bloom suggests -- from low to middle, and Franklin's class mobility was certainly achieved more by economic activity than by the adopting of a certain set of cultural values.
+
+But "high" and "low" sound a little strange in the context of the ways Americans usually talk about class. Where's the working class? What are the other classes? Where are the demarcations, the splits, the class lines? In Bloom's essay, they are mostly absent, almost as if the middle class is the only class she can see. (The biographical blurb for her essay describes her as the "[Aetna](http://www.aetna.com/index.htm) Chair of Writing at the University of Connecticut.") In the essay's third paragraph, the middle class is opposed to "the super-rich and the very poor," and that's the only evidence of class difference that we get. And this is interesting, because Bloom posits class *mobility* as a result of adopting certain values, but class *position* as being determined by how much wealth one possesses. So the point of Bloom's analysis would seem to be that -- no matter how much wealth you possess -- you can move into the middle class by adopting certain values.
+
+However I might work at it, struggle with it, and attempt to believe it, I still find this conclusion deeply puzzling. In trying to think it through, I always wind up coming back to that quotation I offered in my second paragraph, above: "Composition is taught by middle-class teachers in middle-class institutions to students who are middle class either in actuality or in aspiration -- economic if not cultural" (656). In other words, while acknowledging class difference by deploying the term middle class (which necessitates that there must be other classes, as well), Bloom simultaneously declares a trans-institutional homogeneity of class: at every college and university across the U.S., middle-class writing teachers are inculcating middle-class students with middle-class values. (This brings immediately to mind Linda Brodkey's "class blindness that sees itself everywhere it looks.") So -- if we limit our discussion to Lynn Bloom's Connecticut context -- the first-year writing course at [Yale](http://www.yale.edu/) is as middle class as the first-year writing course at Bloom's [UC](http://www.uconn.edu/) [Storrs](http://houseandhome.msn.com/PickAPlace/nf_Details.aspx?search=1&zip=06250) is as middle class as the first-year writing course at [Housatonic](http://houseandhome.msn.com/PickAPlace/nf_Details.aspx?search=1&zip=06604) [Community College](http://www.hcc.commnet.edu/about/index.html)?
+
+You tell me. But denying the economic differences among the real, geographic, classed locations of such institutions allows Bloom to avoid any economic responsibility in favor of schooling students in the transcendent moral values that will offer them entry into the middle class. So by now, maybe you're wondering: what are these values that are so characteristic of the middle class? What are these values that separate the middle class from "the super-rich and the very poor"? They are, in Bloom's order:
+
+- Self-reliance, responsibility.
+- Respectability.
+- Decorum, propriety.
+- Moderation and temperance.
+- Thrift.
+- Efficiency.
+- Order.
+- Cleanliness.
+- Punctuality.
+- Delayed gratification.
+
+And last, the one that shocked me most:
+
+- Critical thinking.
+
+The assertion that any or all of these values are what separates the middle class from those with more or less money is nothing less than unadulterated **class bigotry**. The poor do not possess cleanliness? The rich have no self-reliance? At "Critical thinking," my jaw dropped. On the very next page, in her explanation of "Critical thinking," Bloom cites Paulo Freire's *Pedagogy of the Oppressed* (667): is it possible that, having read the book, she possesses no comprehension that the pedagogy it describes focuses upon the critical thinking deployed by "the very poor" oppressed Brazilian peasants with whom Freire was so deeply engaged? Can someone who so adamantly claims a "middle-class orientation" (654) be so completely blind to circumstances other than her own?
+
+I guess so. From Bloom's [Aetna Chair](http://www.sp.uconn.edu/~wwwwrtng/) and "house with an herb garden" (672), it's likely an easy blindness to maintain.

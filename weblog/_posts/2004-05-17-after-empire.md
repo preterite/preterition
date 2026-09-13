@@ -1,0 +1,25 @@
+---
+layout: post
+title: "After Empire"
+date: 2004-05-17 22:45:13 -0700
+categories:
+  - "Economics"
+  - "Rhetoric"
+  - "Technology"
+  - "Writing"
+permalink: /weblog/2004/05/17/after-empire.html
+redirect_from:
+  - /blog/2004/05/17/after-empire/
+wp_id: 331
+wp_status: publish
+comment_count: 0
+---
+Finished Hardt & Negri's *Empire* today. Good stuff, mostly, with a fairly consistent point of view; certainly succeeds in the philosophy department as much as it fails (which it does, abjectly and completely, despite its clearly huge ambitions) in the materialist department. Their erudition is, of course, impressive, and I wished I'd had a dictionary of philosophy on hand while reading: while I've read bits of the Hume, Locke, Hobbes, Descartes, and Adorno that they cite, and plenty of the Aristotle, Plato, Foucault, Derrida, Tocqueville, and Benjamin, I've only made it through introductions to Kant and Rousseau and Heidegger, and know Spinoza and Hegel by nothing other than reputation and reference. So I struggled a bit when the references flew, as they often did.
+
+Still, there was much that was familiar: rather than the economic and the cultural being separate, and rather than the limitations of Marx's base-superstructure model, we have Jameson's "increasing indistinguishability of economic and cultural phenomena" (Hardt & Negri 275), because "capitalist relations were expanding to subsume all aspects of social production and reproduction" and also because "cultural relations were redefining production processes and economic structures of value" (275). Other truisms, as well: "productivity, wealth, and the creation of social surpluses take the form of cooperative interactivity through linguistic, communicational, and affective networks" (294), so that immaterial labor through its very form seems to lend itself to collaboration and communication. "Empire takes form when language and communication, or really when immaterial labor and cooperation, become the dominant productive force" (385) to the point where "Production becomes indistinguishable from reproduction; productive forces merge with relations of production; constant capital tends to be constituted and represented within variable capital, in the brains, bodies, and cooperation of productive subjects" (385), a formation -- as one might guess -- to which there is no outside ("il n'ya pas de hors-texte", yes yes). Furthermore, "If communication has increasingly become the fabric of production, and if linguistic cooperation has increasingly become the structure of productive corporeality, then the control over linguistic sense and meaning and the networks of communication becomes an ever more central issue for political struggle" (404). That "ever more central" ought to be a clue: *Empire* is a work of synthesis rather than a paradigm-breaker.
+
+Hardt and Negri have done a masterful job of integrating the lessons and antecedents of postmodern political thought, and they even conclude with what sounds like it wants to be a manifesto. As such, in their supremely abstract and ethereal way, they offer something that approaches a unified field theory of the state of the radical left. But I don't buy parts of it. First, as the work of Gibson-Graham implies, Hardt and Negri's construction of a seamless, all-consuming, monolithic capitalist Empire is blindly convenient: everything, under Empire, is or contributes to a market transaction. I think the world, and its economies, are more complex than that. Second, whenever they encounter something their theory can't explain, they throw their hands up and exclaim either "Coincidence!" or "Paradox!" As freewheeling as I'd like to be, I find such an approach rather lacking in rigor.
+
+Anyway. So this, I suppose, is sort of an after-finishing review, a general taking-stock, like what we did in the Army after field problems. What worked, what didn't, what the expectations and shortcomings were. In the next couple days, I'll go back through my notes and try to find what fits for this RSA presentation I need to write; try to see how Tacitus might connect to Hardt & Negri and the politics of weblog rhetoric. As always, I'd be grateful for any gripes, flames, thoughts, or other forms of feedback.
+
+[Lots of people got married today](/weblog/2004/05/17/yay.html). It makes me happy to live in New England, close to where such things are happening. The weather continues in its gorgeousness, Tink is chasing bugs, and complaining (loudly and repeatedly) when she can't get one, and I think Zeugma has a terrible, consuming crush on a certain overly bold black-capped chickadee who stops by in the early mornings and late afternoons. Also today, there came an estate-related FedEx package, and it looks as if things are almost done: yes, finally, after more than twenty months. My mom didn't want to be buried anywhere, so I'll have to figure out some ritual or place to go when it's finally all finished, to find some way to let myself put it all away.

@@ -1,0 +1,69 @@
+---
+layout: post
+title: "Rationale for a Graduate Seminar in Digital Technology and Culture"
+date: 2015-10-17 22:52:19 -0700
+last_modified_at: 2015-10-23 22:11:14 -0700
+categories:
+  - "Education"
+  - "Information"
+  - "Politics"
+  - "Rhetoric"
+  - "Technology"
+permalink: /weblog/2015/10/17/rationale-for-a-graduate-seminar-in-digital-technology-and-culture.html
+redirect_from:
+  - /blog/2015/10/17/rationale-for-a-graduate-seminar-in-digital-technology-and-culture/
+wp_id: 1641
+wp_status: publish
+comment_count: 1
+---
+Proposed syllabi for graduate seminars are due Monday, and while I've got the documents themselves together, I also want to be able to better articulate the exigency for this particular seminar I've proposed a syllabus for. There's no guarantee my proposal will fit the Department's needs better than any other proposals, of course, so this is partly an exercise in hopeful thinking, but it's also helping me to figure out why I'm interested in investigating certain topics. The course, "Studies in Technology and Culture" ([DTC 561 / ENGL 561](http://catalog.wsu.edu/Pullman/Courses/ByList/ENGLISH/561)), examines "key concepts, tools, and possibilities afforded by engaging with technology through a critical cultural lens," and is one of the two required courses for the interdisciplinary [WSU graduate certificate in Digital Humanities and Culture](https://english.wsu.edu/graduate-certificates/#Digital), a certificate designed to "enhance already existing graduate programs in the humanities and the social sciences, . . . [offering] graduate-level coursework in critical methods, textual analysis, composing practices, and hands-on production for engaging with humanistic studies in, as well as about, digital environments." I see a couple important points there:
+
+- first, the certificate's "critical cultural lens" indicates a reflexive and dialectical (practice- and theory-based) analysis of cultural phenomena as in process and under construction by human and nonhuman agents, and toward the notion of culture as a "noun of process" (from [the etymological tracing of Raymond Williams](http://pubpages.unh.edu/~dml3/880williams.htm), who points out that the original verb form of "culture" was transitive) representing complex multiple self-developing practices relating to symbolic action; and
+- second, the certificate's interdisciplinary aspects contribute in rich ways to its digital focus, given its required electives that examine how ([AMST 522](http://catalog.wsu.edu/Pullman/Courses/ByList/AMER_ST/522)) the economics of access in the digital divide reinforce inequalities, how ([DTC 477](http://catalog.wsu.edu/Pullman/Courses/ByList/DTC/477)) the commodification of information and digital tools can contribute to the stratification of their use, how ([DTC 478](http://catalog.wsu.edu/Pullman/Courses/ByList/DTC/478)) interface designs can sometimes reinforce stratification and inequality, how ([HIST 527](http://catalog.wsu.edu/Pullman/Courses/ByList/HISTORY/527)) public history projects incorporating digital technologies can attempt to resist the dominant appropriation or suppression of the heritage of subjugated cultures through practices of responsible representation, and how ([HIST 529](http://catalog.wsu.edu/Pullman/Courses/ByList/HISTORY/529)) ethical digital curation and archiving practices can serve equitable and inclusive ends.
+
+
+One possible intersection of both points might be understood as the intersection of process and information, which is how I would theme the seminar. Such a theme would represent the familiar cultural studies *topoi* of race, sexuality, class, gender, ethnicity, age, religion, ability, and others as points of contestation over information. The processes via which information is produced, distributed, owned, used, and re-produced shape and are shaped by those *topoi* and their intersections with digital technologies. Furthermore, I see tendencies in our emerging studies of digital technology and culture that replicate past trajectories whereby early adopters of technologies (often members of privileged cultural groups) tend to centralize, monopolize, and territorialize research domains—fields that shape processes related to the development of information—especially in an academic context shaped by the eagerness of funding agents to throw money at technology. Given such eagerness, the certificate's welcome emphasis on "hands-on production" might offer an opportunity to counter that territorializing impulse.
+
+
+
+As may be obvious from a couple posts ago, my projected thematic emphasis on the intersection of process and information extends [the work I've been doing this semester with DTC 356, Electronic Research and the Rhetoric of Information](/weblog/2015/08/27/doing-digital-research-being-digitally-researched.html). In the syllabus for that course, I tell upper-division undergraduates that "it asks you to examine how research functions in the information age: not only the searches and research that you do, but the research that is done to and on you. That examination investigates possible parallels among academic research, market research, security research, and government surveillance." I believe the most significant aspect of our contemporary digital culture is its relationship to information, and I see in the final paragraph of James Gleick's excellent book *[The Information: A History, a Theory, a Flood](http://www.nytimes.com/2011/03/20/books/review/book-review-the-information-by-james-gleick.html)* one half of an attitude I would hope to encourage among graduate students. (The other half is in Willard van Orman Quine's short piece, ["Universal Library,"](http://hyperdiscordia.crywalt.com/universal_library.html) a production- and remix-oriented response to Borges.) Referring to the Jorge Luis Borges story "The Library of Babel," Gleick concludes: "The library will endure; it is the universe. As for us, everything has not been written; we are not turning into phantoms. We walk the corridors, searching the shelves and rearranging them, looking for lines of meaning amid leagues of cacophony and incoherence, reading the history of the past and of the future, collecting our thoughts and collecting the thoughts of others, and every so often glimpsing mirrors, in which we may recognize creatures of the information." As creatures of the information, we are attached to our smartphones and laptops as prostheses, and our emerging relationships to these prostheses (and the larger corpora of information in which they embed us) compel investigation.
+
+I wear hearing aids, and [Alex Reid's recent post on "Rhetorical Throughput"](http://alex-reid.net/2015/09/rhetorical-throughput.html) got me thinking more about information prostheses. The hearing aids are tiny and remarkably sophisticated, and come with a remote control that lets me switch among different digital settings: one attuned to ambient sounds and designed to boost the frequencies in which I've lost hearing, for situations when I need to be able to hear things coming from all around me; one attuned to directional sounds in the human voice mid-range, so I can better hear people when I'm looking directly at them in noisy environments; and one other setting that I can have my audiologist occasionally adjust for custom situations, such as if I'm going to an academic conference and am going to be in rooms with a lot of reverberation. Alex, responding to [a TED talk by David Eagleman](https://youtu.be/4c1lqFXHvqI) involving a vest that can translate sound information into tactile feedback so that deaf people can feel sound in the same way blind people read braille, observes that Eagleman "seems most interested in the possibility of taking in data from across digital networks, data that now requires multiple screens and multi-attention for us to track, and giving us a way of simply sensing it." I think that's perhaps simply a generational matter: I see college students attuned to their phones in ways very different from my own generation, to the point where some of them use their networked digital devices with a grace and mindfulness—an effortless awareness of their surroundings—that decades ago you sometimes saw in people who were artists with the way they used their cigarettes in conversation and gesture. Alex suggests a similar sense, arguing "that we have already expanded our *unwelt*. We already can see ultra-violet and infrared rays. I can hear and see things happening on the other side of the planet, hear and see things that happened years ago." By extension, our adaptation to an environment of ambient information is proceeding along similar lines. Alex continues, noting that he finds
+
+> fascinating [the] implications about the role of symbolic action in rhetoric. If you think about it this way, symbolic action is a way of accessing human brains, piggybacking on visual and auditory sensory data. But the throughput is fairly limited. That is, humans can only read a few hundred words per minute, and they can hear even fewer. What if, to give a completely pedantic classroom example, instead of having to read all your students’ discussion posts, you could just know, like you know if you’re sitting or standing right now, what their thoughts were about the assigned reading?
+
+
+I'd say that's sort of what we're starting to do with our digital tools for text analysis and our emerging methods and processes for wrangling very large corpora of information. My hearing aids analogy is crude, but it helps me understand how I can use digital tools to regulate and shape the sorts of information I get from the world on a habitual, phenomenological level, and it makes me wonder—following Alex's example—why aren't we doing such things more in our academic work?
+
+So the seminar asks: how can we better respond to increasingly pervasive flows of ambient information? How can we do so in culturally responsible ways? And how can we do so in ways that do not imagine that an English Department graduate seminar can simply transfer familiar material cultural *topoi* into new digital environments, but that rather understands that digital environments are no less material than any other aspects of our culture, and that investigates their complications as such rather than assuming a project of somehow remediating those familiar cultural *topoi* into the digital? In fact, we are increasingly seeing unanticipated cultural and material effects of the intersection of process and information in such areas as archiving, privacy, regulation, coercion, research, security, and persuasion, in ways that our academic practices have not yet caught up to—ways that, again, compel investigation.
+
+To the seminar, then.
+
+***Readings (alphabetical by author):***
+
+Pedro Domingos, *The Master Algorithm* (Basic Books, 2015: [ISBN 9780465065707](http://www.basicbooks.com/full-details?isbn=9780465065707))
+Doug Eyman, *Digital Rhetoric: Theory, Method, Practice* (University of Michigan, 2015: [ISBN 9780472121137](http://www.press.umich.edu/4536325/digital_rhetoric); available free)
+Philip N. Howard, *Pax Technica* (Yale University Press, 2015: [ISBN 9780300199475](http://yalepress.yale.edu/book.asp?isbn=9780300199475))
+Matthew Jockers, *Macroanalysis* (University of Illinois, 2013: [ISBN 9780252079078](http://www.press.uillinois.edu/books/catalog/88wba3wn9780252037528.html))
+Julie Thompson Klein, *Interdisciplining Digital Humanities* (University of Michigan, 2015: [ISBN 9780472052547](http://www.press.umich.edu/2525468/interdisciplining_digital_humanities); available free)
+Laura McGrath, ed., *Collaborative Approaches to the Digital in English Studies* (Computers and Composition Digital Press, 2011: [ISBN 9780874218879](http://ccdigitalpress.org/ebooks-and-projects/cad); available free)
+Frank Pasquale, *The Black Box Society* (Harvard University Press, 2015: [ISBN 9780674368279](http://www.hup.harvard.edu/catalog.php?isbn=9780674368279))
+Bruce Schneier, *Data and Goliath* (Norton, 2015: [ISBN 9780393244816](https://www.schneier.com/books/data_and_goliath/))
+
+
+
+and selections from
+
+
+
+Patrick Svensson and David Theo Goldberg, eds., *Between Humanities and the Digital* (MIT, 2015: [ISBN 9780262028684](https://mitpress.mit.edu/index.php?q=books/between-humanities-and-digital))
+Excerpts: Jim Ridolfo and Bill Hart-Davidson, eds., *Rhetoric and the Digital Humanities* (University of Chicago, 2015: [ISBN 9780226176697](http://press.uchicago.edu/ucp/books/book/chicago/R/bo18991168.html))
+
+
+***Approach:***
+
+Weekly readings will be alternating rather than serial. Rather than reading and discussing one book and then moving on to the next in linear sequence, our discussions will juxtapose readings categorized according to whether they focus on digital **potentials** (e.g., *The Master Algorithm*, *Pax Technica*), digital **approaches** (e.g., *Macroanalysis*, *Collaborative Approaches to the Digital in English Studies*), or digital **critiques** (e.g., *Data and Goliath*, *The Black Box Society*), in order to seek ways that these readings might interanimate one another in a Burkean sense.
+
+***Contributions:***
+
+Each week, one student will identify problems raised by the readings and link those problems to previous discussions in order to present an agenda for the discussion. A second student will investigate the lists of works cited in the readings in order to present a genealogical and theoretical background for the discussion, including a brief annotated bibliography of key academic precedents. A third student will present use cases and instructions on ways to use a digital tool to extend that week's discussion, either for data analysis (e.g., statistical or topic modeling software) or for data presentation and visualization (e.g., illustration or animation software).

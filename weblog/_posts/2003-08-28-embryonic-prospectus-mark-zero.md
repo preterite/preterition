@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Embryonic Prospectus Mark Zero"
+date: 2003-08-28 22:48:38 -0700
+categories:
+  - "Dissertation"
+permalink: /weblog/2003/08/28/embryonic-prospectus-mark-zero.html
+redirect_from:
+  - /blog/2003/08/28/embryonic-prospectus-mark-zero/
+wp_id: 104
+wp_status: publish
+comment_count: 0
+---
+As I understand the genre, a prospectus tells one's dissertation committee, "Here's what I'm going to do, and here's how I'm going to do it." Beyond that, it also says, "Here's the background; here are the principal theories; here are the key works and why I've selected them; here's my methodological approach." [Recently](/weblog/2003/08/14/freestyle.html), I've tried to pin down a couple of possible research questions that I might pose in the dissertation.
+
+- Is the discourse around class more hidden in the sub-discipline of computers and composition than it is in composition in general?
+- If I can demonstrate that it is, can I then argue that technology is the cause of such a circumstance?
+- Can I establish the discourse around technology as one believable cause for the increased occlusion of class in computers and composition?
+
+Those questions, of course, beg other questions. Questions like: What do you mean by 'class'? And: Well, even if you demonstrate all this stuff, what can people in the field of composition possibly do about it? I'll try to incorporate those questions into my thinking-through of this post, which I've been putting together since yesterday evening. Consider this a first attempt to lay out a very loose and tiny version of a prospectus; a pseudo-*ur*-prospectus, maybe.
+
+The very first thing I'll have to do is lay out an initial definition of class. I'm not sure whether this can be a definition of class as it's been used in the discourse of composition and computers and composition, or whether it ought to attempt broader coverage, and say, these are all the disparate ways in which Americans talk about class.
+
+Then maybe I can start laying out some assumptions. First assumption: the student in the wired composition classroom exists within a series of concentric contexts.
+
+![five concentric circles, with the class of the student at center, and then moving outward the writing classroom, composition as a discipline, the university, and finally the information economy as the outermost circle](/weblog/assets/concentric_contexts.gif)
+
+Next assumption, relying on John Alberti's recent *College English* [article](http://www.ncte.org/pdfs/subscribers-only/ce/0635-may01/CE0635Returning.pdf) (137K PDF), as well as the stuff that [John Lovas](http://faculty.deanza.fhda.edu/jocalo/) and others have had to say about the division between two-year and four-year colleges, and the thoughts of [Clark Kerr](http://www.hup.harvard.edu/catalog/KERUS5.html) and [Derek Bok](http://pup.princeton.edu/titles/7484.html) on the changing functions of universities: colleges and universities are themselves classed institutions, and people seldom want to talk about how they're classed. The Ivies, small teaching colleges, state universities, small elite institutions, and community colleges all have catalogs (as has recently been pointed out at Invisible Adjunct) featuring photographs of professors gesticulating in front of blackboards or beaming in book-lined offices, laughing groups of young students in sweaters, ivy-lined walls; none have photographs of cavernous over-full lecture halls or the huge acreage of parking lot space for commuter students. As a culture, we seem to want to pretend that all colleges are liberal arts colleges, while at the same time complaining that higher education fails to offer enough practical instruction in "real world" job-related training. I've recently ordered a hard copy of [The Chronicle](http://chronicle.com/)'s [Almanac](http://chronicle.com/free/almanac/2003/), which I'm hoping should prove helpful.
+
+From there I move into talking about the discourse of class: with whatever definition of class I wind up starting with, I'll have to take it through each of those concentric circles shown above, from the innermost (the student's class) to the outermost (how class operates in the information economy and the wide world beyond the Web), showing how composition has discursively constructed the concept of class in each of those contexts. So I guess after I get my definitions out of the way, that's major movement one: how we talk about class -- and, as Donna reminded me, *why* we talk about class that way, addressing our motivations for that sort of discourse, attempting to do the same sort of analytical work James Berlin does in his [discussion](http://www.westga.edu/~stu11264/4200realproject2.htm) of the major pedagogical theories in composition. The subsequent step will be to examine the ways in which composition *doesn't* talk about class, and why: what do we leave out when we talk about class? In a sense, that's almost what I'm doing now with my broad attempts to taxonomize class according to cultural, economic, experiential, Marxian, relational, and other criteria.
+
+While I'm moving outwards and inwards through those concentric circles that constitute the relational fields within which class serves as a relational function (I need to revisit Bourdieu on this, especially *Distinction* and *Practical Reason*), I'll have to keep grounding my examination in the literature of composition and computers & composition, and in concrete examinations of the activities associated with the writing classroom, or else it'll all be too vague and abstract to be worth following. The other thing I'll have to do is to draw a distinction between composition-as-field and computers-and-composition-as-fied: my contention is that we're just now starting to talk about class in composition, but that we don't talk about class at all in computers and composition. So perhaps the way to achieve that would be to move from the center outward with my discussions of how and why we *do* talk about class in relation to the individual student, the wired writing classroom, composition in general, the university, and the information economy, and then move from the perimeter inward with my examination of how and why we *don't* talk about class in relation to the information economy, the university, composition, the wired writing classroom, and the individual student.
+
+The point of those movements would be to allow me to set up an analysis of the differences in degree and kind between the ways we talk and don't talk about class in composition and the ways we talk and don't talk about class in computers and composition, and the core of my argument would be in attempting to explain why technology either helps to account for those differences or has no effect on those differences. My gut sense is that technology does in part account for those differences, and Donna has suggested that one way to construct my question might be to ask why technology helps us ignore certain things about class.
+
+I'm fairly certain that I won't find any accounting for how the material presence of computers affects writing in the writing-as-labor literature of composition (Horner, Trimbur, recent Harris). That'll bear some investigating. What'll bear more investigating is how the computer functions within each concentric circle of the relational space depicted above, and perhaps even how it affects and is affected by relations that cross the boundaries of those concentric circles: how the computer shapes/is shaped by relationships among the information economy, the university, and the class of the individual student.
+
+So that's the basic setup. Tomorrow I'll point out some caveats and additional complications.

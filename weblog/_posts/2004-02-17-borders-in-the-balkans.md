@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Borders in the Balkans"
+date: 2004-02-17 23:41:45 -0800
+categories:
+  - "Composition"
+permalink: /weblog/2004/02/17/borders-in-the-balkans.html
+redirect_from:
+  - /blog/2004/02/17/borders-in-the-balkans/
+wp_id: 255
+wp_status: publish
+comment_count: 6
+---
+I guess I'd sum up my point yesterday by saying that it sees to me John's making an indictment of specialization that I don't quite buy. However, I would strongly agree with John that more interdisciplinarity and integration in English studies would be a fine thing. John writes that "composition is a part of English", and I'd respond that I see composition as *connected* to English, and add that composition *in* English *uses* English, but the reality of academic specialization -- as John acknowledges -- demonstrates that speech, linguistics, and journalism all share similar characteristics, yet remain separate from English as disciplines.
+
+I got my BA in English literature, my MFA in fiction writing, and now work on my PhD in rhetoric and composition, and from my experience at large public universities, the cultures of literature, creative writing, and rhet/comp are all already pretty radically Balkanized within many English departments -- although some departments, departments in which I'd love to work, make a habit of breaking down those disciplinary walls by team-teaching and cross-teaching. Fiction writers teaching courses in Appalachian literature. Compositionists teaching courses in close reading. Literature scholars and creative writers co-teaching courses in community service learning and teaching. These, to me, seem to be wonderful ways of re-integrating the splintered curriculum of the liberal education, and I wish they might extend further, into courses cross-listed and co-taught with Classics departments, with Comparative Literature, with Geography, with History, with Speech, with Communication, hell -- you know me -- with Economics, even.
+
+One might suppose, by this point, that I believe writing classes should exercise only academic writing in order to produce only academic writing. That's not true. I think other forms of writing inform and broaden and better academic writing. It's worth pointing out that I take my contention that a composition course is, at heart, a course in essay writing from Peter Elbow's advice to a writing program he ran -- but as someone whose pedagogy is also very influenced by the writing and practice of the wonderful teacher [Mariolina Salvatori](http://www.english.pitt.edu/people/salvatori.html), I also strongly agree with John (as I think Peter does, as well) that reading is a part of writing. To state the obvious: writing well involves many skills, and extends to practically every discipline.
+
+Interestingly, here at my Big State U, not all of our Writing Program teachers are from the rhetoric and composition, creative writing, cultural studies, and literature components of our English department: the director here hires teachers from all disciplines who care to apply, so we have a sizable and brilliant School of Education contingent, some folks from History and Political Science and Philosophy, and from other disciplines as well. I'm pretty happy with this state of affairs, and -- as I note in my first paragraph, above -- I think it'd be interesting to push such interdisciplinary tendencies even further, and remedy the Balkanization of English by lowering disciplinary boundaries even further. As an across-the-board requirement at most American colleges and universities, I think composition would be an ideal site to apply what Eric Raymond calls [the "bazaar" model](http://www.firstmonday.org/issues/issue3_3/raymond/) of software development to higher education conceptions of disciplinarity. And the ubiquitousness of composition suggests that the teaching and learning of writing are *not* merely instrumental; that what writing teachers do is educative far beyond its direct applicability to writing essays for other courses. Rather, writing is -- as I've written before -- a mode of learning, and a mode of making meaning. Both are ends that higher education must serve.

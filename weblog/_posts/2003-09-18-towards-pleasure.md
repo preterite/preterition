@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Towards Pleasure"
+date: 2003-09-18 22:03:15 -0700
+categories:
+  - "Composition"
+permalink: /weblog/2003/09/18/towards-pleasure.html
+redirect_from:
+  - /blog/2003/09/18/towards-pleasure/
+wp_id: 128
+wp_status: publish
+comment_count: 3
+---
+The [Tutor](http://www.wealthbondage.com/stories/2002/12/01/theHappyTutor.html) had some tough questions for me about yesterday's post, and Francois offered several more almost distressingly insightful observations. And I'm so beat I can't even begin to adequately reply to them tonight, so maybe tomorrow. But I'm thinking I'm very much in agreement with something [Dorothea](http://yarinareth.net/caveatlector/) said recently, though I can't find the exact cite: the blogosphere is humbling in an oddly comforting way. I think the only halfway workable analogy I can come up with right now for the best parts of blogging are those rare, rare moments at academic conferences when you walk away from a panel presentation feeling a little self-conscious because everyone there said stuff that was so much more sophisticated than the insights you had to offer but at the same time elated because you learned more in an hour and fifteen minutes than you sometimes learn in an entire semester. The pleasure is simultaneously self-conscious and selfish but in a way that transcends any of those single descriptions.
+
+So: towards pleasure. [Sharon](http://www.asu.edu/clas/english/syllabi/syllabi/crowley530.htm) [Crowley](http://www.asu.edu/clas/english/syllabi/syllabi/crowley517.htm), in [*Composition in the University*](http://www.pitt.edu/~press/books/compositioninuniversity.html), argues that the birth of the modern English department relied on the transcendent elevation of Literature to something Not Of The World, but rather belonging to an ideal space where the minds of author and reader could meet unsullied by material concerns. Literature is the privileged term in the high culture/mass culture binary and so despises mass culture unless it can use (and thereby reinforce) its own power to elevate mass culture and demonstrate that mass culture has transcendent qualities *too* (but qualities only visible to the scholar, of course). Rhetoric, on the other hand, Crowley constructs as inextricably associated with public discourse and so incapable of transcendence, and composition is "considered as a means of expressing the self". And in the disciplinary battle between rhetoric and composition, composition has won, because it offers to literature's expressed ideal Author the counterpart of the expressed ideal Amateur; two writerly minds who might meet in that transcendent and immaterial context absent of embodied Others.
+
+I've got some thoughts on how I might connect this to economies and computers, but they're right now pretty loose, so I think I'll hold off until tomorrow. Also on deck for tomorrow: the return of the Friday non-dissertational. I think I'm happy enough with the revisions I've made to another Army story that I might post it; a "realistic" story I've attempted to stuff so full of negation and the absence of sequential logic that it edges (I hope) towards the usefully absurd and perhaps has something to say about what [Tim O'Brien](http://www.stg.brown.edu/projects/WritingVietnam/readings/tob_true_war.html) calls "truth" in storytelling. I'll add that the story is for Daniel Anderson, a poet who was in the same MFA program I was in who gave me invaluable feedback on the story, and who was also another former soldier -- a Green Beret, much more a soldier than I ever was -- and, finally, who was also a good and true friend.

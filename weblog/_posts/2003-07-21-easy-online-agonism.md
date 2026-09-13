@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Easy Online Agonism?"
+date: 2003-07-21 21:59:33 -0700
+categories:
+  - "Culture"
+permalink: /weblog/2003/07/21/easy-online-agonism.html
+redirect_from:
+  - /blog/2003/07/21/easy-online-agonism/
+wp_id: 58
+wp_status: publish
+comment_count: 8
+---
+In watching the aftermath of the [recent discussion](http://www.invisibleadjunct.com/archives/000186.html) of humanism and anti-humanism (now there's a fine reductive binary that could use some deconstructing, no?) at Invisible Adjunct, I was startled by the apparent hostility of the fisking performed by Robert Schwartz. Certainly, others in the discussion engaged in a bit of fisking, but none to Schwartz's degree. It got me thinking about fisking as a genre particular to the net, and so I did a little googling. Imagine my delight at seeing that fellow traveler [Dennis Jerz](http://jerz.setonhill.edu/index.html) was [far, far ahead of me](http://kairosnews.org/node/view/1820), and even included a [link](http://blogs.salon.com/0001549/categories/rantscounterrants/2003/02/25.html) that I see now, long after the fact, as demonstrating quite well that [the recent discussions of "the postmodern"](http://www.wealthbondage.com/2003/07/14.html#a773) (as I think most of the participants understood) were hardly a new topic. (Now *there's* a clunker of a sentence structure.) But thinking about fisking (definitions [here](http://catb.org/~esr/jargon/html/F/fisking.html) and [here](http://www.samizdata.net/blog/glossary_archives/001961.html)) raises some interesting questions for me about the [instrumental view of technology](http://www.regent.edu/acad/schcom/rojc/mdic/neutral.html).
+
+Fisking is, by definition, agonistic. While I've [previously tried to defend agonistic discourse](http://huminf.uib.no/~jill/archives/blog_theorising/reasons_not_to_allow_comments.html), I'll also acknowledge the points made by [Cindy](http://clcasper.blogspot.com/) and [Rana](http://frogsandravens.blogspot.com/) in other discussions that All Agonism, All The Time make academia into a really crappy place to be. Agonistic discourse *has* to be balanced by irenic discourse. Why, then, does the phenomenon of fisking seem to have no irenic rhetorical counterpart?
+
+Well: let's start by asking, what does fisking *do*? As put into hostile practice by Robert Schwartz (I'm being unfair in singling him out, but I was really struck -- verb choice entirely intentional -- by his rhetorical intensity, and impressed by the grace and goodwill of his respondents) and others, fisking atomizes opposing arguments, responding to them line-by-line and piece-by-piece in a way that attempts to say, "All these tiny components of this person's perspective are wrong, and so the perspective itself must be wrong." As others have pointed out, it's also asynchronous; the person being fisked cannot respond in real time. Finally, fisking allows the fisker to ignore the context and the synthesized point of the victim: in other words, it's an attack that seems to have considerable rhetorical force, but excuses the attacker from actually engaging with what may be the victim's broader argument. To put it into the parlance of the writing classroom, if you can go point-by-point with your opponent, you don't have to write a thesis statement of your own. Fisking is *easy*.
+
+But it's not just easy rhetorically: it's a convenience of the computer age. At the above-linked [Kairosnews post](<a), Dennis' interlocutors point out -- revealingly, I think -- that this is not a Web phenomenon, but something that's been around for as long as asynchronous electronic communication (email, bulletin boards, et cetera) has been around. I would submit that what really makes fisking so prevalent is the convenience of ctrl-x, ctrl-c, and ctrl-v; the ease with which we can electronically cut, copy, and paste the words of another. As has been said of other online genres, fisking would seem to be a "native" form of electronic discourse.
+
+But wait: so why wouldn't irenic discourse be equally facilitated by such electronic conveniences? I'm not sure, and I don't really have a good answer. It may be that the motivation to do the irenic equivalent of fisking just isn't there: if you agree with all of somebody's points and their overarching argument as well, are you going to copy and paste all of them? Much easier to simply say, "Right on!" So maybe the technology-based argument I was going to make is invalid. I was going to say that fisking indicates ways in which technology -- via the ease of copying and pasting in electronic documents -- is *not* neutral, and thereby could be seen as helping to give the lie to the instrumental perspective, because fisking rewards agonistic discourse over irenic discourse, and the conveniences of the keyboard editing commands therefore carry with them ethical consequence.
+
+But now I'm not so sure: did I not think things through adequately?

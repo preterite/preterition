@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Consumption and Content"
+date: 2004-02-22 23:17:45 -0800
+categories:
+  - "Technology"
+  - "Writing"
+permalink: /weblog/2004/02/22/consumption-and-content.html
+redirect_from:
+  - /blog/2004/02/22/consumption-and-content/
+wp_id: 260
+wp_status: publish
+comment_count: 1
+---
+I never knew what RSS was, or RDF either. I'd see the acronyms in Dorothea's writing, or in the hard tech blogs I occasionally visit, and understand that they were, yes, a technology, something about gathering content, but I'd tell myself that I didn't much feel like putting yet another thing on my plate -- not only the dissertation, but also wanting to learn MySQL and PHP and Actionscript and freshen up my Unix skills and maybe some Grep as well -- and so I'd say to myself: it's a tech thing, and you're not that hardcore. But then IA mentioned it [in a post](http://www.invisibleadjunct.com/archives/000460.html), and she and [Jill](http://huminf.uib.no/~jill/) and [Dorothea](http://yarinareth.net/caveatlector/) are people to whom I've learned to listen re tech issues.
+
+And I'm [hooked](http://www.elise.com/mt/archives/000237what_does_syndicate_this_site_mean.php). Condensed content is fantastic, and I feel like I can read much, much more than I could before, when I was reading all content via my browser. As you might expect, if you know me, this raises a couple questions.
+
+First: I've been trying to limit my blogroll, over there on the right if you're not viewing this via RSS feed, to twenty links. It's a nice round number, and it's about the limit of my daily attention. It's the number of links that I can read in my daily surf and/or (with sites like freedomtomarry) think are important. But it's a little more complicated than that, too, because those twenty links are a way of demonstrating my own consumptive practices, and in doing so declaring my membership in certain overlapping communities. The folks to whom I link are folks who I read regularly, which is one reason why I like a limited blogroll: as much as I would love to link to every fine thing I find on the web, I simply can't keep up the sort of sustained attention that large blogrolls seem to require. And, also, I like the sense of community. I'll certainly never be a titan like [Jill](http://huminf.uib.no/~jill/) or [the Tutor](http://www.wealthbondage.com/), at whose weblogs I'm terribly shy about commenting, as much as I enjoy and admire their writing -- there are too many too-brilliant people there for me to be anything other than a wallflower -- and I sometimes wonder: how do they deal with the demands of such a large readership? It seems to me that past a certain point, the dynamics of the audience and of the community become much more apparent than the dynamics and motivations of the author around whom said community forms.
+
+In the six years that I've had the good fortune to teach first-year writing, I've sometimes seen the cult of genius in the classroom. There's a good writer in the classroom -- often white, often privileged, but as often female as male -- who everybody knows is just badass. And as a teacher, you love it. It's a pleasure to talk to her, to read her essays. People defer to her in class discussions. And it's perilously easy to buy into the feedback loop, to give your attention to her, to help the good one get better, because those other students are a hell of a lot of work, and some of them might not even earn better than a 'C'. Brilliance is seductive.
+
+The problem with brilliance, for me, is that it's also *easy*. The brilliant students -- for them, it's never been hard. Ever since the Army's basic training, ever since I bombed one of the basic skill tests and had my drill sergeant make sure I passed it the second time by assigning me to tutor another soldier on the same task, I've liked the persistent better than the brilliant.
+
+Which isn't to say that I don't admire the brilliant. [Oblivio](http://oblivio.com/) is so good to be beyond description, as is Paul Ford's [FTrain](http://ftrain.com/), to the point where I was practically speechless when I got an e-mail from him about attributing a copyright statement for a surrealism course I taught. I smiled the whole day: it's a fine thing to hear from someone whose work you genuinely and consistently admire. Which, of course, begs Jill's question: what are the workings of link economies? Are we talking exchange here, or a gift economy? Can we get a more complete picture from Marx or from [Mankiw](http://www.whitehouse.gov/cea/mankiwbio.html)? And how might we take the activity of reading weblogs -- whether we take that reading as consumptive practice or as the production of knowledge -- as economic activity, and how might we understand weblog clusters as economic clusters?
+
+One answer: RSS seems to be a technology for communities to which one already belongs. In that sense, perhaps it's cliquish -- exclusionary, even? Because when you subscribe to a RSS feed, you're admitting you don't need all the pretty stuff, all those fine graphics and careful typography: you're saying, essentially, Just gimme the text. I love RSS as a digest, but I also love [Dorothea's](http://www.yarinareth.net/caveatlector/) gorgeous sidebar and [Clancy's](http://www.culturecat.net/) ever-changing pictures, to the point whether I wonder this is a synchronic versus diachronic problem, or even -- worse yet -- the Cicero versus Ramus debate: say what you mean without ornament so that we might see the bare truth of your words, or understand that style and ornament and context carry their own shades of meaning, as well.
+
+Maybe there's a romantic analogy, which I hope folks might problematize. You're going out on a first date, so you try to look as good as you can: you put on that fine Italian black wool blazer, with the herringbone-weave cotton shirt, the silk accessories; you put on a scent. Consider this as the opposition to waking up to someone's presence in the second year of a relationship, a Sunday morning when they're reading the paper across the table from you and the sun happens to catch their face that way, unguarded, and they're more gorgeous to you than they've ever been.
+
+Do we do that in the comparison of web pages to RSS? I doubt it. But I think it's worth thinking about.

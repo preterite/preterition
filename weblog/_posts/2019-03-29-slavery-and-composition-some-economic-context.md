@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Slavery and Composition: Some Economic Context"
+date: 2019-03-29 23:17:16 -0700
+last_modified_at: 2019-03-29 23:21:11 -0700
+categories:
+  - "Economics"
+  - "Education"
+  - "History"
+  - "Rhetoric"
+permalink: /weblog/2019/03/29/slavery-and-composition-some-economic-context.html
+redirect_from:
+  - /blog/2019/03/29/slavery-and-composition-some-economic-context/
+wp_id: 1832
+wp_status: publish
+comment_count: 0
+---
+My current book project, still very much in the early stages, examines the interrelationships among the American 19th-century slave economy, the technological and economic advances of the Industrial Revolution and the corresponding expansion of literacy, and the growth of American higher education and the emergence of composition as a discipline. That means for right now I'm pulling together threads from a whole bunch of different sources and disciplines and noting correspondences while trying to resist the urge to assign direct causality—but even so, there are multiple intersecting narratives, and they feel like they have a shape to them that's been emerging from the way I've looked at composition and economics in other contexts.
+
+So here's a very brief and partial early version of some aspects of those intersecting narratives, arguing that the origins of composition studies flows directly from the value of the labor appropriated in the early American slave economy.
+
+I've summarized before how land, labor, and capital, the classical economic factors of production, are the elements the capitalist applies to raw materials in the production of commodities. Marx critiqued classical economics, detailing how capital reproduces itself through the commodification of labor and the appropriation of its value. In Marx's scheme, capital controls labor and controls how the surplus value of the labor inputs of the production and distribution cycle get reinvested into its own ever-expanding regime.
+
+The United Sates for Marx represented the frontier for the ever-expanding circulation of capital. Karl Polanyi's extension of Marx's arguments asserts that land and labor and money were in earlier times not regarded as commodities, but embedded in socially networked relationships. They were the factors of production rather than the raw materials or commodity outputs, and became as such because capital expands not only its geographic domain but also its commodifying practices to domains previously thought of as resisting commodification, including that of the human body.
+
+In fact, commodified forced labor as capital  operating on the deterritorialized American frontier was the realization of what Polanyi uses Marx's concept of alienation to name as fictitious commodities. And commodities can be securitized, as Edward Baptist (*The Half Has Never Been Told*) details in his account of slave mortgages: "a bank could now sell an investor a completely commodified slave. . ., a bond that was the right to a one-slave-sized slice of a pie made from the income of thousands of slaves. . . in the early 1800s, government credit based on slavery provided the foundation for the westward expansion and. . . broadened the slave trade." The capitalist reinvested in slave capital and created slavery's "whipping-machine" (Baptist) to increase the productivity of that capital, and used the tropes of white supremacy to justify the whipping-machine's torture in the name of economic productivity.
+
+Race became culture, and racialized culture became Ham's mark of exclusion as it emerged from the racist historical justifications for slavery. The later incursion of previously excluded black students into white enclaves of higher education became the perceived spur for current white cultural resentment fueled partly by economic anxiety around the modern shift to post-industrial economies of networked and affective capital, wherein the labor of affect and intellect, literacy practices, the comparative value of racialized cultural practices, and the networking of sociality are all commodified, following the 19th-century path of the commodification and securitization of human bodies and financial debt.
+
+Such commodification occurs in the circumstance observed by Marx by which the reproduction of productive capital requires the reproduction of the means of production, and so “the capitalist mode of production is conditioned by modes of production lying outside its own stage of development,” but its “tendency” is “to transform all possible production into commodity production. . . by drawing [all] production into its circulation process" (David Harvey, *A Companion to Marx's Capital Volume 1*). In the late 1820s, securitization of slave mortgages helped pump credit onto slavery’s frontier, where it was used to purchase large numbers of enslaved people. These securities based on bundled slave mortgages in the 1820s and 1830s were bundled into collateralized debt obligations (CDOs) to reinvest in further slave purchases or diversified means of production.
+
+At the beginning of Andrew Jackson's presidency, "almost 50,000 native people still lived on and held title to 100 million acres of land in Georgia, Alabama, Mississippi, and Florida. . . By 1836, Jackson’s administrations forced all the surviving Indian tribes across the Mississippi" and federalized their land to augment the slave economy (Baptist). "More than $600 million, or almost half of the economic activity in the United States in 1836, derived. . . from cotton produced by slaves," to the point where "cotton was the most important raw material of the industrial revolution that created our modern world economy" (Baptist).
+
+Coincident with this economic expansion was the reinvestment of surplus value into other sectors, including higher education, which had been connected to the slave trade from the outset. Enslaved black people were brought into the Massachussetts Bay Colony by governor John Winthrop starting in 1638, and "the 'Moor' who served Harvard's earliest students. . . [was] the first enslaved black person documented in the colony" (Craig Steven Wilder, *Ebony and Ivy* 29). In Connecticut, the slaveholder Reverend George Berkeley deeded his property to Yale, and "the rents from this small slave plantation funded Yale's first scholarship. . . and its first graduate-level courses" (Wilder 95). Reverend Dr. John Witherspoon, a signer of the Declaration of Independence, had established the early American colleges' "intellectual freedom upon human bondage, [and] it was the security that human slavery provided free men, the wealth that slave traders and slaveholders could generate, and the social networks of plantation economies that . . . carried the American academy into modernity" (Wilder 111), so that "human slavery was the precondition for the rise of higher education in America” (Wilder 114). In those institutions of higher education, "*As a body of information,* written rhetoric was brought into being between 1800 and 1910" (Robert Connors, *Composition-Rhetoric* 6).
+
+So there's the shape of something there. There's a lot more I'm putting together from a variety of perspectives, especially on the 19th-century economics of slavery, but the history of higher education readings have been illuminating as well.

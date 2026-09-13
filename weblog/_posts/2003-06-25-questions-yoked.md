@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Questions Yoked"
+date: 2003-06-25 22:47:43 -0700
+categories:
+  - "Class"
+  - "Dissertation"
+permalink: /weblog/2003/06/25/questions-yoked.html
+redirect_from:
+  - /blog/2003/06/25/questions-yoked/
+wp_id: 31
+wp_status: publish
+comment_count: 1
+---
+Perhaps somebody's watching referrer logs: I add a link to [my new favorite site](http://www.wealthbondage.com/), and scant hours later [I'm quoted](http://www.wealthbondage.com/2003/06/25.html#a683) as an example of my [favorite](http://humanities.byu.edu/rhetoric/Figures/Z/zeugma.htm) [rhetorical](http://www.uky.edu/ArtsSciences/Classics/rhetoric.html#45) [vice](http://rhetoric.byu.edu/Figures/Groupings/Vices.htm). A vice (or fault or abuse) that I've always thought would make a fine name for a cat, I might add. If my grin gets any larger, my ears are going to split.
+
+In other news, I met with Charlie today, who asked me some difficult questions about this project, which is still very, very far from the shaded glades and sunny meadows of Happy Prospectus Land, taking its circuitous path through the Sinkholes of Spleen that guard the approach to the dusty Plains of Overdue Library Books.
+
+The questions I asked at the end of yesterday's post, Charlie pointed out, would each take roughly 2.375 books to answer. So maybe that's a bad direction. They help me *think*, though, and Charlie suggested that one way to test those questions and perhaps get a start on figuring out where I want to end up (beyond, say, a busted axle at Research Question Gulch) would be to take some classroom study from [CCC](http://www.ncte.org/ccc/ex.html) that actually talks about how writing circulates in the classroom (What are the assignments? How do students do them? What are the learning goals? What gets turned in? What's the evaluation process?) and try to use it to answer those questions.
+
+Charlie also asked me about my "vocational education" and "liberal education" terms, who they belong to, and what I want them to do. Will students claim these terms? I'm not sure. I think schools like Evergreen, Reed, and Hampshire, schools that ask students to explicitly theorize their own learning processes, exist at a different location in the class hierarchy from large state universities, and that may influence how the students who attend those schools think about their educations. Furthermore, as I've pointed out before, the university education itself can serve as a class threshold. I've also asked before what factors determine students' class, and when; perhaps another way of phrasing the question would be, how do students see their own class when they're in class? Class is relational, I think, and partially dependent on the context you're in: in Bravo Company, I was Sergeant Ed but nicknamed "Professor," which is a different class identity than the one assigned to me by the other members in my first seminar as a graduate student fresh out of the Army.
+
+Not only are educational institutions classed differently, but composition as a discipline exists within a class structure: Charlie thinks that Yale probably doesn't have a general first-year composition requirement, and observes that most of the people at CCCC seem to come from what [John Alberti](http://www.ncte.org/pdfs/subscribers-only/ce/0635-may01/CE0635Returning.pdf) calls "second-tier" schools. And of course class lines themselves are not static. By my occupational model, as the nature of work changes, so does class. Consider the rise of the service economy, who gained ground, and who lost ground. The same holds true for the values and culture model. I might suggest, though, that when class is understood in the context of relations of production, the positions of the class lines seem to remain relatively static, only blurring as the relations of production themselves blur. And for those who define class according to authenticity claims and lived experience, class itself can move over the period of a life, but I'm not sure whether the class lines are fixed by the temporality of experience ("I was one class before and I'm a different class now; I changed, the class lines didn't") or made mobile by the vary same thing ("Oh, things are so much more relaxed now after the war; the Joneses actually talk to us").
+
+One form of class distinction that I realize I haven't talked about at all is the idea of individualism, which students -- well, hell, most of us -- certainly believe in very strongly. We are all aware of what makes us unique, and contemporary culture celebrates the conceit of uniqueness, the brave romantic iconoclast. But classes are defined in relation to one another, and so the individual (or the class of individuals known as the few) are opposed to the many, the undifferentiated. Furthermore, it's always easier to make class distinctions within the classes closest to your own, within the culture you know best. Professionals see many classes of professionals, but few classes of the working poor. This, I think, may be closer to how my students might define class: the few and the many, the individuals and the masses. (Thank you, [Matthew Arnold](http://www.library.utoronto.ca/utel/nonfiction_u/arnoldm_ca/ca_titlepage.html).) Webloggers know that there are right-wing blogs and left-wing blogs, warblogs and personal blogs, research blogs and work blogs and satire blogs and corporate blogs and photo blogs--and then there are people who don't blog.
+
+So, again, it makes me ask: what class are you online?

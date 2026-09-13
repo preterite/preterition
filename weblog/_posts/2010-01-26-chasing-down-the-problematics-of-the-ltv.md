@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Chasing Down the Problematics of the LTV"
+date: 2010-01-26 00:30:51 -0800
+categories:
+  - "Class"
+  - "Composition"
+  - "Economics"
+permalink: /weblog/2010/01/26/chasing-down-the-problematics-of-the-ltv.html
+redirect_from:
+  - /blog/2010/01/26/chasing-down-the-problematics-of-the-ltv/
+wp_id: 1082
+wp_status: publish
+comment_count: 0
+---
+I keep finding myself running into the problem of the labor theory of value (LTV) when trying to think about composition as an economic act, to the point where I'm wondering if its being a problem should serve as an indicator of the possible richness of the questions it raises. So on the one hand, I'm chasing down recent work in economics on that angle, from comparisons between Sraffa on commodities versus Marx on labor-times to thoughts from the Austrians on the economics of time (with reservations about both); but on the other hand, I'm seeing the aggregation problem -- how do we disentangle measures of writing as economic activity from the pitfalls of the labor theory of value; how does the value of writing accumulate, in Sraffa's sense -- as the direction to follow, enthusiastically. If we understand pieces of writing as moments in the cyclic process of production-ownership-use-reproduction that embody addings-up of the labor of their authors and the authors upon whose work they draw as well as of the other contributing factors of production (including, e.g., computers; machines that stand themselves as aggregations of capital, and as substitutions of capital-intensive processes for labor-intensive processes), then thinking of the value of those pieces of writing becomes easier to do even algebraically, even though the algebra of the labor theory of value itself doesn't quite work. There's a way that the aggregation problem can make the economics of time as applied to writing actually work, I think, with implications from the way we value peer-reviewed articles to the counting behaviors associated with the Stanford study of writing to credit hours to time-use studies. (This is also a return for me to the Bourdieu chapter in my dissertation, where I looked at the limitations of Bourdieu's X and Y axes of cultural and economic capital in tracing the relative values of cultural objects as being partly overcome by adding a Z axis for time and thereby tracing a trajectory of valuation as a three-dimensional shape, further complicated by producers' and consumers' disparate positions on those X and Y axes making those three-dimensional shapes slightly different depending on which angle you look from: thick-skinned balloon animals of valuation, maybe.) But looking at writing's accumulated value through the LTV could help writing studies to respond to the "service course" critique (and likely find a lot of use for the Downs-Wardle approach), and also makes enormous amounts of sense for the citation-heavy, association-heavy new media-based compositions that seem more appropriate or at least more common in the context of the information economy: such compositions wear their factors of production on their collective sleeve and move away from the economic obfuscation of the romantic-author model (which, of course and interestingly in this context, was itself partly a response to the upheavals of the previous technological-economic revolution).

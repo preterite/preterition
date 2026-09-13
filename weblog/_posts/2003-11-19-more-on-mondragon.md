@@ -1,0 +1,27 @@
+---
+layout: post
+title: "More on Mondragón"
+date: 2003-11-19 21:02:40 -0800
+categories:
+  - "Class"
+  - "Economics"
+permalink: /weblog/2003/11/19/more-on-mondragon.html
+redirect_from:
+  - /blog/2003/11/19/more-on-mondragon/
+wp_id: 184
+wp_status: publish
+comment_count: 0
+---
+My mind's racing. I [wrote on Monday](/weblog/2003/11/17/mondragon.html) about the Mondragón cooperative experiment; we talked about Mondragón today in the Rethinking Economy seminar I'm taking, and the insights came in a rush at the end. Part of the reason Mondragón is so remarkable, as I noted Monday, is its sheer scale: it demonstrates that cooperatives need not be small and timorously idealistic projects, with their practices always limited in scale, and often limited to labor-intensive rather than capital intensive processes. It demonstrates that cooperatives can *compete*.
+
+The doubter in me says: so what? It's not like that affects *you* or your practices. But it does.
+
+According to those in the field of [Computers and Composition](http://www.bgsu.edu/cconline/home.htm) who understand computers as bringing efficiency and heightened productivity to the practice of writing instruction, [the wired writing classroom](/weblog/2003/10/26/prospectus-exigency.html) moves textual production from being a labor-intensive process (students scribble furiously, pushing their pens across the pages of their notebooks, stopping to wring the writer's cramp from their hands) to being a capital-intensive process (the expensive computer facilitates structural revision by helping students to cut and paste paragraphs at the press of a key). Now, many of the narratives surrounding Mondragón theorize its simultaneously equitable and efficient improvements to productivity and profits as resulting from its inherent structure; furthermore, those narratives call attention to how Mondragón has moved cooperative practices onto a much larger scale and replaced many labor-intensive processes with capital-intensive processes.
+
+Let's unpack this stuff a little further. As I understand it, there are three basic types of cooperative. The places where you get cheap groceries are *consumer* cooperatives: profits return to those who shop there. When a bunch of dairy farmers get together to negotiate better prices selling their milk, it's a *producer* cooperative; the profits are made in the distribution. But there are also *worker* cooperatives, sometimes called collectives, where the group takes charge of appropriating and distributing the value of its own surplus labor. While all three exist in Mondragón, Mondragón seems to be most famous for the *worker* cooperative angle. (Check out the linkage at my [last post](/weblog/2003/11/17/mondragon.html) for some ideas of how this works in practice.)
+
+What I noticed in the stuff about Mondragón that we've been looking at in the seminar, though, is that almost all the economic analysis is done in terms of manufacturing practices. Which makes me ask, especially after [Curtiss's comment](/weblog/2003/11/10/what-im-working-on.html) regarding cooperation among knowledge workers: what happens to cultural and knowledge workers in a worker cooperative? A gallery cooperative, for example, would seem to fit more into the model of a producer cooperative; they're all about the distribution. But the *production* -- that's where it gets weird. I have a hard time imagining a collective, a worker's cooperative, appropriating and distributing the labor of sculptors and poets. I can even see ways in which groups of open-source software producers might fit the model of a worker cooperative far better than groups of poets or sculptors: as far as I know, the valuation of someone who can write good code seems to inhere in the product of that person's labor much more than it does with the person herself. You don't hear about superstar or bestselling Perl scriptors (scripters?) in the same way you hear about [Kenneth](http://www.nytimes.com/books/00/06/04/specials/koch.html) [Koch](/weblog/2003/10/24/burnt-offering.html) or [Claes Oldenburg](http://www.guggenheimcollection.org/site/artist_bio_121.html).
+
+And I think that this is due, in large part, to the same notions about romantic individualism that inform many contemporary representations of writers. (It's also the reason, may Peter forgive me, for my mentioning Peter Elbow and Ayn Rand in the same breath, though I'll again point out that this is more a project of those who have written *about* Peter than of things he's said himself.) Notions of romantic individualism construct our ideas about art and writing, but they come from the same source, I think, as the neoclassical notions of individual tastes and values determining everything that goes on in an economy. Both can contribute to a conservative (or at least antiprogressive) political stance (note that I say *can*), just as capital-intensive processes themselves -- because they rely on an initial investment and a subsequent outlook that says, "We've got to *use* this investment, so let's figure out how to do it."
+
+Mondragón, though, would seem to demonstrate that alternatives to political conservatism can *work*. The question then remains: what would be the place of knowledge and culture workers in a cooperative project? How do we think of authors in a cooperative classroom? This is of course connected to many other questions; questions of commodification and value and too many other things to begin to address here. But it's a start.

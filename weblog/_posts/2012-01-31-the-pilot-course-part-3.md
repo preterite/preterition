@@ -1,0 +1,30 @@
+---
+layout: post
+title: "The Pilot Course, Part 3"
+date: 2012-01-31 23:18:41 -0800
+last_modified_at: 2012-01-31 23:20:59 -0800
+categories:
+  - "Composition"
+permalink: /weblog/2012/01/31/the-pilot-course-part-3.html
+redirect_from:
+  - /blog/2012/01/31/the-pilot-course-part-3/
+wp_id: 1330
+wp_status: publish
+comment_count: 4
+---
+I'm going to continue here my response to [Clancy's](http://culturecat.net/) recent comment that I started in [my last post](/weblog/more-about-the-pilot-course/). The new semester is underway, and with it not quite as much freedom as I had last semester -- I'm teaching EN302, our Advanced Composition course for cows (juniors), rather than EN101, our Composition course for plebes (first-year students), and the course leadership is different and the course structure is more regimented. Still, I'm engaging in most of the same writing-intensive practices (I'm requiring students to write in [750words.com](http://750words.com) every lesson day, where I'm currently composing this blog entry, and requiring them to write 30,000 words to earn a C) and some of the same technology-intensive practices (we're using the [Eli peer review application](http://elireview.com) again this semester, for which I'm very happy; as I've said before, if you're a writing teacher and you haven't yet tried it, you really should: it's that good) that I piloted last semester. Here's the basic point I'm trying to make: my approach both last semester and this semester brought together my process-based pedagogy, my interests in digital technologies, and my scholarship on the political economy of writing instruction in a remarkably integrated way. It all fit together, and I've got the numbers that show that it worked, and I'm very happy about that.
+
+One way into talking about why I think it worked is for me to respond to [Bradley's](http://bleckblog.org/) [question](/weblog/more-about-the-pilot-course/#comment-3056) about how I "addressed whatever writing of essays they did outside of the in-class writing." To put it in crude economic terms, I valued both the labor and the product: out of a 1000-point syllabus, 450 points went to the the final products of the four homework essay assignments, and 160 points went to their 750words.com daily writing assignments. I gave them a minimum of 20 minutes in class every lesson to work on their daily writing assignments, for which I often gave them prompts designed to help them build their homework essays, and I encouraged them to recycle their daily writing into their homework essays. I'm still somewhat surprised at what a success the simple act of giving students at least 20 minutes in class every day to write was, but it really shouldn't be surprising: butts in seats is what gets writing done, much more so than talking about writing. My thinking here is that the immaterial labor of producing and organizing information is much more responsive to the labor theory of value, especially given that immaterial capital -- the product of immaterial labor -- is an experience good.
+
+That takes me to the "habits of mind" that [Clancy asked about](/weblog/the-writing-and-computer-intensive-pilot-course/#comment-3054). Clancy's referring to the *[Framework for Success in Postsecondary Writing](http://wpacouncil.org/framework)* document jointly developed and produced by the Council of Writing Program Administrators, the National Writing Project, and the National Council of Teachers of English. That document (which merits attention if you're not already familiar with it and reading this blog) outlines eight "habits of mind essential for success in college writing":
+
+> ***Curiosity** -- the desire to know more about the world.* (In most conventional composition classes, class discussion is what tends to drive and foster curiosity. Because we did more writing than talking in class, and because I didn't do a very good job of promoting the use of the class weblog for out-of-class discussion, I think this habit may have suffered somewhat. The fact that plebes were coming to EN101 straight out of "Beast Barracks," West Point's version of the Army's basic training, where curiosity and a spirit of inquiry were the absolute last things to be fostered, didn't help matters.)
+>
+> ***Openness** -- the willingness to consider new ways of being and thinking in the world.* (Again, more discussion would have likely promoted this more, but I also think that the course readings we select should promote openness. To me, that's one of the few shortcomings of Downs and Wardle's "writing about writing" approach: it focuses on only one aspect of the world. On the other hand, the way we used Eli for carefully crafted anonymous peer review work did some good work promoting openness.)
+>
+> ***Engagement** -- a sense of investment and involvement in learning.* (I think this is one of the hardest things for any curriculum to promote. West Point's mission, in part, is to "educate, train, and inspire" future Army officers, and that requirement to inspire is fundamentally rhetorical, and what creates engagement. It means being involved in cadets' lives and activities, as well as persuading them of the importance of the connections between their classroom pursuits and what happens beyond the classroom.)
+>
+> ***Creativity** -- the ability to use novel approaches for generating, investigating, and representing ideas.* (Recently, I've tried to promote this habit more and more by requiring cadets to compose and deliver multi-modal, multi-media presentations involving graphics, music, video, speech, and text, and directing them away from the familiar, comfortable, and terrible Army PowerPoint standard. Initially, they're lousy risk-takers, but once they figure out that being risk-averse is actually a hindrance and a danger for future military officers, and once they realize that I'm requiring to try out new methods, they're pretty amazing.)
+
+
+That's the first four, and I think that's enough for tonight. I'll talk tomorrow night about how I've tried to promote **persistence**, **responsibility**, **flexibility**, and **metacognition**.
