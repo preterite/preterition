@@ -1280,6 +1280,7 @@ aside {
 .music-track .music-track-song,
 .music-track .music-track-artist {
   display: block;
+  text-wrap: balance; /* a wrapped title or artist leaves no word alone */
 }
 
 .music-link {
