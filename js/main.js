@@ -72,32 +72,49 @@ function initTaglineRotation() {
 function initMobileNav() {
   const hamburger = document.querySelector('.hamburger');
   const navList = document.querySelector('.nav-list');
+  const header = document.querySelector('header');
 
   if (!hamburger || !navList) return;
 
+  // One writer for the drawer's state, so the class and the announcement
+  // cannot disagree: the class alone was toggled, and aria-expanded stayed
+  // false through every open.
+  //
+  // The top padding is measured rather than declared. It was a fixed 80px,
+  // sized for a header that was fixed and one line tall; the header is
+  // static now and its height follows its content, so the first items sat
+  // behind it. The height is a function of the width the reader is at.
+  const setDrawer = (open) => {
+    navList.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (open && header) {
+      navList.style.paddingTop = header.getBoundingClientRect().height + 'px';
+    }
+  };
+
   hamburger.addEventListener('click', () => {
-    navList.classList.toggle('open');
+    setDrawer(!navList.classList.contains('open'));
   });
 
   // Close menu when a link is clicked. The nav is flat,
   // so every nav item is a leaf and none of them opens a submenu.
   document.querySelectorAll('.nav-item a').forEach(link => {
     link.addEventListener('click', () => {
-      navList.classList.remove('open');
+      setDrawer(false);
     });
   });
 
   // Close menu when clicking outside
   document.addEventListener('click', (e) => {
     if (!hamburger.contains(e.target) && !navList.contains(e.target)) {
-      navList.classList.remove('open');
+      setDrawer(false);
     }
   });
 
   // Close menu on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
-      navList.classList.remove('open');
+      setDrawer(false);
     }
   });
 }
