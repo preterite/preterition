@@ -42,7 +42,7 @@ The third precondition is address. An account is always given to someone, and th
 
 The embodied agnostic subject, then, must at a minimum carry three capabilities. First, hold and acknowledge the body's particularity without converting that particularity into a claim about the body's contents that the body itself could not make. Second, hold variance as the subject's own temporality, so that a report at one moment cannot stand in for the subject at another. Third, as Butler suggests (2001, 37), the subject must refuse to let responsibility depend on transparency.
 
-Some further implications of **the embodied agnostic subject** will follow in a subsequent post. I engage some of those implications in a blank verse dialogue [elsewhere on this site](https://preterite.net/projects.html)).
+*Further implications of **the embodied agnostic subject** will follow in a subsequent post. I engage some of those implications in a blank verse dialogue [elsewhere on this site](https://preterite.net/projects.html).*
 
 ### References
 
