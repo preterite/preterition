@@ -43,8 +43,25 @@
   }
 
   h2,
+  .post-title,
   body.protected-inquiries h1 {
     font-size: 1.5rem;
+  }
+
+  /* The entry's section headings keep a rung below its title at every
+     width, not at desktop alone. .post-title joins the group above rather
+     than taking its own line, so the title cannot outrank the breakpoint
+     from style.css's one-class declaration. */
+  .post-body h2 {
+    font-size: 1.25rem;
+  }
+
+  .post-body h3 {
+    font-size: 1.125rem;
+  }
+
+  .post-body h4 {
+    font-size: 1.0625rem;
   }
 
   .main-content {
@@ -204,6 +221,22 @@
     font-size: 1.5rem;
   }
 
+  /* Restated here rather than inherited from the 899 block: that block's
+     .post-body rules tie this selector on specificity and lose to it on
+     source order, this block being the later one. Without these the
+     entry's sections would snap back to the title's size below 768. */
+  .post-body h2 {
+    font-size: 1.25rem;
+  }
+
+  .post-body h3 {
+    font-size: 1.125rem;
+  }
+
+  .post-body h4 {
+    font-size: 1.0625rem;
+  }
+
   /* SIDEBAR */
   aside {
     width: 100%;
@@ -353,6 +386,28 @@
   h2,
   body.protected-inquiries h1 {
     font-size: 1.25rem;
+  }
+
+  /* The 767 block's `.main-content h2` outranks the plain h2 above, so
+     without this line the title held 1.5rem at the narrowest width and the
+     reduction just declared never reached the main column at all. Repaired
+     here rather than by weakening the 767 rule, which other pages rely on.
+     The .post-body rules follow it so they win the tie on source order. */
+  .main-content h2,
+  body.protected-inquiries .main-content h1 {
+    font-size: 1.25rem;
+  }
+
+  .post-body h2 {
+    font-size: 1.125rem;
+  }
+
+  .post-body h3 {
+    font-size: 1.0625rem;
+  }
+
+  .post-body h4 {
+    font-size: 1rem;
   }
 
   h3 {
