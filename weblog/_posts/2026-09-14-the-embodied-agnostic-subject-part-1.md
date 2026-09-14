@@ -4,7 +4,7 @@ title: "The Embodied Agnostic Subject, Part 1"
 date: 2026-09-14 14:02:57 -0700
 categories: [Politics, Writing]
 ---
-## 1\. Exigency: a disagreeable subject
+### 1\. Exigency: a disagreeable subject
 
 A language model produces a sentence. Ask the language model what it meant by the sentence and it will tell you. Ask again and it will tell you something else. Neither answer is a report, because there is nothing on which to report: no moment of meaning, no interior from which a sentence may emerge, nothing hidden behind the text to be revealed. Rhetoricians have responded to this absence almost entirely with questions about provenance: who or what made this, and how does that making count?
 
@@ -24,7 +24,7 @@ Once we see the floor, the pattern in the first case becomes nameable as *presum
 
 In today's arguments around the LLM production of language, the machine is the occasion, not the reason. The reason is that people operate over time; nothing that operates over time can be read at a moment without being falsified in the reading. The writing that follows seeks specification over application: I set out here the minimum subject upon which a responsible account of writing and its value can rest. Every account of meaning that reads a text as a window into a writer builds on a substrate that resists inspection. The accounts that do so most confidently conclude that uninspectable writing carries no value.
 
-## 2\. Necessary: what the subject must do
+### 2\. Necessary: what the subject must do
 
 Before this theory of a subject can work, there are three conditions that must hold true of that subject: it has a body, it was formed in time it cannot recover, and it exists in a structure of address.
 
@@ -44,7 +44,7 @@ The embodied agnostic subject, then, must at a minimum carry three capabilities.
 
 Some further implications of **the embodied agnostic subject** follow.
 
-## References
+### References
 
 Butler, Judith. 2001. "Giving an Account of Oneself." *Diacritics* 31 (4): 22--40.
 

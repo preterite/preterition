@@ -19,11 +19,11 @@ We've revised our graduate seminar in the history of rhetoric away from its focu
 
 <!--more-->
 
-## English 509: Rhetoric and Empire (Fall 2024)
+### English 509: Rhetoric and Empire (Fall 2024)
 
 The history of rhetoric, when engaged carefully, is remarkable. It’s got power, lust, avarice, slander, philosophy, adultery, humor, treason, ethics, invective, murder, scandal, and redemption. It’s also easy to represent poorly, often as a loose collection of obsolete ideas. My goal for this seminar is to investigate, with you, the history of global rhetoric in its material practice: as something that humans like us performed, practiced, theorized, researched, lived, and contested. We will use the concept of **empire** to investigate the problematic notion of a Western-oriented rhetorical tradition and canon and propose a more diverse array of rhetorical practices. While rhetorics ostensibly rely on persuasion, they are often sustained or advanced by unequal relations of imperial power and domination. This seminar proposes that those unequal relations of power merit investigation: no rhetorical tradition exists outside of politics or materiality, and persuasion often blurs into coercion. For those reasons, we will investigate readings from global rhetorical traditions in their historical and material contexts, often from the liminal spaces between coercion and persuasion, offering participants an introductory familiarity with those texts and asking participants to complicate problematic traditional notions of rhetorical canonicity.
 
-## Required Texts
+### Required Texts
 
 The following books are on order at the [WSU Bookie](https://wsubookie.bncollege.com/course-material/course-finder):
 
@@ -187,7 +187,7 @@ Additionally, the following excerpts and other supplemental readings will be ava
 >
 > ***Wilson, Shirley Logan**. Excerpts from *[With Pen and Voice: A Critical Anthology of Nineteenth-century African-American Women](https://www.siupress.com/9780809318759/with-pen-and-voice/).* (Week 12)*
 
-## Assignments
+### Assignments
 
 **Participation, professionalism, peer support** (ongoing): **80** points
 
@@ -207,7 +207,7 @@ Additionally, the following excerpts and other supplemental readings will be ava
 
 **Total** possible: **1000** points
 
-## Schedule
+### Schedule
 
 Stuff we might discuss, views we might try out, questions we might engage. The sequence is intended as roughly chronological, but with big swerves in approach, method, or perspective from week to week.
 
@@ -256,7 +256,7 @@ Stuff we might discuss, views we might try out, questions we might engage. The s
 
 **Exam week: **Class celebration. *<span style="text-decoration: underline;">Final projects due</span>*.
 
-## Postscript: Historiography as Rhetoric
+### Postscript: Historiography as Rhetoric
 
 > Plunderers of the world, after having laid everything waste, they run out of land and probe even the sea: if their enemy has wealth, they have greed; if the enemy be poor, they are ambitious; neither East nor West has sated them; alone of mankind they covet poverty with the same passion as wealth. Robbery, butchery, rape they misname empire: they make a wasteland and call it peace.
 >

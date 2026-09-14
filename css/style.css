@@ -1543,31 +1543,6 @@ footer {
   margin-bottom: 4px;
 }
 
-/* The entry title and the entry's own section headings are both h2 in the
-   markup -- the title by the site's heading rank, the sections by the
-   author's `##` -- so at the generic h2 size they competed for the same
-   emphasis. The sections step down one rung and the title takes its own
-   declaration, which holds the generic value today but lets the two move
-   apart later. Scoped to .post-body and .post-title, which post-card.html
-   emits once each, so nothing outside an entry or an index excerpt is
-   reached: the comments card, the sidebar widgets and the archive cards
-   keep their own rules. */
-.post-title {
-  font-size: 1.875rem;
-}
-
-.post-body h2 {
-  font-size: 1.5rem;
-}
-
-.post-body h3 {
-  font-size: 1.25rem;
-}
-
-.post-body h4 {
-  font-size: 1.125rem;
-}
-
 /* The meta lines: the dateline with its month and category links, and on
    an entry page the byline beneath the title. Interface voice, muted,
    sized as the site's small text; the links keep the muted colour and

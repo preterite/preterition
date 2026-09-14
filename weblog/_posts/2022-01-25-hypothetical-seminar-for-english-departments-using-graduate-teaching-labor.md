@@ -20,7 +20,7 @@ I put this together more as a provocation and thinking-tool than as an actual wo
 
 The politics herein may prompt eye-rolling.If that's the case, I can only offer a *mea culpa* and suggest putting it under a Straussian reading, if you're into that sort of thing<s>😉</s>.
 
-#### Shorter readings:
+### Shorter readings:
 
 - Bourdieu, Pierre. ["The Forms of Capital."](https://home.iitk.ac.in/~amman/soc748/bourdieu_forms_of_capital.pdf)
 - Du Bois, W. E. B. ["The Talented Tenth."](https://teachingamericanhistory.org/document/the-talented-tenth/)
@@ -33,7 +33,7 @@ The politics herein may prompt eye-rolling.If that's the case, I can only offer 
 - Spivak, Gayatri. ["Can the Subaltern Speak?"](http://abahlali.org/files/Can_the_subaltern_speak.pdf)
 - Thompson, E. P. ["Time, Work-Discipline, and Industrial Capitalism."](https://www.jstor.org/stable/649749)
 
-#### Longer readings:
+### Longer readings:
 
 - Gibson-Graham, J. K. *[A Postcapitalist Politics](https://www.upress.umn.edu/book-division/books/a-postcapitalist-politics)*.
 - Hesford, Wendy, Adela C. Lincona, and Christa Teston, eds. *[Precarious Rhetorics](https://ohiostatepress.org/books/titles/9780814213766.html)*.
@@ -46,7 +46,7 @@ The politics herein may prompt eye-rolling.If that's the case, I can only offer 
 - Wilder, Craig Steven. *[Ebony and Ivy: Race, Slavery, and the Troubled History of America's Universities](https://www.bloomsbury.com/us/ebony-and-ivy-9781608193837/)*.
 - Williams, Raymond. *[Marxism and Literature](https://archive.org/details/marxismliteratur00will_0/)*.
 
-#### Midterm project:
+### Midterm project:
 
 As a group, the seminar members will submit a collaborative project (in whatever genre and media are rhetorically appropriate) that connects (1) course readings from the first half of the semester to (2) your own individual and collective research in order to (3) meaningfully integrate and synthesize responses to some of the following questions.
 
@@ -59,7 +59,7 @@ As a group, the seminar members will submit a collaborative project (in whatever
 
 The collectively-authored project should have a clear audience, purpose, and organization. It must cite its sources in an appropriate academic format. It can employ whatever asynchronous digital modalities or media or forms the group considers appropriate. You will also turn in an individual methodological reflection where you quantify the time you spent on the project using some sufficiently precise technology. Doing so in the context of methodological reflection may inform your perspective on how much future work would be required for your proposal to be implemented.
 
-#### Final project:
+### Final project:
 
 - An early draft of a publishable article or grant proposal or white paper or video documentary or archive/curation or publicity/propaganda/public advocacy campaign. 4000–6000 words of submission-quality prose or the time-labor equivalent in whatever media are rhetorically appropriate. Co-authored or collaboratively-authored projects, of the appropriately similar individual levels of contribution (so 2 people would be like 8000–12000 words or the time-labor equivalent), are possible.
 - A brief reflection on our work over the course of the semester, including some consideration of (1) your own individual work practices, (2) academic work practices more generally (at the levels of seminar, department, institution, discipline, or you get the idea), and (3) instances where those practices resonated or intersected with specific quotations from the readings or discussions. A few paragraphs of text.
