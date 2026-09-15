@@ -1,6 +1,7 @@
 # .github/workflows/build-and-deploy.yml
 #
-# Builds preterite.net and publishes it to GitHub Pages.
+# Fetches new webmentions, builds preterite.net and publishes it to GitHub
+# Pages.
 #
 # Why a workflow at all, since Pages can build Jekyll by itself: Pages
 # hosts, Actions builds, and the only question was ever who runs Jekyll.
@@ -16,11 +17,18 @@
 #     loads once at the start of the build. The native builder offers no step
 #     before Jekyll either. See "Expand the calendar" below.
 #   The 24-hour refresh needs a schedule. Pages' builder fires on push only.
+#   Webmentions are fetched and committed. The site's webmention endpoint is
+#     a hosted receiver; a job ahead of the build copies what it has received
+#     into _data/webmentions/ and commits it to main, so the repository keeps
+#     every mention and the build renders them. That takes a secret and a
+#     write to the repository, and the native builder offers neither.
 #
-# No repository secret is held. Nothing in this build fetches: Listening
+# One repository secret is held, WEBMENTION_IO_TOKEN, and one job fetches:
+# `mentions`, which asks webmention.io for what it has received since the
+# newest mention already in the repository. The token can read mentions
+# and change nothing at the receiver. Nothing else fetches: Listening
 # selects in Liquid from a committed list, and the calendar is committed at
-# _calendar/preterite-upcoming.ics, so no key and no capability URL is held
-# anywhere in it.
+# _calendar/preterite-upcoming.ics.
 #
 # The Gemfile is plain Jekyll rather than the `github-pages` gem for the same
 # reason: that gem's version pin and plugin whitelist are constraints of a
@@ -36,7 +44,9 @@ on:
   # a site that only builds on push shows one reader the same tagline for
   # months. The Upcoming widget rides the same cycle for a different reason:
   # nothing is fetched, but the expansion window moves, so a build from
-  # yesterday can name an event that has already passed. Note that GitHub
+  # yesterday can name an event that has already passed. Webmentions ride it
+  # too: each run fetches what the receiver has taken since the last, so a
+  # mention waits at most a day for a build. Note that GitHub
   # disables scheduled workflows on a
   # repository with no activity for 60 days, and mails you when it does.
   schedule:
@@ -46,7 +56,9 @@ on:
 # Least privilege, and the two Pages-specific grants. `id-token: write` is
 # not an oversight: deploy-pages authenticates to the Pages service with a
 # short-lived OIDC token rather than with a stored credential, so without
-# this the deploy job cannot prove who it is.
+# this the deploy job cannot prove who it is. The `mentions` job sets its
+# own permissions, and a job that does gets only those: `contents: write`,
+# held by that job alone.
 permissions:
   contents: read
   pages: write
@@ -67,11 +79,93 @@ env:
   PAGEFIND_VERSION: "1.5.2"
 
 jobs:
+  # NEW WEBMENTIONS, COMMITTED BEFORE THE BUILD READS THE TREE.
+  # The receiver holds a mention between its arrival and this fetch; the
+  # repository is the record. This job copies new mentions into
+  # _data/webmentions/<slug>/ with _scripts/fetch_webmentions.py and pushes
+  # them to main, and the build below checks out that commit, so a mention
+  # is on the site in the same run that fetched it.
+  #
+  # Why its own job: it is the only job that can write to the repository,
+  # and it runs nothing but the checkout and a standard-library script.
+  # The build job, which runs third-party actions and a package fetched
+  # from npm, stays read-only.
+  #
+  # Why it cannot stop a deploy: both of its steps continue on error, so
+  # the job succeeds whatever happens inside it, and the build falls back
+  # to the commit that started the run. A mention not pushed this run is
+  # fetched again the next, because the script asks for everything newer
+  # than the newest file on disk.
+  #
+  # Why its push starts no second run: a push made with a job's own
+  # GITHUB_TOKEN does not trigger workflows, which is GitHub's guard
+  # against exactly this loop.
+  #
+  # A push can be refused when the comment service has committed a comment
+  # in the meantime; the job rebases onto main and tries once more, and
+  # otherwise leaves the mentions for the next run.
+  mentions:
+    name: Fetch new webmentions
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      # python3 is the runner's own. The script needs only the standard
+      # library, so nothing is installed into a job that can write.
+      - name: Fetch new webmentions
+        continue-on-error: true
+        env:
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+        run: python3 _scripts/fetch_webmentions.py
+
+      - name: Commit new webmentions
+        id: commit
+        continue-on-error: true
+        run: |
+          if [ ! -d _data/webmentions ]; then
+            echo "No webmentions on disk."
+            exit 0
+          fi
+          git add _data/webmentions
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit --quiet -m "webmentions: new mentions from webmention.io"
+          for attempt in 1 2; do
+            if git push --quiet origin HEAD:main; then
+              echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            if ! git pull --rebase --quiet origin main; then
+              git rebase --abort 2>/dev/null || true
+              break
+            fi
+          done
+          echo "::warning::New webmentions were not pushed; the next run fetches them again."
+
   build:
+    needs: mentions
+    # Runs whatever the fetch job did, unless the run was cancelled.
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:
+      # The fetch job's commit when it pushed one; otherwise the commit that
+      # started the run.
       - name: Check out the repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.mentions.outputs.sha || github.sha }}
 
       # bundler-cache: true does three things -- installs, caches the gems,
       # and runs `bundle install --deployment`, which fails rather than
@@ -154,6 +248,10 @@ jobs:
 
   deploy:
     needs: build
+    # Stated outright: with a condition on the build above it, this job
+    # would otherwise judge the whole chain; it deploys when the build
+    # succeeded.
+    if: ${{ !cancelled() && needs.build.result == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages

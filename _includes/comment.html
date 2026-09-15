@@ -3,13 +3,17 @@
   from its file under _data/welcomments/<slug>/. Called with `c` (the
   record) and `all` (the post's whole thread, for resolving a reply's
   parent). The same include renders a comment written in 2004 and one
-  that arrives next week, because both are files of one shape; a
-  webmention takes the same shape with a different `type`.
+  that arrives next week, because both are files of one shape. A
+  webmention, filed under _data/webmentions/<slug>/, takes the same shape
+  with a different `type` and a few fields of its own (see
+  _scripts/fetch_webmentions.py).
 
   What each part says, and why it is text before it is style:
 
     the kind      a pingback or trackback opens with the words "Pingback
-                  from" or "Trackback from", so what it is reaches a reader
+                  from" or "Trackback from", and a webmention with words
+                  for what it is -- "Reply from", "Liked by", "Mentioned
+                  by" and the rest -- so what it is reaches a reader
                   who sees no colour and a screen reader alike. The class
                   on the article is for the stylesheet; the words carry
                   the meaning.
@@ -27,7 +31,14 @@
                   renders flat and in order, the convention of the years
                   most of it was written in; the link is what threading
                   becomes when nothing nests.
-    the message   is Markdown in the file and HTML here.
+    the message   is Markdown in the file and HTML here. A mention fetched
+                  from the webmention receiver carries text from someone
+                  else's page, so it is escaped rather than converted, and
+                  cut at sixty words.
+    the original  a fetched mention links the page that sent it, labelled
+                  "original": the author link may lead to the author's home
+                  page rather than to what they wrote, and the cut text's
+                  remainder is there.
     reply         the Reply link points at the courier's own reply page,
                   which is where a reader with scripting off ends up; with
                   scripting on, main.js intercepts it and sets the reply
@@ -43,6 +54,16 @@
   <p class="comment-meta">
     {%- if kind == "pingback" or kind == "trackback" %}
     <span class="comment-kind">{{ kind | capitalize }} from</span>
+    {%- elsif kind == "webmention" %}
+    {%- case c.property %}
+    {%- when "in-reply-to" %}{% assign verb = "Reply from" %}
+    {%- when "like-of" %}{% assign verb = "Liked by" %}
+    {%- when "repost-of" %}{% assign verb = "Reposted by" %}
+    {%- when "bookmark-of" %}{% assign verb = "Bookmarked by" %}
+    {%- when "rsvp" %}{% capture verb %}RSVP ({{ c.rsvp | default: "given" | escape }}) from{% endcapture %}
+    {%- else %}{% assign verb = "Mentioned by" %}
+    {%- endcase %}
+    <span class="comment-kind">{{ verb }}</span>
     {%- endif %}
     {%- if c.author.website and c.author.website != "" %}
     <a class="comment-author" href="{{ c.author.website | escape }}" rel="ugc">{{ c.author.name | escape }}</a>
@@ -59,8 +80,18 @@
     <span class="comment-sep" aria-hidden="true">&middot;</span>
     <a class="comment-parent" href="#comment-{{ c.replying_to }}">in reply to {{ parent.author.name | default: "a comment above" | escape }}</a>
     {%- endif %}
+    {%- if c.source %}
+    <span class="comment-sep" aria-hidden="true">&middot;</span>
+    <a class="comment-source" href="{{ c.source | escape }}" rel="ugc">original</a>
+    {%- endif %}
   </p>
+  {%- if c.source %}
+  {%- unless c.message == nil or c.message == "" %}
+  <div class="comment-body"><p>{{ c.message | truncatewords: 60 | escape }}</p></div>
+  {%- endunless %}
+  {%- else %}
   <div class="comment-body">{{ c.message | markdownify }}</div>
+  {%- endif %}
   {%- if kind == "" %}
   <p class="comment-actions"><a class="comment-reply" href="{{ site.welcomments.api_url }}/websites/{{ site.welcomments.website_id }}/comments/{{ c.id }}/reply" data-reply-to="{{ c.id }}" data-reply-name="{{ c.author.name | escape }}">Reply</a></p>
   {%- endif %}
