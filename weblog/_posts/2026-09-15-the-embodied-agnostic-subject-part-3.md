@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Embodied Agnostic Subject, Part 3"
-date: 2026-09-15 14:15:00 -0700
+date: 2026-09-15 08:15:00 -0700
 categories: [Politics, Writing]
 ---
 ### 4\. Precursor: what the economics established
@@ -32,7 +32,7 @@ The second limit requires a typology from information economics. Scholars seldom
 
 Writing meets the condition Darby and Karni describe. A text is produced by a writer's capacities in combination with prior texts, tools, other people and now machine agents---cooperating factors of uncertain quality and quantity---and what comes out is stochastic in Darby and Karni's sense. Interiority in a writerly relation is therefore [a credence attribute](/resources/460-syllabus-and-assignments.pdf) by the definition's own terms, rather than by analogy.
 
-Interiority as a credence attribute bounds what the embodied agnostic subject claims, and I offer the bound as deliberately narrow. The specification states a minimum and anticipates continued building, so what it leaves unsaid it leaves available rather than ruled out. Agnosticism names the remainder: whatever else may be true of subjects, none of which this account assumes. Access often occurs. Writers sometimes know what they were doing, and readers sometimes apprehend portions of that intent. Nothing here describes a sealed self or holds the interior to be empty or irreducible. It claims only that availability is unreliable, that the unreliability is unevenly distributed, and that the failures are undetectable from outside: access cannot be distinguished from its appearance by any party to the exchange, the writer included. **The answer changes the contract, not the inspection.** Contract on observables, convert an interior state into a declared textual object where necessary, or design to obviate the question.
+Interiority as a credence attribute bounds what the embodied agnostic subject claims, and I offer the bound as deliberately narrow. The specification states a minimum and anticipates continued building, so what it leaves unsaid it leaves available rather than ruled out. Agnosticism names the remainder: whatever else may be true of subjects, none of which this account assumes. Access often occurs. Writers sometimes know what they were doing, and readers sometimes apprehend portions of that intent. Nothing here describes a sealed self or holds the interior to be empty or irreducible. It claims only that availability is unreliable, that the unreliability is unevenly distributed, and that the failures are undetectable from outside: access cannot be distinguished from its appearance by any party to the exchange, the writer included. **The answer changes the contract, not the inspection.** Contract on observables, convert an interior state into a declared textual object where necessary, or design to obviate the question. 
 
 I concede that the embodied agnostic subject protects what an identity-based account protects---time, non-coerced participation, the right to withhold---but derives that protection from the structure of subjecthood rather than from any named identity. The price of the generality is that it cannot say who is injured or when.
 
