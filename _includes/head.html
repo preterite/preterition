@@ -41,6 +41,12 @@
      element is a declaration, not a request: nothing is fetched. -->
 <link rel="me" href="https://github.com/preterite">
 
+<!-- The webmention endpoint. A site that links to a page here and sends a
+     webmention reads this link to learn where to send it. The receiver is
+     a hosted service, and the link is a declaration rather than a request:
+     nothing is fetched when a page loads. -->
+<link rel="webmention" href="https://webmention.io/preterite.net/webmention">
+
 <!-- fonts: self-hosted in /fonts/, declared in style.css; nothing fetched -->
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/responsive.css">
