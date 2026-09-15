@@ -113,7 +113,7 @@ jobs:
       sha: ${{ steps.commit.outputs.sha }}
     steps:
       - name: Check out main
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0
@@ -163,7 +163,7 @@ jobs:
       # The fetch job's commit when it pushed one; otherwise the commit that
       # started the run.
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ needs.mentions.outputs.sha || github.sha }}
 
@@ -185,7 +185,7 @@ jobs:
           bundler-cache: true
 
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       # THE UPCOMING WIDGET'S DATA, DERIVED BEFORE JEKYLL READS IT.
       # _scripts/expand_calendar.py reads the committed calendar at
@@ -242,7 +242,7 @@ jobs:
         run: npx -y "pagefind@${PAGEFIND_VERSION}" --site _site
 
       - name: Upload the built site
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -259,4 +259,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
