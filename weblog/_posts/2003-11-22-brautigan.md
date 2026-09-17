@@ -11,7 +11,7 @@ wp_id: 187
 wp_status: publish
 comment_count: 0
 ---
-The reason I didn't post a [Friday Non-Dissertational](http://www.vitia.org/weblog/archives/cat_friday_nondissertational.html) last night: I actually had one of those rare occasions that people refer to as an instance of "having a social life". It's been a banner week for that kind of stuff; earlier in the week a friend and I went and saw [Susan Tedeschi](http://www.susantedeschi.com/) play.
+The reason I didn't post a [Friday Non-Dissertational](/weblog/category/friday-fun.html) last night: I actually had one of those rare occasions that people refer to as an instance of "having a social life". It's been a banner week for that kind of stuff; earlier in the week a friend and I went and saw [Susan Tedeschi](http://www.susantedeschi.com/) play.
 
 In any case, I've been feeling pretty uninspired as far as writing "creative" stuff goes (not that a dissertation isn't creative, but you know what I mean), or perhaps not so much uninspired -- I got plenty of ideas --as undirected. I don't know where to *go* with these ideas about a [Lovecraft](http://www.hplovecraft.com/)-inspired pulp-horror office comedy about secretarial temp work or a surreal drama about a person who does volunteer work comforting animals at kill shelters.
 

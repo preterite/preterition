@@ -11,7 +11,7 @@ wp_id: 107
 wp_status: publish
 comment_count: 3
 ---
-This is the usual [Friday non-dissertational](http://www.vitia.org/weblog/archives/cat_friday_nondissertational.html). It's a really short one this time, but I'll offer the caveat that it's gross in a way that I find rather more disturbing that the story I posted last week, like primal scene stuff gone badly wrong. I don't know where this came from.
+This is the usual [Friday non-dissertational](/weblog/category/friday-fun.html). It's a really short one this time, but I'll offer the caveat that it's gross in a way that I find rather more disturbing that the story I posted last week, like primal scene stuff gone badly wrong. I don't know where this came from.
 
 **The Roasting Pan**
 
