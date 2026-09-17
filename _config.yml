@@ -29,6 +29,12 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
+  # The footnote return link. kramdown's default is U+21A9, a hooked arrow
+  # that carries an emoji presentation; a browser that reaches an emoji font
+  # in the fallback stack renders it as a filled colour square rather than a
+  # hairline glyph. U+FE0E requests the text form. Written as numeric
+  # entities so the variation selector is visible in a diff.
+  footnote_backlink: "&#8617;&#xFE0E;"
   syntax_highlighter_opts:
     disable: true            # no Rouge classes; the site styles <pre> itself
 
