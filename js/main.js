@@ -619,6 +619,113 @@ function initCommentReply() {
   });
 }
 
+/**
+ * The header's finite motion event.
+ *
+ * One event per visit. It waits a random span, weighted toward the long end,
+ * runs two passes on the header's upper moire screen, and stops with the end
+ * state held. Nothing loops and nothing is left ticking afterwards, which is
+ * the whole point: the ornament is paid for once rather than continuously.
+ *
+ * Four mechanisms, each small, each named where it happens:
+ *
+ * 1. THE ONSET. Math.sqrt of a uniform random number piles the mass toward
+ *    the high end of a range, so 30 + 90 * sqrt(u) seconds has a median near
+ *    94 -- a visit shorter than a minute and a half mostly never sees the
+ *    event at all, which is what makes it a surprise rather than a feature.
+ * 2. A PASS IS A CLASS. Adding .p1 starts the animations css/style.css
+ *    declares for it. This script never animates anything itself; it only
+ *    switches classes on and off, which is what keeps the work on the
+ *    compositor and off the main thread.
+ * 3. THE BAKE. When a pass ends, its computed opacity and transform are
+ *    written into the element's inline style and the class comes off. The
+ *    animation then stops existing while the reader still sees its result,
+ *    and the browser is free to throw away the GPU texture it was holding.
+ * 4. SEEN OR UNSEEN. If the reader is on another tab when the timer fires,
+ *    the event arms instead of running and fires when they come back: the
+ *    return is the trigger. This uses the Page Visibility API rather than an
+ *    IntersectionObserver on the header, because this site's header is
+ *    position: fixed and so never leaves the viewport -- an observer here
+ *    would report "visible" always and the arming branch would be dead code.
+ *
+ * REDUCED MOTION. responsive.css carries a site-wide
+ * `* { animation: none !important }`, so under that preference no animation
+ * runs and no animationend ever fires. The end state is written straight in
+ * instead, which is what initNavStagger and initLineDrawOnScroll already do
+ * for their own motion: the reader reaches the same page, without watching it
+ * get there.
+ */
+function initHeaderEvent() {
+  const upper = document.getElementById('header-moire');
+  if (!upper) return;
+
+  // The 100% values of the moire keyframes in css/style.css. They are named
+  // here as well because an end state applied without an animation -- the
+  // reduced-motion path -- has no animation to read them from. If a keyframe
+  // changes, this changes with it.
+  const PASSES = [
+    { cls: 'p1', opacity: '0.5',  transform: 'translate(9px, -4px) rotate(0.5deg)' },
+    { cls: 'p2', opacity: '0.65', transform: 'translate(-6px, 3px) rotate(-0.35deg)' }
+  ];
+  const BEAT_MS = 2000;  // the pause between the two passes
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const hold = (pass) => {
+    upper.style.opacity = pass.opacity;
+    upper.style.transform = pass.transform;
+  };
+
+  // The longest duration the stylesheet declares for whatever is running, in
+  // seconds, or 0 when nothing is. The stylesheet stays the single source for
+  // the timings; this only reads them back.
+  const longestSeconds = () => {
+    const declared = getComputedStyle(upper).animationDuration || '';
+    return declared.split(',').reduce((m, s) => Math.max(m, parseFloat(s) || 0), 0);
+  };
+
+  const runPass = (i) => {
+    const pass = PASSES[i];
+    if (!pass) return;
+    let settled = false;
+    const finish = () => {
+      if (settled) return;
+      settled = true;
+      upper.removeEventListener('animationend', onEnd);
+      const cs = getComputedStyle(upper);
+      upper.style.opacity = cs.opacity;
+      upper.style.transform = cs.transform;
+      upper.classList.remove(pass.cls);
+      if (i + 1 < PASSES.length) setTimeout(() => runPass(i + 1), BEAT_MS);
+    };
+    // Two animations share each pass and share a duration, so the first
+    // animationend is the end of the pass; the guard keeps the second from
+    // running this twice.
+    const onEnd = (e) => { if (e.target === upper) finish(); };
+    upper.addEventListener('animationend', onEnd);
+    upper.classList.add(pass.cls);
+    // Backstop. An animation that never starts never ends, and a pass that
+    // never ends would leave the screen at opacity 0 for good. Read the
+    // duration after the class is on, and give it a margin.
+    setTimeout(finish, longestSeconds() * 1000 + 1500);
+  };
+
+  let armed = false;
+  const fire = () => {
+    if (document.visibilityState === 'hidden') { armed = true; return; }
+    if (prefersReduced) { hold(PASSES[PASSES.length - 1]); return; }
+    runPass(0);
+  };
+
+  document.addEventListener('visibilitychange', () => {
+    if (armed && document.visibilityState === 'visible') {
+      armed = false;
+      fire();
+    }
+  });
+
+  setTimeout(fire, (30 + 90 * Math.sqrt(Math.random())) * 1000);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initTrailAlign();
   initGifRotation();
@@ -629,6 +736,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initCompactHeader();
   initSearch();
   initCommentReply();
+  initHeaderEvent();
 
   // One-shot animations
   initNavStagger();

@@ -4,11 +4,21 @@
   Service, Contact, About, Weblog. The nav is authored here as data so the
   list and the loop are one rule, not ten. The current page takes
   aria-current="page" -- a label, so the active state is never carried by
-  colour alone -- and the `active` class main.js once computed at runtime is
-  emitted at build instead.
+  colour alone -- and the `active` class is emitted at build.
 {%- endcomment -%}
 {%- assign nav = "Index=/|CV=/resources/edwards-cv.pdf|Scholarship=/scholarship.html|Presentations=/presentations.html|Projects=/projects.html|Teaching=/teaching.html|Service=/service.html|Contact=/contact.html|About=/about.html|Weblog=/weblog/" | split: "|" -%}
 <header>
+  {%- comment -%} Two layers and nothing else carry the header's motion. The
+  first is the page's own moire ground mirrored -- the same two line grids at
+  the negated angle, so the fringes lean the other way at the same spacing.
+  The second is a third screen a little off that pair, invisible until the
+  event fires, which happens once per visit at a moment the reader cannot
+  predict and then stops with its end state held. Both are decoration and
+  carry no text, so both are hidden from assistive technology; the rules are
+  in css/style.css under HEADER MOIRE and the schedule is in js/main.js.
+  {%- endcomment %}
+  <div class="header-moire base" aria-hidden="true"></div>
+  <div class="header-moire upper" id="header-moire" aria-hidden="true"></div>
   <div class="header-content">
     <div>
       {%- comment -%} The identity line is a parameter, not a second header.

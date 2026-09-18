@@ -134,7 +134,6 @@
   --sidebar-gap: 28px; /* between sidebar widgets, at every nesting depth */
   --header-padding: calc(var(--gutter) * 1.5); /* 36px - equal top/bottom padding */
   --tagline-bottom-padding: calc(var(--gutter) * 0.8);
-  --header-height: 120px; /* Approximate height for sticky positioning */
 
   /* What `main` adds above itself to clear the fixed header. A literal on
      `main` once, moved here because a second element needs the
@@ -143,14 +142,12 @@
      and not derived -- the resting header runs y=0 to y=256 at 1400
      -- so it drifts if header padding or title size
      changes. */
-  --header-clearance: 260px;
+  --header-clearance: 258px;
 
-  /* The nav band's internal top nudge: what holds its labels off the top
-     edge of the 48px bar. Three consumers had it as a literal 10px -- the
-     link padding, the pipe divider that comments "match link text nudge",
-     and now the 404's trail, which uses it top and bottom so its text sits
-     in its band the way the nav's labels sit in theirs. Tokenized
-     without changing its value. */
+  /* The inset that holds a band's text off the rule above it. Read by the
+     weblog nav's bottom padding and by the 404's trail, which uses it top
+     and bottom. The site nav does not read it: its line box fills its
+     cell. */
   --nav-nudge: 10px;
 
   /* Landing page only. --subhead-lh is a token rather than a number because
@@ -265,7 +262,7 @@ blockquote {
   background-color: var(--color-bg-dark);
 }
 
-/* ===== HEADER ANIMATION ===== */
+/* ===== HEADER ===== */
 header {
   position: fixed;
   top: 0;  /* Stick to top of viewport */
@@ -273,241 +270,96 @@ header {
   z-index: 100;  /* Ensure it stays above content */
   padding: 2rem 0;
   border-bottom: 1px solid var(--color-border-dark);
-  /* Multiple gradient layers for complexity */
-  background: 
-    /* Layer 1: Main gradient, slower — warm charcoal tones */
-    linear-gradient(113deg,
-      #0f0e0c 0%,
-      #1a1816 15%,
-      #211f1c 35%,
-      #1a1816 52%,
-      #28251f 73%,
-      #1c1a17 87%,
-      #0f0e0c 100%),
-    /* Layer 2: Subtle overlay for depth */
-    linear-gradient(293deg,
-      #0f0e0c80 0%,
-      #00000000 40%,
-      #28251f4d 70%,
-      #00000000 100%);
-  background-size: 251% 100%, 197% 100%;  /* Prime numbers */
-  background-position: 0% 50%, 0% 50%;
-  animation: 
-    gradientDrift 17s ease-in-out infinite,
-    gradientPulse 29s ease-in-out infinite;  /* Prime numbers: 17, 29 */
   overflow: hidden;
-  will-change: background-position;
 }
 
-/* Noise layer with variable opacity and multi-directional movement */
-header::before {
-  content: '';
+/* ===== HEADER MOIRE =====
+   Two layers, and between them the whole of the header's motion. The ground
+   is the page's own moire mirrored: a periodic line field rotated 180 degrees
+   is itself, so the operation that shows is negating the angle, which
+   reverses the lean of the fringes and leaves their spacing alone. The mover
+   is a third screen 2.5 degrees off that pair, oversized so a drift or a turn
+   never shows an edge, at zero opacity until the event fires.
+
+   The event is finite and runs once: it arrives with a drift and a turn,
+   swells and returns partway, and stops with its end state held. Onset is
+   random and weighted long, so a short visit mostly never sees it; the script
+   in js/main.js carries the timer, the visibility test and the bake. Both
+   passes animate opacity and transform alone, which the compositor ticks
+   without waking the main thread. will-change rides on the pass classes and
+   leaves with them, so nothing holds a texture at rest.
+
+   Reduced motion needs no rule here: js/main.js applies the end state
+   directly and starts no animation to stop. */
+.header-moire {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.08;
-  background: 
-    /* Diagonal noise pattern */
-    repeating-linear-gradient(73deg,  /* Prime angle */
-      transparent,
-      transparent 7px,
-      #ffffff05 7px,  /* rgba(255,255,255,.02) */
-      #ffffff05 11px),  /* Prime widths: 7, 11 */
-    /* Counter-diagonal */
-    repeating-linear-gradient(-61deg,  /* Different prime */
-      transparent,
-      transparent 13px,
-      #0000000a 13px,  /* rgba(0,0,0,.04) */
-      #0000000a 17px),  /* Primes: 13, 17 */
-    /* Horizontal scan lines for glitch effect */
-    repeating-linear-gradient(0deg,
-      transparent,
-      transparent 23px,
-      #ffffff03 23px,  /* rgba(255,255,255,.01) */
-      #ffffff03 24px);
-  animation: 
-    noiseWander 19s linear infinite,  /* Prime: 19 */
-    noiseGlitch 31s steps(10) infinite,  /* Prime: 31 */
-    noiseFade 23s ease-in-out infinite;  /* Prime: 23 */
+  inset: 0;
   pointer-events: none;
-  z-index: 1;
 }
 
-/* Additional glitch layer for occasional "interference" */
-header::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+/* The header's ground, and its only opaque surface: header itself declares
+   no background, so this layer is what keeps a fixed band from showing the
+   column scrolling beneath it. The same two grids and the same licorice as
+   .main-content, at the negated angle. */
+.header-moire.base {
+  z-index: 3;  /* below the identity block */
+  background:
+    repeating-linear-gradient(calc(-1 * var(--moire-angle)), transparent 0 3px,
+      rgba(237, 232, 226, 0.030) 3px 4px),
+    repeating-linear-gradient(calc(-1 * var(--moire-angle) + 0.5deg),
+      transparent 0 3.25px, rgba(58, 157, 106, 0.032) 3.25px 4.25px),
+    #191613; /* "Licorice" -- Color API */
+}
+
+.header-moire.upper {
+  z-index: 4;
+  inset: -14%;  /* oversized: a turn of half a degree must show no edge */
   opacity: 0;
-  background: 
-    repeating-linear-gradient(90deg,
-      transparent 0,
-      #00ff0003 2px,  /* rgba(0,255,0,.01) - subtle green glitch */
-      transparent 4px,
-      transparent 20px);
-  animation: 
-    glitchPulse 37s ease-in-out infinite;  /* Prime: 37 */
-  pointer-events: none;
-  z-index: 2;
+  transform-origin: 50% 50%;
+  background: repeating-linear-gradient(calc(-1 * var(--moire-angle) + 2.5deg),
+    transparent 0 3px, rgba(58, 157, 106, 0.10) 3px 4px);
 }
 
-/* Main gradient drift - non-linear movement */
-@keyframes gradientDrift {
-  0%, 100% { 
-    background-position: 0% 50%, 0% 50%;
-  }
-  15% { 
-    background-position: 27% 50%, 40% 50%;
-  }
-  30% {
-    background-position: 51% 50%, 20% 50%;
-  }
-  45% {
-    background-position: 82% 50%, 60% 50%;
-  }
-  60% {
-    background-position: 69% 50%, 90% 50%;
-  }
-  75% {
-    background-position: 38% 50%, 70% 50%;
-  }
-  90% {
-    background-position: 14% 50%, 30% 50%;
-  }
+.header-moire.upper.p1,
+.header-moire.upper.p2 {
+  will-change: transform, opacity;
 }
 
-/* Secondary gradient pulse */
-@keyframes gradientPulse {
-  0%, 100% {
-    background-size: 251% 100%, 197% 100%;
-  }
-  33% {
-    background-size: 287% 100%, 213% 100%;
-  }
-  66% {
-    background-size: 223% 100%, 181% 100%;
-  }
+/* A transform animation does not compose with another on the same element --
+   the later declared wins -- so the drift and the turn are one keyframe set
+   rather than two. */
+@keyframes moireArrive {
+  0% { opacity: 0; }
+  45% { opacity: 0.95; }
+  100% { opacity: 0.5; }
 }
 
-/* Noise wander - organic movement */
-@keyframes noiseWander {
-  0% { 
-    transform: translate(0, 0) scale(1);
-  }
-  25% {
-    transform: translate(7px, -5px) scale(1.02);
-  }
-  50% {
-    transform: translate(-11px, 3px) scale(0.98);
-  }
-  75% {
-    transform: translate(5px, 8px) scale(1.01);
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
+@keyframes moireDriftTurn {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(9px, -4px) rotate(0.5deg); }
 }
 
-/* Glitchy movement */
-@keyframes noiseGlitch {
-  0%, 100% { 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-  11% {
-    clip-path: polygon(0 0, 100% 0, 100% 99%, 0 101%);
-  }
-  22% {
-    clip-path: polygon(0 1%, 100% -1%, 100% 100%, 0 100%);
-  }
-  33% {
-    clip-path: polygon(0 0, 101% 0, 99% 100%, 0 100%);
-  }
-  44% {
-    clip-path: polygon(-1% 0, 100% 0, 100% 101%, 0 99%);
-  }
-  /* Creates subtle distortion */
+@keyframes moireSwell {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.65; }
 }
 
-/* Noise opacity variation */
-@keyframes noiseFade {
-  0%, 100% {
-    opacity: 0.08;
-  }
-  17% {
-    opacity: 0.12;
-  }
-  34% {
-    opacity: 0.05;
-  }
-  51% {
-    opacity: 0.15;  /* Occasional stronger visibility */
-  }
-  68% {
-    opacity: 0.07;
-  }
-  85% {
-    opacity: 0.10;
-  }
+@keyframes moireReturn {
+  0% { transform: translate(9px, -4px) rotate(0.5deg); }
+  100% { transform: translate(-6px, 3px) rotate(-0.35deg); }
 }
 
-/* Occasional green interference */
-@keyframes glitchPulse {
-  0%, 100% {
-    opacity: 0;
-  }
-  7% {  /* Brief flash at 7% */
-    opacity: 0.3;
-  }
-  8% {
-    opacity: 0;
-  }
-  43% {  /* Another at 43% */
-    opacity: 0.2;
-  }
-  44% {
-    opacity: 0;
-  }
-  89% {  /* And 89% */
-    opacity: 0.25;
-  }
-  90% {
-    opacity: 0;
-  }
+.header-moire.upper.p1 {
+  animation:
+    moireArrive 40s ease-in-out 1 forwards,
+    moireDriftTurn 40s ease-in-out 1 forwards;
 }
 
-/* ===== HEADER ACCESSIBILITY ===== */
-/* Responsive: Slow everything down on mobile */
-@media (max-width: 768px) {
-  header {
-    animation-duration: 23s, 37s;  /* Slower on mobile */
-  }
-  
-  header::before {
-    animation-duration: 29s, 41s, 31s;
-    opacity: 0.05;  /* Less intense */
-  }
-  
-  header::after {
-    display: none;  /* Remove glitch layer on mobile */
-  }
-}
-
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  header,
-  header::before,
-  header::after {
-    animation: none;
-  }
-  
-  header {
-    background: linear-gradient(135deg, #0f0e0c 0%, #28251f 100%);
-  }
+.header-moire.upper.p2 {
+  animation:
+    moireSwell 25s ease-in-out 1 forwards,
+    moireReturn 25s ease-in-out 1 forwards;
 }
 
 /* ===== HEADER CONTENT LAYOUT ===== */
@@ -605,19 +457,14 @@ nav.site-nav {
   }
 
   body.header-compact nav.site-nav {
-    top: 48px;
+    top: 54px;
   }
 
-  /* No compact-state size rule for .search-trigger, deliberately. One stood
-     here setting width:22px and height:22px. The width never applied: the
-     button is a flex item of .header-content, and in a row flex container
-     flex-basis (0 0 28px, below) governs the main size, so only the height
-     took -- overriding aspect-ratio:1 and rendering the box 28 x 22. That
-     fails WCAG 2.2 SC 2.5.8's 24px floor on the short axis, in the state a
-     reader reaches by scrolling. Measured in a browser; the declarations
-     alone read as a uniform shrink and hid it. The box is 28px square at
-     every width and in every state; the hexagon moves, it does not deform.
-     Do not re-add a shrink here. */
+  /* The search trigger takes no compact-state size rule. The box is 28px
+     square at every width and in every state: 24px is WCAG 2.2 SC 2.5.8's
+     floor on the short axis, and a flex-basis shrink here would reach the
+     height alone and render the box 28 x 22. The hexagon moves; it does
+     not deform. */
 }
 
 /* Reduced motion: skip header transition */
@@ -663,28 +510,48 @@ nav.site-nav {
   background: var(--color-accent-bright);
   /* Rotated: points at top/bottom, vertical edges aligned */
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  animation: hexPulse 8s ease-in-out infinite;
+  position: relative;  /* the crossfade overlay below positions against it */
   transition: transform 0.2s ease;
 }
 
-/* Pulse animation between bright green and grey-green */
+.search-hexagon::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent-grey-green);
+  opacity: 0;
+  animation: hexPulse 8s ease-in-out infinite;
+}
+
+/* The pulse is a crossfade between two stacked layers, which the compositor
+   runs without repainting: each layer rasterizes once. The shape comes from
+   the parent's clip-path, which clips this pseudo-element with it. */
 @keyframes hexPulse {
-  0%, 100% {
-    background: var(--color-accent-bright);
-    filter: brightness(1);
-  }
-  50% {
-    background: var(--color-accent-grey-green);
-    filter: brightness(0.9);
-  }
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 
 /* Hover effect */
 .search-trigger:hover .search-hexagon {
   transform: scale(1.1);
-  animation-play-state: paused;
   background: var(--color-accent-bright);
   filter: brightness(1.2);
+}
+
+.search-trigger:hover .search-hexagon::after {
+  animation: none;
+  opacity: 0;
+}
+
+/* This block sits after the declaration it overrides because a media query
+   adds no specificity. It has to exist at all because responsive.css's
+   site-wide `* { animation: none !important }` cannot reach a
+   pseudo-element -- the universal selector does not match one -- so every
+   animated ::before and ::after names itself here. */
+@media (prefers-reduced-motion: reduce) {
+  .search-hexagon::after {
+    animation: none;
+  }
 }
 
 /* Below 900 the sidebar is gone, so the margin that centered the hexagon
@@ -873,14 +740,17 @@ nav.site-nav {
    behaviour. The descendant rules beneath need no scoping -- each requires
    a .nav-list or a .nav-item that no other nav on the site contains.
 
-   The wider finding stands: top: 208px below is a hard-coded guess at a
-   header height this rule never measures. */
+   The offset below is the measured height of the resting header at 900 and
+   up. The 899 block in responsive.css carries the shorter band's value and
+   the clearance that goes with it; the compact state carries its own. */
 nav.site-nav {
-  background-color: var(--color-bg-dark);
+  /* The same ground as the header above it and the column below, so the
+     bar is a band of the one surface and its two rules are the only seams. */
+  background-color: #191613; /* "Licorice" -- Color API */
   border-bottom: 1px solid var(--color-border-dark);
   height: auto;
   position: fixed;
-  top: 208px;  /* Below header */
+  top: 221px;  /* seated under the header's rule, which is 0.38px deep here */
   left: 0; right: 0;
   z-index: 99;
 }
@@ -906,14 +776,14 @@ nav .nav-list {
      Changing this declaration alone moves the bar out from under
      the column at desktop widths and nowhere else. */
   padding: 0 var(--content-inset);
-  height: 48px;
+  height: 36px;
 }
 
 nav .nav-item {
   flex: 1 1 auto; /* content-sized, then an equal share of the bar's slack */
   position: relative;
   text-align: center;
-  height: 48px; /* explicit height matches nav-list */
+  height: 36px; /* explicit height matches nav-list */
 }
 
 /* Pipe dividers between nav items — typographic pipes */
@@ -922,9 +792,8 @@ nav .nav-item + .nav-item::before {
   position: absolute;
   left: -0.5ch;
   top: 0;
-  height: 48px;
-  line-height: 38px;
-  padding-top: var(--nav-nudge);
+  height: 36px;
+  line-height: 36px;
   font-family: var(--font-sans);
   font-size: 1.05rem;
   color: var(--color-border-dark);
@@ -937,9 +806,9 @@ nav .nav-item a {
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   display: block;
-  height: 48px;
-  line-height: 38px; /* less than height to allow padding nudge */
-  padding: var(--nav-nudge) 8px 0 5px; /* left 5 + 3px border = right 8 */
+  height: 36px;
+  line-height: 36px; /* the line box fills the cell: labels centered */
+  padding: 0 8px 0 5px; /* left 5 + 3px border = right 8 */
   border-left: 3px solid transparent; /* reserved: see .active and :hover */
   transition: color 0.2s ease, background-color 0.2s ease,
               border-left-color 0.2s ease;
@@ -956,7 +825,7 @@ nav .nav-item.active a {
      the signal; the colour is decoration on top of it. The mobile drawer has
      carried this same 3px rule all along -- this is the desktop bar catching
      up, not a new treatment. box-sizing is border-box globally, so the
-     border sits inside the 48px cell and the row does not shift. */
+     border sits inside the 36px cell and the row does not shift. */
   border-left-color: var(--color-accent-grey-green);
   color: var(--color-accent-bright);
   background-color: rgba(0, 255, 0, 0.04);
@@ -1120,8 +989,12 @@ main {
      pair to its own --moire-angle, set below by the page's body class, and
      every angle sits 20 to 70 degrees off horizontal so the bands never run
      parallel to a card's edge. Nothing here animates: the ground paints once
-     and the header keeps the site's ambient motion. */
-  --moire-angle: 52.5deg;
+     and stays, and the header's one finite event is the only motion the site
+     carries at rest. The angle is declared on body rather than here: a custom
+     property declared on an element beats one inherited from an ancestor, so
+     a default in this rule would outrank every page's own, and the header --
+     fixed, and no descendant of the content column -- could read none of
+     them. */
   background:
     repeating-linear-gradient(var(--moire-angle), transparent 0 3px,
       rgba(237, 232, 226, 0.030) 3px 4px),
@@ -1130,18 +1003,23 @@ main {
     #191613; /* "Licorice" -- Color API */
 }
 
-/* Each page's moire angle, keyed by its own body class. Posts carry the
-   weblog's class and share its angle. */
-body.about               .main-content { --moire-angle: -32deg; }
-body.teaching            .main-content { --moire-angle: 43.5deg; }
-body.scholarship         .main-content { --moire-angle: -55.5deg; }
-body.presentations       .main-content { --moire-angle: 67deg; }
-body.projects            .main-content { --moire-angle: 29deg; }
-body.service             .main-content { --moire-angle: -41deg; }
-body.weblog              .main-content { --moire-angle: 52.5deg; }
-body.contact             .main-content { --moire-angle: -64.5deg; }
-body.protected-inquiries .main-content { --moire-angle: -26deg; }
-body.not-found           .main-content { --moire-angle: 38deg; }
+/* Each page's moire angle, keyed by its own body class, with the default
+   beside them. These sit on body rather than on .main-content so that the
+   header can read the same value the content column reads: the header is
+   fixed and is not inside .main-content, and .main-content inherits from
+   body either way. Posts carry the weblog's class and share its angle. The
+   landing page reads none of this -- it has its own ground and no header. */
+body                     { --moire-angle: 52.5deg; }
+body.about               { --moire-angle: -32deg; }
+body.teaching            { --moire-angle: 43.5deg; }
+body.scholarship         { --moire-angle: -55.5deg; }
+body.presentations       { --moire-angle: 67deg; }
+body.projects            { --moire-angle: 29deg; }
+body.service             { --moire-angle: -41deg; }
+body.weblog              { --moire-angle: 52.5deg; }
+body.contact             { --moire-angle: -64.5deg; }
+body.protected-inquiries { --moire-angle: -26deg; }
+body.not-found           { --moire-angle: 38deg; }
 
 .main-content h2,
 body.protected-inquiries .main-content h1 {
@@ -2397,15 +2275,32 @@ blockquote {
   cursor: pointer;
   background: var(--color-accent-bright);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  animation: hexPulse 8s ease-in-out infinite;
+  position: relative;  /* the crossfade overlay below positions against it */
   transition: transform 0.2s ease;
+}
+
+/* The landing page's own copy of the crossfade. The clip-path sits on the
+   button here rather than on an inner span, so the overlay is the button's
+   pseudo-element and takes the same shape from it. */
+.hex::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent-grey-green);
+  opacity: 0;
+  animation: hexPulse 8s ease-in-out infinite;
+}
+
+.hex:hover::after,
+.hex:focus-visible::after {
+  animation: none;
+  opacity: 0;
 }
 
 .hex:hover,
 .hex:focus-visible {
   background: var(--color-accent-bright);
   filter: brightness(1.2);
-  animation-play-state: paused;
   transform: scale(1.1);
   outline: 2px solid var(--color-accent-bright);
   outline-offset: 4px;
@@ -2805,7 +2700,7 @@ blockquote {
   .landing::before,
   .landing::after,
   .headword .hw,
-  .hex,
+  .hex::after,
   .tagline span { animation: none; }
   .entry,
   .strip,
