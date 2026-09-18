@@ -82,7 +82,24 @@ The site uses a muted grey palette and nods to the verdant clich&eacute; of 1980
 The rotating sidebar images come from a set of 150 x 800 abstract GIFs I made and shooped, selected for retro appearance and visual curiosity.
 
 #### HTML, CSS, JS
-All code is well-commented valid HTML5 and CSS3 with vanilla JavaScript; no external libraries or IP address reveals. Keeping page loads light means no minification means legible code, if you want to pop the hood and see how it runs.
+All code is well-commented valid HTML5 and CSS3 with vanilla JavaScript; no external libraries or IP address reveals. Keeping page loads light means no minification means legible code, if you want to pop the hood and see how it runs. It also means this page is cheap to arrive at and close to free to sit on, which is a claim worth showing rather than making: <button type="button" class="perf-plate-trigger" data-perf-plate-open aria-haspopup="dialog">see what a page costs a reader</button>.
+
+<noscript markdown="0"><style>
+  .perf-plate-trigger { display: none; }
+  #perf-plate { display: block; position: static; max-width: 100%; margin: 1rem 0; }
+  #perf-plate .perf-plate-close { display: none; }
+</style></noscript>
+
+<dialog id="perf-plate" class="perf-plate" aria-labelledby="perf-plate-title" closedby="any">
+  <div class="perf-plate-head">
+    <h2 id="perf-plate-title">What a page costs a reader</h2>
+    <form method="dialog">
+      <button class="perf-plate-close" type="submit" aria-label="Close">&#215;</button>
+    </form>
+  </div>
+  <div class="perf-plate-figure">{% include perf-plate.html %}</div>
+  <p class="perf-plate-method">Two numbers per page: encoded bytes for cold load, and main-thread milliseconds accumulated over a three-second window with the page at rest. Both are medians of five runs. The second number measures the main thread alone, so a compositor animation is invisible to it and is charged to the GPU instead. The Chronicle is read through an institutional proxy; JSTOR is read signed in. An observation: tier does not predict cost.</p>
+</dialog>
 
 #### Hosting
 Files served from GitHub Pages via Jekyll.

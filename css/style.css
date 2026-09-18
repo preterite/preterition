@@ -2708,6 +2708,99 @@ blockquote {
   .tagline { transition: none; }
 }
 
+/* ===== PERFORMANCE PLATE =====
+   The colophon's page-cost graphic: a <dialog> holding three SVG variants,
+   one shown at a time. The figure itself is generated into
+   _includes/perf-plate.html and nothing here positions a mark; these rules
+   dress the dialog and choose the variant.
+
+   No z-index anywhere. showModal() puts the element in the top layer, above
+   every stacking context, so the fixed header cannot cover it.
+   ------------------------------------------------------------------------ */
+
+.perf-plate {
+  max-width: min(96vw, 820px);
+  padding: 0;
+  border: 1px solid #3a423a;            /* green-grey rule, the plate's own */
+  border-radius: 4px;
+  background: #1a1f1b;                  /* dark green-tinted charcoal */
+  color: #ede8e2;                       /* the site's own text colour */
+}
+
+.perf-plate::backdrop { background: rgba(0, 0, 0, 0.72); }
+
+.perf-plate-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem 0;
+}
+
+.perf-plate-head h2 { margin: 0; font-size: 1.125rem; }
+
+.perf-plate-close {
+  padding: 0 0.25rem;
+  border: 0;
+  background: none;
+  color: #8b9489;                       /* green-grey, the plate's furniture */
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.perf-plate-close:hover,
+.perf-plate-close:focus-visible { color: #ede8e2; }
+
+.perf-plate-figure { padding: 0.5rem 1rem 0; }
+
+/* One variant at a time. Three drawings rather than one that scales: a
+   760-wide drawing squeezed into 390 sets its type at six pixels. The two
+   that are not shown cost about a kilobyte encoded. */
+.perf-plate-svg { display: none; width: 100%; height: auto; }
+
+@media (max-width: 559px) { .perf-plate-390 { display: block; } }
+@media (min-width: 560px) and (max-width: 759px) { .perf-plate-560 { display: block; } }
+@media (min-width: 760px) { .perf-plate-760 { display: block; } }
+
+/* Two classes deep, deliberately. `.card p` is a class-plus-element selector
+   and outranks a bare class, so a single-class rule here loses its font,
+   size and colour to the card the colophon sits in -- silently, the way the
+   print block used to lose to everything declared below it. */
+.perf-plate .perf-plate-method {
+  margin: 0;
+  padding: 0.75rem 1rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: #8b9489;
+}
+
+/* Rendered inline instead of hidden when the dialog cannot be opened -- an
+   engine without showModal(), or scripting off, which a noscript rule in
+   pages/about.md handles the same way. The plate is the evidence for the
+   paragraph's claim, so a reader who cannot open it still sees it. This is
+   the opposite of the search control, which is hidden without scripting
+   because there is no static shape of site search to degrade to. */
+.perf-plate.perf-plate-inline {
+  display: block;
+  position: static;
+  max-width: 100%;
+  margin: 1rem 0;
+}
+
+.perf-plate.perf-plate-inline .perf-plate-close { display: none; }
+
+.perf-plate-trigger {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-accent-grey-green);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* ===== PRINT ===== */
 /* Last in the file, and that placement is load-bearing. A media query
    adds no specificity, so a print rule only wins over a rule declared

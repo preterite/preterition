@@ -726,6 +726,50 @@ function initHeaderEvent() {
   setTimeout(fire, (30 + 90 * Math.sqrt(Math.random())) * 1000);
 }
 
+/**
+ * Open the colophon's page-cost plate.
+ *
+ * The same shape as initSearch's opener and for the same reasons: showModal()
+ * puts the dialog in the top layer, so no rule sets a z-index, and the focus
+ * trap, Escape-to-close and inert background all come from the platform.
+ *
+ * Where it differs from search, and the difference is the point. An engine
+ * without showModal, or a reader with scripting off, gets the plate rendered
+ * INLINE rather than hidden. The search control is hidden in that case because
+ * there is no static shape of site search to degrade to; the plate is not a
+ * control but the evidence for a claim the paragraph makes, so hiding it would
+ * leave the claim unsupported for exactly the reader most likely to test it.
+ * The scripting-off half is a noscript rule beside the dialog in
+ * pages/about.md; this function covers the no-showModal half.
+ */
+function initPerfPlate() {
+  const dialog = document.getElementById('perf-plate');
+  const trigger = document.querySelector('.perf-plate-trigger');
+  if (!dialog || !trigger) return;
+
+  if (typeof dialog.showModal !== 'function') {
+    dialog.classList.add('perf-plate-inline');
+    trigger.hidden = true;
+    return;
+  }
+
+  trigger.addEventListener('click', () => dialog.showModal());
+
+  // Light dismiss where closedby="any" is unimplemented -- Safari, at this
+  // writing. Both conditions are required and the reasoning is initSearch's,
+  // unchanged: this dialog also carries its own padding, so a click on the
+  // band between its border and its content targets the dialog element too.
+  if (!('closedBy' in HTMLDialogElement.prototype)) {
+    dialog.addEventListener('click', (e) => {
+      if (e.target !== dialog) return;
+      const box = dialog.getBoundingClientRect();
+      const inside = e.clientX >= box.left && e.clientX <= box.right
+                  && e.clientY >= box.top && e.clientY <= box.bottom;
+      if (!inside) dialog.close();
+    });
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initTrailAlign();
   initGifRotation();
@@ -735,6 +779,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initCompactHeader();
   initSearch();
+  initPerfPlate();
   initCommentReply();
   initHeaderEvent();
 
