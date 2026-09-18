@@ -82,7 +82,7 @@ The site uses a muted grey palette and nods to the verdant clich&eacute; of 1980
 The rotating sidebar images come from a set of 150 x 800 abstract GIFs I made and shooped, selected for retro appearance and visual curiosity.
 
 #### HTML, CSS, JS
-All code is well-commented valid HTML5 and CSS3 with vanilla JavaScript; no external libraries or IP address reveals. Keeping page loads light means no minification means legible code, if you want to pop the hood and see how it runs. The site is cheap on arrival and near free to sit on, which is a claim worth showing rather than making: <button type="button" class="perf-plate-trigger" data-perf-plate-open aria-haspopup="dialog">see what a page costs a reader</button>.
+All code is well-commented valid HTML5 and CSS3 with vanilla JavaScript; no external libraries or IP address reveals. Keeping page loads light means no minification means legible code, if you want to pop the hood and see how it runs. For requested resources, the site is cheap on arrival and near free to stay: <button type="button" class="perf-plate-trigger" data-perf-plate-open aria-haspopup="dialog">see the page cost breakdown</button>.
 
 <noscript markdown="0"><style>
   .perf-plate-trigger { display: none; }
@@ -98,7 +98,7 @@ All code is well-commented valid HTML5 and CSS3 with vanilla JavaScript; no exte
     </form>
   </div>
   <div class="perf-plate-figure">{% include perf-plate.html %}</div>
-  <p class="perf-plate-method">Two numbers per page: encoded bytes for cold load, and main-thread milliseconds accumulated over a three-second window with the page at rest. Both are medians of five runs. The second number measures the main thread alone, so a compositor animation is invisible to it and is charged to the GPU instead. The Chronicle is read through an institutional proxy; JSTOR is read signed in. An observation: tier does not predict cost.</p>
+  <p class="perf-plate-method">For comparison, I tested two sets of peer sites: four weblogs I follow (Freddie de Boer, Bret Devereaux, Kieran Healy, Nick Montfort) and four organizations (The Chronicle of Higher Ed, Harvard University, JSTOR, Silva Rhetoricae). Two numbers per page: encoded bytes for cold load, and main-thread milliseconds accumulated over a three-second window with the page at rest. Both are medians of five runs. The second number measures the main thread alone, so a compositor animation is invisible to it and is charged to the GPU instead. The Chronicle is read through an institutional proxy; JSTOR is read signed in. An observation: tier does not predict cost.</p>
 </dialog>
 
 #### Hosting
