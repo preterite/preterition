@@ -1311,11 +1311,18 @@ footer {
 }
 
 /* ===== CONTENT BLOCKS ===== */
+/* The green rule at a card's left edge is a pseudo-element, not a border,
+   and it reads to the eye as where the text begins -- the aside has no
+   such line, so its own content appears to float clear while body text sat
+   a few pixels off a bright edge. The side padding is therefore the
+   aside's own inset, stated as the token rather than as a matching number
+   so the two cannot drift apart. Vertical padding is unchanged, and the
+   narrow breakpoints keep their own smaller shorthand. */
 .card {
   background-color: var(--color-card-dark);
   border: 1px solid var(--color-border-dark);
   border-left: 3px solid var(--color-accent-grey-green);
-  padding: 20px;
+  padding: 20px var(--content-inset);
   margin-bottom: 20px;
   border-radius: 4px;
 }
@@ -1380,7 +1387,7 @@ footer {
   background-color: var(--color-card-dark);
   border: 1px solid var(--color-border-dark);
   border-left: 3px solid var(--color-accent-grey-green);
-  padding: 20px;
+  padding: 20px var(--content-inset);
   margin-bottom: 24px;
   border-radius: 4px;
 }
