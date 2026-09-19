@@ -4,7 +4,10 @@ title: "The Arboretum"
 date: 2026-09-18 21:28:03 -0700
 categories:
   - "Friday Fun"
+  - "Projects"
 ---
+*From a work in progress. There is a puzzle in it.*
+
 You are standing at the edge of an open field. To the west, there is a low stone building. The field is densely overgrown. Through it and down, a narrow absence of field marked by gravel leads into a collection of trees---not a forest, not a park. Someone planted these. The spacing and selection are deliberate. Ahead of you, the high grasses to either side fall away as the field's path crosses toward an open space and descends.
 
 A lone oak blooms huge above a mown lawn. The tree's spiral-wreathed leaves crown widely out from the centuried gray-furrowed mass of its core. Acorns in dozens and hundreds dot the lawn toward a pair of trees beyond. To the east, the lawn fades into overgrowth. Past the oak, the pair resolves as imbalanced: vase-shaped, stately. To the west, arranged groups of dark evergreens shape the arboretum's curated space. The oak's lawn ends.
