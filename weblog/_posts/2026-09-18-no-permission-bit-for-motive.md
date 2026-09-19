@@ -12,7 +12,7 @@ You've likely met a three-digit number that makes a claim about a file: I'll bet
 
 [Unix file permissions](https://docs.rc.fas.harvard.edu/kb/unix-permissions/) are another such number. Nine bits: read, write and execute, one each for *owner*, *group* and *world*, rendered as three digits. Most files you'll meet are 644, where the owner can read and write and everyone else can read only, or 755, which adds run permissions.
 
-I've been using the concept of permissions to think about projects in my research vault---a term from the app Obsidian that I now use more generally to describe the on-disk information structure of folders and plaintext files and automation scripts that helps direct my scholarship. The Unix modes most people set for digital files are sensible. In an episode of contrariness, I decided to list the modes no sensible person would ever set. The arithmetic is small: read is 4, write is 2, execute is 1, and each digit is a sum, so 7 is all three and 0 is nothing. The far end is 777---everything, to everyone---the *fuck-it-I-give-up* mode. I went looking for other modes, and asked whether my vault contained them.
+I've been using the concept of permissions to think about projects in my research vault, the on-disk information structure of folders and plaintext files and automation scripts that helps direct my scholarship. The Unix modes most people set for digital files are sensible. In an episode of contrariness, I decided to list the modes no sensible person would ever set. The arithmetic is small: read is 4, write is 2, execute is 1, and each digit is a sum, so 7 is all three and 0 is nothing. The far end is 777---everything, to everyone---the *fuck-it-I-give-up* mode. I went looking for other modes, and asked whether my vault contained them.
 
 - **007, the drop box.** The inbox folder. Anything can write into it; the owner's target state is empty.
 - **444, the immutable contract.** A sealed corpus carrying a `locked` field that names no unlock.
@@ -78,7 +78,6 @@ Moral panics erupt when a tool relocates capability or verification from a trust
 The same warning attaches to all three, and it reaches composition studies first, because we've been building the student-ward version for decades: we know this stuff. **The missing component was never a bit.** It's a reader. A reader placed where the writing happens is a watcher. Every fix that makes an assessment honest makes the writer visible to someone they cannot see. What motive requires is not a permission but a witness, and a witness, installed, is a guard.
 
 That circumstance suggests two questions: first, about the nature of the guard and orientation toward the writer, and second, about the distance of the guard from the writer. I'll leave those questions for a later post: this is past too long already.
-
 
 ### References
 
