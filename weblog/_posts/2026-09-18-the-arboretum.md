@@ -6,7 +6,7 @@ categories:
   - "Friday Fun"
   - "Projects"
 ---
-*From a work in progress. There is a puzzle in it.*
+*From a work in progress. There is a puzzle here.*
 
 You are standing at the edge of an open field. To the west, there is a low stone building. The field is densely overgrown. Through it and down, a narrow absence of field marked by gravel leads into a collection of trees---not a forest, not a park. Someone planted these. The spacing and selection are deliberate. Ahead of you, the high grasses to either side fall away as the field's path crosses toward an open space and descends.
 
