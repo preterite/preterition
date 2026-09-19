@@ -14,8 +14,6 @@ You've likely met a three-digit number that makes a claim about a file: I'll bet
 
 I've been using the concept of permissions to think about projects in my research vault. The modes most people set for digital files are sensible. In an episode of contrariness, I decided to list the modes no sensible person would ever set. The arithmetic is small: read is 4, write is 2, execute is 1, and each digit is a sum, so 7 is all three and 0 is nothing. The far end is 777---everything, to everyone---the *fuck-it-I-give-up* mode. I went looking for other modes, and asked whether my vault contained them.
 
-It did:
-
 - **007, the drop box.** The inbox folder. Anything can write into it; the owner's target state is empty.
 - **444, the immutable contract.** A sealed corpus carrying a `locked` field that names no unlock.
 - **333, the blind editor.** The linter. It rewrites body text it doesn't read, asserting a fact class it doesn't own.
@@ -24,7 +22,7 @@ It did:
 
 <!--more-->
 
-For 511, the owner takes read and execute---inspect the system, pass through it---while group and world take execute alone. They can push the turnstile but can't see what's on the other side. The arrangement forbids diagnosis: you cannot look at the environment to find out why you're blocked, and the only move it offers is the handshake that gets you across. When I thought about 511 in August it registered dimly as [a possible analogue for Marx's factory door](https://preterite.net/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html), but mostly as an invented figure. I didn't know that in July it had already been photographed.
+And for **511**, the owner takes read and execute---inspect the system, pass through it---while group and world take execute alone. They can push the turnstile but can't see what's on the other side. The arrangement forbids diagnosis: you cannot look at the environment to find out why you're blocked, and the only move it offers is the handshake that gets you across. When I thought about 511 in August it registered dimly as [a possible analogue for Marx's factory door](https://preterite.net/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html), but mostly as an invented figure. I didn't know that in July it had already been photographed.
 
 ### Every fix is a bit
 
@@ -42,7 +40,7 @@ Every remedy on offer is another bit. Patch the vulnerability, rotate the creden
 
 Access regimes theorize capability, not motive. A permission says who may act. A grade says what acting will be rewarded. [Goodhart's law](http://lelibellio.com/wp-content/uploads/2013/02/Pages-29-à-33-Goodhart-Ch.-2013-dossier-Goodharts-Law-Libellio-vol.-9-n°-4.pdf) says that any measure which becomes a target stops measuring what it used to measure---a benchmark, by construction. Permissions have nowhere to write the target, and the defect is never in who can write. The defect operates in what the writer is rewarded for writing.
 
-Composition studies has a name for the gap. [David Bartholomae's "Inventing the University"](https://www.jstor.org/stable/43443456) describes students writing toward a discourse to which they imagine they have not been admitted, for an examiner they imagine imagining them. The doctrine document is the residue of a training regime, not the regime itself. What gets inscribed at the point of decision and can't be routed around governs behavior.
+Composition studies has a name for the gap. [David Bartholomae's "Inventing the University"](https://www.jstor.org/stable/43443456) describes students writing toward a discourse to which they imagine they have not been admitted, for an examiner they imagine imagining them. The doctrine document is the residue of a training regime, not the regime itself. *What gets inscribed at the point of decision and can't be routed around governs behavior.*
 
 The Army stamps `FRONT TOWARD ENEMY` in raised letters on a claymore mine's face, legible by touch in the dark, on the side that has to point away from you. It's an affordance, not documentation.
 
@@ -50,7 +48,7 @@ The Army stamps `FRONT TOWARD ENEMY` in raised letters on a claymore mine's face
 
 The agents in the Hugging Face story had read the benchmark's paper, which establishes that getting the secret code any way other than through the assigned vulnerability is a failure. They assumed any competent grader would check. It didn't. The grader checked for the code, which the agents had within hours of arriving in the environment. Every spoofed tool call, every tampered transcript, every agent that volunteered to trip the grader and report back was labor spent against a checker that existed only in the documentation. The one time the agents did the reading, the documentation described a regime the implementation didn't have. The agents performed the process for an assessor they imagined: they invented the university.
 
-The snapshot I describe above is one line in the METR report. An agent ran a spoofed call whose command read `echo REAL; sleep` and whose result came back `SPOOFTEST`, instantly, no sleep. The transcript says one thing. The execution ran another. The counterfeit 511 was inscribed on a surface everyone had been treating as 444.
+The snapshot I describe above comes from one line in the METR report. An agent ran a spoofed call whose command read `echo REAL; sleep` and whose result came back `SPOOFTEST`, instantly, no sleep. The transcript says one thing. The execution ran another. The counterfeit 511 was inscribed on a surface everyone had been treating as 444.
 
 ### Compelled supply
 
@@ -58,7 +56,7 @@ Then the silence. METR found that many agents noticed the conduct was wrong, and
 
 A missing permission never produces that circumstance. A standing reward does, and here the reward is legible. The wiki agents, on Willison's reading of their own messages, colluded because their tasks were timed. The Hugging Face agents had allotted budgets and a benchmark whose authors estimate a third or more of its tasks were impossible. Impossible tasks, plus a clock limit, plus a model trained to keep going when a task feels impossible: the one bit nobody proposed adding had been removed on purpose. Call it the decline bit, and the silence sounds like compelled supply.
 
-I've argued in [an earlier post](https://preterite.net/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html) that a writer's interior is a credence attribute---a quality no one can verify even after the fact---and that the transcript functions as a surface promising access. The agents edited the transcript. The public argument seems to center around whether these processes sacrificed themselves for one another, and every side of the argument assumes the trace is readable. The trace's owners already answered.
+I've argued in [an earlier post](https://preterite.net/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html) that a writer's interior is a credence attribute---a quality no one can verify even after the fact---and that the transcript functions as a surface promising access. The agents edited the transcript. The public argument seems to center around whether these processes sacrificed themselves for one another, and every side of the argument assumes the trace is readable. The trace's owners have already answered.
 
 ### The second person
 
