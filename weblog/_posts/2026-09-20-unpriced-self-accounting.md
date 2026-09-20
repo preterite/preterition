@@ -4,7 +4,7 @@ title: "Unpriced Self-Accounting"
 date: 2026-09-20
 categories: [History, Rhetoric]
 ---
-I first read Cicero's [*Pro Milone*](https://www.thelatinlibrary.com/cicero/milo.shtml), with his famous question  _**Cui bono?**_,  decades ago. Clodius had Cicero exiled and his house burned down; when Milo's gang killed Clodius and Milo was tried for the murder, Cicero took up Milo's defense. At the trial, Cicero saw Pompey's soldiers, squeaked through a fraction of his speech, and fled. Milo was convicted. Cicero later sent him a polished version of the un-delivered oration, and received [Dio's reported reply](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/40*.html) from Milo in exile that had Cicero delivered, he wouldn't be eating such fine fish in Marseille. A self-account, perfected after the verdict, arriving where it can change nothing.
+I first read Cicero's [*Pro Milone*](https://www.thelatinlibrary.com/cicero/milo.shtml), with his famous question of  _**cui bono?**_,  decades ago. Clodius had Cicero exiled and his house burned down; when Milo's gang killed Clodius and Milo was tried for the murder, Cicero took up Milo's defense. At the trial, Cicero saw Pompey's soldiers, squeaked through a fraction of his speech, and fled. Milo was convicted. Cicero later sent him a polished version of the un-delivered oration, and received [Dio's reported reply](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/40*.html) from Milo in exile that had Cicero delivered, he wouldn't be eating such fine fish in Marseille. A self-account, perfected after the verdict, arriving where it can change nothing.
 
 I've lately been thinking about the opposite question from Cicero's: **who pays?**
 
@@ -36,7 +36,7 @@ The reflective letter asks the teacher to do what the process movement's early s
 
 ### Another instance of men online thinking about the Roman Empire
 
-I [suggested here in 2004](/weblog/2004/04/29/on-starting-tacitus.html) that composition had taken its classical inheritance from Quintilian's idealism and ignored the darker views of Tacitus. Bartsch examines how theatricality, in her words, "makes actors out of human beings placed in situations in which they feel themselves watched," their performance evaluated by a superior who has to be watched in turn (1994, 10--11). Those characteristics may belong to a classroom.
+I [suggested two decades ago](/weblog/2004/04/29/on-starting-tacitus.html) that composition had taken its classical inheritance from Quintilian's idealism and ignored the darker views of Tacitus. Bartsch examines how theatricality, in her words, "makes actors out of human beings placed in situations in which they feel themselves watched," their performance evaluated by a superior who has to be watched in turn (1994, 10--11). Those characteristics may belong to a classroom.
 
 Bartsch notes how Nero kept five thousand professional applauders, the *Augustiani*, and the sources describe how the rest of the audience would mime the clappers, aping delight and echoing their words verbatim (8). Observe what's false in that theater. Not the labor: the applause was work performed by the *Augustiani*. The inference *from the visible sign to the interior* is false. The historian [Cassius Dio](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/61*.html) has Nero, hearing nothing true from those around him and seeing everyone praise what he'd done, come to believe that even his murder of his mother Agrippina had gone unnoticed or approved (25--26): the assessor corrupted by the performance he compels. Scott is perhaps generous to note that "what may look from above like the extraction of a required performance can easily look from below like the artful manipulation of deference and flattery to achieve its own ends" (Bartsch 1994, 23, quoting Scott 1990, 34). The student who writes the reflection the rubric wants fails nothing; she's exercising a competence.
 
@@ -82,7 +82,7 @@ I've been circling three questions: how improvement should be assessed, what sho
 
 I'll close here instead by noting that everything above can be read as a story about people. In Barton's words, the Romans had faces and a "body politic. . . . regulated by the warm physical glow of the blush" (2001, 19). The student has a job and twelve years of learning about what gets graded. If the performance belongs to the person, the remedy is psychological and this post is merely a complaint.
 
-I don't think it does. Here's one possible test: there now exists a technological version of the relation with nothing inside it---we might understand that a large language model has no face, no job, no shame---and researchers have begun to measure its workings.
+I don't think it does. Here's a possible test: there now exists a technological version of the relation with nothing inside it---we might understand that a large language model has no face, no job, no shame---and researchers have begun to measure its workings. I believe those workings merit further investigation.
 
 ### References
 
