@@ -4,7 +4,7 @@ title: "Unpriced Self-Accounting"
 date: 2026-09-20
 categories: [History, Rhetoric]
 ---
-I first read Cicero's [*Pro Milone*](https://www.thelatinlibrary.com/cicero/milo.shtml) with his famous question  _**cui bono?**_  decades ago. Clodius had Cicero exiled and his house burned down; when Milo's gang killed Clodius and Milo was tried for the murder, Cicero took up Milo's defense. At the trial, Cicero saw Pompey's soldiers, squeaked through a fraction of his speech, and fled. Milo was convicted. Cicero later sent him a polished version of the un-delivered oration, and Milo, [Dio reports](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/40*.html), wrote back from exile that had Cicero delivered, he wouldn't now be eating such good fish in Massilia. A self-account, perfected after the verdict, arriving where it can change nothing.
+I first read Cicero's [*Pro Milone*](https://www.thelatinlibrary.com/cicero/milo.shtml), with his famous question  _**Cui bono?**_,  decades ago. Clodius had Cicero exiled and his house burned down; when Milo's gang killed Clodius and Milo was tried for the murder, Cicero took up Milo's defense. At the trial, Cicero saw Pompey's soldiers, squeaked through a fraction of his speech, and fled. Milo was convicted. Cicero later sent him a polished version of the un-delivered oration, and received [Dio's reported reply](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/40*.html) from Milo in exile that had Cicero delivered, he wouldn't be eating such fine fish in Marseille. A self-account, perfected after the verdict, arriving where it can change nothing.
 
 I've lately been thinking about the opposite question from Cicero's: **who pays?**
 
