@@ -4,7 +4,7 @@ title: "Unpriced Self-Accounting"
 date: 2026-09-20
 categories: [History, Rhetoric]
 ---
-I first read Cicero's [*Pro Milone*](https://www.thelatinlibrary.com/cicero/milo.shtml), with his famous question of  _**cui bono?**_,  decades ago. Clodius had Cicero exiled and his house burned down; when Milo's gang killed Clodius and Milo was tried for the murder, Cicero took up Milo's defense. At the trial, Cicero saw Pompey's soldiers, squeaked through a fraction of his speech, and fled. Milo was convicted. Cicero later sent him a polished version of the un-delivered oration, and received [Dio's reported reply](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/40*.html) from Milo in exile that had Cicero delivered, he wouldn't be eating such fine fish in Marseille. A self-account, perfected after the verdict, arriving where it can change nothing.
+I first read Cicero's [*Pro Milone*](https://www.thelatinlibrary.com/cicero/milo.shtml), with his famous question of  _**cui bono?**_,  decades ago. Clodius had Cicero exiled and his house burned down; when Milo's gang killed Clodius and Milo was tried for the murder, Cicero took up Milo's defense. At the trial, Cicero saw Pompey's soldiers, squeaked through a fraction of his speech, and fled. Milo was convicted. Cicero later sent him a polished version of the undelivered oration, and received [Dio's reported reply](https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/40*.html) from Milo in exile that had Cicero delivered, he wouldn't be eating such fine fish in Marseille. A self-account, perfected after the verdict, arriving where it can change nothing.
 
 I've lately been thinking about the opposite question from Cicero's: **who pays?**
 
@@ -12,7 +12,7 @@ I've lately been thinking about the opposite question from Cicero's: **who pays?
 
 When I was at West Point, I shared a faculty office with a military instructor, and on my departures for the classroom, MAJ Bounds would say with mock solemnity, "Go touch some lives, Doctor Edwards." Her irony was only half a joke: certainly, we took our jobs teaching first-year composition seriously---it's enormously rewarding work, and intensely labor-consuming---but cadets' lives are often touched by much more than English 101. The intensity of some mentoring relationships at USMA parallel the intensity of some mentoring relationships in graduate study. More generally, I think we know teachers are invested in the growth of students, and pedagogical relationships are relations of persuasion.
 
-I've come to think the Major's line was funny for another reason: the claim can't be checked. Part of the appeal of teaching is the regular classroom interaction, but past that span of fifteen weeks, teachers seldom know if or how a life gets touched in English 101. Writing teachers have instruments to narrow the gap. The writing portfolio with process work and the reflective cover letter asks the student to report the touch as received, and to write it for the person who will grade the report. That strikes me as an odd thing to want.
+I've come to think the Major's comment was funny for another reason: the claim can't be checked. Part of the appeal of teaching is the regular classroom interaction, but past that span of fifteen weeks, teachers seldom know if or how a life gets touched in English 101. Writing teachers have instruments to narrow the gap. The writing portfolio with process work and the reflective cover letter asks the student to report the touch as received, and to write it for the person who will grade the report. That strikes me as an odd thing to want.
 
 What follows is an attempt to figure out why it's odd, what it costs, and who pays.
 
@@ -82,7 +82,7 @@ I've been circling three questions: how improvement should be assessed, what sho
 
 I'll close here instead by noting that everything above can be read as a story about people. In the classicist Carlin Barton's words, the Romans had faces and a "body politic. . . . regulated by the warm physical glow of the blush" (2001, 19). The student has a job and twelve years of learning about what gets graded. If the performance belongs to the person, the remedy is psychological and this post is merely a complaint.
 
-I don't think it does. Here's a possible test: there now exists a technological version of the relation with nothing inside it---we might understand that a large language model has no face, no job, no shame---and researchers have begun to measure its workings. I believe those workings merit further investigation.
+I don't think the performance belongs to the person. A possible test: there now exists a technological version of the relation with nothing inside it---we might understand that a large language model has no face, no job, no shame---and researchers have begun to measure its workings. I believe those workings merit more careful investigation from scholars of writing.
 
 ### References
 
