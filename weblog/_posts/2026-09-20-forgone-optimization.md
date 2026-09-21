@@ -12,7 +12,7 @@ Let's run the test. Two recent studies from ML---one on reading a model's writte
 
 ### The control
 
-The axiom my last post stated, as a property of a relation rather than of anyone in it:
+The axiom my last post borrowed from James C. Scott via Shadi Bartsch, as a property of a relation rather than of anyone in it:
 
 > Where disclosure poses more risk for one party than for the other, the exposed party's text stops being readable as a report and becomes readable only as a move.
 
