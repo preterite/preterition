@@ -36,7 +36,7 @@ The unit denominated a pension fund before it measured a mind, a point Johann Ne
 
 So the university certifies not the product of education---nobody could measure that in 1906 and nobody can now---but formation itself. A formation, produced by a path, survives the path. Academia spent a century converting formation into credit hours so it could be compensated by a pension fund and, later, by federal aid. That conversion now meets a pressure for which it wasn't built. The product of the path can be produced without the path---a machine writes an English 101 paper---and an institution that could never read the product has lost even the pretense of reading it. The only certification that survives automation is certification of formation. The degree is the university's license, and the credit hour is its relative value unit. The pricing happened a century ago and nobody named it.
 
-The question, again, is who sets the price. In medicine the payer deferred to the priced, and the line fell where the guild wanted. In the university the priced deferred to the payer, and the colleges took the unit for a pension. In Afghanistan, my higher-ups asked the only answerable question---is there a plan?---and I answered. None of us could price what the plan was for.
+The question, again, is who sets the price. In medicine the payer deferred to the priced, and the line fell where the guild wanted. In the university the priced deferred to the payer, and the colleges took the unit for a pension. In Afghanistan, my higher-ups asked the only answerable question: *is there a plan?* None of us could price what the plan was for.
 
 ### References
 
