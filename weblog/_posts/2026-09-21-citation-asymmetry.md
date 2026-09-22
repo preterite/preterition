@@ -24,11 +24,7 @@ With that caveat, following are some headline results.
    Innovations spread through social systems over time, and adopters reinvent them as they adopt. \
    Citations in rhetoric and composition journals: **6**. \
    Total citations: **64,330**.
-3. Spence, Michael. "Job Market Signaling." *Quarterly Journal of Economics* 87, no. 3 (1973): 355–74. \
-   Employers rely on costly signals like education because they can't observe a job candidate's productivity. Education earns its returns by sorting candidates, whether or not it produces skill. \
-   Citations in rhetoric and composition journals: **0**. \
-   Total citations: **17,843**.
-4. Sweller, John. "Cognitive Load during Problem Solving: Effects on Learning." *Cognitive Science* 12, no. 2 (1988): 257–85. \
+3. Sweller, John. "Cognitive Load during Problem Solving: Effects on Learning." *Cognitive Science* 12, no. 2 (1988): 257–85. \
    Working memory is limited, and some instructional formats consume it without producing learning. \
    Citations in rhetoric and composition journals: **1**. \
    Total citations: **10,533**.
