@@ -4,7 +4,7 @@ title: "Citation Asymmetry"
 date: 2026-09-21 19:13:18 -0700
 categories: [Academia, Technology]
 ---
-I sometimes find myself slightly irritated by rhetoric and composition's canonizing of James Berlin's dismissal of cognitive psychology's contributions to the field. I wonder whether Berlin might be embarrassed today to see how silly his dismissal was, and how much the foundational principles he hand-waved away underpin contemporary understandings of language use and meaning-making. I've previously [observed and critiqued](https://doi.org/10.1080/07350198.2014.917514) such over-hasty and uninformed dismissals in other areas.
+I sometimes find myself slightly annoyed by rhetoric and composition's canonizing of James Berlin's dismissal of cognitive psychology's contributions to the field. I wonder whether Berlin might be embarrassed today to see how silly his dismissal was, and how much the foundational principles he hand-waved away underpin contemporary understandings of language use and meaning-making. I've previously [observed and critiqued](https://doi.org/10.1080/07350198.2014.917514) such over-hasty and uninformed dismissals in other areas.
 
 So I used [Claude](https://claude.ai) to help me build a tool.
 
@@ -12,7 +12,7 @@ The tool measures the distance between what the field claims and what it reads. 
 
 <!--more-->
 
-Two cautions: first, the tool uses API keys to query databases notorious for undercounting humanities publications---that's a structural problem I can't fix. Second, because it runs on ISSNs, it catches only the nine indexed journals---*College Composition and Communication*, *College English*, *Rhetoric Review*, *Rhetoric Society Quarterly*, *JAC*, *Research in the Teaching of English*, *Teaching English in the Two-Year College*, *Computers and Composition*, and *Written Communication*. The tool doesn't catch unindexed journals. That's where a substantial portion of our field's scholarly work lives, and a fix I need to figure out if I can make before I think about releasing Citation Asymmetry Detector version 1.0: right now, it has a sizable blind spot. But as a first-pass survey of what our core journals cite *and don't cite*, the tool works to give me an initial idea of our blind spots.
+Two cautions: first, the tool uses API keys to query databases notorious for undercounting humanities publications---that's a structural problem I can't fix. Second, because it runs on ISSNs, it catches only the nine indexed journals---*College Composition and Communication*, *College English*, *Rhetoric Review*, *Rhetoric Society Quarterly*, *JAC*, *Research in the Teaching of English*, *Teaching English in the Two-Year College*, *Computers and Composition*, and *Written Communication*. The tool doesn't catch unindexed journals. That's where a substantial portion of our field's scholarly work lives, and a fix I need to figure out if I can make before I think about releasing Citation Asymmetry Detector version 1.0: right now, the tool has a sizable blind spot. But as a first-pass survey of what our core journals cite *and don't cite*, the tool works to give me an initial idea of the disciplinary blind spots.
 
 With that caveat, following are some headline results. 
 
