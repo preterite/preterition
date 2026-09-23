@@ -1494,6 +1494,47 @@ footer {
   text-align: right;
 }
 
+/* The index's foot: one sentence carrying the weblog on past the tenth card.
+   It wears the tagline box's dotted outline on the card's ground, marking it
+   as furniture rather than content, and the sans face at the size of the
+   entry foot's navigation, a step under the entries so it does not compete
+   with them. The dotted border is a pixel where the cards' left border is
+   three, so the left padding carries the difference and the sentence starts
+   on the card text's line. The two narrower insets follow the cards' own in
+   responsive.css, kept beside the rule so the two cannot part. */
+.index-foot {
+  background-color: var(--color-card-dark);
+  border: 1px dotted var(--color-accent-bright);
+  border-radius: 4px;
+  padding: 16px var(--content-inset) 16px calc(var(--content-inset) + 2px);
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+
+.index-foot p {
+  margin: 0;
+}
+
+.index-foot a {
+  color: var(--color-accent-grey-green);
+}
+
+.index-foot a:hover {
+  color: var(--color-accent-bright);
+}
+
+@media (max-width: 767px) {
+  .index-foot {
+    padding: 16px 16px 16px 18px;
+  }
+}
+
+@media (max-width: 399px) {
+  .index-foot {
+    padding: 12px 12px 12px 14px;
+  }
+}
+
 /* The comments card. Each comment is its own article with a thin left rule
    inside the card's own; the rule's colour and style are decoration on top
    of the words that carry the meaning -- "(author)" for the weblog's

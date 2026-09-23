@@ -56,10 +56,12 @@
    there inert -- a control that does nothing is worse than one wired or one
    hidden. Pagefind is a JavaScript index and there is no static shape of
    site search to degrade to, so hiding is the only honest branch.
-   .search-trigger is header.html's; .hex is index.md's. A noscript block is
+   .search-trigger is header.html's; .hex is index.md's;
+   .index-foot-search is the clause of weblog.html's foot that points at
+   them. A noscript block is
    parsed only when scripting is off, so this rule and the wiring in main.js
    can never both apply. Placed after the stylesheets so it wins a
    specificity tie rather than relying on one. */
-.search-trigger, .hex { display: none; }
+.search-trigger, .hex, .index-foot-search { display: none; }
 </style></noscript>
 

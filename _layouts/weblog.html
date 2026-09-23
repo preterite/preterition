@@ -81,6 +81,28 @@
           <p>Until then, most of it is readable at the <a href="https://web.archive.org/web/*/preterite.net/blog/*">Internet Archive</a>. Back soon -- yes, with cats.</p>
         </div>
         {%- endfor %}
+        {%- comment -%} The foot of the index, for the reader who finishes the
+        tenth card and wants more. One sentence, phrased as the weblog going
+        on rather than as the page apologizing for stopping: the eleventh
+        entry by name, the first one this page does not show, then the two
+        menus in the aside and the search control in the header. The wording
+        never says where those are, because below the narrow breakpoint the
+        aside follows this column and "in the sidebar" would be wrong for the
+        reader most likely to be here. Search is a link to the top of the page
+        and not a control of its own, so search keeps one place on the page.
+        With scripting off the search clause is hidden by head.html's noscript
+        rule, beside the control it points at, and the sentence still reads
+        whole. A nav rather than a second footer, so the print block drops it
+        and a screen reader meets one footer; it sits inside the region
+        Pagefind ignores.
+        {%- endcomment %}
+        {%- if site.posts.size > 10 %}
+        {%- assign next_older = site.posts[10] %}
+        {%- assign oldest = site.posts.last %}
+        <nav class="index-foot" aria-label="Earlier entries">
+          <p>Weblog posts continue with <a href="{{ next_older.url }}">{{ next_older.title }}</a>, and run back to {{ oldest.date | date: "%B %Y" }} by <a href="#weblog-archives">month</a> or by <a href="#weblog-categories">category</a><span class="index-foot-search"> or by <a href="#">search</a></span>.</p>
+        </nav>
+        {%- endif %}
       </div>
     </main>
 

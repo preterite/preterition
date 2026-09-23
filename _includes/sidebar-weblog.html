@@ -73,7 +73,8 @@
     {%- assign cat_sorted = cat_names | split: "|" | sort %}
     {%- if cat_sorted.size > 0 %}
     <div class="sidebar-section">
-      <details class="sidebar-details">
+      {%- comment -%} The id is a link target: the weblog index's foot names this menu. {%- endcomment %}
+      <details class="sidebar-details" id="weblog-categories">
         <summary><h2>Categories</h2></summary>
         <ul class="archive-list">
           {%- for name in cat_sorted %}
@@ -90,7 +91,8 @@
     {%- assign months = site.posts | group_by_exp: "p", "p.date | date: '%Y-%m'" %}
     {%- if months.size > 0 %}
     <div class="sidebar-section">
-      <details class="sidebar-details">
+      {%- comment -%} The id is a link target: the weblog index's foot names this menu. {%- endcomment %}
+      <details class="sidebar-details" id="weblog-archives">
         <summary><h2>Archives</h2></summary>
         <ul class="archive-list">
           {%- for m in months %}
