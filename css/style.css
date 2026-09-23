@@ -60,6 +60,23 @@
   font-style: normal;
   font-display: swap;
 }
+/* The two italics are cut from the same 3.005 source as the uprights, to the
+   same codepoints and layout features. A 500 or 700 italic resolves to the
+   nearer of them, so the browser never slants an upright. */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* JetBrains Mono — Navigation, H1, code */
 @font-face {
@@ -1494,25 +1511,31 @@ footer {
   text-align: right;
 }
 
-/* The index's foot: one sentence carrying the weblog on past the tenth card.
-   It wears the tagline box's dotted outline on the card's ground, marking it
-   as furniture rather than content, and the sans face at the size of the
-   entry foot's navigation, a step under the entries so it does not compete
-   with them. The dotted border is a pixel where the cards' left border is
-   three, so the left padding carries the difference and the sentence starts
-   on the card text's line. The two narrower insets follow the cards' own in
-   responsive.css, kept beside the rule so the two cannot part. */
+/* The index's foot: two sentences carrying the weblog on past the tenth card,
+   a pair set half a line apart. It is furniture rather than content and says
+   so by what it lacks: the cards' hairline border all round but no accent
+   rule, and a voice apart from the entries' -- sans italic a step under their
+   size, the instructional register of the 404's plain card. The border is a
+   pixel where the cards' left border is three, so the left padding carries
+   the difference and the text starts on the card text's line. The two
+   narrower insets follow the cards' own in responsive.css, kept beside the
+   rule so the two cannot part. */
 .index-foot {
   background-color: var(--color-card-dark);
-  border: 1px dotted var(--color-accent-bright);
+  border: 1px solid var(--color-border-dark);
   border-radius: 4px;
   padding: 16px var(--content-inset) 16px calc(var(--content-inset) + 2px);
   font-family: var(--font-sans);
   font-size: 0.875rem;
+  font-style: italic;
 }
 
 .index-foot p {
   margin: 0;
+}
+
+.index-foot p + p {
+  margin-top: 0.5em;
 }
 
 .index-foot a {
