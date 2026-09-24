@@ -8,8 +8,7 @@ My research vault, the on-disk assembly of folders, plaintext templated notes, a
 
 I [organize my own work that way](/weblog/2026/09/17/tooling-making-building.html).
 
-![three squares showing several linked network nodes close up and many more from further away](/weblog/assets/scholar-vault.png)
-
+![three squares showing several linked network nodes close up and many more from further away](/weblog/assets/scholar-vault.png) \
 `Figure 1:` *Graph view of my Obsidian vault, at three distances.*
 
 Recently, I revisited Ahrens's book and was struck by a charge he makes in passing. Almost every guide on writing recommends starting with brainstorming, Ahrens says, and he thinks that's backward: the ideas you pull out of your head in a brainstorm don't originate with you in that moment, but from past ideas you've read and thought, so the sensible move is to stop brainstorming for a topic and look in the slip-box instead (Ahrens 2017, sec. 7). He cites Luhmann for the book's concluding words: "I never encounter any mental blockages" (sec. 13). That should draw any compositionist's attention. Rhetoric and composition, following thousands of years of tradition, calls the part of writing where the ideas come from *invention*, not memory---though invention's *topoi* were originally places or *loci*, and finding an argument meant walking back through them. We have a literature on it. We have journals. So when a bestselling book about writing says writing guides have been getting invention wrong, I went looking for our reply.
