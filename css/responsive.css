@@ -405,6 +405,13 @@
     animation: none !important;
     transition: none !important;
   }
+
+  /* Scroll behaviour is neither an animation nor a transition, so the rule
+     above cannot reach it. style.css sets html to smooth scrolling for
+     in-page links; this sets it back to an instant jump. */
+  html {
+    scroll-behavior: auto !important;
+  }
 }
 
 /* ===== HIGH CONTRAST: DECLINED, DELIBERATELY =====

@@ -139,31 +139,6 @@ function initMobileNav() {
  */
 
 /**
- * Handle smooth scroll behavior for anchor links
- */
-function initSmoothScroll() {
-  // matchMedia is the script-side counterpart of a CSS media query: it reads
-  // the same user preference the stylesheet reads. The global animation kill
-  // switch in responsive.css cannot reach scrollIntoView, since scroll
-  // behaviour is neither an animation nor a transition.
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const scrollBehavior = prefersReduced ? 'auto' : 'smooth';
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const href = this.getAttribute('href');
-      if (href !== '#') {
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          target.scrollIntoView({ behavior: scrollBehavior });
-        }
-      }
-    });
-  });
-}
-
-/**
  * Nav stagger animation
  * Fades nav items in left-to-right with staggered delay
  * Fires once on page load
@@ -776,7 +751,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initStripRotation();
   initTaglineRotation();
   initMobileNav();
-  initSmoothScroll();
   initCompactHeader();
   initSearch();
   initPerfPlate();
