@@ -55,6 +55,9 @@ That argument collides with a matter I left hanging in [Certification by Plan](/
 Years after taking the M71 on Forbes, I found a long bus ride back to a different apartment after an afternoon of teaching provided the opportunity to scribble down what had happened in the class, what I'd hoped would happen, and what I thought about the differend between. Nobody graded that notebook. Its descendants continue to accumulate in the research vault [I pictured in my last post](/weblog/2026/09/23/invention-and-the-ramist-move.html), which has become my archive for *(gestures vaguely)* all this. 
 
 
+* footnotes
+{:footnotes}
+
 ### References
 
 Ahrens, Sönke. 2017. *How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking - for Students, Academics and Nonfiction Book Writers*. Smart Notes.

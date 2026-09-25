@@ -240,6 +240,17 @@ p {
   margin-bottom: 20px;
 }
 
+/* End matter. A post's footnotes and its References open with a double
+   break -- two lines of body text -- so the argument visibly ends before
+   the apparatus begins. kramdown supplies both hooks, the class on the
+   footnotes' div and the id on the References heading, so no post
+   carries spacing markup. Adjacent margins collapse to the larger, so the
+   gap before each is the same whichever comes first. */
+.post-body .footnotes,
+.post-body h3#references {
+  margin-top: 3.825rem; /* 2 lines x 1.7 line-height x 1.125rem body text */
+}
+
 a {
   color: var(--color-accent-grey-green);
   text-decoration: underline;
