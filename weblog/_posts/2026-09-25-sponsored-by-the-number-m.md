@@ -9,5 +9,5 @@ Perhaps there's no more meaning to an odometer rolling over than there is to cou
 They're shorthand. They let one make comparisons, track progress. They may mean nothing on their own, but if there are two fewer cookies than there were last night, Malcolm should likely explain. And maybe part of what's both useful and problematic about numbers is that they let one compare without description: they reduce complexity. Instead of an account---that's in the archive---a count.
 
 **words posted:** 624436 \
-**comments published:** 3007 \ 
+**comments published:** 3007 \
 **posts published:** 1000
