@@ -14,9 +14,9 @@ Turnitin poses Bernstein's question in a product. When MIT's committee gave up o
 
 The machines got caught in my *Choose Your Own Adventure* cheat. When Anthropic's interpretability team traced what their model does between a question and its answer, they found the printed reasoning doesn't always match the computation: in one case the model claims to use a calculator it doesn't have, and in another it "works backwards from the human-suggested answer" (Lindsey et al. 2025, sec. 11), generating the steps that would justify a conclusion it had already been handed. Credit for the steps---the convention on the math worksheet---fails in the machine the way it failed the kid with the thumb at the back of the book: the shown work was written from the answer.
 
-My last post closed on a question: *access to what*? I proposed three answers: the interior, the record the medium keeps, and the apparatus that keeps the record. The first is closed. [My series](/weblog/2026/09/14/the-embodied-agnostic-subject-part-1.html) declined to contract on the interior, and Turnitin's Clarity doesn't reopen it. Clarity never claims to know what a student was thinking, only what a keyboard did, and its playback is a record of the hand, not a report of the mind. That leaves the record and the apparatus, and I find Clarity  notable because it bundles them: the record it keeps is a product, and the vendor holds the product.
-
 <!--more-->
+
+My last post closed on a question: *access to what*? I proposed three answers: the interior, the record the medium keeps, and the apparatus that keeps the record. The first is closed. [My series](/weblog/2026/09/14/the-embodied-agnostic-subject-part-1.html) declined to contract on the interior, and Turnitin's Clarity doesn't reopen it. Clarity never claims to know what a student was thinking, only what a keyboard did, and its playback is a record of the hand, not a report of the mind. That leaves the record and the apparatus, and I find Clarity  notable because it bundles them: the record it keeps is a product, and the vendor holds the product.
 
 ### What a medium keeps
 
