@@ -199,6 +199,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Images never outgrow their column. Markdown images carry no width of
+   their own -- the weblog's 500px smalls and recovered originals among them
+   -- so on a phone narrower than the image, max-width holds it to the
+   column and height: auto keeps its ratio. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ===== TYPOGRAPHY ===== */
 h2, h3, h4, h5, h6,
 body.protected-inquiries h1 {
