@@ -103,9 +103,13 @@
      so no constant padding on main can clear it, and a fixed band that
      tall on a phone is the wrong trade regardless. The drawer is its own
      fixed element and is unaffected. */
+  /* Relative, not static: it still scrolls with the page, but the two
+     .header-moire layers are positioned against the header, and a static
+     header hands them the page instead, where the opaque ground covers the
+     first screen and the oversized layer widens the page. */
   header {
     padding: 16px;
-    position: static;
+    position: relative;
   }
 
   .page-body {
