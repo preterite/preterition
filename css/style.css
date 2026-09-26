@@ -208,6 +208,20 @@ img {
   height: auto;
 }
 
+/* Long unbroken strings -- a pasted URL, a hash -- break inside entry and
+   comment text rather than widening the page on a phone. */
+.post-body,
+.comment-body {
+  overflow-wrap: break-word;
+}
+
+/* Preformatted text keeps its lines and scrolls within its own box. The
+   print block at the foot of this file wraps it instead, a sheet having no
+   scroll. */
+pre {
+  overflow-x: auto;
+}
+
 /* ===== TYPOGRAPHY ===== */
 h2, h3, h4, h5, h6,
 body.protected-inquiries h1 {
@@ -2242,7 +2256,8 @@ blockquote {
   z-index: 1;
 }
 
-.panel {
+.panel,
+.panel-end {
   padding: var(--gutter);
   max-width: 60rem;
   margin: 0 auto;
@@ -2361,7 +2376,8 @@ blockquote {
      28px height comes back off. Written as the derivation rather than as
      35.88px so a change to the h1 step or to the line-unit carries here.
      Horizontal placement is untouched -- the hexagon and the bug below it
-     are both flex-end children of .panel and stay on one right edge. */
+     both end at the same right inner edge, .panel-end taking the panel's
+     width and gutter, and stay on one right edge. */
   margin-top: calc(var(--subhead-lh) + (1.35rem * 1.05) - 14px);
   cursor: pointer;
   background: var(--color-accent-bright);
@@ -2490,10 +2506,10 @@ blockquote {
   /* Apparatus, not prose: the body's 1.7 leading plus a 0.4rem row gap set
      these four rows 30px apart, which reads as double-spaced on a page whose
      whole conceit is an index. 1.4 with no row gap is
-     the leading of a colophon or a masthead. The block is anchored to the
-     panel's bottom by justify-content: space-between, so tightening pulls
-     the rule DOWN toward the tagline rather than lifting the tagline; the
-     cluster's bottom edge does not move. */
+     the leading of a colophon or a masthead. On the wide layout the block is
+     anchored to the stage's bottom, so tightening pulls the rule DOWN toward
+     the tagline rather than lifting the tagline; the cluster's bottom edge
+     does not move. */
   line-height: 1.4;
   gap: 0 2rem;
   margin-bottom: 0;
@@ -2611,12 +2627,26 @@ blockquote {
     justify-content: space-between;
   }
 
+  /* The foot follows the index in the source, so that on a phone the
+     sign-off, the tagline and the bug come after the entries and keyboard
+     order matches what is seen. Here it is set back at the bottom of the
+     left panel: the panel's width and gutter, anchored to the stage's foot,
+     where the panel's space-between column used to put it. */
+  .panel-end {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: var(--left-w);
+    max-width: none;
+    margin: 0;
+  }
+
   .headrow { padding-top: 0; }
   .signoff { margin-top: 0; }
   /* The tagline and the bug lift off the bottom edge, and close up toward
      the sign-off above them. The two numbers are one
-     move: .panel is a space-between column, so its lower block is anchored
-     to the bottom and any height the block gains pushes the sign-off UP.
+     move: .panel-end is anchored to the stage's bottom, so any height the
+     block gains pushes the sign-off UP.
      Holding the sign-off still therefore means margin-top gives up exactly
      what padding-bottom takes -- 2.25rem, about 1.5 of the tagline's own
      ~25.5px line box (0.9375rem at the body's 1.7). Change one and the

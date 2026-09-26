@@ -17,24 +17,6 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
       <button class="hex" aria-label="Search this site"></button>
     </div>
   </div>
-
-  <div>
-    <p class="signoff">
-      <span class="own-line"><span class="k">listening:</span>{% include listening.html count=1 form="signoff" %}</span>
-      <span class="own-line"><span class="k">upcoming:</span>{% include upcoming.html count=1 form="signoff" %}</span>
-      <span class="own-line"><span class="k">built:</span><a href="/about.html#colophon">colophon</a></span>
-      <span><span class="k">terms:</span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
-    </p>
-    <div class="foot">
-      <p class="tagline">
-        <span class="g1" aria-hidden="true"></span>
-        <span class="g2" aria-hidden="true"></span>
-        <span class="g3" aria-hidden="true"></span>
-        <span class="lead"></span>
-      </p>
-      <img class="bug" alt="" src="/img/me-bug.svg" width="10" height="22">
-    </div>
-  </div>
 </div>
 
 <nav class="wall" id="wall" aria-label="Site index">
@@ -111,3 +93,21 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
   </a>
 
 </nav>
+
+<div class="panel-end">
+  <p class="signoff">
+    <span class="own-line"><span class="k">listening:</span>{% include listening.html count=1 form="signoff" %}</span>
+    <span class="own-line"><span class="k">upcoming:</span>{% include upcoming.html count=1 form="signoff" %}</span>
+    <span class="own-line"><span class="k">built:</span><a href="/about.html#colophon">colophon</a></span>
+    <span><span class="k">terms:</span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
+  </p>
+  <div class="foot">
+    <p class="tagline">
+      <span class="g1" aria-hidden="true"></span>
+      <span class="g2" aria-hidden="true"></span>
+      <span class="g3" aria-hidden="true"></span>
+      <span class="lead"></span>
+    </p>
+    <img class="bug" alt="" src="/img/me-bug.svg" width="10" height="22">
+  </div>
+</div>
