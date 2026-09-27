@@ -52,7 +52,7 @@ Bernward Joerges [checked the bridges](https://doi.org/10.1177/03063129902900300
 
 Both outcomes obscure the power relation. It "is not to be found in the formal attributes of these things themselves. Only their authorization, their legitimate representation, gives shape to the definitive effects they may have" (Joerges 424). The bridges "represent legitimate or contested property and access rights which as a rule change over time" (Joerges 424). The custody question I arrived at [last time](/weblog/2026/09/26/access-to-what.html) here travels through the sociology of technology instead of from a keystroke log. Joerges overcorrects, though: "Only rarely and in the most trivial senses," he says, "can one show that such constraints are coupled to building form" (424).
 
-I'd say there's only one thing you can do with a Hellfire missile. Where a technology is monostable, form binds. Winner already had the scale, distinguishing an arrangement that "requires" a form of politics from one that is "strongly compatible with, but does not strictly require" it (674). An honest use of the scale would be to ask where on it the technology sits, read from its actual use cases rather than from what someone meant.
+I'd say [there's only one thing you can do with a Hellfire missile](/resources/edwards-insurgent-rhetorics.pdf). Where a technology is monostable, form binds. Winner already had the scale, distinguishing an arrangement that "requires" a form of politics from one that is "strongly compatible with, but does not strictly require" it (674). An honest use of the scale would be to ask where on it the technology sits, read from its actual use cases rather than from what someone meant.
 
 Call it the use record: what a technology has been used for, by whom, and under whose authorization. Values are read from provenance, not intent. [Alex Reid](https://profalexreid.com/2026/09/09/inclined-planes-for-social-good-and-other-intellectual-maladies/) made the point this month with an inclined plane, a ramp to one person and a wall to another. His questions---"good for whom, under what conditions, and at whose expense?"---are use-record questions, and none of them needs a designer's mind. Turn the question of the Hellfire missile on writing. Is there only one thing you can do with your output? No. Writing is multistable, as its record shows: the same page is a unit an assessor counts and an experience good its writer consumes in the writing of it, and the theory has to hold for the second use as much as the first; for the diarist and the journalist, the teacher writing an end comment and the weblogger counting his words; not only for the student whose page is bound for a rubric. The count and the account are both in the record. A technology whose record holds both can prevent its values from being read from either one alone.
 
@@ -91,6 +91,8 @@ Horner, Bruce. 2000. *Terms of Work for Composition: A Materialist Critique*. Al
 
 Horning, Alice S. 2007. "The Definitive Article on Class Size." *WPA: Writing Program Administration* 31 (1--2): 11--34.
 
+Ihde, Don. (1990) 2014. "A Phenomenology of Technics." In *Philosophy of Technology: The Technological Condition: An Anthology*, 2nd ed., edited by Robert C. Scharff and Val Dusek, 539--60. Malden, MA: Wiley Blackwell.
+
 Joerges, Bernward. 1999. "Do Politics Have Artefacts?" *Social Studies of Science* 29 (3): 411--31.
 
 Kline, Stephen J. (1985) 2003. "What Is Technology?" In *Philosophy of Technology: The Technological Condition*, edited by Robert C. Scharff and Val Dusek, 210--12. Malden, MA: Blackwell. First published in *Bulletin of Science, Technology & Society* 5 (3) (1985): 215--18.
@@ -109,5 +111,5 @@ Trimbur, John. 2000. "Composition and the Circulation of Writing." *College Comp
 
 Wang, Avery Li-Chun. 2003. "An Industrial-Strength Audio Search Algorithm." In *Proceedings of the 4th International Conference on Music Information Retrieval (ISMIR 2003)*, 7--13. Baltimore.
 
-Winner, Langdon. 2014. "Do Artifacts Have Politics?" In *Philosophy of Technology: The Technological Condition: An Anthology*, 2nd ed., edited by Robert C. Scharff and Val Dusek, 668--79. Malden, MA: Wiley Blackwell.
+Winner, Langdon. (2014. "Do Artifacts Have Politics?" In *Philosophy of Technology: The Technological Condition: An Anthology*, 2nd ed., edited by Robert C. Scharff and Val Dusek, 668--79. Malden, MA: Wiley Blackwell.
 
