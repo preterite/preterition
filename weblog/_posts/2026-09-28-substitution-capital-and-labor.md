@@ -6,9 +6,9 @@ categories: [Technology]
 ---
 ### The economy of a manufacture
 
-For Charles Babbage, the word "economy" in the title [*On the Economy of Machinery and Manufactures*](https://www.gutenberg.org/ebooks/4238) (1832) names the technological dividend a manufacture saves: *thrift*. Babbage designed the material substrate of the engine Lovelace programmed as an economist of labor, seeking the cost of a task sliced sufficiently fine for a machine. His notion of thrift served the master's question: how does one buy only the labor a task requires, and not a bit more?
+For Charles Babbage, the word "economy" in the title [*On the Economy of Machinery and Manufactures*](https://www.gutenberg.org/ebooks/4238) (1832) names the technological dividend a manufacture saves as *thrift*. As an economist of labor, Babbage designed the material substrate of the engine Lovelace programmed, seeking the cost of a task sliced sufficiently fine for a machine. His notion of thrift served the master's question: how does one buy only the labor a task requires, and not a bit more?
 
-[In 2005](/weblog/2005/04/12/left-behind.html), I proposed---following C. Paul Olson---that digital technologies raise the efficiency of distribution "by substituting capital-intensive processes for labor-intensive processes," and that they make economic inequality visible "via precisely the same means." The first issue of *Computers and Composition* opened on whether computers could "solve some of the perennial problems associated with composition programs---staffing, financial support, faculty work-loads, class size, training for graduate students and paraprofessionals" (Kiefer and Selfe 1983, 1, quoted in Moran 2003, 351): capital proposed as a substitute for labor. In Marx's terms, "capital" means stored labor standing in for living labor. My version, from Marx via Olson: *technologies substitute capital-intensive processes for labor-intensive processes.* 
+[In 2005](/weblog/2005/04/12/left-behind.html), I proposed---following C. Paul Olson---that digital technologies raise the efficiency of distribution "by substituting capital-intensive processes for labor-intensive processes," and that they make economic inequality visible "via precisely the same means." The first issue of *Computers and Composition* opened on whether computers could "solve some of the perennial problems associated with composition programs---staffing, financial support, faculty work-loads, class size, training for graduate students and paraprofessionals" (Kiefer and Selfe 1983, 1, quoted in Moran 2003, 351): capital operating as a substitute for labor. In Marx's terms, "capital" means stored labor standing in for living labor. My version, from Marx via Olson: *technologies substitute capital-intensive processes for labor-intensive processes.* 
 
 <!--more-->
 
@@ -20,7 +20,7 @@ From the third section's labour "the first class were entirely exempt," because 
 
 ### Definitional provenance
 
-Here, then, is the progression I propose. Babbage plans the substitution. Marx names the substitution as a tendency and traces its path. Olson suggests the computer permits the substitution. I argue that the substitution is technology's defining feature.
+Here, then, is the progression I see. Babbage plans the substitution. Marx names the substitution as a tendency and traces its path. Olson suggests the computer permits the substitution. I argue that the substitution is technology's defining feature.
 
 Marx relied on Babbage for much of what he knew of machinery. The Grundrisse's [Fragment on Machines](https://www.marxists.org/archive/marx/works/1857/grundrisse/ch13.htm) turns the master's thrift into capital's law:
 
