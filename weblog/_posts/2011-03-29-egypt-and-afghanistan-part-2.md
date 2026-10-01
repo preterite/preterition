@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Egypt and Afghanistan, Part 2"
-description: "The Facebook-revolution story hides a revolt over bread, driven partly by U.S. aid policy, and the parallels to Afghanistan argue against any techno-utopianism that ignores economic context."
+description: "The Facebook-revolution story hides a revolt over bread, driven partly by U.S. aid policy; the parallels to Afghanistan argue against techno-utopianism that ignores economic context."
 date: 2011-03-29 14:24:42 -0700
 categories:
   - "Afghanistan"

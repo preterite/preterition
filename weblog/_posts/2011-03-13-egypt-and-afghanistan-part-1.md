@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Egypt and Afghanistan, Part 1"
-description: "Egypt's 2011 uprising, often told as a Facebook revolution, has deep roots in food prices, wheat imports and class, and that economic story offers a lens for Afghanistan's own troubles."
+description: "Egypt's 2011 uprising, often told as a Facebook revolution, has deep roots in food prices, wheat imports and class; the economic counter-narrative offers a perspective on Afghanistan's struggles."
 date: 2011-03-13 14:22:46 -0700
 categories:
   - "Afghanistan"

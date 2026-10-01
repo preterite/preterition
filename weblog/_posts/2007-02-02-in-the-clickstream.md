@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In the Clickstream, Part 1"
-description: "A cadet arrives at her writing instructor's office in full gear to report that she's facing an honor board, and the clickstream that put her there spells trouble for them both."
+description: "A cadet arrives at her writing instructor's office to report that she's facing an honor board."
 date: 2007-02-02 21:32:01 -0800
 last_modified_at: 2013-02-20 23:48:41 -0800
 categories:

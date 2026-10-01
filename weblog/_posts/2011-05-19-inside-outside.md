@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Inside, Outside"
-description: "An academy meeting wrangles over who should issue a costly laptop shipment and an embassy meeting weighs English curricula and graduate study, and neither takes up the patchy power and internet Afghans live with."
+description: "An academy meeting wrangles over a costly laptop shipment and an embassy meeting weighs English curricula; neither takes up the patchy power and internet Afghans live with."
 date: 2011-05-19 13:13:39 -0700
 last_modified_at: 2023-03-05 03:49:21 -0800
 categories:

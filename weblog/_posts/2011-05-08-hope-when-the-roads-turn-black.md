@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hope When the Roads Turn Black"
-description: "Tightened security, armored convoys and a day when Kabul's roads go black frame an argument about mobility as privilege, and about learning Afghanistan at its gates, checkpoints and crossings, on foot and over tea."
+description: "Tightened security and armored convoys and a day when Kabul's roads go black frame an argument about mobility as privilege."
 date: 2011-05-08 14:30:01 -0700
 categories:
   - "Afghanistan"

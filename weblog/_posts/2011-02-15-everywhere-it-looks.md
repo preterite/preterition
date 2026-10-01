@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Everywhere It Looks"
-description: "Early missteps with Afghan colleagues, in a place where power runs through individuals, lead to a critique of composition scholarship on globalization that sees its own privilege reflected in every culture it studies."
+description: "Early missteps with Afghan colleagues; composition scholarship on globalization that sees reflected privilege."
 date: 2011-02-15 12:08:05 -0800
 categories:
   - "Afghanistan"

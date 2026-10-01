@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In the Clickstream, Part 5"
-description: "The instructor deflects the search party and answers secrecy with disclosure, calling in favors to spread the cadet's links across the network."
+description: "The professor deflects and counters secrecy with disclosure."
 date: 2007-03-17 03:35:59 -0700
 last_modified_at: 2013-02-20 23:51:00 -0800
 categories:

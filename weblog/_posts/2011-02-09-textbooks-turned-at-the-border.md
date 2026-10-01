@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Textbooks Turned at the Border"
-description: "Export restrictions on American ESL textbooks, a problem once Afghan programs order without U.S. help, raise a worry that intellectual property keeps rhetoric and composition English-only."
+description: "Export restrictions on American ESL textbooks to Afghanistan connect English-only rhetoric and composition concerns to intellectual property regimes."
 date: 2011-02-09 13:38:34 -0800
 categories:
   - "Afghanistan"

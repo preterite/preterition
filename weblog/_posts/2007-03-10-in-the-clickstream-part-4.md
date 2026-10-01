@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In the Clickstream, Part 4"
-description: "The instructor sends the cadet off post to write and rally her network, then hears military police knock at his door."
+description: "The cadet writes an essay. The military police visit the professor's office."
 date: 2007-03-10 02:23:11 -0800
 last_modified_at: 2013-02-20 23:50:47 -0800
 categories:

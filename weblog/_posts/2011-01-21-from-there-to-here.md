@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "From There to Here"
-description: "Getting from New York to a base in Kabul takes staging camps, a cargo flight and an armored convoy, and arrival brings first impressions of the city, the barracks and the military academy."
+description: "Travel via cargo flight and an armored convoy; first impressions of the city."
 date: 2011-01-21 08:45:00 -0800
 categories:
   - "Afghanistan"

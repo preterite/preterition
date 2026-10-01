@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Felt Bonds of the Social"
-description: "Afghan working life runs on tea, family talk and face-saving, where shared feeling outweighs facts or procedure, and a memorial roll call in a hangar shows the quieter Western form of those bonds."
+description: "Tea, family talk, face-saving; a memorial service in a hangar."
 date: 2011-04-30 09:33:34 -0700
 categories:
   - "Afghanistan"

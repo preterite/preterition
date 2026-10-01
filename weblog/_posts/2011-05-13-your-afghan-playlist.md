@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Your Afghan Playlist?"
-description: "An open call for English-language songs and films to play for Afghan students sets out the rules they must meet: no alcohol, drugs, sex, misogyny or non-Islamic proselytizing."
+description: "A call for English-language songs and films to play for Afghan students sets out the rules: no alcohol, drugs, sex, misogyny or non-Islamic proselytizing."
 date: 2011-05-13 14:02:45 -0700
 last_modified_at: 2021-05-14 21:03:39 -0700
 categories:

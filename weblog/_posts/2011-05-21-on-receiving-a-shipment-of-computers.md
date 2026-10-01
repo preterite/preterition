@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Receiving a Shipment of Computers"
-description: "Unloading a laptop shipment grounds an argument, built on means of communication as means of production, that technology scholarship misses the labor and particular culture behind its devices."
+description: "Unloading a laptop shipment grounds an argument about the occulted labor and particular culture behind technological devices."
 date: 2011-05-21 14:36:49 -0700
 categories:
   - "Afghanistan"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Negotiating the Administratosphere"
-description: "Early meetings with the academy's languages department prompt a rethink of how a writing course should open, favoring course design over administrative detail, with a first class built around a sealed, ungraded essay."
+description: "Early meetings with the academy's languages department prompt reconsiderations of how writing courses should open."
 date: 2011-01-26 07:11:44 -0800
 categories:
   - "Afghanistan"

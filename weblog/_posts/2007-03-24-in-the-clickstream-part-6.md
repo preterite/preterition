@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "In the Clickstream, Part 6"
-description: "The story explains the repurposed swarms, the cadet's argument moves the case from lost technology to the management of information and affect, and her reflective essay draws more than a thousand readers."
+description: "The cadet's essay relocates the argument from captured technology to the management of information and affect."
 date: 2007-03-24 02:52:18 -0700
 last_modified_at: 2013-02-20 23:51:09 -0800
 categories:
