@@ -24,13 +24,28 @@
 # the categories they became, derived from the migration database; an old
 # category whose new category has no archive page in this build gets no
 # stub, and the build log says so.
+#
+# One more retired address is not an archive: the feed's. WordPress served
+# it at /blog/feed/, and jekyll-feed writes it at /feed.xml. The stub moves
+# a browser and not a feed reader, which follows only the HTTP redirects a
+# static host cannot issue; a duplicate Atom document at the old address
+# would be the full honour, and it is parked. The stub is written whether
+# or not any archive page exists.
 module Preterite
   class ArchiveRedirects < Jekyll::Generator
     safe true
     priority :low
 
+    OLD_FEED = "/blog/feed/"
+    FEED = "/feed.xml"
+
     def generate(site)
-      return unless defined?(Jekyll::Archives::Archive) && defined?(JekyllRedirectFrom::RedirectPage)
+      return unless defined?(JekyllRedirectFrom::RedirectPage)
+
+      stub(site, OLD_FEED, FEED)
+      Jekyll.logger.info "Feed redirect:", "#{OLD_FEED} -> #{FEED}"
+
+      return unless defined?(Jekyll::Archives::Archive)
 
       archives = site.pages.select { |p| p.is_a?(Jekyll::Archives::Archive) }
       return if archives.empty?

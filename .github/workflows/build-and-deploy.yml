@@ -1,7 +1,7 @@
 # .github/workflows/build-and-deploy.yml
 #
-# Fetches new webmentions, builds preterite.net and publishes it to GitHub
-# Pages.
+# Fetches new webmentions, builds preterite.net, publishes it to GitHub
+# Pages, and sends webmentions for the entries a push added.
 #
 # Why a workflow at all, since Pages can build Jekyll by itself: Pages
 # hosts, Actions builds, and the only question was ever who runs Jekyll.
@@ -22,11 +22,16 @@
 #     into _data/webmentions/ and commits it to main, so the repository keeps
 #     every mention and the build renders them. That takes a secret and a
 #     write to the repository, and the native builder offers neither.
+#   Webmentions are SENT after the deploy. A receiver fetches the entry to
+#     confirm the link, so a notice can go only once the entry is live, and
+#     the native builder has no step after its deploy.
 #
-# One repository secret is held, WEBMENTION_IO_TOKEN, and one job fetches:
+# One repository secret is held, WEBMENTION_IO_TOKEN, and one job reads it:
 # `mentions`, which asks webmention.io for what it has received since the
 # newest mention already in the repository. The token can read mentions
-# and change nothing at the receiver. Nothing else fetches: Listening
+# and change nothing at the receiver. One other job reaches the network:
+# `send`, after the deploy, which reads the new entries as served and the
+# pages they link, and holds no secret. Nothing else fetches: Listening
 # selects in Liquid from a committed list, and the calendar is committed at
 # _calendar/preterite-upcoming.ics.
 #
@@ -52,6 +57,12 @@ on:
   schedule:
     - cron: "17 9 * * *"
   workflow_dispatch:
+    inputs:
+      send_posts:
+        description: "Entries to send webmentions for after the deploy, as weblog/_posts/ file names, space-separated. Empty sends none."
+        required: false
+        default: ""
+        type: string
 
 # Least privilege, and the two Pages-specific grants. `id-token: write` is
 # not an oversight: deploy-pages authenticates to the Pages service with a
@@ -260,3 +271,49 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  # OUTGOING WEBMENTIONS, SENT AFTER THE DEPLOY LANDS.
+  # _scripts/send_webmentions.py tells the pages a new entry links that the
+  # entry exists. It runs here, after the deploy, because a receiver fetches
+  # the entry to confirm the link and would find nothing before it is live;
+  # the script also waits out a 404 while the deploy reaches the edge.
+  #
+  # Which entries: on a push, those the push added under weblog/_posts/,
+  # read from the push's own range of commits, so an entry edited and
+  # released again sends nothing twice and the archive is never swept. By
+  # hand, the entries named in the run's input, which is how a notice is
+  # sent again. The daily rebuild sends nothing.
+  #
+  # It can change nothing and stop nothing: it holds `contents: read` alone
+  # and no secret, and its one step continues on error, after the deploy has
+  # already happened.
+  send:
+    name: Send webmentions for new entries
+    needs: deploy
+    if: ${{ !cancelled() && needs.deploy.result == 'success' && (github.event_name == 'push' || inputs.send_posts != '') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      # The full history, so the push's earlier commit is here to diff against.
+      - name: Check out the pushed commit
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+
+      # Values reach the shell through the environment, never by expression
+      # substitution into the script, so an input cannot become a command.
+      - name: Send webmentions
+        continue-on-error: true
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          POSTS: ${{ inputs.send_posts }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            python3 _scripts/send_webmentions.py --range "$BEFORE..$AFTER"
+          else
+            # Word splitting is wanted: the input is a space-separated list.
+            python3 _scripts/send_webmentions.py --post $POSTS
+          fi

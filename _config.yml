@@ -143,8 +143,8 @@ defaults:
 # year archive: nothing on this site links one, the sidebar listing months
 # and an entry's dateline linking its month, and the old /blog/YYYY/
 # addresses are left to 404 rather than answered by a page that exists only
-# to catch them. The old /blog/ addresses of the months and the categories
-# are honoured by _plugins/archive_redirects.rb.
+# to catch them. The old /blog/ addresses of the months and the categories,
+# and the feed's at /blog/feed/, are honoured by _plugins/archive_redirects.rb.
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
