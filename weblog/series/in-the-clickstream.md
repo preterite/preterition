@@ -1,6 +1,6 @@
 ---
 title: "In the Clickstream (fiction)"
-description: "A serial speculative fiction from 2007, set twenty minutes into the future at a military academy where student writing circulates through a public, tracked database and the faculty read the clickstreams. When a cadet whose essays rank among the most cited on campus is accused of plagiarism, and then of something worse, her civilian writing instructor has one remedy to offer: write an essay. The story imagines what database composition might become, and makes its links and citations the ground where secrecy and disclosure contend over a student's authorship."
+description: "At a military academy set twenty minutes into the future, student writing circulates through a public, tracked database and the faculty read the clickstreams. A cadet whose essays rank among the most cited on campus is accused of plagiarism and goes to a professor for help. The 2007 speculative serial imagines what database composition might become, and sets links and citations as the contested ground where secrecy and disclosure contend over authorship."
 entries:
   - 2007-02-02-in-the-clickstream.md
   - 2007-02-09-in-the-clickstream-part-2.md

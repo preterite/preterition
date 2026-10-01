@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Embodied Agnostic Subject, Part 2"
-description: "Treating opacity as a right turns any demand for legibility into a bid for jurisdiction. The embodied agnostic subject forbids the inferences that demand produces, from the reflective account to the integrity referral, each reading a subject that operates over time back to a single instant."
+description: "Treating opacity as a right turns any demand for legibility into a bid for jurisdiction. The embodied agnostic subject forbids the inferences that demand produces, from the reflective account to the integrity referral, each reading a subject that operates over time back to a single moment."
 date: 2026-09-14 16:00:00 -0700
 categories: [Politics, Writing]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Rebuilding in Afghanistan"
-description: "Written from Kabul in the first half of 2011, during a civilian deployment to help Afghan faculty at the country's national military academy build postsecondary writing curricula, these dispatches move between the work and what it shows. They follow the trip in, the shape of a workday, meetings over textbooks, laptops and graduate study, and the tea and talk through which Afghan institutions run. Along the way they argue about the politics of teaching English, literacy training as immaterial labor, intellectual property at the border, mobility as privilege, the labor hidden in computers, and the economics beneath the Arab uprisings, read as a lens for Afghanistan."
+description: "In the first half of 2011, I deployed as a civilian to help Afghan faculty build postsecondary English writing curricula. Over months, a series of activities: travel, the shape of a workday, negotiations over textbooks, costs of laptops and graduate study, the tea and talk that keep institutions moving. The events prompt inquiries into the politics of teaching English, the economics behind the spring 2011 revolutions, literacy training as immaterial labor, mobility as privilege, colonial intellectual property relations, and the hidden labor costs of technology."
 entries:
   - 2011-01-21-from-there-to-here.md
   - 2011-01-26-negotiating-the-administratosphere.md
