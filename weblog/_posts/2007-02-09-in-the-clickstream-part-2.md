@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "In the Clickstream, Part 2"
+description: "The accusing clickstream traces to a counterterrorism center down the hall, and to the cadet's widely cited work on Sri Lanka, where she met someone."
 date: 2007-02-09 23:10:08 -0800
 last_modified_at: 2013-02-20 23:50:07 -0800
 categories:

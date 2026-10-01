@@ -26,6 +26,10 @@
   same slug rule the archive pages are built with, so the two cannot
   disagree.
 
+  An entry gathered into a collection says so beneath its dateline, linking
+  the collection's hub; _plugins/series.rb hands the entry the hub's title
+  and address.
+
   Jekyll's `previous` is the older entry and `next` the newer: the
   collection sorts oldest first, so the names read against `site.posts`,
   which the index walks newest first. The labels below say older and
@@ -58,6 +62,9 @@
     </span>
     {%- endif %}
   </p>
+  {%- if p.series %}
+  <p class="post-series">Part of <a href="{{ p.series.url }}">{{ p.series.title }}</a></p>
+  {%- endif %}
   <div class="post-body">
     {%- if include.mode == "entry" %}
     {{ include.body }}

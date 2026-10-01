@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Embodied Agnostic Subject, Part 4"
+description: "An embodied agnostic subject requires systems of circulation that put someone at the use term and contract on observables whatever their participants' motives. It makes possible self-appropriation of a writer's own archive, and a line between labor a machine may take and labor worth protecting."
 date: 2026-09-16 08:15:00 -0700
 categories: [Politics, Writing]
 ---

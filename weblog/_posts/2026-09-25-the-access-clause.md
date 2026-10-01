@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Access Clause"
+description: "Every account of a writer carries an access clause: what it may treat as knowable about an interior. AI detection wrote the readable clause into classrooms by default; the version histories that replace it move the clause from the text to the process and leave open who holds the record."
 date: 2026-09-25 00:20:18 -0700
 categories: [Composition, Writing, Technology]
 ---

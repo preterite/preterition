@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "In the Clickstream, Part 3"
+description: "Her essay on networked information warfare cited a Tamil engineer's research instead of a classified white paper, the plagiarism charge shades toward treason, and her instructor's remedy is to write an essay."
 date: 2007-02-24 16:28:29 -0800
 last_modified_at: 2013-02-20 23:50:37 -0800
 categories:

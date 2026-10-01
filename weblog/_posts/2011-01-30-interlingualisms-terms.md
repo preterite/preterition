@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Interlingualism's Terms"
+description: "Afghan military English teaching treats the language as a practical tool, and translingual scholarship, read with some skepticism, helps question correctness norms and Americana-themed textbooks and argue for Afghans setting their own language policy."
 date: 2011-01-30 02:27:50 -0800
 categories:
   - "Afghanistan"

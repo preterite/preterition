@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Transformation: Storage and Time"
+description: "If the labor a technology saves is stored, where does it go, and whose time was it? Stored labor becomes capital only in a relation, at a use: a model keeps writing's skill and drops the writer, a profile keeps the pattern and drops the time, and an archive keeps both."
 date: 2026-09-29 00:08:11 -0700
 categories: [Technology]
 ---

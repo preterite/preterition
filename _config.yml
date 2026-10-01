@@ -93,6 +93,13 @@ defaults:
       path: "weblog/index.md"
     values:
       layout: weblog
+  # A collection's hub, from weblog/series/<slug>.md to
+  # /weblog/series/<slug>.html by the default page address.
+  # _plugins/series.rb gathers its entries.
+  - scope:
+      path: "weblog/series"
+    values:
+      layout: series
   - scope:
       path: "protected-inquiries.md"
     values:

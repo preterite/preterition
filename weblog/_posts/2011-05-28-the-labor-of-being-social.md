@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Labor of Being Social"
+description: "A planning meeting about graduate study for Afghan instructors leaves out the Afghans, who do business face to face over tea, while a mentor's swollen inbox gets nothing done and sociality turns out to be labor-intensive."
 date: 2011-05-28 05:56:57 -0700
 categories:
   - "Afghanistan"

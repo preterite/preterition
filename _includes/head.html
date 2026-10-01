@@ -68,7 +68,8 @@
      index reads in place of guessing at the page's parts. A script element
      by type only -- application/ld+json is never executed, so it stands
      with scripting off. sameAs ties the author to the records that name
-     the same person. -->
+     the same person. isPartOf names the collection an entry
+     belongs to, where it belongs to one. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -78,12 +79,45 @@
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "url": {{ head_url | jsonify }},
   "mainEntityOfPage": {{ head_url | jsonify }},
+  {%- if page.series %}
+  "isPartOf": {
+    "@type": "CreativeWorkSeries",
+    "name": {{ page.series.title | jsonify }},
+    "url": {{ page.series.url | absolute_url | jsonify }}
+  },
+  {%- endif %}
   "author": {
     "@type": "Person",
     "name": {{ site.author.name | jsonify }},
     "url": {{ "/about.html" | absolute_url | jsonify }},
     "sameAs": [{{ head_orcid | jsonify }}, {{ head_github | jsonify }}]
   }
+}
+</script>
+{%- endif %}
+{%- if page.series_entries %}
+
+<!-- A collection described as data: a schema.org CreativeWorkSeries naming
+     its entries in reading order, each of which names the collection back
+     through isPartOf. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWorkSeries",
+  "name": {{ page.title | strip_html | normalize_whitespace | jsonify }},
+  "description": {{ head_description | jsonify }},
+  "url": {{ head_url | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ "/about.html" | absolute_url | jsonify }},
+    "sameAs": [{{ head_orcid | jsonify }}, {{ head_github | jsonify }}]
+  },
+  "hasPart": [
+    {%- for e in page.series_entries %}
+    {"@type": "BlogPosting", "headline": {{ e.title | strip_html | normalize_whitespace | jsonify }}, "url": {{ e.url | absolute_url | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
 }
 </script>
 {%- endif %}

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Composition: Noun and Verb"
+description: "Composition names both a thing and the act that made it, and writing operates as a technology in all four senses of the word: artifact, know-how, system of production, system of use. Discretization joins them, and a technology's values show in its use record rather than in anyone's intent."
 date: 2026-09-27 15:10:18 -0700
 categories: [Technology]
 ---

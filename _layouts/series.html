@@ -1,0 +1,61 @@
+---
+# _layouts/series.html -- a collection's hub, at /weblog/series/<slug>.html:
+# the collection's abstract, then its entries in reading order, each with
+# its date and its own summary. The archive page's chassis and card, because
+# a hub is a list of entries reached from the same aside.
+#
+# The entries come from _plugins/series.rb, which reads the hub's own
+# `entries:` list and refuses the build when an entry is missing or carries
+# no description. Reading order is the list's order, oldest first: unlike
+# an archive, a collection is read from its beginning.
+#
+# The abstract is the page's description, so the one text serves the hub
+# and the machines that describe it: the meta description, the link card
+# and the structured data in head.html.
+#
+# Out of the search index, on the archive pages' rule: a search result
+# should point at an entry, never at a list of entries.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="weblog">
+  <div class="page-wrapper">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#weblog-nav" class="skip-link">Skip to weblog navigation</a>
+
+    {% include header.html title="Preterition" home="/weblog/" tagline=true %}
+
+    <div class="page-body">
+    <main id="main">
+      <div class="main-content" data-pagefind-ignore>
+        <section class="blog-card archive series">
+          <h2 class="archive-title">{{ page.title }}</h2>
+          <div class="series-abstract">
+            {{ page.description | markdownify }}
+          </div>
+          <ol class="archive-entries series-entries">
+            {%- for e in page.series_entries %}
+            <li>
+              <a class="archive-entry-title" href="{{ e.url }}">{{ e.title }}</a>
+              <span class="archive-entry-date"><time datetime="{{ e.date | date_to_xmlschema }}">{{ e.date | date: "%-d %B %Y" }}</time></span>
+              <div class="series-entry-summary">{{ e.description | markdownify }}</div>
+            </li>
+            {%- endfor %}
+          </ol>
+        </section>
+      </div>
+    </main>
+
+      {% include sidebar-weblog.html %}
+    </div>
+
+    {% include footer.html %}
+  </div>{%- comment -%} closes .page-wrapper, opened above in this same file
+  {%- endcomment %}
+
+  {% include scripts.html %}
+</body>
+</html>

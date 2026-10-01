@@ -20,6 +20,10 @@
     Archives          a menu. Every month holding an entry, with its count,
                       linking its archive. A gap in the writing is a gap in
                       the list.
+    Collections       a widget list. Each collection's hub, ordered by its
+                      earliest entry; _plugins/series.rb gathers them from
+                      weblog/series/. A collection is listed once its last
+                      entry is published, and never before.
     Top Posts         a widget list. Ten, hand-picked and hand-ordered in
                       _data/top-posts.yml. Selection as an entry point is
                       not selection as a policy: nothing is removed, and a
@@ -101,6 +105,18 @@
           {%- endfor %}
         </ul>
       </details>
+    </div>
+    {%- endif %}
+
+    {%- assign collections = site.data["series"] -%}
+    {%- if collections and collections.size > 0 %}
+    <div class="sidebar-section">
+      <h2>Collections</h2>
+      <ul class="series-list">
+        {%- for s in collections %}
+        <li><a href="{{ s.url }}">{{ s.title }}</a></li>
+        {%- endfor %}
+      </ul>
     </div>
     {%- endif %}
 

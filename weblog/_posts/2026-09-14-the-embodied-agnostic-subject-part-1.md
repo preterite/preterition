@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Embodied Agnostic Subject, Part 1"
+description: "Every theory of the subject carries an access regime: what it lets itself assume it can know about an interior, from what evidence, and when. Revealed preference and authorial intention share one; the embodied agnostic subject replaces it, needing a body, an unrecoverable formation, and a structure of address."
 date: 2026-09-14 14:02:57 -0700
 categories: [Politics, Writing]
 ---

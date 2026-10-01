@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Value of Stability Operations"
+description: "Reading the training mission's mass literacy programs as immaterial labor raises the question of what stability operations produce, and makes a case for measuring economic value in labor as well as commodities."
 date: 2011-02-06 06:23:51 -0800
 categories:
   - "Afghanistan"

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Substitution: Capital and Labor"
+description: "Technologies substitute capital-intensive processes for labor-intensive ones; the labor saved is stored, and who is exempted, replaced, or made to pay is decided outside the machine. From the division of mental labor to the word processor and the language model, the savings travel up and the labor travels down."
 date: 2026-09-28 09:11:01 -0700
 categories: [Technology]
 ---

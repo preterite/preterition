@@ -1485,7 +1485,8 @@ footer {
    carry an underline, so a link is told from text by shape and never by
    hue alone. Muted on the card ground measures 5.20:1. */
 .blog-meta,
-.post-byline {
+.post-byline,
+.post-series {
   font-family: var(--font-sans);
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1497,8 +1498,13 @@ footer {
   margin-top: -2px;
 }
 
+.post-series {
+  margin-top: -8px;
+}
+
 .blog-meta a,
-.post-byline a {
+.post-byline a,
+.post-series a {
   color: var(--color-muted-grey);
   text-decoration: underline;
   text-decoration-color: var(--color-border-dark);
@@ -1508,7 +1514,9 @@ footer {
 .blog-meta a:hover,
 .blog-meta a:focus-visible,
 .post-byline a:hover,
-.post-byline a:focus-visible {
+.post-byline a:focus-visible,
+.post-series a:hover,
+.post-series a:focus-visible {
   color: var(--color-accent-bright);
   text-decoration-color: currentColor;
 }
@@ -1806,6 +1814,7 @@ a.comment-author:focus-visible {
    control. Counts and dates sit muted beside their item. */
 .recent-comments,
 .top-posts,
+.series-list,
 .archive-list {
   list-style: none;
   margin: 0;
@@ -1814,6 +1823,7 @@ a.comment-author:focus-visible {
 
 .recent-comments li,
 .top-posts li,
+.series-list li,
 .archive-list li {
   margin: 0 0 6px 0;
 }
@@ -1835,6 +1845,7 @@ a.comment-author:focus-visible {
    menu-ended one. */
 .recent-comments li:last-child,
 .top-posts li:last-child,
+.series-list li:last-child,
 .archive-list li:last-child {
   margin-bottom: 0;
 }
@@ -1942,6 +1953,22 @@ a.comment-author:focus-visible {
   font-size: 0.8125rem;
   color: var(--color-muted-grey);
   white-space: nowrap;
+}
+
+/* A collection's hub: the archive card, with the abstract above the list
+   and each entry's summary beneath its title and date. The summary takes
+   the row's full width, so the title and date keep their line above it. */
+.series-abstract {
+  margin: 0 0 20px 0;
+}
+
+.series-entry-summary {
+  flex: 1 1 100%;
+  margin: 2px 0 4px 0;
+}
+
+.series-entry-summary p {
+  margin: 0;
 }
 
 /* ===== RESOURCE LISTS ===== */

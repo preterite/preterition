@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Embodied Agnostic Subject, Part 3"
+description: "Marxian productive consumption needs an access clause it never wrote, and the embodied agnostic subject supplies it. Contested exchange, a theory of value with no interior, and historical time give the subject its economics; information economics makes interiority in writing a credence attribute, which bounds what the subject claims."
 date: 2026-09-15 08:15:00 -0700
 categories: [Politics, Writing]
 ---

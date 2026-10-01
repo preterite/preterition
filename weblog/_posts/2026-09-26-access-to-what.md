@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Access to What?"
+description: "Writing's records are kept by default and sold back as proof of process. Keystroke logs prove a body sat at the keyboard and say nothing of a mind; custody of the record follows ownership of the machine, and students pay for borrowed access in the coin of their keystrokes."
 date: 2026-09-26 15:14:45 -0700
 categories: [Composition, Writing, Technology]
 ---
