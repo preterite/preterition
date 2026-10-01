@@ -26,11 +26,17 @@
 # stub, and the build log says so.
 #
 # One more retired address is not an archive: the feed's. WordPress served
-# it at /blog/feed/, and jekyll-feed writes it at /feed.xml. The stub moves
-# a browser and not a feed reader, which follows only the HTTP redirects a
-# static host cannot issue; a duplicate Atom document at the old address
-# would be the full honour, and it is parked. The stub is written whether
-# or not any archive page exists.
+# it at /blog/feed/, and jekyll-feed writes it at /feed.xml. A meta refresh
+# moves a browser and not a feed reader, which follows only the HTTP
+# redirects a static host cannot issue. A duplicate Atom document at the old
+# address was weighed and not built (2026-10-01). The feed's stub is the
+# page jekyll-redirect-from writes for every other retired address, plus one
+# autodiscovery link naming the new feed, so a reader that looks for that
+# link can find its way. It is built here rather than through a site-wide
+# redirect layout, which would put the link on every stub. The stub is
+# written whether or not any archive page exists.
+require "cgi"
+
 module Preterite
   class ArchiveRedirects < Jekyll::Generator
     safe true
@@ -39,10 +45,27 @@ module Preterite
     OLD_FEED = "/blog/feed/"
     FEED = "/feed.xml"
 
+    # jekyll-redirect-from's own redirect page, with the autodiscovery link
+    # added after the canonical one.
+    FEED_STUB = <<~HTML
+      <!DOCTYPE html>
+      <html lang="en-US">
+        <meta charset="utf-8">
+        <title>Redirecting&hellip;</title>
+        <link rel="canonical" href="%{to}">
+        <link rel="alternate" type="application/atom+xml" title="%{title}" href="%{to}">
+        <script>location="%{to}"</script>
+        <meta http-equiv="refresh" content="0; url=%{to}">
+        <meta name="robots" content="noindex">
+        <h1>Redirecting&hellip;</h1>
+        <a href="%{to}">Click here if you are not redirected.</a>
+      </html>
+    HTML
+
     def generate(site)
       return unless defined?(JekyllRedirectFrom::RedirectPage)
 
-      stub(site, OLD_FEED, FEED)
+      feed_stub(site)
       Jekyll.logger.info "Feed redirect:", "#{OLD_FEED} -> #{FEED}"
 
       return unless defined?(Jekyll::Archives::Archive)
@@ -78,6 +101,14 @@ module Preterite
     end
 
     private
+
+    def feed_stub(site)
+      page = JekyllRedirectFrom::RedirectPage.from_paths(site, OLD_FEED, FEED)
+      page.data["layout"] = nil
+      page.content = format(FEED_STUB, to: page.redirect_to,
+                            title: CGI.escapeHTML(site.config["title"].to_s))
+      site.pages << page
+    end
 
     def stub(site, from, to)
       site.pages << JekyllRedirectFrom::RedirectPage.from_paths(site, from, to)

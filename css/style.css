@@ -1502,6 +1502,17 @@ footer {
   margin-top: -8px;
 }
 
+/* Inside a card, .blog-card p -- a class and an element -- outranks the
+   rule above, a class alone, and set the meta lines' plain text in the body
+   colour while their links stayed muted. The colour is restated here at the
+   card's class plus the line's own; the margins are left to the rule above,
+   which is why this block sets nothing else. */
+.blog-card .blog-meta,
+.blog-card .post-byline,
+.blog-card .post-series {
+  color: var(--color-muted-grey);
+}
+
 .blog-meta a,
 .post-byline a,
 .post-series a {

@@ -1,0 +1,39 @@
+# It's fine to read, index, quote, link and archive anything here. This
+# site welcomes search engines, AI search and answer services, and fetches
+# a human asks a bot to perform: each answers someone who asked.
+#
+# Training is a different use, and I decline that use. A trained language
+# model retains what it collects and answers no reader on this site's
+# behalf. The training agents named below are asked not to collect. Where
+# a vendor binds training and retrieval to one token, I decline both
+# rather than accept training.
+#
+# Common Crawl may copy these pages into its public archive. Permission to
+# copy is not consent to training on the copy.
+#
+# This file is a request, and binds only those who honour it.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+# Gemini training and grounding share this token.
+User-agent: Google-Extended
+Disallow: /
+
+# Meta's training and product indexing share this token.
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://preterite.net/sitemap.xml
