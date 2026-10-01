@@ -16,6 +16,12 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
 url: "https://preterite.net"   # absolute_url and the meta tags build from this
 baseurl: ""                    # the site lives at the domain root
 
+# The author. jekyll-feed writes this name into every entry's <author>,
+# which a feed reader shows as the byline; without it the element ships
+# empty and every entry reads as anonymous.
+author:
+  name: Mike Edwards
+
 # Time. Every post and comment carries its own offset, and this is what
 # the build renders them in: a post written at eleven at night in Pullman
 # is dated that day, wherever the build runs. Without this the build
