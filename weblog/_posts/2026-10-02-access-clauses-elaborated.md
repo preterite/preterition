@@ -8,7 +8,7 @@ categories: [Economics]
 
 [Charlie Moran](https://wacclearinghouse.org/docs/books/usu/passions/chapter11.pdf) once remarked to our graduate seminar, regarding a reading he'd assigned, that James Berlin had caught criticism for the way he landscaped composition's field, planting scholars like potted [trees](/weblog/2026/09/18/the-arboretum.html). I've put together an instrument that performs the juxtapositions I enjoy: a set of matrices as a translation and reduction, wherein I'll seek to gain by comparison what I lose in nuance. I'm feeling the need to do some planting of my own, so I'm granting myself license to perform an act of landscaping similar to Berlin's, in the hopes I might usefully clarify the concepts of an access regime and an access clause. 
 
-*Ich bin ein Berliner.*
+*Ich bin ein Berliner.* (Yes, it's the setup for a jelly donut dad joke.)
 
 ### Regime and clause
 
