@@ -8,7 +8,7 @@ categories: [Economics]
 
 [Charlie Moran](https://wacclearinghouse.org/docs/books/usu/passions/chapter11.pdf) once remarked to our graduate seminar, regarding a reading he'd assigned, that James Berlin had caught criticism for the way he landscaped composition's field, planting scholars like potted [trees](/weblog/2026/09/18/the-arboretum.html). I've put together an instrument that performs the juxtapositions I enjoy: a set of matrices as a translation and reduction, wherein I'll seek to gain by comparison what I lose in nuance. I'm feeling the need to do some planting of my own, so I'm granting myself license to perform an act of landscaping similar to Berlin's, in the hopes I might usefully clarify the concepts of an access regime and an access clause. 
 
-*Ich bin ein Berliner.* (Yes, it's the setup for a jelly donut dad joke.)
+*Ich bin ein Berliner.*
 
 ### Regime and clause
 
@@ -39,7 +39,7 @@ My table sorts the traditions by access: what each permits itself to know about 
 
 ### The fields
 
-My second table uses the same columns to name access regimes for composition and literary theory. I'm taking as precedent James Berlin's 1982 sorting of composition pedagogies by where each locates truth, in the writer's private vision or in the interaction of writer, audience, reality and language. Redraw the sort on the access axis and the quarrel it set between expressivists and social-epistemic rhetoricians looks different: both claim the interior, but part ways on who can read it.
+The second table uses the same columns from above to name access regimes for composition and literary theory. I'm taking as precedent James Berlin's 1982 sorting of composition pedagogies by where each locates truth, in the writer's private vision or in the interaction of writer, audience, reality and language. Redraw the sort on the access axis and the quarrel it set between expressivists and social-epistemic rhetoricians looks different: both claim the interior, but part ways on who can read it.
 
 | Theorist (tradition) | What may be known about the agent | From what evidence | At what moment | By whom | What the regime claims to reach |
 |---|---|---|---|---|---|
