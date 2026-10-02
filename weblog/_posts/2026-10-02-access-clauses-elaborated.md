@@ -64,40 +64,40 @@ With the above caveats about the dangers comparisons pose in terms of translatio
 
 ### References
 
-Arrow, Kenneth J., and Gerard Debreu. 1954. "Existence of an Equilibrium for a Competitive Economy." *Econometrica* 22 (3): 265--90.
+Arrow, Kenneth J., and Gerard Debreu. 1954. "[Existence of an Equilibrium for a Competitive Economy](https://doi.org/10.2307/1907353)." *Econometrica* 22 (3): 265--90.
 
-Berlin, James. 1982. "Contemporary Composition: The Major Pedagogical Theories." *College English* 44 (8): 765--77.
+Berlin, James. 1982. "[Contemporary Composition: The Major Pedagogical Theories](https://doi.org/10.2307/377329)." *College English* 44 (8): 765--77.
 
-Brandt, Deborah. 1998. "Sponsors of Literacy." *College Composition and Communication* 49 (2): 165--85.
+Brandt, Deborah. 1998. "[Sponsors of Literacy](https://doi.org/10.58680/ccc19983181)." *College Composition and Communication* 49 (2): 165--85.
 
-Elbow, Peter. 1993. "Ranking, Evaluating, and Liking: Sorting Out Three Forms of Judgment." *College English* 55 (2): 187--206.
+Elbow, Peter. 1993. "[Ranking, Evaluating, and Liking: Sorting Out Three Forms of Judgment](https://doi.org/10.58680/ce19939323)." *College English* 55 (2): 187--206.
 
-Gibson-Graham, J. K. 2006. *A Postcapitalist Politics*. Minneapolis: University of Minnesota Press.
+Gibson-Graham, J. K. 2006. *[A Postcapitalist Politics](https://search.worldcat.org/isbn/9780816648047)*. Minneapolis: University of Minnesota Press.
 
-Guillory, John. 1993. *Cultural Capital: The Problem of Literary Canon Formation*. Chicago: University of Chicago Press.
+Guillory, John. 1993. *[Cultural Capital: The Problem of Literary Canon Formation](https://search.worldcat.org/isbn/9780226830599)*. Chicago: University of Chicago Press.
 
-Hayek, Friedrich A. von. 1945. "The Use of Knowledge in Society." *American Economic Review* 35 (4): 519--30.
+Hayek, Friedrich A. von. 1945. "[The Use of Knowledge in Society](https://www.jstor.org/stable/1809376)." *American Economic Review* 35 (4): 519--30.
 
-Horner, Bruce. 2000. *Terms of Work for Composition: A Materialist Critique*. Albany: State University of New York Press.
+Horner, Bruce. 2000. *[Terms of Work for Composition: A Materialist Critique](https://search.worldcat.org/isbn/9780791445662)*. Albany: State University of New York Press.
 
-Keynes, John Maynard. 1937. "The General Theory of Employment." *Quarterly Journal of Economics* 51 (2): 209--23.
+Keynes, John Maynard. 1937. "[The General Theory of Employment](https://doi.org/10.2307/1882087)." *Quarterly Journal of Economics* 51 (2): 209--23.
 
-Marx, Karl. 1993. *Capital: A Critique of Political Economy*. Vol. 1. Translated by Ben Fowkes. Penguin Books.
+Marx, Karl. 1993. *[Capital: A Critique of Political Economy](https://search.worldcat.org/isbn/9780140445688)*. Vol. 1. Translated by Ben Fowkes. Penguin Books.
 
-Menger, Carl. 2007. *Principles of Economics*. Auburn, AL: Ludwig von Mises Institute.
+Menger, Carl. 2007. *[Principles of Economics](https://search.worldcat.org/isbn/9781933550121)*. Auburn, AL: Ludwig von Mises Institute.
 
-Murray, Donald. 1972. "Teach Writing as a Process Not Product." *The Leaflet* 71 (3): 11--14.
+Murray, Donald. 1972. "[Teach Writing as a Process Not Product](https://mwover.com/wp-content/uploads/2018/05/murray-teach-writing-as-a-process-not-product.pdf)." *The Leaflet* 71 (3): 11--14.
 
-Samuelson, Paul A. 1938. "A Note on the Pure Theory of Consumer's Behaviour." *Economica* 5 (17): 61--71.
+Samuelson, Paul A. 1938. "[A Note on the Pure Theory of Consumer's Behaviour](https://doi.org/10.2307/2548836)." *Economica* 5 (17): 61--71.
 
-Smith, Adam. 1776. *An Inquiry into the Nature and Causes of the Wealth of Nations*. London: William Strahan.
+Smith, Adam. 1776. *[An Inquiry into the Nature and Causes of the Wealth of Nations](https://archive.org/details/inquiryintonatur01smit_0)*. London: William Strahan.
 
-Smith, Barbara Herrnstein. 1983. "Contingencies of Value." *Critical Inquiry* 10 (1): 1--35.
+Smith, Barbara Herrnstein. 1983. "[Contingencies of Value](https://doi.org/10.1086/448235)." *Critical Inquiry* 10 (1): 1--35.
 
-Sraffa, Piero. 1960. *Production of Commodities by Means of Commodities: Prelude to a Critique of Economic Theory*. Cambridge: Cambridge University Press.
+Sraffa, Piero. 1960. *[Production of Commodities by Means of Commodities: Prelude to a Critique of Economic Theory](https://search.worldcat.org/isbn/9780521099691)*. Cambridge: Cambridge University Press.
 
-Thaler, Richard H., and Cass R. Sunstein. 2021. *Nudge: Improving Decisions About Money, Health, and the Environment*. New York: Penguin.
+Thaler, Richard H., and Cass R. Sunstein. 2021. *[Nudge: Improving Decisions About Money, Health, and the Environment](https://search.worldcat.org/isbn/9780143137009)*. New York: Penguin.
 
-Varoufakis, Yanis, Joseph Halevi, and Nicholas Theocarakis. 2012. *Modern Political Economics*. New York: Routledge.
+Varoufakis, Yanis, Joseph Halevi, and Nicholas Theocarakis. 2012. *[Modern Political Economics](https://doi.org/10.4324/9780203829356)*. New York: Routledge.
 
-Wieser, Friedrich von. 1893. *Natural Value*. Edited by William A. Smart. London: Macmillan.
+Wieser, Friedrich von. 1893. *[Natural Value](https://archive.org/details/naturalvalue00wiesuoft)*. Edited by William A. Smart. London: Macmillan.
