@@ -6,7 +6,7 @@ categories: [Economics]
 ---
 ### Landscaping
 
-Charlie Moran once remarked to our graduate seminar, regarding a reading he'd assigned, that James Berlin had caught criticism for the way he landscaped composition's field, planting scholars like potted [trees](/weblog/2026/09/18/the-arboretum.md). I've put together an instrument that performs the juxtapositions I enjoy: a set of matrices as a translation and reduction, wherein I'll seek to gain by comparison what I lose in nuance. I'm feeling the need to do some planting of my own. So I'm granting myself license to perform a similar act of landscaping, in the hopes I might clarify the concepts of an access regime and an access clause. 
+Charlie Moran once remarked to our graduate seminar, regarding a reading he'd assigned, that James Berlin had caught criticism for the way he landscaped composition's field, planting scholars like potted [trees](/weblog/2026/09/18/the-arboretum.html). I've put together an instrument that performs the juxtapositions I enjoy: a set of matrices as a translation and reduction, wherein I'll seek to gain by comparison what I lose in nuance. I'm feeling the need to do some planting of my own. So I'm granting myself license to perform a similar act of landscaping, in the hopes I might clarify the concepts of an access regime and an access clause. 
 
 *Ich bin ein Berliner.*
 
