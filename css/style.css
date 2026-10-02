@@ -222,6 +222,37 @@ pre {
   overflow-x: auto;
 }
 
+/* A table is apparatus: the sans at the small size, cells set to the top
+   and left, a hairline between rows and a heavier rule under the header,
+   the first column in SemiBold so a row's name scans. The table keeps its
+   columns at every width and scrolls within its own box where they outrun
+   the column, as pre does; a phone reader drags it. The print block at
+   the foot of this file returns it to the sheet, which has no scroll. */
+table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  border-spacing: 0;
+  margin: var(--gutter) 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+th, td {
+  vertical-align: top;
+  text-align: left;
+  padding: 0.5em 0.75em 0.5em 0;
+  border-top: 1px solid var(--color-border-dark);
+}
+th {
+  font-weight: 600;
+  border-top: 0;
+  border-bottom: 2px solid var(--color-border-dark);
+}
+td:first-child {
+  font-weight: 600;
+}
+
 /* ===== TYPOGRAPHY ===== */
 h2, h3, h4, h5, h6,
 body.protected-inquiries h1 {
@@ -3035,6 +3066,18 @@ blockquote {
   pre {
     white-space: pre-wrap;
     word-wrap: break-word;
+  }
+
+  /* A sheet has no scroll: the table returns to table display, and a row
+     does not split across pages. Its rules are the dark token, which
+     prints near black. */
+  table {
+    display: table;
+    overflow-x: visible;
+  }
+
+  tr {
+    break-inside: avoid;
   }
 
   blockquote {
