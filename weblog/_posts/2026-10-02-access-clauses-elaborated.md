@@ -6,13 +6,13 @@ categories: [Economics]
 ---
 ### Landscaping
 
-Charlie Moran once remarked to our graduate seminar, regarding a reading he'd assigned, that James Berlin had caught criticism for the way he landscaped composition's field, planting scholars like potted [trees](/weblog/2026/09/18/the-arboretum.md). I've put together an instrument that performs the kind of juxtapositions I enjoy: a set of matrices as a translation and reduction, wherein I'll hope to gain by comparison what I lose in nuance, and I'm feeling the need to do some planting of my own. So I'm granting myself license to perform a similar act of landscaping, in the hopes I might clarify the concepts of an access regime and an access clause. 
+Charlie Moran once remarked to our graduate seminar, regarding a reading he'd assigned, that James Berlin had caught criticism for the way he landscaped composition's field, planting scholars like potted [trees](/weblog/2026/09/18/the-arboretum.md). I've put together an instrument that performs the juxtapositions I enjoy: a set of matrices as a translation and reduction, wherein I'll seek to gain by comparison what I lose in nuance. I'm feeling the need to do some planting of my own. So I'm granting myself license to perform a similar act of landscaping, in the hopes I might clarify the concepts of an access regime and an access clause. 
 
 *Ich bin ein Berliner.*
 
 ### Regime and clause
 
-An access **regime**, as [I first defined it](/weblog/2026/09/14/the-embodied-agnostic-subject-part-1.html), is *what a theory lets itself assume it can know about an agent, from what evidence, and at what moment*. Friedrich Hayek adds a question that my post didn't ask: *by whom*. A theory can be loud about what its subject **is** and silent about what the theory permits itself to know. The access **clause** is the permission made explicit: a provision fixing *what the theory may treat as knowable about an interior, and on whose authority* ([Part 3](/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html)). Every theory carries one, declared or not. [The razor](/weblog/2026/09/27/composition-noun-and-verb.html) is the clause used as a tool: it cuts away what a theory claims to know about a mind and keeps what the theory can show from the record.
+An access **regime**, as [I first defined it](/weblog/2026/09/14/the-embodied-agnostic-subject-part-1.html), is *what a theory lets itself assume it can know about an agent, from what evidence, and at what moment*. Friedrich Hayek adds a question my post didn't ask: *by whom*. A theory can be loud about what its subject **is** and silent about what the theory permits itself to know. The access **clause** is the permission made explicit: a provision fixing *what the theory may treat as knowable about an interior, and on whose authority* ([Part 3](/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html)). Every theory carries one, declared or not. [The razor](/weblog/2026/09/27/composition-noun-and-verb.html) is the clause used as a tool: it cuts away what a theory claims to know about a mind and keeps what the theory can show from the record.
 
 The tables below put those questions in columns. What may be known about the agent, from what evidence, at what moment, by whom: those are the regime's terms. The last column is the sort: it says what each regime claims to reach.
 
@@ -20,7 +20,7 @@ The tables below put those questions in columns. What may be known about the age
 
 ### The economists
 
-The first table takes the economists. The rows run historically, so top to bottom the table tells a story. The measure sits in the laborer, then in the books, then in the valuer; the valuer is doubted, reduced to the act, dispersed, given in full, scored, cultivated; one row has no agent at all.
+The first table takes the economists. The rows run historically top to bottom. The measure sits in the laborer, then in the books, then in the valuer; the valuer is doubted, reduced to the act, dispersed, given in full, scored, cultivated; one row has no agent.
 
 | Theorist (tradition) | What may be known about the agent | From what evidence | At what moment | By whom | What the regime claims to reach |
 |---|---|---|---|---|---|
@@ -31,13 +31,13 @@ The first table takes the economists. The rows run historically, so top to botto
 | Paul Samuelson (revealed preference) | The whole of what the agent wants | The act of choosing, and nothing else | At the instant of choice | The modeler, reading the act | The interior, from the act |
 | Friedrich Hayek (Austrian; dispersed knowledge) | The circumstances of time and place, tacit and unshareable | Prices, an index no property of the thing yields | At the moment of acting; equilibrium presumes everyone acting at once | The agent alone, tacitly; no one in full | The record only |
 | Kenneth Arrow and Gerard Debreu (general equilibrium) | A complete ordering of the agent's preferences over every good, dated and contingent on every state of the world | The preferences and endowments the model takes as given | At one instant, with every future market open | The modeler, for everyone at once | The interior, in full |
-| Piero Sraffa (neo-Ricardian; the surplus approach) | Nothing; there is no agent in the system | The technical conditions of production, and a distribution of the surplus one of whose shares is set from outside the system | At one instant; no change in output or in proportions considered | No one | Nothing; no agent to reach |
+| Piero Sraffa (neo-Ricardian; the surplus approach) | Nothing; there is no agent in the system | The technical conditions of production, and the distribution of the surplus, with one share fixed from outside the system | At one instant; no change in output or in proportions considered | No one | Nothing; no agent to reach |
 | Richard Thaler and Cass Sunstein (behavioral economics; choice architecture) | Where the agent's judgment goes wrong, and what the agent would choose with full attention and self-control | Choices scored against a standard the agent doesn't hold | At the choice, scored afterward | The choice architect, better than the agent | The interior, corrected |
 | J. K. Gibson-Graham (diverse economies; resubjectivation) | Desires, capacities and identifications, open to cultivation | The affects a politics meets in its subjects | Over a politics | The project, working on subjects' desires | The interior, cultivated |
 
 My table sorts the traditions by access: what each permits itself to know about the agent's interior. Varoufakis, Halevi and Theocarakis, in their overview *Modern Political Economics*, sort the same traditions by agency: whether a theory starts from a choosing individual. The Austrians and Keynes start with the choosing individual. Marx and Sraffa start from a society's structure and no individual chooser (Varoufakis, Halevi, and Theocarakis 2012, sect. 9.4, fig. 10.1). Agency puts Keynes with the Austrians. Access splits them. Keynes keeps the chooser and denies that anyone, the chooser included, can know what the chooser desires of the future; the Austrians rest value on precisely that desire. Same furniture, floor flipped.
 
-### The field
+### The fields
 
 My second table uses the same columns to name access regimes for composition and literary theory. I'm taking as precedent James Berlin's 1982 sorting of composition pedagogies by where each locates truth, in the writer's private vision or in the interaction of writer, audience, reality and language. Redraw the sort on the access axis and the quarrel it set between expressivists and social-epistemic rhetoricians looks different: both claim the interior, but part ways on who can read it.
 
@@ -52,7 +52,7 @@ My second table uses the same columns to name access regimes for composition and
 | Deborah Brandt (sponsors of literacy) | The sponsors who enabled, regulated or withheld the agent's literacy, and gained by it | A told life, read for the sponsors behind it | Over a life | The researcher, reading the account for the relation rather than the person | The record only, from an account |
 | The embodied agnostic subject | Nothing about the interior; the record of labor and of its uses | The record | Over time, as the record accumulates | Whoever holds the record; no one, about the interior | The record only |
 
-Read down the last column and the field sorts the way the economists did. The romantic and the critical wings both claim the interior and differ on who reads it. Guillory, Horner and Brandt read the record: Horner's row is the nearest precedent in composition for a self socially produced and inaccessible even to its bearer, specified by its production rather than by who may read it. Brandt's sponsors, who gain by the literacy they enable or withhold, name a party with a stake in the record. The embodied agnostic subject, in the last row, reads the record and declines every claim on the interior, the writer's own included. A writer's report on her own writing stays on the record as a report.
+Read down the last column and the fields sort the way the economists did. The expressive and critical wings both claim the interior and differ on who reads it. Guillory, Horner and Brandt read the record: Horner's row is the nearest precedent in composition for a self socially produced and inaccessible even to its bearer, specified by its production rather than by who may read it. Brandt's sponsors, who gain by the literacy they enable or withhold, name a party with a stake in the record. The embodied agnostic subject, in the last row, reads the record and declines every claim on the interior, the writer's own included. A writer's report on her own writing stays on the record as a report.
 
 ### Read together
 
@@ -60,7 +60,7 @@ Compare the tables for the pairings. Murray is the humanist's Menger: value from
 
 With the above caveats about the dangers comparisons pose in terms of translation and reduction, I'll suggest the pairings help show where each field's argument runs. Expressivists and social-epistemic rhetoricians claim the writer's interior; Austrians and behavioral economists claim the chooser's. Each field quarrels internally over who gets to read it: the agent or the expert. Whether the self is constructed both sides take as settled; the argument comes over who gets to read the self.
 
-*Eher Pfannkuchen als Berliner.* Mmm, plum butter.
+*Vielleicht eher ein Pfannkuchen als ein Berliner.* Mmm, plum butter.
 
 ### References
 
