@@ -43,7 +43,7 @@ My second table uses the same columns to name access regimes for composition and
 
 | Theorist (tradition) | What may be known about the agent | From what evidence | At what moment | By whom | What the regime claims to reach |
 |---|---|---|---|---|---|
-| Donald Murray (expressivism; process pedagogy) | The writer's truth and voice, which only the writer can find | The drafts, each a search for what the writer has to say | Across prewriting, writing and rewriting, unfinished | The writer alone; the teacher waits and receives | The interior, as the writer's own |
+| Donald Murray (expressivism; process pedagogy) | The writer's truth and voice, which only the writer can find | The drafts, each a search for what the writer has to say | Across prewriting, writing and rewriting, unfinished | The writer alone; the teacher waits and receives | The interior, as the writer's |
 | James Berlin (social-epistemic rhetoric) | A writer constituted in the interaction of writer, reality, audience and language, each pedagogy installing a version of reality | The writer's discourse, read for the rhetoric that formed it | In the dialectic, as the writing goes | The teacher who chooses the rhetoric; the critic who can see it | The interior, as socially made |
 | Barbara Herrnstein Smith (contingencies of value) | A personal economy of needs---biological, psychological, material, experiential---evaluating without pause | Acts of approval and rejection; lists and anthologies | Continuously | The valuer, reaching her own needs; the critic reading them | The interior, as an economy |
 | Peter Elbow (ranking, evaluating, liking) | Whether the writer likes her own writing, and what a reader can give reasons for | The writer's report of herself; the reader's evaluation with its reasons | After the writing, and again at every reading | The writer, about herself; the reader, about the text | The interior, by self-report |
@@ -56,11 +56,11 @@ Read down the last column and the field sorts the way the economists did. The ro
 
 ### Read together
 
-Set the tables side by side for the pairings. Murray is the humanist's Menger: value from inside the valuer, found by the one who holds it and by nobody else. Berlin's critic, who can see the rhetoric that formed a writer when the writer can't, is the humanist's choice architect, reading the interior better than its occupant. Guillory's institution keeps a record the way Marx's capital does, indifferent to what any reader thought. Horner and Sraffa both refuse the interior and differ on whether anything is left to read: Horner keeps the conditions of production, Sraffa keeps the equations. Brandt's sponsors gain from the literacy they enable or withhold, a party with a stake in the record before the stake is declared. Arrow and Debreu share Sraffa's single moment from the far end of the access axis, every preference known in synchrony against no preference anywhere.
+Compare the tables for the pairings. Murray is the humanist's Menger: value from inside the valuer, found by the one who holds it, nobody else. Berlin's critic, who can see the rhetoric forming a writer when the writer can't, is the humanist's choice architect, reading the interior better than its occupant. Guillory's institution keeps a record like Marx's capital, indifferent to reader or interior. Horner and Sraffa both refuse the interior and differ on what remains to read: Horner keeps the conditions of production, Sraffa keeps the equations. Brandt's sponsors gain from the literacy they enable or withhold, a party with a stake in the record before the stake is declared. Arrow and Debreu share Sraffa's single moment from the far end of the access axis, every preference known in synchrony against no preference anywhere.
 
 With the above caveats about the dangers comparisons pose in terms of translation and reduction, I'll suggest the pairings help show where each field's argument runs. Expressivists and social-epistemic rhetoricians claim the writer's interior; Austrians and behavioral economists claim the chooser's. Each field quarrels internally over who gets to read it: the agent or the expert. Whether the self is constructed both sides take as settled; the argument comes over who gets to read the self.
 
-Who's a jelly donut?
+*Eher Pfannkuchen als Berliner.* Mmm, plum butter.
 
 ### References
 
