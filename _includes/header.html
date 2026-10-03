@@ -17,8 +17,14 @@
   carry no text, so both are hidden from assistive technology; the rules are
   in css/style.css under HEADER MOIRE and the schedule is in js/main.js.
   {%- endcomment %}
-  <div class="header-moire base" aria-hidden="true"></div>
-  <div class="header-moire upper" id="header-moire" aria-hidden="true"></div>
+  {%- comment -%} The clip is this wrapper's, not the header's: it cuts the
+  oversized layer to the header's box and leaves the nav's focus rings,
+  which reach past the bar's lower edge, whole.
+  {%- endcomment %}
+  <div class="header-moire-clip" aria-hidden="true">
+    <div class="header-moire base" aria-hidden="true"></div>
+    <div class="header-moire upper" id="header-moire" aria-hidden="true"></div>
+  </div>
   <div class="header-content">
     <div>
       {%- comment -%} The identity line is a parameter, not a second header.
@@ -53,15 +59,18 @@
     {%- endcomment %}
     <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
   </div>
+  {%- comment -%} The site nav sits inside the header, after the title row,
+  so the bar follows the header's height at every width and in the compact
+  state, and no offset has to be measured to seat it.
+  {%- endcomment %}
+  <nav class="site-nav" aria-label="Site">
+    <ul class="nav-list" id="site-nav">
+    {%- for item in nav -%}
+      {%- assign pair = item | split: "=" -%}
+      {%- assign here = false -%}
+      {%- if pair[1] == page.url -%}{%- assign here = true -%}{%- endif -%}
+      <li class="nav-item{% if here %} active{% endif %}"><a href="{{ pair[1] }}"{% if here %} aria-current="page"{% endif %}>{{ pair[0] }}</a></li>
+    {%- endfor -%}
+    </ul>
+  </nav>
 </header>
-
-<nav class="site-nav" aria-label="Site">
-  <ul class="nav-list" id="site-nav">
-  {%- for item in nav -%}
-    {%- assign pair = item | split: "=" -%}
-    {%- assign here = false -%}
-    {%- if pair[1] == page.url -%}{%- assign here = true -%}{%- endif -%}
-    <li class="nav-item{% if here %} active{% endif %}"><a href="{{ pair[1] }}"{% if here %} aria-current="page"{% endif %}>{{ pair[0] }}</a></li>
-  {%- endfor -%}
-  </ul>
-</nav>

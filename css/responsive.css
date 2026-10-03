@@ -7,13 +7,7 @@
 @media (max-width: 899px) {
   :root {
     --gutter: 20px;
-    --header-clearance: 246px;
-  }
-
-  /* The header loses 12px of height in this band, so the bar and the
-     clearance beneath it both come up with it. */
-  nav.site-nav {
-    top: 209px;
+    --header-clearance: 246px;  /* the header is 12px shorter in this band */
   }
 
   .page-body {
@@ -108,7 +102,7 @@
      header hands them the page instead, where the opaque ground covers the
      first screen and the oversized layer widens the page. */
   header {
-    padding: 16px;
+    padding: 16px 16px 0;
     position: relative;
   }
 
@@ -130,8 +124,9 @@
 
   /* NAVIGATION */
   nav.site-nav {
-    top: auto;
-    position: relative;
+    /* The header's bottom padding becomes the gap above the bar, and the
+       bar reaches the header's full width through its side padding. */
+    margin: 16px -16px 0;
   }
 
   /* In the header row; no longer absolute inside <nav>,
@@ -344,7 +339,11 @@
   }
 
   header {
-    padding: 12px;
+    padding: 12px 12px 0;
+  }
+
+  nav.site-nav {
+    margin: 12px -12px 0;
   }
 
   header #site-title {

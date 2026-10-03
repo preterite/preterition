@@ -214,6 +214,29 @@ function initLineDrawOnScroll() {
 }
 
 /**
+ * Scroll padding from the header's live height
+ * The header is fixed above the phone breakpoint and the nav sits inside
+ * it, so its height is the whole chrome. Setting that height as the page's
+ * scroll padding lands an in-page jump -- a footnote, its back-link --
+ * below the chrome rather than under it. The observer follows the header
+ * as it compacts, wraps or resizes, so no constant is kept; where the
+ * header scrolls with the page the padding is cleared.
+ */
+function initScrollPadding() {
+  const header = document.querySelector('header');
+  if (!header || !('ResizeObserver' in window)) return;
+  const root = document.documentElement;
+  const set = () => {
+    root.style.scrollPaddingTop = getComputedStyle(header).position === 'fixed'
+      ? Math.ceil(header.getBoundingClientRect().height) + 'px'
+      : '';
+  };
+  new ResizeObserver(set).observe(header, { box: 'border-box' });
+  window.addEventListener('resize', set, { passive: true });
+  set();
+}
+
+/**
  * Compact header on scroll
  * Compresses header to a slim bar when user scrolls down
  * Restores full header when scrolled back to top
@@ -752,6 +775,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTaglineRotation();
   initMobileNav();
   initCompactHeader();
+  initScrollPadding();
   initSearch();
   initPerfPlate();
   initCommentReply();
