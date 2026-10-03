@@ -102,11 +102,12 @@ description: "Mike Edwards, Associate Professor: rhetoric, composition, technolo
     <span><span class="k">terms:</span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></span>
   </p>
   <div class="foot">
+    {%- capture tagline_pick -%}{% include tagline.html %}{%- endcapture -%}
     <p class="tagline">
-      <span class="g1" aria-hidden="true"></span>
-      <span class="g2" aria-hidden="true"></span>
-      <span class="g3" aria-hidden="true"></span>
-      <span class="lead"></span>
+      <span class="g1" aria-hidden="true">{{ tagline_pick | strip }}</span>
+      <span class="g2" aria-hidden="true">{{ tagline_pick | strip }}</span>
+      <span class="g3" aria-hidden="true">{{ tagline_pick | strip }}</span>
+      <span class="lead">{{ tagline_pick | strip }}</span>
     </p>
     <img class="bug" alt="" src="/img/me-bug.svg" width="10" height="22">
   </div>
