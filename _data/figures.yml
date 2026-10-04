@@ -1,0 +1,38 @@
+# _data/figures.yml -- every figure the weblog publishes as a file of its
+# own, described once.
+#
+# Three readers take their facts from here and from nowhere else.
+# _plugins/figures.rb hands each post named under a figure's appears_in a
+# `figures` list, and refuses the build when an entry is wrong. The head
+# describes each of those figures inside the post's BlogPosting as a
+# schema.org ImageObject, with its license and credit. And the figure's
+# generator, in the site's support repository, writes the same credit and
+# citation into the standalone file, so a copy that leaves the site carries
+# them.
+#
+# appears_in names posts by file name without its extension, as a
+# collection names its entries, and names every post that shows the figure:
+# an index reads a figure's license only from the page it is seen on. A
+# post that renders a figure's include without being named here fails the
+# build. The first post named is the figure's home, whose address the
+# citation carries.
+#
+# credit and citation are written out whole rather than composed: credit is
+# the short line a reuser is asked to carry, citation the reference to cite.
+
+license:
+  name: CC BY-NC-SA 4.0
+  url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  terms: /about.html#colophon
+
+figures:
+  cycle-pinwheel:
+    name: "Cohle’s Pinwheel, or “Time is a flat circle”"
+    number: 1
+    date: "2026-10-04"
+    asset: /weblog/assets/cycle-figure.svg
+    include: cycle-figure.html
+    appears_in:
+      - 2026-10-04-appropriation-position-and-relation
+    credit: "Mike Edwards, “Cohle’s Pinwheel,” preterite.net, 2026"
+    citation: "Edwards, Mike. 2026. “Cohle’s Pinwheel.” Figure 1 in “Appropriation: Position and Relation.” preterite.net, October 4. https://preterite.net/weblog/2026/10/04/appropriation-position-and-relation.html."

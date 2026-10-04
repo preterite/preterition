@@ -69,7 +69,9 @@
      by type only -- application/ld+json is never executed, so it stands
      with scripting off. sameAs ties the author to the records that name
      the same person. isPartOf names the collection an entry
-     belongs to, where it belongs to one. -->
+     belongs to, where it belongs to one. image describes each figure the
+     entry shows, with its license, credit and terms, from _data/figures.yml
+     as _plugins/figures.rb hands it to the entry. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -85,6 +87,23 @@
     "name": {{ page.series.title | jsonify }},
     "url": {{ page.series.url | absolute_url | jsonify }}
   },
+  {%- endif %}
+  {%- if page.figures %}
+  "image": [
+    {%- for f in page.figures %}
+    {
+      "@type": "ImageObject",
+      "name": {{ f.name | jsonify }},
+      "position": {{ f.number | jsonify }},
+      "contentUrl": {{ f.asset | absolute_url | jsonify }},
+      "creator": {"@type": "Person", "name": {{ site.author.name | jsonify }}, "url": {{ "/about.html" | absolute_url | jsonify }}},
+      "creditText": {{ f.credit | jsonify }},
+      "copyrightNotice": {{ f.date | slice: 0, 4 | prepend: "Copyright " | append: " " | append: site.author.name | jsonify }},
+      "license": {{ site.data.figures.license.url | jsonify }},
+      "acquireLicensePage": {{ site.data.figures.license.terms | absolute_url | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
   {%- endif %}
   "author": {
     "@type": "Person",
