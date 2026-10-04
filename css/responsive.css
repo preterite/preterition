@@ -447,6 +447,17 @@
   nav .nav-item a { border-left-color: Canvas; }
   nav .nav-item.active a { border-left-color: Highlight; }
   .entry { border-color: Canvas; }
+
+  /* The cycle figure's colours are SVG attributes. Every part takes the
+     system palette here rather than trusting how a browser forces a drawing:
+     CanvasText for lines, heads and words, Canvas inside the boxes. The
+     dashes still tell value from labor, colour never having carried that
+     alone. */
+  .cycle-figure .cyc-box { fill: Canvas; stroke: CanvasText; }
+  .cycle-figure .cyc-loop, .cycle-figure .cyc-arrow { stroke: CanvasText; }
+  .cycle-figure .cyc-head, .cycle-figure .cyc-mark,
+  .cycle-figure .cyc-stage, .cycle-figure .cyc-label,
+  .cycle-figure .cyc-key text { fill: CanvasText; }
 }
 
 /* ===== DARK MODE (system default is already dark) ===== */

@@ -1,73 +1,92 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="11 17 588 676" role="img" aria-labelledby="cyc-title cyc-desc" font-family="'IBM Plex Sans', system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="11 17 588 704" role="img" aria-labelledby="cyc-title cyc-desc" font-family="'IBM Plex Sans', system-ui, sans-serif">
 <title id="cyc-title">The cycle of writing: labor in, value out, over time</title>
-<desc id="cyc-desc">A closed loop, drawn as time, passing through four stages: production, distribution, use and re-production. At every stage labor comes in from inside the loop and value goes out to appropriators outside it.</desc>
+<desc id="cyc-desc">A closed loop, drawn as time, runs clockwise through four boxed stages: production, distribution, use and re-production. A key above the loop shows time as the thick line, labor in as a solid arrow and value out as a dashed arrow. At every stage labor comes in from inside the loop and value goes out to appropriators outside it. At production, labor comes in from writer (ideating, typing); peers (reviewing); writer, editors (editing). Value goes out to the writer; reviewers; paid editors. At distribution, labor comes in from publishers' staff; platform workers; librarians. Value goes out to publishers; institutions; platforms. At use, labor comes in from students; scholars; readers. Value goes out to students; scholars; readers. At re-production, labor comes in from citing, quoting; syllabi, packets; commentary. Value goes out to cited authors; rankings, h-indices; future writers. Figure by Mike Edwards, licensed CC BY-NC-SA 4.0.</desc>
 <defs>
-<marker id="cyc-al" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L8,4L0,8Z" fill="#a3d2f2"/></marker>
-<marker id="cyc-av" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L8,4L0,8Z" fill="#c9a227"/></marker>
+<marker id="cyc-al" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path class="cyc-mark" d="M0,0L8,4L0,8Z" fill="#a3d2f2"/></marker>
+<marker id="cyc-av" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path class="cyc-mark" d="M0,0L8,4L0,8Z" fill="#c9a227"/></marker>
 </defs>
-<rect x="11" y="17" width="588" height="676" fill="#252220"/>
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#">
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title>Cohle&#8217;s Pinwheel, or &#8220;Time is a flat circle&#8221;</dc:title>
+<dc:creator><cc:Agent><dc:title>Mike Edwards</dc:title></cc:Agent></dc:creator>
+<dc:rights><cc:Agent><dc:title>Mike Edwards</dc:title></cc:Agent></dc:rights>
+<dc:date>2026-10-04</dc:date>
+<dc:source>https://preterite.net/weblog/2026/10/04/appropriation-position-and-relation.html</dc:source>
+<dcterms:bibliographicCitation>Edwards, Mike. 2026. &#8220;Cohle&#8217;s Pinwheel.&#8221; Figure 1 in &#8220;Appropriation: Position and Relation.&#8221; preterite.net, October 4. https://preterite.net/weblog/2026/10/04/appropriation-position-and-relation.html.</dcterms:bibliographicCitation>
+<cc:attributionName>Mike Edwards</cc:attributionName>
+<cc:attributionURL rdf:resource="https://preterite.net/weblog/2026/10/04/appropriation-position-and-relation.html"/>
+<cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<rect class="cyc-ground" x="11" y="17" width="588" height="704" fill="#252220"/>
 <g id="cyc-draw">
-<path d="M180,200.0 H430 A60,60 0 0 1 490,260.0 V500.0 A60,60 0 0 1 430,560.0 H180 A60,60 0 0 1 120,500.0 V260.0 A60,60 0 0 1 180,200.0 Z" fill="none" stroke="#3a78b0" stroke-width="6"/>
-<polygon points="433.6,211.9 441.4,187.1 458.5,206.1" fill="#3a78b0"/>
-<polygon points="477.0,464.2 503.0,464.2 490.0,486.2" fill="#3a78b0"/>
-<polygon points="176.4,548.1 168.6,572.9 151.5,553.9" fill="#3a78b0"/>
-<polygon points="133.0,295.8 107.0,295.8 120.0,273.8" fill="#3a78b0"/>
+<path class="cyc-loop" d="M180,200.0 H430 A60,60 0 0 1 490,260.0 V500.0 A60,60 0 0 1 430,560.0 H180 A60,60 0 0 1 120,500.0 V260.0 A60,60 0 0 1 180,200.0 Z" fill="none" stroke="#3a78b0" stroke-width="6"/>
+<polygon class="cyc-head" points="433.6,211.9 441.4,187.1 458.5,206.1" fill="#3a78b0"/>
+<polygon class="cyc-head" points="477.0,464.2 503.0,464.2 490.0,486.2" fill="#3a78b0"/>
+<polygon class="cyc-head" points="176.4,548.1 168.6,572.9 151.5,553.9" fill="#3a78b0"/>
+<polygon class="cyc-head" points="133.0,295.8 107.0,295.8 120.0,273.8" fill="#3a78b0"/>
 <rect class="cyc-box" x="180.5" y="180" width="136" height="40" fill="#252220" stroke="#8b9489" stroke-width="1"/>
-<text x="248.5" y="204.5" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="0.6" fill="#ede8e2">PRODUCTION</text>
+<text class="cyc-stage" x="248.5" y="204.5" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="0.6" fill="#ede8e2">PRODUCTION</text>
 <rect class="cyc-box" x="422" y="316" width="136" height="40" fill="#252220" stroke="#8b9489" stroke-width="1"/>
-<text x="490" y="340.5" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="0.6" fill="#ede8e2">DISTRIBUTION</text>
+<text class="cyc-stage" x="490" y="340.5" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="0.6" fill="#ede8e2">DISTRIBUTION</text>
 <rect class="cyc-box" x="293.5" y="540" width="136" height="40" fill="#252220" stroke="#8b9489" stroke-width="1"/>
-<text x="361.5" y="564.5" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="0.6" fill="#ede8e2">USE</text>
+<text class="cyc-stage" x="361.5" y="564.5" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="0.6" fill="#ede8e2">USE</text>
 <rect class="cyc-box" x="52" y="404" width="136" height="40" fill="#252220" stroke="#8b9489" stroke-width="1"/>
-<text x="120" y="428.5" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="0.6" fill="#ede8e2">RE-PRODUCTION</text>
-<path d="M258.6,244 L263.6,244 A10,10 0 0 0 273.6,234 L273.6,220" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="252.6" y="248" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">writer: ideating, typing</text>
-<path d="M258.6,268 L275.6,268 A10,10 0 0 0 285.6,258 L285.6,220" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="252.6" y="272" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">peers: reviewing</text>
-<path d="M258.6,292 L287.6,292 A10,10 0 0 0 297.6,282 L297.6,220" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="252.6" y="296" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">writer, editors: editing</text>
-<path d="M297.6,180 L297.6,125 A10,10 0 0 0 287.6,115 L258.6,115" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="252.6" y="119" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">the writer</text>
-<path d="M285.6,180 L285.6,149 A10,10 0 0 0 275.6,139 L258.6,139" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="252.6" y="143" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">reviewers</text>
-<path d="M273.6,180 L273.6,173 A10,10 0 0 0 263.6,163 L258.6,163" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="252.6" y="167" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">paid editors</text>
-<path d="M420,244 L448,244 A10,10 0 0 1 458,254 L458,316" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="414" y="248" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">publishers' staff</text>
-<path d="M420,268 L436,268 A10,10 0 0 1 446,278 L446,316" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="414" y="272" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">platform workers</text>
-<path d="M420,292 L424,292 A10,10 0 0 1 434,302 L434,316" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="414" y="296" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">librarians</text>
-<path d="M546,316 L546,125 A10,10 0 0 0 536,115 L420,115" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="414" y="119" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">publishers</text>
-<path d="M534,316 L534,149 A10,10 0 0 0 524,139 L420,139" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="414" y="143" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">institutions</text>
-<path d="M522,316 L522,173 A10,10 0 0 0 512,163 L420,163" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="414" y="167" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">platforms</text>
-<path d="M387.5,468 L359.5,468 A10,10 0 0 0 349.5,478 L349.5,540" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="393.5" y="472" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">students</text>
-<path d="M387.5,492 L371.5,492 A10,10 0 0 0 361.5,502 L361.5,540" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="393.5" y="496" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">scholars</text>
-<path d="M387.5,516 L383.5,516 A10,10 0 0 0 373.5,526 L373.5,540" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="393.5" y="520" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">readers</text>
-<path d="M373.5,580 L373.5,587 A10,10 0 0 0 383.5,597 L387.5,597" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="393.5" y="601" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">students</text>
-<path d="M361.5,580 L361.5,611 A10,10 0 0 0 371.5,621 L387.5,621" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="393.5" y="625" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">scholars</text>
-<path d="M349.5,580 L349.5,635 A10,10 0 0 0 359.5,645 L387.5,645" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="393.5" y="649" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">readers</text>
-<path d="M190,468 L186,468 A10,10 0 0 1 176,458 L176,444" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="196" y="472" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">citing, quoting</text>
-<path d="M190,492 L174,492 A10,10 0 0 1 164,482 L164,444" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="196" y="496" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">syllabi, packets</text>
-<path d="M190,516 L162,516 A10,10 0 0 1 152,506 L152,444" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
-<text class="cyc-label" x="196" y="520" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">commentary</text>
-<path d="M88,444 L88,587 A10,10 0 0 0 98,597 L190,597" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="196" y="601" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">cited authors</text>
-<path d="M76,444 L76,611 A10,10 0 0 0 86,621 L190,621" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="196" y="625" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">rankings, h-indices</text>
-<path d="M64,444 L64,635 A10,10 0 0 0 74,645 L190,645" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
-<text class="cyc-label" x="196" y="649" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">future writers</text>
+<text class="cyc-stage" x="120" y="428.5" text-anchor="middle" font-size="13" font-weight="600" letter-spacing="0.6" fill="#ede8e2">RE-PRODUCTION</text>
+<path class="cyc-arrow cyc-in" d="M258.6,244 L263.6,244 A10,10 0 0 0 273.6,234 L273.6,220" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="252.6" y="248" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">writer: ideating, typing</text>
+<path class="cyc-arrow cyc-in" d="M258.6,268 L275.6,268 A10,10 0 0 0 285.6,258 L285.6,220" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="252.6" y="272" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">peers: reviewing</text>
+<path class="cyc-arrow cyc-in" d="M258.6,292 L287.6,292 A10,10 0 0 0 297.6,282 L297.6,220" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="252.6" y="296" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">writer, editors: editing</text>
+<path class="cyc-arrow cyc-out" d="M297.6,180 L297.6,125 A10,10 0 0 0 287.6,115 L258.6,115" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="252.6" y="119" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">the writer</text>
+<path class="cyc-arrow cyc-out" d="M285.6,180 L285.6,149 A10,10 0 0 0 275.6,139 L258.6,139" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="252.6" y="143" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">reviewers</text>
+<path class="cyc-arrow cyc-out" d="M273.6,180 L273.6,173 A10,10 0 0 0 263.6,163 L258.6,163" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="252.6" y="167" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">paid editors</text>
+<path class="cyc-arrow cyc-in" d="M420,244 L448,244 A10,10 0 0 1 458,254 L458,316" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="414" y="248" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">publishers' staff</text>
+<path class="cyc-arrow cyc-in" d="M420,268 L436,268 A10,10 0 0 1 446,278 L446,316" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="414" y="272" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">platform workers</text>
+<path class="cyc-arrow cyc-in" d="M420,292 L424,292 A10,10 0 0 1 434,302 L434,316" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="414" y="296" text-anchor="end" font-size="11.5" font-style="italic" fill="#a3d2f2">librarians</text>
+<path class="cyc-arrow cyc-out" d="M546,316 L546,125 A10,10 0 0 0 536,115 L420,115" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="414" y="119" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">publishers</text>
+<path class="cyc-arrow cyc-out" d="M534,316 L534,149 A10,10 0 0 0 524,139 L420,139" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="414" y="143" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">institutions</text>
+<path class="cyc-arrow cyc-out" d="M522,316 L522,173 A10,10 0 0 0 512,163 L420,163" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="414" y="167" text-anchor="end" font-size="11.5" font-style="italic" fill="#c9a227">platforms</text>
+<path class="cyc-arrow cyc-in" d="M387.5,468 L359.5,468 A10,10 0 0 0 349.5,478 L349.5,540" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="393.5" y="472" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">students</text>
+<path class="cyc-arrow cyc-in" d="M387.5,492 L371.5,492 A10,10 0 0 0 361.5,502 L361.5,540" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="393.5" y="496" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">scholars</text>
+<path class="cyc-arrow cyc-in" d="M387.5,516 L383.5,516 A10,10 0 0 0 373.5,526 L373.5,540" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="393.5" y="520" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">readers</text>
+<path class="cyc-arrow cyc-out" d="M373.5,580 L373.5,587 A10,10 0 0 0 383.5,597 L387.5,597" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="393.5" y="601" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">students</text>
+<path class="cyc-arrow cyc-out" d="M361.5,580 L361.5,611 A10,10 0 0 0 371.5,621 L387.5,621" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="393.5" y="625" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">scholars</text>
+<path class="cyc-arrow cyc-out" d="M349.5,580 L349.5,635 A10,10 0 0 0 359.5,645 L387.5,645" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="393.5" y="649" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">readers</text>
+<path class="cyc-arrow cyc-in" d="M190,468 L186,468 A10,10 0 0 1 176,458 L176,444" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="196" y="472" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">citing, quoting</text>
+<path class="cyc-arrow cyc-in" d="M190,492 L174,492 A10,10 0 0 1 164,482 L164,444" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="196" y="496" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">syllabi, packets</text>
+<path class="cyc-arrow cyc-in" d="M190,516 L162,516 A10,10 0 0 1 152,506 L152,444" fill="none" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/>
+<text class="cyc-label cyc-in" x="196" y="520" text-anchor="start" font-size="11.5" font-style="italic" fill="#a3d2f2">commentary</text>
+<path class="cyc-arrow cyc-out" d="M88,444 L88,587 A10,10 0 0 0 98,597 L190,597" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="196" y="601" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">cited authors</text>
+<path class="cyc-arrow cyc-out" d="M76,444 L76,611 A10,10 0 0 0 86,621 L190,621" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="196" y="625" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">rankings, h-indices</text>
+<path class="cyc-arrow cyc-out" d="M64,444 L64,635 A10,10 0 0 0 74,645 L190,645" fill="none" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/>
+<text class="cyc-label cyc-out" x="196" y="649" text-anchor="start" font-size="11.5" font-style="italic" fill="#c9a227">future writers</text>
 </g>
-<g font-size="11.5" fill="#8b9489"><line x1="89.8" x2="119.8" y1="67.0" y2="67.0" stroke="#3a78b0" stroke-width="6"/><text x="127.8" y="71.0">time</text><line x1="267.5" x2="297.5" y1="67.0" y2="67.0" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/><text x="305.5" y="71.0">labor in</text><line x1="447.6" x2="477.6" y1="67.0" y2="67.0" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/><text x="485.6" y="71.0">value out</text></g>
+<g class="cyc-key" font-size="11.5" fill="#8b9489"><line class="cyc-loop" x1="89.8" x2="119.8" y1="67.0" y2="67.0" stroke="#3a78b0" stroke-width="6"/><text x="127.8" y="71.0">time</text><line class="cyc-arrow cyc-in" x1="267.5" x2="297.5" y1="67.0" y2="67.0" stroke="#a3d2f2" stroke-width="1.4" marker-end="url(#cyc-al)"/><text x="305.5" y="71.0">labor in</text><line class="cyc-arrow cyc-out" x1="447.6" x2="477.6" y1="67.0" y2="67.0" stroke="#c9a227" stroke-width="1.4" stroke-dasharray="4 3" marker-end="url(#cyc-av)"/><text x="485.6" y="71.0">value out</text></g>
+<text class="cyc-credit" x="51" y="683" font-size="10" fill="#8b9489">Mike Edwards, &#8220;Cohle&#8217;s Pinwheel,&#8221; preterite.net, 2026 &#183; CC BY-NC-SA 4.0</text>
+<text class="cyc-credit" x="51" y="697" font-size="10" fill="#8b9489">preterite.net/weblog/2026/10/04/appropriation-position-and-relation.html</text>
 </svg>

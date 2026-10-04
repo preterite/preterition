@@ -3117,4 +3117,16 @@ blockquote {
   blockquote {
     border-left-color: black;
   }
+
+  /* The cycle figure draws its colours as SVG attributes, which none of the
+     resets above reach, and a stylesheet rule outranks an attribute. Printed,
+     it takes ink on white: boxes outlined, every line, head and word black,
+     the dashes still telling value from labor. The caption's colour is an
+     inline style, so its reset carries !important. */
+  .cycle-figure .cyc-box { fill: white; stroke: black; }
+  .cycle-figure .cyc-loop, .cycle-figure .cyc-arrow { stroke: black; }
+  .cycle-figure .cyc-head, .cycle-figure .cyc-mark,
+  .cycle-figure .cyc-stage, .cycle-figure .cyc-label,
+  .cycle-figure .cyc-key text { fill: black; }
+  .cycle-figure figcaption { color: black !important; }
 }
