@@ -1,17 +1,18 @@
-# It's fine to read, index, quote, link and archive anything here. This
-# site welcomes search engines, AI search and answer services, and fetches
-# a human asks a bot to perform: each answers someone who asked.
+# I encourage the human reading, indexing, quoting, linking, and archiving
+# of anything here. This site welcomes search engines, AI search and answer
+# services, and fetches a human asks a bot to perform: each responds to
+# an intentional query.
 #
-# Training is a different use, and I decline that use. A trained language
-# model retains what it collects and answers no reader on this site's
-# behalf. The training agents named below are asked not to collect. Where
-# a vendor binds training and retrieval to one token, I decline both
+# Training carries no intent, and I decline that use. A trained language
+# model retains what it collects and offers no response to a reader on this
+# site's behalf. The training agents named below are asked not to collect.
+# Where a vendor binds training and retrieval to one token, I decline both
 # rather than accept training.
 #
 # Common Crawl may copy these pages into its public archive. Permission to
 # copy is not consent to training on the copy.
 #
-# This file is a request, and binds only those who honour it.
+# This file is a request: it binds those who honor it.
 
 User-agent: GPTBot
 Disallow: /
