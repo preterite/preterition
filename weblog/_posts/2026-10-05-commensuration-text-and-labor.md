@@ -70,7 +70,10 @@ Reid's third-person test sorts the essay from the learning. The essay is delegab
 
 Plagiarism detection reads the text against the record of other texts and returns a similarity score, a count presented as a valuation. The mill sells that count back to the student: AuthenticEssays.com promised refunds if "even a couple of sentences" of a purchased paper matched an outside source word for word (AuthenticEssays, quoted in Ritter 2005, 622--23), its product certified against the same overlap the classroom polices. AI detection reads the text against a model of text and infers the producer, a probability presented as a judgment, authorship treated as a property of the product. In every case the holder reads the labor from the product.
 
-That circumstance provides the warrant for this post's law: *(3.1) a ledger reaches only what it can commensurate; (3.2) whoever holds it sets the unlike labor of different writers equal at a ratio the writers can neither see set nor contest; and (3.3) the holder attributes that ratio to the product, which stands in for the labor no copy carries.*
+That circumstance provides the warrant for this post's law:
+
+3. *Commensuration: Text and Labor*. (3.1) A ledger reaches only what it can commensurate. (3.2) Whoever holds it sets the unlike labor of different writers equal at a ratio the writers can neither see set nor contest. (3.3) The holder attributes that ratio to the product, which stands in for the labor no copy carries.
+{: start="3"}
 
 ### Scarce credit
 
