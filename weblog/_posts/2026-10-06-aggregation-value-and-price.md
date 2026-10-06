@@ -7,7 +7,7 @@ categories: [Economics]
 ---
 ### Adam Smith's gardener
 
-I planted no tomatoes this year. The smaller birds have come for the cherries on the [trees](/weblog/_posts/2026/09/18/the-arboretum.html) and the grapes on the pergola, consumed them, and mostly departed, to the cats' disappointment. While any [verdant flourishing I've recently tended](https://github.com/preterite/virens-101) has been metaphorical, Rascal did manage to get in some socializing with a larger friend.
+I planted no tomatoes this year. The smaller birds have come for the cherries on the trees and the grapes on the pergola, consumed them, and mostly departed, to the cats' disappointment. While any [verdant flourishing I've recently tended](https://github.com/preterite/virens-101) has been metaphorical, Rascal did manage to get in some socializing with a larger friend.
 
 [![two photographs: a cat on the back of an armchair at a glass door, face to face with a hawk perched on the railing outside](/weblog/assets/cat-and-hawk-520.jpg)](/weblog/assets/cat-and-hawk-1200.jpg)
 
@@ -63,7 +63,7 @@ Foley's description of Marx's labor theory of value fits my purpose: a theory of
 
 Sraffa provides the snapshot as method and the demonstration that capital isn't a quantity. The method lets me freeze a price long enough to see what it has set equal. The demonstration means that when unlike things get summed as capital, the weights doing the summing already carry the valuation the sum claims to measure, so that the count presented as a valuation, [the dangerous case](/weblog/2026/10/03/valuation-labor-and-measure.html), has the circularity Sraffa demonstrated.
 
-The tension between them is time. Marx's value is a quantity of time, and time runs in one direction: labor spent in one year is spent, and the labor that will make next year's inputs hasn't happened yet. Sraffa's system, as Robinson pointed out, exists in logical time, and a price for Sraffa carries dates as exponents on a profit rate fixed for the whole picture. Leaving the temporal reading's arithmetic to its defenders, I side with its premise: the dates are the point. The lineage my own account descends from, Resnick and Wolff's, sits in Foley's camp by his assessment, and I here depart from that lineage on the topic of time, while holding its account of appropriation. The departure is forced by the embodied agnostic subject, who has no interior to be read from a snapshot, and whose labor is time spent.
+The tension between them is time. Marx's value is a quantity of time, and time runs in one direction: labor spent in one year is spent, and the labor that will make next year's inputs hasn't happened yet. Sraffa's system, as Robinson pointed out, exists in logical time, and a price for Sraffa carries dates as exponents on a profit rate fixed for the whole picture. Leaving the temporal reading's arithmetic to its defenders, I side with its premise: the dates are the point. The lineage my own account descends from, Resnick and Wolff's, sits in Foley's camp by his assessment, and I here depart from that lineage on the topic of time, while holding its account of appropriation. The departure is forced by the [embodied agnostic subject](/weblog/series/toward-a-theory-of-the-subject.html), whose interior cannot be read from a snapshot, and whose labor is time spent.
 
 ### Writing's revenues
 
@@ -84,7 +84,7 @@ That circumstance warrants the fourth law:
 
 The law's second clause is the zoetrope: a frame with its equalities and its rate, and a drum of frames when prices get spun into an account of accumulation. The third clause is the interval the frames can't hold.
 
-Sraffa's oak chest provides the figure for growth. Its price weights the old labor again at the day's rate of profit each time somebody holds a claim. Some of the chest's time was work: the planting, the felling, the joinery. Much of it was waiting, while the sap rose and the rings grew and people tended other tasks. The snapshot weights both the same way, compounding the rate of profit over every year since the labor was spent, so the waiting earns as surely as the work.
+Sraffa's oak chest provides the figure for growth. Its price weights the old labor again at the day's rate of profit each time somebody holds a claim. Some of the chest's time was work: the planting, the felling, the joinery. Much of it was waiting, while the sap rose and the [tree](/weblog/_posts/2026/09/18/the-arboretum.html) grew and people tended other tasks. The snapshot weights both the same way, compounding the rate of profit over every year since the labor was spent, so the waiting earns as surely as the work.
 
 A snapshot can show the price. It can't show who held the claim across the interval between one instant and the next, or what the holder sold while holding it, because an interval is what a snapshot leaves out. Adam Smith's gardener hid the problem when he paid his rent to himself: the tomatoes grew on his ground whether or not he was in the garden, and the return on holding the ground went into the sum with everything else. A zoetrope hides the gaps between its frames by spinning. A garden can't hide the gaps, since the gaps are where things grow. The claim lives in the gaps.
 
