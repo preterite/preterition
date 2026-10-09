@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Appropriation: Position and Relation"
-description: "A party with a stake is a position in a relation, which persons occupy and leave. The surplus made at any stage of the cycle is appropriated at that stage by whoever holds the position to do so, the maker included, and by more than one party, since a text is not used up in the taking. The share a maker takes in the making, where it is realized, no ledger can reach."
+description: "A party with a stake is a position in a relation, which persons occupy and leave. The surplus made at any stage of the economic cycle is appropriated at that stage by whoever holds the position to do so, the maker included, and by more than one party, since a text is not used up in the taking. The share a maker takes in the making, where it is realized, no ledger can reach."
 date: 2026-10-04 00:48:28 -0700
 categories: [Economics]
 ---
@@ -51,7 +51,7 @@ At the economic stage of use, students, scholars, and readers contribute their l
 
 At re-production the text enters back into production, as carried in the practices and artifacts of commentary, citation and quotation, syllabi and course packets. [Lisa Dush](https://doi.org/10.58680/ccc201527641), defining writing as content, glosses Johndan Johnson-Eilola's account of texts broken into saleable pieces with the chapter extracted from a book and republished in a coursepack whose permissions are paid, with each recombination "generating surplus value to be captured as profit" (Johnson-Eilola, quoted in Dush 2015, 178). Value leaves to the cited authors, to the proxies of rankings and h-indices that count the citations, and to the writers who argue and extend and revise. Green self-archiving returns a copy of the article to the writer and permits her to appropriate at re-production what she gave away at production. An editor in the survey Reyman and I took suggested that when her colleagues see commercial use they see stealing (Edwards and Reyman 2018, 221): an editorial board guarding its share against a commercial appropriator. Readings are never rivals; appropriators often are. The written commons under machine training shows the same phenomenon: this site's [`robots.txt`](/robots.txt) allows crawlers to copy the archive but declines training on the copies, as a form of excludability held by the maker over one use of a non-rivalrous good. The request binds only those who honor it.
 
-That walk is the warrant for this post's law: *a party with a stake is a position in a relation, which persons occupy and leave; the surplus made at any stage of the cycle is appropriated at that stage by whoever holds the position to do so, the maker included, and by more than one party, since a text is not used up in the taking; and the share a maker takes in the making, where it is realized, no ledger can reach.*
+That walk is the warrant for this post's law: *a party with a stake is a position in a relation, which persons occupy and leave; the surplus made at any stage of the economic cycle is appropriated at that stage by whoever holds the position to do so, the maker included, and by more than one party, since a text is not used up in the taking; and the share a maker takes in the making, where it is realized, no ledger can reach.*
 
 ### The wage exchange
 

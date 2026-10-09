@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Commensuration: Text and Labor"
-description: "A ledger reaches only what it can commensurate. Whoever holds it sets the unlike labor of different writers equal at a ratio the writers can neither see set nor contest. The holder attributes that ratio to the product, which stands in for the labor no copy carries."
+description: "A ledger reaches only what it can commensurate. Whoever holds it sets the unlike labor of different writers equal at a ratio the writers can neither see set nor contest. The holder attributes that ratio to a product, which stands in for the labor no copy carries."
 date: 2026-10-05 00:34:19 -0700
 categories: [Economics]
 ---
@@ -72,7 +72,7 @@ Plagiarism detection reads the text against the record of other texts and return
 
 That circumstance provides the warrant for a third law:
 
-3. *Commensuration: Text and Labor*. (3.1) A ledger reaches only what it can commensurate. (3.2) Whoever holds it sets the unlike labor of different writers equal at a ratio the writers can neither see set nor contest. (3.3) The holder attributes that ratio to the product, which stands in for the labor no copy carries.
+3. *Commensuration: Text and Labor*. (3.1) A ledger reaches only what it can commensurate. (3.2) Whoever holds it sets the unlike labor of different writers equal at a ratio the writers can neither see set nor contest. (3.3) The holder attributes that ratio to a product, which stands in for the labor no copy carries.
 {: start="3"}
 
 ### Scarce credit
@@ -83,7 +83,7 @@ Marx's credit, [the worker advancing labor-power before the wage](/weblog/2026/1
 
 ### A zoetrope of value
 
-A ratio attributed to the product is a price. [Collin Brooke](https://cgbrooke.substack.com/p/no-ai-is-not-more-persuasive) wrote in August that making persuasion measurable requires controlling so many variables that the quality measured gets reduced to something unrepresentative, and he asked by what metric the influences on a decision could be compared at all: the commensuration question. The control Collin described is a snapshot: the context held still so the count can be taken. [I replied there](https://cgbrooke.substack.com/p/no-ai-is-not-more-persuasive/comment/348835288), with Marx, that the economics of rational choice is itself digitized, a series of synchronic slices that can't account for change over time. A grade is a snapshot of an essay. A price is a snapshot of a commodity. A price settles at a moment while labor runs on through time, and a ledger that attributes the ratio to the product owes an account of the interval.
+A ratio attributed to a product is a price. [Collin Brooke](https://cgbrooke.substack.com/p/no-ai-is-not-more-persuasive) wrote in August that making persuasion measurable requires controlling so many variables that the quality measured gets reduced to something unrepresentative, and he asked by what metric the influences on a decision could be compared at all: the commensuration question. The control Collin described is a snapshot: the context held still so the count can be taken. [I replied there](https://cgbrooke.substack.com/p/no-ai-is-not-more-persuasive/comment/348835288), with Marx, that the economics of rational choice is itself digitized, a series of synchronic slices that can't account for change over time. A grade is a snapshot of an essay. A price is a snapshot of a commodity. A price settles at a moment while labor runs on through time, and a ledger that attributes the ratio to the product owes an account of the interval.
 
 ### References
 
