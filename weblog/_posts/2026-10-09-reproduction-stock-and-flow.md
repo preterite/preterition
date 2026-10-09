@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reproduction: Stock and Flow"
-description: "A taking-up realizes what a stock priced before anyone takes it up presumes, and the same count reads as record or forecast by the position that takes it up. A presumption keeps walking while a party with a stake takes it up at a use, whatever readings it presumed. The taking-up that realizes value, booked or unbooked, re-produces the stock it draws on, since taking up a use is a valuation."
+description: "A taking-up realizes what a stock priced before anyone takes it up presumes, and the same count reads as record or forecast by the position that takes it up. That presumption is reproduced at each use where a party with a stake takes it up, whatever readings arrive. The taking-up that realizes value, booked or unbooked, re-produces the stock it draws on, since taking up a use is a valuation."
 date: 2026-10-09 11:14:49 -0700
 categories: [Economics]
 ---
@@ -73,7 +73,7 @@ The grade certifies a kind of person. Compression shows what happens when the ce
 
 The sixth law, then, with its first clause the last clause from the fifth:
 
-6. *Reproduction: Stock and Flow*. (6.1) A taking-up realizes what a stock priced before anyone takes it up presumes, and the same count reads as record or forecast by the position that takes it up. (6.2) A presumption keeps walking while a party with a stake takes it up at a use, whatever readings it presumed. (6.3) The taking-up that realizes value, booked or unbooked, re-produces the stock it draws on, since taking up a use is a valuation.
+6. *Reproduction: Stock and Flow*. (6.1) A taking-up realizes what a stock priced before anyone takes it up presumes, and the same count reads as record or forecast by the position that takes it up. (6.2) That presumption is reproduced at each use where a party with a stake takes it up, whatever readings arrive. (6.3) The taking-up that realizes value, booked or unbooked, re-produces the stock it draws on, since taking up a use is a valuation.
 {: start="6"}
 
 The sixth law's last clause repeats the first law's first clause. Read in sequence, the six laws trace [Cohle's Pinwheel](/weblog/assets/cycle-figure.svg), [the loop drawn by my cycle's figure](/weblog/2026/10/04/appropriation-position-and-relation.html): a valuation at a use, appropriation at a position, a ledger that commensurates, a price that settles by a snapshot, a title that capitalizes the interval, and a taking-up that realizes what the title presumed and re-produces the stock, a valuation at a use again. Historical time means the place of return changes like Heraclitus's river. For anyone who writes, [reproduction returns to production](/weblog/2026/09/16/the-embodied-agnostic-subject-part-4.html) and the cycle of appropriation begins again, at a later date, on a loop that never stopped moving. No production comes from nowhere.
