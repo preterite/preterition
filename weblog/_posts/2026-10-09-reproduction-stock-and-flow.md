@@ -10,6 +10,7 @@ categories: [Economics]
 Malcolm and I had a good summer. We went camping with the family near Mount Rainier for a week, and the sound of water from the nearby Cowlitz and Ohanapecosh always gives me the best sleep of the year. Malcolm picked pumices and quartzes from the river banks for souvenirs, and there were adventures to be had in the river's icy melt, and with rocks and stones and trees.
 
 [![a nine-year-old boy balancing on a fallen tree in a forest](/weblog/assets/2026mc1small.jpg)](/weblog/assets/2026malcolmcowlitz01.jpg)
+
 [![a nine-year-old boy standing on a rock in a river](/weblog/assets/2026mc2small.jpg)](/weblog/assets/2026malcolmcowlitz02.jpg)
 
 We did campfire skits with the family, and I took a half hour in a hammock to dash out a dozen lines of iambic pentameter for a preamble to the performance. It was fun and goofy and I got to slide in (steal, plagiarize) "O for a Muse of fire" and "slings and arrows of outrageous fortune"---so, OK, call it ten lines. The borrowed ones felt well-worn enough to be recognizable, to call attention to the playing by taking its familiar signs.
