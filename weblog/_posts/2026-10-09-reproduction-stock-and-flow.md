@@ -7,7 +7,7 @@ categories: [Economics]
 ---
 ### Earth's diurnal course
 
-Malcolm and I had a good summer. We went camping with the family near Mount Rainier for a week, and the sound of water from the nearby Cowlitz and Ohanapecosh always gives me the best sleep of the year. Malcolm picked pumices and quartzes from the river banks for souvenirs, and there were adventures to be had in the river's icy melt, and with rocks and stones and [trees](weblog/2026/09/18/the-arboretum.html).
+Malcolm and I had a good summer. We went camping with the family near Mount Rainier for a week, and the sound of water from the nearby Cowlitz and Ohanapecosh always gives me the best sleep of the year. Malcolm picked pumices and quartzes from the river banks for souvenirs, and there were adventures to be had in the river's icy melt, and with rocks and stones and [trees](/weblog/2026/09/18/the-arboretum.html).
 
 [![a nine-year-old boy balancing on a fallen tree in a forest](/weblog/assets/2026mc1small.jpg)](/weblog/assets/2026malcolmcowlitz01.jpg)
 
