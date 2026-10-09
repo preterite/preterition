@@ -2,7 +2,7 @@
 layout: post
 title: "Reproduction: Stock and Flow"
 description: "A taking-up realizes what a stock priced before anyone takes it up presumes, and the same count reads as record or forecast by the position that takes it up. A presumption keeps walking while a party with a stake takes it up at a use, whatever readings it presumed. The taking-up that realizes value, booked or unbooked, re-produces the stock it draws on, since taking up a use is a valuation."
-date: 2026-10-06 11:14:49 -0700
+date: 2026-10-09 11:14:49 -0700
 categories: [Economics]
 ---
 ### Earth's diurnal course
