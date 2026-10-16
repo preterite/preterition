@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Access Clauses, Elaborated"
+description: "An access regime fixes what a theory may know about an agent, from what evidence, at what moment, and by whom. Sorted on that axis, composition and economics align: each field's argument over the interior turns on who reads it, the agent or the expert."
 date: 2026-10-02 00:18:11 -0700
 categories: [Economics]
 ---

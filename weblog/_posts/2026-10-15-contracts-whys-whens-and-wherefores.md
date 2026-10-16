@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Contracts: Whys, Whens, and Wherefores"
+description: "A labor-based grading contract sets the ratio among writers' labor in public, with the writers it counts, and leaves a standard's rent uncollected. Its count stops at hours and words; worth reaches the interior only by self-report; and the grade leaves the classroom without the contract's terms."
 date: 2026-10-15 18:19:39 -0700
 categories: [Economics]
 ---
@@ -137,7 +138,7 @@ Every writer keeps their dates as well: drafts saved, posts archived, an article
 
 The rest of writing's economy operates at larger scales and scopes. In [Gibson-Graham's iceberg](https://www.communityeconomies.org/resources/diverse-economies-iceberg), the typical understanding of an economy as "wage labor, market exchange of commodities, and capitalist enterprise" makes up "but a small subset of the activities by which we produce, exchange, and distribute values" (2006, 69). The unpriced takings-up of writing hide below the waterline: a reader thinks through an uncited essay, or a writer returns to her own archive and restarts [the economic cycle](/weblog/assets/cycle-figure.svg). The takings-up realize value whether or not the writer records the realization (6.3). Among the takings-up still undated, one remains with the writer, who retains the dates and the terms of her labor, and provisions herself from her record.
 
-The activities of writing's economy---enclosed by no classroom, priced by no market---take place over time: writing requires labor and produces value only as it moves through the cycle of production, distribution, use, and re-production. Dates mark the time over which the value of writing's diverse labor inputs accumulates.
+The activities of writing's economy---enclosed by no classroom, priced by no market---take place over time: writing requires labor and produces value as it moves through the cycle of production, distribution, use, and re-production. Dates mark the time over which the value of writing's diverse labor inputs accumulates.
 
 
 ### References
