@@ -12,7 +12,7 @@ wp_id: 428
 wp_status: publish
 comment_count: 2
 ---
-I think I'm starting to miss that regular rhythm of  [Friday Non-Dissertational](/weblog/archives/category/friday-non-dissertational/) entries I had going. A while back, as an audience analysis lead-in exercise for their persuasive/documented essays, I gave students the following scenario:
+I think I'm starting to miss that regular rhythm of  [Friday Non-Dissertational](/weblog/category/friday-fun.html) entries I had going. A while back, as an audience analysis lead-in exercise for their persuasive/documented essays, I gave students the following scenario:
 
 You stayed out really late last night partying with your friends, and -- as a result -- you completely slept through this morning's College Writing midterm that was worth 40 percent of your grade. Write a note explaining what happened to:
 

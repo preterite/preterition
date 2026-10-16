@@ -21,7 +21,7 @@ The result is *a portable, semi-automated system supporting scholarly writing an
 
 [![terminal screen showing application and user and database status for VIRENS 3.1](/weblog/assets/virens-status-small.png)](/weblog/assets/virens-status-large.png)
 
-The GitHub repo for the project is pre-public: while the VIRENS core is complete and running, it needs tuning and packaging and documentation for release. Its principles govern a [classroom approach](https://github.com/preterite/virens-101) described on the [Projects page](/projects).
+The GitHub repo for the project is pre-public: while the VIRENS core is complete and running, it needs tuning and packaging and documentation for release. Its principles govern a [classroom approach](https://github.com/preterite/virens-101) described on the [Projects page](/projects.html).
 
 The question I'd hope an audience might ask: does it work?
 

@@ -11,7 +11,7 @@ wp_id: 514
 wp_status: publish
 comment_count: 7
 ---
-Clancy [asks](/weblog/archives/2005/04/25/post-poned-poetry/#comment-15334), "Why aren’t you making your own comics? You could really do some cool, creative ones, I bet." To which I might offer the sincere (albeit smart-alecky) response: well, why aren't you writing fiction, Clancy? You could come up with some cool, creative stories, I bet. And I'd enjoy reading them.
+Clancy [asks](/weblog/2005/04/25/post-poned-poetry.html#comment-15334), "Why aren’t you making your own comics? You could really do some cool, creative ones, I bet." To which I might offer the sincere (albeit smart-alecky) response: well, why aren't you writing fiction, Clancy? You could come up with some cool, creative stories, I bet. And I'd enjoy reading them.
 
 That's only part of an answer, though. Another part is that I'm a rotten and contrary bastard, stubbornly opposed to doing stuff I see other folks doing, whether it be quizzes or comics.
 

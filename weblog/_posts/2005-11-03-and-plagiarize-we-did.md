@@ -11,7 +11,7 @@ wp_id: 598
 wp_status: publish
 comment_count: 4
 ---
-I'm grateful for the enthusiastic feedback on my [proposed lesson plan](/weblog/archives/2005/11/01/lets-plagiarize/). Our class exercise in pre-emptive plagiarism seems to have worked rather well.
+I'm grateful for the enthusiastic feedback on my [proposed lesson plan](/weblog/2005/11/01/lets-plagiarize.html). Our class exercise in pre-emptive plagiarism seems to have worked rather well.
 
 Some further background: my Essay 3 unit is an assignment that asks students to familiarize themselves with the range of discourse, rhetorical positions, and possible arguments on a topic of their choice; to use library research to examine the parameters of the contemporary conversation on that topic; and then to build upon that research and add their own fresh perspective to that conversation in an essay directed at a specific audience of their choosing. (Please don't call it a "research paper": that term implies to me a certain vague purposelessness.) On Tuesday, I briefly described how we started, by examining a couple brief and diverse samplings of already-ongoing conversations and talking about the range of ideologies and rhetorical strategies apparent in those samplings.
 

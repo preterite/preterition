@@ -7,7 +7,7 @@ categories: [Politics, Writing]
 ---
 ### 4\. Precursor: what the economics established
 
-*This post continues [Part 2](https://preterite.net/weblog/2026/09/14/the-embodied-agnostic-subject-part-2.html), which set out the six inferences the embodied agnostic subject forbids.*
+*This post continues [Part 2](/weblog/2026/09/14/the-embodied-agnostic-subject-part-2.html), which set out the six inferences the embodied agnostic subject forbids.*
 
 The embodied agnostic subject operates in an economic framework descended from Karl Marx by way of [John Trimbur](https://publicationsncte.org/content/journals/ccc/52/2). Marx's 1857 *[Grundrisse](https://www.marxists.org/archive/marx/works/1857/grundrisse/ch01.htm)* introduces the notion of **productive consumption** wherein consumption is immediately also production, the product becomes a product only in being consumed, and production produces not only the object but the consumer and the manner of consuming. Emphasis on the third clause: the consumer is an output. A manner of consuming is a disposition laid down over time by prior consumption, making the subject in the passage that defines productive consumption always embodied and already historical.
 

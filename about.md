@@ -54,7 +54,7 @@ build my research and teaching on four principles:
 
 The principles are treated more thoroughly in links from the
 [Teaching](/teaching.html), [Presentations](/presentations.html), and
-[Scholarship](/scholarship.html) pages. I've used the [weblog](/weblog.html) to develop initial attempts at a theory of the subject, a theory of technology, and a theory of economy that support and extend those four principles.
+[Scholarship](/scholarship.html) pages. I've used the [weblog](/weblog/) to develop initial attempts at a theory of the subject, a theory of technology, and a theory of economy that support and extend those four principles.
 </div>
 
 <div class="card" markdown="1">

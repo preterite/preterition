@@ -7,7 +7,7 @@ categories: [Politics, Writing]
 ---
 ### 6\. Dependent: what requirements follow
 
-*This post picks up from [Part 3](https://preterite.net/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html), where I set out what the embodied agnostic subject inherits from economics and what it declines to claim.*
+*This post picks up from [Part 3](/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html), where I set out what the embodied agnostic subject inherits from economics and what it declines to claim.*
 
 The subject I've been defining---to step again here into the stilted langage of specification---is a body that is materially particular, formed in time it cannot recover and existing in a structure of address, whose interior is real and access to that interior is unreliable from any position, its own included. Here I try to set out what such a subject requires of an economy of writing, and what it permits that other accounts of the subject do not.
 
@@ -45,7 +45,7 @@ Human and machine meet at the boundary of labor and value. The embodied agnostic
 
 The same distinction indicates where substitution removes nothing. Much of the labor around a text is apparatus---the filing, formatting, finding and organizing that carry it from one stage to the next---and can be described, like exchange, as a transfer between accounts. What [Charles Moran characterizes as drudgery](https://doi.org/10.1016/j.compcom.2003.08.011) is labor whose performance carries no experience good for the one performing, and often exacts a cost: a machine that takes it up takes away nothing of value. The program my work  follows is the line the subject permits between what can be described in its absence and what cannot: I seek to automate the first and protect the second. The value beyond the transactional, in James Britton's and in Gibson-Graham's sense of the word, offers itself for appropriation at the moments of production and use where humans perform the privileged work. Who appropriates value at each stage of circulation, and how human uses of technology complicate or obscure that appropriation, is a question for a theory of technology.
 
-*The series begins with [Part 1](https://preterite.net/weblog/2026/09/14/the-embodied-agnostic-subject-part-1.html).*
+*The series begins with [Part 1](/weblog/2026/09/14/the-embodied-agnostic-subject-part-1.html).*
 
 ### References
 

@@ -12,7 +12,7 @@ wp_id: 504
 wp_status: publish
 comment_count: 0
 ---
-In [comments](/weblog/archives/2005/04/12/left-behind/#comments), [John](http://faculty.deanza.fhda.edu/jocalo/) writes:
+In [comments](/weblog/2005/04/12/left-behind.html#comments), [John](http://faculty.deanza.fhda.edu/jocalo/) writes:
 
 > I will agree that we haven’t developed many good tools for helping students re-enter their word-processed drafts. Or, perhaps more accurately, Microsoft has not incorporated the kinds of tools that writing teachers might recommend. There’s an interesting question: why hasn’t our profession (and groups like CCCC and WPA) found a way to challenge Microsoft to incorporate useful teaching tools into Word?
 

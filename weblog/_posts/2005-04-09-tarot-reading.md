@@ -11,13 +11,13 @@ wp_id: 501
 wp_status: publish
 comment_count: 8
 ---
-As someone who's taken an abiding interest in the Tarot -- [American](/weblog/archives/2003/07/24/the-american-tarot/) and otherwise -- I decided I'd go and see a fortuneteller yesterday.
+As someone who's taken an abiding interest in the Tarot -- [American](/weblog/2003/07/24/the-american-tarot.html) and otherwise -- I decided I'd go and see a fortuneteller yesterday.
 
 She was younger than I expected a fortuneteller might be, shockingly pretty, with a leonine mass of red curls and not much patience for my spineless academic equivocations. She passed me her Tarot deck -- not a [Rider-Waite](http://www.learntarot.com/owdesc.htm), I saw -- and, after I cut the cards and handed them back, set out a slightly altered [Celtic Cross](http://www.byzant.com/tarot/spreadcelticcross.asp): three cards on the vertical axis, five cards on the horizontal axis, with an additional four-card vertical column on the right. Each card, in its position and relation to other cards, represents an aspect of the circumstances and fortunes -- past, present, and future -- of the querent.
 
 My results?
 
-Far left on the horizontal axis, one's recent past: The Page of Cups, reversed. Writing and [alcoholism](/weblog/archives/2005/01/25/a-fair-exchange/). Ah, yes.
+Far left on the horizontal axis, one's recent past: The Page of Cups, reversed. Writing and [alcoholism](/weblog/2005/01/25/a-fair-exchange.html). Ah, yes.
 
 Second from the left on the horizontal axis, one's situation: The Ivory Tower. As in the Rider-Waite deck, [the Tower](http://www.learntarot.com/maj16.htm) is broken, fractured by lightning, and falling. Upon close examination, one sees that the figures falling from the tower are the Stanleys: [Aronowitz](http://www.louisville.edu/journal/workplace/issue5p2/marsharonowitz.html) and [Fish](http://www.physics.nyu.edu/faculty/sokal/fish.html).
 

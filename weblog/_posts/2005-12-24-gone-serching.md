@@ -11,7 +11,7 @@ wp_id: 607
 wp_status: publish
 comment_count: 6
 ---
-Grades went in Thursday morning; gifts got wrapped Thursday night. After Sunday -- happy holidays! -- it's a one-day break before I'm off to MLA and [The Serch](/weblog/archives/2005/11/23/the-serch/).
+Grades went in Thursday morning; gifts got wrapped Thursday night. After Sunday -- happy holidays! -- it's a one-day break before I'm off to MLA and [The Serch](/weblog/2005/11/23/the-serch.html).
 
 And the MLA Job Information Center is in the Ballroom of the DC Omni Shoreham, which is a room I haven't seen since my senior prom was held there, years and years ago.
 

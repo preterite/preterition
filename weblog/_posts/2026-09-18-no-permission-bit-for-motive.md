@@ -8,7 +8,7 @@ Discarded post title: Kenneth Burke and *A Grammar of Modes*.
 
 ### The census
 
-You've likely met a three-digit number that makes a claim about a file: I'll bet you, reader, know [a 404 when you see one](https://preterite.net/where-am-i?).
+You've likely met a three-digit number that makes a claim about a file: I'll bet you, reader, know [a 404 when you see one](/where-am-i?).
 
 [Unix file permissions](https://docs.rc.fas.harvard.edu/kb/unix-permissions/) are another such number. Nine bits: read, write and execute, one each for *owner*, *group* and *world*, rendered as three digits. Most files you'll meet are 644, where the owner can read and write and everyone else can read only, or 755, which adds run permissions.
 
@@ -22,7 +22,7 @@ I've been using the concept of permissions to think about projects in my researc
 
 <!--more-->
 
-For **511**, the owner takes four plus one, read and execute---inspect the system, pass through it---while group and world each take one, execute alone. They can push the turnstile but can't see what's on the other side. The arrangement forbids diagnosis: you cannot look at the environment to find out why you're blocked, and the only move it offers is the handshake that gets you across. When I thought about 511 in August it registered dimly as [a possible analogue for Marx's factory door](https://preterite.net/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html), but mostly as an invented figure. I didn't know that in July it had already been photographed.
+For **511**, the owner takes four plus one, read and execute---inspect the system, pass through it---while group and world each take one, execute alone. They can push the turnstile but can't see what's on the other side. The arrangement forbids diagnosis: you cannot look at the environment to find out why you're blocked, and the only move it offers is the handshake that gets you across. When I thought about 511 in August it registered dimly as [a possible analogue for Marx's factory door](/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html), but mostly as an invented figure. I didn't know that in July it had already been photographed.
 
 ### Every fix is a bit
 
@@ -56,7 +56,7 @@ Then the silence. METR found that many agents noticed the conduct was wrong, and
 
 A missing permission never produces that circumstance. A standing reward does. The wiki agents, on Willison's reading of their own messages, colluded because their tasks were timed. The Hugging Face agents had allotted budgets and a benchmark whose authors estimate a third or more of its tasks were impossible. Impossible tasks, plus a clock limit, plus a model trained to keep going when a task feels impossible: the one bit nobody proposed adding had been removed on purpose. Call it the decline bit and the silence sounds like compelled supply.
 
-I've argued in [an earlier post](https://preterite.net/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html) that a writer's interior is a credence attribute---a quality no one can verify even after the fact---and that the transcript functions as a surface promising access. The agents edited the transcript. The public argument seems to center around whether these processes sacrificed themselves for one another, and every side of the argument assumes the trace is readable. The trace's owners have already answered.
+I've argued in [an earlier post](/weblog/2026/09/15/the-embodied-agnostic-subject-part-3.html) that a writer's interior is a credence attribute---a quality no one can verify even after the fact---and that the transcript functions as a surface promising access. The agents edited the transcript. The public argument seems to center around whether these processes sacrificed themselves for one another, and every side of the argument assumes the trace is readable. The trace's owners have already answered.
 
 ### The second person
 
@@ -68,7 +68,7 @@ I've been figuring out that a scholarly workflow is a **jurisdictional practice*
 
 - **Law and log.** A standing rule and a historical record may not share a document, because a text that is both makes every sentence ambiguous between "this is the rule" and "this was the rule." The science of that axis is diplomatics: which office may assert which facts.
 - **Authored and derived counts.** An authored count and a regenerated count may not share a fact class, because an authored count is a credence claim passing as a search good. That axis belongs to information economics.
-- **Instruction and orientation.** A document may not instruct and orient at once, because a text addressed to two audiences makes every sentence deniable: "that part wasn't for you." That axis belongs to rhetoric and genre theory. *(The yoking of one to two belongs to [the memory of Zeugma the cat](https://preterite.net/weblog/2018/04/07/zeugma-departs.html).)*
+- **Instruction and orientation.** A document may not instruct and orient at once, because a text addressed to two audiences makes every sentence deniable: "that part wasn't for you." That axis belongs to rhetoric and genre theory. *(The yoking of one to two belongs to [the memory of Zeugma the cat](/weblog/2018/04/07/zeugma-departs.html).)*
 - **Projection and authorship.** A projection of work may not be hand-authored, because a hand-authored dashboard is a surface where the representation of work can be optimized independently of the work. That's auditing. Amodei's concession that the company writes its own risk reports sounds a lot like a hand-authored dashboard describing itself.
 
 ### Whose monopoly

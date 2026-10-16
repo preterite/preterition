@@ -7,7 +7,7 @@ categories: [Politics, Writing]
 ---
 ### 3\. Forbidden: what the subject rules out
 
-*This post continues [Part 1](https://preterite.net/weblog/2026/09/14/the-embodied-agnostic-subject-part-1.html), which named the embodied agnostic subject and specified its fundamental requirements.*
+*This post continues [Part 1](/weblog/2026/09/14/the-embodied-agnostic-subject-part-1.html), which named the embodied agnostic subject and specified its fundamental requirements.*
 
 [Judith Butler](https://doi.org/10.1353/dia.2004.0002) presents opacity as a condition. Edouard Glissant presents opacity as a right. A condition can be worked around; a right can forbid.
 
