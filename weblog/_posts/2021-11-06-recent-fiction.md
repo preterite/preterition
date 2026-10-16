@@ -14,10 +14,10 @@ wp_id: 2244
 wp_status: publish
 comment_count: 0
 ---
-I'm really enjoying teaching English 419: The Twentieth-Century Novel as a sort of break from what feel to me like the more pedagogically and rhetorically challenging classes in digital technologies and composition and rhetoric that I usually teach. Teaching has its persuasive components, as any good teacher knows—students who are invested in the material learn better and more easily, so part of my mission is to engage students and persuade them that the material is worth investing in—and novels, for undergraduates in particular, I think offer a more direct rout into engagement through the simple pleasure of reading. And in my teaching evaluations from students, my most commented-upon characteristic for the past 20 years or so of my teaching has been my enthusiasm, and sometimes enthusiasm for the pleasures of the text (even when coupled to the difficulty of the text) can provide a more direct route into that engagement. In the courses I usually teach—rhetoric, composition, digital technologies—my enthusiasm often translates into arguments along the lines of "Look, this is important!" whereas this semester, my arguments have been more like, "Look, this is cool!" That's an oversimplification, of course, but I guess a way of me saying, I've really enjoyed the opportunity to have said, over and over again this semester, "Look, this is cool!" as we've made our way through
+I'm really enjoying teaching **English 419: The Twentieth-Century Novel** as a sort of break from what feel to me like the more pedagogically and rhetorically challenging classes in digital technologies and composition and rhetoric that I usually teach. Teaching has its persuasive components, as any good teacher knows—students who are invested in the material learn better and more easily, so part of my mission is to engage students and persuade them that the material is worth investing in—and novels, for undergraduates in particular, I think offer a more direct route into engagement through the simple pleasure of reading. And in my teaching evaluations from students, my most commented-upon characteristic for the past 20 years or so of my teaching has been my enthusiasm, and sometimes enthusiasm for the pleasures of the text (even when coupled to the difficulty of the text) can provide a more direct route into that engagement. In the courses I usually teach—rhetoric, composition, digital technologies—my enthusiasm often translates into arguments along the lines of "Look, this is important!" whereas this semester, my arguments have been more like, "Look, this is cool!" That's an oversimplification, of course, but I guess a way of me saying, I've really enjoyed the opportunity to have said, over and over again this semester, "Look, this is cool!" as we've made our way through
 
 - Jean Toomer, *Cane*;
-- Sandra Cisneros,* The House on Mango Street*;
+- Sandra Cisneros, *The House on Mango Street*;
 - Thomas Pynchon, *The Crying of Lot 49*;
 - Toni Morrison, *Sula*;
 - Vladimir Nabokov, *Pale Fire*;
@@ -34,7 +34,7 @@ And of course, discussions of canonicity and its problems have come up. One argu
 - William Faulkner, *The Sound and the Fury*
 - Joseph Heller, *Catch-22*
 - Jack Kerouac, *On the Road*
-- Don DeLillo,* White Noise*
+- Don DeLillo, *White Noise*
 
 In other words, I imagine a non-academic audience looking at that list and saying, "Yeah, that seems reasonably representative of some general agreement on some of the canonical novels of the 20th century." I suspect that for many, it's a list that would be more easily acceptable in a course on the twentieth-century novel than, say, the following list that revises my syllabus—which is a list I would be much more enthusiastic to teach, and one with which I would have a lot more fun:
 
