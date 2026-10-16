@@ -9,8 +9,7 @@ description: "Who I am, how I work, what this is."
 
 **_tl,dr_:**
 
-I'm an Associate Professor of Rhetoric and Composition in the English
-Department at Washington State University. I grew up near Washington DC,
+I study and teach rhetoric and composition. I grew up near Washington DC,
 spent some time in the Army, and am now a sober single dad. I like cats.
 
 **_extended dance mix_:**
@@ -53,10 +52,9 @@ build my research and teaching on four principles:
 3. Replacing labor with capital is an economic act.
 4. The economic appropriation of writing's value bears investigation.
 
-Perhaps there should be something here about a theory of technology, but I
-feel that topic's best treated more thoroughly in links from the
+The principles are treated more thoroughly in links from the
 [Teaching](/teaching.html), [Presentations](/presentations.html), and
-[Scholarship](/scholarship.html) pages.
+[Scholarship](/scholarship.html) pages. I've used the [weblog](/weblog.html) to develop initial attempts at a theory of the subject, a theory of technology, and a theory of economy that support and extend those four principles.
 </div>
 
 <div class="card" markdown="1">
