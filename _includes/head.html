@@ -79,6 +79,7 @@
   "headline": {{ page.title | strip_html | normalize_whitespace | jsonify }},
   "description": {{ head_description | jsonify }},
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "wordCount": {{ page.word_count | jsonify }},
   "url": {{ head_url | jsonify }},
   "mainEntityOfPage": {{ head_url | jsonify }},
   {%- if page.series %}

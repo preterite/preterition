@@ -57,7 +57,9 @@ module Preterite
         members.each { |d| d.data["series"] = link }
         hub.data["series_entries"] = members.map do |d|
           { "title" => d.data["title"], "url" => d.url, "date" => d.date,
-            "description" => d.data["description"] }
+            "description" => d.data["description"],
+            "word_count" => d.data["word_count"],
+            "word_count_display" => d.data["word_count_display"] }
         end
         listing << link.merge("first" => members.map(&:date).min)
       end

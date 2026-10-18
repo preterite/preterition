@@ -53,6 +53,12 @@
     {%- if p.last_modified_at and revised != published %}
     <span class="post-revised">revised <time datetime="{{ p.last_modified_at | date_to_xmlschema }}">{{ p.last_modified_at | date: "%-d %B %Y" }}</time></span>
     {%- endif %}
+    {%- comment -%} The entry's length in words, counted by
+    _plugins/word_count.rb from its source and present on every entry: a
+    picture with no prose reads "0 words".
+    {%- endcomment %}
+    <span class="post-sep" aria-hidden="true">|</span>
+    <span class="post-words" data-pagefind-ignore>{{ p.word_count_display }}</span>
     {%- if p.categories != empty %}
     <span class="post-sep" aria-hidden="true">|</span>
     <span class="post-categories">Categories:

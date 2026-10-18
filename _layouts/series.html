@@ -15,6 +15,10 @@
 #
 # Out of the search index, on the archive pages' rule: a search result
 # should point at an entry, never at a list of entries.
+#
+# Each entry's date is followed by its length in words, from
+# _plugins/word_count.rb, inside the date's own span so the pair wraps
+# as one. The page itself carries no count of its own.
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +44,7 @@
             {%- for e in page.series_entries %}
             <li>
               <a class="archive-entry-title" href="{{ e.url }}">{{ e.title }}</a>
-              <span class="archive-entry-date"><time datetime="{{ e.date | date_to_xmlschema }}">{{ e.date | date: "%-d %B %Y" }}</time></span>
+              <span class="archive-entry-date"><time datetime="{{ e.date | date_to_xmlschema }}">{{ e.date | date: "%-d %B %Y" }}</time><span class="post-sep" aria-hidden="true">|</span>{{ e.word_count_display }}</span>
               <div class="series-entry-summary">{{ e.description | markdownify }}</div>
             </li>
             {%- endfor %}

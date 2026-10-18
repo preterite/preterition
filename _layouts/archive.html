@@ -26,6 +26,10 @@
 #
 # The dateline's visible form and its datetime are post-card.html's, so a
 # date reads the same on the card it came from and in the list it lands in.
+#
+# Each entry's date is followed by its length in words, from
+# _plugins/word_count.rb, inside the date's own span so the pair wraps
+# as one. The page itself carries no count of its own.
 ---
 {%- comment -%} Two assigns before <head>, because the title tag needs the
 heading: a month archive carries no front matter title of its own, so this
@@ -61,7 +65,7 @@ gathered and promises no order. {%- endcomment -%}
             {%- for p in entries %}
             <li>
               <a class="archive-entry-title" href="{{ p.url }}">{{ p.title }}</a>
-              <span class="archive-entry-date"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%-d %B %Y" }}</time></span>
+              <span class="archive-entry-date"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%-d %B %Y" }}</time><span class="post-sep" aria-hidden="true">|</span>{{ p.word_count_display }}</span>
             </li>
             {%- endfor %}
           </ol>
