@@ -12,7 +12,7 @@ wp_id: 1914
 wp_status: publish
 comment_count: 0
 ---
-<del>I'm moving</del> I've moved&nbsp;`vitia.org` to a new hosting provider, and <del>I'll soon be changing</del>&nbsp;changed the URL to integrate with my professional site at `[preterite.net](https://preterite.net/)`. <del>That means `vitia.org` will be mirrored at `preterite.net` for a while. This URL (`vitia.org`) should be good at least for the next few months, and I'll have more details as I get the move finalized.</del> Please consider the blog `vitia.org` now defunct and reincarnated in updated form at `[preterite.net/blog/](/weblog/)`.
+<del>I'm moving</del> I've moved `vitia.org` to a new hosting provider, and <del>I'll soon be changing</del> changed the URL to integrate with my professional site at [`preterite.net`](https://preterite.net/). <del>That means vitia.org will be mirrored at preterite.net for a while. This URL (vitia.org) should be good at least for the next few months, and I'll have more details as I get the move finalized.</del> Please consider the blog `vitia.org` now defunct and reincarnated in updated form at [`preterite.net/weblog/`](/weblog/).
 
 Short explanation: I started this weblog as a graduate student way back in the early social media days of 2003 (!), when fabulous beasts like the Invisible Adjunct and Culture Cat and the Happy Tutor roamed the green hills of Academic Blogistan. In those days of MySpace and Friendster and LiveJournal and Movable Type 2.6, my default mode was that of grad student critique-ish-ness. The blog's title, *Vitia*, indicated that splenetic mode in Latin, and its tagline translated the second declension neuter plural noun: "*faults / sins / abuses*."
 
