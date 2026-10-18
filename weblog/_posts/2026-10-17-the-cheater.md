@@ -6,7 +6,7 @@ categories: [Composition, Technology]
 ---
 I'd like to imagine a college student in a writing class who uses a large language model to cheat.
 
-Say the student enters English 101 on Day 1 of the semester and gets a paper copy of the syllabus, snaps pictures of the pages, and her phone OCRs the fulltext and drops it in her School files folder that syncs to her computer. She photographs the whiteboard with the teacher's notes and the LMS login. Later that night, doing her homework, she sets up two English 101 folders on her computer: one for binaries like PDFs, and one for text. She's decided she's going to cheat, and wants to have her files organized so they're maximally findable by both human and machine. Her text file folder hierarchy looks like this:
+Say the student enters English 101 on Day 1 of the semester and gets a paper copy of the syllabus, snaps pictures of the pages, and her phone OCRs the fulltext and drops it in her School files folder that syncs to her computer. She photographs the whiteboard with the teacher's notes and the LMS login. Later that night, doing her homework, she sets up two English 101 folders on her computer: one for binaries like PDFs and .jpgs, and one for text. She's decided she's going to cheat, and wants to have her files organized so they're maximally findable by both human and machine. Her text file folder hierarchy looks like this:
 
 ```text
 english-101-text/
@@ -46,7 +46,7 @@ english-101-text/
 12 directories, 20 files
 ```
 
-Every PDF that goes into the binaries folder gets its fulltext automatically slurped into a markdown (.md) file in the text folder hierarchy. She logs into the LMS and downloads every course document to her binaries folder, with the fulltext going to its appropriate place in the text file hierarchy. As her last tasks of the night, she sets up a private GitHub repository for her text file folder so she can reach it from anywhere and manage her revisions, and configures [qmd](https://github.com/tobi/qmd) on her computer to set up a vector search text embeddings database for her text file folder. qmd lets her query her text file folder---call it her Archive---not just via lexical or keyword search, but semantically: by similarity in meaning.
+Every .jpg and PDF that goes into the binaries folder gets its fulltext automatically slurped into a [markdown](https://www.markdownguide.org/getting-started/) (.md) file in the text folder hierarchy. She logs into the LMS and downloads every course document to her binaries folder, with the fulltext going to its appropriate place in the text file hierarchy. As her last tasks of the night, she sets up a private [GitHub repository](https://docs.github.com/en/get-started/learning-to-code/getting-started-with-git) for her text file folder so she can reach it from anywhere and manage her revisions, and configures [qmd](https://github.com/tobi/qmd) on her computer to set up a vector search text embeddings database for her text file folder. qmd lets her query her text file folder---call it her Archive---not just via lexical or keyword search, but semantically: by similarity in meaning.
 
 <!--more-->
 
