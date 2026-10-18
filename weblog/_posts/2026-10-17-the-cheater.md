@@ -50,7 +50,7 @@ Every .jpg and PDF that goes into the binaries folder gets its fulltext automati
 
 <!--more-->
 
-That week, she does the first reading assignment, and her digital highlights and notes are automatically extracted into the Archive's reading notes folder, linked to both the original PDF and its fulltext in the assigned readings folder. Her bibliography app automatically fetches the DOIs and formats the accompanying citations. She takes notes in class, photographs the whiteboard, completes the short LMS discussion forum assignments that ask for individualized reactions and responses to peers' ideas. She downloads those to the Archive too, and links them to their appropriate peer documents. The LMS and her timing tracker date-stamp when the activities happen.
+That week, she does the first reading assignment, and her digital highlights and notes extract into the Archive's reading notes folder, linked to both the original PDF and its fulltext in the assigned readings folder. Her bibliography app automatically fetches the source permalinks and formats the accompanying citations. She takes notes in class, photographs the whiteboard, completes the short LMS discussion forum assignments that ask for individualized reactions and responses to peers' ideas. She downloads those to the Archive too, and links them to their appropriate peer documents. The LMS and her timing tracker stamp each activity with a time and date.
 
 The student, taking inspiration from the canons of rhetoric and the teacher's instructions about the writing process, soon adds a new folder to her Archive. It holds instruction files for the LLM.
 
