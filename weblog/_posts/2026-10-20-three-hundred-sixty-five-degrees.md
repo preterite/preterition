@@ -26,7 +26,7 @@ One supposes it remains to be determined whether the labor of R1 scholars who pu
 
 The question, then: do scholars in writing studies agree that one average article from an R1 institution's serials budget for *Computers and Composition* is worth as much as 215 articles from *CCC*, and that one article from an R2 institution's serials budget for *Computers and Composition* is worth as much as 73 articles from *CCC*? Because, [according to the economic logic of commensuration](/weblog/2026/10/05/commensuration-text-and-labor.html)---*X of this is this is worth Y of that*--- **that's the proportional price the journals have set and the disciplines have agreed to pay**.
 
-A possible next step, given the availability of receipts, might be to name the names of every scholar who's cautioned about economic concerns in the pages of *Computers and Composition* in the twenty-plus years since [Charlie Moran](https://condor.depaul.edu/dwrd/moore/travelfiles_nica2012/stuff_073112/teaching_computerclassrooms/moran_we%20_hoped.pdf) 
+A possible next step, given the availability of receipts, might be to name the names of every scholar who's cautioned about concerns of economic injustice in the pages of *Computers and Composition* in the twenty-plus years since [Charlie Moran](https://condor.depaul.edu/dwrd/moore/travelfiles_nica2012/stuff_073112/teaching_computerclassrooms/moran_we%20_hoped.pdf) 
 
 > "expressed the hope that. . . we and the community of composition teachers will become. . . more secure in our research, scholarship, tenure, and promotion."
 
