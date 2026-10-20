@@ -20,12 +20,16 @@ The calculations are revealing.
 Bottom line:
 
 1. Scholars at R1 institutions who publish in *Computers and Composition* cost their institutions about 110--320 times more per article and 1,100--3,200 times more per reader than their colleagues at the same institutions who publish in *CCC*. 
-2. Scholars at R2 institutions who publish in *Computers and Composition* cost their institutions 36--110 times more per article and 365--1,100 times more per reader than their colleagues at the same institutions who publish in CCC. 
+2. Scholars at R2 institutions who publish in *Computers and Composition* cost their institutions 36--110 times more per article and 365--1,100 times more per reader than their colleagues at the same institutions who publish in *CCC*. 
 
-One supposes it remains to be determined whether the labor R1 scholars who publish in *Computers and Composition* is on average 214,900% more productive, impactful, and valuable than that of their colleagues who publish in *CCC*, and whether the labor of R2 scholars who publish in *Computers and Composition* is 73,150% more productive, impactful, and valuable than that of their colleagues who publish in *CCC*.
+One supposes it remains to be determined whether the labor of R1 scholars who publish in *Computers and Composition* is on average 214,900% more productive, impactful, and valuable than that of their colleagues who publish in *CCC*, and whether the labor of R2 scholars who publish in *Computers and Composition* is 73,150% more productive, impactful, and valuable than that of their colleagues who publish in *CCC*.
 
 The question, then: do scholars in writing studies agree that one average article from an R1 institution's serials budget for *Computers and Composition* is worth as much as 215 articles from *CCC*, and that one article from an R2 institution's serials budget for *Computers and Composition* is worth as much as 73 articles from *CCC*? Because, [according to the economic logic of commensuration](/weblog/2026/10/05/commensuration-text-and-labor.html)---*X of this is this is worth Y of that*--- **that's the proportional price the journals have set and the disciplines have agreed to pay**.
 
-A possible next step, given the availability of receipts, might be to name the names of every scholar who's cautioned about economic concerns in the pages of *Computers and Composition* in the twenty-plus years since Charlie Moran "expressed the hope that. . . we and the community of composition teachers will become. . . more secure in our research, scholarship, tenure, and promotion." One part of that community has indeed become more secure, at the proportional expense of others.
+A possible next step, given the availability of receipts, might be to name the names of every scholar who's cautioned about economic concerns in the pages of *Computers and Composition* in the twenty-plus years since [Charlie Moran](https://condor.depaul.edu/dwrd/moore/travelfiles_nica2012/stuff_073112/teaching_computerclassrooms/moran_we%20_hoped.pdf) 
 
-People on their way to work say, ["Baby, what did you expect?"](https://youtu.be/Ocu8LS_Dk5A)
+> "expressed the hope that. . . we and the community of composition teachers will become. . . more secure in our research, scholarship, tenure, and promotion."
+
+The publishing part of that community has indeed become more secure---at the proportional expense of others who lack the advantaging research contracts or course releases to remediate their precarity.
+
+People on their way to work say, ["Baby, what did you expect?"](https://youtu.be/Ocu8LS_Dk5A) It's ~~just~~ capitalism.
