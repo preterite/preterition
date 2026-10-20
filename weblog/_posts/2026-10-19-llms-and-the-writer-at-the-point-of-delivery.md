@@ -8,7 +8,7 @@ Where and when do we place the writer?
 
 In the discourse around AI and large language models (LLMs), where is the human writer, and when, and what are they doing? In other words: have we questioned the validity of the construct posited for the figure of the LLM-using human writer?
 
-In all of the scholarship I've read (I won't link any articles here, because I won't give Elsevier the benefit in this post), the human writer is placed in one location: **in front of an LLM chat window**.
+In all the scholarship I've recently read (no links in this post, because I won't give Elsevier the benefit), the human writer is placed in one location: **in front of an LLM chat window**.
 
 Never a *code* prompt. Never an *agent* prompt. Never a *multi-agent framework*. Never an *agent orchestration* or *management platform*.
 
