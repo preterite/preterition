@@ -12,10 +12,10 @@ Depending upon one's perspective, the calculations may come across as either rev
 
 | Access path | Cost per title, per institution, per year | Per article (~30 a year, both journals) | Per local reader | 
 | ---- | ---- | ---- | ----  |
-| Elsevier bundle → C&C, R1 median | ~$1,070 | ~$36 | ~$536 | 
-| Elsevier bundle → C&C, R2 median | ~$365 | ~$12 | ~$182 | 
-| JSTOR Arts & Sciences III → CCC (archive only) | $8.70--15.40 | $0.29--0.51 | $0.43--0.77 | 
-| ProQuest or Gale → CCC (current) | ~$3--10 | $0.11--0.33 | $0.17--0.50 | 
+| Elsevier bundle: C&C, R1 median | ~$1,070 | ~$36 | ~$536 | 
+| Elsevier bundle: C&C, R2 median | ~$365 | ~$12 | ~$182 | 
+| JSTOR Arts & Sciences III: CCC (archive only) | $8.70--15.40 | $0.29--0.51 | $0.43--0.77 | 
+| ProQuest or Gale: CCC (current) | ~$3--10 | $0.11--0.33 | $0.17--0.50 | 
 
 Bottom line for **the Elsevier<sup id="fnref:1" role="doc-noteref">[1](/weblog/2026/10/20/three-hundred-sixty-five-degrees.html#fn:1){: .footnote}</sup> tax**:
 
