@@ -8,7 +8,7 @@ categories: [Economics, Academia, Intellectual Property]
 
 I've used publicly available data to run the numbers for [comparative journal subscription and publication costs](/weblog/2026/10/07/capitalization-title-and-rent.html) for *Computers and Composition* and *CCC*. In an article I'm working on for publication, I'll release the sources for the numbers and the documentation---they're easily available and findable online---but I'll share the calculations themselves here.
 
-The calculations are revealing.
+Depending upon one's perspective, the calculations may come across as either revealing or incendiary.
 
 | Access path | Cost per title, per institution, per year | Per article (~30 a year, both journals) | Per local reader | 
 | ---- | ---- | ---- | ----  |
@@ -32,4 +32,4 @@ A possible next step, given the availability of receipts, could be to name the n
 
 The publishing part of that community has indeed become more secure---at the proportional expense of others who lack the advantaging research contracts or course releases to remediate their precarity.
 
-People on their way to work say, ["Baby, what did you expect?"](https://youtu.be/Ocu8LS_Dk5A) It's ~~just~~ capitalism.
+"People on their way to work say, ['Baby, what did you expect?'](https://youtu.be/Ocu8LS_Dk5A)" It's ~~just~~ capitalism.
