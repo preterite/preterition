@@ -30,7 +30,7 @@ In IX.2, Quintilian offers a subtle inversion of the emperor's projection, notin
 
 Writing teachers sometimes seem to want the figure of the *vir bonus* for its potential to reflect themselves in the *orator*. The [position](/weblog/2026/10/04/appropriation-position-and-relation.html) we hold is not the *orator*'s but Quintilian's refiguring of that then-dead role, several steps down in status and compensation: the salaried *rhetor* teaching skills for deferred use, generalizable to constraints beyond the present classroom's.
 
-Questions as to the ultimate success or failure of Quintilian's project must remain unanswered. In 95 CE, Domitian exiled the boys' mother and executed their father, Titus Flavius Clemens. The following year, [the emperor's steward distracted him](https://doi.org/10.29228/joh.50649) by handing him a paper to read, and pulled a concealed dagger to stab him in the groin. Domitian fought back and gouged out the steward's eyes. Other assassins joined and stabbed the emperor seven more times before he died.
+Questions as to the ultimate success or failure of Quintilian's project must remain unanswered. In 95 CE, Domitian exiled the boys' mother and executed their father. The following year, [the emperor's steward distracted him](https://doi.org/10.29228/joh.50649) by handing him a paper to read, and pulled a concealed dagger to stab him in the groin. Domitian fought back and gouged out the steward's eyes. Other assassins joined and stabbed the emperor seven more times before he died.
 
 The boys vanish from the record.
 
