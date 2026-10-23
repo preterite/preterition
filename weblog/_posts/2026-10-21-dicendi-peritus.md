@@ -35,4 +35,4 @@ Questions as to the ultimate success or failure of Quintilian's project must rem
 The boys vanish from the record.
 
 
-[^1]: The contextually anachronistic use of the terms "inscribed," "surface," "inference," "training," and "record" is intentional.
+[^1]: The contextually anachronistic use of the technological terms "inscribed," "surface," "inference," "training," and "record" is intentional.
