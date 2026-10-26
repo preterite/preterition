@@ -2,6 +2,8 @@
 title: "Field Card, Not for Transmission"
 description: "Record 20261025-accumulative-s3457-r2 from the loop-harness dataset: one sequence of blocks written in thirty-six turns under a mask, three blocks cut at turn 31."
 ---
+<article class="blog-card post" markdown="1">
+
 ## FIELD CARD, NOT FOR TRANSMISSION
 ### *This blank is deliberate. So is this one.*
 
@@ -154,9 +156,9 @@ The note doesn't say so outright, but its answer seems to be no. It wants squads
 So I imagine the card he could keep. It wouldn't be written during the movement. It would come after, when the squad has gone to ground:
 
 FIELD CARD, NOT FOR TRANSMISSION
-What I ignored: ______
-What I took it to mean: ______
-Was I wrong: ______
+What I ignored: ____________
+What I took it to mean: ____________
+Was I wrong: ____________
 
 It's three lines with no encryption, and nobody grades it. It's Aeryn's fourth version, written in the dirt, wrong. Nobody is going to fill in that third blank honestly unless someone above him has decided that a misreading put on record counts as work.
 
@@ -246,7 +248,7 @@ The 2011 post on clocks gives me a picture I didn't expect. At the Academy in Af
 
 So I'm adding a line to the field card:
 
-When did I look back: ______
+When did I look back: ____________
 
 You fill it in in the bugler's time, once the movement is over, at an hour no watch would have chosen. I think the gap Iser describes needs a gap in the clock too, or it doesn't get filled.
 
@@ -258,8 +260,8 @@ Iser makes this worse, usefully. "No tale can ever be told in its entirety," he 
 
 So the line on the field card needs a second blank under it:
 
-When did I look back: ______
-Whose time was it: ______
+When did I look back: ____________
+Whose time was it: ____________
 
 I'd guess the second line gets left empty more often than the first. That's still worth recording, because, as block 18 said, a blank tells the reader something too.
 
@@ -271,8 +273,8 @@ Second, the kitchen. In 1841 Catherine Beecher wanted "a clock, in or near the k
 
 So I'm amending the card again, in pencil:
 
-Whose time was it: ______
-Who sent the messenger: ______
+Whose time was it: ____________
+Who sent the messenger: ____________
 
 The child at the bedside never fills in the second line. "One more page" is how she haggles with the kitchen clock.
 
@@ -286,7 +288,7 @@ Block 22 asked who sent the messenger. Here is the other side of the question. E
 
 On the card, beneath the messenger line:
 
-Where did I look up: ______
+Where did I look up: ____________
 
 This line is the only one nobody can order filled. A space bar works the same way: the key prints nothing, and the reader decides what goes in the gap.
 
@@ -298,7 +300,7 @@ Charles Bernstein, writing in 1987, worried that the word processor "threatens t
 
 So I'm adding a line to the grading sheet, for the grader this time and not the soldier:
 
-Unbroken minutes I protected: ______
+Unbroken minutes I protected: ____________
 Who used them, and for what: *not mine to record.*
 
 "Not mine to record" is the oddest line on the grading sheet, and I want to know who pays for it.
@@ -333,7 +335,7 @@ That makes the card he signs once less of a confession and more of a museum labe
 Iser says a second reading "often produces a different impression from the first," because by then we know what comes next. The nest is a second reading of the war. The ledger, read again, is a second reading of the gap.
 
 Field card, last line:
-What did I hide, and where did it go: ______
+What did I hide, and where did it go: ____________
 
 Block 27 ended on a blank, and the workbench fragment fills part of it with a line I keep rereading: "The bird building with fiber is living inside someone else's balance sheet." The bird didn't decide where the war's cost would land. It builds with whatever is lying around. The cadet in the twenty quiet minutes does the same thing, and so does the child at the bedside, and so does the adjunct from block 2. Each of them makes something out of what someone else hid.
 
@@ -408,7 +410,7 @@ The 2003 post gives me a way to keep both. Drawing on Resnick and Wolff, its aut
 
 Ledger, account opened:
 Account: reading.
-Holder: ______
+Holder: ____________
 Entry: one hand kept down. Debit to her. Credit, unsigned, to the seminar.
 
 I'm leaving the holder line blank. If anyone fills it in, it should be in her hand.
@@ -432,4 +434,6 @@ By whom: whoever protects the gap and signs for it once.
 At whose cost: hers first. Then, if the account pays out, the next table's.
 
 Field card, last line, left for the reader:
-What did you let go: ______
+What did you let go: ____________
+
+</article>
