@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Trick, Treat, Receipt: Agent Memory, Part 1"
-date: 2026-10-26 13:02:37 -0700
+date: 2026-10-26 11:02:37 -0700
 categories: [Technology, Information, Projects]
 permalink: /weblog/2026/10/26/agent-memory-trick-treat-receipt.html
 ---
