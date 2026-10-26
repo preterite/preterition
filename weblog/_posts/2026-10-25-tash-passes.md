@@ -12,4 +12,4 @@ She's had her heating pad to sleep on, and she got her meal of tuna this week be
 
 [![a calico cat sitting next to a bouquet of Lego flowers](/weblog/assets/tash-b-500.jpg)](/weblog/assets/tash-b-1200.jpg)
 
-You will be much missed from your place on my lap, dear grumpy old calico, and all who read these words shall know that “Tash” was short for “*Tashakor, motherfucker*.” Nelly and Zora and Rascal sniff for your traces in your usual places. May you go in peace to the place of birds and dappled sun, O demander of human food and chin-chucks, O sweet and fearless cat, and may you rest in ease and grace.
+You will be much missed from your place on my lap, dear grumpy old calico, and all who read these words shall know that “Tash” was short for تشکر مادرت فاحشه است, or "Tashakor, motherfucker." Nelly and Zora and Rascal sniff for your traces in your usual places. May you go in peace to the place of birds and dappled sun, O demander of human food and chin-chucks, O sweet and fearless cat, and may you rest in ease and grace.
