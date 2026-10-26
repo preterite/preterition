@@ -19,7 +19,7 @@ the art of the trade, or how the sausage gets made.*
 
 <!--more-->
 
-An example may clarify. Let's say Malcolm takes one night, one route, one bag. Malcolm is the script: he walks the route in order, carries the note from door to door, and holds a bag no house may inspect. Every house on the street is a session, alone in the dark with the candy it stocked ahead and the corner store a block off. The house's counter is a room, as the context window where the words happen; the bag is a room as well, the record, which no house can open. At each stop the house reads the note pinned to the bag by the house before, runs to the store for anything it hasn't got, drops in a deposit, and leaves a note for the following house, never learning what came from the last house or the next.
+An example may clarify. Let's say Malcolm takes one night, one route, one bag. Malcolm is the script: he walks the route in order, carries the note from door to door, and holds a bag no house may inspect. Every house on the street is a session, alone in the dark with the candy it stocked ahead and the Harbinger corner store a block away. The house's counter is a room, as the context window where the words happen; the bag is a room as well, the record, which no house can open. At each stop the house reads the note pinned to the bag by the previous house, runs to the store for anything it doesn't stock, drops in a deposit, and leaves a note for the following house, never learning what came from the last house or the next.
 
 ---*God help and forgive me,
 I wanna build something that's gonna outlive me.*
@@ -49,14 +49,14 @@ Burr survives by keeping his name off the page. The last room contributes nothin
 
 I turn a year older on November 1, and I'll share my early gift, Reader: the permalinks for a prior night's haul of Halloween treats. Please turn out the light when you bring in the cat; for you, under the porch's welcome mat, I leave a dataset's key. The key unlocks the door to
 
----*the room where it happened,
----the room where it happened,
----the room where it happened.*
+---*the room where it happened,*\
+---*the room where it happened,*\
+---*the room where it happened.*\
 
 
 ## References
 
-\_\_\_\_\_. 2026. [Field Card Not for Transmission. This Blank Is Deliberate. So Is This One.](/weblog/field-card-not-for-transmission.html) Record 20261025-accumulative-s3457-r2. [Partial dataset.]
+\_\_\_\_\_\_\_\_\_\_. 2026. [Field Card Not for Transmission. This Blank Is Deliberate. So Is This One.](/weblog/field-card-not-for-transmission.html) Record 20261025-accumulative-s3457-r2. [Partial dataset.]
 
 Edwards, Mike. 2026. loop-harness. Version 1.9.0. [Software.] [https://doi.org/10.5281/zenodo.23662792](https://doi.org/10.5281/zenodo.23662792).
 
