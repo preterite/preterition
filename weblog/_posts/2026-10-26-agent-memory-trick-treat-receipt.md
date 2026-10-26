@@ -31,9 +31,9 @@ The parental rule applies at the second stop: only sealed pieces survive inspect
 ---*We just assume that it happens,
 but no else is in the room where it happens.*
 
-Composition's construct for the machine is [one prompt, one sitting, one essay](/weblog/2026/10/19/llms-and-the-writer-at-the-point-of-delivery.html), a home-baked treat, mouth-watering and unauditable: its only warrant is the account you can request from the baker, and asking the machine for its account gets you another treat. Nothing on Malcolm's street arrives warranted by a house's word, because no house gets asked for a warrant. The kid seals every treat at the door with its slip, its note and the request it answered, and the parents read the seal.
+Composition's construct for the machine looks like [one prompt, one sitting, one essay](/weblog/2026/10/19/llms-and-the-writer-at-the-point-of-delivery.html), a home-baked treat, mouth-watering and unauditable: its only warrant is the account you can request from the baker, and asking the machine for its account gets you another treat. Nothing on Malcolm's street arrives warranted by a house's word, because no house gets asked for a warrant. The kid seals every treat at the door with its slip, its note and the request it answered, and the parents read the seal.
 
-If one gives the writer time and a memory, a second sealed question emerges: what did it carry? Did the house read what its note says it read? The store's slips provide the answer. What did one house tell the next house? The note itself provides the answer. What did the kid hand the house? The request as sent provides the answer. Nobody has to say what they meant, and the heirs don't get a say in what they trade away. The trips are [priced](/weblog/2026/10/15/contracts-whys-whens-and-wherefores.html): three a night, with up to two unused carrying to the next house.
+If one gives the writer time and a memory, a second sealed question emerges: what did it carry? Did the house read what its note says it read? The store's slips provide the answer. What did one house tell the next house? The note provides the answer. What did the kid hand the house? The request as sent provides the answer. Nobody has to say what they meant, and the heirs get no say in what they trade away. The trips are [priced](/weblog/2026/10/15/contracts-whys-whens-and-wherefores.html): three a night, with up to two unused carrying to the next house.
 
 ---*When you got skin in the game, you stay in the game,
 but you don't get a win unless you play in the game.*
@@ -51,7 +51,7 @@ I turn a year older on November 1, and I'll share my early gift, Reader: the per
 
 ---*the room where it happened,*\
 ---*the room where it happened,*\
----*the room where it happened.*\
+---*the room where it happened.*
 
 
 ## References
