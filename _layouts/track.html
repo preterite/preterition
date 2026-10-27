@@ -1,0 +1,68 @@
+---
+# _layouts/track.html -- a song's page, at /weblog/listening/<slug>.html:
+# the song and its artist, the entries it leads to as a tracklist, and the
+# songs that share entries with it. _plugins/tracks.rb builds the page from
+# _data/listening_paths.yml and hands it its entries and its Up Next list.
+# The archive page's chassis and card, as for a collection's hub: this is a
+# list of entries reached from the same aside.
+#
+# The page explains nothing. It names no reason the entries are here, and
+# nothing on the site announces that the tracks link anywhere.
+#
+# Each entry's length is its reading time, shown as a running time; the page
+# prints no total of its own. The aside prints the total beside the track.
+#
+# Out of the search index, on the archive pages' rule: a search result
+# should point at an entry, never at a list of entries. Out of the search
+# engines' indexes too, by the robots meta below, and out of the sitemap by
+# the generator: a song page is found by walking, not by searching.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <meta name="robots" content="noindex">
+</head>
+<body class="weblog">
+  <div class="page-wrapper">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#weblog-nav" class="skip-link">Skip to weblog navigation</a>
+
+    {% include header.html title="Preterition" home="/weblog/" tagline=true %}
+
+    <div class="page-body">
+    <main id="main">
+      <div class="main-content" data-pagefind-ignore>
+        <section class="blog-card archive track">
+          <h2 class="archive-title">{{ page.title | escape }}</h2>
+          <p class="track-artist">{{ page.artist | escape }}</p>
+          <ol class="archive-entries track-entries">
+            {%- for e in page.track_entries %}
+            <li>
+              <a class="archive-entry-title" href="{{ e.url }}">{{ e.title }}</a>
+              <span class="archive-entry-date"><time datetime="{{ e.date | date_to_xmlschema }}">{{ e.date | date: "%-d %B %Y" }}</time><span class="post-sep" aria-hidden="true">|</span><time class="track-length" datetime="{{ e.duration }}">{{ e.length }}</time></span>
+            </li>
+            {%- endfor %}
+          </ol>
+          {%- if page.up_next.size > 0 %}
+          <h3 class="track-next-heading">Up Next</h3>
+          <ul class="track-next">
+            {%- for s in page.up_next %}
+            <li><a href="{{ s.url }}"><span class="music-track-song">{{ s.title | escape }}</span> <span class="music-track-artist">{{ s.artist | escape }}</span></a></li>
+            {%- endfor %}
+          </ul>
+          {%- endif %}
+        </section>
+      </div>
+    </main>
+
+      {% include sidebar-weblog.html %}
+    </div>
+
+    {% include footer.html %}
+  </div>{%- comment -%} closes .page-wrapper, opened above in this same file
+  {%- endcomment %}
+
+  {% include scripts.html %}
+</body>
+</html>

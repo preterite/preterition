@@ -1,0 +1,11 @@
+# Running time added to an entry's reading time on the song pages: the
+# length of a video the entry carries, or a length set for the entry by
+# hand. Keyed by post file name; each value is minutes and seconds, or a
+# list of them where an entry carries several videos. Quoted, so that YAML
+# reads "2:27" as a time and not as a number.
+"2006-09-29-student-films.md": "2:27"
+"2008-12-21-black-watch.md": "5:24"
+"2009-02-27-nypl-lecture-remix-part-1.md": ["3:37", "2:24", "1:17"]
+"2009-05-04-parade.md": "40:00"
+"2019-10-27-the-small-hours.md": "0:49"
+"2022-03-14-cccc2022-racial-capitalism-and-the-labor-theory-of-value-in-composition-pedagogy.md": "18:13"

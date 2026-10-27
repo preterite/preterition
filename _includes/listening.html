@@ -10,6 +10,10 @@
     form    "track" (the default) renders .music-track divs; "signoff"
             renders the bare song and artist spans the landing page's
             own-line expects, with no wrapper of their own.
+    link    set by the two asides. A track whose song has a page of its
+            own, made by _plugins/tracks.rb, links to that page and shows
+            its running time beside it; a track without one renders as
+            before. The sign-off passes no link.
 
   Source is _data/site_songs.csv: title, artist, header row as keys.
 
@@ -63,6 +67,9 @@
   hand-authored five read as deliberate deviation rather than as one more
   rotation.
 
+  The two name the same song, and only the aside links it: the sign-off
+  takes no link and no running time, so the front page stays unlinked.
+
   `escape` is load-bearing, as in tagline.html for a different reason:
   several artists carry an ampersand, which opens an entity in HTML.
 {%- endcomment -%}
@@ -84,9 +91,17 @@
         <span class="music-track-song">{{ s.title | escape }}</span>
         <span class="music-track-artist">{{ s.artist | escape }}</span>
       {%- else %}
-      <div class="music-track">
+      {%- assign linked = false -%}
+      {%- if include.link and s.url -%}{%- assign linked = true -%}{%- endif %}
+      <div class="music-track{% if linked %} music-track-linked{% endif %}">
+        {%- if linked %}
+        <a class="music-track-link" href="{{ s.url }}"><span class="music-track-song">{{ s.title | escape }}</span>
+        <span class="music-track-artist">{{ s.artist | escape }}</span></a>
+        <time class="music-track-length" datetime="{{ s.duration }}">{{ s.length }}</time>
+        {%- else %}
         <span class="music-track-song">{{ s.title | escape }}</span>
         <span class="music-track-artist">{{ s.artist | escape }}</span>
+        {%- endif %}
       </div>
       {%- endif -%}
     {%- endif -%}

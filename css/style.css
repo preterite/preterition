@@ -1306,6 +1306,55 @@ aside {
   font-size: 0.8125rem;
 }
 
+/* Linked tracks. The two asides link a track whose song has a page of its
+   own and print its running time beside it. The link wears the site's
+   ordinary treatment, the underline telling it from text rather than colour
+   alone, and nothing else marks it. */
+.music-track-linked {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75em;
+}
+
+.music-track-link {
+  display: block;
+  min-width: 0;
+}
+
+.music-track-length {
+  flex: none;
+  font-size: 0.75rem;
+  color: var(--color-muted-grey);
+  font-variant-numeric: tabular-nums;
+}
+
+/* A song's page: the artist beneath the title, then the entries in the
+   archive's list form, then Up Next as a plain list of songs. */
+.track-artist {
+  font-family: var(--font-sans);
+  color: var(--color-muted-grey);
+  margin-top: 0;
+}
+
+/* Up Next lists songs, so it takes the widget's sans and its song-over-
+   artist shape rather than the entry list's serif. */
+.track-next {
+  list-style: none;
+  padding-left: 0;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+}
+
+.track-next .music-track-song,
+.track-next .music-track-artist {
+  display: block;
+}
+
+.track-next li {
+  margin-bottom: 0.5em;
+}
+
 /* ===== CALENDAR WIDGET ===== */
 .calendar-widget {
   background-color: var(--color-card-dark);

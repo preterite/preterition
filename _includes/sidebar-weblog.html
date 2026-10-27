@@ -47,8 +47,9 @@
   Posts, a single month and Listening, and that is the honest state.
 
   Listening follows the nav landmark and sits outside it: it is the terminal
-  element of the middle zone, not navigation. Reporter, not navigator: no
-  outbound link, here or anywhere. Its source and selection are
+  element of the middle zone, not navigation: it reports what is playing,
+  and a track whose song has a page of its own links to it, unannounced.
+  Its source and selection are
   _includes/listening.html's, shared with the professional pages' aside and
   the landing page's sign-off.
 {%- endcomment -%}
@@ -136,7 +137,7 @@
   <div class="sidebar-section">
     <h2>Listening</h2>
     <div class="music-widget">
-    {%- include listening.html count=5 %}
+    {%- include listening.html count=5 link=true %}
     </div>
   </div>
 </aside>

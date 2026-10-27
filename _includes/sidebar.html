@@ -8,8 +8,9 @@
   the three agree by construction rather than by three copies of one rule
   staying in step. What this file owns is the zone: the heading, the widget
   wrapper, and the position. Listening precedes the calendar here and is
-  terminal in the weblog's middle zone. Reporter, not navigator: no
-  outbound link, here or anywhere.
+  terminal in the weblog's middle zone. It reports what is playing, and a
+  track whose song has a page of its own links to it, unannounced;
+  _includes/listening.html says how.
 
   Listening reads a committed local file rather than a listening service's
   API. A local file needs no key, no rate limit and no third-party request.
@@ -29,7 +30,7 @@
   <div class="sidebar-section">
     <h2>Listening</h2>
     <div class="music-widget">
-    {%- include listening.html count=5 %}
+    {%- include listening.html count=5 link=true %}
     </div>
   </div>
 
