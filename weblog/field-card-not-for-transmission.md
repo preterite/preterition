@@ -7,11 +7,11 @@ description: "Record 20261025-accumulative-s3457-r2 from the loop-harness datase
 ## FIELD CARD, NOT FOR TRANSMISSION
 ### *This blank is deliberate. So is this one.*
 
-`[genre]` dataset (*partial*) \
-`[content]:` language model sequential memory experiment results (*partial*) \
-`[created-with]:` [loop-harness](https://doi.org/10.5281/zenodo.23662792) \ 
-`[linked-by]:` [https://preterite.net/weblog/2026/10/26/agent-memory-trick-treat-receipt.html](https://preterite.net/weblog/2026/10/26/agent-memory-trick-treat-receipt.html) \ 
-`[date-published]:` 2026 October 26 \
+`[genre]` dataset (*partial*) \\
+`[content]:` language model sequential memory experiment results (*partial*) \\
+`[created-with]:` [loop-harness](https://doi.org/10.5281/zenodo.23662792) \\
+`[linked-by]:` [https://preterite.net/weblog/2026/10/26/agent-memory-trick-treat-receipt.html](https://preterite.net/weblog/2026/10/26/agent-memory-trick-treat-receipt.html) \\
+`[date-published]:` 2026 October 26 \\
 `[part-of]:` [https://doi.org/10.5281/zenodo.23663062](https://doi.org/10.5281/zenodo.23663062)
 
 &nbsp;
