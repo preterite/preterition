@@ -4,7 +4,7 @@ description: "Record 20261025-accumulative-s3457-r2 from the loop-harness datase
 ---
 <article class="blog-card post" markdown="1">
 
-## FIELD CARD NOT FOR TRANSMISSION
+## FIELD CARD, NOT FOR TRANSMISSION
 ### *This blank is deliberate. So is this one.*
 
 
@@ -28,11 +28,11 @@ Iser, Wolfgang. 1972. "The Reading Process: A Phenomenological Approach." *New L
 Luhmann, Niklas. 1992. "Communicating with Slip Boxes." In *Zettelkasten Method*.
 
 Marx, Karl. 1973. *Grundrisse: Foundations of the Critique of Political Economy*, 690-712. Penguin Classics.
-\\
+\
 
 * * * * *
 
-\\
+\
 A note found on a workbench, dated May 2026, proposes a trait with no curriculum: the capacity to take in less on purpose. Its author trained in the 1990s under AirLand Battle doctrine, when to see more was to win. Now, watching drones over Ukraine, he wonders whether the advantage has flipped, whether a soldier survives by managing his own signature, giving off less, and by ignoring most of what the sensors bring him. The note calls this disciplined reduction. Then, almost in passing, it admits that the trait "cannot be taught analytically."
 
 I begin with that admission, because a list of points will not teach it either.
@@ -158,9 +158,9 @@ The note doesn't say so outright, but its answer seems to be no. It wants squads
 
 So I imagine the card he could keep. It wouldn't be written during the movement. It would come after, when the squad has gone to ground:
 
-FIELD CARD, NOT FOR TRANSMISSION
-What I ignored: \_\_\_\_\_\_\_\_\_\_\_\_
-What I took it to mean: \_\_\_\_\_\_\_\_\_\_\_\_
+FIELD CARD, NOT FOR TRANSMISSION \
+What I ignored: \_\_\_\_\_\_\_\_\_\_\_\_ \
+What I took it to mean: \_\_\_\_\_\_\_\_\_\_\_\_ \
 Was I wrong: \_\_\_\_\_\_\_\_\_\_\_\_
 
 It's three lines with no encryption, and nobody grades it. It's Aeryn's fourth version, written in the dirt, wrong. Nobody is going to fill in that third blank honestly unless someone above him has decided that a misreading put on record counts as work.
