@@ -38,15 +38,21 @@
   yield twenty distinct sets however the file was shuffled. A stride d
   avoids that when no two of the five collide and the five do not close,
   which every d coprime to n satisfies; d and n-d give the same set
-  reversed, so the usable range is 1 to n/2. The table below is every odd
-  non-multiple-of-five from 13 to 79 -- the coprime set at n=160 with the
-  small strides dropped, since a stride under 13 draws five near-adjacent
-  rows, harmless over a shuffled file but reading as a block. Twenty-seven
-  strides times 160 starts is 4,320 distinct five-track sets and 11.8 years
-  before one recurs.
+  reversed, so the usable range is 1 to n/2. The table below is the
+  coprime set at n=160 with the small strides dropped -- every odd
+  non-multiple-of-five from 13 to 79 -- since a stride under 13 draws five
+  near-adjacent rows, harmless over a shuffled file but reading as a
+  block. At 193 rows, twenty-seven strides times 193 starts is 5,211
+  distinct five-track sets and 14.3 years before one recurs.
 
-  The table is a rule and not a list: odd, not a multiple of five, 13 to 79.
-  It is correct for n=160 and must be re-derived if the row count changes.
+  The table is a rule and not a list: strides from 13 to 79, each coprime
+  to the row count. Odd and not a multiple of five is how that rule came
+  out at 160. At a prime count every stride in range is coprime, so the
+  twenty-seven here stay valid, a subset of what the rule admits. A count
+  that shares a factor with a stride in the table can make that stride
+  draw one track twice in a day's five, as 196 rows does with stride 49,
+  so the table is re-derived whenever the count changes, or the count is
+  kept prime.
 
   THE SIGN-OFF IS THE ASIDE'S FIRST TRACK, by construction: both are
   songs[start], so count=1 renders exactly what the top of the aside's five
