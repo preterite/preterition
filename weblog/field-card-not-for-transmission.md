@@ -7,6 +7,15 @@ description: "Record 20261025-accumulative-s3457-r2 from the loop-harness datase
 ## FIELD CARD, NOT FOR TRANSMISSION
 ### *This blank is deliberate. So is this one.*
 
+`[genre]` dataset (partial)
+`[content]:` language model sequential memory experiment results (partial)
+`[created-with]:` [loop-harness](https://doi.org/10.5281/zenodo.23662792)
+`[attribution]:` [Mike Edwards](https://preterite.net/about.html)
+`[license]:` [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
+`[linked-by]:` [https://preterite.net/weblog/2026/10/26/agent-memory-trick-treat-receipt.html](https://preterite.net/weblog/2026/10/26/agent-memory-trick-treat-receipt.html)
+`[date-published]:` 2026 October 26
+`[part-of]:` [https://doi.org/10.5281/zenodo.23663062](https://doi.org/10.5281/zenodo.23663062)
+
 
 `record 20261025-accumulative-s3457-r2 | 8892 words`
 
@@ -28,11 +37,13 @@ Iser, Wolfgang. 1972. "The Reading Process: A Phenomenological Approach." *New L
 Luhmann, Niklas. 1992. "Communicating with Slip Boxes." In *Zettelkasten Method*.
 
 Marx, Karl. 1973. *Grundrisse: Foundations of the Critique of Political Economy*, 690-712. Penguin Classics. 
- &nbsp;\\
+
+ &nbsp;
  
 * * * * *
  
-&nbsp;\\
+&nbsp;
+
 A note found on a workbench, dated May 2026, proposes a trait with no curriculum: the capacity to take in less on purpose. Its author trained in the 1990s under AirLand Battle doctrine, when to see more was to win. Now, watching drones over Ukraine, he wonders whether the advantage has flipped, whether a soldier survives by managing his own signature, giving off less, and by ignoring most of what the sensors bring him. The note calls this disciplined reduction. Then, almost in passing, it admits that the trait "cannot be taught analytically."
 
 I begin with that admission, because a list of points will not teach it either.
