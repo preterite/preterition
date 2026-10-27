@@ -27,7 +27,7 @@ Iser, Wolfgang. 1972. "The Reading Process: A Phenomenological Approach." *New L
 
 Luhmann, Niklas. 1992. "Communicating with Slip Boxes." In *Zettelkasten Method*.
 
-Marx, Karl. 1973. *Grundrisse: Foundations of the Critique of Political Economy*, 690-712. Penguin Classics. \\
+Marx, Karl. 1973. *Grundrisse: Foundations of the Critique of Political Economy*, 690-712. Penguin Classics. 
  &nbsp;\\
  
 * * * * *
@@ -62,7 +62,7 @@ An attempted ledger, kept in the margin under that third picture:
 Debit: one book held at eye level.\\
 Debit: pages turned at the pace of a smaller reader.\\
 Debit: one question about the dog, put off until the end of the page.\\
-Credit: none entered. Nobody has a column for it.\\
+Credit: none entered. Nobody has a column for it.
 
 The workbench note has its own version of this missing column. It says institutions reward "visible effort, comprehensive plans, detailed briefs," and so "reduction appears as hesitation." I think the two blindnesses are related. The parent who keeps the story going and the sergeant who decides what not to look at are both doing work that shows only when it fails. When it goes right, nothing appears to have happened.
 
@@ -251,7 +251,7 @@ The 2011 post on clocks gives me a picture I didn't expect. At the Academy in Af
 
 So I'm adding a line to the field card:
 
-When did I look back: \_\_\_\_\_\_\_\_\_\_\_\_ \\
+When did I look back: \_\_\_\_\_\_\_\_\_\_\_\_ 
 
 You fill it in in the bugler's time, once the movement is over, at an hour no watch would have chosen. I think the gap Iser describes needs a gap in the clock too, or it doesn't get filled.
 
@@ -316,7 +316,7 @@ The same fragment worries about "ideas with no signature," thinking that happens
 
 Ledger, one more line: \\
 Cost of the gap: carried by whoever planned it, unpaid. \\
-Proof it worked: somewhere else, unsigned. \\
+Proof it worked: somewhere else, unsigned. 
 
 Block 25 ended with a ledger but never asked who writes in it. The workbench fragment does. It says the real power is the power to decide "where concealment's cost lands," and it borrows Kapp's view that shifting costs is "the normal operating mode of private accounting," not an occasional failure. Measured that way, the twenty minutes stop looking like a gift. The instructor chose who would carry them: himself and his unseen planning, not the cadet. That was a choice, and only the person holding the bugle could make it.
 
@@ -437,6 +437,6 @@ By whom: whoever protects the gap and signs for it once. \\
 At whose cost: hers first. Then, if the account pays out, the next table's.
 
 Field card, last line, left for the reader: \\
-What did you let go: \_\_\_\_\_\_\_\_\_\_\_\_ \\
+What did you let go: \_\_\_\_\_\_\_\_\_\_\_\_ 
 
 </article>
