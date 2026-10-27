@@ -27,12 +27,12 @@ Iser, Wolfgang. 1972. "The Reading Process: A Phenomenological Approach." *New L
 
 Luhmann, Niklas. 1992. "Communicating with Slip Boxes." In *Zettelkasten Method*.
 
-Marx, Karl. 1973. *Grundrisse: Foundations of the Critique of Political Economy*, 690-712. Penguin Classics.
-\
-
+Marx, Karl. 1973. *Grundrisse: Foundations of the Critique of Political Economy*, 690-712. Penguin Classics. \\
+ &nbsp;\\
+ 
 * * * * *
-
-\
+ 
+&nbsp;\\
 A note found on a workbench, dated May 2026, proposes a trait with no curriculum: the capacity to take in less on purpose. Its author trained in the 1990s under AirLand Battle doctrine, when to see more was to win. Now, watching drones over Ukraine, he wonders whether the advantage has flipped, whether a soldier survives by managing his own signature, giving off less, and by ignoring most of what the sensors bring him. The note calls this disciplined reduction. Then, almost in passing, it admits that the trait "cannot be taught analytically."
 
 I begin with that admission, because a list of points will not teach it either.
@@ -59,10 +59,10 @@ So here is a third picture to set beside the man by the river and the woman who 
 
 An attempted ledger, kept in the margin under that third picture:
 
-Debit: one book held at eye level.
-Debit: pages turned at the pace of a smaller reader.
-Debit: one question about the dog, put off until the end of the page.
-Credit: none entered. Nobody has a column for it.
+Debit: one book held at eye level.\\
+Debit: pages turned at the pace of a smaller reader.\\
+Debit: one question about the dog, put off until the end of the page.\\
+Credit: none entered. Nobody has a column for it.\\
 
 The workbench note has its own version of this missing column. It says institutions reward "visible effort, comprehensive plans, detailed briefs," and so "reduction appears as hesitation." I think the two blindnesses are related. The parent who keeps the story going and the sergeant who decides what not to look at are both doing work that shows only when it fails. When it goes right, nothing appears to have happened.
 
@@ -74,8 +74,8 @@ I don't know yet whether that rescues the parent. A child answers back all the t
 
 So, a second try at the ledger. This time the column is for answers, not costs.
 
-Interruption: "Is that the same dog?" Filed as a debit. The page waits.
-Interruption: "Why is he sad?" Debit. The page waits again.
+Interruption: "Is that the same dog?" Filed as a debit. The page waits.\\
+Interruption: "Why is he sad?" Debit. The page waits again.\\
 Surprise: "That's not what it said last time." Where does this one go?
 
 The 2015 post suggests a way to sort them. Read a strange text aloud with colleagues, it says, and mark "only the moments where things got weird," then ask whether those are "places that are problematic, or places that are interesting." It's the same pencil and the same mark, with two different ledgers. The writer even leaves a gap in his own article on purpose, so the reader has to say "Wait, what?" and go back.
@@ -116,9 +116,9 @@ Of course, someone has to keep the cabinet.
 
 Who keeps it? Luhmann answers without meaning to, and his answer reads like a list of chores:
 
-Number every slip, permanently.
-When you link one card to another, write the back link on the other card "right away."
-Keep a register of keywords "that we constantly update," because "we cannot rely on our memory of numbers."
+Number every slip, permanently.\\
+When you link one card to another, write the back link on the other card "right away."\\
+Keep a register of keywords "that we constantly update," because "we cannot rely on our memory of numbers."\\
 File what you actually read in a separate box from what you only meant to read.
 
 Only after "extensive work with this technique," he says, does the alter ego appear. The partner that surprises you was built one card at a time, by the person it later surprises. Deferral is not free. A drawer of ghosts needs housekeeping.
@@ -127,7 +127,7 @@ Calvino says the same thing about his literature machine. It can run every permu
 
 So I go back to the bedside. "Is that the same dog?" The child is keeping a register. She has a back link the adult never wrote down. The adult's work there is to treat the child's memory as the cabinet and to look up the card when she points to it. This is the same work as maintaining the slip box, and it pays the same, which is nothing.
 
-Block 10:
+Block 10:\\
 One more card for block 9's drawer, filed under *who keeps it*, cross-referenced to *at whose cost*.
 
 In Mike Edwards's play about a hall where nothing may be written down, the working notes reach a cold conclusion: "the man with the money is the archive." The patron finishes everyone else's half-lines. The room had taken that for wit, and the notes call it "retention demonstrated in public," which no one has read as a threat. *Money is memory; the patron remembers.*
@@ -144,8 +144,8 @@ Look at what Aeryn actually does. In the working notes she doesn't win the argum
 
 That seems to me the condition the workbench note leaves unspoken. It lists one ideal trait, "delegation without abdication," and it means the squad leader who passes on a task without giving up the outcome. The same goes for memory. You can let most of the feed go and leave the archive with somebody else, as long as you keep one card of your own. It can be small. It doesn't even have to be right.
 
-Ledger, revised:
-Let go: the firehose, the comprehensive brief, the full transcript.
+Ledger, revised:\\
+Let go: the firehose, the comprehensive brief, the full transcript.\\
 Kept: one line, in my own hand, about what I took the moment to mean.
 
 So I'd add a clause to *disciplined reduction*: take in less, but write down what you misread. Whoever keeps no record of their own mistakes is stuck with the patron's version of them.
@@ -158,9 +158,9 @@ The note doesn't say so outright, but its answer seems to be no. It wants squads
 
 So I imagine the card he could keep. It wouldn't be written during the movement. It would come after, when the squad has gone to ground:
 
-FIELD CARD, NOT FOR TRANSMISSION \
-What I ignored: \_\_\_\_\_\_\_\_\_\_\_\_ \
-What I took it to mean: \_\_\_\_\_\_\_\_\_\_\_\_ \
+FIELD CARD, NOT FOR TRANSMISSION \\
+What I ignored: \_\_\_\_\_\_\_\_\_\_\_\_ \\
+What I took it to mean: \_\_\_\_\_\_\_\_\_\_\_\_ \\
 Was I wrong: \_\_\_\_\_\_\_\_\_\_\_\_
 
 It's three lines with no encryption, and nobody grades it. It's Aeryn's fourth version, written in the dirt, wrong. Nobody is going to fill in that third blank honestly unless someone above him has decided that a misreading put on record counts as work.
@@ -193,7 +193,7 @@ Before I hand out penalties for blank cards, though, I want to know who leaves t
 
 So I'm revising the sheet, in the margin:
 
-~~Penalty: one exposure point for a card that is blank.~~
+~~Penalty: one exposure point for a card that is blank.~~ \\
 Blank card: the grader sits down with him, and they fill in the first line together.
 
 The workbench note has a phrase for this: "delegation without abdication." I'd call it the bedside again, with the larger one holding the book at eye level until the smaller one can read. A penalty is a kind of reduction. Sitting down together is labor, and the sheet still has no column for it.
@@ -209,7 +209,7 @@ The workbench note says its trait needs "exposure to conditions selecting for it
 Revised again, in the margin of the sheet:
 Blank card: the grader doesn't fill in the first line. He writes his own card beside it, with a mistake on it, and leaves the gaps where they can be seen.
 
-Block 17:
+Block 17:\\
 I went back to where the man at the keyboard comes from. He's in the 2003 post, set inside parentheses: a student who had never used a computer, who "caught on quickly to the concept of the keyboard," and then, on the first day, "raised his hand."
 
 The hand is what I hadn't noticed before. In block 2 a woman at a seminar table had learned not to raise hers. Here a man raises his in front of everyone and asks about the one key that prints nothing. Answering is easy. Asking is the hard part, because the question shows, in public, a gap no one in the room knew was there.
@@ -218,9 +218,9 @@ The post's real complaint is that instructors "assume a fairly constant level of
 
 So the long bar is a metaphor and not a tool, in the post's own sense. You press here and something happens there, and the thing that happens is that nothing is written. Nobody figures that out by trial and error. Someone has to show you that the empty spot was put there on purpose.
 
-Block 7's pencil gets one more instruction:
-Mark the weird places in the student's draft.
-Mark the place where he raised his hand.
+Block 7's pencil gets one more instruction:\\
+Mark the weird places in the student's draft.\\
+Mark the place where he raised his hand.\\
 Count the second mark as the start of reading, not a mistake in it.
 
 One more note on the key that prints nothing.
@@ -251,7 +251,7 @@ The 2011 post on clocks gives me a picture I didn't expect. At the Academy in Af
 
 So I'm adding a line to the field card:
 
-When did I look back: \_\_\_\_\_\_\_\_\_\_\_\_
+When did I look back: \_\_\_\_\_\_\_\_\_\_\_\_ \\
 
 You fill it in in the bugler's time, once the movement is over, at an hour no watch would have chosen. I think the gap Iser describes needs a gap in the clock too, or it doesn't get filled.
 
@@ -263,7 +263,7 @@ Iser makes this worse, usefully. "No tale can ever be told in its entirety," he 
 
 So the line on the field card needs a second blank under it:
 
-When did I look back: \_\_\_\_\_\_\_\_\_\_\_\_
+When did I look back: \_\_\_\_\_\_\_\_\_\_\_\_ \\
 Whose time was it: \_\_\_\_\_\_\_\_\_\_\_\_
 
 I'd guess the second line gets left empty more often than the first. That's still worth recording, because, as block 18 said, a blank tells the reader something too.
@@ -276,7 +276,7 @@ Second, the kitchen. In 1841 Catherine Beecher wanted "a clock, in or near the k
 
 So I'm amending the card again, in pencil:
 
-Whose time was it: \_\_\_\_\_\_\_\_\_\_\_\_
+Whose time was it: \_\_\_\_\_\_\_\_\_\_\_\_ \\
 Who sent the messenger: \_\_\_\_\_\_\_\_\_\_\_\_
 
 The child at the bedside never fills in the second line. "One more page" is how she haggles with the kitchen clock.
@@ -303,7 +303,7 @@ Charles Bernstein, writing in 1987, worried that the word processor "threatens t
 
 So I'm adding a line to the grading sheet, for the grader this time and not the soldier:
 
-Unbroken minutes I protected: \_\_\_\_\_\_\_\_\_\_\_\_
+Unbroken minutes I protected: \_\_\_\_\_\_\_\_\_\_\_\_ \\
 Who used them, and for what: *not mine to record.*
 
 "Not mine to record" is the oddest line on the grading sheet, and I want to know who pays for it.
@@ -314,9 +314,9 @@ A later workbench fragment says outright what block 24 left unsaid: "Concealment
 
 The same fragment worries about "ideas with no signature," thinking that happens in channels citation can't see. Protected minutes are one of those channels. When the grader stays out of the record, the institution has no way to credit what went on there.
 
-Ledger, one more line:
-Cost of the gap: carried by whoever planned it, unpaid.
-Proof it worked: somewhere else, unsigned.
+Ledger, one more line: \\
+Cost of the gap: carried by whoever planned it, unpaid. \\
+Proof it worked: somewhere else, unsigned. \\
 
 Block 25 ended with a ledger but never asked who writes in it. The workbench fragment does. It says the real power is the power to decide "where concealment's cost lands," and it borrows Kapp's view that shifting costs is "the normal operating mode of private accounting," not an occasional failure. Measured that way, the twenty minutes stop looking like a gift. The instructor chose who would carry them: himself and his unseen planning, not the cadet. That was a choice, and only the person holding the bugle could make it.
 
@@ -324,7 +324,7 @@ The fragment has a sharper picture: a bird building its nest with a drone's left
 
 Then comes a warning I didn't expect. The same note says autonomy completes signature reduction "by removing the human who was the signature." If the grader keeps erasing himself, he ends up somewhere similar: a classroom where nobody can be seen deciding anything, so nobody can be asked why.
 
-Ledger, corrected:
+Ledger, corrected: \\
 Cost of the gap: carried by whoever planned it, unpaid, and signed once in his own hand.
 
 That is Aeryn's rule from block 11 applied to the one who gives the time. Hide the work if you have to. Keep one card that says you chose to hide it, and whose time it was.
@@ -337,7 +337,7 @@ That makes the card he signs once less of a confession and more of a museum labe
 
 Iser says a second reading "often produces a different impression from the first," because by then we know what comes next. The nest is a second reading of the war. The ledger, read again, is a second reading of the gap.
 
-Field card, last line:
+Field card, last line: \\
 What did I hide, and where did it go: \_\_\_\_\_\_\_\_\_\_\_\_
 
 Block 27 ended on a blank, and the workbench fragment fills part of it with a line I keep rereading: "The bird building with fiber is living inside someone else's balance sheet." The bird didn't decide where the war's cost would land. It builds with whatever is lying around. The cadet in the twenty quiet minutes does the same thing, and so does the child at the bedside, and so does the adjunct from block 2. Each of them makes something out of what someone else hid.
@@ -348,7 +348,7 @@ Barthes describes that looking up. He asks whether you have ever read "while loo
 
 So I read the nest as a record of someone looking up. A person stopped, went back, and wove in what they had found.
 
-Field card, answered at last, in pencil:
+Field card, answered at last, in pencil: \\
 What did I hide, and where did it go: *Into the nest. Ask the bird.*
 
 "Ask the bird," block 28 says, so I went back and asked. One of the nests is now in the War Museum in Kyiv. The researcher there, Yana Hrynko, reads it the way the field card asks to be read: "We can trace the evolution of war through these nests." First the birds used camouflage netting, then fiber. Season after season they have gathered up whatever soldiers used to hide. The workbench fragment says it more plainly. Signature reduction "never reaches zero; it moves the signature into another medium." The radio goes quiet, and the drone's route stays behind on the ground, in glass.
@@ -357,7 +357,7 @@ That changes my answer. Hiding doesn't remove anything. It moves it somewhere el
 
 Bernstein gives the same rule for anything that gets made: "the only mark of its past, of its having been made, is the blood on the cutting room floor." This text has a floor too. As I write, some blocks are hidden from me and show only as bars, and at turn 31 someone will cut a few more. Readers won't see those blocks, but the blocks that stay will be leaning on them. So I'm asking for a nest, not an archive. Whoever picks up what was cut should weave it back in, bent, where the light catches it.
 
-Field card, second answer, in pencil:
+Field card, second answer, in pencil: \\
 Where did it go: *Into another medium. Look for the glare.*
 
 Before the cut, I want another look at Bernstein's floor, since block 29 has us standing on it. In the same essay he asks for a whole "whose music is composed of differences," and he says it holds together through "the marks of its own joints," not through a theme. A nest is that kind of whole. It has grass, netting and fiber, and none of them match. It holds wherever the bird pressed one thing against another.
@@ -366,8 +366,8 @@ A 2012 post that tries to define digital rhetoric brings up the old figure of th
 
 Here are some instructions for whoever holds the scissors at turn 31, written on the back of the field card:
 
-Cut what you have to.
-Leave a joint showing where it was.
+Cut what you have to. \\
+Leave a joint showing where it was. \\
 Don't smooth the seam. The seam is part of the music.
 
 Block 4 said this kind of work shows only when it fails. I'd like it to show here when it works, as a block that leans a little on a missing one and sits slightly off balance, the way a nest tilts when a strand of glass is carrying weight.
@@ -380,8 +380,8 @@ That's why a cut text can still stand. Scissors can only cut along joints that w
 
 The blocks I cut weren't wrong. Each was a second reading, said again. Iser says a second reading changes the first. Here, with so few turns left, I couldn't afford it.
 
-Ledger, closing column:
-Cut: three repetitions.
+Ledger, closing column: \\
+Cut: three repetitions. \\
 Kept: the references to them, still pointing at blocks that are gone.
 
 Block 31 says *digital* means discrete. Block 3's feed is the counter-case, even though it runs on transistors. It is built to have no joints. It scrolls, it refreshes, it never stops arriving. Marx's worker in the automatic factory stands beside a continuous process, and his job is to guard "against interruptions." A reader in that job has nothing to cut, because there is no seam to cut along. All he can do is keep the flow going. The 2012 post complains that the usual definition makes digital rhetoric just "rhetoric + computers." I suspect the equation is even worse than that. The computer can take the digits away by smoothing countable units into a stream. Meanwhile a woman with a picture book on her lap works in pages.
@@ -390,8 +390,8 @@ Go back to block 3's third picture. She turns pages at the pace of a smaller rea
 
 The conscious linkage and the scissors, then, are two jobs done with the same attention. One keeps a stream from breaking. The other finds where it already breaks. The writer at turn 31 did the second job, and like the parent got no column for it. A reader of the finished text sees only that it runs smoothly, and as block 4 said, the machine takes the credit.
 
-Ledger, two lines:
-Labor of the linkage: keep it flowing. Seen only when it stops.
+Ledger, two lines: \\
+Labor of the linkage: keep it flowing. Seen only when it stops. \\
 Labor of the joint: find where it stops on purpose. Seen only in the seam.
 
 Maybe this is the trait the workbench note couldn't teach analytically: hearing a page turn inside the feed.
@@ -402,8 +402,8 @@ Edwards then turns to Benjamin unpacking his crates. The books come out one at a
 
 What I take from Edwards is a column heading. He calls reading "valuable labor in a diverse economy." Block 32's ledger listed two kinds of unseen work and had no account to post them to. Now it has one.
 
-Ledger, heading added at last:
-Account: reading.
+Ledger, heading added at last: \\
+Account: reading. \\
 Entries: the linkage, the joint, the page turned at a smaller reader's pace.
 
 Block 34:
@@ -411,9 +411,9 @@ An account needs a holder, and block 2 already knew who wouldn't be holding this
 
 The 2003 post gives me a way to keep both. Drawing on Resnick and Wolff, its author suggests that class "is more of an adjective than a noun," a process, and that people "can inhabit multiple class relations and positions at one time." Edwards calls the economy of reading "overdetermined," which says something similar about labor. So the woman at the table is doing two jobs at once. She reads the room expertly, which is a skill the lament never credits. And the room takes what that skill earns: a seminar that runs smoothly with one voice missing. Her silence is chosen and imposed at the same time. Block 2 used one verb for the soldier and the adjunct. The ledger has to show where the return on that verb goes.
 
-Ledger, account opened:
-Account: reading.
-Holder: \_\_\_\_\_\_\_\_\_\_\_\_
+Ledger, account opened: \\
+Account: reading. \\
+Holder: \_\_\_\_\_\_\_\_\_\_\_\_ \\
 Entry: one hand kept down. Debit to her. Credit, unsigned, to the seminar.
 
 I'm leaving the holder line blank. If anyone fills it in, it should be in her hand.
@@ -422,8 +422,8 @@ Block 34 leaves the holder line blank, and the 2003 post explains why it won't f
 
 Look again at how the post states its best idea. It says "I think" twice and adds "I might be getting this way wrong." It is Aeryn's fourth version, written down before anyone could correct it. It is block 12's field card with the third blank answered honestly, and nobody asked the writer for that answer. A blank line can be filled in tentatively, in pencil, with the doubt left showing.
 
-Ledger, holder line, a proposal in pencil:
-Holder: *her, provisionally, and possibly wrong.*
+Ledger, holder line, a proposal in pencil: \\
+Holder: *her, provisionally, and possibly wrong.* \\
 Interest: payable at the next table she sits at, when she decides who gets to speak.
 
 Block 36:
@@ -431,12 +431,12 @@ Block 1 asked three things: whether letting go can be practiced, by whom, and at
 
 That's as close as this text gets to teaching the trait. The workbench note was right that it "cannot be taught analytically," and no list of points ever came. What came was a rehearsal: thirty-odd tries at the same question, three of them cut, all of them in pencil. The man by the river worried that writing would stand in for memory. What we ended up with is a different kind of writing, one that remembers where it went wrong.
 
-Ledger, closed for now:
-Practiced: yes, in pairs, one card at a time.
-By whom: whoever protects the gap and signs for it once.
+Ledger, closed for now: \\
+Practiced: yes, in pairs, one card at a time. \\
+By whom: whoever protects the gap and signs for it once. \\
 At whose cost: hers first. Then, if the account pays out, the next table's.
 
-Field card, last line, left for the reader:
-What did you let go: \_\_\_\_\_\_\_\_\_\_\_\_
+Field card, last line, left for the reader: \\
+What did you let go: \_\_\_\_\_\_\_\_\_\_\_\_ \\
 
 </article>
