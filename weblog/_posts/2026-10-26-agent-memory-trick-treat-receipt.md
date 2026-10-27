@@ -9,12 +9,12 @@ I've been dreaming on a doubly dated outfit for Halloween, and calculating how f
 
 I wish I had the swoon-worthy effortless swagger to inhabit Leslie Odom Jr.'s performance, but let's be honest: if you've met me, you know I'm far better suited to the rigid stare and spitting grin of Jonathan Groff's King George in a wig. The imagined Burr costume is out of step with what others will wear---Malcolm's lately enthralled by Poppy Playtime's CatNap, who prompts hallucinations, and The Prototype, assembled from discarded components---but it suits my distributive role in the evening. The treats I offer here comprise [a dataset from an experiment with LLM agent memory](https://doi.org/10.5281/zenodo.23663062), as the traces and reflective records of an engineered set of paths across time and texts. A trick, too: in the song and dance that follows, I'll present the most impressive-seeming piece of candy in the bag, and explain up front how it dazzles and the hollow center its dazzle disguises.
 
----*I arranged the meeting;*\\ 
+---*I arranged the meeting;*\ 
 *I arranged the menu, the venue, the seating.*
 
 My model of a Halloween night carries unusual components. Each meeting is a session of three minutes; each menu, the corner store's stock, reachable only by a trip; each venue, the decorations outside the house; each seating, the note. Here I'll momentarily make manifest the mechanics of the metaphor: in assessing the applications of language models for writing's aid, writing studies seems to offer a consensus that
 
----*no one really knows how the game gets played,*\\  
+---*no one really knows how the game gets played,*\ 
 *the art of the trade, or how the sausage gets made.*
 
 <!--more-->
