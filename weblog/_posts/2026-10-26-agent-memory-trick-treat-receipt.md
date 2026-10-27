@@ -5,7 +5,7 @@ date: 2026-10-26 11:02:37 -0700
 categories: [Technology, Information, Projects]
 permalink: /weblog/2026/10/26/agent-memory-trick-treat-receipt.html
 ---
-I've been dreaming on a doubly dated outfit for Halloween, and calculating how far I fall from the capacity to pull off *Hamilton*'s Burr.
+I've been dreaming on a doubly dated outfit for Halloween, and calculating how far I fall from the capacity to pull off [*Hamilton*'s Burr](https://youtu.be/e_FWUW6SnDo).
 
 I wish I had the swoon-worthy effortless swagger to inhabit Leslie Odom Jr.'s performance, but let's be honest: if you've met me, you know I'm far better suited to the rigid stare and spitting grin of Jonathan Groff's King George in a wig. The imagined Burr costume is out of step with what others will wear---Malcolm's lately enthralled by Poppy Playtime's CatNap, who prompts hallucinations, and The Prototype, assembled from discarded components---but it suits my distributive role in the evening. The treats I offer here comprise [a dataset from an experiment with LLM agent memory](https://doi.org/10.5281/zenodo.23663062), as the traces and reflective records of an engineered set of paths across time and texts. A trick, too: in the song and dance that follows, I'll present the most impressive-seeming piece of candy in the bag, and explain up front how it dazzles and the hollow center its dazzle disguises.
 
@@ -53,6 +53,7 @@ I turn a year older on November 1, and I'll share my early gift, Reader: the per
 ---*the room where it happened,*\
 ---*the room where it happened.*
 
+&nbsp;
 
 ## References
 
