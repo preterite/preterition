@@ -3,8 +3,13 @@
 # _data/listening_paths.yml maps a song's slug to post file names in display
 # order. For each mapped song this generator writes a page at
 # /weblog/listening/<slug>.html, laid out by _layouts/track.html: the song,
-# its posts as a tracklist, and the other songs it shares posts with. It
-# also writes the page's address and running time onto the song's own row
+# its posts as a tracklist, and its Up Next: the other songs it shares posts
+# with, most shared first, then the songs _data/listening_next.yml gives it.
+# That file holds the fallback alone, links only, written offline with the
+# mapping: the songs nearest by the balance's measure, filled to a floor of
+# three, at most one link from a classical piece to another, each link
+# returned where the other song has room. The generator also writes the
+# page's address and running time onto the song's own row
 # of site.data["site_songs"], so _includes/listening.html can link a track
 # and print its length without knowing the slug rule.
 #
@@ -19,7 +24,9 @@
 # The build is refused when a mapping entry names no post, when a slug
 # matches no row of the song file, when two rows make one slug, or when a
 # row of the song file has no path: a song is added with its path, made
-# offline before the push and never in the build.
+# offline before the push and never in the build. It is refused too when
+# the Up Next file names a slug that is mapped to no path, or gives a song
+# itself.
 #
 # Running time is reading time: each post's word_count, from
 # _plugins/word_count.rb, at WPM words a minute. The rate is set here and
@@ -116,6 +123,16 @@ module Preterite
       owners = Hash.new { |h, k| h[k] = [] }
       songs.each { |key, docs| docs.each { |d| owners[d.basename] << key } }
 
+      fallback = {}
+      (site.data["listening_next"] || {}).each do |key, others|
+        refuse("names the slug #{key}, which is mapped to no path", "listening_next") if songs[key.to_s].nil?
+        fallback[key.to_s] = Array(others).map do |o|
+          refuse("gives #{key} the song #{o}, which is mapped to no path", "listening_next") if songs[o.to_s].nil?
+          refuse("gives #{key} itself as Up Next", "listening_next") if o.to_s == key.to_s
+          o.to_s
+        end
+      end
+
       songs.each do |key, docs|
         row = rows[key]
         entries = docs.map do |d|
@@ -128,6 +145,7 @@ module Preterite
         shared = Hash.new(0)
         docs.each { |d| owners[d.basename].each { |o| shared[o] += 1 unless o == key } }
         nxt = shared.keys.sort_by { |o| [-shared[o], rows[o]["title"].to_s.downcase] }
+        fallback.fetch(key, []).each { |o| nxt << o unless nxt.include?(o) }
 
         page = Jekyll::PageWithoutAFile.new(site, site.source, DIR, "#{key}.html")
         page.data.merge!(
