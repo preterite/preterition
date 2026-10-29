@@ -99,6 +99,10 @@ All code is well-commented valid HTML5 and CSS3 with vanilla JavaScript; no exte
   <p class="perf-plate-method">For comparison, I tested two sets of peer sites: four weblogs I follow (Freddie deBoer, Bret Devereaux, Kieran Healy, Nick Montfort) and four organizations (The Chronicle of Higher Ed, Harvard University, JSTOR, Silva Rhetoricae). Two numbers per page: encoded bytes for cold load, and main-thread milliseconds accumulated over a three-second window with the page at rest. Both are medians of five runs. The second number measures the main thread alone, so a compositor animation is invisible to it and is charged to the GPU instead. The Chronicle is read through an institutional proxy; JSTOR is read signed in. An observation: tier does not predict cost.</p>
 </dialog>
 
+#### Navigation
+
+The top navigation takes you to major components of the site; the weblog sidebar nav links to by-category and by-month archives and collections. I've set in plain view a supplemental shadow navigation network, for those who may enjoy using music's inferences as associative map.
+
 #### Hosting
 Files served from GitHub Pages via Jekyll.
 
