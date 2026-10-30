@@ -5,9 +5,9 @@
   repository, which draws the figure as static SVG, its citation at its
   foot, and writes it here with its data table, the text alternative,
   behind a disclosure. The caption is the post's, passed as
-  {% include memory-strip-connors.html caption="..." %} and rendered as Markdown, followed by
-  the site's license from _data/figures.yml. The post links no standalone
-  copy. Change the drawing in the generator and re-place.
+  {% include memory-strip-connors.html caption="..." %} and rendered as Markdown; the
+  license is in the citation at the drawing's foot. The post links no
+  standalone copy. Change the drawing in the generator and re-place.
 {%- endcomment -%}
 <link rel="stylesheet" href="/css/memory-strip.css">
 <figure class="memory-strip">
@@ -342,7 +342,7 @@
 <text class="ms-label ms-credit" x="12" y="1635" text-anchor="start" font-size="11" fill="#8b9489">dataset-playback-agent-memory-part-2.html.</text>
 <text class="ms-label ms-credit" x="12" y="1651" text-anchor="start" font-size="11" fill="#8b9489">CC BY-NC-SA 4.0.</text>
 </svg>
-<figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}. <a href="{{ site.data.figures.license.url }}" rel="license">{{ site.data.figures.license.name }}</a></figcaption>
+<figcaption>{{ include.caption | markdownify | remove: '<p>' | remove: '</p>' | strip }}</figcaption>
 <details class="ms-details"><summary>The numbers, session by session</summary>
 <div class="ms-tw">
 <table class="ms-table">
