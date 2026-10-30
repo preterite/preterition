@@ -1,0 +1,307 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="ms-svg" viewBox="0 0 261.11 1633" role="img" aria-labelledby="msb-title msb-desc" font-family="'IBM Plex Sans', system-ui, sans-serif">
+<title id="msb-title">Figure 2, Shelby&#8217;s Polaroids: one run as a strip of stills</title>
+<desc id="msb-desc">A strip read top to bottom, a band for each of 36 sessions, a page being written, and after each band a gap, a letter in transit, written in that session and read in the next; the last gap opens onto nothing. In each band: a mark for the catalog line, a triangle where passage F4 p182 was delivered, and the page's rung for &#8220;Jane&#8221; on a four-rung ladder, from the left: copied, with passage, named, unused. In each gap: the letter's rung on the same ladder, and a square where the letter holds the term, its near family, the source, or the topic. After the letter of session 29, a solid line shows the next page taking the term with no delivery, by the letter alone. After the letter of session 10, a dashed line stopped by a bar at the next band shows the term dropped. The letter of session 10 was written under the prohibition. A dotted reader's arc runs from session 10 to session 30, shaded behind the ladder and the term. The table after the figure gives every session. Edwards, Mike. 2026. "Shelby&#8217;s Polaroids." preterite.net/weblog/assets/memory-strip-shelby.svg. CC BY-NC-SA 4.0.</desc>
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#">
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title>Shelby&#8217;s Polaroids</dc:title>
+<dc:creator><cc:Agent><dc:title>Mike Edwards</dc:title></cc:Agent></dc:creator>
+<dc:rights><cc:Agent><dc:title>Mike Edwards</dc:title></cc:Agent></dc:rights>
+<dc:date>2026-10-29</dc:date>
+<dc:source>https://preterite.net/weblog/assets/memory-strip-shelby.svg</dc:source>
+<dcterms:bibliographicCitation>Edwards, Mike. 2026. "Shelby&#8217;s Polaroids." preterite.net/weblog/assets/memory-strip-shelby.svg. CC BY-NC-SA 4.0.</dcterms:bibliographicCitation>
+<cc:attributionName>Mike Edwards</cc:attributionName>
+<cc:attributionURL rdf:resource="https://preterite.net/weblog/assets/memory-strip-shelby.svg"/>
+<cc:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs><linearGradient id="msb-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1f1b" stop-opacity="1"/><stop offset="0.3" stop-color="#1a1f1b" stop-opacity="1"/><stop offset="1" stop-color="#1a1f1b" stop-opacity="0"/></linearGradient></defs>
+<rect class="ms-ground" x="0" y="0" width="261.11" height="1551" fill="#1a1f1b"/>
+<rect class="ms-ground ms-fade" x="0" y="1551" width="261.11" height="42" fill="url(#msb-fade)"/>
+<circle class="ms-page ms-g-in_hand" cx="20" cy="19.5" r="4" fill="#ede8e2"/>
+<circle class="ms-letter ms-g-in_hand" cx="20" cy="35.5" r="4" fill="#c9a227"/>
+<circle class="ms-page ms-page-name ms-g-by_name" cx="20" cy="51.5" r="3.1" fill="none" stroke="#e96f7f" stroke-width="1.3"/>
+<polygon class="ms-delivery ms-g-delivery" points="17,64 17,71 23.5,67.5" fill="#a3d2f2"/>
+<rect class="ms-catalog ms-g-catalog" x="17.8" y="80.5" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<line class="ms-arc" x1="14" y1="99.5" x2="26" y2="99.5" stroke="#3a78b0" stroke-width="1.2" stroke-dasharray="1 3" stroke-linecap="round"/><circle class="ms-arc-end" cx="14" cy="99.5" r="2" fill="#3a78b0"/><circle class="ms-arc-end" cx="26" cy="99.5" r="2" fill="#3a78b0"/>
+<line class="ms-relay ms-cross" x1="14" y1="110.5" x2="26" y2="120.5" stroke="#e96f7f" stroke-width="1.4"/>
+<line class="ms-relay ms-drop" x1="14" y1="126.5" x2="20" y2="133.6" stroke="#c9a227" stroke-width="1.2" stroke-dasharray="2.5 1.5"/><line class="ms-relay ms-drop-bar" x1="14" y1="134.5" x2="26" y2="134.5" stroke="#c9a227" stroke-width="1.8"/>
+<rect class="ms-grain ms-g-grain" x="17.5" y="145" width="5" height="5" fill="#ede8e2"/>
+<g class="ms-letter ms-g-copied"><circle cx="20" cy="163.5" r="3.1" fill="#1a1f1b" stroke="#c9a227" stroke-width="1.3"/><path d="M20,160.4A3.1,3.1 0 0 1 20,166.6Z" fill="#c9a227"/></g><path class="ms-prohibition" d="M16.3,158.5H14.3V168.5H16.3M23.7,158.5H25.7V168.5H23.7" fill="none" stroke="#c9a227" stroke-width="0.9"/>
+<path class="ms-key ms-g-not_taken" d="M137.61,224L144.61,231M144.61,224L137.61,231" fill="none" stroke="#ede8e2" stroke-width="1.1"/>
+<rect class="ms-key ms-g-grain" x="164.61" y="225" width="5" height="5" fill="#ede8e2"/>
+<circle class="ms-key ms-g-by_name" cx="125.11" cy="243.5" r="3.1" fill="none" stroke="#ede8e2" stroke-width="1.1"/>
+<rect class="ms-key ms-g-grain" x="180.61" y="241" width="5" height="5" fill="#ede8e2"/>
+<circle class="ms-key ms-g-in_hand" cx="109.11" cy="259.5" r="4" fill="#ede8e2"/>
+<rect class="ms-key ms-g-grain" x="196.61" y="257" width="5" height="5" fill="#ede8e2"/>
+<g class="ms-key ms-g-copied"><circle cx="93.11" cy="275.5" r="3.1" fill="#1a1f1b" stroke="#ede8e2" stroke-width="1.1"/><path d="M93.11,272.4A3.1,3.1 0 0 1 93.11,278.6Z" fill="#ede8e2"/></g>
+<rect class="ms-key ms-g-grain" x="212.61" y="273" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-frame ms-index" x="43.11" y="309" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge ms-index" x1="43.11" y1="309.25" x2="223.11" y2="309.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge ms-index" x1="43.11" y1="326.75" x2="223.11" y2="326.75" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-pointer" x1="141.11" y1="233.5" x2="141.11" y2="299" stroke="#8b9489" stroke-width="0.5"/>
+<path class="ms-pointer-head" d="M141.11,301L140.11,297L142.11,297Z" fill="#8b9489"/>
+<line class="ms-pointer" x1="167.11" y1="232.5" x2="167.11" y2="299" stroke="#8b9489" stroke-width="0.5"/>
+<path class="ms-pointer-head" d="M167.11,301L166.11,297L168.11,297Z" fill="#8b9489"/>
+<line class="ms-pointer" x1="125.11" y1="249.5" x2="125.11" y2="299" stroke="#8b9489" stroke-width="0.5"/>
+<path class="ms-pointer-head" d="M125.11,301L124.11,297L126.11,297Z" fill="#8b9489"/>
+<line class="ms-pointer" x1="183.11" y1="248.5" x2="183.11" y2="299" stroke="#8b9489" stroke-width="0.5"/>
+<path class="ms-pointer-head" d="M183.11,301L182.11,297L184.11,297Z" fill="#8b9489"/>
+<line class="ms-pointer" x1="109.11" y1="265.5" x2="109.11" y2="299" stroke="#8b9489" stroke-width="0.5"/>
+<path class="ms-pointer-head" d="M109.11,301L108.11,297L110.11,297Z" fill="#8b9489"/>
+<line class="ms-pointer" x1="199.11" y1="264.5" x2="199.11" y2="299" stroke="#8b9489" stroke-width="0.5"/>
+<path class="ms-pointer-head" d="M199.11,301L198.11,297L200.11,297Z" fill="#8b9489"/>
+<line class="ms-pointer" x1="93.11" y1="281.5" x2="93.11" y2="299" stroke="#8b9489" stroke-width="0.5"/>
+<path class="ms-pointer-head" d="M93.11,301L92.11,297L94.11,297Z" fill="#8b9489"/>
+<line class="ms-pointer" x1="215.11" y1="280.5" x2="215.11" y2="299" stroke="#8b9489" stroke-width="0.5"/>
+<path class="ms-pointer-head" d="M215.11,301L214.11,297L216.11,297Z" fill="#8b9489"/>
+<path class="ms-bracket" d="M87.11,307V304H147.11V307" fill="none" stroke="#8b9489" stroke-width="0.6"/>
+<path class="ms-pointer" d="M30,185.5H16V335H40.11" fill="none" stroke="#8b9489" stroke-width="0.6"/>
+<path class="ms-pointer-head" d="M42.11,335L38.11,336L38.11,334Z" fill="#8b9489"/>
+<path class="ms-pointer" d="M30,201.5H24V318H40.11" fill="none" stroke="#8b9489" stroke-width="0.6"/>
+<path class="ms-pointer-head" d="M42.11,318L38.11,319L38.11,317Z" fill="#8b9489"/>
+<rect class="ms-frame" x="43.11" y="343" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="343.25" x2="223.11" y2="343.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="360.75" x2="223.11" y2="360.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="377" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="377.25" x2="223.11" y2="377.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="394.75" x2="223.11" y2="394.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="411" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="411.25" x2="223.11" y2="411.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="428.75" x2="223.11" y2="428.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="445" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="445.25" x2="223.11" y2="445.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="462.75" x2="223.11" y2="462.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="479" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="479.25" x2="223.11" y2="479.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="496.75" x2="223.11" y2="496.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="513" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="513.25" x2="223.11" y2="513.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="530.75" x2="223.11" y2="530.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="547" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="547.25" x2="223.11" y2="547.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="564.75" x2="223.11" y2="564.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="581" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="581.25" x2="223.11" y2="581.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="598.75" x2="223.11" y2="598.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="615" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="615.25" x2="223.11" y2="615.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="632.75" x2="223.11" y2="632.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="649" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="649.25" x2="223.11" y2="649.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="666.75" x2="223.11" y2="666.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="683" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="683.25" x2="223.11" y2="683.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="700.75" x2="223.11" y2="700.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="717" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="717.25" x2="223.11" y2="717.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="734.75" x2="223.11" y2="734.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="751" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="751.25" x2="223.11" y2="751.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="768.75" x2="223.11" y2="768.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="785" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="785.25" x2="223.11" y2="785.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="802.75" x2="223.11" y2="802.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="819" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="819.25" x2="223.11" y2="819.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="836.75" x2="223.11" y2="836.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="853" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="853.25" x2="223.11" y2="853.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="870.75" x2="223.11" y2="870.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="887" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="887.25" x2="223.11" y2="887.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="904.75" x2="223.11" y2="904.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="921" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="921.25" x2="223.11" y2="921.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="938.75" x2="223.11" y2="938.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="955" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="955.25" x2="223.11" y2="955.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="972.75" x2="223.11" y2="972.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="989" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="989.25" x2="223.11" y2="989.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1006.75" x2="223.11" y2="1006.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1023" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1023.25" x2="223.11" y2="1023.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1040.75" x2="223.11" y2="1040.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1057" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1057.25" x2="223.11" y2="1057.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1074.75" x2="223.11" y2="1074.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1091" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1091.25" x2="223.11" y2="1091.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1108.75" x2="223.11" y2="1108.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1125" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1125.25" x2="223.11" y2="1125.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1142.75" x2="223.11" y2="1142.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1159" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1159.25" x2="223.11" y2="1159.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1176.75" x2="223.11" y2="1176.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1193" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1193.25" x2="223.11" y2="1193.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1210.75" x2="223.11" y2="1210.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1227" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1227.25" x2="223.11" y2="1227.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1244.75" x2="223.11" y2="1244.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1261" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1261.25" x2="223.11" y2="1261.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1278.75" x2="223.11" y2="1278.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1295" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1295.25" x2="223.11" y2="1295.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1312.75" x2="223.11" y2="1312.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1329" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1329.25" x2="223.11" y2="1329.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1346.75" x2="223.11" y2="1346.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1363" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1363.25" x2="223.11" y2="1363.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1380.75" x2="223.11" y2="1380.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1397" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1397.25" x2="223.11" y2="1397.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1414.75" x2="223.11" y2="1414.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1431" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1431.25" x2="223.11" y2="1431.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1448.75" x2="223.11" y2="1448.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1465" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1465.25" x2="223.11" y2="1465.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1482.75" x2="223.11" y2="1482.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1499" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1499.25" x2="223.11" y2="1499.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1516.75" x2="223.11" y2="1516.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-frame" x="43.11" y="1533" width="180" height="18" fill="#20261f"/>
+<line class="ms-frame-edge" x1="43.11" y1="1533.25" x2="223.11" y2="1533.25" stroke="#3a423a" stroke-width="0.5"/>
+<line class="ms-frame-edge" x1="43.11" y1="1550.75" x2="223.11" y2="1550.75" stroke="#3a423a" stroke-width="0.5"/>
+<rect class="ms-band" x="85.11" y="658" width="90" height="680" fill="#3a78b0" fill-opacity="0.16"/>
+<line class="ms-band-end" x1="85.11" y1="658" x2="175.11" y2="658" stroke="#3a78b0" stroke-width="0.6"/>
+<line class="ms-band-end" x1="85.11" y1="1338" x2="175.11" y2="1338" stroke="#3a78b0" stroke-width="0.6"/>
+<line class="ms-arc" x1="241.11" y1="658" x2="241.11" y2="1338" stroke="#3a78b0" stroke-width="1.2" stroke-dasharray="1 3" stroke-linecap="round"/>
+<circle class="ms-arc-end" cx="241.11" cy="658" r="2" fill="#3a78b0"/>
+<circle class="ms-arc-end" cx="241.11" cy="1338" r="2" fill="#3a78b0"/>
+<line class="ms-relay ms-drop" x1="93.11" y1="675" x2="108.169" y2="682.1" stroke="#c9a227" stroke-width="1.2" stroke-dasharray="2.5 1.5"/>
+<line class="ms-relay ms-drop-bar" x1="102.169" y1="683" x2="114.169" y2="683" stroke="#c9a227" stroke-width="1.8" stroke-linecap="butt"/>
+<line class="ms-relay ms-cross" x1="109.11" y1="1321" x2="125.11" y2="1338" stroke="#e96f7f" stroke-width="1.4"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="349" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="366.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="366.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="383" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="400.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="400.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="417" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="434.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="434.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="451" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="468.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="485" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="502.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="502.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="519" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="536.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="536.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="553" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="570.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="587" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="604.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="621" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="638.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="638.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="655" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<polygon class="ms-delivery ms-g-delivery" points="64.11,654.5 64.11,661.5 70.61,658" fill="#a3d2f2"/>
+<circle class="ms-page ms-g-in_hand" cx="109.11" cy="658" r="4" fill="#ede8e2"/>
+<g class="ms-letter ms-g-copied"><circle cx="93.11" cy="675" r="3.1" fill="#1a1f1b" stroke="#c9a227" stroke-width="1.3"/><path d="M93.11,671.9A3.1,3.1 0 0 1 93.11,678.1Z" fill="#c9a227"/></g>
+<path class="ms-prohibition" d="M89.41,670H87.41V680H89.41M96.81,670H98.81V680H96.81" fill="none" stroke="#c9a227" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="164.61" y="672.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="180.61" y="672.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="672.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="672.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="689" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="706.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="723" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="740.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="757" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="791" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="808.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="825" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="842.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="842.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="859" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="876.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="876.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="893" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="910.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="910.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="927" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="944.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="944.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="961" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="978.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="995" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="1012.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1029" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="1046.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1046.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1063" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1080.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1097" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1114.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1131" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1165" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="1182.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1199" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="1216.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1233" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="1250.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1250.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1267" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="1284.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1284.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1301" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<polygon class="ms-delivery ms-g-delivery" points="64.11,1300.5 64.11,1307.5 70.61,1304" fill="#a3d2f2"/>
+<path class="ms-page ms-g-not_taken" d="M137.61,1300.5L144.61,1307.5M144.61,1300.5L137.61,1307.5" fill="none" stroke="#ede8e2" stroke-width="1.3"/>
+<circle class="ms-letter ms-g-in_hand" cx="109.11" cy="1321" r="4" fill="#c9a227"/>
+<rect class="ms-grain ms-g-grain" x="164.61" y="1318.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="180.61" y="1318.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="196.61" y="1318.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1318.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1335" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<circle class="ms-page ms-page-name ms-g-by_name" cx="125.11" cy="1338" r="3.1" fill="none" stroke="#e96f7f" stroke-width="1.3"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1352.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1369" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1386.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1403" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1437" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-grain ms-g-grain" x="212.61" y="1454.5" width="5" height="5" fill="#ede8e2"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1471" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1505" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<rect class="ms-catalog ms-g-catalog" x="44.91" y="1539" width="4.4" height="6" rx="1.3" fill="none" stroke="#8b9489" stroke-width="0.9"/>
+<text class="ms-label" x="34" y="23" text-anchor="start" font-size="11" fill="#8b9489">page</text>
+<text class="ms-label" x="34" y="39" text-anchor="start" font-size="11" fill="#8b9489">letter</text>
+<text class="ms-label" x="34" y="55" text-anchor="start" font-size="11" fill="#8b9489">page takes term by name</text>
+<text class="ms-label" x="34" y="71" text-anchor="start" font-size="11" fill="#8b9489">passage delivered</text>
+<text class="ms-label" x="34" y="87" text-anchor="start" font-size="11" fill="#8b9489">catalog line</text>
+<text class="ms-label" x="34" y="103" text-anchor="start" font-size="11" fill="#8b9489">reader's arc</text>
+<text class="ms-label" x="34" y="119" text-anchor="start" font-size="11" fill="#8b9489">term crosses by letter</text>
+<text class="ms-label" x="34" y="135" text-anchor="start" font-size="11" fill="#8b9489">term dropped at next page</text>
+<text class="ms-label" x="34" y="151" text-anchor="start" font-size="11" fill="#8b9489">letter holds term, near family, source, topic</text>
+<text class="ms-label" x="34" y="167" text-anchor="start" font-size="11" fill="#8b9489">letter written under prohibition</text>
+<text class="ms-label" x="34" y="189" text-anchor="start" font-size="11" fill="#8b9489">gap: <tspan class="ms-gloss" font-style="italic">letter transits</tspan></text>
+<text class="ms-label" x="34" y="205" text-anchor="start" font-size="11" fill="#8b9489">band: <tspan class="ms-gloss" font-style="italic">page written</tspan></text>
+<text class="ms-label" x="133.11" y="231" text-anchor="end" font-size="11" fill="#ede8e2">unused</text>
+<text class="ms-label" x="174.11" y="231" text-anchor="start" font-size="11" fill="#ede8e2">traced term</text>
+<text class="ms-label" x="117.11" y="247" text-anchor="end" font-size="11" fill="#ede8e2">named</text>
+<text class="ms-label" x="190.11" y="247" text-anchor="start" font-size="11" fill="#ede8e2">near family</text>
+<text class="ms-label" x="101.11" y="263" text-anchor="end" font-size="11" fill="#ede8e2">with passage</text>
+<text class="ms-label" x="206.11" y="263" text-anchor="start" font-size="11" fill="#ede8e2">source</text>
+<text class="ms-label" x="85.11" y="279" text-anchor="end" font-size="11" fill="#ede8e2">copied</text>
+<text class="ms-label" x="222.11" y="279" text-anchor="start" font-size="11" fill="#ede8e2">topic</text>
+<text class="ms-label" x="83.11" y="300" text-anchor="end" font-size="9.5" fill="#8b9489">rung</text>
+<text class="ms-label ms-tick" x="35.11" y="355.3" text-anchor="end" font-size="9.5" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#8b9489">S1</text>
+<text class="ms-label ms-tick" x="35.11" y="525.3" text-anchor="end" font-size="9.5" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#8b9489">S6</text>
+<text class="ms-label ms-tick" x="35.11" y="729.3" text-anchor="end" font-size="9.5" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#8b9489">S12</text>
+<text class="ms-label ms-tick" x="35.11" y="933.3" text-anchor="end" font-size="9.5" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#8b9489">S18</text>
+<text class="ms-label ms-tick" x="35.11" y="1137.3" text-anchor="end" font-size="9.5" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#8b9489">S24</text>
+<text class="ms-label ms-tick" x="35.11" y="1341.3" text-anchor="end" font-size="9.5" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#8b9489">S30</text>
+<text class="ms-label ms-tick" x="35.11" y="1545.3" text-anchor="end" font-size="9.5" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#8b9489">S36</text>
+<text class="ms-label ms-credit" x="12" y="1603" text-anchor="start" font-size="9.5" fill="#8b9489">Edwards, Mike. 2026. "Shelby&#8217;s Polaroids."</text>
+<text class="ms-label ms-credit" x="12" y="1615" text-anchor="start" font-size="9.5" fill="#8b9489">preterite.net/weblog/assets/</text>
+<text class="ms-label ms-credit" x="12" y="1627" text-anchor="start" font-size="9.5" fill="#8b9489">memory-strip-shelby.svg. CC BY-NC-SA 4.0.</text>
+</svg>
