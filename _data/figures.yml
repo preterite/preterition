@@ -36,3 +36,33 @@ figures:
       - 2026-10-04-appropriation-position-and-relation
     credit: "Mike Edwards, “Cohle’s Pinwheel,” preterite.net, 2026"
     citation: "Edwards, Mike. 2026. “Cohle’s Pinwheel.” Figure 1 in “Appropriation: Position and Relation.” preterite.net, October 4. https://preterite.net/weblog/2026/10/04/appropriation-position-and-relation.html."
+  memory-strip-connors:
+    name: "Connors’s Alarm"
+    number: 1
+    date: "2026-10-29"
+    asset: /weblog/assets/memory-strip-connors.svg
+    include: memory-strip-connors.html
+    appears_in:
+      - 2026-10-29-dataset-playback-agent-memory-part-2
+    credit: 'Edwards, Mike. 2026. "Connors’s Alarm." preterite.net/weblog/assets/memory-strip-connors.svg. CC BY-NC-SA 4.0.'
+    citation: 'Edwards, Mike. 2026. "Connors’s Alarm." preterite.net/weblog/assets/memory-strip-connors.svg. CC BY-NC-SA 4.0.'
+  memory-strip-shelby:
+    name: "Shelby’s Polaroids"
+    number: 2
+    date: "2026-10-29"
+    asset: /weblog/assets/memory-strip-shelby.svg
+    include: memory-strip-shelby.html
+    appears_in:
+      - 2026-10-29-dataset-playback-agent-memory-part-2
+    credit: 'Edwards, Mike. 2026. "Shelby’s Polaroids." preterite.net/weblog/assets/memory-strip-shelby.svg. CC BY-NC-SA 4.0.'
+    citation: 'Edwards, Mike. 2026. "Shelby’s Polaroids." preterite.net/weblog/assets/memory-strip-shelby.svg. CC BY-NC-SA 4.0.'
+  zoetrope-robinson:
+    name: "Robinson’s Zoetrope"
+    number: 3
+    date: "2026-10-29"
+    asset: /weblog/assets/zoetrope-robinson.html
+    include: zoetrope-robinson.html
+    appears_in:
+      - 2026-10-29-dataset-playback-agent-memory-part-2
+    credit: 'Edwards, Mike. 2026. "Robinson’s Zoetrope." preterite.net/weblog/assets/zoetrope-robinson.html. CC BY-NC-SA 4.0.'
+    citation: 'Edwards, Mike. 2026. "Robinson’s Zoetrope." preterite.net/weblog/assets/zoetrope-robinson.html. CC BY-NC-SA 4.0.'
