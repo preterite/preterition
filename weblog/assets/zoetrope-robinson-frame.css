@@ -87,5 +87,13 @@ p { font-size: 0.8125rem; }
 .cap { display: grid; grid-template-columns: 1fr; align-items: baseline; font-size: 1rem; margin: 0 0 12px; line-height: 1.5; }
 .cap-run { grid-area: 2 / 1 / 3 / 2; visibility: hidden; font-size: 0.92em; overflow-wrap: anywhere; }
 .cap-run.is-shown { visibility: visible; }
+@media (min-width: 1016px) {
+  main.col { max-width: 984px; display: grid; grid-template-columns: 640px 320px; column-gap: 24px; }
+  .cap { grid-column: 1 / -1; }
+  .toy { grid-column: 1; grid-row: 2; }
+  .loader { grid-column: 2; grid-row: 2; margin: 0; display: grid; grid-template-rows: repeat(6, 1fr); }
+  .ld-row { align-content: center; }
+  .credit { grid-column: 1 / -1; }
+}
 .credit { margin: 16px 0 0; font-size: 0.75rem; line-height: 1.5; }
 .credit p { margin: 0 0 4px; font-size: inherit; }

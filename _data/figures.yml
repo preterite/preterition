@@ -44,8 +44,8 @@ figures:
     include: memory-strip-connors.html
     appears_in:
       - 2026-10-29-dataset-playback-agent-memory-part-2
-    credit: 'Edwards, Mike. 2026. "Connors’s Alarm." preterite.net/weblog/assets/memory-strip-connors.svg. CC BY-NC-SA 4.0.'
-    citation: 'Edwards, Mike. 2026. "Connors’s Alarm." preterite.net/weblog/assets/memory-strip-connors.svg. CC BY-NC-SA 4.0.'
+    credit: 'Edwards, Mike. 2026. "Connors’s Alarm." preterite.net/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html. CC BY-NC-SA 4.0.'
+    citation: 'Edwards, Mike. 2026. "Connors’s Alarm." preterite.net/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html. CC BY-NC-SA 4.0.'
   memory-strip-shelby:
     name: "Shelby’s Polaroids"
     number: 2
@@ -54,8 +54,8 @@ figures:
     include: memory-strip-shelby.html
     appears_in:
       - 2026-10-29-dataset-playback-agent-memory-part-2
-    credit: 'Edwards, Mike. 2026. "Shelby’s Polaroids." preterite.net/weblog/assets/memory-strip-shelby.svg. CC BY-NC-SA 4.0.'
-    citation: 'Edwards, Mike. 2026. "Shelby’s Polaroids." preterite.net/weblog/assets/memory-strip-shelby.svg. CC BY-NC-SA 4.0.'
+    credit: 'Edwards, Mike. 2026. "Shelby’s Polaroids." preterite.net/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html. CC BY-NC-SA 4.0.'
+    citation: 'Edwards, Mike. 2026. "Shelby’s Polaroids." preterite.net/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html. CC BY-NC-SA 4.0.'
   zoetrope-robinson:
     name: "Robinson’s Zoetrope"
     number: 3
@@ -64,5 +64,5 @@ figures:
     include: zoetrope-robinson.html
     appears_in:
       - 2026-10-29-dataset-playback-agent-memory-part-2
-    credit: 'Edwards, Mike. 2026. "Robinson’s Zoetrope." preterite.net/weblog/assets/zoetrope-robinson.html. CC BY-NC-SA 4.0.'
-    citation: 'Edwards, Mike. 2026. "Robinson’s Zoetrope." preterite.net/weblog/assets/zoetrope-robinson.html. CC BY-NC-SA 4.0.'
+    credit: 'Edwards, Mike. 2026. "Robinson’s Zoetrope." preterite.net/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html. CC BY-NC-SA 4.0.'
+    citation: 'Edwards, Mike. 2026. "Robinson’s Zoetrope." preterite.net/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html. CC BY-NC-SA 4.0.'

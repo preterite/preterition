@@ -23,7 +23,7 @@
   background: linear-gradient(rgba(0, 255, 0, 0.08), rgba(0, 255, 0, 0.08)) #252220; }
 .zr-print { display: none; }
 
-.zoetrope-robinson-dialog { width: min(674px, calc(100vw - 2rem)); max-width: none; max-height: calc(100dvh - 2rem);
+.zoetrope-robinson-dialog { width: min(1018px, calc(100vw - 2rem)); max-width: none; max-height: calc(100dvh - 2rem);
   padding: 0; border: 1px solid #3a423a; background: #252220; color: #ede8e2; }
 .zoetrope-robinson-dialog::backdrop { background: rgba(0, 0, 0, 0.7); }
 .zr-dialog-head { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between;
