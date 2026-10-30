@@ -3,7 +3,6 @@ layout: post
 title: "Trick, Treat, Receipt: Agent Memory, Part 1"
 date: 2026-10-26 11:02:37 -0700
 categories: [Technology, Information, Projects]
-permalink: /weblog/2026/10/26/agent-memory-trick-treat-receipt.html
 ---
 I've been dreaming on a doubly dated outfit for Halloween, and calculating how far I fall from the capacity to pull off [*Hamilton*'s Burr](https://youtu.be/e_FWUW6SnDo).
 
@@ -57,7 +56,7 @@ I turn a year older on November 1, and I'll share my early gift, Reader: the per
 
 ## References
 
-\_\_\_\_\_\_\_\_\_\_. 2026. [Field Card Not for Transmission. This Blank Is Deliberate. So Is This One.](/weblog/field-card-not-for-transmission.html) Record 20261025-accumulative-s3457-r2. [Partial dataset.]
+\_\_\_\_\_\_\_\_\_\_. 2026. [Field Card, Not for Transmission. This Blank Is Deliberate. So Is This One.](/weblog/field-card-not-for-transmission.html) Record 20261025-accumulative-s3457-r2. [Partial dataset.]
 
 Edwards, Mike. 2026. loop-harness. Version 1.9.0. [Software.] [https://doi.org/10.5281/zenodo.23662792](https://doi.org/10.5281/zenodo.23662792).
 
