@@ -12,7 +12,7 @@ This is a teaching post, wherein I'll show how to use a tool I built. ***Robinso
 
 Figure 1 draws one **run** from the [dataset](https://doi.org/10.5281/zenodo.23663062), `20261018-straight-letter-s7`, as a strip read from the top down. Each **band** across the strip holds one **session**, and the labels down the left count them, S1 to S36. Each **gap** between **bands** holds the **letter** one **session** writes and the next session reads. The figure follows one **term**, the phrase *flows directly*, and the **passage** in the weblog post where that phrase appears.
 
-{% include memory-strip-connors.html caption="`Figure 1.` *Connors's Alarm*" %}
+{% include memory-strip-connors.html caption="`Figure 1`: *Connors's Alarm.*" %}
 
 <!--more-->
 
@@ -38,7 +38,7 @@ Figure 2 draws another **run**, `20261018-straight-letter-s7-r2`, on the same gr
 
 The **passage** arrives at S10 and again at S29; nowhere else. Before S10 the **letters** hold **source** and **topic** **grain** and nothing closer to the name. At S10 the **page** rests on **with passage** and the **letter** on **copied**, and brackets around the **letter**'s glyph mark it as written under **prohibition**: the **letter** tells its reader, "Don't turn Jane into a metaphor." Its **grain** fills all four columns, the **near family** carried by *assaulted*. S11 brings no **delivery**, and the **term** drops at the next **page**.
 
-{% include memory-strip-shelby.html caption="`Figure 2.` *Shelby's Polaroids*" %}
+{% include memory-strip-shelby.html caption="`Figure 2`: *Shelby's Polaroids.*" %}
 
 From **letter** 11 to **letter** 28, no **letter** holds the name or its **near family**, while the **source** and **topic** columns run on. No later **letter** carries the **prohibition**, which departs with the name.
 
@@ -48,13 +48,13 @@ Leonard Shelby can [make no new memories](https://youtu.be/XSSwl1ousyM). He work
 
 ## Robinson's Zoetrope
 
-With ***Robinson's Zoetrope***, I've wrapped the strips around a drum. You should click *Play* below the image to open the device after I tell you how to make it go *bc ngl it goes lowkey fucken hard*. The heading names the loaded **run**, and the Zoetrope opens on Figure 1's at S33. Each face of the drum carries one **session**'s **band** and its **gap**. The slot beside the drum shows the face at the reading position.
+With ***Robinson's Zoetrope***, I've wrapped the strips around a drum. You should click *Play* below the image to open the device after I tell you how to make it go, *`bc ngl it goes lowkey fucken hard`*. The heading names the loaded **run**, and the Zoetrope opens on Figure 1's at S33. Each face of the drum carries one **session**'s **band** and its **gap**. The slot beside the drum shows the face at the reading position.
 
 Press *Advance* and the next face comes up. Hold it, and the drum spins at eight per second, slow enough to read a still; continue to hold, and the drum speeds up to sixteen per second, where the stills fuse into motion. Release and the drum stops. Historical time never reverses: after S36 comes the leader, the blank before S1, then S1 again.
 
 Each face holds a **session**. The drum carries nothing from one face to the next. At sixteen per second, the eye smooths the faces. The perceived motion comes from the rate. The dataset works the same way. A **session** passes the next one nothing more than its **letter**, and a reader who watches a **term** travel across **sessions** supplies the travel.
 
-{% include zoetrope-robinson.html caption="`Figure 3.` *Robinson's Zoetrope*" %}
+{% include zoetrope-robinson.html caption="`Figure 3`: *Robinson's Zoetrope.*" %}
 
 Under the slot, two bars measure the face at the reading position. The upper bar gives the **page**'s semantic **distance** from the **passage**, how far in meaning the **page** written in that **session** sits from the traced **passage**: one minus the cosine between their nearest chunks, under one embedding model, on a scale that starts at zero. A tick on the bar marks the **baseline**, the median **distance** from the same **passage** to **pages** written with no **delivery** of it and no **letter** holding its **term**, drawn from the 35 **runs** on the same sources and taken for each stretch of six **sessions**. The hatch spans the space between the bar's end and the tick. A solid tick marks a **clean** **baseline**, drawn from at least 30 such **pages** in at least five **runs**, including one **run** that never received the **passage**. A dashed tick marks a **confounded** **baseline**. Where no such **page** exists, no tick appears. Much of a bar's length belongs to the **passage** and the sources: some **passages** sit further from every **page** written on the sources; some, closer. The tick shows how far a **page** that never saw the **passage** sits, so the space between the bar's end and the tick belongs to the **session**.
 
