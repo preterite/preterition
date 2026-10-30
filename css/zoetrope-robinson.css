@@ -12,9 +12,9 @@
    the wash are shape and fill). The figure is marked interactive and never
    suggests it is printable: in print, Play goes and the caption names the page. */
 .zoetrope-robinson { margin: 1.5rem 0; }
-.zoetrope-robinson .zr-poster { display: block; width: 100%; max-width: 640px; height: auto; margin-inline: auto; }
+.zoetrope-robinson .zr-poster { display: block; width: 100%; max-width: 640px; height: auto; margin-inline: 0; }
 .zoetrope-robinson figcaption { margin-top: 0.75rem; font-family: var(--font-sans); font-size: 0.8125rem; line-height: 1.5; color: #8b9489; }
-.zr-play { display: block; width: 100%; max-width: 640px; box-sizing: border-box; margin: 0.75rem auto 0; padding: 0.5em 1.2em;
+.zr-play { display: block; width: 100%; max-width: 640px; box-sizing: border-box; margin: 0.75rem 0 0; padding: 0.5em 1.2em;
   text-align: center; text-decoration: none; font-family: var(--font-mono); font-size: 0.8125rem; text-transform: uppercase;
   letter-spacing: 0.12em; color: #ede8e2; background: #252220; border: 1px solid #3a9d6a; border-radius: 2px; }
 @media (hover: hover) { .zr-play:hover { color: #00ff00; border-color: #00ff00; box-shadow: inset 0 0 0 1px #00ff00; } }
