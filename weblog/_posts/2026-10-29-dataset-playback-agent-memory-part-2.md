@@ -6,7 +6,7 @@ categories: [Technology, Information, Projects]
 ---
 When a user engages a language model in a chat, the AI seems to recall what one wrote and respond with other ideas as the conversation progresses. In what follows, starting with the first two static figures below, I illustrate how one might model writing differently. Technically particular terms are in **boldface**.
 
-***Robinson's Zoetrope***, the third figure below the fold, interactively plays back many short **sessions** in sequence from a dataset. In each of those **sessions**, a fresh AI with no memory reads sources and writes a **page**, then leaves a short **letter** for the next writing **session**. The AI in the next **session** gets only that **letter** and uses it to continue. Frame by frame, Robinson's Zoetrope shows when the search tool returned a **passage**, when the writing engaged that **passage**, and when the **letter** carried the **term** forward or let it drop. The Zoetrope helps a user trace whether a recurring idea came from the AI, from the **letter**, or from the search tool's returns. The Zoetrope also shows how close **pages** come to **passages** they never see, and how the picture changes when a different word is tracked: it permits users to distinguish between the contributions of the measuring instrument and the contributions of the writing's content to what gets written next.
+This is a teaching post, wherein I'll show how to use a tool I built. ***Robinson's Zoetrope***, the third figure below the fold, interactively plays back many short **sessions** in sequence from a dataset. In each of those **sessions**, a fresh AI with no memory reads sources and writes a **page**, then leaves a short **letter** for the next writing **session**. The AI in the next **session** gets only that **letter** and uses it to continue. Frame by frame, Robinson's Zoetrope shows when the search tool returned a **passage**, when the writing engaged that **passage**, and when the **letter** carried the **term** forward or let it drop. The Zoetrope helps a user trace whether a recurring idea came from the AI, from the **letter**, or from the search tool's returns. The Zoetrope also shows how close **pages** come to **passages** they never see, and how the picture changes when a different word is tracked: it permits users to distinguish between the contributions of the measuring instrument and the contributions of the writing's content to what gets written next.
 
 ## Connors's Alarm
 
@@ -30,7 +30,7 @@ The **passage** returns at S33. The **page** leaves it **unused**, while the **l
 
 The dotted peacock-blue line outside the strip with a dot at each end, and the faint peacock-blue lane behind the **rungs**, marks the **reader's arc**: the stretch from the first to the last **session** in which a **page** or a **letter** holds the **term**. In this **run** it spans the strip, S1 to S36. The term **reader's arc** does not invoke a human reader.
 
-On this strip the **term** turns up where the **passage** arrives, and it crosses a **gap** with no **delivery** once, at the end. [Phil Connors](https://en.wikipedia.org/wiki/Groundhog_Day_%28film%29) wakes every morning to "I Got You Babe" on the radio because every morning is the same morning.
+On this strip the **term** turns up where the **passage** arrives, and it crosses a **gap** with no **delivery** once, at the end. [Phil Connors](https://youtu.be/6jvGK8Z29f4) wakes every morning to "I Got You Babe" on the radio because every morning is the same morning.
 
 ## Shelby's Polaroids
 
@@ -44,11 +44,11 @@ From **letter** 11 to **letter** 28, no **letter** holds the name or its **near 
 
 At S29 the **passage** arrives, the **page** leaves it **unused**, and the **letter** holds the name **with passage**, now under no **prohibition**. S30 brings no **delivery**, and its **page** takes the name on **named**: the solid coral-rose line from **letter** 29 to **page** 30 draws the **run**'s **crossing**, by **letter**. The **reader's arc** runs from S10 to S30, and below it the strip runs to S36 with no **term** anywhere.
 
-In [*Memento*](https://en.wikipedia.org/wiki/Memento_%28film%29), Leonard Shelby can make no new memories. He works from the notes and Polaroids he inscribes and keeps for himself. The **page** at S30 had no **delivery**; its **letter**, **letter** 29, carries the name without the **prohibition** **letter** 10 wrote.
+Leonard Shelby can [make no new memories](https://youtu.be/XSSwl1ousyM). He works from the notes and Polaroids he inscribes and keeps for himself. The **page** at S30 had no **delivery**; its **letter**, **letter** 29, carries the name without the **prohibition** **letter** 10 wrote.
 
 ## Robinson's Zoetrope
 
-With ***Robinson's Zoetrope***, I've wrapped the strips around a drum. Click *Play* below the image to open the device. The heading names the loaded **run**, and the Zoetrope opens on Figure 1's at S33. Each face of the drum carries one **session**'s **band** and its **gap**. The slot beside the drum shows the face at the reading position.
+With ***Robinson's Zoetrope***, I've wrapped the strips around a drum. You should click *Play* below the image to open the device after I tell you how to make it go, because I gotta say, it's *pretty fucking cool*. The heading names the loaded **run**, and the Zoetrope opens on Figure 1's at S33. Each face of the drum carries one **session**'s **band** and its **gap**. The slot beside the drum shows the face at the reading position.
 
 Press *Advance* and the next face comes up. Hold it, and the drum spins at eight per second, slow enough to read a still; continue to hold, and the drum speeds up to sixteen per second, where the stills fuse into motion. Release and the drum stops. Historical time never reverses: after S36 comes the leader, the blank before S1, then S1 again.
 
