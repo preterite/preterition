@@ -307,6 +307,89 @@ p {
   margin-top: 3.825rem; /* 2 lines x 1.7 line-height x 1.125rem body text */
 }
 
+/* Footnote marks. The reference numeral is three-quarters of the text it
+   sits in -- 9 point to 12 -- raised by relative position rather than by
+   superscript alignment and with no line height of its own, so a line
+   carrying one is exactly as tall as its neighbours. A note's text is
+   five-sixths of the paragraph, 10 point to 12: --fn-size, which
+   responsive.css resets beside the paragraph size at each width. Each note
+   hangs its numeral in a gutter at the reference's size and lift, and
+   kramdown's back-link moves into the gutter beneath it, on the first line,
+   drawn as a disc at three-quarters of the note's text in place of the
+   arrow. No script is involved. */
+sup[id^="fnref:"] {
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.5em;
+}
+
+.post-body .footnotes {
+  --fn-size: 0.9375rem;    /* five-sixths of the 1.125rem paragraph */
+  font-size: var(--fn-size);
+}
+
+.post-body .footnotes p {
+  font-size: inherit;      /* past responsive.css's bare p rules */
+}
+
+.post-body .footnotes ol {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: fn;
+}
+
+.post-body .footnotes li {
+  position: relative;
+  padding-left: calc(var(--fn-size) * 1.75);
+  counter-increment: fn;
+}
+
+/* The gutter's two marks each take a line box the height of the note's
+   first line -- 1.6, as .main-content li sets it -- so each stands on that
+   line's baseline: the numeral then
+   lifts as the reference does, and the disc stays on the line. */
+.post-body .footnotes li::before {
+  content: counter(fn);
+  position: absolute;
+  top: calc(var(--fn-size) * -0.45);   /* half the numeral's size */
+  left: 0;
+  width: calc(var(--fn-size) * 1.75);
+  font-size: calc(var(--fn-size) * 0.9);
+  line-height: calc(var(--fn-size) * 1.6);
+  text-align: center;
+}
+
+/* The back-link keeps its arrow as text for assistive technology, at zero
+   size, and draws the disc in the link colour of the arrow it replaces. */
+.post-body .footnotes a.reversefootnote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--fn-size) * 1.75);
+  height: calc(var(--fn-size) * 1.6);
+  font-size: 0;
+  text-decoration: none;
+}
+
+.post-body .footnotes a.reversefootnote::before {
+  content: "\2022";
+  content: "\2022" / "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: calc(var(--fn-size) * 0.75);
+  line-height: calc(var(--fn-size) * 1.6);
+  text-align: center;
+  color: var(--color-accent-grey-green);
+}
+
+.post-body .footnotes a.reversefootnote:hover::before {
+  color: var(--color-accent-bright);
+}
+
 a {
   color: var(--color-accent-grey-green);
   text-decoration: underline;

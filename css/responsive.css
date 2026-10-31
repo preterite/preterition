@@ -86,6 +86,10 @@
 
 /* ===== MOBILE (< 768px) ===== */
 @media (max-width: 767px) {
+  .post-body .footnotes {
+    --fn-size: 0.8333rem;  /* five-sixths of the 1rem paragraph */
+  }
+
   :root {
     --gutter: 16px;
     --gutter-mobile: 16px;
@@ -334,6 +338,10 @@
 
 /* ===== SMALL PHONES (< 400px) ===== */
 @media (max-width: 399px) {
+  .post-body .footnotes {
+    --fn-size: 0.7917rem;  /* five-sixths of the 0.95rem paragraph */
+  }
+
   :root {
     --gutter: 12px;
   }
