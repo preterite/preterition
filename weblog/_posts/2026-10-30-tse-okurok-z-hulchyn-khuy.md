@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Путін це окурок з гульчин ху"
+title: "Путін-Окурок, Голубиний Хуйчик"
 date: 2026-10-30 15:26:05 -0700
 categories: [Asides, Politics]
 ---
