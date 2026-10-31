@@ -9,4 +9,4 @@ Hey, y'all. I'm stoked readers have [downloaded the dataset](https://doi.org/10.
 One wonders, with some small interest, whether state-facilitated spammers may yet flog links from the scurrilous contumely I direct above toward the little man whose KGB peers called him an *окурок*.[^1] Figure either way it's a loss for them and a win for preterition. Here's hoping for a better [Mandelstam](https://www.nybooks.com/articles/2010/06/10/reading-mandelstam-stalin/) than me to praise our modern Kremlin Mountaineer.
 &nbsp;
 
-[^1]: To a certain generation of smoker, a snipe; for others, let the blunter form suffice: a  cigarette butt.
+[^1]: To a certain generation of smoker, a snipe; for others, let the younger form suffice: a  cigarette butt.
