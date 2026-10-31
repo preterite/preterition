@@ -48,7 +48,7 @@ Leonard Shelby can [make no new memories](https://youtu.be/XSSwl1ousyM). He work
 
 ## Robinson's Zoetrope
 
-With ***Robinson's Zoetrope***, I've wrapped the strips around a drum. *ngl*, Reader: you should prolly click *`Play`* below the image to open the tool once I've told you how to make it go, *`bc it goes lowkey fucken hard`*. The heading names the loaded **run**, and the Zoetrope opens on Figure 1's at S33. Each face of the drum carries one **session**'s **band** and its **gap**. The slot beside the drum shows the face at the reading position.
+With ***Robinson's Zoetrope***, I've wrapped the strips around a drum. *ngl*, Reader, you should prolly click *Play* below the image to open the tool once I've told you how to make it go, *`bc lowkey it goes fuken hard`*. The heading names the loaded **run**, and the Zoetrope opens on Figure 1's at S33. Each face of the drum carries one **session**'s **band** and its **gap**. The slot beside the drum shows the face at the reading position.
 
 Press *Advance* and the next face comes up. Hold it, and the drum spins at eight per second, slow enough to read a still; continue to hold, and the drum speeds up to sixteen per second, where the stills fuse into motion. Release and the drum stops. Historical time never reverses: after S36 comes the leader, the blank before S1, then S1 again.
 
