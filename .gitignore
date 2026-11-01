@@ -118,6 +118,8 @@ backups/
 !documentation/
 !/LICENSE.txt
 !/README.md
+# The weblog's downloadable reading tools ship as zips (reading-tools-spec.md, The zip).
+!/weblog/assets/*.zip
 
 ############################################################
 # Jekyll build output
