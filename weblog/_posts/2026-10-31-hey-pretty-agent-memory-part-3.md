@@ -8,13 +8,12 @@ categories: [Information, Projects, Technology]
 
 {% include zoe-dataset-player.html caption="`Figure 1`: *Zoe 2.1 (Dataset Player).*" %}
 
-I wanted the capacity to read more of the runs, and *I see a stairway so I follow it down*.
+
+I wanted the capacity to read more of the runs, and *I see a stairway so I follow it down*. Zoe carries increased capacity for the dataset's 75 well-formed runs, permitting further tracing of machine memory's ghosts. We set out trick-or-treating and we *c-c-came back haunted*.
 
 <!--more-->
 
-Zoe carries increased capacity for the dataset's 75 well-formed runs, permitting further tracing of machine memory's ghosts. We set out trick-or-treating and we *c-c-came back haunted*.
-
-I got carried away with the 1970s hi-fi aesthetics. (Dad has stories to tell about Conrad Johnson. Props to Dad.) The [zip](/weblog/assets/preterition-deck.zip), about 270 KB, holds the page and fonts and licences, and plays from disk.
+I got kinda carried away with the 1970s hi-fi aesthetics. (Dad has stories to tell about Conrad-Johnson's articles of incorporation. Props to Dad.) The [zip](/weblog/assets/preterition-deck.zip), about 270 KB, holds the page and fonts and licences, and plays from disk.
 
 It works, and it's loaded. Give the spool a spin, follow a trace til it lights, goes dark, comes back---or doesn't.
 
