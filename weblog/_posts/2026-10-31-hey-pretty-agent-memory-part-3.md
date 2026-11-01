@@ -4,7 +4,7 @@ title: "Hey Pretty: Agent Memory, Part 3"
 date: 2026-10-31 23:04:03 -0700
 categories: [Information, Projects, Technology]
 ---
-*Now I got something you have to see*: I've made a *copy of a* copy of the dataset, and I've revised the [Robinson's Zoetrope](/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html) tool. Like dressing up for [Halloween](/weblog/2026/10/26/agent-memory-trick-treat-receipt.html), [*I am my sole architect*](https://youtu.be/PHO0rFo8Te8): *I built the shadows here*, and you've met the machine underneath.
+*Now I got something you have to see*: I've made a *copy of a* copy of the dataset, and I've revised the [Robinson's Zoetrope](/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html) tool. As with a homemade [Halloween](/weblog/2026/10/26/agent-memory-trick-treat-receipt.html) costume, [*I am my sole architect*](https://youtu.be/PHO0rFo8Te8): *I built the shadows here*, and you've met the machine underneath.
 
 {% include zoe-dataset-player.html caption="`Figure 1`: *Zoe 2.1 (Dataset Player).*" %}
 
