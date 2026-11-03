@@ -15,7 +15,7 @@ I wanted the capacity to read more of the runs, and *I see a stairway so I follo
 
 I got kinda carried away with the 1970s hi-fi aesthetics. (Dad has stories to tell about Conrad-Johnson's articles of incorporation. Props to Dad.) The [zip](/weblog/assets/preterition-deck.zip), about 380 KB, contains the page and fonts and licences, and plays from disk.
 
-It works, and it's loaded. Give the cylinder a spin, follow a trace til it lights, goes dark, comes back---or doesn't.
+It works, and it's loaded. Give the spindle a spin, follow a trace til it lights, goes dark, comes back---or doesn't.
 
 &nbsp;
 
