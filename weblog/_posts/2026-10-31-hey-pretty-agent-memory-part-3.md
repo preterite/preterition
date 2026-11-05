@@ -9,7 +9,7 @@ categories: [Information, Projects, Technology]
 {% include zoe-dataset-player.html caption="`Figure 1`: *Zoe 2.1 (Dataset Player).*" %}
 
 
-I wanted the capacity to read more of the runs, and *I see a stairway so I follow it down*: Zoe carries increased capacity for the dataset's 75 well-formed runs, permitting further tracing of machine memory's ghosts. We set out trick-or-treating and we *c-c-came back haunted*.
+I wanted the capacity to read more of the runs, and *I see a stairway so I follow it down*: Zoe carries increased capacity for the dataset's 75 selected runs, permitting further tracing of machine memory's ghosts. We set out trick-or-treating and we *c-c-came back haunted*.
 
 <!--more-->
 
