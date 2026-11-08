@@ -2479,11 +2479,14 @@ function mountFlo(cfg) {
   chassis.appendChild(band);
   {
     const b = L.band;
+    const HREF = { weblog: 'https://preterite.net/weblog/',
+                   doi: 'https://doi.org/10.5281/zenodo.23663062',
+                   deed: 'https://creativecommons.org/licenses/by/4.0/' };
+    const link = (cls, href, text, more = {}) => el('a', { class: cls, href, target: '_top', ...more }, text);
     const plate = el('div', { class: 'logoplate' });
     put(plate, [b.logo[0], b.plateY, b.logo[1], b.plateH]);
-    const word = mark('wordmark', 'span', { class: 'logoword' }, 'Preterition');
-    word.style.fontSize = b.logo[3] + 'px';
-    word.style.marginLeft = b.logo[2] + 'px';
+    const word = mark('wordmark', 'a', { class: 'logoword', href: HREF.weblog, target: '_top',
+                                         title: 'Preterition, the weblog' }, 'Preterition');
     plate.appendChild(word);
     band.appendChild(plate);
 
@@ -2495,8 +2498,8 @@ function mountFlo(cfg) {
 
     const citeOf = (small) => {
       const c = mark('doi-placard', 'div', { class: 'citeplate' + (small ? ' small' : '') });
-      c.append(el('span', { class: 'doi' }, W.doi), el('span', { class: 'who' }, W.who),
-               el('span', { class: 'clic' }, W.licence));
+      c.append(link('doi', HREF.doi, W.doi), link('who', HREF.doi, W.who),
+               link('clic', HREF.deed, W.licence, { rel: 'license' }));
       return c;
     };
     if (b.cite) band.appendChild(put(citeOf(false), [b.cite[0], b.plateY, b.cite[1], b.plateH]));

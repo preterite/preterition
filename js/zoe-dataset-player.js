@@ -8,7 +8,7 @@
 // <dialog>.showModal() -- the Play link opens the player's own page. With
 // it, the same page opens in an <iframe> inside a dialog. The dialog is
 // built on the first click and kept, so the player's page, about 2.4 MB
-// as text and about 80 KB over the wire, loads only when a reader asks for
+// as text and about 310 KB over the wire, loads only when a reader asks for
 // it. The page is same-origin, so the frame is sized to the page it holds
 // and the dialog scrolls rather than the frame. Dialog handling follows
 // initPerfPlate() in js/main.js.
