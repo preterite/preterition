@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zoe 2.1 and Flo 1.0</title>
+<link rel="preload" as="fetch" crossorigin href="data/deck-cues.json">
+<link rel="preload" as="fetch" crossorigin href="data/deck-data.json">
+<link rel="preload" as="fetch" crossorigin href="data/flo-data.json">
+<link rel="stylesheet" href="01-deck-frame.css">
+<link rel="stylesheet" href="02-drawer-frame.css">
+<link rel="stylesheet" href="03-counter-frame.css">
+<link rel="stylesheet" href="04-deck-skin.css">
+<link rel="stylesheet" href="05-flo-frame.css">
+<link rel="stylesheet" href="06-flo-skin.css">
+<link rel="stylesheet" href="07-pair-frame.css">
+<script src="boot.js"></script>
+</head>
+<body>
+<div id="flo-stage"></div>
+
+<div id="dev">
+  <label>run <select id="runsel"></select></label>
+  <label>kf <input id="kfr" type="range" min="0" max="36" step="0.01" value="0"></label>
+  <span id="kfv"></span>
+  <span id="status">loading</span>
+  <span>window grain: term/near family/source/topic</span>
+</div>
+<div id="stage"><div id="deck" aria-label="The Deck's parts, each printing the model"></div></div>
+<div id="announce" class="sr" aria-live="polite"></div>
+
+
+<div class="bridge" id="bridge-flo" data-side="flo" hidden></div>
+<div class="bridge" id="bridge-zoe" data-side="zoe" hidden></div>
+</body>
+</html>

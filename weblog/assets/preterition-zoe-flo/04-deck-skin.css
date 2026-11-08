@@ -1,0 +1,341 @@
+
+@font-face { font-family: 'Michroma'; src: url(fonts/michroma/Michroma-Regular.woff2) format('woff2'); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: 'Space Mono'; src: url(fonts/spacemono/SpaceMono-Regular.woff2) format('woff2'); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: 'Space Mono'; src: url(fonts/spacemono/SpaceMono-Italic.woff2) format('woff2'); font-weight: 400; font-style: italic; font-display: block; }
+@font-face { font-family: 'Space Mono'; src: url(fonts/spacemono/SpaceMono-Bold.woff2) format('woff2'); font-weight: 700; font-style: normal; font-display: block; }
+@font-face { font-family: 'Space Mono'; src: url(fonts/spacemono/SpaceMono-BoldItalic.woff2) format('woff2'); font-weight: 700; font-style: italic; font-display: block; }
+
+:root {
+  --cabinet: #1a1816;
+  --plate-hi: #d8cfb0;
+  --plate: #c3b58f;
+  --plate-lo: #b0a27c;
+  --brass: #b8974a;
+  --brass-lo: #8c7340;
+  --brass-hi: #e2cc84;
+  --ink: #2a241a;
+  --ink-muted: #4b4233;
+  --glass: #2b2f33;
+  --glass-hi: #3b4047;
+  --frost: #2a2826;
+  --report: #9a958b;
+  --well: #221f1c;
+  --reel: #3e3832;
+  --tape: #1c1a18;
+  --flange-lo: #8a847a;
+  --knob-hi: #e6d6b8;
+  --enamel: #0b0a09;
+  --enamel-hi: #1c1a17;
+  --env: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20320%20200%22%20width=%22320%22%20height=%22200%22%3E%3Cfilter%20id=%22b%22%20x=%22-25%25%22%20y=%22-25%25%22%20width=%22150%25%22%20height=%22150%25%22%3E%3CfeGaussianBlur%20stdDeviation=%222.75%22/%3E%3C/filter%3E%3Crect%20x=%22-40%22%20y=%22-40%22%20width=%22400%22%20height=%22280%22%20fill=%22%23000%22/%3E%3Cg%20filter=%22url%28%23b%29%22%3E%3Crect%20x=%22-40%22%20y=%22-40%22%20width=%22253%22%20height=%22280%22%20fill=%22%23fff%22%20fill-opacity=%220.225%22/%3E%3Crect%20x=%22213%22%20y=%22-40%22%20width=%22147%22%20height=%22280%22%20fill=%22%23fff%22%20fill-opacity=%220.158%22/%3E%3Ccircle%20cx=%22160%22%20cy=%2218%22%20r=%2232%22%20fill=%22%23000%22%20fill-opacity=%220.65%22/%3E%3Crect%20x=%22144.5%22%20y=%2244%22%20width=%2231%22%20height=%2224%22%20fill=%22%23000%22%20fill-opacity=%220.65%22/%3E%3Cpath%20d=%22M74,114%20C78,80%20118,66%20160,66%20C202,66%20242,80%20246,114%20L250,200%20L70,200%20Z%22%20fill=%22%23000%22%20fill-opacity=%220.65%22/%3E%3Cpath%20d=%22M28,200%20L292,200%20L242,118%20L78,118%20Z%22%20fill=%22%23fff%22%20fill-opacity=%220.345%22/%3E%3Cpath%20d=%22M56,199%20L264,199%20L230,148%20L90,148%20Z%22%20fill=%22%23000%22%20fill-opacity=%220.468%22/%3E%3Crect%20x=%2265.8%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%2280.5%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%2295.3%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22110.1%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22124.8%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22139.6%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22154.4%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22169.2%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22183.9%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22198.7%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22213.5%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22228.2%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22243.0%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%2273.6%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%2287.2%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22100.7%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22114.2%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22127.8%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22141.3%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22154.9%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22168.4%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22181.9%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22195.5%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22209.0%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22222.5%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22236.1%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%2281.5%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%2293.8%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22106.1%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22118.4%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22130.7%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22143.0%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22155.3%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22167.6%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22179.9%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22192.2%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22204.6%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22216.9%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22229.2%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%2289.3%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22100.4%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22111.5%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22122.6%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22133.6%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22144.7%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22155.8%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22166.9%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22177.9%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22189.0%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22200.1%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22211.2%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3Crect%20x=%22222.3%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.255%22/%3E%3C/g%3E%3C/svg%3E");
+  --env-soft: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20320%20200%22%20width=%22320%22%20height=%22200%22%3E%3Cfilter%20id=%22b%22%20x=%22-25%25%22%20y=%22-25%25%22%20width=%22150%25%22%20height=%22150%25%22%3E%3CfeGaussianBlur%20stdDeviation=%2233%22/%3E%3C/filter%3E%3Crect%20x=%22-40%22%20y=%22-40%22%20width=%22400%22%20height=%22280%22%20fill=%22%23000%22/%3E%3Cg%20filter=%22url%28%23b%29%22%3E%3Crect%20x=%22-40%22%20y=%22-40%22%20width=%22253%22%20height=%22280%22%20fill=%22%23fff%22%20fill-opacity=%220.3%22/%3E%3Crect%20x=%22213%22%20y=%22-40%22%20width=%22147%22%20height=%22280%22%20fill=%22%23fff%22%20fill-opacity=%220.21%22/%3E%3Ccircle%20cx=%22160%22%20cy=%2218%22%20r=%2232%22%20fill=%22%23000%22%20fill-opacity=%221%22/%3E%3Crect%20x=%22144.5%22%20y=%2244%22%20width=%2231%22%20height=%2224%22%20fill=%22%23000%22%20fill-opacity=%221%22/%3E%3Cpath%20d=%22M74,114%20C78,80%20118,66%20160,66%20C202,66%20242,80%20246,114%20L250,200%20L70,200%20Z%22%20fill=%22%23000%22%20fill-opacity=%221%22/%3E%3Cpath%20d=%22M28,200%20L292,200%20L242,118%20L78,118%20Z%22%20fill=%22%23fff%22%20fill-opacity=%220.46%22/%3E%3Cpath%20d=%22M56,199%20L264,199%20L230,148%20L90,148%20Z%22%20fill=%22%23000%22%20fill-opacity=%220.72%22/%3E%3Crect%20x=%2265.8%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%2280.5%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%2295.3%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22110.1%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22124.8%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22139.6%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22154.4%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22169.2%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22183.9%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22198.7%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22213.5%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22228.2%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22243.0%22%20y=%22183.7%22%20width=%2211.2%22%20height=%226.6%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%2273.6%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%2287.2%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22100.7%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22114.2%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22127.8%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22141.3%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22154.9%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22168.4%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22181.9%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22195.5%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22209.0%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22222.5%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22236.1%22%20y=%22173.1%22%20width=%2210.3%22%20height=%225.7%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%2281.5%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%2293.8%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22106.1%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22118.4%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22130.7%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22143.0%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22155.3%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22167.6%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22179.9%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22192.2%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22204.6%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22216.9%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22229.2%22%20y=%22162.4%22%20width=%229.4%22%20height=%224.8%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%2289.3%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22100.4%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22111.5%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22122.6%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22133.6%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22144.7%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22155.8%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22166.9%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22177.9%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22189.0%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22200.1%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22211.2%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3Crect%20x=%22222.3%22%20y=%22151.8%22%20width=%228.4%22%20height=%223.9%22%20rx=%221%22%20fill=%22%23fff%22%20fill-opacity=%220.34%22/%3E%3C/g%3E%3C/svg%3E");
+  --blue: #5aa0ff;
+  --blue-ink: #1f5aa6;
+  --amber: #ffb347;
+  --ember: #7a4a14;
+  --dark-lamp: #17150f;
+  --lit-ink: #1b4a8a;
+  --mark: #ede8e2;
+  --mark-muted: #8b9489;
+  --label: #a7afa5;
+  --gold: #c9a227;
+  --delivery: #a3d2f2;
+  --arc: #3a78b0;
+  --r1: #9fdccd;
+  --r2: #b9a9e2;
+  --r3: #d6bd7c;
+  --r4: #76a7b8;
+  --font-plate: 'Michroma', sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+  --ground: var(--cabinet); --box: transparent; --line: var(--brass-lo); --dim: var(--ink-muted);
+}
+
+body { background: var(--cabinet); color: var(--ink); font-family: var(--font-mono); }
+#dev { border-bottom: 1px solid var(--brass-lo); color: var(--mark); background: var(--cabinet); }
+#deck {
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22600%22%3E%3Cfilter id=%22b%22 x=%220%22 y=%220%22 width=%22100%25%22 height=%22100%25%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.012 0.95%22 numOctaves=%222%22 seed=%2211%22 result=%22n%22/%3E%3CfeColorMatrix in=%22n%22 type=%22saturate%22 values=%220%22 result=%22g%22/%3E%3CfeComponentTransfer in=%22g%22%3E%3CfeFuncA type=%22table%22 tableValues=%220.45 0.45%22/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width=%22600%22 height=%22600%22 fill=%22%23808080%22 filter=%22url(%23b)%22/%3E%3C/svg%3E"),
+    linear-gradient(170deg, var(--plate-hi) 0%, var(--plate) 45%, var(--plate-lo) 100%);
+  background-size: 600px 600px, auto;
+  background-blend-mode: overlay, normal;
+  border-radius: 6px;
+  outline: 0;
+  box-shadow: inset 0.6px 0.8px 0 rgba(255, 250, 230, 0.55), inset -1.2px -1.6px 0 rgba(60, 40, 10, 0.45),
+              8.3px 11.3px 34px rgba(0, 0, 0, 0.65), 1.2px 1.6px 4px rgba(0, 0, 0, 0.5);
+}
+:where(#deck) .box { background: transparent; border: 0; }
+:where(#deck) .box h2 { font-family: var(--font-plate); }
+:where(#deck) i { font-style: italic; }
+.sr { color: inherit; }
+
+#box-plate { border-bottom: 1px solid rgba(60, 40, 10, 0.35); box-shadow: 0 1px 0 rgba(255, 250, 230, 0.4); }
+:where(#deck) .logoplate, :where(#deck) .badgeplate, :where(#deck) .citeplate, :where(#deck) .meters {
+  background: linear-gradient(180deg, var(--plate-hi) 0%, var(--plate) 40%, var(--plate-lo) 100%);
+  box-shadow: inset 0.6px 0.8px 0 rgba(255, 250, 230, 0.7), inset -1.2px -1.6px 0 var(--brass-lo), 1.2px 1.6px 0 var(--brass-lo), 1.8px 2.4px 4px rgba(0, 0, 0, 0.5);
+}
+:where(#deck) .logo { text-decoration: none; position: relative; z-index: 1; }
+:where(#deck) .logo path { fill: url(#logo-champ); }
+:where(#deck) .logoplate { background: linear-gradient(180deg, var(--enamel-hi) 0%, var(--enamel) 100%); }
+:where(#deck) a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+:where(#deck) .logoword { font-family: var(--font-plate); letter-spacing: 0.16em; text-transform: uppercase; }
+:where(#deck) .badge { font-family: var(--font-plate); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); border: 0;
+         text-shadow: 0.6px 0.8px 0 rgba(255, 255, 255, 0.35); }
+:where(#deck) .badge b { font-weight: 400; }
+:where(#deck) .badge small { color: var(--ink-muted); letter-spacing: 0.1em; }
+:where(#deck) .cite { font-family: var(--font-mono); color: var(--ink); }
+:where(#deck) .cite .doi { color: var(--blue-ink); text-decoration: none; }
+:where(#deck) .cite .doi:hover { text-decoration: underline; text-underline-offset: 2px; }
+:where(#deck) .cite .who { font-family: var(--font-mono); text-transform: none; letter-spacing: 0.02em; color: var(--ink); background: none; box-shadow: none; text-shadow: none; text-decoration: none; }
+:where(#deck) .cite .who:hover { text-decoration: underline; text-underline-offset: 2px; }
+:where(#deck) .cite .clic { color: var(--ink-muted); text-decoration: none; }
+:where(#deck) .cite .clic:hover { text-decoration: underline; text-underline-offset: 2px; }
+:where(#deck) .pilot { --lit: var(--amber); border-radius: 50%; background: var(--amber); }
+#deck[data-mode="LOAD"] .pilot { --lit: transparent; background: var(--ember); }
+
+:where(#deck) button {
+  font-family: var(--font-plate); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink);
+  border: 0; border-radius: 3px;
+  background: linear-gradient(180deg, var(--plate-hi) 0%, var(--plate) 40%, var(--plate-lo) 100%);
+  box-shadow: inset 0.6px 0.8px 0 rgba(255, 250, 230, 0.7), inset -1.2px -1.6px 0 var(--brass-lo), 1.2px 1.6px 0 var(--brass-lo), 1.8px 2.4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.6px 0.8px 0 rgba(255, 255, 255, 0.35);
+}
+:where(#deck) button[aria-pressed="true"] {
+  font-weight: 400;
+  box-shadow: inset 1.2px 1.6px 3px rgba(0, 0, 0, 0.35), inset 0 0 0 1px var(--brass-lo);
+  transform: translateY(2px);
+}
+:where(#deck) button:disabled { color: var(--ink-muted); box-shadow: inset 0 0 0 1px var(--brass-lo); text-shadow: none; }
+:where(#deck) button:focus-visible, :where(#deck) [tabindex]:focus-visible { outline: 2px solid var(--blue-ink); outline-offset: 2px; }
+:where(#deck) .badgeplate .snd, :where(#deck) .badgeplate .snd[aria-pressed] { background: none; border: 0; box-shadow: none; text-shadow: none; transform: none; color: var(--ink-muted); opacity: 0.75; }
+:where(#deck) .badgeplate .snd:hover { opacity: 1; }
+
+#deck {
+  --ct-recess: #15130f; --ct-wheel: #0d0c0a; --ct-wheel-rim: #000;
+  --ct-figure: var(--mark); --ct-figure-dead: var(--mark-muted);
+  --ct-legend: var(--brass-hi);
+  --ct-frame-ink: var(--ink); --ct-frame: var(--brass); --ct-frame-lo: var(--brass-lo);
+  --ct-mark: var(--amber);
+  --ct-font-plate: var(--font-plate); --ct-font-mono: var(--font-mono);
+}
+
+:where(#deck) .tp .ic svg { fill: currentColor; }
+:where(#deck) .tp .kl { letter-spacing: 0.04em; }
+:where(#deck) .counter { font-family: var(--ct-font-mono); border-radius: 3px; background: var(--ct-recess); position: relative;
+           box-shadow: inset 0 0 0 1px var(--ct-frame-ink), inset 0 0 0 3px var(--ct-frame-lo), inset 0 0 0 5px var(--ct-frame), inset 1.2px 1.6px 4px rgba(0, 0, 0, 0.9); }
+:where(#deck) .counter .cs, :where(#deck) .counter .cof { font-family: var(--ct-font-plate); letter-spacing: 0.1em; color: var(--ct-legend); }
+:where(#deck) .csub { color: var(--ct-legend); font-family: var(--ct-font-plate); letter-spacing: 0.06em; }
+:where(#deck) .wheel { color: var(--ct-figure); font-weight: 700; background: var(--ct-wheel); border: 0; border-radius: 2px;
+         box-shadow: inset 0 0 0 1px var(--ct-wheel-rim), inset 0 3px 3px rgba(0, 0, 0, 0.9), inset 0 -3px 3px rgba(0, 0, 0, 0.9); }
+:where(#deck) .counter.adjust .wheel:not(.fixed) { border: 0; box-shadow: inset 0 0 0 1px var(--ct-mark), inset 0 3px 3px rgba(0, 0, 0, 0.9); }
+:where(#deck) .flag { color: var(--ct-mark); font-family: var(--ct-font-plate); letter-spacing: 0.04em; }
+:where(#deck) .cue { color: var(--ct-legend); }
+:where(#deck) .headmark { border-top: 2px solid var(--blue); }
+:where(#deck) .headmark span { color: var(--blue-ink); font-family: var(--font-plate); letter-spacing: 0.1em; text-transform: uppercase; }
+:where(#deck) .lifted .headmark { border-top-style: dashed; }
+
+#deck {
+  --dr-face: var(--plate); --dr-face-hi: var(--plate-hi); --dr-face-lo: var(--plate-lo);
+  --dr-metal: var(--brass); --dr-metal-hi: var(--brass-hi); --dr-metal-lo: var(--brass-lo); --dr-metal-lobe: var(--knob-hi);
+  --dr-skirt: #2e2b28; --dr-skirt-edge: #1f1d1b;
+  --dr-tick-dark: rgba(216, 207, 176, 0.5);
+  --dr-ink: var(--ink); --dr-ink-muted: var(--ink-muted);
+  --dr-glass: var(--glass); --dr-glass-ink: var(--mark); --dr-readout: var(--report);
+  --dr-sel: var(--blue); --dr-sel-ink: var(--blue-ink);
+  --dr-lock: var(--amber);
+  --dr-lamp-off: var(--dark-lamp); --dr-lamp-dim: var(--ember);
+  --dr-font-plate: var(--font-plate); --dr-font-mono: var(--font-mono);
+}
+
+:where(#deck) .bank button[data-slot] { text-transform: none; letter-spacing: 0; font-family: var(--dr-font-mono); }
+:where(#deck) .pk { font-weight: 700; }
+:where(#deck) .pstrip { color: var(--dr-ink); }
+:where(#deck) .prun { color: var(--dr-ink-muted); }
+:where(#deck) .plamp { --lit: transparent; border-radius: 50%; background: var(--dr-lamp-dim); }
+:where(#deck) .bank button[aria-pressed="true"] .plamp { --lit: var(--dr-sel); background: var(--dr-sel); }
+#deck[data-mode="LOAD"] .bank button[data-slot]::after { color: var(--dr-sel-ink); font-family: var(--dr-font-plate); }
+#modekey { font-weight: 400; }
+
+#drawer { background: linear-gradient(170deg, var(--dr-face-hi) 0%, var(--dr-face) 45%, var(--dr-face-lo) 100%);
+          border: 0; border-radius: 6px 6px 0 0;
+          box-shadow: inset 0.6px 0.8px 0 rgba(255, 250, 230, 0.55), 0 0 24px rgba(0, 0, 0, 0.55), 2.4px 3.2px 8px rgba(0, 0, 0, 0.4); }
+#drawer pre { font-family: var(--dr-font-mono); }
+:where(#deck) .knob { border: 0; }
+:where(#deck) .kname { font-family: var(--dr-font-plate); letter-spacing: 0.12em; text-transform: uppercase; color: var(--dr-ink); font-weight: 400; }
+:where(#deck) .kwin { font-family: var(--dr-font-mono); color: var(--dr-sel); background: var(--dr-glass); border: 0; border-radius: 2px; position: relative;
+        box-shadow: inset 0 0 0 1px var(--dr-ink), inset 0 0 0 2px var(--dr-metal-lo), inset 0 0 0 3px rgba(0, 0, 0, 0.6), inset 1.2px 1.6px 3px rgba(0, 0, 0, 0.55); }
+:where(#deck) .kface { border: 0; border-radius: 50%;
+         background:
+           radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 0 58%, var(--dr-metal-hi) 62%, rgba(0, 0, 0, 0) 67%, rgba(0, 0, 0, 0) 86%, rgba(0, 0, 0, 0.3) 100%),
+           repeating-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.06) 0 1px, rgba(0, 0, 0, 0.045) 1px 3px),
+           conic-gradient(from calc(323.67deg + var(--pa, 0deg) * 0.25) at 50% 50%, var(--dr-metal-lobe) 0deg, var(--dr-metal) 40deg, var(--dr-metal-lo) 90deg, var(--dr-metal) 140deg, var(--dr-metal-lobe) 180deg, var(--dr-metal) 220deg, var(--dr-metal-lo) 270deg, var(--dr-metal) 320deg, var(--dr-metal-lobe) 360deg);
+         box-shadow: inset 1.2px 1.6px 2px rgba(255, 250, 230, 0.55), inset -1.2px -1.6px 3px rgba(0, 0, 0, 0.45),
+                     1.2px 1.6px 0 var(--dr-metal-lo), 2.4px 3.2px 8px rgba(0, 0, 0, 0.55), 0 0 2px rgba(0, 0, 0, 0.5); }
+:where(#deck) .kface::before { content: ""; position: absolute; inset: -9px; border-radius: 50%; z-index: -1; pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, var(--dr-skirt) 0 78%, var(--dr-skirt-edge) 100%);
+  box-shadow: inset 0.6px 0.8px 1px rgba(255, 255, 255, 0.07), inset -0.6px -0.8px 1px rgba(0, 0, 0, 0.55), 1.2px 1.6px 3px rgba(0, 0, 0, 0.5); }
+:where(#deck) .kface::after { background: var(--dr-ink); border-radius: 2px; }
+:where(#deck) .kface .half { color: var(--dr-ink); font-family: var(--dr-font-plate); }
+:where(#deck) .kface .half.prev { border-right: 1px solid rgba(0, 0, 0, 0.22); }
+:where(#deck) .ticks .t { background: var(--dr-face-hi); }
+:where(#deck) .ticks .t.dark { background: none; border: 1px solid var(--dr-tick-dark); border-radius: 1px; }
+:where(#deck) .ticks .t.cur { background: var(--dr-sel); }
+:where(#deck) .lever { font-family: var(--dr-font-plate); letter-spacing: 0.1em; text-transform: uppercase; color: var(--dr-ink); }
+:where(#deck) .lamp { --lit: transparent; --collar: 2px; border-radius: 50%; border: 0; background: var(--dr-lamp-off); }
+:where(#deck) .lever[aria-pressed="true"] .lamp { --lit: var(--dr-lock); background: var(--dr-lock); }
+:where(#deck) .knob.locked .kface { border: 0;
+         box-shadow: 0 0 0 3px var(--dr-lock), inset 1.2px 1.6px 2px rgba(255, 250, 230, 0.55), inset -1.2px -1.6px 3px rgba(0, 0, 0, 0.45),
+                     1.2px 1.6px 0 var(--dr-metal-lo), 2.4px 3.2px 8px rgba(0, 0, 0, 0.55), 0 0 2px rgba(0, 0, 0, 0.5); }
+:where(#deck) .glass, :where(#deck) .tapecell, :where(#deck) .tapebox, :where(#deck) .picker { border: 0; border-radius: 3px; }
+:where(#deck) .glass { background: var(--dr-glass); color: var(--dr-glass-ink); position: relative;
+         box-shadow: inset 0 0 0 1px var(--dr-ink), inset 0 0 0 3px var(--dr-metal-lo), inset 0 0 0 5px var(--dr-metal), inset 0 0 0 6px rgba(0, 0, 0, 0.6), inset 2.4px 3.2px 6px rgba(0, 0, 0, 0.5); }
+:where(#deck) .tapebox { color: var(--dr-ink); }
+:where(#deck) .tapecell { background: var(--dr-readout); color: var(--dr-ink);
+           box-shadow: inset 0 0 0 1px var(--dr-ink), inset 0 0 0 3px var(--dr-metal-lo), inset 0 0 0 5px var(--dr-metal), inset 0 0 0 6px rgba(0, 0, 0, 0.35), inset 2.4px 3.2px 10px rgba(0, 0, 0, 0.28); }
+:where(#deck) .picker { border-top: 1px solid rgba(60, 40, 10, 0.35); box-shadow: inset 0 1px 0 rgba(255, 250, 230, 0.4); }
+:where(#deck) .kwin::after, :where(#deck) .glass::after, :where(#deck) .counter::after, :where(#deck) .tapecell::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: var(--env) center / 100% 100% no-repeat; mix-blend-mode: screen; opacity: 0.08; }
+:where(#deck) .tapecell::after { background-image: var(--env-soft); opacity: 0.16; }
+:where(#deck) .pickline { font-family: var(--dr-font-mono); color: var(--dr-ink); }
+:where(#deck) .pickline a { color: var(--dr-sel-ink); text-decoration: underline; text-underline-offset: 2px; }
+:where(#deck) .pickkey { font-family: var(--dr-font-plate); letter-spacing: 0.08em; text-transform: uppercase; color: var(--dr-ink);
+           background: linear-gradient(180deg, var(--dr-face-hi) 0%, var(--dr-face) 40%, var(--dr-face-lo) 100%);
+           box-shadow: inset 0.6px 0.8px 0 rgba(255, 250, 230, 0.7), inset -1.2px -1.6px 0 var(--dr-metal-lo), 1.2px 1.6px 0 var(--dr-metal-lo), 1.8px 2.4px 4px rgba(0, 0, 0, 0.5);
+           text-shadow: 0.6px 0.8px 0 rgba(255, 255, 255, 0.35); }
+:where(#deck) .howto { font-family: var(--dr-font-mono); color: var(--dr-ink); }
+:where(#deck) .howto li::marker { font-weight: 700; color: var(--dr-sel-ink); }
+
+#box-takeup::before,  #box-supply::before,  #box-tape {
+  background: radial-gradient(ellipse 70% 60% at 50% 48%, #35302b, var(--well) 75%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px var(--brass-lo), inset 0 0 36px rgba(0, 0, 0, 0.75), inset 1.8px 2.4px 3px rgba(0, 0, 0, 0.65), inset -0.6px -0.8px 0 rgba(255, 250, 230, 0.12), 0.6px 0.8px 0 rgba(255, 250, 230, 0.45);
+}
+#box-tape { border-radius: 4px; }
+#reels .fl { fill: var(--reel); stroke: #000; }
+#reels .pk { fill: none; stroke: #262320; }
+#reels .hub { fill: url(#hubg); stroke: var(--brass-lo); }
+#reels .hubarc-l { stroke: var(--brass-hi); }
+#reels .hubarc-d { stroke: #5e4c28; }
+#reels .spindle { fill: var(--tape); stroke: var(--brass-lo); }
+#reels .tps { fill: none; stroke: #4a443d; }
+#reels .tps2 { fill: none; stroke: #423c36; }
+#reels .arm { fill: var(--brass-lo); stroke: #5e4c28; }
+#reels .ml { stroke: #75602f; stroke-width: 1; }
+#reels .tp { fill: none; stroke: #3a3530; }
+#reels .guide { fill: url(#hubg); stroke: var(--brass-lo); }
+#reels .headblk { fill: var(--brass-lo); stroke: var(--blue); }
+#reels .mk { fill: var(--mark); }
+#reels .mk-b0 { fill: var(--gold); }
+#reels .mk-r1 { fill: var(--r1); } #reels .mk-r2 { fill: var(--r2); } #reels .mk-r3 { fill: var(--r3); } #reels .mk-r4 { fill: var(--r4); }
+#reels .mk-catalog { fill: var(--mark-muted); } #reels .mk-delivery { fill: var(--delivery); } #reels .mk-arc { fill: var(--arc); }
+#reels .sm { fill: none; stroke: var(--mark); }
+#reels .wd { fill: none; stroke: var(--mark); }
+#reels .wd-b0 { stroke: var(--gold); }
+#reels .wd-r1 { stroke: var(--r1); } #reels .wd-r2 { stroke: var(--r2); } #reels .wd-r3 { stroke: var(--r3); } #reels .wd-r4 { stroke: var(--r4); }
+#reels .wd-catalog { stroke: var(--mark-muted); } #reels .wd-delivery { stroke: var(--delivery); } #reels .wd-arc { stroke: var(--arc); }
+#dn-under { filter: url(#f3); }
+#reels .frost { fill: var(--frost); fill-opacity: 0.42; }
+
+:where(#deck) .lp { color: var(--ink-muted); font-family: var(--font-plate); letter-spacing: 0.08em; text-transform: uppercase; }
+:where(#deck) .bulb { --lit: transparent; border: 0; border-radius: 50%; background: var(--dark-lamp); }
+:where(#deck) .bulb.sq { border-radius: 1.5px; }
+:where(#deck) .bulb.sq::before { border-radius: 2px; }
+:where(#deck) .lp.on { color: var(--lit-ink); font-weight: 400; }
+:where(#deck) .lp.on .bulb { --lit: var(--blue); background: var(--blue); }
+:where(#deck) .bulb, :where(#deck) .plamp, :where(#deck) .lamp, :where(#deck) .pilot { --collar: 1.5px; box-shadow: 0 0 16px 2px var(--lit, transparent); }
+:where(#deck) .bulb, :where(#deck) .plamp, :where(#deck) .lamp { position: relative; }
+:where(#deck) .lamp { --collar: 1px; }
+:where(#deck) .bulb::before, :where(#deck) .plamp::before, :where(#deck) .lamp::before, :where(#deck) .pilot::before {
+  content: ""; position: absolute; inset: calc(-1 * var(--collar)); border-radius: 50%; pointer-events: none;
+  background: conic-gradient(from 323.67deg, var(--brass-hi) 0deg, var(--brass-lo) 70deg, var(--brass) 110deg, var(--brass-lo) 150deg, var(--brass-hi) 180deg, var(--brass-lo) 250deg, var(--brass) 290deg, var(--brass-lo) 330deg, var(--brass-hi) 360deg);
+  box-shadow: 0.6px 0.8px 1px rgba(0, 0, 0, 0.6); }
+:where(#deck) .bulb::after, :where(#deck) .plamp::after, :where(#deck) .lamp::after, :where(#deck) .pilot::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; background: inherit;
+  box-shadow: inset 0.6px 0.8px 1px rgba(0, 0, 0, 0.8), inset -0.6px -0.8px 1px rgba(255, 255, 255, 0.35), 0 0 8px 2px var(--lit, transparent); }
+
+#box-window,  #box-report { border-radius: 3px; }
+:where(#deck) .mtr { border-radius: 3px; }
+#box-window, :where(#deck) .mtr {
+  background: var(--glass); color: var(--mark);
+  box-shadow: inset 0 0 0 1px var(--ink), inset 0 0 0 3px var(--brass-lo), inset 0 0 0 5px var(--brass), inset 0 0 0 6px rgba(0, 0, 0, 0.6),
+              inset 2.4px 3.2px 6px rgba(0, 0, 0, 0.55), inset -0.6px -0.8px 1px rgba(255, 255, 255, 0.08),
+              1.2px 1.6px 6px rgba(0, 0, 0, 0.45);
+}
+:where(#deck) .mtr::after,  #box-window::after {
+  content: ""; position: absolute; inset: 0; border-radius: 3px; pointer-events: none;
+  background: var(--env) center / 100% 100% no-repeat; mix-blend-mode: screen; opacity: 0.11;
+}
+#box-report {
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22240%22 height=%22240%22%3E%3Cfilter id=%22g%22 x=%220%22 y=%220%22 width=%22100%25%22 height=%22100%25%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%221%22 seed=%223%22 result=%22n%22/%3E%3CfeColorMatrix in=%22n%22 type=%22saturate%22 values=%220%22 result=%22m%22/%3E%3CfeComponentTransfer in=%22m%22%3E%3CfeFuncA type=%22table%22 tableValues=%220 0.16%22/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width=%22240%22 height=%22240%22 fill=%22%23ffffff%22 filter=%22url(%23g)%22/%3E%3C/svg%3E"),
+    var(--report);
+  background-size: 240px 240px, auto;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink), inset 0 0 0 3px var(--brass-lo), inset 0 0 0 5px var(--brass), inset 0 0 0 6px rgba(0, 0, 0, 0.35),
+              inset 2.4px 3.2px 12px rgba(0, 0, 0, 0.28),
+              1.2px 1.6px 6px rgba(0, 0, 0, 0.45);
+}
+#box-report::after {
+  content: ""; position: absolute; inset: 0; border-radius: 3px; pointer-events: none;
+  background: var(--env-soft) center / 100% 100% no-repeat; mix-blend-mode: screen; opacity: 0.21;
+}
+#box-report pre { font-family: var(--font-mono); color: var(--ink); }
+#box-report button { font-weight: 400; }
+:where(#deck) .meter .scale { fill: none; stroke: var(--mark); }
+:where(#deck) .meter .mt, :where(#deck) .meter .pin { stroke: var(--mark); }
+:where(#deck) .meter .zone { fill: none; }
+:where(#deck) .meter .zone.clean { stroke: var(--mark-muted); }
+:where(#deck) .meter .zone.conf { stroke: url(#m-sem-hatch); }
+:where(#deck) .meter .hatch { fill: var(--mark); }
+:where(#deck) .meter .btick { stroke: var(--mark); }
+:where(#deck) .meter .ndl { fill: #ff3b30; stroke: none; }
+:where(#deck) .meter .piv { fill: var(--brass); }
+:where(#deck) .meter .mlab { font-family: var(--font-plate); font-weight: 400; letter-spacing: 0.04em; fill: var(--label); }
+:where(#deck) .box pre.mcap { color: var(--label); font-family: var(--font-mono); }
+:where(#deck) .mcap b { color: var(--mark); font-weight: 400; }
+
+:where(#deck) .fr { border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); color: var(--mark-muted); font-family: var(--font-mono); }
+:where(#deck) .fr.head { border: 0; border-top: 1px solid rgba(255, 255, 255, 0.08); color: var(--mark); }
+:where(#deck) .hz-up, :where(#deck) .hz-dn { background: rgba(0, 0, 0, 0.38); }
+:where(#deck) .hz-head { background: #1e3356; mix-blend-mode: lighten;
+           box-shadow: inset 3px 0 0 var(--blue), inset 0 1px 0 rgba(90, 160, 255, 0.45), inset 0 -1px 0 rgba(90, 160, 255, 0.45); }
+:where(#deck) .lifted .fr { border-top-style: dotted; color: var(--mark-muted); }
+:where(#deck) .zf .zf-ground { fill: var(--tape); }
+:where(#deck) .zf .zf-frame { fill: var(--glass-hi); fill-opacity: 0.5; }
+:where(#deck) .zf .zf-band { fill: var(--arc); }
+:where(#deck) .zf .zf-arc { stroke: var(--arc); }
+:where(#deck) .zf .zf-letter { fill: var(--gold); }
+:where(#deck) .zf .zf-held-stood { stroke: var(--gold); }
+:where(#deck) .zf .zf-held-refusal, :where(#deck) .zf .zf-held-tick { stroke: var(--mark); }
+:where(#deck) .zf .zf-held-notice { stroke: var(--mark-muted); }
+:where(#deck) .zf .zf-page { fill: var(--mark); }
+:where(#deck) .zf .zf-delivery { fill: var(--delivery); }
+:where(#deck) .zf .zf-catalog { stroke: var(--mark-muted); }
+:where(#deck) .zf .zf-grain-r1 { fill: var(--r1); } :where(#deck) .zf .zf-grain-r2 { fill: var(--r2); } :where(#deck) .zf .zf-grain-r3 { fill: var(--r3); } :where(#deck) .zf .zf-grain-r4 { fill: var(--r4); }
+:where(#deck) .zf text { fill: var(--label); font-family: var(--font-mono); }
+
+#deck[data-view="SCOPE"] #box-report { background: var(--glass); color: var(--mark);
+  box-shadow: inset 0 0 0 1px var(--ink), inset 0 0 0 3px var(--brass-lo), inset 0 0 0 5px var(--brass), inset 0 0 0 6px rgba(0, 0, 0, 0.6),
+              inset 2.4px 3.2px 6px rgba(0, 0, 0, 0.55), inset -0.6px -0.8px 1px rgba(255, 255, 255, 0.08),
+              1.2px 1.6px 6px rgba(0, 0, 0, 0.45); }
+#deck[data-view="SCOPE"] #box-report::after {
+  background: var(--env) center / 100% 100% no-repeat; mix-blend-mode: screen; opacity: 0.11; }
+#deck[data-view="SCOPE"] #box-report pre { color: var(--mark); }
+:where(#deck) .scope .ch { fill: none; stroke: var(--glass-hi); }
+:where(#deck) .scope .slab { font-family: var(--font-plate); font-weight: 400; letter-spacing: 0.04em; fill: var(--label); }
+:where(#deck) .scope .hz { fill: var(--blue); }
+:where(#deck) .scope .bl { stroke: var(--label); }
+:where(#deck) .scope .tr { stroke: var(--blue); filter: drop-shadow(0 0 2px var(--blue)); }
+:where(#deck) .scope .gh { stroke: var(--blue); }
+:where(#deck) .scope .nul { fill: none; stroke: var(--label); }
+:where(#deck) .scope .beam { fill: var(--blue); filter: drop-shadow(0 0 3px var(--blue)); }
+:where(#deck) .scope .hd { stroke: var(--mark); }
+
+:where(#deck) .lp-r1.on .bulb { --lit: var(--r1); background: var(--r1); }
+:where(#deck) .lp-r2.on .bulb { --lit: var(--r2); background: var(--r2); }
+:where(#deck) .lp-r3.on .bulb { --lit: var(--r3); background: var(--r3); }
+:where(#deck) .lp-r4.on .bulb { --lit: var(--r4); background: var(--r4); }
+:where(#deck) .counter.adjust .wheel:not(.fixed)::before, :where(#deck) .counter.adjust .wheel:not(.fixed)::after {
+  content: ""; position: absolute; left: 50%; margin-left: -3px; border: 3px solid transparent; }
+:where(#deck) .counter.adjust .wheel:not(.fixed)::before { top: -7px; border-top-width: 0; border-bottom-color: var(--ct-mark); }
+:where(#deck) .counter.adjust .wheel:not(.fixed)::after { bottom: -7px; border-bottom-width: 0; border-top-color: var(--ct-mark); }
+:where(#deck) .wheel.fixed { color: var(--ct-figure-dead); }

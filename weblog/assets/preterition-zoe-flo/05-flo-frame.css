@@ -1,0 +1,262 @@
+
+[data-flo-host] { position: relative; margin: 0 auto; font-size: 12px; line-height: 1.3; }
+[data-flo-host] > .bankhost { position: absolute; }
+[data-flo-host] .chassis { position: absolute; left: 0; top: 0; overflow: hidden; }
+[data-flo-host] .chassis > * { position: absolute; }
+[data-flo-host] .band > * { position: absolute; }
+[data-flo-host] .pilot > * { position: absolute; }
+[data-flo-host] .meter > * { position: absolute; }
+[data-flo-host] .ladder > * { position: absolute; }
+[data-flo-host] .slider > * { position: absolute; }
+[data-flo-host] .posrow > .poscell { position: absolute; }
+[data-flo-host] .poscell > * { position: absolute; }
+[data-flo-host] button { font: inherit; padding: 0; cursor: pointer; }
+[data-flo-host] button:disabled { cursor: default; }
+
+[data-flo-host] .logoplate { display: flex; align-items: center; border-radius: 4px; }
+[data-flo-host] .logoword { font-weight: 700; letter-spacing: 0.12em; }
+[data-flo-host] .citeplate { display: grid; grid-template-columns: 1fr auto;
+  align-items: baseline; align-content: center; row-gap: 1px; padding: 0 14px; }
+[data-flo-host] .citeplate .doi { grid-column: 1 / -1; font-size: 10px; letter-spacing: 0.02em; }
+[data-flo-host] .citeplate .who { font-size: 8px; letter-spacing: 0.02em; }
+[data-flo-host] .citeplate .clic { justify-self: end; font-size: 8px; letter-spacing: 0.04em; }
+[data-flo-host] .citeplate.small { grid-template-columns: 1fr auto auto;
+  align-items: center; padding: 0 8px; column-gap: 10px; }
+[data-flo-host] .citeplate.small .doi { grid-column: auto; font-size: 8.5px; }
+[data-flo-host] .citeplate.small .who { font-size: 7px; }
+[data-flo-host] .pilot .core { left: 4px; top: 4px; width: 8px; height: 8px; border-radius: 50%; }
+[data-flo-host] .pilot .ring { left: 0; top: 0; width: 16px; height: 16px; border-radius: 50%; }
+[data-flo-host] .badgeplate { display: flex; align-items: center; border-radius: 4px; padding: 0 14px; }
+[data-flo-host][data-width="375"] .badgeplate { padding: 0 8px; }
+[data-flo-host] .snd { margin-right: auto; display: inline-flex; }
+[data-flo-host] .snd svg { width: 14px; height: 11px; display: block; }
+[data-flo-host] .badge { margin-left: auto; text-align: right; line-height: 1.25; }
+[data-flo-host] .badge .bname { display: block; font-size: 11px; letter-spacing: 0.22em; }
+[data-flo-host] .badge small { display: block; font-size: 7.5px; letter-spacing: 0.18em; }
+[data-flo-host][data-width="375"] .badge .bname { font-size: 9.5px; letter-spacing: 0.16em; }
+[data-flo-host][data-width="375"] .badge small { font-size: 6.5px; letter-spacing: 0.1em; }
+
+[data-flo-host] .gbox { border-radius: 0; }
+[data-flo-host] .glabel { position: absolute; left: 10px; top: -5px; padding: 0 4px;
+  font-size: 7.5px; letter-spacing: 0.08em; line-height: 10px; }
+[data-flo-host] .rulelabel { font-size: 7.5px; letter-spacing: 0.08em; line-height: 12px; }
+
+[data-flo-host] .k, [data-flo-host] .flotp button {
+  position: absolute; display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 1px; text-align: center; font-size: 7.5px;
+  letter-spacing: 0.1em; line-height: 1.1; overflow: hidden;
+}
+[data-flo-host] .k .klamp { position: absolute; left: 7px; top: 7px; width: 5px; height: 5px;
+  border-radius: 50%; }
+[data-flo-host] .k .ksub { font-size: 6px; letter-spacing: 0.04em; }
+[data-flo-host] .flotp button .ic { display: none; }
+[data-flo-host] .flotp button .kl { font-size: 7.5px; letter-spacing: 0.1em; }
+[data-flo-host][data-width="375"] .k { font-size: 6.5px; letter-spacing: 0.06em; }
+
+[data-flo-host] .lp { display: flex; align-items: center; gap: 6px; white-space: nowrap;
+  font-size: 7px; letter-spacing: 0.04em; }
+[data-flo-host] .bulb { flex: none; width: 5px; height: 5px; border-radius: 50%; }
+[data-flo-host] .peaklamp { width: 6px; height: 6px; }
+[data-flo-host] .lamprow { display: flex; flex-direction: column; gap: 4px; }
+[data-flo-host][data-width="375"] .lamprow { flex-direction: row; gap: 14px; }
+[data-flo-host][data-width="760"] .lamprow { flex-direction: row; gap: 14px; }
+[data-flo-host] .runid { font-size: 9px; line-height: 1.3; word-break: break-all; }
+
+[data-flo-host] .knobwrap { display: flex; justify-content: center; align-items: flex-start; }
+[data-flo-host][data-width="375"] .knobwrap { justify-content: flex-start; align-items: center; }
+[data-flo-host][data-width="375"] .knob { display: flex; flex-direction: row;
+  align-items: center; gap: 5px; justify-items: start; }
+[data-flo-host][data-width="375"] .kwin { width: 26px; }
+[data-flo-host][data-width="375"] .klegend { text-align: left; }
+[data-flo-host] .knob { padding: 0; gap: 2px; }
+[data-flo-host] .kface { width: 48px; height: 48px; margin: 0; }
+[data-flo-host] .kface::after { margin: -24px 0 0 -1.5px; transform-origin: 50% 24px; }
+[data-flo-host] .ticks .t { transform: rotate(var(--a)) translateY(-29px); }
+[data-flo-host] .ticks .t.cur { transform: rotate(var(--a)) translateY(-30px); }
+
+[data-flo-host]:not([data-width="375"]) .knobwrap { display: block; }
+[data-flo-host]:not([data-width="375"]) .knob { position: absolute; inset: 0;
+  display: block; padding: 0; gap: 0; }
+[data-flo-host]:not([data-width="375"]) .kwin { position: absolute; left: 50%;
+  width: 80px; margin-left: -40px; }
+[data-flo-host]:not([data-width="375"]) .kface { position: absolute; left: 50%;
+  width: 40px; height: 40px; margin: 0 0 0 -20px; }
+[data-flo-host]:not([data-width="375"]) .klegend { position: absolute; left: 0; right: 0; }
+[data-flo-host]:not([data-width="375"]) .kface::after { margin: -20px 0 0 -1.5px;
+  transform-origin: 50% 20px; }
+[data-flo-host]:not([data-width="375"]) .ticks .t { transform: rotate(var(--a)) translateY(-25px); }
+[data-flo-host]:not([data-width="375"]) .ticks .t.cur { transform: rotate(var(--a)) translateY(-26px); }
+[data-flo-host]:not([data-width="375"]) [data-mark="window-knob"] .kwin { top: 4px; }
+[data-flo-host]:not([data-width="375"]) [data-mark="window-knob"] .kface { top: 31px; }
+[data-flo-host]:not([data-width="375"]) [data-mark="window-knob"] .klegend { top: 72px; }
+[data-flo-host]:not([data-width="375"]) [data-mark="room-knob"] .kwin { top: -2px; }
+[data-flo-host]:not([data-width="375"]) [data-mark="room-knob"] .kface { top: 25px; }
+[data-flo-host]:not([data-width="375"]) [data-mark="room-knob"] .klegend { top: 66px; }
+[data-flo-host] .kwin { font-size: 9px; line-height: 12px; min-height: 12px; }
+[data-flo-host] .klegend { font-size: 9px; line-height: 10px; text-align: center; }
+[data-flo-host][data-width="375"] .kface { width: 26px; height: 26px; margin: 0; }
+[data-flo-host][data-width="375"] .kface::after { margin: -13px 0 0 -1.5px; transform-origin: 50% 13px; height: 6px; }
+[data-flo-host][data-width="375"] .ticks .t { transform: rotate(var(--a)) translateY(-17px); height: 3px; }
+[data-flo-host][data-width="375"] .ticks .t.cur { transform: rotate(var(--a)) translateY(-18px); height: 5px; }
+[data-flo-host][data-width="375"] .kwin { font-size: 7px; line-height: 10px; min-height: 10px; }
+[data-flo-host][data-width="375"] .klegend { font-size: 7px; line-height: 9px; }
+[data-flo-host] .knobwrap.dark .kface, [data-flo-host] .knobwrap.dark .kwin { opacity: 0.45; }
+
+[data-flo-host] .decay, [data-flo-host] .gcol { text-align: center; }
+[data-flo-host] .dcol, [data-flo-host] .gin { display: inline-block; text-align: left; }
+[data-flo-host] .decay.row, [data-flo-host] .gcol.row { text-align: left; }
+[data-flo-host] .decay.row .dcol { display: flex; gap: 12px; align-items: center; }
+[data-flo-host] .decay.row .dhead { margin: 0; }
+[data-flo-host] .decay.row .drow { height: auto; }
+[data-flo-host] .dhead { font-size: 8px; letter-spacing: 0.02em; margin-bottom: 3px; }
+[data-flo-host] .drow { display: flex; align-items: center; gap: 5px; font-size: 7px;
+  letter-spacing: 0.04em; height: 11px; }
+[data-flo-host] .dnum { font-weight: 700; }
+[data-flo-host] .dabsent { font-size: 8px; }
+[data-flo-host] .gin > .lp { height: 20px; }
+[data-flo-host] .gin > .failed { height: 20px; margin-top: 6px; }
+[data-flo-host] .gcol.row .gin { display: flex; gap: 14px; align-items: center; }
+[data-flo-host] .gcol.row .gin > .failed { margin-top: 0; }
+
+[data-flo-host] .failed { display: flex; align-items: center; gap: 6px; font-size: 7px;
+  letter-spacing: 0.04em; }
+[data-flo-host] .failed .fwin { display: inline-flex; align-items: baseline; gap: 2px;
+  padding: 1px 4px; min-width: 22px; justify-content: center; }
+[data-flo-host] .failed .fnum { font-size: 12px; font-family: var(--ct-font-mono, ui-monospace, monospace); }
+[data-flo-host] .failed .funit { font-size: 8px; font-weight: 700; }
+
+[data-flo-host] .axis { font-size: 9px; }
+[data-flo-host] .alab { position: absolute; white-space: nowrap; }
+[data-flo-host]:not([data-width="375"]) .alab { right: 6px; text-align: right; }
+[data-flo-host][data-width="1100"] .alab,
+[data-flo-host][data-width="1100"] .cscale,
+[data-flo-host][data-width="1100"] .dlegend,
+[data-flo-host][data-width="1100"] .sinces1 { left: 0; right: 0; text-align: center; width: auto; }
+[data-flo-host]:not([data-width="375"]) .alab.over { top: 18px; font-size: 7px; }
+[data-flo-host]:not([data-width="375"]) .alab.top { top: 31px; }
+[data-flo-host]:not([data-width="375"]) .alab.zero { top: 161px; }
+[data-flo-host]:not([data-width="375"]) .alab.bot { top: 286px; }
+[data-flo-host]:not([data-width="375"]) .cscale { position: absolute; right: 6px; top: 196px;
+  font-size: 8px; text-align: right; }
+[data-flo-host]:not([data-width="375"]) .dlegend { position: absolute; right: 6px; top: 214px;
+  width: 50px; font-size: 6.5px; line-height: 1.15; text-align: right; }
+[data-flo-host]:not([data-width="375"]) .sinces1 { position: absolute; right: 6px; top: 254px;
+  font-size: 7px; text-align: right; }
+[data-flo-host][data-width="375"] .axis { font-size: 8px; }
+[data-flo-host][data-width="375"] .alab { top: 0; transform: translateX(-50%); }
+[data-flo-host][data-width="375"] .alab.bot { left: 34px; }
+[data-flo-host][data-width="375"] .alab.zero { left: 133px; }
+[data-flo-host][data-width="375"] .alab.top { left: 218px; }
+[data-flo-host][data-width="375"] .alab.over { left: 238px; font-size: 6.5px; }
+[data-flo-host][data-width="375"] .cscale { position: absolute; right: 0; top: -28px; font-size: 7px; }
+[data-flo-host][data-width="375"] .dlegend { position: absolute; left: 18px; top: -28px;
+  font-size: 6.5px; white-space: nowrap; }
+[data-flo-host][data-width="375"] .sinces1 { position: absolute; right: 0; top: -14px;
+  font-size: 6.5px; }
+[data-flo-host][data-width="375"] .pband { top: -48px; left: 0; }
+[data-flo-host] .alab.dim, [data-flo-host] .cscale.dim { opacity: 0.4; }
+
+[data-flo-host] .escale { font-size: 9px; }
+[data-flo-host] .escale > span { position: absolute; }
+[data-flo-host]:not([data-width="375"]) .escale > span { right: 6px; text-align: right; }
+[data-flo-host]:not([data-width="375"]) .escale .etop { top: 14px; }
+[data-flo-host]:not([data-width="375"]) .escale .ebot { top: 116px; }
+[data-flo-host]:not([data-width="375"]) .escale .esolo { top: 144px; font-size: 7px; }
+[data-flo-host]:not([data-width="375"]) .escale .egini { top: 60px; font-size: 7px; }
+[data-flo-host][data-width="375"] .escale > span { top: 0; font-size: 7px; }
+[data-flo-host][data-width="375"] .escale .egini { left: 32px; }
+[data-flo-host][data-width="375"] .escale .esolo { left: 92px; }
+[data-flo-host][data-width="375"] .escale .ebot { left: 14px; }
+[data-flo-host][data-width="375"] .escale .etop { left: 76px; }
+
+[data-flo-host] .fambox { pointer-events: none; }
+[data-flo-host] .flabel { position: absolute; left: 6px; top: -5px; padding: 0 4px;
+  font-size: 7.5px; line-height: 10px; }
+
+[data-flo-host] .ladder { overflow: visible; }
+[data-flo-host]:not([data-width="375"]) .ladder .rung { left: 0; right: 0; }
+[data-flo-host][data-width="375"] .ladder .rung { top: 0; bottom: 0; }
+[data-flo-host] .colhit { position: absolute; inset: 0; width: 100%; height: 100%;
+  background: none; border: 0; padding: 0; }
+[data-flo-host] .darkslot { pointer-events: none; }
+[data-flo-host] .collabel, [data-flo-host] .coleff { text-align: center; white-space: nowrap; }
+[data-flo-host] .collabel { font-size: 9px; }
+[data-flo-host] .coleff { font-size: 7px; }
+[data-flo-host][data-width="375"] .collabel, [data-flo-host][data-width="375"] .coleff { text-align: left; }
+[data-flo-host] .pmark { font-style: normal; font-size: 7px; margin-left: 2px; }
+[data-flo-host]:not([data-width="375"]) .hollow { left: 50%; top: 50%; width: 10px; height: 10px;
+  margin: -5px 0 0 -5px; }
+[data-flo-host][data-width="375"] .hollow { left: 50%; top: 50%; width: 8px; height: 8px;
+  margin: -4px 0 0 -4px; }
+[data-flo-host]:not([data-width="375"]) .hatch { left: 0; right: 0; bottom: 0; height: 4px; }
+[data-flo-host][data-width="375"] .hatch { top: 0; bottom: 0; left: 0; width: 4px; }
+[data-flo-host]:not([data-width="375"]) .bracket { left: -2px; right: -2px; }
+[data-flo-host][data-width="375"] .bracket { top: -2px; bottom: -2px; }
+[data-flo-host]:not([data-width="375"]) .peak, [data-flo-host]:not([data-width="375"]) .tick,
+[data-flo-host]:not([data-width="375"]) .ztick { left: -3px; right: -3px; height: 2px; }
+[data-flo-host][data-width="375"] .peak, [data-flo-host][data-width="375"] .tick,
+[data-flo-host][data-width="375"] .ztick { top: -3px; bottom: -3px; width: 2px; }
+[data-flo-host]:not([data-width="375"]) .dotted { left: 4px; right: 4px; }
+[data-flo-host][data-width="375"] .dotted { top: 4px; bottom: 4px; }
+[data-flo-host] .zcol { inset: 0; }
+
+[data-flo-host] .slider { overflow: visible; }
+[data-flo-host]:not([data-width="375"]) .cap, [data-flo-host]:not([data-width="375"]) .zcap {
+  left: 0; width: 20px; height: 10px; bottom: -5px;
+}
+[data-flo-host][data-width="375"] .cap, [data-flo-host][data-width="375"] .zcap {
+  top: 0; height: 10px; width: 8px; left: -4px;
+}
+[data-flo-host] .caplamp { position: absolute; left: 50%; top: 50%; width: 4px; height: 4px;
+  margin: -2px 0 0 -2px; border-radius: 50%; }
+[data-flo-host] .solobox { padding: 0; }
+
+[data-flo-host] .posrow { pointer-events: none; }
+[data-flo-host] .pband { position: absolute; left: 2px; top: 0; font-size: 7px; letter-spacing: 0.06em; }
+[data-flo-host]:not([data-width="375"]) .pbar { left: 2px; right: 2px; }
+[data-flo-host][data-width="375"] .pbar { top: 0; bottom: 0; }
+[data-flo-host]:not([data-width="375"]) .phatch { left: 2px; right: 2px; bottom: 0; height: 3px; }
+[data-flo-host][data-width="375"] .phatch { top: 0; bottom: 0; left: 0; width: 3px; }
+[data-flo-host]:not([data-width="375"]) .ptick { left: 0; width: 0; height: 0; }
+[data-flo-host][data-width="375"] .ptick { top: 0; width: 0; height: 0; }
+[data-flo-host] .phollow { left: 50%; top: 50%; width: 8px; height: 8px; margin: -4px 0 0 -4px; }
+
+[data-flo-host] .display { overflow: hidden; }
+[data-flo-host] .history { position: absolute; inset: 6px 8px 8px; }
+[data-flo-host] .hrows { position: relative; height: 100%; }
+[data-flo-host] .hrow { position: relative; }
+[data-flo-host] .hmark { position: absolute; }
+[data-flo-host] .hearlier { position: absolute; right: 8px; bottom: 1px; font-size: 7px; }
+[data-flo-host] .numbers[hidden] { display: none; }
+[data-flo-host] .numbers { position: absolute; inset: 4px 8px 8px; width: calc(100% - 16px);
+  border-collapse: collapse; font-size: 8.5px; display: block; overflow: auto; }
+[data-flo-host] .numbers caption { text-align: left; font-size: 8px; padding: 0 0 2px; caption-side: top; }
+[data-flo-host] .numbers th, [data-flo-host] .numbers td { text-align: left; padding: 0 6px 0 0;
+  white-space: nowrap; }
+[data-flo-host] .roomsum { position: absolute; left: 8px; bottom: 2px; font-size: 8px; }
+[data-flo-host] .under1 { position: absolute; right: 8px; bottom: 2px; font-size: 8px; }
+[data-flo-host] .plist { position: absolute; right: 8px; top: 2px; font-size: 8px; }
+
+[data-flo-host][data-counter-host] .cthost { overflow: visible; }
+[data-flo-host][data-counter-host] .tp2 { display: block; height: auto; gap: 0; row-gap: 0; }
+[data-flo-host][data-counter-host] .k2 { position: static; display: block; }
+[data-flo-host][data-counter-host] .counter { width: 100%; flex: none; padding: 0;
+  gap: 1px; align-items: center; justify-content: flex-start; }
+[data-flo-host][data-counter-host] .cdisp { align-items: baseline; }
+[data-flo-host][data-counter-host] .counter .cs { font-size: 8px; }
+[data-flo-host][data-counter-host] .counter .cof { font-size: 9px; }
+[data-flo-host][data-counter-host] .wheel { font-size: 13px;
+  font-family: var(--ct-font-mono, ui-monospace, monospace); }
+[data-flo-host][data-counter-host] .csub { min-height: 9px; }
+
+[data-flo-host] .bankhost { display: block; }
+[data-flo-host][data-width="375"][data-mode="LOAD"] #flo-bank {
+  position: fixed; left: 0; right: 0; bottom: 0; top: auto; width: auto; height: 104px; z-index: 3;
+}
+
+[data-flo-host] .cap, [data-flo-host] .zcap { transition: transform 280ms ease; }
+[data-flo-host] .hrows { transition: transform 280ms ease; }
+[data-flo-host] .rung { transition: none; }
+@media (prefers-reduced-motion: reduce) {
+  [data-flo-host] .cap, [data-flo-host] .zcap, [data-flo-host] .hrows { transition: none; }
+}
