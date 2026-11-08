@@ -76,3 +76,13 @@ figures:
       - 2026-10-31-hey-pretty-agent-memory-part-3
     credit: 'Edwards, Mike. 2026. "Zoe 2.1: Dataset Player." preterite.net/weblog/2026/10/31/hey-pretty-agent-memory-part-3.html. CC BY-NC-SA 4.0.'
     citation: 'Edwards, Mike. 2026. "Zoe 2.1: Dataset Player." preterite.net/weblog/2026/10/31/hey-pretty-agent-memory-part-3.html. CC BY-NC-SA 4.0.'
+  preterition-zoe-flo:
+    name: "Flo 1.0 (Returns Meter)"
+    number: 1
+    date: "2026-11-07"
+    asset: /weblog/assets/preterition-zoe-flo/preterition-zoe-flo.html
+    include: preterition-zoe-flo.html
+    appears_in:
+      - 2026-11-07-arc-bends-toward-agent-memory-part-4
+    credit: 'Edwards, Mike. 2026. "Flo 1.0: Returns Meter." preterite.net/weblog/2026/11/07/arc-bends-toward-agent-memory-part-4.html. CC BY-NC-SA 4.0.'
+    citation: 'Edwards, Mike. 2026. "Flo 1.0: Returns Meter." preterite.net/weblog/2026/11/07/arc-bends-toward-agent-memory-part-4.html. CC BY-NC-SA 4.0.'
