@@ -17,8 +17,8 @@
 [data-flo-host] .logoword { font-weight: 700; letter-spacing: 0.12em; }
 [data-flo-host] .citeplate { display: grid; grid-template-columns: 1fr auto;
   align-items: baseline; align-content: center; row-gap: 1px; padding: 0 14px; }
-[data-flo-host] .citeplate .doi { grid-column: 1 / -1; font-size: 10px; letter-spacing: 0.02em; }
-[data-flo-host] .citeplate .who { font-size: 8px; letter-spacing: 0.02em; }
+[data-flo-host] .citeplate .doi { justify-self: start; grid-column: 1 / -1; font-size: 10px; letter-spacing: 0.02em; }
+[data-flo-host] .citeplate .who { justify-self: start; font-size: 8px; letter-spacing: 0.02em; }
 [data-flo-host] .citeplate .clic { justify-self: end; font-size: 8px; letter-spacing: 0.04em; }
 [data-flo-host] .citeplate.small { grid-template-columns: 1fr auto auto;
   align-items: center; padding: 0 8px; column-gap: 10px; }
