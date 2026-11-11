@@ -49,6 +49,10 @@ module Preterite
 
     def self.part(s)
       s = s.to_s.unicode_normalize(:nfkd)
+      # The dotless i (U+0131) has no decomposition and the ASCII encode below
+      # would drop it; it folds to i (decision 5, RULED 2026-11-10), mirroring
+      # listening_glosses.py. The only character the fold adds; no other.
+      s = s.gsub("ı", "i")
       s = s.encode("ASCII", invalid: :replace, undef: :replace, replace: "")
       s = s.downcase.gsub("&", " and ")
       s.gsub(/[^a-z0-9]+/, "-").gsub(/\A-+|-+\z/, "")
@@ -163,6 +167,18 @@ module Preterite
 
       Jekyll.logger.info "Listening:",
         "#{songs.size} song pages, #{owners.size} posts"
+
+      # G-12: a soft check, never a refusal. An evolution post (dated
+      # 2026-10-29 or later) written but not yet landed is named in no mapping
+      # value, so it is visible here and nowhere on the site. One line; the
+      # revolution's refusals above stand.
+      unlanded = site.posts.docs.select { |d| d.basename >= "2026-10-29" }
+                     .reject { |d| owners.key?(d.basename) }
+                     .map(&:basename).sort
+      Jekyll.logger.info "Listening:",
+        "#{unlanded.size} evolution post(s) not yet on the network" +
+        (unlanded.empty? ? "" : ": " +
+          unlanded.first(5).join(", ") + (unlanded.size > 5 ? ", ..." : ""))
     end
 
     private
