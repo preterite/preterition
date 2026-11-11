@@ -3,10 +3,11 @@ layout: post
 title: "Automating the Null Hypothesis"
 date: 2026-11-04 12:44:23 -0800
 categories: [Projects, Technology, Writing]
+song: "A Corporate Merger -- Estradasphere [680CF603CE55E295]"
 ---
-I'm in the middle of refactoring the HTML and CSS for Zoe's loader drawer to make the loader reusable, because I've realized I'm gonna want some more instruments. A reusable loader means one less component to adapt, but the scripts and smoke tests are taking a while to run in the harness.
+I'm in the middle of refactoring the HTML and CSS for Zoe's loader drawer to make the loader reusable, because I've realized I'm [gonna need](https://youtu.be/qCzncv0ISaE?t=82) some more instruments. A reusable loader means one less component to adapt, but the scripts and smoke tests are taking a while to run in the [Playwright](https://playwright.dev/docs/intro) harness.
 
-So while the scripts and tests run, here's the deal: the reason I'm building these instruments for running tests on machine writing. My argumentative point behind [Zoe 2.1](/weblog/2026/10/31/hey-pretty-agent-memory-part-3.html) as a tool for reading data, and behind [Robinson's Zoetrope](/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html) as an instrument, and behind [Cohle's Pinwheel](/weblog/assets/cycle-figure.svg) as their originating metaphor, is a point about time.
+So while the scripts and tests run, here's the deal: the reason I'm building these instruments for running and comparing batch tests on machine writing. My argumentative point behind [Zoe 2.1](/weblog/2026/10/31/hey-pretty-agent-memory-part-3.html) as a tool for reading data, and behind [Robinson's Zoetrope](/weblog/2026/10/29/dataset-playback-agent-memory-part-2.html) as an instrument, and behind [Cohle's Pinwheel](/weblog/assets/cycle-figure.svg) as their originating metaphor, is a point about time.
 
 Writing and reading are processes that take place over time. They have value. That value changes and gets [appropriated](/weblog/2026/10/04/appropriation-position-and-relation.html) over time, as well. Writing studies today takes the organization of writing's work over time---the writing process---as one of its fundamental organizing insights. 
 
