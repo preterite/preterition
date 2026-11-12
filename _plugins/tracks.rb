@@ -42,6 +42,11 @@ module Preterite
 
     DIR = "weblog/listening"
     WPM = 240
+    # G-29 (RULED 2026-11-11, Michael): a song page shows at most
+    # eight Up Next links and at least three. The floor is decision
+    # 38's and is held offline, in the balance's fill; the ceiling is
+    # new and is cut here, at the one place the whole list exists.
+    NEXT_MAX = 8
 
     def self.slug(title, artist)
       "#{part(title)}--#{part(artist)}"
@@ -150,6 +155,14 @@ module Preterite
         docs.each { |d| owners[d.basename].each { |o| shared[o] += 1 unless o == key } }
         nxt = shared.keys.sort_by { |o| [-shared[o], rows[o]["title"].to_s.downcase] }
         fallback.fetch(key, []).each { |o| nxt << o unless nxt.include?(o) }
+        # G-29: the ceiling. The bulk landing of 2026-11-11 holds it by
+        # construction for every page it touches -- a claim that would
+        # give a page a ninth shared-post neighbour is refused -- but one
+        # page stood past it already (ligature--melvins, ten), and G-1
+        # keeps what it holds, so the cut belongs here. Shared-post
+        # neighbours keep the plugin's order and the file's links follow,
+        # so the cut drops the least-shared links first.
+        nxt = nxt.first(NEXT_MAX)
 
         page = Jekyll::PageWithoutAFile.new(site, site.source, DIR, "#{key}.html")
         page.data.merge!(
