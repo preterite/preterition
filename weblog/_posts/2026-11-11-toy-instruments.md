@@ -3,7 +3,7 @@ layout: post
 title: "Toy Instruments"
 date: 2026-11-11 11:11:11 -0800
 categories: [Information, Projects]
-song: match
+song: "Coin-Operated Boy -- The Dresden Dolls [D657B6C9FA7F9F50]"
 ---
 For perhaps [obvious reasons](https://zenodo.org/records/23663062), I've been experimenting with building what [recent](/weblog/2026/10/31/hey-pretty-agent-memory-part-3.html) [posts](/weblog/2026/11/07/arc-bends-toward-agent-memory-part-4.html) have characterized as research instruments or tools. The instruments, and the readings they produce, are longer-term goals. In the shorter term, I've been drafting methodological approaches to those research instruments, in the form of what I'd call **toys**.
 
