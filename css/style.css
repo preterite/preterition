@@ -8,7 +8,12 @@
    are set in. Crimson Pro: body text (serif). IBM Plex Sans: headings,
    UI (sans). JetBrains Mono: nav, H1, code (mono). All font-display:
    swap for fast initial render with system font fallback; the stacks
-   under Typography below name what carries the scripts these do not. */
+   under Typography below name what carries the scripts these do not.
+   JetBrains Mono and IBM Plex Sans also carry a Cyrillic file for each
+   face, declared with a unicode-range, so a browser fetches it only for
+   a page that sets Cyrillic, and a title in a heading or a listing draws
+   in the face around it. Crimson Pro has no Cyrillic, so body text in
+   that script falls to Georgia. */
 
 /* Crimson Pro — Body text */
 @font-face {
@@ -94,6 +99,66 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
+}
+
+/* Cyrillic -- one file per face, declared after the faces above, so a
+   Cyrillic letter is looked for here first and a Latin one passes
+   through to the faces above. */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Regular-Cyrillic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-SemiBold-Cyrillic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-Regular-Cyrillic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-Medium-Cyrillic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-SemiBold-Cyrillic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-Italic-Cyrillic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-SemiBoldItalic-Cyrillic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 /* ===== CSS CUSTOM PROPERTIES ===== */
@@ -435,7 +500,6 @@ figcaption code {
 }
 
 blockquote {
-  font-style: italic;
   border-left: 3px solid var(--color-accent-grey-green);
   padding-left: var(--gutter);
   margin: var(--gutter) 0;
