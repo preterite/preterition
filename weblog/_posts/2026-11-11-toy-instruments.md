@@ -9,9 +9,9 @@ For perhaps [obvious reasons](https://zenodo.org/records/23663062), I've been ex
 
 One of the toys, hidden in plain sight beside this post's thicket of ~~bad~~ dad puns, does what I think are interesting things with the [concept](/weblog/2022/11/29/ultimate-preterition.html) that governs this site and weblog's name. I'll accordingly refrain, and instead borrow [a famous bridge from Marx](https://www.marxists.org/archive/marx/works/1867-c1/ch01.htm#S1). 
 
-> Let us take two different strings of text, and assume that their relation, whatever it may be, can be represented by an equation in which a given measure of the first text is equated with some measure of the second. The equation would signify that a common element of identical magnitude (*Größe*) exists in aspects of the two texts, and that both are therefore equal to a third, which in itself is neither the one nor the other, so that each must therefore be reducible to the third.[^1]
+> *Let us take two different strings of text, and assume that their relation, whatever it may be, can be represented by an equation in which a given measure of the first text is equated with some measure of the second. The equation would signify that a common element of identical magnitude* (Größe) *exists in aspects of the two texts, and that both are therefore equal to a third, which in itself is neither the one nor the other, so that each must therefore be reducible to the third*.[^1]
 
-While the method isn't entirely steady, I'm digging the vibe. The bridge remixes my recent riffs on incommensurability and claims versus value: when one spins two texts beside each other, what can one read or measure as the masked intervening differend?
+While the arrangement isn't entirely steady, I'm digging the vibe. The bridge remixes my recent riffs on incommensurability and claims versus value: when one spins two texts beside each other, what can one read or measure as the masked intervening differend?
 
 The *tl;dr* repeats a refrain from the avant-garde tradition: toys may become tools; systematic play may attune one to unexpected insights. 
 
