@@ -1,0 +1,938 @@
+# Listening paths: the play row's links, song slug to service to
+# one address, or "none" where the service does not carry the
+# song. Approved links only; the repository holds links
+# and never reasons. Generated offline; edited nowhere else.
+"10001110101--clutch":
+  apple: "https://music.apple.com/us/album/10001110101/394207407?i=394207418"
+  spotify: "https://open.spotify.com/track/3E8fhd4nlgSeqUCP0z9PlX"
+  youtube: "https://www.youtube.com/watch?v=gdD8ObEUA7A"
+"a-corporate-merger--estradasphere":
+  apple: "https://music.apple.com/us/album/a-corporate-merger/1675514417?i=1675514421"
+  spotify: "https://open.spotify.com/track/0UYbE8Xk2k2eTSmrAJ3G0M"
+"a-few-words-for-the-firing-squad-radiation--run-the-jewels":
+  apple: "https://music.apple.com/us/album/a-few-words-for-the-firing-squad-radiation/1518054890?i=1518054902"
+  spotify: "https://open.spotify.com/track/0gDRZBhdSLqWhfTaWsOdcd"
+"a-fifth-of-beethoven-soulwax-edit--walter-murphy":
+  apple: "https://music.apple.com/us/album/a-fifth-of-beethoven/1445668458?i=1445668672"
+  spotify: "https://open.spotify.com/track/1hR3TNe1neCWRQatSVOFfX"
+  youtube: "https://www.youtube.com/watch?v=VimNTQ6cU7s"
+"all-along-the-watchtower--the-jimi-hendrix-experience":
+  apple: "https://music.apple.com/us/album/all-along-the-watchtower/344799413?i=344799727"
+  spotify: "https://open.spotify.com/track/7xdLNxZCtY68x5MAOBEmBq"
+"all-my-friends--the-revivalists":
+  apple: "https://music.apple.com/us/album/all-my-friends/1435379987?i=1435380191"
+  spotify: "https://open.spotify.com/track/2WgbFkQQswVVEWnyKnFo2q"
+"all-the-clocks-are-broken--cop-shoot-cop":
+  apple: "https://music.apple.com/us/album/all-the-clocks-are-broken/889105474?i=889109978"
+  spotify: "https://open.spotify.com/track/5f1SXLLjzagwpsDMXZcSMn"
+  youtube: "https://www.youtube.com/watch?v=qWeof5T2jfY"
+"american-life--primus":
+  apple: "https://music.apple.com/us/album/american-life/1442889993?i=1442890439"
+  spotify: "https://open.spotify.com/track/09WwqFDqX2zv8rlvf4xYAk"
+"armageddon--h6llb6nd6r":
+  apple: "https://music.apple.com/us/album/armageddon-feat-eville-adams/1563679114?i=1563679392"
+  spotify: "https://open.spotify.com/track/7v9D4da68zNtsYdnO3iMlN"
+"back-doin-what-we-do-best--big-tony-and-the-tf-crew":
+  apple: "https://music.apple.com/us/album/back-doin-what-we-do-best/491604199?i=491604571"
+  spotify: "https://open.spotify.com/track/7oDlhOJBnt1VZazLwLfsnP"
+"bad-guy--billie-eilish":
+  apple: "https://music.apple.com/us/album/bad-guy/1450695723?i=1450695739"
+  spotify: "https://open.spotify.com/track/2Fxmhks0bxGSBdJ92vM42m"
+"bad-things--summer-kennedy":
+  apple: "https://music.apple.com/us/album/bad-things/1400419727?i=1400420219"
+  spotify: "https://open.spotify.com/track/6p87eM03XdjSN916afHG0P"
+  youtube: "https://www.youtube.com/watch?v=Pv5dv8VtjvQ"
+"beacon--doomtree":
+  apple: "https://music.apple.com/us/album/beacon/1504590550?i=1504590554"
+  spotify: "https://open.spotify.com/track/7yRSO8BfT9mb3RM49kqPAg"
+"beethoven-cello-sonata-5-in-d-op-102-no-2-ii-adagio-con-molto-sentimento-d-affetto--yo-yo-ma-emanuel-ax":
+  apple: "https://music.apple.com/us/album/sonata-no-5-in-d-major-for-cello-and-piano-op-102-no/633694139?i=633694427"
+  spotify: "https://open.spotify.com/track/0T2a6HAUQT4lrDUaT6c6Gm"
+  youtube: "https://www.youtube.com/watch?v=8s9XqhV7pE8"
+"beethoven-symphony-7-in-a-op-92--vienna-philharmonic-carlos-kleiber":
+  apple: "https://music.apple.com/us/album/symphony-no-7-in-a-op-92-2-allegretto/1452272851?i=1452273534"
+  spotify: "https://open.spotify.com/track/02BYO3QLWIMeIrLY4GD4VT"
+"beethoven-symphony-9-in-d-minor--chicago-symphony-orchestra-georg-solti":
+  apple: "https://music.apple.com/us/album/symphony-no-9-in-d-minor-op-125-choral-ii-molto-vivace/1452190823?i=1452191178"
+  spotify: "https://open.spotify.com/track/5LWjmhmToDUMW0lQtqtrtr"
+"berlioz-les-troyens-act-iv-nuit-d-ivresse-et-d-extase--orchestra-of-the-royal-opera-house-sir-colin-davis-josephine-veasey-jon-vickers":
+  apple: "https://music.apple.com/us/album/les-troyens-op-29-h-133-act-4-nuit-divresse-et-dextase/1291127876?i=1291129195"
+  spotify: "https://open.spotify.com/track/6x57x2spgbb0Mu1zfF9EbB"
+"big-spender--shirley-bassey":
+  apple: "https://music.apple.com/us/album/big-spender/1728840134?i=1728840324"
+  spotify: "https://open.spotify.com/track/4afA085X8wBrfMTOlSKCjm"
+"biscuit--ivy-levan":
+  apple: "https://music.apple.com/us/album/biscuit/1443123965?i=1443124340"
+  spotify: "https://open.spotify.com/track/4IXooPlLUR2rCSeKWU4UNR"
+"bizet-carmen-act-1-l-amour-est-un-oiseau-rebelle-habanera--berlin-philharmonic-orchestra-sir-simon-rattle-magdalena-kozena-chor-des-deutschen-staatsoper":
+  apple: "https://music.apple.com/us/album/carmen-act-i-quand-je-vous-aimerai-habanera-lamour/6813519600?i=6813520390"
+  spotify: "https://open.spotify.com/track/46ZGkRGUmBEm2boUDIZKEa"
+"black-and-yellow--wiz-khalifa":
+  apple: "https://music.apple.com/us/album/black-and-yellow/426754280?i=426754283"
+  spotify: "https://open.spotify.com/track/5A6OHHy73AR5tLxgTc98zz"
+"black-hole-sun--nouela":
+  apple: "https://music.apple.com/us/album/black-hole-sun/1601874149?i=1601874150"
+  spotify: "https://open.spotify.com/track/2NAI2RvsLSELvMnl2aiwsf"
+"black-steel-in-the-hour-of-chaos--public-enemy":
+  apple: "https://music.apple.com/us/album/black-steel-in-the-hour-of-chaos/1440837788?i=1440838175"
+  spotify: "https://open.spotify.com/track/3XwsGAtbEoBUzJfFmHSHSo"
+"black-sun-feat-celldweller--james-dooley":
+  apple: "https://music.apple.com/us/album/black-sun-feat-celldweller/1716862549?i=1716862644"
+  spotify: "https://open.spotify.com/track/5jrNNub7b65b2bvQZ0U5Z1"
+"blank-page--the-black-heart-procession":
+  apple: "https://music.apple.com/us/album/blank-page/392040090?i=392040191"
+  spotify: "https://open.spotify.com/track/45NxXZhnUCpkvoy90uKVCg"
+"blood-in-the-cut--k-flay":
+  apple: "https://music.apple.com/us/album/blood-in-the-cut/1442932402?i=1442932415"
+  spotify: "https://open.spotify.com/track/4q604hQba5940BbOoaenmz"
+  youtube: "https://www.youtube.com/watch?v=RxgzbKTY0T4"
+"boogie-stop-shuffle--charles-mingus":
+  apple: "https://music.apple.com/us/album/boogie-stop-shuffle/636353127?i=636353351"
+  spotify: "https://open.spotify.com/track/4FGv56aPO9C1rcPDdvNz8l"
+  youtube: "https://www.youtube.com/watch?v=UGIK_NEJdVA"
+"boogie-street--leonard-cohen":
+  apple: "https://music.apple.com/us/album/boogie-street/511074815?i=511074970"
+  spotify: "https://open.spotify.com/track/1woLZv5UGeajS8tihQLNwy"
+"boom-boom-mancini--warren-zevon":
+  apple: "https://music.apple.com/us/album/boom-boom-mancini/1443603309?i=1443604072"
+  spotify: "https://open.spotify.com/track/31fxWGyIjH668f51PuIf0f"
+"boombayah--blackpink":
+  apple: "https://music.apple.com/us/album/boombayah/1315917456?i=1315917630"
+  spotify: "https://open.spotify.com/track/13MF2TYuyfITClL1R2ei6e"
+  youtube: "https://www.youtube.com/watch?v=bwmSjveL3Lc"
+"bop-gun-one-nation--ice-cube-feat-george-clinton":
+  apple: "https://music.apple.com/us/album/bop-gun-one-nation-feat-george-clinton-radio-edit/6781399311?i=6781399328"
+  spotify: "https://open.spotify.com/track/5JxHpWgSNi2gPoEyA2fbMC"
+"brahms-clarinet-quintet-in-b-minor-op-115-ii-adagio--amadeus-quartet-karl-leister":
+  apple: "https://music.apple.com/us/album/clarinet-quintet-in-b-minor-op-115-ii-adagio/1452212283?i=1452213113"
+  spotify: "https://open.spotify.com/track/4kcrGjcY7xZgouZXvsM0lL"
+"britten-war-requiem-op-66-lacrimosa-dies-illa--london-symphony-orchestra-and-chorus-benjamin-britten-galina-vishnevskaya-peter-pears":
+  apple: "https://music.apple.com/us/album/war-requiem-op-66-dies-irae-lacrimosa-dies-illa/1452648716?i=1452649046"
+  spotify: "https://open.spotify.com/track/4p7nTooSCCL9ezsYaubOns"
+"brothers-in-arms--dire-straits":
+  apple: "https://music.apple.com/us/album/brothers-in-arms/299545299?i=299545332"
+  spotify: "https://open.spotify.com/track/26tWBbtjvgi0tipRL2VQ2X"
+  youtube: "https://www.youtube.com/watch?v=ihWROnK9bJA"
+"buenos-aires--patti-lupone":
+  apple: "https://music.apple.com/us/album/buenos-aires/1440843076?i=1440843585"
+  spotify: "https://open.spotify.com/track/2jr0vNYZiiukPwICQFz0Us"
+"buffalo-whack-child--rise-robots-rise":
+  apple: "https://music.apple.com/us/album/buffalo-wack-child/486074313?i=486074318"
+  spotify: "https://open.spotify.com/track/7mfiQPhkzlnvPiv8VhGP3d"
+"bullet-with-butterfly-wings--karen-o":
+  apple: "https://music.apple.com/us/album/bullet-with-butterfly-wings-from-hanna/1450857502?i=1450857503"
+  spotify: "https://open.spotify.com/track/4A7FwVNI9KMb9bwn89DPzK"
+  youtube: "https://www.youtube.com/watch?v=1joMS0Hyj-g"
+"burn-my-shadow--unkle":
+  apple: "https://music.apple.com/us/album/burn-my-shadow/714713234?i=714713450"
+  spotify: "https://open.spotify.com/track/0xF3z8t1k3wceLvCESjNrx"
+  youtube: "https://www.youtube.com/watch?v=-MhrQQtueBw"
+"burning-down-the-house--paramore":
+  apple: "https://music.apple.com/us/album/burning-down-the-house/6780815242?i=6780815254"
+  spotify: "https://open.spotify.com/track/4dA5XSPaXKFhrsTvQ8kvj6"
+"byb-hello--backyard-band":
+  apple: "https://music.apple.com/us/album/byb-hello-bonus-track/1109138649?i=1109139918"
+  spotify: "https://open.spotify.com/track/4T0FAthftPuGCvFF0KsJTV"
+  youtube: "https://www.youtube.com/watch?v=n8ggqtWqugI"
+"c-r-e-a-m--wu-tang-clan":
+  apple: "https://music.apple.com/us/album/c-r-e-a-m-feat-method-man-raekwon-inspectah-deck-buddha-monk/1746566237?i=1746566980"
+  spotify: "https://open.spotify.com/track/119c93MHjrDLJTApCVGpvx"
+"california-love--2pac":
+  apple: "https://music.apple.com/us/album/california-love-feat-roger-troutman-dr-dre/1440830932?i=1440831113"
+  spotify: "https://open.spotify.com/track/3djNBlI7xOggg7pnsOLaNm"
+  youtube: "https://www.youtube.com/watch?v=J7_bMdYfSws"
+"came-back-haunted--nine-inch-nails":
+  apple: "https://music.apple.com/us/album/came-back-haunted/1882627302?i=1882627306"
+  spotify: "https://open.spotify.com/track/2wUY22c6Q9WuAcamm7TZLo"
+"came-for-the-low--zhu-and-partywithray":
+  apple: "https://music.apple.com/us/album/came-for-the-low/1483711207?i=1483711211"
+  spotify: "https://open.spotify.com/track/3zePw5mWb6vO7CBkOmZRfQ"
+"can-t-get-you-out-of-my-head--kylie-minogue":
+  apple: "https://music.apple.com/us/album/cant-get-you-out-of-my-head/726320287?i=726320692"
+  spotify: "https://open.spotify.com/track/3E7ZwUMJFqpsDOJzEkBrQ7"
+"casey-s-last-ride--emmylou-harris":
+  apple: "https://music.apple.com/us/album/caseys-last-ride/294359979?i=294360546"
+  spotify: "https://open.spotify.com/track/5lg4tjOGoUzpvUJMCs7ywl"
+"cathedrals--d-c-larue":
+  apple: "https://music.apple.com/us/album/cathedrals/1783997957?i=1783998443"
+  spotify: "https://open.spotify.com/track/0b1Q6TZkVtJSHjMqegmxDD"
+"changes--david-bowie":
+  apple: "https://music.apple.com/us/album/changes/1090470635?i=1090471542"
+  spotify: "https://open.spotify.com/track/5kUKdmRFZbBfPRcqHJeEWD"
+"cheeba-cheeba--tone-loc":
+  apple: "https://music.apple.com/us/album/cheeba-cheeba/1440904844?i=1440904864"
+  spotify: "https://open.spotify.com/track/2SfCvAjoxwG9mySiYI2W9X"
+"chhote-chhote-peg--yo-yo-honey-singh-neha-kakkar":
+  apple: "https://music.apple.com/us/album/chhote-chhote-peg-from-sonu-ke-titu-ki-sweety/1466957326?i=1466957530"
+  spotify: "https://open.spotify.com/track/3AQrBSjowqCFu2jiFFuGsv"
+"chura-liya-woofer-destruction-mix--bally-sagoo-feat-reema-das-gupta-cheshire-cat-debashish-das-gupta":
+  apple: "https://music.apple.com/us/album/chura-liya-woofer-destruction-mix-feat-reema-das-gupta/691173470?i=691173473"
+  spotify: "https://open.spotify.com/track/7EkTCJ4xF0o0WRrAivvn3Q"
+  youtube: "https://www.youtube.com/watch?v=l7zvFwFqogY"
+"cirtlak-9-feat-iklim-tamkan--baba-zula":
+  apple: "https://music.apple.com/us/album/c%C4%B1rtlak-9-feat-i-klim-tamkan/6775530927?i=6775530936"
+  spotify: "https://open.spotify.com/track/3Rz7wtqK0DPpQHliwyxb64"
+"coin-operated-boy--the-dresden-dolls":
+  apple: "https://music.apple.com/us/album/coin-operated-boy/214387994?i=214388670"
+  spotify: "https://open.spotify.com/track/2OcJNw7K8cYs4FKoh8aEow"
+"colors--ice-t":
+  apple: "https://music.apple.com/us/album/colors/304939676?i=304939707"
+  spotify: "https://open.spotify.com/track/1a7dYR84TTIBx1WyccwsbT"
+"colum-s-song--nellie-mckay":
+  apple: "none"
+  spotify: "none"
+  youtube: "none"
+"connected--stereo-mcs":
+  apple: "https://music.apple.com/us/album/connected/1444180768?i=1444180774"
+  spotify: "https://open.spotify.com/track/5t09SnxOR2AelOghumKkXO"
+"control--spoek-mathambo":
+  apple: "https://music.apple.com/us/album/control/1451357235?i=1451357522"
+  spotify: "https://open.spotify.com/track/5rUaxQCe18KMxhxqobxSBj"
+"copperhead-road--steve-earle":
+  apple: "https://music.apple.com/us/album/copperhead-road/1440832255?i=1440832545"
+  spotify: "https://open.spotify.com/track/0VU5k3vCrpqDgUygMjiFYj"
+"cousin-mary--john-coltrane":
+  apple: "https://music.apple.com/us/album/cousin-mary/1384498373?i=1384499358"
+  spotify: "https://open.spotify.com/track/6ZI6lNlS3B5mzrSZucgrCf"
+"creep--scala-and-kolacny-brothers":
+  apple: "https://music.apple.com/us/album/creep/397297865?i=397297870"
+  spotify: "https://open.spotify.com/track/3Mz4SvGYz0006jcJzXZN6Q"
+"crossover--epmd":
+  apple: "https://music.apple.com/us/album/crossover/1738530544?i=1738531137"
+  spotify: "https://open.spotify.com/track/5JKSty49E9iv1Tj6lfx68n"
+"dancando-lambada--kaoma":
+  apple: "https://music.apple.com/us/album/dan%C3%A7ando-lambada/267982252?i=267982254"
+  spotify: "https://open.spotify.com/track/01ANsQiZq0LI6LWDQUDoTl"
+"dance-with-me--peter-brown":
+  apple: "https://music.apple.com/us/album/dance-with-me/315232164?i=315232272"
+  spotify: "https://open.spotify.com/track/3HOgUlwPDsh0kEFnbr5EL5"
+"dancer-in-the-dark--beborn-beton":
+  apple: "https://music.apple.com/us/album/dancer-in-the-dark/1659027252?i=1659027560"
+  spotify: "https://open.spotify.com/track/3VXyY0qr6uh1vbDUv6kQZu"
+  youtube: "https://www.youtube.com/watch?v=ryRDOdX2d54"
+"dark-things--adona":
+  apple: "https://music.apple.com/us/album/dark-things/1491566696?i=1491566698"
+  spotify: "https://open.spotify.com/track/1VUxTnnIhMyJyWCBnSazbE"
+"dead-souls--joy-division":
+  apple: "https://music.apple.com/us/album/dead-souls/275968300?i=275968344"
+  spotify: "https://open.spotify.com/track/1cjzx1lSvXO42zLAZq1zzP"
+"devil-devil--milck":
+  apple: "https://music.apple.com/us/album/devil-devil/1680781457?i=1680781458"
+  spotify: "https://open.spotify.com/track/0EE1wyppif56kWOdETvVsg"
+  youtube: "https://www.youtube.com/watch?v=jEMrDXP8vs4"
+"didi--khaled":
+  apple: "https://music.apple.com/us/album/didi/1452869231?i=1452869513"
+  spotify: "https://open.spotify.com/track/39GNZAuUKTvX1sSEfMUKGf"
+"dirty--grandson":
+  apple: "https://music.apple.com/us/album/dirty/1532717460?i=1532717465"
+  spotify: "https://open.spotify.com/track/3pShTDa5E1bPBkrc1mxxGY"
+"disco-inferno--50-cent":
+  apple: "https://music.apple.com/us/album/disco-inferno/1444007100?i=1444007314"
+  spotify: "https://open.spotify.com/track/69bHJ9qs5FrUJbKP8xU8uZ"
+"diva--beyonce":
+  apple: "https://music.apple.com/us/album/diva/296016891?i=296016901"
+  spotify: "https://open.spotify.com/track/5Ssv6DaKrW0HczVqx6zXdl"
+"do-i-wanna-know--arctic-monkeys":
+  apple: "https://music.apple.com/us/album/do-i-wanna-know/663097964?i=663097965"
+  spotify: "https://open.spotify.com/track/5FVd6KXrgO9B3JPmC8OPst"
+"dog-star-girl--debbie-harry":
+  apple: "none"
+  spotify: "https://open.spotify.com/track/0NnvEcK6GM942EwEeVMaQ6"
+  youtube: "https://www.youtube.com/watch?v=q37wpDtt5dA"
+"donizetti-lucia-di-lammermoor-act-3-il-dolce-suono--philharmonia-orchestra-maria-callas-philharmonia-chorus":
+  apple: "https://music.apple.com/us/album/lucia-di-lammermoor-act-3-il-dolce-suono-ardon-gli/890278787?i=890285011"
+  spotify: "https://open.spotify.com/track/624hRkTRSU2W9saX9bV97p"
+"doo-wop-that-thing--lauryn-hill":
+  apple: "https://music.apple.com/us/album/doo-wop-that-thing/1276760743?i=1276760748"
+  spotify: "https://open.spotify.com/track/0uEp9E98JB5awlA084uaIg"
+"down-with-me--yorxe":
+  apple: "https://music.apple.com/us/album/down-with-me/1529466609?i=1529466610"
+  spotify: "https://open.spotify.com/track/1ywlUa0tZLGJTev2qhEeSc"
+"dress--p-j-harvey":
+  apple: "https://music.apple.com/us/album/dress/1443489023?i=1443489034"
+  spotify: "https://open.spotify.com/track/3ajG91JkP3bAaLrDjywKNj"
+"drink-before-the-war--sinead-o-connor":
+  apple: "https://music.apple.com/us/album/drink-before-the-war/1629181905?i=1629181913"
+  spotify: "https://open.spotify.com/track/5Bmc87iF3wRWGyDbzcMrG3"
+  youtube: "https://www.youtube.com/watch?v=ggXpZTFv_nQ"
+"dvorak-symphony-8-in-g-op-88-ii-adagio--vienna-philharmonic-orchestra-herbert-von-karajan":
+  apple: "https://music.apple.com/us/album/symphony-no-8-in-g-op-88-ii-adagio/1452642346?i=1452642531"
+  spotify: "https://open.spotify.com/track/7HWdHLmoL4Nekjiv1SVl9k"
+"e-flat-boogie--trouble-funk":
+  apple: "https://music.apple.com/us/album/e-flat-boogie/491604199?i=491604202"
+  spotify: "https://open.spotify.com/track/1wVvRPg3JtYmu60l7maxtk"
+"edge-of-seventeen--stevie-nicks":
+  apple: "https://music.apple.com/us/album/edge-of-seventeen/312355381?i=312355447"
+  spotify: "https://open.spotify.com/track/3OeHBpJwMsIGcdumxCtzte"
+  youtube: "https://www.youtube.com/watch?v=3oZunnY-Cbs"
+"estimated-prophet--burning-spear":
+  apple: "https://music.apple.com/us/album/estimated-prophet/1434896210?i=1434896721"
+  spotify: "https://open.spotify.com/track/3C9RZNnUgoaEJXI3omUz9D"
+"everglade--l7":
+  apple: "https://music.apple.com/us/album/everglade/309736061?i=309736092"
+  spotify: "https://open.spotify.com/track/1nWccj9gU34OmDYL63pTFS"
+"everything-means-nothing-to-me--elliott-smith":
+  apple: "https://music.apple.com/us/album/everything-means-nothing-to-me/1474894272?i=1474894574"
+  spotify: "https://open.spotify.com/track/6YNfrgCOy1dCXZKKRUuZVq"
+  youtube: "https://www.youtube.com/watch?v=m2NCuoVMhjk"
+"feeling-good--my-brightest-diamond":
+  apple: "https://music.apple.com/us/album/feeling-good/303463575?i=303463617"
+  spotify: "https://open.spotify.com/track/63jOGArnfrkgDET9TTsee2"
+"fesuphanallah--erkin-koray":
+  apple: "https://music.apple.com/us/album/fesuphanallah/1488379736?i=1488379742"
+  spotify: "https://open.spotify.com/track/6lhQfjaPJQEV0ZIAVcmWVo"
+"flesh-without-blood--grimes":
+  apple: "https://music.apple.com/us/album/flesh-without-blood/1051022913?i=1051023732"
+  spotify: "https://open.spotify.com/track/62jc4VA6WPoANaL9Duu8db"
+"freek-a-leek-explicit--petey-pablo":
+  apple: "https://music.apple.com/us/album/freek-a-leek-dirty-version/202883306?i=202883678"
+  spotify: "https://open.spotify.com/track/46NLwKEUdsgiV4jWKN7JQd"
+"future-starts-slow--the-kills":
+  apple: "https://music.apple.com/us/album/future-starts-slow/422153217?i=422153220"
+  spotify: "https://open.spotify.com/track/0A0RBBTrgfq9eClnw6ZXT7"
+  youtube: "https://www.youtube.com/watch?v=0zcWbxP1f7w"
+"games-without-frontiers--peter-gabriel":
+  apple: "https://music.apple.com/us/album/games-without-frontiers/986876100?i=986880107"
+  spotify: "https://open.spotify.com/track/6bdJgvXaxIXeG9wyEzeYy8"
+"gangsta-gangsta--n-w-a":
+  apple: "https://music.apple.com/us/album/gangsta-gangsta/1440816032?i=1440816038"
+  spotify: "https://open.spotify.com/track/1pOIpxfrQ8AszXZdKR3aH3"
+  youtube: "https://www.youtube.com/watch?v=aCAkHFavEdw"
+"get-down--the-huck-a-bucks":
+  apple: "https://music.apple.com/us/album/get-down/447781201?i=447781221"
+  spotify: "https://open.spotify.com/track/28fAQKhmK7HEPODQPxDpoO"
+"get-real-paid--beck":
+  apple: "https://music.apple.com/us/album/get-real-paid/1440664011?i=1440664019"
+  spotify: "https://open.spotify.com/track/5SQu2nhLktY22zZlNi1V6d"
+"ghetto-defendant--the-clash":
+  apple: "https://music.apple.com/us/album/ghetto-defendant/685585931?i=685586131"
+  spotify: "https://open.spotify.com/track/4WidRX7HuOreEGkQ6tKBBi"
+"ghetto-in-the-sky--aswad":
+  apple: "https://music.apple.com/us/album/ghetto-in-the-sky/1444112538?i=1444113204"
+  spotify: "https://open.spotify.com/track/1Mo1kG7QaR7nIH9acfeG0T"
+"gimme-sympathy--metric":
+  apple: "https://music.apple.com/us/album/gimme-sympathy/1440945965?i=1440946134"
+  spotify: "https://open.spotify.com/track/4z2xy1UYMu70xCkWudeL96"
+"give-it-2-you--da-brat":
+  apple: "https://music.apple.com/us/album/give-it-2-you/208581883?i=208581940"
+  spotify: "https://open.spotify.com/track/7K1TyzMSR0s2iVlepOh75L"
+"givin-em-what-they-love--janelle-monae":
+  apple: "https://music.apple.com/us/album/givin-em-what-they-love-feat-prince/665514095?i=665514253"
+  spotify: "https://open.spotify.com/track/2zb8ev6jszAHTo2OuxEpVN"
+  youtube: "https://www.youtube.com/watch?v=56mGbtZT5cU"
+"going-back-to-cali--ll-cool-j":
+  apple: "https://music.apple.com/us/album/going-back-to-cali/1442879793?i=1442879953"
+  spotify: "https://open.spotify.com/track/0l8a9USuEnowlJld5uxp7F"
+"gold-dust-woman--waylon-jennings":
+  apple: "https://music.apple.com/us/album/gold-dust-woman-remastered/258517406?i=258518154"
+  spotify: "https://open.spotify.com/track/2ektNTZPN9KgOLt1CwnWxY"
+  youtube: "https://www.youtube.com/watch?v=X3IxmN0CU80"
+"golden-days--fanfare-ciocarlia":
+  apple: "https://music.apple.com/us/album/golden-days/68776808?i=68776049"
+  spotify: "https://open.spotify.com/track/3P925Fkj6sV3o04CivhqGw"
+"goliath--woodkid":
+  apple: "https://music.apple.com/us/album/goliath/1528773462?i=1528773470"
+  spotify: "https://open.spotify.com/track/3TdQ399gmy71IUdz3DoaO4"
+"gun-street-girl--tom-waits":
+  apple: "https://music.apple.com/us/album/gun-street-girl-2023-remaster/1695046955?i=1695048137"
+  spotify: "https://open.spotify.com/track/7sWowtPvYuftiWrc1yaVqq"
+"guns-of-brixton--nouvelle-vague":
+  apple: "https://music.apple.com/us/album/guns-of-brixton-feat-camille/1693635993?i=1693636509"
+  spotify: "https://open.spotify.com/track/2Aq7srwZxnsj6YjLsNmpOr"
+"gyrate--rezz-quackson-and-wreckno":
+  apple: "https://music.apple.com/us/album/gyrate/1660542577?i=1660542583"
+  spotify: "https://open.spotify.com/track/1t0cVl9nW6zkUeow0RCLqA"
+"hand-on-the-pump--cypress-hill":
+  apple: "https://music.apple.com/us/album/hand-on-the-pump/920156732?i=920156795"
+  spotify: "https://open.spotify.com/track/1TeVeYATRojNVCH7q1APiv"
+"hate-me-now--nas-and-puff-daddy":
+  apple: "https://music.apple.com/us/album/hate-me-now-feat-puff-daddy/216999742?i=216999880"
+  spotify: "https://open.spotify.com/track/0j0yQeR52NUatMLFdkNgKr"
+"hazy-shade-of-winter--the-bangles":
+  apple: "https://music.apple.com/us/album/hazy-shade-of-winter/193605824?i=193606629"
+  spotify: "https://open.spotify.com/track/0GXBpsmUvg5x5qSn4tkKJN"
+"heart-of-the-city-ain-t-no-love--jay-z":
+  apple: "https://music.apple.com/us/album/heart-of-the-city-aint-no-love/1440933859?i=1440934092"
+  spotify: "https://open.spotify.com/track/6gpZSI0xEMTzleBc5ykOVA"
+"heart-shaped-box--ramin-djawadi":
+  apple: "https://music.apple.com/us/album/heart-shaped-box-orchestral/1454594548?i=1454594890"
+  spotify: "https://open.spotify.com/track/0OSfLPEQb1PLL0Q0C2xZVE"
+  youtube: "https://www.youtube.com/watch?v=c34N6JFLAsM"
+"heartbeat-2012-remaster--taana-gardner":
+  apple: "https://music.apple.com/us/album/heartbeat-club-version-2012-remaster/1438125407?i=1438125409"
+  spotify: "https://open.spotify.com/track/013t6xtzaYkn3s0jhrxmIe"
+"heavy-balloon--fiona-apple":
+  apple: "https://music.apple.com/us/album/heavy-balloon/1507811635?i=1507812211"
+  spotify: "https://open.spotify.com/track/2OQpQTRogZ1AhnUHJiT9Nb"
+"help-us-save-us-take-us-away--kmfdm":
+  apple: "https://music.apple.com/us/album/help-us-save-us-take-us-away/413193962?i=413194595"
+  spotify: "https://open.spotify.com/track/4s9RaGX6HNxwOMZ6eYgceK"
+"hey-pretty--poe":
+  apple: "https://music.apple.com/us/album/hey-pretty/326672049?i=326672136"
+  spotify: "https://open.spotify.com/track/2dv3lIKCUtBTz16bV3ANvy"
+"hi-hater--maino":
+  apple: "https://music.apple.com/us/album/hi-hater/320265549?i=320265717"
+  spotify: "https://open.spotify.com/track/77bTQGPyEl2yj2bFcDOmWE"
+"high-grade--gentleman-s-dub-club":
+  apple: "https://music.apple.com/us/album/high-grade/504306745?i=504306746"
+  spotify: "https://open.spotify.com/track/5XFXq4iiVu1d6PGUwcY5xQ"
+"history-repeating--propellerheads-and-shirley-bassey":
+  apple: "https://music.apple.com/us/album/history-repeating-feat-miss-shirley-bassey/696885236?i=696886440"
+  spotify: "https://open.spotify.com/track/3cQPQu1BRz0thXh0u7i2Q3"
+"holy-diver--dio":
+  apple: "https://music.apple.com/us/album/holy-diver/255914531?i=255917247"
+  spotify: "https://open.spotify.com/track/57fqmDaokbxZ3TaB0jp39q"
+  youtube: "https://www.youtube.com/watch?v=v9M7g-nKMBU"
+"holy-ghost--rare-essence":
+  apple: "https://music.apple.com/us/album/holy-ghost/447807793?i=447807851"
+  spotify: "https://open.spotify.com/track/08eZmnJaZr1KJftJ4gPepO"
+"humble--kendrick-lamar":
+  apple: "https://music.apple.com/us/album/humble/1440881722?i=1440882165"
+  spotify: "https://open.spotify.com/track/7KXjTSCq5nL1LoYtL7XAwS"
+  youtube: "https://www.youtube.com/watch?v=ov4WobPqoSA"
+"i-got-5-on-it--luniz-feat-michael-marshall":
+  apple: "https://music.apple.com/us/album/i-got-5-on-it-feat-michael-marshall/712330598?i=712330693"
+  spotify: "https://open.spotify.com/track/4IYKjN1DrYzxKXt0umJqsG"
+"i-got-love--nate-dogg":
+  apple: "https://music.apple.com/us/album/i-got-love/297721514?i=297721518"
+  spotify: "https://open.spotify.com/track/6dDZQq1Ol9CDzSPBdqrM6a"
+"i-know-you-rider--the-seldom-scene":
+  apple: "https://music.apple.com/us/album/rider-live/1808068148?i=1808068247"
+  spotify: "https://open.spotify.com/track/3g9UmwPWDklfUV9vlOjoA3"
+  youtube: "https://www.youtube.com/watch?v=rxOo-BnmSrI"
+"i-left-my-wallet-in-el-segundo--a-tribe-called-quest":
+  apple: "https://music.apple.com/us/album/i-left-my-wallet-in-el-segundo/266768420?i=266768717"
+  spotify: "https://open.spotify.com/track/045X9H7gwtQT7mJFsiYmI7"
+"i-put-a-spell-on-you--natacha-atlas":
+  apple: "https://music.apple.com/us/album/i-put-a-spell-on-you/1025324047?i=1025324061"
+  spotify: "https://open.spotify.com/track/7d8XI4XryEEn5PSEU0Qucw"
+"i-wanna-be-your-dog--joan-jett-and-the-blackhearts":
+  apple: "https://music.apple.com/us/album/i-wanna-be-your-dog/190178956?i=190179331"
+  spotify: "https://open.spotify.com/track/2VppbCFGniv58380qH2Ut3"
+  youtube: "https://www.youtube.com/watch?v=-Fw_YuuGqBY"
+"i-wish-i-was-the-moon--neko-case":
+  apple: "https://music.apple.com/us/album/i-wish-i-was-the-moon/1485022627?i=1485022640"
+  spotify: "https://open.spotify.com/track/4PxzGOH79jcmmldKgoI9sB"
+"if-i-can-t-dance--sophie-ellis-bextor":
+  apple: "https://music.apple.com/us/album/if-i-cant-dance/1443114049?i=1443114069"
+  spotify: "https://open.spotify.com/track/1FBPdXaWvaAOsoZxAkzDEz"
+"im-nin-alu-english-mix--ofra-haza":
+  apple: "https://music.apple.com/us/album/im-ninalu-english-mix-edit/1884795081?i=1884795084"
+  spotify: "https://open.spotify.com/track/4CePJrjERoK063tIFSM0iO"
+"in-a-gadda-da-vida--slayer":
+  apple: "https://music.apple.com/us/album/in-a-gadda-da-vida/1443268326?i=1443269252"
+  spotify: "https://open.spotify.com/track/4KvDonKbMKEDIpb4JPCAPw"
+"in-bloom--sturgill-simpson":
+  apple: "https://music.apple.com/us/album/in-bloom/1088518253?i=1088518561"
+  spotify: "https://open.spotify.com/track/5StrN0F4XI5e0BHP32THhl"
+"in-king-david-s-style--mad-professor":
+  apple: "https://music.apple.com/us/album/in-king-davids-style/42268093?i=42268073"
+  spotify: "https://open.spotify.com/track/6r4uYeyDKR3SITWTOABKWp"
+"interstellar-overdrive--pink-floyd":
+  apple: "https://music.apple.com/us/album/interstellar-overdrive/1065975041?i=1065975053"
+  spotify: "https://open.spotify.com/track/3xyTufSSGLP3oZnomceAVW"
+"it-s-a-fire--portishead":
+  apple: "https://music.apple.com/us/album/its-a-fire/1440653096?i=1440653109"
+  spotify: "https://open.spotify.com/track/6JHGaBhtCbfEtOh5ea7fLI"
+"it-takes-two--rob-base-and-dj-ez-rock":
+  apple: "https://music.apple.com/us/album/it-takes-two/871784447?i=871784538"
+  spotify: "https://open.spotify.com/track/0gFB5H3pHN13ERt2FyMuWi"
+"jamu-cinta--detty-kurnia":
+  apple: "https://music.apple.com/us/album/jamu-cinta/1846358315?i=1846358317"
+  spotify: "https://open.spotify.com/track/2s4YnKoXPY9h1AchlckeSh"
+"jimmy--m-i-a":
+  apple: "https://music.apple.com/us/album/jimmy/296393419?i=296393457"
+  spotify: "https://open.spotify.com/track/60r0mEqH580d1kYWGeEpwM"
+"juicy--the-notorious-b-i-g":
+  apple: "https://music.apple.com/us/album/juicy/217613303?i=217613305"
+  spotify: "https://open.spotify.com/track/2b7FqlHc3JrzlYtGEkzq22"
+"kelma--rachid-taha":
+  apple: "https://music.apple.com/us/album/kelma/1443873979?i=1443874219"
+  spotify: "https://open.spotify.com/track/4UgTUUfp2MmM3GcRLofRv7"
+  youtube: "https://www.youtube.com/watch?v=T55ZIRjBAgA"
+"kick-the-door--betta-lemme":
+  apple: "https://music.apple.com/us/album/kick-the-door/1714920093?i=1714920094"
+  spotify: "https://open.spotify.com/track/6GkoRlDhR3JwKlCpSSm20q"
+"killing-me-softly--roberta-flack":
+  apple: "https://music.apple.com/us/album/killing-me-softly-with-his-song/355038498?i=355038523"
+  spotify: "https://open.spotify.com/track/3gsCAGsWr6pUm1Vy7CPPob"
+"kingdom-rise-kingdom-fall--wailing-souls":
+  apple: "https://music.apple.com/us/album/kingdom-rise-kingdom-fall/383399013?i=383399938"
+  spotify: "https://open.spotify.com/track/1PeIc6VPBPZPPyTm6KeyWZ"
+"kmag-yoyo--hayes-carll":
+  apple: "https://music.apple.com/us/album/kmag-yoyo/1443718505?i=1443718614"
+  spotify: "https://open.spotify.com/track/54BYHlZdV2QsnoPPSnAK8t"
+"lady-madonna--booker-t-and-the-m-g-s":
+  apple: "https://music.apple.com/us/album/lady-madonna/1444149144?i=1444149724"
+  spotify: "https://open.spotify.com/track/2tNMlkhdWTv3PMHwznTY6K"
+"laffy-taffy-explicit--d4l":
+  apple: "https://music.apple.com/us/album/laffy-taffy/202964095?i=202964172"
+  spotify: "https://open.spotify.com/track/2ajhenDRiiAnCHHjsIOHhJ"
+"lemonade--gucci-mane":
+  apple: "https://music.apple.com/us/album/lemonade/342392469?i=342392487"
+  spotify: "https://open.spotify.com/track/6rUcS9i07F6okIe8wujs5J"
+  youtube: "https://www.youtube.com/watch?v=t-VmWl9iU3s"
+"let-all-mortal-flesh-keep-silence--moscow-synodal-choir":
+  apple: "https://music.apple.com/us/album/st-matthew-passion-the-crucifixion-let-all-mortal/1511283522?i=1511283616"
+  spotify: "https://open.spotify.com/track/0mYMEp0vki1Th2bM0rHNxZ"
+"let-it-ride-socket-beat--junkyard-band":
+  apple: "https://music.apple.com/us/album/let-it-ride-socket-beat/447773860?i=447773863"
+  spotify: "https://open.spotify.com/track/3v2DalSvNz7NSodSR8swd8"
+"lie-to-me--depeche-mode":
+  apple: "https://music.apple.com/us/album/lie-to-me/665413158?i=665414305"
+  spotify: "https://open.spotify.com/track/20fnqkgKNOzxDobwqSAMWa"
+"ligature--melvins":
+  apple: "https://music.apple.com/us/album/ligature/276578845?i=276578853"
+  spotify: "https://open.spotify.com/track/6qvbeaKX7oEqpXZgcFa7dF"
+"lil-ghetto-boy--dr-dre-feat-daz-and-snoop-dogg":
+  apple: "https://music.apple.com/us/album/lil-ghetto-boy-feat-daz-snoop-dogg/1668460963?i=1668461614"
+  spotify: "https://open.spotify.com/track/77tHKMBRVkxOugr1Z3N4et"
+"live-oak--jason-isbell":
+  apple: "https://music.apple.com/us/album/live-oak/644761037?i=644761344"
+  spotify: "https://open.spotify.com/track/51JJuDBT4n2bgVasYgkBjD"
+  youtube: "https://www.youtube.com/watch?v=b2Q3gcnCIUo"
+"look-what-the-cat-dragged-in--poison":
+  apple: "https://music.apple.com/us/album/look-what-the-cat-dragged-in/716014118?i=716014577"
+  spotify: "https://open.spotify.com/track/5DmRCfszmaz7osOPCmAHVI"
+"love-and-war--neil-young":
+  apple: "https://music.apple.com/us/album/love-and-war/393716373?i=393716377"
+  spotify: "https://open.spotify.com/track/6zg5U528U4IoLLN6mDHV8M"
+"luxury-problems--andy-stott":
+  apple: "https://music.apple.com/us/album/luxury-problems/574486965?i=574487126"
+  spotify: "https://open.spotify.com/track/2Qtq6zVNB4BgkLJUrdHoYR"
+"major-tom-coming-home--peter-schilling":
+  apple: "https://music.apple.com/us/album/major-tom-coming-home-directors-cut/1273258906?i=1273259360"
+  spotify: "https://open.spotify.com/track/7r2E6L83OLlp9bwmrkqMo3"
+"malpractice--faith-no-more":
+  apple: "https://music.apple.com/us/album/malpractice/184672979?i=184673374"
+  spotify: "https://open.spotify.com/track/44pIeSQF2D6sj9XlZ6I41s"
+  youtube: "https://www.youtube.com/watch?v=QYN0CntLzcE"
+"mandjou--salif-keita":
+  apple: "https://music.apple.com/us/album/mandjou/1442866997?i=1442867002"
+  spotify: "https://open.spotify.com/track/069z2PptV6FTSUWxm2y7uX"
+"maria-lando--susana-baca":
+  apple: "https://music.apple.com/us/album/mar%C3%ADa-lando/1552699119?i=1552699129"
+  spotify: "https://open.spotify.com/track/363nd7Fxruaf0CrQnK7p0m"
+  youtube: "https://www.youtube.com/watch?v=UR8CZbo6028"
+"marie-douceur-marie-colere--manon-hollander":
+  apple: "https://music.apple.com/us/album/marie-douceur-marie-col%C3%A8re/1685045744?i=1685048129"
+  spotify: "https://open.spotify.com/track/4IfhzsSrxR6156jl37fqZ3"
+"mendelssohn-violin-concerto-in-e-minor--yehudi-menuhin-wilhelm-furtwangler":
+  apple: "https://music.apple.com/us/album/violin-concerto-in-e-minor-op-64-mwv-o14-ii-andante/1586051076?i=1586051081"
+  spotify: "https://open.spotify.com/track/3vTwTGSsslUIAYP1Bvfzbw"
+"mexican-radio--wall-of-voodoo":
+  apple: "https://music.apple.com/us/album/mexican-radio/714836889?i=714837028"
+  spotify: "https://open.spotify.com/track/1JUBl7RQUp4wwpSLArvc3e"
+  youtube: "https://www.youtube.com/watch?v=gCYVfHfaTng"
+"mezzanine--massive-attack":
+  apple: "https://music.apple.com/us/album/mezzanine/724466069?i=724467035"
+  spotify: "https://open.spotify.com/track/4IfHYniNBoAATWV6iLEXRs"
+"microphone-fiend--eric-b-and-rakim":
+  apple: "https://music.apple.com/us/album/microphone-fiend/1440747053?i=1440747387"
+  spotify: "https://open.spotify.com/track/0cSJGFChou7M6u2ju9SWN1"
+"midnight-in-a-perfect-world--dj-shadow":
+  apple: "https://music.apple.com/us/album/midnight-in-a-perfect-world/1660367299?i=1660367636"
+  spotify: "https://open.spotify.com/track/1CSQ93z6LlLqYKJ2VvtUWF"
+"mississippi-goddam--nina-simone":
+  apple: "https://music.apple.com/us/album/mississippi-goddam-live-at-carnegie-hall-ny-1964/1469582687?i=1469583675"
+  spotify: "https://open.spotify.com/track/7bqqgJyG77IGaTRK3ZxjTT"
+  youtube: "https://www.youtube.com/watch?v=teqWnF-HD1M"
+"moirai-s-choir--delhia-de-france-and-robot-koch":
+  apple: "https://music.apple.com/us/album/moirais-choir/1383665793?i=1383665799"
+  spotify: "https://open.spotify.com/track/3FK1C0TE5SaLoYprHrqxSQ"
+"moments-in-love--art-of-noise":
+  apple: "https://music.apple.com/us/album/moments-in-love/1587907266?i=1587907542"
+  spotify: "https://open.spotify.com/track/0iAu1nA0Vq8zMVPpvlehyp"
+"monkey-man--the-rolling-stones":
+  apple: "https://music.apple.com/us/album/monkey-man-remastered-2019/1500642838?i=1500643063"
+  spotify: "https://open.spotify.com/track/7B3B9tt6XJQdch3DrbvWC4"
+  youtube: "https://www.youtube.com/watch?v=4Zbnvh6I4k4"
+"more-than-you-know--sonny-rollins-and-thelonious-monk":
+  apple: "https://music.apple.com/us/album/more-than-you-know/1443225489?i=1443225976"
+  spotify: "https://open.spotify.com/track/0ASYTPjwoyL5zX7OmhM2H4"
+"move-on-up--devon-russell":
+  apple: "https://music.apple.com/us/album/move-on-up/371858838?i=371858842"
+  spotify: "https://open.spotify.com/track/0SevIjJBbaFbdBAltKjgnb"
+"mozart-requiem-in-d-minor-k-626-sequentia-confutatis-maledictis--vienna-philharmonic-orchestra-georg-solti":
+  apple: "https://music.apple.com/us/album/requiem-in-d-minor-k-626-vii-confutatis/1452189503?i=1452190376"
+  spotify: "https://open.spotify.com/track/71pIFsU2nYjoHU7fiseMwW"
+"mozart-symphonie-nr-40-in-g-moll--berliner-philharmoniker-karl-bohm":
+  apple: "https://music.apple.com/us/album/symphony-no-40-in-g-minor-k-550-i-molto-allegro/968876434?i=968877119"
+  spotify: "https://open.spotify.com/track/0qW66mOhmW57BWEm5tIeD4"
+"muzik--knoc-turn-al":
+  apple: "https://music.apple.com/us/album/muzik/357825980?i=357826028"
+  spotify: "https://open.spotify.com/track/72vhmzioLB9DtiUkRSr39J"
+"my-ass-is-on-fire--mr-bungle":
+  apple: "https://music.apple.com/us/album/my-ass-is-on-fire/217612520?i=217612725"
+  spotify: "https://open.spotify.com/track/1Ybrwa7iKUp0kbLlcuwMma"
+"my-prerogative--bobby-brown":
+  apple: "https://music.apple.com/us/album/my-prerogative/1506276146?i=1506276440"
+  spotify: "https://open.spotify.com/track/0v9kGNjkKdQUdDoBIuiph4"
+"nia-long-instrumental--shredders":
+  apple: "https://music.apple.com/us/album/nia-long-instrumental/1615650561?i=1615650572"
+  spotify: "https://open.spotify.com/track/4e6zZZfGNDn8YcqSQvKoOF"
+"nolia-clap--utp":
+  apple: "https://music.apple.com/us/album/nolia-clap/1814205161?i=1814205724"
+  spotify: "https://open.spotify.com/track/3SPQmO8B1zi6V1ZhKSOoUZ"
+"paint-it-black--ciara":
+  apple: "https://music.apple.com/us/album/paint-it-black/1046622669?i=1046622683"
+  spotify: "https://open.spotify.com/track/2VP6E3tkWSbD2uHBioBDLp"
+"patola--guru-randhawa":
+  apple: "https://music.apple.com/us/album/patola-from-blackmail/1434556009?i=1434556020"
+  spotify: "https://open.spotify.com/track/17LZzRCY0iFWlDDuAG7BlM"
+"peg--steely-dan":
+  apple: "https://music.apple.com/us/album/peg/1706428459?i=1706428468"
+  spotify: "https://open.spotify.com/track/5emxp4RqsF6QoAWXW2Afrk"
+  youtube: "https://www.youtube.com/watch?v=u_pt3khMRFs"
+"petroleum-tinged--clark":
+  apple: "https://music.apple.com/us/album/petroleum-tinged/917623350?i=917623432"
+  spotify: "https://open.spotify.com/track/5pfrI5AVww2gPQ9H66Ps43"
+"pink-freak--elliot-lee":
+  apple: "https://music.apple.com/us/album/pink-freak/1812847991?i=1812847992"
+  spotify: "https://open.spotify.com/track/4NT9t0UwDJVRbLXP9HmYIg"
+"pitch-in-on-a-party--dj-quik":
+  apple: "https://music.apple.com/us/album/pitch-in-on-a-party/255285089?i=255286978"
+  spotify: "https://open.spotify.com/track/0E4WMXrVeaisStZcZxtlWV"
+"play-with-fire--ag-feat-valerie-broussard":
+  apple: "https://music.apple.com/us/album/play-with-fire-feat-valerie-broussard/1367605496?i=1367605857"
+  spotify: "https://open.spotify.com/track/4dfRUjjzVfvqhRrCkps03y"
+  youtube: "https://www.youtube.com/watch?v=pr1JKGbYrIA"
+"pneuma--tool":
+  apple: "https://music.apple.com/us/album/pneuma/1475686696?i=1475686700"
+  spotify: "https://open.spotify.com/track/03sEzk1VyrUZSgyhoQR0LZ"
+"poison-in-the-water--von-grey":
+  apple: "https://music.apple.com/us/album/poison-in-the-water/1315118061?i=1315118068"
+  spotify: "https://open.spotify.com/track/0ezgN8wpTM3SUFP8ncU90a"
+"pouring-rain--fishbone":
+  apple: "https://music.apple.com/us/album/pouring-rain/196393427?i=196393862"
+  spotify: "https://open.spotify.com/track/0QCoH6BsezAw3VOYbbp46s"
+"precious-things--tori-amos":
+  apple: "https://music.apple.com/us/album/precious-things-remastered/961925135?i=961925156"
+  spotify: "https://open.spotify.com/track/2PAol2oDdGSHys8hc0gtLX"
+"pretty-girls--wale-feat-gucci-mane-and-weensey":
+  apple: "https://music.apple.com/us/album/pretty-girls-feat-gucci-mane-weensey/1442823949?i=1442823959"
+  spotify: "https://open.spotify.com/track/48XfWQWviUHEIbf5hgA7TS"
+  youtube: "https://www.youtube.com/watch?v=6Rq7hw7Ai2Y"
+"puccini-la-boheme-act-i-o-soave-fanciulla--luciano-pavarotti-mirella-freni":
+  apple: "https://music.apple.com/us/album/la-boh%C3%A8me-act-i-o-soave-fanciulla-love-duet/1751292295?i=1751303699"
+  spotify: "https://open.spotify.com/track/07k71c8312GKekT3pdz5Cj"
+"puccini-tosca-act-i-recondita-armonia--maria-callas":
+  apple: "https://music.apple.com/us/album/tosca-2002-remaster-act-i-dammi-i-colori-recondita/734529665?i=734529960"
+  spotify: "https://open.spotify.com/track/6vOwKVZSVpjao0TVPYHONx"
+"puccini-turandot-act-iii-nessun-dorma--london-philharmonic-orchestra-zubin-mehta-luciano-pavarotti":
+  apple: "https://music.apple.com/us/album/turandot-act-iii-scene-1-nessun-dorma/1452649152?i=1452651321"
+  spotify: "https://open.spotify.com/track/3b9Dae2aPvOGKNOcdhj9CP"
+"put-your-hands-where-my-eyes-could-see--busta-rhymes":
+  apple: "https://music.apple.com/us/album/put-your-hands-where-my-eyes-could-see/1797059746?i=1797060399"
+  spotify: "https://open.spotify.com/track/3jbSkkfiZigzEq4mwGQI2d"
+"rapper-s-delight--the-sugarhill-gang":
+  apple: "https://music.apple.com/us/album/rappers-delight-7-single-version/51958106?i=51958108"
+  spotify: "https://open.spotify.com/track/1FnxNtKli7rcB9IU4J8MEg"
+"release-yo-delf-prodigy-remix--method-man":
+  apple: "https://music.apple.com/us/album/release-yo-delf-prodigy-remix/714713234?i=714713274"
+  spotify: "https://open.spotify.com/track/2ERTSo7jclTV6hPtwVDNTS"
+  youtube: "https://www.youtube.com/watch?v=Ks_95fcKyw0"
+"repo-man--iggy-pop":
+  apple: "https://music.apple.com/us/album/repo-man-demo-march-1983/1056997177?i=1056997399"
+  spotify: "https://open.spotify.com/track/4A2qRryivql0dGYkbVrQPJ"
+"ridin--chamillionaire-feat-krayzie-bone":
+  apple: "https://music.apple.com/us/album/ridin-feat-krayzie-bone/1443906042?i=1443906056"
+  spotify: "https://open.spotify.com/track/3kZoay4ANo86ehb6s4RwS9"
+"rock-me-tonite--billy-squier":
+  apple: "https://music.apple.com/us/album/rock-me-tonite/725803583?i=725803893"
+  spotify: "https://open.spotify.com/track/6oTxxZ5PZcMovSWzehAvwr"
+"rock-on--david-essex":
+  apple: "https://music.apple.com/us/album/rock-on/209946105?i=209946533"
+  spotify: "https://open.spotify.com/track/0uPIwcT6OdJ5BAJdYkxVp9"
+"rossini-il-barbiere-di-siviglia-act-1-largo-al-factotum--london-symphony-orchestra-claudio-abbado-hermann-prey-teresa-berganza-ambrosian-opera-chorus":
+  apple: "https://music.apple.com/us/album/il-barbiere-di-siviglia-act-1-largo-al-factotum-ah/1377455573?i=1377456254"
+  spotify: "https://open.spotify.com/track/1EbOoQMcNjjtM8VQYLpgQf"
+"round-midnight--thelonious-monk":
+  apple: "https://music.apple.com/us/album/round-midnight/157428510?i=157428534"
+  spotify: "https://open.spotify.com/track/1oXBulkrwnsySKDgDxfbMa"
+"rumour-has-it--adele":
+  apple: "https://music.apple.com/us/album/rumour-has-it/1544491232?i=1544491234"
+  spotify: "https://open.spotify.com/track/2A73XBDBQgmdXO8VsXPWIs"
+"run-joe--chuck-brown-and-the-soul-searchers":
+  apple: "https://music.apple.com/us/album/run-joe-live/447726671?i=447726694"
+  spotify: "https://open.spotify.com/track/5rTF4zjVSNVHIij8NS3IbW"
+  youtube: "https://www.youtube.com/watch?v=GKHdLssi2NE"
+"running-with-scissors--sizzy-rocket":
+  apple: "https://music.apple.com/us/album/running-with-scissors/1529329542?i=1529329550"
+  spotify: "https://open.spotify.com/track/7Cr0h5efqNpj3axVrFdIfl"
+"same-song--digital-underground":
+  apple: "https://music.apple.com/us/album/same-song/1604630067?i=1604630068"
+  spotify: "https://open.spotify.com/track/2SIVPuWP84mPNhF0Ns9nWC"
+"savoy-truffle--the-beatles":
+  apple: "https://music.apple.com/us/album/savoy-truffle/1441133180?i=1441134470"
+  spotify: "https://open.spotify.com/track/5iyCSUM7zzficwaGo8GIoc"
+"secret-77--bad-brains":
+  apple: "https://music.apple.com/us/album/secret-77/1469831735?i=1469831741"
+  spotify: "https://open.spotify.com/track/7HOE7fNjVqH4SJQ1m63BsR"
+"secret-journey--the-police":
+  apple: "https://music.apple.com/us/album/secret-journey-remastered-2003/1440754948?i=1440755634"
+  spotify: "https://open.spotify.com/track/1klFQ3R5AN86f0moMUdSYS"
+"shake-it-like-a-white-girl--e-u":
+  apple: "https://music.apple.com/us/album/shake-it-like-a-white-girl/814509416?i=814509438"
+  spotify: "https://open.spotify.com/track/6ycPkXvginFmsMRJeQH5sH"
+"she-s-a-bad-girl--slug-go":
+  apple: "https://music.apple.com/us/album/shes-a-bad-girl/491680382?i=491680813"
+  spotify: "https://open.spotify.com/track/4Qpbjv7O1NK20jksskzH3x"
+  youtube: "https://www.youtube.com/watch?v=VcIPodjnGYo"
+"shook-ones-pt-ii--mobb-deep":
+  apple: "https://music.apple.com/us/album/shook-ones-pt-ii/255342338?i=255345554"
+  spotify: "https://open.spotify.com/track/33ZXjLCpiINn8eQIDYEPTD"
+  youtube: "https://www.youtube.com/watch?v=4IMHQmKPYko"
+"shoop--salt-n-pepa":
+  apple: "https://music.apple.com/us/album/shoop-re-recorded-remastered/732709939?i=732709945"
+  spotify: "https://open.spotify.com/track/0g1ComliYYCOOIrqxjcmb1"
+"shostakovich-symphony-5-in-d-minor--royal-concertgebouw-orchestra-bernard-haitink":
+  apple: "https://music.apple.com/us/album/symphony-no-5-in-d-minor-op-47-ii-allegretto/1452503805?i=1452503906"
+  spotify: "https://open.spotify.com/track/75bYp2Q6C0iVofFCGyB9pk"
+"shut-me-up--mindless-self-indulgence":
+  apple: "https://music.apple.com/us/album/shut-me-up/413203260?i=413203261"
+  spotify: "https://open.spotify.com/track/7AH9Fmka4of4Y25lfhvBUC"
+"siren-song--maruv":
+  apple: "https://music.apple.com/us/album/siren-song/1451816229?i=1451816230"
+  spotify: "https://open.spotify.com/track/1RgSs1Jy3QHiacsnMxAAL2"
+"sixty-eight-guns--the-alarm":
+  apple: "https://music.apple.com/us/album/sixty-eight-guns-2014-re-recording/1324468204?i=1324468432"
+  spotify: "https://open.spotify.com/track/62kaWW895O8RSjdWJAo9Sl"
+  youtube: "https://www.youtube.com/watch?v=69w3grKW_pI"
+"slippery-people--talking-heads":
+  apple: "https://music.apple.com/us/album/slippery-people-live/290073030?i=290073036"
+  spotify: "https://open.spotify.com/track/2WDvW3o8WeGN4v4cpsYVhT"
+"small-town--morcheeba":
+  apple: "https://music.apple.com/us/album/small-town/95754106?i=95751391"
+  spotify: "https://open.spotify.com/track/44zw5iAPAFjVEWzFRbX0xD"
+  youtube: "https://www.youtube.com/watch?v=7DtUNLwH2Yo"
+"so-fresh-so-clean--outkast-feat-snoop-dogg":
+  apple: "https://music.apple.com/us/album/so-fresh-so-clean/255836651?i=255836736"
+  spotify: "https://open.spotify.com/track/6glsMWIMIxQ4BedzLqGVi4"
+"space-lord--monster-magnet":
+  apple: "https://music.apple.com/us/album/space-lord-edited/1713571795?i=1713572162"
+  spotify: "https://open.spotify.com/track/5vUenp37PJt3ZgIrE3Mk6i"
+"space-truckin--ministry":
+  apple: "https://music.apple.com/us/album/space-truckin/276434126?i=276434329"
+  spotify: "https://open.spotify.com/track/0iz0pEs53061Y6kHPjchgT"
+  youtube: "https://www.youtube.com/watch?v=3qNTISx4UDw"
+"stained-glass-mixed--fatum":
+  apple: "https://music.apple.com/us/album/stained-glass-mixed/1608472213?i=1608472214"
+  spotify: "https://open.spotify.com/track/0cNbcpUwUhC33tWgzKc8Zk"
+"stand-up--ludacris-feat-shawnna":
+  apple: "https://music.apple.com/us/album/stand-up-feat-shawnna/1442839424?i=1442839681"
+  spotify: "https://open.spotify.com/track/2CtCwQhY0ZLvr8L2l8Bo6e"
+  youtube: "https://www.youtube.com/watch?v=VyT_54PLfWE"
+"stay-and-decay--unlike-pluto":
+  apple: "https://music.apple.com/us/album/stay-and-decay/1880712975?i=1880712976"
+  spotify: "https://open.spotify.com/track/4usFuo5AEqPqe4XgTU3tHZ"
+"straight-no-chaser--miles-davis-and-john-coltrane":
+  apple: "https://music.apple.com/us/album/straight-no-chaser/153017599?i=153018313"
+  spotify: "https://open.spotify.com/track/3jNHGX96ic6Gb14Sj8KsBM"
+  youtube: "https://www.youtube.com/watch?v=a047hPsYZd8"
+"superstar--lupe-fiasco":
+  apple: "https://music.apple.com/us/album/superstar-feat-matthew-santos/269746624?i=269746765"
+  spotify: "https://open.spotify.com/track/5EA7UNBqezqvJHKHxHRdz4"
+"sway--julie-london":
+  apple: "https://music.apple.com/us/album/sway/1453737804?i=1453737988"
+  spotify: "https://open.spotify.com/track/1LQpHqd7s22WHogUGJdgqJ"
+"take-the-a-train--duke-ellington-and-his-orchestra":
+  apple: "https://music.apple.com/us/album/take-the-a-train/902277483?i=902277498"
+  spotify: "https://open.spotify.com/track/1teNmj9lc8BXjLP0m1rfqP"
+  youtube: "https://www.youtube.com/watch?v=WWQa46ywOtM"
+"talking-in-your-sleep--ag-feat-daniella-mason":
+  apple: "https://music.apple.com/us/album/talking-in-your-sleep-feat-daniella-mason/1741387460?i=1741387461"
+  spotify: "https://open.spotify.com/track/3mbI3WHLU2vk34tptcPgkF"
+  youtube: "https://www.youtube.com/watch?v=eUrMJEt5E9Y"
+"tchaikovsky-eugene-onegin-op-24-act-ii-scene-2-kuda-kuda-vi-udalilis--the-metropolitan-opera-orchestra-jiri-belohlavek-piotr-beczala":
+  apple: "https://music.apple.com/us/album/eugene-onegin-op-24-scene-2-introduction-scene-and/1452554366?i=1452556080"
+  spotify: "https://open.spotify.com/track/3CTB05meHEqXOf4PKhjZcO"
+"tenere-taqhim-tossam--tinariwen":
+  apple: "https://music.apple.com/us/album/tenere-taqhim-tossam/1818632149?i=1818632662"
+  spotify: "https://open.spotify.com/track/38qNQvOwwtMj38O5VEGEDg"
+"the-blend--the-herbaliser-feat-what-what":
+  apple: "https://music.apple.com/us/album/the-blend-feat-what-what/416326971?i=416326973"
+  spotify: "https://open.spotify.com/track/30MkW9DyBK5C9h1AzKmlNB"
+"the-breakup-song--greg-kihn-band":
+  apple: "https://music.apple.com/us/album/the-breakup-song-they-dont-write-em/1701832114?i=1701832116"
+  spotify: "https://open.spotify.com/track/5J9sCTakcfbaO3Ez4ykjQJ"
+"the-bullpen--dessa":
+  apple: "https://music.apple.com/us/album/the-bullpen/1504011487?i=1504011500"
+  spotify: "https://open.spotify.com/track/6Ph0ZWqghLa2dvDcg4qrYF"
+"the-fall-of-the-world-s-own-optimist--aimee-mann":
+  apple: "https://music.apple.com/us/album/the-fall-of-the-worlds-own-optimist/551473502?i=551474430"
+  spotify: "https://open.spotify.com/track/50lAkWiBZbEeOfkWrr8j7m"
+"the-kids-are-coming--tones-and-i":
+  apple: "https://music.apple.com/us/album/the-kids-are-coming/1475930038?i=1475930042"
+  spotify: "https://open.spotify.com/track/76bvw5EDyhm1b3dfsOToYG"
+"the-man-comes-around--johnny-cash":
+  apple: "https://music.apple.com/us/album/the-man-comes-around/1440811207?i=1440811245"
+  spotify: "https://open.spotify.com/track/3Jq9rsqmRtqcVKtzP9dnxZ"
+"the-miracle--suicidal-tendencies":
+  apple: "https://music.apple.com/us/album/the-miracle/202731371?i=202731690"
+  spotify: "https://open.spotify.com/track/2ts9oHy0jVJeELgNhBPiLN"
+"the-mirror-reflecting-part-2--the-haxan-cloak":
+  apple: "https://music.apple.com/us/album/the-mirror-reflecting-pt-2/1442865284?i=1442865674"
+  spotify: "https://open.spotify.com/track/5NAcNU2klbfpyJFgr6vuN3"
+"the-rain-supa-dupa-fly--missy-elliott":
+  apple: "https://music.apple.com/us/album/the-rain-supa-dupa-fly/302943316?i=302943332"
+  spotify: "https://open.spotify.com/track/2WRzpLD8qDRrxMXc63E5WJ"
+  youtube: "https://www.youtube.com/watch?v=dLKDHBHckMg"
+"the-seed-2-0--the-roots-feat-cody-chesnutt":
+  apple: "https://music.apple.com/us/album/the-seed-2-0-feat-cody-chestnutt/1443257028?i=1443257035"
+  spotify: "https://open.spotify.com/track/6HxweNytuEQdmGeVtZPZz3"
+"the-show--doug-e-fresh":
+  apple: "https://music.apple.com/us/album/the-show/1729865987?i=1729866516"
+  spotify: "https://open.spotify.com/track/6OLz2O9z6XuquoHtujWCOy"
+  youtube: "https://www.youtube.com/watch?v=rsGykkchoJA"
+"the-sinister-minister--bela-fleck-and-the-flecktones":
+  apple: "https://music.apple.com/us/album/the-sinister-minister/302069468?i=302069484"
+  spotify: "https://open.spotify.com/track/2jWuNKBlgkfb3M0WDKexY8"
+"the-underside-of-power--algiers":
+  apple: "https://music.apple.com/us/album/the-underside-of-power/1586487016?i=1586487029"
+  spotify: "https://open.spotify.com/track/4k22ive89Pz5hnJU1cGCH6"
+"there-s-another-place-i-can-t-go--charlie-rich":
+  apple: "https://music.apple.com/us/album/theres-another-place-i-cant-go-remastered-2023/1878624739?i=1878624743"
+  spotify: "https://open.spotify.com/track/28Uibkvx6z76GxXQ7ITrrv"
+"these-boots-are-made-for-walkin--government-issue":
+  apple: "https://music.apple.com/us/album/these-boots-are-made-for-walkin/1874705294?i=1874706085"
+  spotify: "https://open.spotify.com/track/4Andc64yejYb29RObEogTX"
+"they-want-efx--das-efx":
+  apple: "https://music.apple.com/us/album/they-want-efx/305123831?i=305123994"
+  spotify: "https://open.spotify.com/track/2FFz1zUZ0oWpW2r8trtjNU"
+"thieves-in-the-temple--prince":
+  apple: "https://music.apple.com/us/album/thieves-in-the-temple/212854444?i=212856766"
+  spotify: "https://open.spotify.com/track/403oiKw757eJnbDKPSjhHV"
+"this-corrosion--sisters-of-mercy":
+  apple: "https://music.apple.com/us/album/this-corrosion-2018-remastered-version/1384587799?i=1384589322"
+  spotify: "https://open.spotify.com/track/6UIvD34qyoTem6WLtgCzbo"
+  youtube: "https://www.youtube.com/watch?v=jB73FWsCpUM"
+"this-is-america--childish-gambino":
+  apple: "https://music.apple.com/us/album/this-is-america/1379065454?i=1379065464"
+  spotify: "https://open.spotify.com/track/0b9oOr2ZgvyQu88wzixux9"
+"this-wheel-s-on-fire--siouxsie-and-the-banshees":
+  apple: "https://music.apple.com/us/album/this-wheels-on-fire/1443123820?i=1443124053"
+  spotify: "https://open.spotify.com/track/1PxG1pJavirtKvERWwAQ1E"
+"threw-it-all-away--the-jacks":
+  apple: "https://music.apple.com/us/album/threw-it-all-away/1494376771?i=1494376978"
+  spotify: "https://open.spotify.com/track/5sBd8NTNIXB1z43vNjaz9R"
+"time-is-a-moment-in-space--wayne-smith":
+  apple: "https://music.apple.com/us/album/time-is-a-moment-in-space/362214236?i=362216917"
+  spotify: "https://open.spotify.com/track/7GuyABTymyOd4oTBrzYT3J"
+"tonight-s-the-night-good-time--kleeer":
+  apple: "https://music.apple.com/us/album/tonights-the-night-good-time/286661002?i=286661007"
+  spotify: "https://open.spotify.com/track/6z8u2hCiZefgOtCjxFu4M3"
+  youtube: "https://www.youtube.com/watch?v=KbbwrUCzFrc"
+"top-floor-bottom-buzzer--morphine":
+  apple: "https://music.apple.com/us/album/top-floor-bottom-buzzer/1500455725?i=1500456036"
+  spotify: "https://open.spotify.com/track/4Fcr1raCUP6NyG0lw3UDmg"
+"track-of-the-cat--pram":
+  apple: "https://music.apple.com/us/album/track-of-the-cat/306718121?i=306718151"
+  spotify: "https://open.spotify.com/track/26Z4ZAQqjy2B3d1WrTVbiL"
+"train-song--holly-cole":
+  apple: "https://music.apple.com/us/album/train-song/725789975?i=725790239"
+  spotify: "https://open.spotify.com/track/62dpuFjYSBBshX8C65oOm3"
+"trees-instrumental--dr-octagon":
+  apple: "https://music.apple.com/us/album/trees-instrumental/205711328?i=205711405"
+  spotify: "https://open.spotify.com/track/21niD736Jt6dg2uDnYkjuh"
+"trouble-feat-nikki-williams--parov-stelar":
+  apple: "https://music.apple.com/us/album/trouble-feat-nikki-williams/1441636874?i=1441636882"
+  spotify: "https://open.spotify.com/track/0askij29rvVKPsRJMOXfor"
+"trust--boy-epic":
+  apple: "https://music.apple.com/us/album/trust/1444619130?i=1444619351"
+  spotify: "https://open.spotify.com/track/3ThCvoJJH8zQOqgjSEBhJf"
+"under-the-milky-way--the-church":
+  apple: "https://music.apple.com/us/album/under-the-milky-way/351750471?i=351750782"
+  spotify: "https://open.spotify.com/track/06J9PztWGsTugJg1ZIb7MW"
+"use-me-long-version--grace-jones":
+  apple: "https://music.apple.com/us/album/use-me-long-version/1452863515?i=1452863910"
+  spotify: "https://open.spotify.com/track/3HkwQVfeuwhTB5aGig6QgK"
+  youtube: "https://www.youtube.com/watch?v=jT1WxEeUSEM"
+"used-to-the-darkness--des-rocs":
+  apple: "https://music.apple.com/us/album/used-to-the-darkness/1644442544?i=1644442669"
+  spotify: "https://open.spotify.com/track/3SemJVQCsUo0K3QGN7pIXu"
+  youtube: "https://www.youtube.com/watch?v=7MrRi-2nokM"
+"vendetta-feat-krigare--unsecret":
+  apple: "https://music.apple.com/us/album/vendetta-feat-krigar%C3%A8/1456407199?i=1456407200"
+  spotify: "https://open.spotify.com/track/5aoPr7WqSXDqaYnmIluPdW"
+"verdi-rigoletto-act-3-la-donna-e-mobile--joan-sutherland-luciano-pavarotti":
+  apple: "https://music.apple.com/us/album/rigoletto-act-3-la-donna-%C3%A8-mobile-e-l%C3%A0-il-vostruomo/1440762460?i=1440763106"
+  spotify: "https://open.spotify.com/track/5cR6xfzyicyDyAr52zB48k"
+"vivaldi-the-four-seasons-concerto-no-2-in-g-minor-rv-315-summer-iii-presto--london-philharmonic-orchestra-itzhak-perlman":
+  apple: "https://music.apple.com/us/album/the-four-seasons-concerto-no-2-in-g-minor-rv-315/693711974?i=693711980"
+  spotify: "https://open.spotify.com/track/5N82c9RY2k4VeAel1pl5bJ"
+"voices-carry--til-tuesday":
+  apple: "https://music.apple.com/us/album/voices-carry-single-mix/273144169?i=273144177"
+  spotify: "https://open.spotify.com/track/4eOycahNij77maJicwgHvy"
+"walk-on-by--isaac-hayes":
+  apple: "https://music.apple.com/us/album/walk-on-by-remastered-1991/1440780816?i=1440780985"
+  spotify: "https://open.spotify.com/track/4NU6Vnrsh09TdZtIBYBwTA"
+"walking-in-the-rain--flash-and-the-pan":
+  apple: "https://music.apple.com/us/album/walking-in-the-rain/1451095370?i=1451095374"
+  spotify: "https://open.spotify.com/track/2NydteO50Y2KGP4jEbyiJT"
+"war--frankie-goes-to-hollywood":
+  apple: "https://music.apple.com/us/album/war/1365569059?i=1365569657"
+  spotify: "https://open.spotify.com/track/5ZtUnSJimPIyx0PTFzS5gL"
+"we-treat-the-blindness--strange-boutique":
+  apple: "https://music.apple.com/us/album/we-treat-the-blindness/415832073?i=415832085"
+  spotify: "https://open.spotify.com/track/1QW5n1ZOL0rlPjXN72lUsz"
+"what-is-hip-live--tower-of-power":
+  apple: "https://music.apple.com/us/album/what-is-hip-live/193876066?i=193878557"
+  spotify: "https://open.spotify.com/track/04ND4yESTFjOqmtGbhEpiy"
+"what-s-golden--jurassic-5":
+  apple: "https://music.apple.com/us/album/whats-golden/1673116557?i=1673118018"
+  spotify: "https://open.spotify.com/track/3ptikEjKbpbXvJtOosLMuH"
+"white-lines--grandmaster-flash":
+  apple: "https://music.apple.com/us/album/white-lines-long-version/50234449?i=50234472"
+  spotify: "https://open.spotify.com/track/7u8sW5TjK5s6wnVOUDwsFe"
+"widowmaker--night-argent":
+  apple: "https://music.apple.com/us/album/widowmaker/1843147447?i=1843147458"
+  spotify: "https://open.spotify.com/track/4GfrCe2z7spUrO8PRF4rN2"
+"wild-blue-yonder--screaming-blue-messiahs":
+  apple: "https://music.apple.com/us/album/wild-blue-yonder/887443899?i=887443906"
+  spotify: "https://open.spotify.com/track/7wgN0jpqKaNjAVQiORoOPB"
+  youtube: "https://www.youtube.com/watch?v=YPEgK5ikors"
+"wishing-well--sananda-maitreya":
+  apple: "https://music.apple.com/us/album/wishing-well-remastered/1632646636?i=1632646665"
+  spotify: "https://open.spotify.com/track/2nzrMkvsjTBTi7F0Pih5wF"
+  youtube: "https://www.youtube.com/watch?v=l9RFjK7iBYI"
+"wizard--dora-jar":
+  apple: "https://music.apple.com/us/album/wizard/6812063918?i=6812063932"
+  spotify: "https://open.spotify.com/track/5njz4YYy0TDJTnH01DwAXg"
+"would-i-lie-to-you--eurythmics":
+  apple: "https://music.apple.com/us/album/would-i-lie-to-you-remastered/308249665?i=308249995"
+  spotify: "https://open.spotify.com/track/1lJZSsMoWEbrgaY6CxPMf8"
+  youtube: "https://www.youtube.com/watch?v=bA8rscTHdME"
+"wreath-of-barbs--wumpscut":
+  apple: "https://music.apple.com/us/album/wreath-of-barbs-unheilig-remix/1719233430?i=1719233433"
+  spotify: "https://open.spotify.com/track/2rjKnNqLriSkYYUQwImzub"
+  youtube: "https://www.youtube.com/watch?v=2aOrFN0jz7M"
+"ya-boul-habari--omar-souleyman":
+  apple: "https://music.apple.com/us/album/ya-boul-habari/1219074522?i=1219074535"
+  spotify: "https://open.spotify.com/track/7e53KnIAsOSRJQkynTPQBe"
+"yankee-rose--david-lee-roth":
+  apple: "https://music.apple.com/us/album/yankee-rose/432798268?i=432798269"
+  spotify: "https://open.spotify.com/track/5Fh5nmTu6TEk0ze8QAU7og"
+"yeah-yeah-yeah--kix":
+  apple: "https://music.apple.com/us/album/yeah-yeah-yeah/300979841?i=300979852"
+  spotify: "https://open.spotify.com/track/3dzGEW9lY42FTsdeOKPgzz"
+"yeke-yeke--mory-kante":
+  apple: "https://music.apple.com/us/album/y%C3%A9k%C3%A9-y%C3%A9k%C3%A9/6791583298?i=6791583709"
+  spotify: "https://open.spotify.com/track/3XmtLjd5vCRIMvhIvgEcVV"
+"you-know-my-steez--gang-starr":
+  apple: "https://music.apple.com/us/album/you-know-my-steez/724829211?i=724829388"
+  spotify: "https://open.spotify.com/track/7rMeV0rIjzePISDXZTfM1v"
+"you-should-see-me-in-a-crown--we-rabbitz":
+  apple: "https://music.apple.com/us/album/you-should-see-me-in-a-crown-feat-shah-rae-weaver/1481866955?i=1481866963"
+  spotify: "https://open.spotify.com/track/6nkLQkNjtBejkeQehHu71A"
+  youtube: "https://www.youtube.com/watch?v=hMFKae7TjuA"
+"your-love-was-strange--the-dramatics":
+  apple: "https://music.apple.com/us/album/your-love-was-strange-single-version/1444137697?i=1444138002"
+  spotify: "https://open.spotify.com/track/5SSqtqcNNlrOGc8Bg5rt8q"
+  youtube: "https://www.youtube.com/watch?v=s1nVFdRXe4E"
+"zero--yeah-yeah-yeahs":
+  apple: "https://music.apple.com/us/album/zero/1440771833?i=1440771840"
+  spotify: "https://open.spotify.com/track/5mfA2CBzQeGiTk9wFItCsS"
+"zeros--desire":
+  apple: "https://music.apple.com/us/album/zeros/1840299366?i=1840299367"
+  spotify: "https://open.spotify.com/track/2zAqRs4in6kzr2fRkFktKx"

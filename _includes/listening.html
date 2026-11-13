@@ -15,6 +15,18 @@
             its running time beside it; a track without one renders as
             before. The sign-off passes no link.
 
+  THE PLAY ROW closes an aside's five and is drawn wherever link is set.
+  Each service's name opens a list of the same five songs on that service,
+  and every link in it opens a new window. A song's address on a service is
+  read from _data/listening_links.yml, keyed by the last segment of the
+  song's page address. A song the file does not name for a service takes
+  that service's search address, made from its title and artist, so the row
+  never has a hole. Nothing here is scripted: a list opens on hover and on
+  focus by CSS alone, under the MUSIC WIDGET rules of css/style.css.
+  A song the file names as none for a service is drawn greyed and
+  unlinked, with a boxed X, and its spoken label says the service does
+  not carry it.
+
   Source is _data/site_songs.csv: title, artist, header row as keys.
 
   THE FILE'S ORDER IS LOAD-BEARING AND IT IS NOT THE EXPORT'S. Apple Music
@@ -90,11 +102,13 @@
   {%- assign start = day | modulo: n -%}
   {%- assign cycle = day | divided_by: n | modulo: strides.size -%}
   {%- assign stride = strides[cycle] | times: 1 -%}
+  {%- assign picked = "" | split: "" -%}
   {%- for k in (1..count) -%}
     {%- assign j = k | minus: 1 -%}
     {%- assign idx = j | times: stride | plus: start | modulo: n -%}
     {%- assign s = songs[idx] -%}
     {%- if s -%}
+      {%- assign picked = picked | push: s -%}
       {%- if include.form == "signoff" %}
         <span class="music-track-song">{{ s.title | escape }}</span>
         <span class="music-track-artist">{{ s.artist | escape }}</span>
@@ -114,6 +128,46 @@
       {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
+  {%- if include.link and include.form != "signoff" and picked.size > 1 %}
+      <div class="music-play">
+        <span class="music-play-key">play:</span>
+        {%- assign services = "apple|Apple|Apple Music,spotify|Spotify|Spotify,youtube|YouTube|YouTube" | split: "," -%}
+        {%- for service in services -%}
+        {%- assign svc = service | split: "|" -%}
+        {%- assign key = svc[0] -%}
+        {%- unless forloop.first %}
+        <span class="music-play-sep" aria-hidden="true">|</span>
+        {%- endunless %}
+        <div class="music-play-service music-play-{{ key }}">
+          <button type="button" class="music-play-name">{{ svc[1] }}</button>
+          <div class="music-play-pop">
+            <div class="music-play-head">{{ svc[2] }}</div>
+            {%- for p in picked -%}
+            {%- assign slug = p.url | split: "/" | last | remove: ".html" -%}
+            {%- assign href = site.data.listening_links[slug][key] -%}
+            {%- if href == "none" %}
+            <div class="music-track music-track-none"><span class="music-track-song">{{ p.title | escape }}<span class="music-play-none" aria-hidden="true">&#xD7;</span></span> <span class="music-track-artist">{{ p.artist | escape }}</span><span class="sr-only">, not on {{ svc[2] }}</span></div>
+            {%- else -%}
+            {%- unless href -%}
+              {%- assign q = p.title | append: " " | append: p.artist | url_encode -%}
+              {%- case key -%}
+                {%- when "apple" -%}
+                  {%- assign href = "https://music.apple.com/us/search?term=" | append: q -%}
+                {%- when "spotify" -%}
+                  {%- assign q = q | replace: "+", "%20" -%}
+                  {%- assign href = "https://open.spotify.com/search/" | append: q -%}
+                {%- when "youtube" -%}
+                  {%- assign href = "https://www.youtube.com/results?search_query=" | append: q -%}
+              {%- endcase -%}
+            {%- endunless %}
+            <div class="music-track"><a class="music-track-link" href="{{ href | escape }}" target="_blank" rel="noopener noreferrer" aria-label="{{ p.title | escape }}, {{ p.artist | escape }}, on {{ svc[2] }} (opens in a new window)"><span class="music-track-song">{{ p.title | escape }}</span> <span class="music-track-artist">{{ p.artist | escape }}</span></a></div>
+            {%- endif -%}
+            {%- endfor %}
+          </div>
+        </div>
+        {%- endfor %}
+      </div>
+  {%- endif -%}
 {%- else -%}
   {%- if include.form == "signoff" %}
         <span class="music-track-song">silence</span>

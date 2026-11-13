@@ -1476,6 +1476,171 @@ aside {
   font-variant-numeric: tabular-nums;
 }
 
+/* The play row. It closes an aside's five: each service's name opens a
+   list of the same five songs on that service. Nothing is scripted. A list
+   opens on :hover and :focus-within, and the screen over the tracks on
+   :has(); a browser without :has() opens the list and draws no screen. */
+/* The popups and the screen are placed against the box, not against the
+   names, so each popup lands in the same place every time. */
+.music-widget {
+  position: relative;
+}
+
+/* The row. 24px tall, and each service fills that height, so a pointer
+   moving up from a name meets its popup with no gap between them. Set at
+   11px and spread edge to edge: at 12px the row measures 223px against
+   the 197px the box gives it in the 320px sidebar. */
+.music-play {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-muted-grey);
+  white-space: nowrap;
+}
+
+.music-play-key {
+  font-weight: 600;
+  color: var(--color-accent-grey-green);
+}
+
+.music-play-name {
+  appearance: none;
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.music-play-name:focus-visible {
+  outline: 2px solid var(--color-accent-grey-green);
+  outline-offset: 2px;
+}
+
+/* The open service is told by underline as well as by colour. */
+.music-play-service:hover .music-play-name,
+.music-play-service:focus-within .music-play-name {
+  color: var(--color-text-dark);
+  text-decoration: underline;
+}
+
+/* The popup. Hidden with visibility, so its links leave the tab order
+   until it opens. Its bottom edge is the row's top edge: 12px of box
+   padding plus the row's 24px. Its frame is the box's own track area, so
+   its top edge is the box's top edge, and it grows upward only when its
+   rows need more than the list's. Its width is the box less the list's
+   time column (43px: the column, its gap, and the difference between the
+   two paddings), so its text column is the list's and a title breaks here
+   where it breaks there, at every width. */
+.music-play-pop {
+  position: absolute;
+  bottom: 36px;
+  box-sizing: border-box;
+  width: calc(100% - 43px);
+  min-height: calc(100% - 35px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  z-index: 2;
+  padding: 8px 11px 6px;
+  background-color: var(--color-bg-dark);
+  border: 1px solid var(--color-accent-grey-green);
+  border-radius: 4px;
+  white-space: normal;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 80ms ease, visibility 0s linear 80ms;
+}
+
+/* Apple favours the left edge, Spotify the middle, YouTube the right. */
+.music-play-apple .music-play-pop { left: -1px; }
+.music-play-spotify .music-play-pop { left: 0; right: 0; margin-inline: auto; }
+.music-play-youtube .music-play-pop { right: -1px; }
+
+/* Open on hover or focus, after a sixth of a second, so a pointer
+   crossing the row on its way elsewhere opens nothing. */
+.music-play-service:hover .music-play-pop,
+.music-play-service:focus-within .music-play-pop {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 120ms ease 160ms, visibility 0s linear 160ms;
+}
+
+/* The list's head names the service and nothing else. That its links
+   open a new window is said in each link's spoken label. */
+.music-play-head {
+  margin: 0 0 2px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1.2;
+  color: var(--color-muted-grey);
+}
+
+/* The popup spaces its own rows; the list's 8px margin is the list's. */
+.music-play-pop .music-track {
+  margin-bottom: 0;
+}
+
+/* The screen over the five tracks: a dim and a hatch, never colour alone.
+   It stops at the row's top edge and takes no clicks. */
+.music-widget::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 36px 0;
+  z-index: 1;
+  border-radius: 3px 3px 0 0;
+  background:
+    repeating-linear-gradient(135deg, transparent 0 5px, var(--color-border-dark) 5px 6px),
+    color-mix(in srgb, var(--color-card-dark) 78%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 80ms ease;
+}
+
+.music-widget:has(.music-play-service:hover, .music-play-service:focus-within)::after {
+  opacity: 1;
+  transition: opacity 120ms ease 160ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-play-pop,
+  .music-widget::after {
+    transition-duration: 0s;
+  }
+}
+
+/* A song the service does not carry: greyed, unlinked and marked with a
+   boxed X, so the mark and the missing underline tell its state as well
+   as its grey. The X is the face's own multiplication sign in a drawn
+   box, since no face the site carries has a boxed-X glyph. */
+.music-play-pop .music-track-none .music-track-song,
+.music-play-pop .music-track-none .music-track-artist {
+  color: var(--color-muted-grey);
+}
+
+.music-play-none {
+  display: inline-block;
+  margin-left: 0.4em;
+  padding: 0 0.25em;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.15;
+  vertical-align: 0.1em;
+}
+
 /* A song's page: the artist beneath the title, then the entries in the
    archive's list form, then Up Next as a plain list of songs. */
 .track-artist {
