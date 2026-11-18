@@ -60,7 +60,7 @@ gathered and promises no order. {%- endcomment -%}
       <div class="main-content" data-pagefind-ignore>
         <section class="blog-card archive">
           <h2 class="archive-title">{{ heading }}</h2>
-          <p class="archive-count">{% if entries.size == 1 %}One entry{% else %}{{ entries.size }} entries{% endif %}{% if page.type == "category" %}, filed under this category{% else %} this month{% endif %}.</p>
+          <p class="archive-count">{% if entries.size == 1 %}One post{% else %}{{ entries.size }} posts{% endif %}{% if page.type == "category" %} filed under this category{% else %} this month{% endif %}.</p>
           <ol class="archive-entries">
             {%- for p in entries %}
             <li>
