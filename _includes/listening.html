@@ -58,8 +58,8 @@
   coprime set at n=160 with the small strides dropped -- every odd
   non-multiple-of-five from 13 to 79 -- since a stride under 13 draws five
   near-adjacent rows, harmless over a shuffled file but reading as a
-  block. At 291 rows, twenty-seven strides times 291 starts is 7,857
-  distinct five-track sets and 21.5 years before one recurs. The 48
+  block. At 292 rows, twenty-seven strides times 292 starts is 7,884
+  distinct five-track sets and 21.6 years before one recurs. The 48
   rows added 2026-10-28 were placed over that full cycle so that two
   works by one composer, and one pair of songs, never share a day's five.
   The five rows added 2026-11-10 were placed the same way, the rows already
@@ -69,6 +69,8 @@
   The one row added 2026-11-12 was placed the same way, the rows already
   there keeping their order, at a growth landing.
   The one row added 2026-11-18 was placed the same way, the rows already
+  there keeping their order, at a growth landing.
+  The one row added 2026-11-20 was placed the same way, the rows already
   there keeping their order, at a growth landing.
 
   The table is a rule and not a list: strides from 13 to 79, each coprime
@@ -99,7 +101,7 @@
 {%- assign songs = site.data.site_songs -%}
 {%- if songs and songs.size >= 5 -%}
   {%- assign n = songs.size -%}
-  {%- assign strides = "13,17,19,21,23,27,29,31,33,37,39,41,43,47,49,51,53,57,59,61,63,67,69,71,73,77,79" | split: "," -%}
+  {%- assign strides = "13,17,19,21,23,27,29,31,33,37,39,41,43,47,49,51,53,57,59,61,63,67,69,71,75,77,79" | split: "," -%}
   {%- assign day = site.time | date: "%s" | times: 1 | divided_by: 86400 -%}
   {%- assign start = day | modulo: n -%}
   {%- assign cycle = day | divided_by: n | modulo: strides.size -%}
