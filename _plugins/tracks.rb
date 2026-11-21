@@ -15,10 +15,14 @@
 #
 # A slug is made from title and artist, never from a row's position, since
 # the song file's order is a shuffle and changes on any re-export. The rule:
-# decompose to NFKD, drop every character outside ASCII, lowercase, read an
-# ampersand as "and", run every other non-alphanumeric stretch together as
-# one hyphen, trim the ends, and join title to artist with two hyphens. The
-# offline script that writes the mapping applies the same rule; the two
+# decompose to NFKD, drop the combining marks, fold each Latin letter that has
+# no decomposition to its Latin spelling from the table in FOLD below, drop
+# every character still outside ASCII, lowercase, read an ampersand as "and",
+# run every other non-alphanumeric stretch together as one hyphen, trim the
+# ends, and join title to artist with two hyphens. A part that folds to
+# nothing, as a title wholly in another script does, takes "u" and the first
+# eight hex digits of the SHA-1 of its NFC text, in UTF-8. The offline script
+# that writes the mapping applies the same rule from the same table; the two
 # must agree, and the build refuses when they visibly do not.
 #
 # The build is refused when a mapping entry names no post, when a slug
@@ -35,6 +39,8 @@
 # the entry by hand. A picture with no prose adds nothing unless it is named.
 # The build is refused when that file names no post or gives a time it
 # cannot read.
+require "digest"
+
 module Preterite
   class Tracks < Jekyll::Generator
     safe true
@@ -48,19 +54,52 @@ module Preterite
     # new and is cut here, at the one place the whole list exists.
     NEXT_MAX = 8
 
+    # Decision 5's fold table (RULED 2026-11-20 19:18, Michael, extending the
+    # fold of the dotless i alone of 2026-11-10). Each Latin letter that has
+    # no NFKD decomposition, and so would be dropped by the ASCII encode,
+    # folded to its Latin spelling, capitals included. This is one of the
+    # table's two copies: listening_glosses.py carries the other, and
+    # `listening_glosses.py --selftest` reads this file and compares the two
+    # character for character, so neither can drift from the other.
+    FOLD = [
+      ["\u0131", "i"],                                     # dotless i
+      ["\u00e6", "ae"], ["\u00c6", "AE"],                  # ae ligature
+      ["\u0153", "oe"], ["\u0152", "OE"],                  # oe ligature
+      ["\u00f8", "o"], ["\u00d8", "O"],                    # o with stroke
+      ["\u00f0", "d"], ["\u00d0", "D"],                    # eth
+      ["\u00fe", "th"], ["\u00de", "TH"],                  # thorn
+      ["\u00df", "ss"], ["\u1e9e", "SS"],                  # sharp s
+      ["\u0142", "l"], ["\u0141", "L"],                    # l with stroke
+      ["\u0111", "d"], ["\u0110", "D"],                    # d with stroke
+      ["\u0127", "h"], ["\u0126", "H"],                    # h with stroke
+      ["\u0167", "t"], ["\u0166", "T"],                    # t with stroke
+      ["\u014b", "ng"], ["\u014a", "NG"],                  # eng
+      ["\u0138", "k"],                                     # kra (no capital)
+    ].freeze
+
     def self.slug(title, artist)
       "#{part(title)}--#{part(artist)}"
     end
 
+    # One half of a slug. The fold where the part folds to something, and
+    # decision 5's spelling for a part that folds to nothing.
     def self.part(s)
+      folded = fold_part(s)
+      folded.empty? ? empty_part(s) : folded
+    end
+
+    def self.fold_part(s)
       s = s.to_s.unicode_normalize(:nfkd)
-      # The dotless i (U+0131) has no decomposition and the ASCII encode below
-      # would drop it; it folds to i (decision 5, RULED 2026-11-10), mirroring
-      # listening_glosses.py. The only character the fold adds; no other.
-      s = s.gsub("ı", "i")
+      FOLD.each { |ch, spelling| s = s.gsub(ch, spelling) }
+      # The combining marks NFKD produced, and whatever the fold table does
+      # not name, go here: the encode drops every character outside ASCII.
       s = s.encode("ASCII", invalid: :replace, undef: :replace, replace: "")
       s = s.downcase.gsub("&", " and ")
       s.gsub(/[^a-z0-9]+/, "-").gsub(/\A-+|-+\z/, "")
+    end
+
+    def self.empty_part(s)
+      "u" + Digest::SHA1.hexdigest(s.to_s.unicode_normalize(:nfc))[0, 8]
     end
 
     # "2:27" to 147. A bare number would mean YAML read the time as base 60.
