@@ -11,7 +11,7 @@ With a nod to my old editorial gig at [*Kairos*](https://kairos.technorhetoric.n
 
 <!--more-->
 
-I've assigned colors to the steps of the approach on the left, so the corresponding colors on the right show their order and proportion in my recent practice: the left colors code the wish, the right colors track the work.
+I've assigned colors to the steps of the approach on the left, so the corresponding colors on the right show their order and proportion in my recent practice. The left colors code the wish; the right colors track the work.
 
 {% include tool-making-sheet.html %}
 
@@ -31,6 +31,6 @@ I've assigned colors to the steps of the approach on the left, so the correspond
 | 12 | **Take every test to zero; then document, trim, package, and release.** each failure fixed and struck; ship nothing unused by the page; the bundle runs as standalone |   |   |
 {: .sheet aria-describedby="tool-making-work"}
 
-A humanist writing researcher who crafts instruments that use language models as a control group without a psyche can pose a question: which aspects of writing are structural results of generating sequential prose under constraint?
+A humanist writing researcher who crafts instruments that use language models as a control group without a psyche can pose a question: *which aspects of writing are structural results of generating sequential prose under constraint?*
 
 The answers, one hopes, indicate a way to invert the question: how can we  inquire more precisely into the remainder's irreducibly human aspects of writing? 
