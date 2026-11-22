@@ -7,7 +7,7 @@ categories:
   - Technology
 song: "Vandalist -- Noga Erez [CA4ACE20F6CEA7F5]"
 ---
-With a nod to my old editorial gig at [*Kairos*](https://kairos.technorhetoric.net), the table presented below the fold offers an approach a humanist studying machine writing might take toward building instruments, starting from a [dataset](https://zenodo.org/records/23663062) and its schema.
+With a nod to my old editorial gig at [*Kairos*](https://kairos.technorhetoric.net), the table below the fold presents one approach humanists studying machine writing might take toward building instruments, starting from a [dataset](https://zenodo.org/records/23663062) and its schema.
 
 <!--more-->
 
@@ -33,4 +33,4 @@ I've assigned colors to the steps of the approach on the left, so the correspond
 
 A humanist writing researcher who crafts instruments that use language models as a control group without a psyche can pose a question: *which aspects of writing are structural results of generating sequential prose under constraint?*
 
-The answers, one hopes, indicate a way to invert the question: how can we  inquire more precisely into the remainder's irreducibly human aspects of writing? 
+The answers, one hopes, indicate ways to invert the question: how can we then  inquire more precisely into the remainder's irreducibly human aspects of writing? 
