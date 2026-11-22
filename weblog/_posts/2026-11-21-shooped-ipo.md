@@ -9,5 +9,5 @@ The NYT's headline photo for [the Anthropic IPO](https://www.nytimes.com/2026/11
 
 [![Times Square surrounded by blank white electronic billboards.](/weblog/assets/shooped-ipo-480.jpg)](/weblog/assets/shooped-ipo-2400.jpg)
 
-`Figure 1:` **"We Throw Away the Letters, We Only Keep the Weights."** [Shooped](http://shooped.urbanup.com/2675470) from the original photograph "Anthropic advertisements in Times Square on Thursday" by [Karsten Moran for *The New York Times*](https://static01.nyt.com/images/2026/11/20/multimedia/20biz-anthropic-aftermath-cwvh/20biz-anthropic-aftermath-cwvh-superJumbo.jpg).
+`Figure 1:` "We Throw Away the Letters, We Only Keep the Weights." [Shooped](http://shooped.urbanup.com/2675470) from the original photograph "Anthropic advertisements in Times Square on Thursday" by [Karsten Moran for *The New York Times*](https://static01.nyt.com/images/2026/11/20/multimedia/20biz-anthropic-aftermath-cwvh/20biz-anthropic-aftermath-cwvh-superJumbo.jpg).
 
