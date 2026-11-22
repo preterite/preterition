@@ -7,7 +7,7 @@ categories:
   - Technology
 song: "Vandalist -- Noga Erez [CA4ACE20F6CEA7F5]"
 ---
-With a nod to my old editorial gig at [*Kairos*](https://kairos.technorhetoric.net), the following table offers an approach a humanist studying machine writing might take toward building instruments, starting from a [dataset](https://zenodo.org/records/23663062) and its schema.
+With a nod to my old editorial gig at [*Kairos*](https://kairos.technorhetoric.net), the table presented below the fold offers an approach a humanist studying machine writing might take toward building instruments, starting from a [dataset](https://zenodo.org/records/23663062) and its schema.
 
 <!--more-->
 
