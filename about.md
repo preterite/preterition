@@ -103,7 +103,7 @@ All code is well-commented valid HTML5 and CSS3 with vanilla JavaScript; no exte
 
 #### Navigation
 
-The top navigation takes you to major components of the site; the weblog sidebar nav links to by-category and by-month archives and collections. I've set in plain view a [supplemental shadow navigation network], for readers who may enjoy using inference gaps as associative map.
+The top navigation takes you to major components of the site; the weblog sidebar nav links to by-category and by-month archives and collections. I've set in plain view a [shadow navigation network](/weblog/2026/11/11/toy-instruments.html), for readers who may enjoy using inference gaps as associative maps.
 
 #### Hosting
 Files served from GitHub Pages via Jekyll.
