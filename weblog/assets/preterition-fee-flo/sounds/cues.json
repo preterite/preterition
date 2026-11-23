@@ -1,0 +1,159 @@
+{
+ "roles": {
+  "detent": {
+   "file": "detent.mp3",
+   "gain": 0.45,
+   "events": [
+    "knob-turn",
+    "wheel-set"
+   ],
+   "seconds": 0.2,
+   "bytes": 2820
+  },
+  "lock": {
+   "file": "lock.mp3",
+   "gain": 0.7,
+   "events": [
+    "knob-lock",
+    "lock-all"
+   ],
+   "seconds": 0.301,
+   "bytes": 4301
+  },
+  "unlock": {
+   "file": "unlock.mp3",
+   "gain": 0.595,
+   "events": [
+    "knob-unlock",
+    "unlock-all"
+   ],
+   "seconds": 0.422,
+   "bytes": 5526
+  },
+  "thunk": {
+   "file": "thunk.mp3",
+   "gain": 0.8,
+   "events": [
+    "preset",
+    "modekey",
+    "pick-open"
+   ],
+   "seconds": 0.15,
+   "bytes": 2299
+  },
+  "seat": {
+   "file": "seat.mp3",
+   "gain": 0.8,
+   "events": [],
+   "seconds": 0.676,
+   "bytes": 7405
+  },
+  "rattle": {
+   "file": "rattle.mp3",
+   "gain": 0.3,
+   "events": [],
+   "seconds": 0.33,
+   "bytes": 5914
+  },
+  "shuffler": {
+   "file": "shuffler.mp3",
+   "gain": 0.1929,
+   "events": [],
+   "seconds": 0.8,
+   "bytes": 8799
+  },
+  "rewind": {
+   "file": "rewind.mp3",
+   "gain": 0.5,
+   "events": [
+    "rewind"
+   ],
+   "seconds": 1.799,
+   "bytes": 17818
+  },
+  "beat": {
+   "file": "beat.mp3",
+   "gain": 0.7852,
+   "events": [],
+   "seconds": 4.655,
+   "bytes": 31820,
+   "loop": {
+    "content": 4.654512,
+    "delay": 0.025057,
+    "endpad": 0.022472
+   }
+  },
+  "answer": {
+   "file": "answer.mp3",
+   "gain": 0.1718,
+   "events": [],
+   "seconds": 4.218,
+   "bytes": 51115
+  }
+ },
+ "compound": {
+  "load-start": [
+   {
+    "role": "thunk",
+    "at": 0,
+    "gain": 0.875
+   },
+   {
+    "role": "seat",
+    "at": 0.15
+   }
+  ],
+  "shuffle": [
+   {
+    "role": "rattle",
+    "at": 0,
+    "gain": 1.1
+   },
+   {
+    "role": "shuffler",
+    "at": 0,
+    "gain": 1.1
+   },
+   {
+    "role": "detent",
+    "at": 0,
+    "gain": 1.1,
+    "jitter": {
+     "at": 0.008,
+     "rate": 0.06,
+     "gain": 0.15
+    }
+   },
+   {
+    "role": "detent",
+    "at": 0.04,
+    "gain": 1.1,
+    "jitter": {
+     "at": 0.008,
+     "rate": 0.06,
+     "gain": 0.15
+    }
+   },
+   {
+    "role": "detent",
+    "at": 0.08,
+    "gain": 1.1,
+    "jitter": {
+     "at": 0.008,
+     "rate": 0.06,
+     "gain": 0.15
+    }
+   },
+   {
+    "role": "detent",
+    "at": 0.12,
+    "gain": 1.1,
+    "jitter": {
+     "at": 0.008,
+     "rate": 0.06,
+     "gain": 0.15
+    }
+   }
+  ]
+ }
+}

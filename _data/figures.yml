@@ -86,3 +86,13 @@ figures:
       - 2026-11-07-arc-bends-toward-agent-memory-part-4
     credit: 'Edwards, Mike. 2026. "Flo 1.0: Returns Meter." preterite.net/weblog/2026/11/07/arc-bends-toward-agent-memory-part-4.html. CC BY-NC-SA 4.0.'
     citation: 'Edwards, Mike. 2026. "Flo 1.0: Returns Meter." preterite.net/weblog/2026/11/07/arc-bends-toward-agent-memory-part-4.html. CC BY-NC-SA 4.0.'
+  preterition-fee-flo:
+    name: "Fee 1.0 (Exchange Meter)"
+    number: 1
+    date: "2026-11-23"
+    asset: /weblog/assets/preterition-fee-flo/preterition-fee-flo.html
+    include: preterition-fee-flo.html
+    appears_in:
+      - 2026-11-23-fare-back-agent-memory-part-5
+    credit: 'Edwards, Mike. 2026. "Fee 1.0: Exchange Meter." preterite.net/weblog/2026/11/23/fare-back-agent-memory-part-5.html. CC BY-NC-SA 4.0.'
+    citation: 'Edwards, Mike. 2026. "Fee 1.0: Exchange Meter." preterite.net/weblog/2026/11/23/fare-back-agent-memory-part-5.html. CC BY-NC-SA 4.0.'

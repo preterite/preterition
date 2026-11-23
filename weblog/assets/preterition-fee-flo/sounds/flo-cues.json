@@ -1,0 +1,138 @@
+{
+ "roles": {
+  "flo-voice": {
+   "file": "flo/voice.mp3",
+   "gain": 0.2483,
+   "events": [],
+   "seconds": 1.67,
+   "bytes": 14355
+  },
+  "flo-view-returns": {
+   "file": "flo/view-returns.mp3",
+   "gain": 0.5192,
+   "events": [
+    "flo:view-returns"
+   ],
+   "seconds": 0.09,
+   "bytes": 1556
+  },
+  "flo-view-position": {
+   "file": "flo/view-position.mp3",
+   "gain": 0.4947,
+   "events": [
+    "flo:view-position"
+   ],
+   "seconds": 0.09,
+   "bytes": 1556
+  },
+  "flo-display-history": {
+   "file": "flo/display-history.mp3",
+   "gain": 0.4888,
+   "events": [
+    "flo:display-history"
+   ],
+   "seconds": 0.09,
+   "bytes": 1556
+  },
+  "flo-display-numbers": {
+   "file": "flo/display-numbers.mp3",
+   "gain": 0.4992,
+   "events": [
+    "flo:display-numbers"
+   ],
+   "seconds": 0.09,
+   "bytes": 1607
+  },
+  "flo-gate-1": {
+   "file": "flo/gate-1.mp3",
+   "gain": 0.3877,
+   "events": [
+    "flo:gate-1"
+   ],
+   "seconds": 0.065,
+   "bytes": 1190
+  },
+  "flo-gate-3": {
+   "file": "flo/gate-3.mp3",
+   "gain": 0.385,
+   "events": [
+    "flo:gate-3"
+   ],
+   "seconds": 0.065,
+   "bytes": 1216
+  },
+  "flo-gate-6": {
+   "file": "flo/gate-6.mp3",
+   "gain": 0.3941,
+   "events": [
+    "flo:gate-6"
+   ],
+   "seconds": 0.065,
+   "bytes": 1190
+  },
+  "flo-gate-12": {
+   "file": "flo/gate-12.mp3",
+   "gain": 0.3858,
+   "events": [
+    "flo:gate-12"
+   ],
+   "seconds": 0.065,
+   "bytes": 1190
+  },
+  "flo-gate-all": {
+   "file": "flo/gate-all.mp3",
+   "gain": 0.388,
+   "events": [
+    "flo:gate-all"
+   ],
+   "seconds": 0.065,
+   "bytes": 1242
+  },
+  "flo-chirp-on": {
+   "file": "flo/chirp-on.mp3",
+   "gain": 0.3183,
+   "events": [
+    "flo:chirp-on"
+   ],
+   "seconds": 0.15,
+   "bytes": 1580
+  },
+  "flo-chirp-off": {
+   "file": "flo/chirp-off.mp3",
+   "gain": 0.3175,
+   "events": [
+    "flo:chirp-off"
+   ],
+   "seconds": 0.15,
+   "bytes": 1580
+  },
+  "flo-trace-on": {
+   "file": "flo/trace-on.mp3",
+   "gain": 0.1734,
+   "events": [
+    "flo:trace-on"
+   ],
+   "seconds": 0.9,
+   "bytes": 4388
+  },
+  "flo-zoom-in": {
+   "file": "flo/zoom-in.mp3",
+   "gain": 0.3007,
+   "events": [
+    "flo:zoom-in"
+   ],
+   "seconds": 0.18,
+   "bytes": 1684
+  },
+  "flo-zoom-out": {
+   "file": "flo/zoom-out.mp3",
+   "gain": 0.2983,
+   "events": [
+    "flo:zoom-out"
+   ],
+   "seconds": 0.18,
+   "bytes": 1710
+  }
+ },
+ "compound": {}
+}

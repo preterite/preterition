@@ -1,0 +1,71 @@
+{
+ "roles": {
+  "fee-thunk": {
+   "file": "fee/thunk.mp3",
+   "gain": 0.574,
+   "events": [
+    "fee:peak",
+    "fee:range",
+    "fee:screen",
+    "fee:trace-off"
+   ],
+   "seconds": 0.189,
+   "bytes": 2337
+  },
+  "fee-detent": {
+   "file": "fee/detent.mp3",
+   "gain": 0.3674,
+   "events": [
+    "fee:step"
+   ],
+   "seconds": 0.252,
+   "bytes": 2830
+  },
+  "fee-glass": {
+   "file": "fee/glass.mp3",
+   "gain": 0.562,
+   "events": [],
+   "seconds": 0.144,
+   "bytes": 1580
+  },
+  "fee-lamp": {
+   "file": "fee/lamp.mp3",
+   "gain": 0.2898,
+   "events": [],
+   "seconds": 1,
+   "bytes": 8396
+  },
+  "fee-voice": {
+   "file": "fee/voice.mp3",
+   "gain": 0.257,
+   "events": [],
+   "seconds": 1.403,
+   "bytes": 11566
+  },
+  "fee-beat": {
+   "file": "fee/beat.mp3",
+   "gain": 0.7244,
+   "events": [],
+   "seconds": 21.909,
+   "bytes": 195857,
+   "loop": {
+    "content": 21.909252,
+    "delay": 0.025057,
+    "endpad": 0.008549
+   },
+   "lazy": true
+  }
+ },
+ "compound": {
+  "fee:trace-on": [
+   {
+    "role": "fee-thunk",
+    "at": 0
+   },
+   {
+    "role": "fee-lamp",
+    "at": 0.06
+   }
+  ]
+ }
+}
