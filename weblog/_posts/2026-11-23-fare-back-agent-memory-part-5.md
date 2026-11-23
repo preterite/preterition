@@ -54,4 +54,4 @@ Edwards, Mike. 2026. Notes to Unseen Successors: Handoff Records from Timed and 
 
 Hartley, Ralph V. L. 1928. "[Transmission of Information](https://doi.org/10.1002/j.1538-7305.1928.tb01236.x)." *Bell System Technical Journal* 7 (3): 535--563.
 
-Shannon, C. E. 1948. "[A Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)." *Bell System Technical Journal* 27 (3): 379--423.
+Shannon, Claude E. 1948. "[A Mathematical Theory of Communication](https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf)." *Bell System Technical Journal* 27 (3): 379--423.
