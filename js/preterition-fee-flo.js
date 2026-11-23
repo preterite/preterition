@@ -28,7 +28,7 @@
 // height as its scrollHeight.
 //
 
-function initPreteritionZoeFlo() {
+function initPreteritionFeeFlo() {
   const links = document.querySelectorAll('.preterition-fee-flo-open');
   if (!links.length || typeof HTMLDialogElement !== 'function' ||
       typeof HTMLDialogElement.prototype.showModal !== 'function') return;
@@ -50,10 +50,10 @@ function buildDialog(url) {
   dialog.setAttribute('aria-labelledby', 'pff-dialog-title');
   dialog.innerHTML = `
     <div class="pff-dialog-head">
-      <h2 id="pff-dialog-title">Zoe 2.1 and Flo 1.0</h2>
+      <h2 id="pff-dialog-title">Fee 1.0 and Flo 1.0</h2>
       <button type="button" class="pff-dialog-close" aria-label="Close">&times;</button>
     </div>
-    <div class="pff-stage"><iframe class="pff-frame" title="Zoe 2.1 and Flo 1.0, interactive"></iframe></div>`;
+    <div class="pff-stage"><iframe class="pff-frame" title="Fee 1.0 and Flo 1.0, interactive"></iframe></div>`;
   const stage = dialog.querySelector('.pff-stage');
   const frame = dialog.querySelector('.pff-frame');
 
@@ -100,4 +100,4 @@ function buildDialog(url) {
 
 // A deferred script runs after the document is parsed and before
 // DOMContentLoaded fires, so the listener is registered in time.
-document.addEventListener('DOMContentLoaded', initPreteritionZoeFlo);
+document.addEventListener('DOMContentLoaded', initPreteritionFeeFlo);
