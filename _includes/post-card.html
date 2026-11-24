@@ -73,11 +73,18 @@
   {%- endif %}
   <div class="post-body">
     {%- if include.mode == "entry" %}
-    {{ include.body }}
+    {%- comment -%} The resume point. The author's read-more marker
+    survives the render as an HTML comment, and here it becomes an empty
+    block carrying an id, so the index's "Continue reading" lands a
+    reader at the paragraph where the lead stopped rather than at the
+    top of the entry. The feed and the head read the content directly
+    and keep the marker as written.
+    {%- endcomment %}
+    {{ include.body | replace_first: "<!--more-->", '<div id="more"></div>' }}
     {%- else %}
     {{ p.excerpt }}
     {%- if p.content contains "<!--more-->" %}
-    <p class="post-more"><a href="{{ p.url }}">Continue reading {{ p.title }}</a></p>
+    <p class="post-more"><a href="{{ p.url }}#more">Continue reading {{ p.title }}</a></p>
     {%- endif %}
     {%- endif %}
   </div>
