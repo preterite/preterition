@@ -5,7 +5,7 @@ date: 2026-11-25 09:46:59 -0800
 categories: [Projects, Technology]
 song: "Les Nuits -- Nightmares On Wax [90F4671541C1943B]"
 ---
-My recent release pace of three web apps and a dataset within the space of a month will likely slow. (If you're looking to hire a rhet-comp PhD who ships apps, [let me know](/contact.html).) Zoe's interface was a first draft, and I'd like to give the revised downloadable .zips for the web apps more legibility, so my next few weeks will involve some code refactoring. Part of my revised [development plan](/weblog/2026/11/22/some-notes-on-procedure.html) is to sort the components into file types, and then more substantially comment the functions in the reorganized-by-function code, so for those who download the zips, it's easier to trace the workings: right now, my interaction maps of the load tray's function are a jumbled mess.
+My recent release pace of three web apps and a dataset within the space of a month will likely slow. (If you're looking to hire a rhet-comp PhD who ships, [let me know](/contact.html).) Zoe's interface was a first draft, and I'd like to give the revised downloadable .zips for the web apps more legibility, so my next few weeks will involve some code refactoring. Part of my revised [development plan](/weblog/2026/11/22/some-notes-on-procedure.html) is to sort the components into file types, and then more substantially comment the functions in the reorganized-by-function code, so for those who download the zips, it's easier to trace the workings: right now, my interaction maps of the load tray's function are a jumbled mess.
 
 [![grayscale interaction maps for three web interfaces](/weblog/assets/interact-map-450.png)](/weblog/assets/interact-map-1500.webp)
 
