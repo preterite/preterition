@@ -15,11 +15,11 @@ Repackaging also lets me revisit the binaries (in bytes, not Elbovian opposition
 
 **Zoe's return reel:**
 
-![Zoe's old take-up reel.](/weblog/assets/zoe-reel-old.webp){width="300" height="300"} \
-`zoe-reel-old.webp` (20Kb)
+![Zoe's old take-up reel.](/weblog/assets/zoe-reel-old-300.webp)\
+`zoe-reel-old.webp` (9kB)
 
-![Zoe's new take-up reel.](/weblog/assets/zoe-reel-new.webp){width="300" height="300"} \
- `zoe-reel-new.webp` (80Kb)
+![Zoe's new take-up reel.](/weblog/assets/zoe-reel-new-300.webp)\
+ `zoe-reel-new.webp` (20kB)
 
 **Zoe's loop beat:**
 
